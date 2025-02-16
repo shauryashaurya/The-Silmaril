@@ -1,4 +1,4 @@
-# The-Silmaril
+# The Silmaril
 Practice #ontology building with Python (and other languages).   
   
 <html> 
