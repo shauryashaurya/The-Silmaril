@@ -49,7 +49,7 @@ classDiagram
     Actor "1" --> "1" Character : Association (playsCharacter)
 ```         
                     
-```UML                    
+```pseudocode                    
 Class: Movie                         
    Properties (data):                         
       - title : string                         

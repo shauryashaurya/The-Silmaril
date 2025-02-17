@@ -132,6 +132,57 @@ Movies can be multi-genre, so we will allow one movie to link to multiple genres
 ## Outcome  
 The structure of the final ontology is here: [o1-structure.md](https://github.com/shauryashaurya/The-Silmaril/blob/main/o1/o1-structure.md)  
      
+The accompanying notebook creates sample data for the ontology for you to import into a typical SQL database and perform analysis.
+
+```mermaid                      
+classDiagram    
+    class Movie {    
+        %% Data Properties    
+        -title : string    
+        -releaseYear : int    
+        -duration : int    
+        -rating : float    
+        %% Object Properties    
+        +hasActor o--* Actor : one-to-many    
+        +hasDirector o--* Director : one-to-many    
+        +belongsToGenre o--* Genre : one-to-many    
+    }    
+    
+    class Person {    
+        %% Data Properties    
+        -name : string    
+        -birthDate : date    
+    }    
+    
+    class Actor {    
+        %% Object Properties    
+        +playsCharacter --o Character : one-to-one    
+    }    
+    
+    class Director {    
+        %% Inherited Data Properties from Person (name, birthDate) are implicitly present    
+    }    
+    note for Director "(no special object property here, but reuses name/birthDate)"    
+    
+    class Character {    
+        %% Data Properties    
+        -name : string    
+    }    
+    
+    class Genre {    
+        %% Data Properties    
+        -name : string    
+    }    
+    
+    Actor --|> Person    
+    Director --|> Person    
+	
+	Movie "1" --> "1..*" Actor : Association (hasActor)
+    Movie "1" --> "1..*" Director : Association (hasDirector)
+    Movie "1" --> "1..*" Genre : Association (belongsToGenre)
+    Actor "1" --> "1" Character : Association (playsCharacter)
+```    
+
 ---  
   
 ## Thoughts
