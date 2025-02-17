@@ -1,51 +1,51 @@
 id,retailerName,location,retailerType
-retailer_0,Thornton Inc Retail,East Melindaport,Brick-and-mortar
-retailer_1,"Monroe, Turner and Guerrero Retail",Johnsonstad,Mixed
-retailer_2,Davis and Sons Retail,Lambchester,Online
-retailer_3,"Mendoza, Mendoza and Pham Retail",New Fred,Online
-retailer_4,"West, Ward and Williams Retail",East Markton,Mixed
-retailer_5,"Zavala, Boone and Cole Retail",Murphystad,Brick-and-mortar
-retailer_6,"Alvarez, Baker and Savage Retail",Heatherland,Brick-and-mortar
-retailer_7,"Chapman, Jones and Smith Retail",Cookton,Online
-retailer_8,Dennis Group Retail,Port Williammouth,Online
-retailer_9,Bullock-Hernandez Retail,Lake Yolanda,Mixed
-retailer_10,"Gutierrez, Jacobs and Howard Retail",Jillianview,Brick-and-mortar
-retailer_11,Bush-Vaughan Retail,Lake Stephanietown,Mixed
-retailer_12,Hawkins-Brown Retail,South Valerie,Mixed
-retailer_13,Davis PLC Retail,Cordovaport,Mixed
-retailer_14,Rivera Inc Retail,Salasstad,Brick-and-mortar
-retailer_15,Pope Group Retail,East Wesley,Mixed
-retailer_16,Thompson and Sons Retail,Brianland,Brick-and-mortar
-retailer_17,"Alvarez, Douglas and Jackson Retail",South Mary,Online
-retailer_18,"Ramsey, Spencer and Barry Retail",Lake Tyler,Brick-and-mortar
-retailer_19,Rosales LLC Retail,Lucaschester,Brick-and-mortar
-retailer_20,"Thomas, Graves and Clark Retail",Christopherton,Online
-retailer_21,Banks-Fry Retail,South Gregorybury,Online
-retailer_22,"Graham, Payne and Smith Retail",Cookfurt,Online
-retailer_23,Carpenter-Cardenas Retail,New Monique,Mixed
-retailer_24,Dominguez LLC Retail,Diazland,Brick-and-mortar
-retailer_25,Combs Group Retail,Martinezchester,Brick-and-mortar
-retailer_26,"Tran, Anderson and Phillips Retail",Williamsburgh,Online
-retailer_27,Patton Ltd Retail,Mooretown,Brick-and-mortar
-retailer_28,Parker PLC Retail,New Matthewberg,Online
-retailer_29,Wiggins-Green Retail,Mcphersontown,Mixed
-retailer_30,Lucas and Sons Retail,West Mary,Brick-and-mortar
-retailer_31,"Arnold, Wade and Ross Retail",Leeport,Brick-and-mortar
-retailer_32,Gordon-Smith Retail,West Katiebury,Online
-retailer_33,Stewart-Leblanc Retail,West Erin,Mixed
-retailer_34,Taylor-Sanders Retail,Joshualand,Online
-retailer_35,Mooney LLC Retail,Wigginsland,Online
-retailer_36,Neal Group Retail,Mitchellmouth,Brick-and-mortar
-retailer_37,Davis-Hess Retail,Davidside,Mixed
-retailer_38,"Miranda, Anderson and Nunez Retail",New April,Mixed
-retailer_39,Oconnor Ltd Retail,Ashleytown,Brick-and-mortar
-retailer_40,Lynn and Sons Retail,Leeborough,Online
-retailer_41,Santana PLC Retail,New Rebeccaberg,Mixed
-retailer_42,"Rodgers, Chavez and Woods Retail",Donaldburgh,Brick-and-mortar
-retailer_43,"Daniels, Lucas and Powell Retail",Ashleyshire,Online
-retailer_44,"Thompson, Powers and Brown Retail",Youngshire,Mixed
-retailer_45,Myers-Mills Retail,Walkerfort,Brick-and-mortar
-retailer_46,Marquez LLC Retail,East Lorraineshire,Mixed
-retailer_47,Castaneda Ltd Retail,Angelmouth,Online
-retailer_48,Zuniga-Alvarez Retail,Johnville,Mixed
-retailer_49,"West, Bryant and Wolfe Retail",New Eric,Online
+retailer_0,"Scott, Clarke and Hall Retail",Port Angieview,Online
+retailer_1,"Wall, Johnson and Horton Retail",Wileyfort,Mixed
+retailer_2,Sanchez PLC Retail,West Veronica,Online
+retailer_3,Sherman LLC Retail,Port Thomasview,Mixed
+retailer_4,Murphy-Gonzalez Retail,Ashleefort,Brick-and-mortar
+retailer_5,Reed-Newton Retail,Michaelside,Mixed
+retailer_6,Alvarado Group Retail,West Davidstad,Mixed
+retailer_7,Maxwell LLC Retail,Lake Kellyburgh,Brick-and-mortar
+retailer_8,Hudson Inc Retail,Torresport,Mixed
+retailer_9,Acevedo Ltd Retail,Richardbury,Online
+retailer_10,Salinas-Wood Retail,Marshallmouth,Brick-and-mortar
+retailer_11,"Nichols, Molina and Taylor Retail",Joshuafort,Online
+retailer_12,Bray Group Retail,Port Johnathan,Mixed
+retailer_13,Johnson Inc Retail,North Ericchester,Brick-and-mortar
+retailer_14,Yang-Ray Retail,Fullerfort,Brick-and-mortar
+retailer_15,Rogers Group Retail,Joshuamouth,Brick-and-mortar
+retailer_16,"Thompson, Armstrong and Munoz Retail",New Kathleen,Brick-and-mortar
+retailer_17,Burke LLC Retail,Heathertown,Brick-and-mortar
+retailer_18,Rodriguez PLC Retail,Fowlermouth,Brick-and-mortar
+retailer_19,"Murphy, Hebert and Mason Retail",East Alyssa,Mixed
+retailer_20,Benson Ltd Retail,Jefferyton,Mixed
+retailer_21,Adams LLC Retail,Port Nicole,Brick-and-mortar
+retailer_22,Zavala Ltd Retail,West Amyview,Brick-and-mortar
+retailer_23,Powers LLC Retail,Leviport,Online
+retailer_24,"Duke, Bernard and Turner Retail",Careyland,Mixed
+retailer_25,"Oliver, Lindsey and Smith Retail",Lindamouth,Brick-and-mortar
+retailer_26,"Calhoun, Pham and Fitzpatrick Retail",Heiditon,Mixed
+retailer_27,Robinson Ltd Retail,Rickport,Online
+retailer_28,"Anderson, Conrad and Hernandez Retail",Burkemouth,Brick-and-mortar
+retailer_29,Mcclure LLC Retail,Valerieburgh,Mixed
+retailer_30,"Schwartz, Dominguez and Rangel Retail",Ryanton,Online
+retailer_31,"Gray, Good and Jackson Retail",Lake Meganshire,Online
+retailer_32,Stewart-Smith Retail,Mclaughlinshire,Mixed
+retailer_33,Adams Group Retail,New Jeffrey,Brick-and-mortar
+retailer_34,Faulkner-White Retail,Theresaview,Online
+retailer_35,Mclaughlin Inc Retail,Samuelville,Online
+retailer_36,Torres-Castillo Retail,Johnsonburgh,Mixed
+retailer_37,Chan Group Retail,West Adamland,Online
+retailer_38,"Rosario, Elliott and Love Retail",Port Timothystad,Mixed
+retailer_39,"Harrison, Vasquez and Rodriguez Retail",Harrellchester,Mixed
+retailer_40,"Chavez, Greene and Wallace Retail",South Sean,Mixed
+retailer_41,"Shaffer, Lee and Wu Retail",East Janeshire,Mixed
+retailer_42,"Allen, Randolph and Estes Retail",Sharonberg,Online
+retailer_43,Hopkins Inc Retail,New Lindseyburgh,Mixed
+retailer_44,Johnson LLC Retail,Poolefurt,Online
+retailer_45,Evans and Sons Retail,Lake Laurenberg,Mixed
+retailer_46,Parker-White Retail,Lake Julieburgh,Brick-and-mortar
+retailer_47,Jones Group Retail,South Matthew,Mixed
+retailer_48,Johnson-Sullivan Retail,West Ashlee,Brick-and-mortar
+retailer_49,Pittman Ltd Retail,Martinezmouth,Mixed

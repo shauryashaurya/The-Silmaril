@@ -1,101 +1,251 @@
 id,productName,sku,productType,unitPrice
-product_0,Reduced hybrid core,SKU-0-418,FinishedGood,111.9
-product_1,Polarized high-level extranet,SKU-1-487,FinishedGood,74.41
-product_2,Organized client-server database,SKU-2-771,RawMaterial,170.77
-product_3,Object-based radical attitude,SKU-3-226,FinishedGood,162.35
-product_4,Organic impactful matrix,SKU-4-524,FinishedGood,146.28
-product_5,Progressive fault-tolerant parallelism,SKU-5-255,RawMaterial,143.59
-product_6,Phased real-time concept,SKU-6-456,RawMaterial,83.23
-product_7,Inverse neutral synergy,SKU-7-185,Component,123.54
-product_8,Enterprise-wide maximized implementation,SKU-8-871,RawMaterial,62.09
-product_9,Function-based stable hierarchy,SKU-9-691,FinishedGood,51.21
-product_10,Future-proofed web-enabled firmware,SKU-10-474,Component,119.28
-product_11,Phased well-modulated open system,SKU-11-313,Component,79.12
-product_12,Proactive solution-oriented approach,SKU-12-198,FinishedGood,116.55
-product_13,Digitized global data-warehouse,SKU-13-862,FinishedGood,177.93
-product_14,Object-based 24/7 system engine,SKU-14-691,FinishedGood,182.07
-product_15,Team-oriented maximized emulation,SKU-15-927,Component,25.54
-product_16,Exclusive object-oriented knowledge user,SKU-16-873,Component,180.47
-product_17,Inverse non-volatile toolset,SKU-17-308,FinishedGood,172.33
-product_18,Customer-focused intermediate definition,SKU-18-994,RawMaterial,144.71
-product_19,Focused modular moderator,SKU-19-235,Component,96.6
-product_20,Streamlined 24/7 product,SKU-20-622,Component,135.58
-product_21,Programmable directional open architecture,SKU-21-461,FinishedGood,88.06
-product_22,Profit-focused high-level archive,SKU-22-366,RawMaterial,22.17
-product_23,Balanced actuating productivity,SKU-23-467,RawMaterial,15.81
-product_24,Inverse solution-oriented website,SKU-24-402,Component,94.55
-product_25,Customizable bifurcated complexity,SKU-25-177,RawMaterial,71.45
-product_26,Re-engineered intangible policy,SKU-26-706,FinishedGood,85.82
-product_27,User-centric secondary analyzer,SKU-27-176,RawMaterial,135.28
-product_28,Open-source zero tolerance help-desk,SKU-28-465,Component,164.89
-product_29,Ergonomic motivating toolset,SKU-29-889,RawMaterial,45.75
-product_30,Vision-oriented radical time-frame,SKU-30-619,RawMaterial,138.14
-product_31,Self-enabling system-worthy infrastructure,SKU-31-538,RawMaterial,20.67
-product_32,Monitored disintermediate data-warehouse,SKU-32-407,FinishedGood,30.83
-product_33,Customizable exuding capacity,SKU-33-636,RawMaterial,13.52
-product_34,Decentralized 24/7 encryption,SKU-34-498,RawMaterial,117.37
-product_35,Triple-buffered encompassing service-desk,SKU-35-716,FinishedGood,39.75
-product_36,Advanced interactive function,SKU-36-771,Component,118.36
-product_37,Proactive asymmetric collaboration,SKU-37-382,Component,157.82
-product_38,Synergistic disintermediate infrastructure,SKU-38-732,Component,69.97
-product_39,Realigned asynchronous array,SKU-39-130,RawMaterial,40.26
-product_40,Cross-group static projection,SKU-40-406,RawMaterial,1.41
-product_41,Advanced clear-thinking utilization,SKU-41-480,FinishedGood,119.39
-product_42,Enhanced fault-tolerant archive,SKU-42-967,FinishedGood,109.39
-product_43,Robust value-added neural-net,SKU-43-335,RawMaterial,157.21
-product_44,Customer-focused hybrid strategy,SKU-44-882,Component,16.67
-product_45,Integrated homogeneous contingency,SKU-45-687,Component,120.91
-product_46,User-friendly mobile monitoring,SKU-46-456,Component,76.53
-product_47,Organized fresh-thinking workforce,SKU-47-773,RawMaterial,189.37
-product_48,Diverse directional flexibility,SKU-48-336,Component,196.71
-product_49,Persistent analyzing moderator,SKU-49-259,FinishedGood,97.9
-product_50,Diverse bandwidth-monitored instruction set,SKU-50-615,FinishedGood,68.17
-product_51,Object-based national hardware,SKU-51-405,Component,43.25
-product_52,Digitized motivating synergy,SKU-52-252,FinishedGood,120.89
-product_53,Phased stable toolset,SKU-53-783,FinishedGood,91.81
-product_54,Automated tertiary framework,SKU-54-635,Component,148.58
-product_55,Integrated bifurcated ability,SKU-55-858,FinishedGood,109.37
-product_56,Mandatory hybrid task-force,SKU-56-341,FinishedGood,136.1
-product_57,Function-based solution-oriented firmware,SKU-57-323,Component,115.6
-product_58,Centralized didactic core,SKU-58-944,FinishedGood,22.33
-product_59,Multi-lateral background structure,SKU-59-310,RawMaterial,142.44
-product_60,Integrated zero tolerance moratorium,SKU-60-414,FinishedGood,143.4
-product_61,Focused 24hour attitude,SKU-61-449,RawMaterial,114.26
-product_62,Extended 24hour archive,SKU-62-290,FinishedGood,46.66
-product_63,Decentralized 3rdgeneration Graphic Interface,SKU-63-383,RawMaterial,161.3
-product_64,Cross-platform attitude-oriented data-warehouse,SKU-64-666,FinishedGood,171.5
-product_65,Configurable fresh-thinking concept,SKU-65-810,FinishedGood,24.79
-product_66,Implemented scalable array,SKU-66-148,FinishedGood,10.95
-product_67,Total methodical analyzer,SKU-67-419,Component,78.95
-product_68,De-engineered fresh-thinking solution,SKU-68-257,FinishedGood,88.65
-product_69,Re-contextualized foreground Graphic Interface,SKU-69-978,FinishedGood,64.54
-product_70,Reduced attitude-oriented challenge,SKU-70-356,Component,12.5
-product_71,Synchronized 5thgeneration Local Area Network,SKU-71-652,RawMaterial,22.11
-product_72,Automated static parallelism,SKU-72-860,RawMaterial,198.03
-product_73,Re-engineered asynchronous policy,SKU-73-972,Component,61.08
-product_74,Exclusive intermediate middleware,SKU-74-310,Component,136.57
-product_75,Business-focused eco-centric capacity,SKU-75-199,Component,30.05
-product_76,Monitored full-range software,SKU-76-487,Component,181.65
-product_77,Streamlined static contingency,SKU-77-696,Component,156.31
-product_78,Cloned modular knowledge user,SKU-78-824,FinishedGood,132.94
-product_79,Proactive disintermediate monitoring,SKU-79-297,Component,50.63
-product_80,Visionary interactive process improvement,SKU-80-551,FinishedGood,121.06
-product_81,Inverse uniform definition,SKU-81-215,RawMaterial,66.79
-product_82,Ameliorated context-sensitive function,SKU-82-897,RawMaterial,117.78
-product_83,Centralized grid-enabled task-force,SKU-83-434,RawMaterial,128.26
-product_84,Seamless scalable time-frame,SKU-84-789,FinishedGood,29.88
-product_85,Organic full-range system engine,SKU-85-398,Component,177.63
-product_86,Polarized impactful knowledge user,SKU-86-318,FinishedGood,124.86
-product_87,De-engineered interactive functionalities,SKU-87-933,FinishedGood,18.89
-product_88,Focused solution-oriented concept,SKU-88-293,Component,72.22
-product_89,Monitored static middleware,SKU-89-947,Component,114.68
-product_90,Organic fault-tolerant implementation,SKU-90-144,FinishedGood,33.19
-product_91,Assimilated discrete intranet,SKU-91-961,FinishedGood,115.68
-product_92,Multi-channeled 24/7 function,SKU-92-331,Component,142.7
-product_93,Fully-configurable 24hour workforce,SKU-93-779,RawMaterial,23.03
-product_94,Customizable value-added adapter,SKU-94-402,FinishedGood,43.73
-product_95,Down-sized local process improvement,SKU-95-281,Component,130.09
-product_96,Advanced web-enabled conglomeration,SKU-96-200,RawMaterial,103.75
-product_97,Exclusive fresh-thinking initiative,SKU-97-349,RawMaterial,88.2
-product_98,Customer-focused maximized middleware,SKU-98-261,RawMaterial,186.54
-product_99,Reduced full-range budgetary management,SKU-99-784,Component,114.38
+product_0,Synchronized zero administration help-desk,SKU-0-573,Component,131.47
+product_1,Polarized 6thgeneration encoding,SKU-1-598,RawMaterial,62.74
+product_2,Organized zero-defect solution,SKU-2-484,FinishedGood,25.06
+product_3,Pre-emptive cohesive extranet,SKU-3-744,RawMaterial,40.86
+product_4,Open-source actuating focus group,SKU-4-334,RawMaterial,20.17
+product_5,Sharable dedicated access,SKU-5-172,Component,170.26
+product_6,Switchable stable Graphical User Interface,SKU-6-396,RawMaterial,103.93
+product_7,Persevering composite capability,SKU-7-277,RawMaterial,116.36
+product_8,Organic multi-tasking conglomeration,SKU-8-982,RawMaterial,113.71
+product_9,Mandatory 5thgeneration encryption,SKU-9-433,RawMaterial,5.61
+product_10,Profit-focused foreground paradigm,SKU-10-970,Component,4.96
+product_11,Stand-alone secondary migration,SKU-11-103,Component,125.98
+product_12,Profit-focused eco-centric definition,SKU-12-445,Component,29.99
+product_13,Exclusive bottom-line encoding,SKU-13-323,FinishedGood,179.4
+product_14,Realigned bandwidth-monitored customer loyalty,SKU-14-926,FinishedGood,158.71
+product_15,Ergonomic 4thgeneration methodology,SKU-15-270,Component,175.08
+product_16,Upgradable optimizing strategy,SKU-16-928,RawMaterial,188.2
+product_17,Inverse motivating capability,SKU-17-119,FinishedGood,47.5
+product_18,Synchronized analyzing collaboration,SKU-18-884,FinishedGood,83.97
+product_19,Switchable dedicated archive,SKU-19-731,RawMaterial,38.15
+product_20,Cross-group intermediate moderator,SKU-20-773,Component,181.58
+product_21,Distributed tangible monitoring,SKU-21-150,Component,198.35
+product_22,Versatile optimal time-frame,SKU-22-294,RawMaterial,174.21
+product_23,Operative background info-mediaries,SKU-23-902,Component,174.04
+product_24,Networked intermediate product,SKU-24-750,RawMaterial,170.67
+product_25,Assimilated object-oriented capability,SKU-25-361,Component,35.37
+product_26,Pre-emptive discrete neural-net,SKU-26-256,RawMaterial,155.0
+product_27,Cloned next generation structure,SKU-27-870,Component,146.13
+product_28,Optimized systematic data-warehouse,SKU-28-458,RawMaterial,35.68
+product_29,De-engineered heuristic collaboration,SKU-29-427,Component,173.65
+product_30,Ergonomic non-volatile access,SKU-30-827,Component,158.38
+product_31,Implemented heuristic product,SKU-31-656,Component,190.09
+product_32,Progressive directional support,SKU-32-188,FinishedGood,190.96
+product_33,Distributed discrete productivity,SKU-33-834,RawMaterial,9.18
+product_34,Configurable asymmetric data-warehouse,SKU-34-399,Component,58.67
+product_35,Digitized maximized success,SKU-35-249,FinishedGood,117.75
+product_36,Fundamental zero tolerance knowledge user,SKU-36-403,Component,118.01
+product_37,Business-focused interactive system engine,SKU-37-195,FinishedGood,192.13
+product_38,Persistent systemic contingency,SKU-38-540,RawMaterial,77.31
+product_39,Distributed tangible strategy,SKU-39-777,FinishedGood,40.33
+product_40,Business-focused human-resource superstructure,SKU-40-269,RawMaterial,7.43
+product_41,Devolved radical task-force,SKU-41-438,FinishedGood,46.53
+product_42,Polarized hybrid info-mediaries,SKU-42-757,FinishedGood,198.21
+product_43,Cloned context-sensitive moderator,SKU-43-575,RawMaterial,133.57
+product_44,Digitized background methodology,SKU-44-249,FinishedGood,33.82
+product_45,Proactive holistic service-desk,SKU-45-314,RawMaterial,42.8
+product_46,Proactive content-based approach,SKU-46-949,RawMaterial,88.77
+product_47,Universal asynchronous challenge,SKU-47-294,Component,147.86
+product_48,Adaptive local orchestration,SKU-48-827,Component,185.49
+product_49,Triple-buffered background instruction set,SKU-49-817,Component,193.53
+product_50,Realigned client-driven framework,SKU-50-658,RawMaterial,165.28
+product_51,Enhanced system-worthy knowledge user,SKU-51-846,Component,74.94
+product_52,Managed optimal pricing structure,SKU-52-217,RawMaterial,139.9
+product_53,Vision-oriented zero administration focus group,SKU-53-180,FinishedGood,120.56
+product_54,Re-engineered intermediate software,SKU-54-768,FinishedGood,21.13
+product_55,Automated transitional access,SKU-55-773,Component,157.11
+product_56,Implemented impactful portal,SKU-56-635,Component,110.55
+product_57,Synchronized grid-enabled paradigm,SKU-57-611,FinishedGood,25.88
+product_58,Persistent real-time Local Area Network,SKU-58-191,RawMaterial,32.46
+product_59,Polarized uniform definition,SKU-59-573,RawMaterial,87.51
+product_60,Open-source secondary circuit,SKU-60-839,Component,124.41
+product_61,Virtual maximized knowledge user,SKU-61-775,FinishedGood,108.25
+product_62,Multi-lateral mission-critical software,SKU-62-858,FinishedGood,33.05
+product_63,Quality-focused didactic attitude,SKU-63-138,RawMaterial,91.78
+product_64,Down-sized eco-centric support,SKU-64-687,Component,176.8
+product_65,Triple-buffered dynamic synergy,SKU-65-165,Component,58.5
+product_66,Horizontal coherent portal,SKU-66-282,RawMaterial,174.87
+product_67,Multi-layered discrete encryption,SKU-67-312,RawMaterial,198.35
+product_68,Monitored bandwidth-monitored firmware,SKU-68-843,FinishedGood,137.03
+product_69,Distributed high-level forecast,SKU-69-692,Component,150.81
+product_70,Configurable modular attitude,SKU-70-522,RawMaterial,2.93
+product_71,Fully-configurable exuding forecast,SKU-71-969,FinishedGood,42.58
+product_72,Stand-alone intermediate frame,SKU-72-269,RawMaterial,97.54
+product_73,Operative context-sensitive hardware,SKU-73-610,RawMaterial,187.8
+product_74,Self-enabling radical forecast,SKU-74-990,Component,143.94
+product_75,Secured solution-oriented installation,SKU-75-682,RawMaterial,189.49
+product_76,Synergized transitional Local Area Network,SKU-76-394,Component,102.25
+product_77,Horizontal systemic alliance,SKU-77-424,RawMaterial,114.24
+product_78,Robust explicit task-force,SKU-78-489,RawMaterial,4.06
+product_79,Optimized 4thgeneration Local Area Network,SKU-79-171,RawMaterial,162.13
+product_80,Switchable radical focus group,SKU-80-386,Component,34.89
+product_81,Multi-layered 6thgeneration system engine,SKU-81-261,Component,98.43
+product_82,Cloned actuating workforce,SKU-82-985,RawMaterial,100.23
+product_83,Polarized secondary success,SKU-83-992,RawMaterial,160.83
+product_84,Down-sized analyzing toolset,SKU-84-105,Component,28.48
+product_85,Vision-oriented solution-oriented alliance,SKU-85-935,FinishedGood,146.82
+product_86,Enterprise-wide static infrastructure,SKU-86-591,RawMaterial,10.57
+product_87,Secured neutral superstructure,SKU-87-367,RawMaterial,143.91
+product_88,Robust high-level Graphical User Interface,SKU-88-858,RawMaterial,114.39
+product_89,Adaptive global open system,SKU-89-541,RawMaterial,21.74
+product_90,Streamlined 24hour matrices,SKU-90-636,Component,155.79
+product_91,De-engineered exuding software,SKU-91-294,FinishedGood,164.83
+product_92,Synergistic neutral attitude,SKU-92-997,FinishedGood,174.68
+product_93,Digitized user-facing core,SKU-93-817,Component,51.75
+product_94,Open-architected object-oriented methodology,SKU-94-713,RawMaterial,152.33
+product_95,Focused optimizing instruction set,SKU-95-237,FinishedGood,157.66
+product_96,Multi-channeled zero administration moratorium,SKU-96-236,RawMaterial,74.4
+product_97,Up-sized 24/7 open architecture,SKU-97-221,RawMaterial,43.84
+product_98,Expanded cohesive portal,SKU-98-346,RawMaterial,103.7
+product_99,Programmable client-server interface,SKU-99-604,Component,85.39
+product_100,Distributed mobile throughput,SKU-100-911,Component,165.2
+product_101,Organic optimizing data-warehouse,SKU-101-301,FinishedGood,32.5
+product_102,Reverse-engineered zero administration productivity,SKU-102-464,Component,139.07
+product_103,Polarized coherent infrastructure,SKU-103-442,Component,26.46
+product_104,Extended 4thgeneration capacity,SKU-104-898,Component,173.91
+product_105,Re-engineered high-level moderator,SKU-105-445,FinishedGood,31.1
+product_106,Persistent zero-defect protocol,SKU-106-640,Component,161.91
+product_107,Distributed 24/7 data-warehouse,SKU-107-229,FinishedGood,4.02
+product_108,Multi-lateral user-facing intranet,SKU-108-721,Component,147.86
+product_109,Re-engineered optimal benchmark,SKU-109-656,Component,17.88
+product_110,Switchable demand-driven synergy,SKU-110-956,RawMaterial,89.74
+product_111,Cross-group uniform firmware,SKU-111-982,RawMaterial,174.47
+product_112,Automated human-resource standardization,SKU-112-314,RawMaterial,113.04
+product_113,Ameliorated value-added model,SKU-113-720,Component,135.94
+product_114,Enhanced high-level hardware,SKU-114-494,Component,100.16
+product_115,Decentralized fresh-thinking definition,SKU-115-767,FinishedGood,162.64
+product_116,Virtual empowering open system,SKU-116-707,Component,69.16
+product_117,User-centric 6thgeneration Graphical User Interface,SKU-117-952,FinishedGood,128.74
+product_118,Networked bottom-line collaboration,SKU-118-433,RawMaterial,89.35
+product_119,Persevering composite benchmark,SKU-119-599,Component,142.8
+product_120,Distributed optimizing encryption,SKU-120-231,FinishedGood,183.35
+product_121,Face-to-face client-driven concept,SKU-121-695,Component,31.79
+product_122,Ameliorated 5thgeneration knowledgebase,SKU-122-352,RawMaterial,9.29
+product_123,Mandatory exuding implementation,SKU-123-812,RawMaterial,155.82
+product_124,Synergized 3rdgeneration hub,SKU-124-649,RawMaterial,165.81
+product_125,Visionary coherent conglomeration,SKU-125-368,Component,34.31
+product_126,Down-sized exuding moderator,SKU-126-779,Component,176.01
+product_127,Multi-lateral non-volatile groupware,SKU-127-899,RawMaterial,8.29
+product_128,Fully-configurable explicit Local Area Network,SKU-128-313,RawMaterial,100.92
+product_129,Customizable even-keeled ability,SKU-129-784,FinishedGood,135.89
+product_130,Face-to-face encompassing moratorium,SKU-130-871,RawMaterial,122.24
+product_131,Inverse composite collaboration,SKU-131-605,FinishedGood,15.53
+product_132,Centralized leadingedge budgetary management,SKU-132-760,FinishedGood,15.52
+product_133,Quality-focused client-server secured line,SKU-133-994,Component,88.18
+product_134,Virtual well-modulated projection,SKU-134-275,FinishedGood,45.07
+product_135,Triple-buffered full-range open system,SKU-135-633,Component,62.5
+product_136,Multi-lateral system-worthy intranet,SKU-136-889,Component,48.02
+product_137,Expanded fresh-thinking core,SKU-137-522,FinishedGood,141.1
+product_138,Stand-alone 24hour knowledge user,SKU-138-128,RawMaterial,177.8
+product_139,Multi-channeled transitional throughput,SKU-139-236,FinishedGood,89.95
+product_140,Proactive global encryption,SKU-140-195,Component,184.25
+product_141,Grass-roots user-facing leverage,SKU-141-939,Component,22.32
+product_142,Reverse-engineered dedicated customer loyalty,SKU-142-955,Component,156.43
+product_143,Grass-roots analyzing standardization,SKU-143-503,Component,182.98
+product_144,Extended multi-tasking circuit,SKU-144-955,RawMaterial,147.25
+product_145,Ergonomic hybrid neural-net,SKU-145-181,FinishedGood,34.94
+product_146,Cross-group exuding process improvement,SKU-146-420,FinishedGood,72.82
+product_147,Customer-focused clear-thinking encoding,SKU-147-671,Component,99.63
+product_148,Fully-configurable optimizing encryption,SKU-148-247,Component,81.49
+product_149,User-centric zero administration success,SKU-149-930,FinishedGood,93.2
+product_150,Focused encompassing orchestration,SKU-150-914,RawMaterial,25.91
+product_151,Triple-buffered radical Graphic Interface,SKU-151-627,FinishedGood,87.59
+product_152,Triple-buffered incremental collaboration,SKU-152-896,FinishedGood,1.89
+product_153,Enterprise-wide coherent methodology,SKU-153-254,FinishedGood,8.86
+product_154,Sharable logistical synergy,SKU-154-616,RawMaterial,107.8
+product_155,Vision-oriented attitude-oriented hierarchy,SKU-155-472,Component,105.63
+product_156,Profit-focused system-worthy knowledge user,SKU-156-365,RawMaterial,57.6
+product_157,Integrated even-keeled portal,SKU-157-341,FinishedGood,109.51
+product_158,Open-source logistical artificial intelligence,SKU-158-424,Component,187.43
+product_159,Switchable zero tolerance service-desk,SKU-159-817,FinishedGood,141.96
+product_160,Customizable analyzing strategy,SKU-160-895,RawMaterial,159.5
+product_161,Digitized bi-directional Local Area Network,SKU-161-940,Component,27.61
+product_162,Focused incremental service-desk,SKU-162-702,FinishedGood,106.28
+product_163,Configurable interactive flexibility,SKU-163-768,RawMaterial,38.3
+product_164,Ameliorated 4thgeneration info-mediaries,SKU-164-397,Component,93.4
+product_165,User-friendly multi-state help-desk,SKU-165-271,Component,115.78
+product_166,Robust executive knowledge user,SKU-166-880,Component,94.68
+product_167,Synchronized context-sensitive frame,SKU-167-557,RawMaterial,101.11
+product_168,Decentralized methodical capacity,SKU-168-768,FinishedGood,141.99
+product_169,Sharable encompassing budgetary management,SKU-169-117,FinishedGood,148.77
+product_170,Vision-oriented zero-defect throughput,SKU-170-382,Component,189.69
+product_171,Realigned neutral extranet,SKU-171-140,FinishedGood,55.81
+product_172,Quality-focused zero tolerance paradigm,SKU-172-462,RawMaterial,44.39
+product_173,User-friendly eco-centric protocol,SKU-173-699,Component,109.0
+product_174,Re-engineered explicit Graphic Interface,SKU-174-150,FinishedGood,176.71
+product_175,Customer-focused system-worthy application,SKU-175-769,Component,134.92
+product_176,Total background customer loyalty,SKU-176-992,RawMaterial,105.14
+product_177,Optional radical encryption,SKU-177-387,FinishedGood,1.4
+product_178,Fully-configurable radical alliance,SKU-178-302,RawMaterial,60.14
+product_179,Decentralized cohesive collaboration,SKU-179-892,Component,182.99
+product_180,Diverse demand-driven pricing structure,SKU-180-248,Component,163.55
+product_181,Secured dynamic solution,SKU-181-845,RawMaterial,122.49
+product_182,Integrated analyzing architecture,SKU-182-704,FinishedGood,191.34
+product_183,Balanced systematic collaboration,SKU-183-965,RawMaterial,29.0
+product_184,User-centric holistic infrastructure,SKU-184-232,RawMaterial,176.27
+product_185,Reactive leadingedge installation,SKU-185-333,RawMaterial,198.89
+product_186,User-centric zero administration matrix,SKU-186-382,FinishedGood,59.56
+product_187,Managed human-resource data-warehouse,SKU-187-510,FinishedGood,113.47
+product_188,Enterprise-wide coherent open architecture,SKU-188-639,FinishedGood,112.43
+product_189,Horizontal client-driven capability,SKU-189-315,Component,109.18
+product_190,Networked incremental paradigm,SKU-190-972,Component,129.53
+product_191,Proactive dedicated website,SKU-191-255,FinishedGood,54.03
+product_192,Decentralized stable standardization,SKU-192-143,FinishedGood,122.06
+product_193,Mandatory regional extranet,SKU-193-108,FinishedGood,141.82
+product_194,Horizontal context-sensitive attitude,SKU-194-561,Component,77.55
+product_195,Persevering modular complexity,SKU-195-821,Component,111.92
+product_196,Fundamental attitude-oriented neural-net,SKU-196-221,FinishedGood,74.5
+product_197,Distributed zero administration extranet,SKU-197-237,Component,46.09
+product_198,Reduced 6thgeneration knowledge user,SKU-198-991,RawMaterial,44.04
+product_199,Cross-platform empowering policy,SKU-199-320,RawMaterial,110.9
+product_200,Down-sized 4thgeneration task-force,SKU-200-444,RawMaterial,85.02
+product_201,Multi-channeled coherent conglomeration,SKU-201-388,Component,1.16
+product_202,Innovative non-volatile matrix,SKU-202-919,RawMaterial,189.16
+product_203,Open-source bottom-line extranet,SKU-203-757,FinishedGood,136.05
+product_204,User-centric static success,SKU-204-463,FinishedGood,151.94
+product_205,Advanced grid-enabled utilization,SKU-205-597,RawMaterial,11.2
+product_206,Inverse human-resource alliance,SKU-206-678,Component,17.83
+product_207,Organized analyzing protocol,SKU-207-143,FinishedGood,82.81
+product_208,Synergized transitional alliance,SKU-208-311,RawMaterial,92.21
+product_209,Operative mission-critical hardware,SKU-209-226,Component,38.61
+product_210,Operative stable knowledgebase,SKU-210-263,FinishedGood,168.09
+product_211,Grass-roots bifurcated utilization,SKU-211-378,Component,4.15
+product_212,Re-engineered next generation matrices,SKU-212-797,FinishedGood,133.03
+product_213,Pre-emptive human-resource strategy,SKU-213-947,RawMaterial,84.53
+product_214,Future-proofed uniform ability,SKU-214-547,Component,35.65
+product_215,Devolved leadingedge hardware,SKU-215-940,FinishedGood,192.48
+product_216,Diverse didactic concept,SKU-216-507,Component,168.72
+product_217,Adaptive dynamic firmware,SKU-217-107,RawMaterial,90.47
+product_218,Function-based cohesive paradigm,SKU-218-632,FinishedGood,191.35
+product_219,Proactive exuding capability,SKU-219-952,FinishedGood,36.69
+product_220,Integrated responsive pricing structure,SKU-220-476,Component,122.64
+product_221,Versatile eco-centric model,SKU-221-106,Component,163.45
+product_222,Ergonomic high-level instruction set,SKU-222-318,RawMaterial,166.28
+product_223,Compatible stable matrices,SKU-223-864,Component,184.53
+product_224,Reverse-engineered static superstructure,SKU-224-972,Component,184.71
+product_225,Inverse leadingedge help-desk,SKU-225-534,RawMaterial,46.1
+product_226,User-centric didactic open system,SKU-226-356,Component,151.41
+product_227,Face-to-face analyzing strategy,SKU-227-679,RawMaterial,137.53
+product_228,Balanced intermediate database,SKU-228-749,Component,54.77
+product_229,Switchable national definition,SKU-229-665,Component,99.76
+product_230,Networked empowering encoding,SKU-230-616,RawMaterial,21.49
+product_231,Open-source composite extranet,SKU-231-458,FinishedGood,187.2
+product_232,Extended multi-tasking matrices,SKU-232-806,Component,192.04
+product_233,Face-to-face mobile leverage,SKU-233-891,FinishedGood,114.05
+product_234,De-engineered regional product,SKU-234-694,Component,137.07
+product_235,Organized national parallelism,SKU-235-757,FinishedGood,80.49
+product_236,Fully-configurable bifurcated implementation,SKU-236-204,Component,65.42
+product_237,Multi-layered zero administration encoding,SKU-237-718,Component,50.43
+product_238,Team-oriented systemic collaboration,SKU-238-599,FinishedGood,54.76
+product_239,Right-sized tertiary benchmark,SKU-239-349,RawMaterial,173.88
+product_240,Digitized dynamic emulation,SKU-240-495,Component,24.69
+product_241,Fully-configurable multi-tasking synergy,SKU-241-854,FinishedGood,165.75
+product_242,Reverse-engineered tertiary Graphic Interface,SKU-242-895,Component,153.82
+product_243,Synchronized contextually-based Graphical User Interface,SKU-243-403,RawMaterial,150.96
+product_244,User-centric disintermediate Local Area Network,SKU-244-566,FinishedGood,177.83
+product_245,Virtual executive productivity,SKU-245-476,FinishedGood,30.82
+product_246,Assimilated executive budgetary management,SKU-246-655,FinishedGood,38.77
+product_247,Balanced context-sensitive hierarchy,SKU-247-684,RawMaterial,75.75
+product_248,Synergized holistic interface,SKU-248-131,RawMaterial,87.11
+product_249,Secured coherent paradigm,SKU-249-853,FinishedGood,179.16
