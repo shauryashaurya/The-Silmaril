@@ -43,10 +43,10 @@ classDiagram
     Actor --|> Person    
     Director --|> Person    
 	
-    Movie *--o Actor : hasActor  
-    Movie *--o Director : hasDirector  
-    Movie *--o Genre : belongsToGenre  
-    Actor --o Character : playsCharacter  
+	Movie "1" --> "1..*" Actor : Association (hasActor)
+    Movie "1" --> "1..*" Director : Association (hasDirector)
+    Movie "1" --> "1..*" Genre : Association (belongsToGenre)
+    Actor "1" --> "1" Character : Association (playsCharacter)
 ```         
                     
 ```UML                    
