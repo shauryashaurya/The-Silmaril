@@ -19,7 +19,7 @@ Practice **#ontology engineering** with Python (and other languages).
 ### Getting more 'real-world' now        
       
 These are a bit more complex, but we are still treating these datasets as relational, object-oriented representations of the domain.       
-In later ontologies, we will leverage the "connected" nature of Ontologies for data analysis.    
+In later examples/exercises, we will leverage the "connected" nature of Ontologies for data analysis.    
       
 3. [Supply Chain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o3)      
 4. [Insurance](https://github.com/shauryashaurya/The-Silmaril/tree/main/o4)       

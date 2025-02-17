@@ -1,31 +1,31 @@
 id,supplierName,location,rating,manufacturerIDs
-supplier_0,"Williams, Boyd and Martin",Ramosshire,2.87,"['manufacturer_11', 'manufacturer_0']"
-supplier_1,Bryant Group,North Robertbury,3.72,"['manufacturer_15', 'manufacturer_17']"
-supplier_2,Anderson-Arnold,South Christinaberg,2.41,"['manufacturer_1', 'manufacturer_10']"
-supplier_3,"Ruiz, Curry and Miller",West Kimberlyshire,2.93,"['manufacturer_3', 'manufacturer_11']"
-supplier_4,Williams Ltd,Davisberg,3.47,"['manufacturer_3', 'manufacturer_13']"
-supplier_5,Mcneil-Jordan,Jefferychester,3.86,"['manufacturer_19', 'manufacturer_15']"
-supplier_6,"Wells, Jordan and Davis",New Rachel,2.63,"['manufacturer_16', 'manufacturer_10']"
-supplier_7,Melendez LLC,Burkeburgh,2.6,"['manufacturer_0', 'manufacturer_14', 'manufacturer_19']"
-supplier_8,"Galloway, Scott and White",New Natashashire,4.34,"['manufacturer_16', 'manufacturer_2']"
-supplier_9,"Beasley, Lewis and Palmer",Blackwellborough,4.3,"['manufacturer_17', 'manufacturer_5', 'manufacturer_19']"
-supplier_10,Jones-Cook,Lauraborough,3.48,"['manufacturer_19', 'manufacturer_17', 'manufacturer_4']"
-supplier_11,Mccoy LLC,New Shannonland,3.68,"['manufacturer_16', 'manufacturer_10', 'manufacturer_15']"
-supplier_12,Mccullough and Sons,Hogantown,3.89,"['manufacturer_11', 'manufacturer_9']"
-supplier_13,Cooper Ltd,Port Samuelchester,4.63,"['manufacturer_13', 'manufacturer_12']"
-supplier_14,Brown and Sons,Williamsberg,3.48,"['manufacturer_12', 'manufacturer_5', 'manufacturer_19']"
-supplier_15,"Howard, Potts and Diaz",Matthewfort,2.0,"['manufacturer_13', 'manufacturer_1']"
-supplier_16,"George, Davis and Duncan",Jessicaborough,2.63,"['manufacturer_11', 'manufacturer_5']"
-supplier_17,Gray-Erickson,Michaelview,4.81,"['manufacturer_5', 'manufacturer_15']"
-supplier_18,"Andersen, Campbell and Boyer",North Lawrence,2.45,"['manufacturer_4', 'manufacturer_14', 'manufacturer_16']"
-supplier_19,Kerr-Bradford,Lake Sandra,4.68,"['manufacturer_7', 'manufacturer_6', 'manufacturer_14']"
-supplier_20,"Richardson, Cruz and Martin",Petersonland,3.35,['manufacturer_19']
-supplier_21,Hall-Mayer,Port Savannahtown,3.2,"['manufacturer_13', 'manufacturer_11']"
-supplier_22,Andrews-Anderson,West Sharonshire,2.34,"['manufacturer_16', 'manufacturer_4', 'manufacturer_12']"
-supplier_23,Dunlap-Chang,Jaredhaven,2.31,"['manufacturer_17', 'manufacturer_6']"
-supplier_24,"Bauer, Thomas and Crawford",Johnside,3.22,['manufacturer_3']
-supplier_25,Rogers-Wood,South Lisamouth,2.7,"['manufacturer_16', 'manufacturer_12', 'manufacturer_5']"
-supplier_26,"Jackson, Harris and Cohen",Jesseshire,4.61,"['manufacturer_6', 'manufacturer_19', 'manufacturer_8']"
-supplier_27,Smith-Matthews,North Williamfurt,5.0,['manufacturer_12']
-supplier_28,Perez-Wiley,Lake Deborah,2.84,"['manufacturer_18', 'manufacturer_8']"
-supplier_29,"Chen, Elliott and Pratt",Pricemouth,3.76,"['manufacturer_18', 'manufacturer_17']"
+supplier_0,Lee Ltd,East Annette,4.13,['manufacturer_1']
+supplier_1,Butler PLC,East Veronicaberg,4.71,['manufacturer_6']
+supplier_2,Schneider-Gross,West Randallfort,3.39,"['manufacturer_4', 'manufacturer_10']"
+supplier_3,"Webb, Smith and Gonzalez",Barbaraport,4.04,"['manufacturer_2', 'manufacturer_19']"
+supplier_4,"Scott, Yoder and Flores",Gravesfurt,2.49,"['manufacturer_3', 'manufacturer_14']"
+supplier_5,Woods-Cole,Turnerfurt,2.45,"['manufacturer_13', 'manufacturer_3']"
+supplier_6,Bates PLC,West Taratown,3.7,['manufacturer_18']
+supplier_7,"Mendoza, Rose and Barker",West Jason,3.4,['manufacturer_0']
+supplier_8,"Rogers, Espinoza and Goodwin",North Trevor,4.02,"['manufacturer_15', 'manufacturer_5']"
+supplier_9,Cantu Inc,Jasonside,2.75,"['manufacturer_14', 'manufacturer_15', 'manufacturer_9']"
+supplier_10,"Stephens, Berry and Medina",Nunezport,3.62,"['manufacturer_8', 'manufacturer_19']"
+supplier_11,Reyes Ltd,North Alison,4.52,"['manufacturer_18', 'manufacturer_11', 'manufacturer_2']"
+supplier_12,Morris-Bell,Clarkestad,3.73,['manufacturer_8']
+supplier_13,Hendricks Group,South Melissa,4.34,"['manufacturer_14', 'manufacturer_4', 'manufacturer_10']"
+supplier_14,Weaver-Phillips,North Kathrynville,2.62,"['manufacturer_5', 'manufacturer_18', 'manufacturer_2']"
+supplier_15,Chan-Brown,East Toddburgh,2.11,['manufacturer_11']
+supplier_16,Jennings and Sons,Elizabethfurt,3.82,"['manufacturer_15', 'manufacturer_8']"
+supplier_17,Maddox-Johnson,Stevensshire,4.91,"['manufacturer_12', 'manufacturer_8']"
+supplier_18,"Aguilar, Page and Alexander",New Lauren,2.38,"['manufacturer_19', 'manufacturer_12', 'manufacturer_2']"
+supplier_19,"Taylor, Lambert and Ortiz",Gomezhaven,4.06,"['manufacturer_11', 'manufacturer_3', 'manufacturer_17']"
+supplier_20,"Deleon, Smith and Huerta",Alexanderview,3.06,"['manufacturer_7', 'manufacturer_17']"
+supplier_21,Curtis-Nguyen,Zhangbury,2.79,"['manufacturer_14', 'manufacturer_6']"
+supplier_22,"White, Price and Kelly",Lake Dawn,2.71,"['manufacturer_17', 'manufacturer_10']"
+supplier_23,"Matthews, White and Branch",Lemouth,4.53,['manufacturer_15']
+supplier_24,Singleton Inc,Lake Veronicabury,2.6,"['manufacturer_17', 'manufacturer_10', 'manufacturer_9']"
+supplier_25,"Rose, Mcintyre and Hill",Port Travis,3.25,"['manufacturer_15', 'manufacturer_18', 'manufacturer_16']"
+supplier_26,Blackburn-Moore,Halemouth,2.43,['manufacturer_8']
+supplier_27,Spencer and Sons,Port Stephanie,3.09,['manufacturer_9']
+supplier_28,Walter Inc,Baileyborough,4.51,"['manufacturer_10', 'manufacturer_4']"
+supplier_29,"Wheeler, Watson and Shelton",Lake Robertton,2.66,"['manufacturer_19', 'manufacturer_6', 'manufacturer_5']"

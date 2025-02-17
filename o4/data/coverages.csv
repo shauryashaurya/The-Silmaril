@@ -1,16 +1,16 @@
 id,coverageName,coverageLimit,deductible
-coverage_0,Vandalism Coverage,57165.0,1025.0
-coverage_1,Uninsured Motorist,133844.0,45.0
-coverage_2,Uninsured Motorist,82796.0,381.0
-coverage_3,Theft Coverage,102344.0,2720.0
-coverage_4,Vandalism Coverage,5176.0,1131.0
-coverage_5,Comprehensive Coverage,192749.0,1929.0
-coverage_6,Loss of Use,10138.0,59.0
-coverage_7,Bodily Injury Liability,482191.0,427.0
-coverage_8,Property Damage Liability,221703.0,401.0
-coverage_9,Uninsured Motorist,174557.0,317.0
-coverage_10,Property Damage Liability,112654.0,482.0
-coverage_11,Fire Coverage,104975.0,2183.0
-coverage_12,Bodily Injury Liability,449275.0,424.0
-coverage_13,Personal Injury Protection,24580.0,44.0
-coverage_14,Fire Coverage,12915.0,1553.0
+coverage_0,Personal Injury Protection,20779.0,171.0
+coverage_1,Flood Coverage,210746.0,1523.0
+coverage_2,Bodily Injury Liability,136070.0,278.0
+coverage_3,Wind/Hail Coverage,126245.0,3995.0
+coverage_4,Personal Injury Protection,35573.0,14.0
+coverage_5,Theft Coverage,139654.0,2262.0
+coverage_6,Personal Property,62151.0,831.0
+coverage_7,Theft Coverage,140360.0,1895.0
+coverage_8,Uninsured Motorist,44952.0,488.0
+coverage_9,Underinsured Motorist,109843.0,493.0
+coverage_10,Underinsured Motorist,79623.0,464.0
+coverage_11,Theft Coverage,35090.0,2241.0
+coverage_12,Collision Coverage,96394.0,1295.0
+coverage_13,Bodily Injury Liability,161804.0,372.0
+coverage_14,Personal Injury Protection,23807.0,4.0
