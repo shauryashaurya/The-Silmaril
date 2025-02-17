@@ -8,10 +8,10 @@ classDiagram
         -duration : int                
         -releaseDate : date        
 		%% Object Properties    
-        +performedBy *--| Artist : many-to-one                
-        +featuredOn o--| Album                
-        +hasGenre *--| Genre                
-        +hasWonAward *--o Award                
+        +performedBy 1--* Artist : one-to-many                
+        +featuredOn o--1 Album  : one-to-one               
+        +hasGenre 1--* Genre  : one-to-many               
+        +hasWonAward o--1 Award   : one-to-many              
     }                
                 
     class Artist {                
@@ -20,7 +20,7 @@ classDiagram
         -birthDate : date                
         -nationality : string                
 		%% Object Properties    
-        +signedTo o--| RecordLabel                
+        +signedTo o--1 RecordLabel                
     }                
                 
     class Album {                
@@ -28,7 +28,7 @@ classDiagram
         -title : string                
         -releaseYear : int                
 		%% Object Properties    
-        +hasGenre *--| Genre                
+        +hasGenre *--1 Genre                
     }                
                 
   class RecordLabel{                
@@ -60,15 +60,15 @@ classDiagram
 		-numberOfTracks : int                
   }                
                 
-    Song *--| Artist : Association (performedBy)    
-    Song o--| Album : Association (featuredOn)    
-    Song *--| Genre : Association (hasGenre)    
-    Song *--o Award : Association (hasWonAward)    
-    Artist o--| RecordLabel : Association (signedTo)    
-    Album *--| Genre : Association (hasGenre)    
-    Album *--| Artist : Association (releasedBy)    
-    Album *--| RecordLabel : Association (releasedBy)    
-    Artist *--o Award : Association (hasWonAward)    
+    Song "1" --> "*" Artist : Association (performedBy)    
+    Song "1" --> "*" Album : Association (featuredOn)    
+    Song "1" --> "*" Genre : Association (hasGenre)    
+    Song "1" --> "*" Award : Association (hasWonAward)    
+    Artist "1" --> "1" RecordLabel : Association (signedTo)    
+    Album "1" --> "*" Genre : Association (hasGenre)    
+    Album "1" --> "*" Artist : Association (releasedBy)    
+    Album "1" --> "1" RecordLabel : Association (releasedBy)    
+    Artist "1" --> "*" Award : Association (hasWonAward)    
         
     Single --|> Song : Inheritance    
     ExtendedPlay --|> Album : Inheritance               
