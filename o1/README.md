@@ -100,7 +100,8 @@ The hierarchical part is fairly straightforward here:
 
 (Note from Object Oriented Programming: `Actor` and `Director` can be separate classes, but a typical approach is to keep them as sub-classes of `Person` to unify common properties such as name, birthDate, etc.)
     
-Movies can be multi-genre, so we will allow one movie to link to multiple genres.
+Movies can be multi-genre, so we will allow one movie to link to multiple genres.  
+  
 ---
 
 ## Alternative approach to creating Ontology #1: Movie Domain
@@ -198,6 +199,6 @@ classDiagram
    - **Add cardinalities or restrictions** (e.g., a movie must have at least 1 director).
 
 3. **Apply to Any Domain**: The same approach—brainstorming nouns, verbs, and descriptors—applies universally (e.g., Supply Chain, Insurance, Construction, Manufacturing). Always ask:    
-   - **Which “things” (classes) do I need?**    
+   - **Which “things” (classes) do we need?**    
    - **How do those things interact or relate (relationships)?**    
    - **What descriptive attributes do they have (data properties)?**    
