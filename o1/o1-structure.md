@@ -1,59 +1,54 @@
 # Draft Ontology Structure    
       
 ```mermaid      
-classDiagram    
-    class Movie {    
-        -title : string    
-        -releaseYear : int    
-        -duration : int    
-        -rating : float    
-        +hasActor --> Actor    
-        +hasDirector --> Director    
-        +belongsToGenre --> Genre    
-    }    
-    note for Movie "Properties (data):\n- title : string\n- releaseYear : integer\n- duration : integer\n- rating : float\nProperties (object):\n- hasActor -> Actor\n- hasDirector -> Director\n- belongsToGenre -> Genre"    
+classDiagram
+    class Movie {
+        -title : string
+        -releaseYear : int
+        -duration : int
+        -rating : float
+        +hasActor --> Actor
+        +hasDirector --> Director
+        +belongsToGenre --> Genre
+    }
     
-    class Person {    
-        -name : string    
-        -birthDate : date    
-    }    
-    note for Person "Properties (data):\n- name : string\n- birthDate : date"    
+    class Person {
+        -name : string
+        -birthDate : date
+    }
     
-    class Actor {    
-        +playsCharacter --> Character    
-    }    
-    note for Actor "Properties (object):\n- playsCharacter -> Character"    
+    class Actor {
+        +playsCharacter --> Character
+    }
     
-    class Director {    
-    }    
-    note for Director "(no special object property here, but reuses name/birthDate)"    
+    class Director {
+    }
+    note for Director "(no special object property here, but reuses name/birthDate)"
     
-    class Character {    
-        -name : string    
-    }    
-    note for Character "Properties (data):\n- name : string"    
+    class Character {
+        -name : string
+    }
+   
+    class Genre {
+        -name : string
+    }
     
-    class Genre {    
-        -name : string    
-    }    
-    note for Genre "Properties (data):\n- name : string"    
-    
-    Actor --|> Person : subclassOf    
-    Director --|> Person : subclassOf    
-    
-    classDef baseClass fill:#f9f6ee,stroke:#666,stroke-width:2px;    
-    classDef subClass1 fill:#ccf,stroke:#666,stroke-width:2px;    
-    classDef subClass2 fill:#cff,stroke:#666,stroke-width:2px;    
-    classDef other1 fill:#fcf,stroke:#666,stroke-width:2px;    
-    classDef other2 fill:#ffc,stroke:#666,stroke-width:2px;    
-    classDef other3 fill:#fcc,stroke:#666,stroke-width:2px;    
-    
-    class Person baseClass    
-    class Actor subClass1    
-    class Director subClass2    
-    class Movie other1    
-    class Character other2    
-    class Genre other3    
+    Actor --|> Person : subclassOf
+    Director --|> Person : subclassOf
+
+    classDef baseClass fill:#f9f6ee,stroke:#666,stroke-width:2px
+    classDef subClass1 fill:#ccf,stroke:#666,stroke-width:2px
+    classDef subClass2 fill:#cff,stroke:#666,stroke-width:2px
+    classDef other1 fill:#fcf,stroke:#666,stroke-width:2px
+    classDef other2 fill:#ffc,stroke:#666,stroke-width:2px
+    classDef other3 fill:#fcc,stroke:#666,stroke-width:2px
+
+    class Person baseClass
+    class Actor subClass1
+    class Director subClass2
+    class Movie other1
+    class Character other2
+    class Genre other3
 ```    
     
 ```UML    
