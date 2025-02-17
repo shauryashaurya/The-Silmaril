@@ -1,0 +1,101 @@
+id,name,birthDate,nationality,labelID
+artist_0,George Rivera,1997-05-15,Saint Vincent and the Grenadines,
+artist_1,Robert Carter,1994-01-11,Zimbabwe,
+artist_2,Jesse Taylor,1987-09-12,Philippines,label_10
+artist_3,Kayla Gaines,1967-03-02,Morocco,label_17
+artist_4,Randy Phillips,1972-11-05,Cambodia,
+artist_5,Wendy Mason,1970-03-18,Mauritius,
+artist_6,Anne Drake,1959-08-10,Tanzania,label_10
+artist_7,Jeffrey Cox,2006-02-18,Congo,label_24
+artist_8,Jesse Wright,1986-03-17,Martinique,
+artist_9,Kristen Moore,1989-05-15,Greece,
+artist_10,Jason Forbes,1962-06-03,Sudan,
+artist_11,Angel Lutz,1998-01-07,Tanzania,label_21
+artist_12,Sergio Patton,1963-05-06,Montserrat,
+artist_13,Matthew Peterson,1971-08-15,Serbia,label_21
+artist_14,Daisy Roberson,1978-01-03,Afghanistan,label_9
+artist_15,Michele Ortiz,1985-03-03,Portugal,
+artist_16,John Robinson,1999-12-20,Iceland,
+artist_17,Dr. Tiffany Hall,1958-06-04,Hungary,label_3
+artist_18,Justin Carroll,1956-03-01,Greece,
+artist_19,James Bennett,1979-03-09,Djibouti,
+artist_20,Meagan Moody,1955-03-30,Maldives,label_18
+artist_21,Anita Castillo,1983-07-14,Taiwan,label_1
+artist_22,Tommy Austin,1972-07-27,Jordan,label_7
+artist_23,Andrew Smith,1991-04-16,Japan,
+artist_24,Karla Nunez MD,1994-12-07,Switzerland,
+artist_25,Brenda Fernandez,1999-04-17,Liberia,
+artist_26,Timothy Stark II,2001-11-21,Bahrain,
+artist_27,Craig Stone,1996-12-11,United States of America,
+artist_28,Mr. George Phillips,1960-08-30,Congo,
+artist_29,Tanya Weber,1956-04-20,Mali,
+artist_30,Ann Fox,1962-05-09,India,label_15
+artist_31,Kathy Morales,1955-10-12,Iceland,
+artist_32,Victor Brown,2001-11-29,Armenia,label_5
+artist_33,Lisa Burns MD,1966-08-11,French Southern Territories,
+artist_34,Daniel Crawford,1992-03-30,New Caledonia,
+artist_35,Crystal Martin,1990-11-04,Malawi,
+artist_36,Charles Costa,1977-09-13,India,
+artist_37,William Daniels,1956-06-03,Somalia,label_15
+artist_38,Justin Lewis DDS,2000-12-13,El Salvador,label_24
+artist_39,Heather Barnett,1972-02-27,Ethiopia,
+artist_40,Logan Duncan,2004-05-10,Bolivia,label_4
+artist_41,Dawn Lewis,1977-05-28,United States Virgin Islands,
+artist_42,Michael Marsh,2005-07-31,Bulgaria,label_0
+artist_43,Jessica Lopez,2004-02-15,Mexico,
+artist_44,Nathaniel Hurley,1961-01-31,Iran,label_6
+artist_45,Jenna Lam,1963-02-07,Morocco,
+artist_46,Stephanie Beck,1955-12-18,Senegal,label_0
+artist_47,Emily Austin,1957-12-15,Bermuda,label_24
+artist_48,Laura Galvan,1962-08-02,Malaysia,
+artist_49,Beth Romero,2005-12-31,Saint Kitts and Nevis,label_3
+artist_50,Nathan Velasquez,1959-05-09,Japan,
+artist_51,Justin Sherman,1965-10-11,Grenada,label_12
+artist_52,Mrs. Dawn Cox,1963-09-04,British Virgin Islands,
+artist_53,Brittany Harris,2006-12-20,Taiwan,
+artist_54,Jonathan Davis,1991-07-02,Isle of Man,
+artist_55,Jeff Wheeler,2006-09-13,Switzerland,label_13
+artist_56,Melissa Rice,1995-10-07,Montenegro,
+artist_57,Lindsay Bentley,1995-12-04,Isle of Man,label_7
+artist_58,Brenda Kim,2004-04-08,Cyprus,label_17
+artist_59,Julie Jackson,1992-06-28,Indonesia,label_23
+artist_60,Michael Maldonado,1985-09-21,Czech Republic,label_4
+artist_61,William Mitchell,1963-04-06,Slovenia,label_1
+artist_62,Brian Love,1967-01-27,Slovenia,label_6
+artist_63,Kelly Henry,1967-01-16,Marshall Islands,label_10
+artist_64,Benjamin Schmidt,1995-04-20,Mayotte,
+artist_65,Johnathan Rice,1977-03-24,Slovakia (Slovak Republic),
+artist_66,Jennifer Day,1964-09-09,Macao,label_3
+artist_67,Jeffery Little,1960-05-30,Bhutan,
+artist_68,Laura Hill,1958-11-18,Australia,label_10
+artist_69,Diana Clark,1980-04-22,Trinidad and Tobago,
+artist_70,Alexis Garcia,1963-08-07,French Southern Territories,label_22
+artist_71,Barbara Barker,2007-01-25,Samoa,
+artist_72,Christina Carson,1977-08-20,Azerbaijan,label_11
+artist_73,Caleb Everett,1999-09-11,United Kingdom,
+artist_74,Mary Carroll,1968-11-05,Kyrgyz Republic,
+artist_75,Marc Thomas,1963-08-13,Latvia,
+artist_76,Theresa Scott,1970-01-03,Burkina Faso,label_21
+artist_77,Rachael Brady,2004-10-25,Cook Islands,label_14
+artist_78,Ryan Mata,1958-05-22,Nigeria,label_20
+artist_79,Todd Fox,1975-11-15,Cameroon,label_12
+artist_80,Melissa Carey,1978-02-04,Singapore,
+artist_81,Alicia Vargas,1963-08-06,Chad,
+artist_82,Matthew Johnson,1987-02-17,Thailand,
+artist_83,Catherine Le,1972-06-03,Syrian Arab Republic,
+artist_84,Steven Romero,1981-07-20,Uruguay,
+artist_85,Joshua Nichols,1963-04-08,Monaco,label_22
+artist_86,Karen Gonzalez,1982-05-31,Italy,
+artist_87,Carl Phillips,1968-09-06,Saint Kitts and Nevis,
+artist_88,Lauren Campbell,1962-05-17,Saint Vincent and the Grenadines,label_15
+artist_89,Tanya Gutierrez,1986-12-05,Chad,
+artist_90,Mary Price,1974-06-09,Lithuania,
+artist_91,Megan Johnson,1991-09-10,Thailand,
+artist_92,Marc Walton,1979-09-06,South Africa,
+artist_93,Paula Olson,1981-12-08,Antigua and Barbuda,
+artist_94,Jose Lang,1976-04-17,Seychelles,
+artist_95,Dr. Michelle Guzman,2002-10-25,Gabon,label_2
+artist_96,Brett Jimenez,1995-03-03,Korea,label_0
+artist_97,Jeffrey Horne,1954-06-25,Kuwait,
+artist_98,Sara Smith,1967-11-27,Haiti,
+artist_99,Kathleen Merritt,1969-10-04,Cuba,label_8
