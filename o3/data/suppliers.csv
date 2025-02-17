@@ -1,0 +1,31 @@
+id,supplierName,location,rating,manufacturerIDs
+supplier_0,"Chavez, Douglas and Sharp",Joshuafurt,3.24,"['manufacturer_7', 'manufacturer_15', 'manufacturer_18']"
+supplier_1,Greer-Schneider,Jacobsburgh,4.45,['manufacturer_11']
+supplier_2,Smith Group,Reyesstad,2.42,"['manufacturer_19', 'manufacturer_8']"
+supplier_3,Francis-Webb,East Daniel,3.53,"['manufacturer_7', 'manufacturer_12']"
+supplier_4,"Medina, Roberts and Lawson",Thomasmouth,3.43,"['manufacturer_5', 'manufacturer_3']"
+supplier_5,Hansen Inc,Johnsontown,2.92,"['manufacturer_3', 'manufacturer_13', 'manufacturer_16']"
+supplier_6,Dominguez LLC,East Kevin,4.37,"['manufacturer_7', 'manufacturer_10']"
+supplier_7,"Buchanan, Harvey and Lopez",Port Christinemouth,2.93,"['manufacturer_13', 'manufacturer_5', 'manufacturer_7']"
+supplier_8,"Douglas, Mcguire and Tate",Thompsonfurt,2.32,['manufacturer_11']
+supplier_9,"Barry, Allen and Crosby",New Chad,3.21,"['manufacturer_19', 'manufacturer_14', 'manufacturer_6']"
+supplier_10,Robertson Inc,New Veronica,4.26,['manufacturer_1']
+supplier_11,"Jefferson, Jackson and Guerrero",Port Tammy,2.45,['manufacturer_1']
+supplier_12,Davis-Roberson,West Meganfort,3.68,['manufacturer_10']
+supplier_13,"Jones, Hardin and Wright",Port Christianfort,4.27,"['manufacturer_3', 'manufacturer_1', 'manufacturer_15']"
+supplier_14,"Berry, Cochran and Norman",Salasfurt,4.31,['manufacturer_14']
+supplier_15,Riley-Powell,Port Darleneville,2.78,['manufacturer_2']
+supplier_16,"Adams, Williams and Cooley",Lyonsbury,4.15,"['manufacturer_12', 'manufacturer_13']"
+supplier_17,"Perkins, Wilson and Cole",Larsonmouth,4.69,"['manufacturer_9', 'manufacturer_2', 'manufacturer_3']"
+supplier_18,Benson-Adams,Oneilltown,4.8,['manufacturer_15']
+supplier_19,"Jensen, Barton and Strickland",South Karen,3.94,"['manufacturer_13', 'manufacturer_8', 'manufacturer_7']"
+supplier_20,"Sanders, Nixon and Harris",Michellemouth,3.25,"['manufacturer_0', 'manufacturer_11']"
+supplier_21,Best-Ross,Carsonton,3.68,['manufacturer_12']
+supplier_22,"Johnson, Aguilar and Macdonald",East Danielle,4.54,['manufacturer_18']
+supplier_23,Barrera-Krause,Cainborough,3.64,"['manufacturer_5', 'manufacturer_2']"
+supplier_24,Hughes-Jackson,Paulmouth,4.99,"['manufacturer_12', 'manufacturer_15']"
+supplier_25,"Walsh, Taylor and Lee",Lake Denise,3.17,['manufacturer_10']
+supplier_26,Mccullough and Sons,Changfort,4.52,['manufacturer_5']
+supplier_27,French-Meyer,Markfort,2.53,['manufacturer_4']
+supplier_28,Hines-Ingram,New Thomas,4.31,"['manufacturer_13', 'manufacturer_12', 'manufacturer_7']"
+supplier_29,Hull-Martinez,North Wesleyshire,3.95,"['manufacturer_11', 'manufacturer_18', 'manufacturer_13']"

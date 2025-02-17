@@ -1,0 +1,151 @@
+id,orderNumber,orderDate,status,totalAmount,sellerType,sellerID,retailerID,productIDs
+order_0,ON-0-8856,2024-10-04,Delivered,12907.36,warehouse,warehouse_7,retailer_43,"['product_7', 'product_64', 'product_69', 'product_57']"
+order_1,ON-1-7942,2023-05-30,Cancelled,7269.1,warehouse,warehouse_5,retailer_42,"['product_28', 'product_12']"
+order_2,ON-2-3694,2023-12-30,Pending,11359.02,warehouse,warehouse_10,retailer_3,"['product_16', 'product_48', 'product_94']"
+order_3,ON-3-5794,2023-08-14,Shipped,3007.46,warehouse,warehouse_9,retailer_26,"['product_87', 'product_80', 'product_74']"
+order_4,ON-4-9434,2023-03-14,Shipped,9461.91,warehouse,warehouse_6,retailer_35,"['product_75', 'product_28']"
+order_5,ON-5-3857,2023-05-25,Cancelled,8302.07,manufacturer,manufacturer_5,retailer_49,"['product_88', 'product_38', 'product_66', 'product_37']"
+order_6,ON-6-4300,2024-02-11,Cancelled,15832.0,manufacturer,manufacturer_2,retailer_26,"['product_19', 'product_37', 'product_41']"
+order_7,ON-7-3089,2024-12-01,Delivered,5349.99,warehouse,warehouse_1,retailer_20,"['product_70', 'product_45', 'product_28', 'product_38']"
+order_8,ON-8-9324,2024-07-03,Pending,21269.81,warehouse,warehouse_19,retailer_30,"['product_49', 'product_65', 'product_80', 'product_77', 'product_19']"
+order_9,ON-9-1033,2023-10-22,Delivered,8739.36,warehouse,warehouse_10,retailer_40,['product_14']
+order_10,ON-10-3178,2024-03-04,Delivered,5535.17,warehouse,warehouse_13,retailer_44,"['product_76', 'product_95']"
+order_11,ON-11-1196,2024-11-16,Delivered,7324.98,warehouse,warehouse_18,retailer_28,"['product_58', 'product_57', 'product_19']"
+order_12,ON-12-5224,2025-01-13,Cancelled,5735.33,warehouse,warehouse_20,retailer_48,"['product_3', 'product_58']"
+order_13,ON-13-1610,2024-02-03,Delivered,10610.59,manufacturer,manufacturer_14,retailer_46,"['product_87', 'product_1', 'product_62', 'product_85']"
+order_14,ON-14-7257,2023-05-29,Pending,14095.94,warehouse,warehouse_38,retailer_28,"['product_20', 'product_58', 'product_77', 'product_48']"
+order_15,ON-15-4524,2024-12-09,Pending,12457.22,manufacturer,manufacturer_15,retailer_4,"['product_77', 'product_50', 'product_3', 'product_79']"
+order_16,ON-16-4991,2024-11-14,Delivered,5797.83,warehouse,warehouse_10,retailer_39,"['product_48', 'product_20']"
+order_17,ON-17-2600,2024-06-24,Shipped,873.72,warehouse,warehouse_31,retailer_25,"['product_67', 'product_80']"
+order_18,ON-18-5173,2024-09-06,Pending,4545.45,warehouse,warehouse_5,retailer_36,['product_12']
+order_19,ON-19-4906,2023-11-20,Delivered,12138.01,manufacturer,manufacturer_16,retailer_19,"['product_16', 'product_85', 'product_49', 'product_36', 'product_56']"
+order_20,ON-20-2391,2023-12-01,Cancelled,8667.93,warehouse,warehouse_20,retailer_44,"['product_11', 'product_17', 'product_79', 'product_1']"
+order_21,ON-21-8640,2023-04-19,Cancelled,11313.29,warehouse,warehouse_37,retailer_38,"['product_35', 'product_12', 'product_68', 'product_45', 'product_56']"
+order_22,ON-22-2729,2023-04-25,Pending,10778.85,manufacturer,manufacturer_12,retailer_44,"['product_85', 'product_79']"
+order_23,ON-23-3487,2023-08-04,Cancelled,15444.78,warehouse,warehouse_14,retailer_46,"['product_26', 'product_3', 'product_37', 'product_20', 'product_99']"
+order_24,ON-24-2251,2024-05-26,Pending,10187.57,warehouse,warehouse_0,retailer_20,"['product_16', 'product_99']"
+order_25,ON-25-5147,2023-03-09,Delivered,2657.27,warehouse,warehouse_15,retailer_1,['product_77']
+order_26,ON-26-2829,2024-10-08,Cancelled,2465.37,warehouse,warehouse_3,retailer_44,"['product_84', 'product_12']"
+order_27,ON-27-1871,2024-08-26,Pending,1115.66,warehouse,warehouse_12,retailer_26,['product_26']
+order_28,ON-28-3626,2024-10-05,Pending,10639.32,manufacturer,manufacturer_15,retailer_46,"['product_55', 'product_49', 'product_77', 'product_60', 'product_67']"
+order_29,ON-29-7247,2024-02-28,Shipped,9610.49,warehouse,warehouse_29,retailer_13,"['product_73', 'product_45', 'product_56', 'product_44']"
+order_30,ON-30-9340,2023-04-18,Delivered,7248.08,manufacturer,manufacturer_12,retailer_33,"['product_79', 'product_32', 'product_56', 'product_57', 'product_85']"
+order_31,ON-31-8105,2023-09-28,Shipped,9986.39,warehouse,warehouse_13,retailer_3,"['product_86', 'product_70', 'product_37', 'product_76']"
+order_32,ON-32-8635,2024-06-30,Shipped,1711.43,warehouse,warehouse_39,retailer_15,['product_1']
+order_33,ON-33-8859,2024-01-02,Pending,5657.49,warehouse,warehouse_19,retailer_4,"['product_0', 'product_44', 'product_48']"
+order_34,ON-34-6116,2025-01-22,Delivered,559.5,manufacturer,manufacturer_15,retailer_33,['product_0']
+order_35,ON-35-9818,2023-06-09,Delivered,22046.28,warehouse,warehouse_16,retailer_36,"['product_37', 'product_17', 'product_7', 'product_88']"
+order_36,ON-36-6541,2025-02-12,Shipped,10008.87,warehouse,warehouse_31,retailer_24,"['product_80', 'product_15', 'product_76']"
+order_37,ON-37-1672,2024-07-08,Shipped,8925.21,warehouse,warehouse_37,retailer_2,"['product_57', 'product_68', 'product_35', 'product_28']"
+order_38,ON-38-7729,2023-06-14,Pending,842.86,manufacturer,manufacturer_5,retailer_14,['product_65']
+order_39,ON-39-8496,2023-12-07,Pending,9748.19,warehouse,warehouse_2,retailer_26,"['product_94', 'product_48']"
+order_40,ON-40-5469,2024-07-01,Shipped,7306.98,warehouse,warehouse_14,retailer_24,"['product_3', 'product_0', 'product_35', 'product_78']"
+order_41,ON-41-1813,2024-08-27,Shipped,3840.68,manufacturer,manufacturer_9,retailer_5,"['product_78', 'product_36']"
+order_42,ON-42-3841,2025-01-31,Cancelled,3264.57,warehouse,warehouse_36,retailer_15,['product_45']
+order_43,ON-43-9795,2024-06-11,Delivered,4361.4,manufacturer,manufacturer_6,retailer_45,"['product_42', 'product_35', 'product_79']"
+order_44,ON-44-8119,2024-06-28,Pending,946.92,warehouse,warehouse_34,retailer_41,['product_37']
+order_45,ON-45-1386,2025-02-01,Cancelled,15687.89,warehouse,warehouse_21,retailer_36,"['product_21', 'product_37', 'product_38', 'product_45']"
+order_46,ON-46-1833,2023-10-22,Pending,11454.08,manufacturer,manufacturer_2,retailer_9,"['product_37', 'product_76', 'product_26', 'product_19']"
+order_47,ON-47-3015,2023-05-03,Pending,5272.65,warehouse,warehouse_13,retailer_7,"['product_86', 'product_35']"
+order_48,ON-48-5999,2024-01-18,Cancelled,1778.57,manufacturer,manufacturer_18,retailer_13,"['product_46', 'product_41']"
+order_49,ON-49-9238,2024-12-03,Cancelled,9887.75,manufacturer,manufacturer_4,retailer_4,"['product_16', 'product_13', 'product_69', 'product_26']"
+order_50,ON-50-1244,2023-11-18,Delivered,11534.14,warehouse,warehouse_31,retailer_9,"['product_94', 'product_0', 'product_78', 'product_80', 'product_36']"
+order_51,ON-51-5952,2023-04-27,Shipped,17519.3,warehouse,warehouse_16,retailer_9,"['product_55', 'product_7', 'product_92', 'product_57']"
+order_52,ON-52-3544,2023-05-15,Cancelled,625.24,warehouse,warehouse_38,retailer_48,['product_77']
+order_53,ON-53-6672,2023-10-16,Shipped,10788.0,warehouse,warehouse_21,retailer_12,"['product_94', 'product_37', 'product_54', 'product_35', 'product_49']"
+order_54,ON-54-8006,2023-11-18,Delivered,16790.66,warehouse,warehouse_16,retailer_24,"['product_57', 'product_7', 'product_14', 'product_19', 'product_55']"
+order_55,ON-55-6457,2024-08-22,Shipped,17485.79,warehouse,warehouse_24,retailer_20,"['product_53', 'product_38', 'product_17', 'product_9', 'product_76']"
+order_56,ON-56-8919,2023-03-02,Cancelled,1221.6,warehouse,warehouse_29,retailer_38,['product_73']
+order_57,ON-57-3988,2024-06-15,Shipped,3262.64,warehouse,warehouse_18,retailer_9,"['product_84', 'product_57', 'product_53']"
+order_58,ON-58-1175,2025-02-02,Pending,10199.82,manufacturer,manufacturer_1,retailer_33,"['product_89', 'product_99', 'product_52']"
+order_59,ON-59-1848,2023-04-25,Pending,4378.99,manufacturer,manufacturer_1,retailer_48,"['product_99', 'product_52']"
+order_60,ON-60-1499,2023-11-06,Delivered,3992.72,warehouse,warehouse_26,retailer_29,"['product_77', 'product_84']"
+order_61,ON-61-1711,2024-04-05,Shipped,793.38,warehouse,warehouse_14,retailer_11,['product_87']
+order_62,ON-62-4834,2023-12-16,Cancelled,8028.31,warehouse,warehouse_8,retailer_32,"['product_67', 'product_7', 'product_46', 'product_56']"
+order_63,ON-63-8980,2024-10-27,Shipped,2055.67,warehouse,warehouse_36,retailer_46,"['product_7', 'product_35', 'product_37']"
+order_64,ON-64-9777,2024-01-07,Cancelled,5195.07,warehouse,warehouse_34,retailer_20,"['product_68', 'product_37', 'product_69', 'product_74']"
+order_65,ON-65-7128,2024-08-04,Pending,3831.62,warehouse,warehouse_7,retailer_33,"['product_9', 'product_38']"
+order_66,ON-66-1613,2023-09-11,Delivered,13972.65,warehouse,warehouse_39,retailer_35,"['product_36', 'product_1', 'product_57', 'product_42', 'product_21']"
+order_67,ON-67-2212,2024-07-30,Delivered,2754.3,warehouse,warehouse_24,retailer_10,['product_53']
+order_68,ON-68-1738,2025-01-13,Delivered,9294.39,warehouse,warehouse_16,retailer_49,"['product_88', 'product_74', 'product_94', 'product_7']"
+order_69,ON-69-3884,2024-10-09,Pending,15308.15,warehouse,warehouse_0,retailer_38,"['product_74', 'product_32', 'product_20', 'product_16']"
+order_70,ON-70-1242,2024-01-29,Pending,3921.84,warehouse,warehouse_2,retailer_33,"['product_91', 'product_10']"
+order_71,ON-71-7524,2024-05-29,Cancelled,13866.21,manufacturer,manufacturer_3,retailer_33,"['product_76', 'product_41', 'product_64', 'product_90']"
+order_72,ON-72-8647,2024-11-05,Shipped,49.58,warehouse,warehouse_36,retailer_1,['product_65']
+order_73,ON-73-9043,2023-12-22,Delivered,8037.7,warehouse,warehouse_6,retailer_12,"['product_91', 'product_85', 'product_99']"
+order_74,ON-74-8427,2024-12-07,Pending,4453.35,warehouse,warehouse_30,retailer_28,"['product_38', 'product_24']"
+order_75,ON-75-3300,2024-11-21,Cancelled,7211.56,warehouse,warehouse_1,retailer_3,"['product_79', 'product_20']"
+order_76,ON-76-5788,2024-11-15,Shipped,4541.25,warehouse,warehouse_27,retailer_20,['product_76']
+order_77,ON-77-6325,2023-09-07,Delivered,7234.51,warehouse,warehouse_11,retailer_47,"['product_4', 'product_53']"
+order_78,ON-78-7816,2023-02-22,Cancelled,13038.92,manufacturer,manufacturer_12,retailer_6,"['product_69', 'product_32', 'product_28', 'product_56', 'product_65']"
+order_79,ON-79-8501,2024-05-20,Shipped,137.5,warehouse,warehouse_2,retailer_39,['product_70']
+order_80,ON-80-9319,2024-05-30,Delivered,6042.5,warehouse,warehouse_32,retailer_6,"['product_62', 'product_1', 'product_58', 'product_45', 'product_38']"
+order_81,ON-81-5576,2023-09-24,Shipped,5194.24,warehouse,warehouse_9,retailer_43,"['product_38', 'product_67']"
+order_82,ON-82-3891,2023-07-28,Pending,1311.91,warehouse,warehouse_21,retailer_15,"['product_38', 'product_94']"
+order_83,ON-83-2957,2024-04-05,Cancelled,3849.88,warehouse,warehouse_21,retailer_4,"['product_70', 'product_9', 'product_24']"
+order_84,ON-84-5077,2024-08-15,Pending,13883.99,warehouse,warehouse_37,retailer_12,"['product_57', 'product_95', 'product_4', 'product_45']"
+order_85,ON-85-2782,2023-07-31,Shipped,699.3,warehouse,warehouse_9,retailer_15,['product_12']
+order_86,ON-86-3212,2023-03-09,Shipped,8939.98,warehouse,warehouse_17,retailer_7,"['product_55', 'product_99']"
+order_87,ON-87-6890,2023-09-06,Delivered,4488.02,warehouse,warehouse_39,retailer_25,"['product_52', 'product_57']"
+order_88,ON-88-4645,2025-01-24,Pending,5098.21,warehouse,warehouse_31,retailer_10,"['product_88', 'product_52', 'product_94']"
+order_89,ON-89-1863,2024-01-29,Delivered,1820.5,manufacturer,manufacturer_13,retailer_30,"['product_28', 'product_87']"
+order_90,ON-90-4719,2023-04-04,Delivered,16660.48,warehouse,warehouse_37,retailer_4,"['product_95', 'product_49', 'product_57', 'product_32', 'product_91']"
+order_91,ON-91-2906,2024-08-14,Pending,1493.12,warehouse,warehouse_1,retailer_6,['product_62']
+order_92,ON-92-5131,2023-05-26,Shipped,5665.12,warehouse,warehouse_8,retailer_33,"['product_89', 'product_7']"
+order_93,ON-93-1263,2024-04-20,Shipped,9440.09,warehouse,warehouse_13,retailer_18,"['product_60', 'product_70', 'product_10', 'product_76']"
+order_94,ON-94-8479,2024-07-19,Cancelled,4622.11,warehouse,warehouse_0,retailer_31,"['product_65', 'product_32', 'product_68', 'product_53']"
+order_95,ON-95-2114,2023-06-15,Pending,12456.66,warehouse,warehouse_9,retailer_26,"['product_14', 'product_75', 'product_38', 'product_67']"
+order_96,ON-96-3018,2024-12-06,Delivered,14949.37,warehouse,warehouse_22,retailer_27,"['product_60', 'product_79', 'product_53', 'product_49']"
+order_97,ON-97-2185,2024-02-05,Cancelled,5451.55,warehouse,warehouse_18,retailer_48,"['product_84', 'product_57', 'product_16']"
+order_98,ON-98-8563,2024-09-23,Delivered,3873.24,manufacturer,manufacturer_0,retailer_0,"['product_11', 'product_92', 'product_32']"
+order_99,ON-99-9372,2023-06-16,Shipped,10919.85,warehouse,warehouse_23,retailer_5,"['product_60', 'product_99', 'product_77']"
+order_100,ON-100-6008,2024-05-03,Delivered,12779.96,warehouse,warehouse_27,retailer_26,"['product_80', 'product_92', 'product_76', 'product_65']"
+order_101,ON-101-6667,2024-05-10,Pending,8303.6,manufacturer,manufacturer_5,retailer_28,"['product_17', 'product_66', 'product_65', 'product_86']"
+order_102,ON-102-2006,2023-07-19,Shipped,10889.99,manufacturer,manufacturer_9,retailer_44,"['product_62', 'product_78', 'product_95', 'product_3']"
+order_103,ON-103-5199,2023-03-15,Delivered,4324.68,warehouse,warehouse_22,retailer_9,"['product_49', 'product_66', 'product_9', 'product_53', 'product_87']"
+order_104,ON-104-3781,2024-08-28,Shipped,647.43,manufacturer,manufacturer_12,retailer_9,['product_32']
+order_105,ON-105-3648,2024-10-13,Delivered,9806.14,warehouse,warehouse_32,retailer_2,"['product_88', 'product_89', 'product_21']"
+order_106,ON-106-6214,2024-06-09,Shipped,7249.22,warehouse,warehouse_6,retailer_14,"['product_99', 'product_37', 'product_73']"
+order_107,ON-107-2804,2023-06-13,Cancelled,5994.0,warehouse,warehouse_32,retailer_9,"['product_32', 'product_73', 'product_79', 'product_70', 'product_62']"
+order_108,ON-108-6696,2025-01-03,Shipped,2899.83,warehouse,warehouse_37,retailer_49,"['product_91', 'product_12']"
+order_109,ON-109-1338,2023-07-24,Delivered,2985.53,manufacturer,manufacturer_2,retailer_1,"['product_84', 'product_41']"
+order_110,ON-110-1467,2024-11-17,Pending,302.75,warehouse,warehouse_27,retailer_47,['product_51']
+order_111,ON-111-5124,2024-03-10,Delivered,1729.98,warehouse,warehouse_15,retailer_31,"['product_77', 'product_37']"
+order_112,ON-112-4418,2023-09-02,Shipped,6183.49,warehouse,warehouse_7,retailer_39,"['product_67', 'product_99']"
+order_113,ON-113-3743,2024-01-31,Shipped,18193.31,warehouse,warehouse_23,retailer_1,"['product_64', 'product_7', 'product_99', 'product_53']"
+order_114,ON-114-8568,2025-01-25,Pending,2137.8,warehouse,warehouse_4,retailer_31,['product_73']
+order_115,ON-115-6184,2023-10-22,Cancelled,917.23,manufacturer,manufacturer_6,retailer_13,['product_65']
+order_116,ON-116-3007,2023-07-17,Delivered,6714.68,manufacturer,manufacturer_2,retailer_39,"['product_19', 'product_94', 'product_99']"
+order_117,ON-117-4078,2024-06-25,Cancelled,129.08,warehouse,warehouse_23,retailer_32,['product_69']
+order_118,ON-118-7396,2023-10-03,Cancelled,13397.92,warehouse,warehouse_32,retailer_42,"['product_52', 'product_21', 'product_49', 'product_38', 'product_88']"
+order_119,ON-119-6872,2023-09-29,Delivered,4689.12,warehouse,warehouse_5,retailer_2,"['product_42', 'product_54']"
+order_120,ON-120-1288,2023-12-19,Shipped,4348.06,warehouse,warehouse_31,retailer_41,"['product_80', 'product_64']"
+order_121,ON-121-4665,2023-03-20,Cancelled,647.43,manufacturer,manufacturer_18,retailer_48,['product_32']
+order_122,ON-122-6643,2024-11-26,Pending,9096.57,warehouse,warehouse_2,retailer_35,"['product_35', 'product_48']"
+order_123,ON-123-4241,2024-07-30,Pending,5393.52,warehouse,warehouse_14,retailer_44,"['product_37', 'product_26']"
+order_124,ON-124-2163,2025-01-12,Pending,1816.5,manufacturer,manufacturer_4,retailer_31,['product_51']
+order_125,ON-125-6533,2023-12-31,Pending,11803.02,warehouse,warehouse_31,retailer_49,"['product_52', 'product_76', 'product_17', 'product_89']"
+order_126,ON-126-5208,2025-01-15,Pending,6292.0,warehouse,warehouse_22,retailer_18,"['product_32', 'product_17', 'product_9']"
+order_127,ON-127-8985,2023-03-09,Shipped,9090.37,warehouse,warehouse_10,retailer_9,"['product_94', 'product_20', 'product_76', 'product_14']"
+order_128,ON-128-6248,2023-07-04,Pending,4687.41,warehouse,warehouse_5,retailer_18,"['product_54', 'product_68', 'product_73', 'product_28']"
+order_129,ON-129-5339,2024-11-29,Pending,8493.52,warehouse,warehouse_1,retailer_31,"['product_45', 'product_85', 'product_50']"
+order_130,ON-130-3503,2023-11-12,Cancelled,2014.2,manufacturer,manufacturer_17,retailer_9,['product_0']
+order_131,ON-131-3365,2025-01-15,Pending,2118.31,warehouse,warehouse_3,retailer_10,"['product_95', 'product_66', 'product_70']"
+order_132,ON-132-2571,2023-03-08,Shipped,1136.98,warehouse,warehouse_30,retailer_3,['product_94']
+order_133,ON-133-5634,2023-08-10,Cancelled,9877.66,warehouse,warehouse_13,retailer_6,"['product_86', 'product_70', 'product_10', 'product_87', 'product_14']"
+order_134,ON-134-7485,2023-11-21,Shipped,6228.58,warehouse,warehouse_9,retailer_27,"['product_87', 'product_78']"
+order_135,ON-135-9461,2024-02-23,Pending,3531.75,warehouse,warehouse_35,retailer_45,"['product_52', 'product_86', 'product_85']"
+order_136,ON-136-3510,2023-12-03,Cancelled,12870.65,manufacturer,manufacturer_14,retailer_38,"['product_85', 'product_87', 'product_1', 'product_62', 'product_57']"
+order_137,ON-137-6333,2023-07-20,Cancelled,1946.25,manufacturer,manufacturer_2,retailer_17,['product_51']
+order_138,ON-138-1092,2023-06-10,Cancelled,3045.85,warehouse,warehouse_31,retailer_23,"['product_80', 'product_19', 'product_44']"
+order_139,ON-139-5791,2023-06-03,Delivered,4308.25,manufacturer,manufacturer_0,retailer_43,['product_17']
+order_140,ON-140-6574,2024-09-21,Delivered,7735.16,warehouse,warehouse_25,retailer_8,"['product_79', 'product_10', 'product_50']"
+order_141,ON-141-7495,2024-08-09,Pending,3944.5,warehouse,warehouse_4,retailer_7,['product_64']
+order_142,ON-142-1817,2023-09-01,Pending,2400.14,warehouse,warehouse_34,retailer_46,"['product_51', 'product_52', 'product_11']"
+order_143,ON-143-6099,2023-03-12,Delivered,8290.44,warehouse,warehouse_23,retailer_28,"['product_69', 'product_65', 'product_24']"
+order_144,ON-144-8069,2024-03-02,Cancelled,2625.36,warehouse,warehouse_3,retailer_17,['product_42']
+order_145,ON-145-1048,2024-07-25,Cancelled,1116.15,warehouse,warehouse_33,retailer_1,['product_1']
+order_146,ON-146-7830,2024-06-20,Shipped,14655.91,warehouse,warehouse_26,retailer_6,"['product_55', 'product_41', 'product_64', 'product_38', 'product_49']"
+order_147,ON-147-4761,2024-07-27,Pending,4229.32,warehouse,warehouse_38,retailer_2,"['product_38', 'product_80']"
+order_148,ON-148-4884,2024-08-02,Cancelled,9523.0,warehouse,warehouse_3,retailer_47,"['product_42', 'product_94', 'product_12', 'product_73', 'product_87']"
+order_149,ON-149-5276,2023-10-08,Cancelled,7690.51,warehouse,warehouse_32,retailer_41,"['product_79', 'product_32', 'product_45']"
