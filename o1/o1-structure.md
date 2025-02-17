@@ -1,6 +1,6 @@
 # Draft Ontology Structure
   
-```
+```uml
 Class: Movie     
    Properties (data):     
       - title : string     
