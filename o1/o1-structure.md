@@ -9,9 +9,9 @@ classDiagram
         -duration : int    
         -rating : float    
         %% Object Properties    
-        +hasActor *--o Actor : many-to-one    
-        +hasDirector *--o Director : many-to-one    
-        +belongsToGenre *--o Genre : many-to-one    
+        +hasActor o--* Actor : one-to-many    
+        +hasDirector o--* Director : one-to-many    
+        +belongsToGenre o--* Genre : one-to-many    
     }    
     
     class Person {    
