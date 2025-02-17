@@ -1,0 +1,801 @@
+id,claimNumber,claimDate,claimType,amountClaimed,amountSettled,status,policyID,policyHolderID,insurerID
+claim_0,CL-68951,2025-07-25,Accident,10756.03,1291.65,Settled,policy_568,holder_43,insurer_0
+claim_1,CL-60687,2025-02-09,Liability,7437.57,6641.52,Denied,policy_363,holder_583,insurer_4
+claim_2,CL-14288,2024-10-26,Weather,8826.6,8133.98,Settled,policy_1051,holder_586,insurer_0
+claim_3,CL-40372,2023-11-01,Accident,28947.82,12450.38,Open,policy_444,holder_399,insurer_5
+claim_4,CL-77350,2024-04-14,Fire,2876.8,888.73,Pending Review,policy_1034,holder_511,insurer_3
+claim_5,CL-64383,2023-07-17,Water Damage,16105.66,5150.09,Pending Review,policy_318,holder_55,insurer_8
+claim_6,CL-51671,2024-11-17,Vandalism,29309.74,7366.24,Denied,policy_667,holder_283,insurer_2
+claim_7,CL-66849,2024-01-09,Accident,14096.0,13623.8,Settled,policy_1070,holder_597,insurer_6
+claim_8,CL-81652,2023-03-10,Weather,23782.0,11457.86,Open,policy_276,holder_552,insurer_0
+claim_9,CL-17799,2024-10-14,Fire,22102.43,19000.17,Open,policy_397,holder_312,insurer_9
+claim_10,CL-12246,2025-03-14,Fire,27183.74,4972.23,Pending Review,policy_1143,holder_123,insurer_2
+claim_11,CL-54123,2026-08-24,Water Damage,13735.37,5012.15,Denied,policy_933,holder_521,insurer_6
+claim_12,CL-21669,2023-11-04,Liability,15555.92,11829.56,Pending Review,policy_387,holder_100,insurer_4
+claim_13,CL-26560,2025-01-07,Weather,9425.21,958.58,Open,policy_1182,holder_429,insurer_5
+claim_14,CL-26482,2024-06-23,Accident,22739.17,4805.73,Settled,policy_1001,holder_71,insurer_6
+claim_15,CL-61916,2024-09-12,Liability,6294.32,3718.92,Denied,policy_1035,holder_59,insurer_7
+claim_16,CL-69827,2022-08-19,Theft,2138.5,186.47,Settled,policy_669,holder_463,insurer_5
+claim_17,CL-77773,2022-07-30,Liability,21610.27,7672.78,Denied,policy_298,holder_233,insurer_0
+claim_18,CL-54247,2023-10-17,Liability,13496.83,1300.48,Settled,policy_299,holder_375,insurer_9
+claim_19,CL-98078,2025-01-26,Liability,15832.83,4140.01,Pending Review,policy_848,holder_334,insurer_6
+claim_20,CL-87058,2022-09-26,Liability,21803.85,1728.44,Settled,policy_991,holder_424,insurer_1
+claim_21,CL-97509,2025-04-28,Fire,29050.28,22719.93,Pending Review,policy_784,holder_157,insurer_2
+claim_22,CL-17194,2024-07-01,Water Damage,16909.66,16159.86,Open,policy_673,holder_196,insurer_1
+claim_23,CL-35199,2024-10-09,Vandalism,26877.12,9333.38,Settled,policy_235,holder_82,insurer_5
+claim_24,CL-13213,2023-01-07,Theft,25132.73,7497.09,Open,policy_675,holder_591,insurer_2
+claim_25,CL-26740,2025-10-16,Weather,13527.22,9476.6,Pending Review,policy_856,holder_540,insurer_4
+claim_26,CL-42327,2024-07-27,Vandalism,20297.47,4325.61,Open,policy_517,holder_517,insurer_3
+claim_27,CL-18596,2023-04-05,Accident,5670.39,1751.24,Denied,policy_903,holder_379,insurer_5
+claim_28,CL-87287,2025-09-01,Liability,949.23,786.87,Pending Review,policy_522,holder_571,insurer_5
+claim_29,CL-74475,2023-07-24,Vandalism,16105.19,1701.04,Open,policy_649,holder_200,insurer_2
+claim_30,CL-40994,2023-07-23,Fire,29888.82,3741.3,Open,policy_576,holder_512,insurer_5
+claim_31,CL-33247,2023-02-19,Vandalism,24730.6,8201.8,Settled,policy_184,holder_103,insurer_2
+claim_32,CL-10287,2026-07-22,Water Damage,16545.86,7937.83,Denied,policy_615,holder_494,insurer_5
+claim_33,CL-78689,2024-01-17,Accident,20490.46,13796.75,Pending Review,policy_945,holder_493,insurer_4
+claim_34,CL-90793,2024-01-06,Fire,9249.18,4180.95,Settled,policy_323,holder_163,insurer_2
+claim_35,CL-35020,2022-05-08,Vandalism,22845.61,686.88,Denied,policy_905,holder_240,insurer_6
+claim_36,CL-40914,2025-04-25,Vandalism,17363.77,12083.1,Open,policy_715,holder_281,insurer_3
+claim_37,CL-36707,2024-01-31,Liability,24119.16,15054.05,Open,policy_606,holder_130,insurer_3
+claim_38,CL-42885,2025-07-07,Accident,3154.09,1800.14,Settled,policy_83,holder_52,insurer_5
+claim_39,CL-63401,2023-01-24,Liability,10160.8,2221.73,Settled,policy_481,holder_408,insurer_7
+claim_40,CL-74113,2024-06-01,Theft,13817.69,2113.43,Settled,policy_24,holder_268,insurer_6
+claim_41,CL-22305,2026-10-08,Weather,1628.24,316.75,Settled,policy_162,holder_237,insurer_6
+claim_42,CL-41554,2024-12-27,Vandalism,4821.01,3062.42,Pending Review,policy_773,holder_533,insurer_1
+claim_43,CL-86432,2026-06-30,Fire,19408.72,412.41,Pending Review,policy_691,holder_46,insurer_2
+claim_44,CL-94965,2025-06-08,Accident,25869.06,9812.89,Open,policy_453,holder_179,insurer_8
+claim_45,CL-67407,2023-12-17,Vandalism,25151.74,4205.16,Settled,policy_306,holder_513,insurer_9
+claim_46,CL-30190,2022-04-03,Accident,21953.99,8046.6,Settled,policy_463,holder_70,insurer_4
+claim_47,CL-45567,2023-03-15,Weather,12752.33,9176.48,Open,policy_1008,holder_309,insurer_6
+claim_48,CL-37543,2025-08-19,Vandalism,10579.3,8739.6,Settled,policy_680,holder_394,insurer_2
+claim_49,CL-58940,2025-04-03,Water Damage,28443.82,12632.74,Settled,policy_44,holder_258,insurer_7
+claim_50,CL-96289,2022-06-30,Vandalism,6888.39,3916.44,Settled,policy_434,holder_561,insurer_3
+claim_51,CL-27595,2023-07-11,Fire,975.34,153.1,Pending Review,policy_242,holder_142,insurer_8
+claim_52,CL-68637,2025-04-16,Liability,3219.48,3168.79,Settled,policy_351,holder_170,insurer_7
+claim_53,CL-22176,2026-04-30,Liability,15425.72,178.57,Denied,policy_1067,holder_457,insurer_5
+claim_54,CL-77927,2024-11-30,Liability,9625.0,2824.69,Open,policy_501,holder_15,insurer_2
+claim_55,CL-59399,2024-12-07,Theft,23681.29,6098.07,Settled,policy_54,holder_260,insurer_5
+claim_56,CL-66703,2024-03-10,Liability,14691.28,11826.21,Pending Review,policy_900,holder_137,insurer_2
+claim_57,CL-80232,2023-07-06,Theft,16749.05,7878.63,Settled,policy_461,holder_27,insurer_5
+claim_58,CL-36092,2023-12-20,Theft,24521.38,8156.91,Denied,policy_1179,holder_347,insurer_7
+claim_59,CL-46788,2027-01-02,Water Damage,13966.63,9935.47,Settled,policy_729,holder_442,insurer_4
+claim_60,CL-55522,2024-06-03,Water Damage,14349.57,13101.35,Denied,policy_992,holder_525,insurer_1
+claim_61,CL-71596,2022-04-23,Fire,11609.61,8978.07,Denied,policy_1178,holder_331,insurer_5
+claim_62,CL-37531,2024-02-02,Fire,27701.21,17325.93,Open,policy_906,holder_62,insurer_7
+claim_63,CL-46248,2026-02-13,Weather,18832.44,4479.92,Settled,policy_1061,holder_393,insurer_1
+claim_64,CL-91071,2024-06-19,Theft,6668.83,2428.98,Denied,policy_815,holder_146,insurer_8
+claim_65,CL-93729,2024-12-04,Fire,8066.02,2543.45,Open,policy_939,holder_192,insurer_3
+claim_66,CL-16264,2024-11-06,Accident,5704.7,1467.2,Denied,policy_378,holder_501,insurer_2
+claim_67,CL-54500,2024-06-27,Theft,12987.17,1724.74,Settled,policy_994,holder_288,insurer_8
+claim_68,CL-62864,2024-09-24,Accident,25828.05,25766.88,Denied,policy_879,holder_442,insurer_9
+claim_69,CL-49803,2025-10-17,Theft,4436.16,2600.68,Open,policy_251,holder_405,insurer_5
+claim_70,CL-78278,2024-03-13,Theft,8125.59,759.62,Settled,policy_853,holder_331,insurer_1
+claim_71,CL-60256,2025-06-24,Water Damage,8704.64,3116.26,Pending Review,policy_81,holder_420,insurer_9
+claim_72,CL-51914,2024-12-19,Accident,23251.51,17654.07,Pending Review,policy_682,holder_222,insurer_6
+claim_73,CL-42514,2024-02-25,Fire,27506.48,1781.11,Denied,policy_63,holder_571,insurer_2
+claim_74,CL-61664,2025-07-16,Weather,27220.97,5985.86,Pending Review,policy_1021,holder_249,insurer_1
+claim_75,CL-40022,2025-01-22,Water Damage,5670.78,4297.06,Denied,policy_427,holder_122,insurer_9
+claim_76,CL-36190,2025-04-02,Liability,7771.74,7654.07,Settled,policy_305,holder_358,insurer_6
+claim_77,CL-80653,2024-05-30,Theft,4377.59,805.63,Open,policy_71,holder_325,insurer_9
+claim_78,CL-52660,2024-05-06,Water Damage,29125.22,8372.81,Open,policy_1089,holder_476,insurer_2
+claim_79,CL-55720,2025-03-06,Theft,2401.74,0.01,Denied,policy_551,holder_337,insurer_0
+claim_80,CL-54742,2023-02-06,Accident,19205.26,5461.1,Pending Review,policy_872,holder_438,insurer_4
+claim_81,CL-46761,2025-02-21,Accident,4469.47,3101.51,Settled,policy_1169,holder_423,insurer_3
+claim_82,CL-11166,2022-05-19,Vandalism,24976.54,16839.91,Settled,policy_629,holder_146,insurer_4
+claim_83,CL-83365,2023-10-21,Weather,19115.78,10419.47,Pending Review,policy_1133,holder_553,insurer_5
+claim_84,CL-91386,2024-03-06,Water Damage,11068.91,5716.4,Denied,policy_918,holder_591,insurer_6
+claim_85,CL-35629,2023-01-09,Vandalism,26938.19,1038.02,Pending Review,policy_1037,holder_106,insurer_5
+claim_86,CL-22987,2024-01-06,Weather,5602.18,937.58,Denied,policy_368,holder_490,insurer_4
+claim_87,CL-72074,2024-11-20,Water Damage,22706.66,21493.99,Settled,policy_598,holder_561,insurer_6
+claim_88,CL-97838,2025-08-15,Water Damage,4076.85,611.74,Pending Review,policy_329,holder_288,insurer_6
+claim_89,CL-54133,2024-08-28,Fire,23003.91,4625.54,Open,policy_68,holder_255,insurer_1
+claim_90,CL-19612,2024-12-12,Accident,3409.39,0.57,Settled,policy_198,holder_329,insurer_1
+claim_91,CL-59618,2026-11-26,Water Damage,27750.42,10513.04,Denied,policy_80,holder_10,insurer_4
+claim_92,CL-12106,2023-06-10,Accident,15088.29,2548.97,Open,policy_1176,holder_567,insurer_1
+claim_93,CL-13975,2024-01-12,Weather,29760.34,18801.27,Denied,policy_1094,holder_324,insurer_0
+claim_94,CL-68530,2023-03-18,Vandalism,23704.07,20400.48,Pending Review,policy_17,holder_496,insurer_3
+claim_95,CL-31677,2024-09-09,Fire,709.02,610.69,Denied,policy_167,holder_302,insurer_8
+claim_96,CL-76617,2024-07-10,Weather,10794.7,9279.04,Settled,policy_1184,holder_290,insurer_3
+claim_97,CL-94329,2023-10-06,Weather,19684.15,18750.15,Open,policy_456,holder_399,insurer_7
+claim_98,CL-28728,2023-03-31,Weather,5968.61,968.57,Pending Review,policy_1024,holder_336,insurer_1
+claim_99,CL-19824,2023-10-18,Weather,21686.54,13239.86,Open,policy_1005,holder_70,insurer_8
+claim_100,CL-86327,2023-10-28,Weather,27469.95,22292.52,Pending Review,policy_138,holder_205,insurer_9
+claim_101,CL-25322,2022-06-25,Accident,21756.21,16049.77,Open,policy_285,holder_96,insurer_6
+claim_102,CL-70681,2025-02-18,Vandalism,21578.51,9979.73,Settled,policy_748,holder_52,insurer_9
+claim_103,CL-67323,2022-07-03,Liability,23307.7,4917.12,Settled,policy_893,holder_460,insurer_0
+claim_104,CL-78351,2024-08-11,Accident,20991.79,18643.33,Denied,policy_426,holder_152,insurer_0
+claim_105,CL-29008,2022-05-16,Accident,3363.34,2953.85,Denied,policy_396,holder_157,insurer_8
+claim_106,CL-71153,2024-09-27,Vandalism,2815.54,164.38,Settled,policy_447,holder_123,insurer_2
+claim_107,CL-89845,2024-01-04,Theft,6312.33,5436.46,Pending Review,policy_311,holder_268,insurer_2
+claim_108,CL-90709,2025-07-10,Fire,16160.73,7341.47,Settled,policy_910,holder_160,insurer_7
+claim_109,CL-99965,2025-05-19,Theft,1668.03,1323.45,Open,policy_304,holder_259,insurer_9
+claim_110,CL-54266,2027-01-18,Liability,9125.23,2481.38,Open,policy_371,holder_100,insurer_1
+claim_111,CL-99485,2024-07-29,Water Damage,6331.38,3574.85,Settled,policy_995,holder_137,insurer_0
+claim_112,CL-78153,2025-02-28,Weather,22664.32,13359.38,Open,policy_538,holder_598,insurer_4
+claim_113,CL-51525,2024-10-12,Vandalism,20199.79,8184.73,Settled,policy_495,holder_49,insurer_5
+claim_114,CL-65841,2024-04-09,Theft,24488.62,19701.42,Pending Review,policy_75,holder_422,insurer_8
+claim_115,CL-57891,2024-03-10,Theft,4092.99,1266.96,Settled,policy_1117,holder_59,insurer_8
+claim_116,CL-22402,2025-06-05,Vandalism,22670.31,14574.13,Open,policy_135,holder_323,insurer_0
+claim_117,CL-40493,2026-07-30,Liability,29924.85,29273.56,Open,policy_1097,holder_21,insurer_6
+claim_118,CL-32226,2025-10-04,Theft,9945.35,7291.51,Denied,policy_810,holder_318,insurer_4
+claim_119,CL-72939,2024-01-13,Liability,10699.14,9659.42,Denied,policy_461,holder_27,insurer_5
+claim_120,CL-15498,2023-10-14,Vandalism,9099.41,3464.1,Open,policy_96,holder_92,insurer_1
+claim_121,CL-39991,2023-10-20,Theft,19907.12,2160.03,Denied,policy_282,holder_230,insurer_8
+claim_122,CL-23534,2023-08-19,Vandalism,603.18,22.67,Denied,policy_242,holder_142,insurer_8
+claim_123,CL-85399,2025-08-28,Fire,9177.62,943.49,Settled,policy_522,holder_571,insurer_5
+claim_124,CL-75987,2026-01-09,Theft,23506.71,23478.95,Pending Review,policy_788,holder_567,insurer_3
+claim_125,CL-70937,2025-07-17,Liability,27815.4,16021.73,Open,policy_41,holder_132,insurer_1
+claim_126,CL-55050,2024-12-31,Weather,6979.55,1259.92,Denied,policy_46,holder_101,insurer_3
+claim_127,CL-96784,2024-02-05,Liability,12746.27,301.29,Settled,policy_238,holder_158,insurer_3
+claim_128,CL-82927,2024-05-31,Theft,22763.79,5882.29,Pending Review,policy_658,holder_104,insurer_0
+claim_129,CL-20326,2025-06-12,Liability,16105.25,944.99,Open,policy_890,holder_112,insurer_9
+claim_130,CL-81620,2022-09-04,Weather,1246.06,54.79,Denied,policy_227,holder_178,insurer_9
+claim_131,CL-91937,2022-12-27,Weather,6093.84,884.61,Settled,policy_1063,holder_446,insurer_4
+claim_132,CL-14224,2024-08-07,Vandalism,25869.4,23080.25,Denied,policy_1058,holder_325,insurer_7
+claim_133,CL-10069,2024-08-09,Vandalism,11155.34,9070.91,Pending Review,policy_339,holder_394,insurer_1
+claim_134,CL-10489,2025-08-22,Theft,12585.75,2838.42,Settled,policy_448,holder_366,insurer_8
+claim_135,CL-47476,2025-01-23,Theft,9419.13,6749.22,Settled,policy_915,holder_103,insurer_6
+claim_136,CL-70530,2026-09-29,Accident,10653.07,2376.56,Pending Review,policy_371,holder_100,insurer_1
+claim_137,CL-56427,2023-07-25,Water Damage,27360.04,19204.59,Pending Review,policy_749,holder_221,insurer_6
+claim_138,CL-39130,2023-09-08,Theft,18236.55,17653.26,Settled,policy_499,holder_227,insurer_5
+claim_139,CL-11444,2022-09-29,Accident,29629.58,3505.06,Pending Review,policy_734,holder_187,insurer_0
+claim_140,CL-52346,2024-06-19,Theft,11712.11,3020.45,Denied,policy_283,holder_96,insurer_7
+claim_141,CL-95414,2023-11-10,Theft,29022.21,6803.37,Pending Review,policy_318,holder_55,insurer_8
+claim_142,CL-75041,2024-04-03,Water Damage,20653.19,5445.47,Pending Review,policy_1182,holder_429,insurer_5
+claim_143,CL-95670,2024-02-04,Accident,16937.56,16308.52,Pending Review,policy_774,holder_318,insurer_8
+claim_144,CL-62572,2025-04-23,Theft,23500.64,5807.82,Pending Review,policy_1061,holder_393,insurer_1
+claim_145,CL-11150,2027-04-19,Weather,11123.68,4257.94,Settled,policy_653,holder_1,insurer_8
+claim_146,CL-65233,2024-07-20,Weather,12167.93,5285.94,Denied,policy_951,holder_218,insurer_2
+claim_147,CL-54706,2023-08-01,Accident,28381.52,8553.25,Pending Review,policy_670,holder_218,insurer_4
+claim_148,CL-35006,2024-10-30,Accident,18552.66,17019.17,Pending Review,policy_753,holder_543,insurer_0
+claim_149,CL-39096,2025-03-24,Fire,14152.85,3457.78,Denied,policy_1110,holder_108,insurer_1
+claim_150,CL-32311,2024-08-08,Theft,13567.54,10869.2,Open,policy_156,holder_240,insurer_7
+claim_151,CL-81939,2025-04-01,Accident,22730.44,12010.39,Settled,policy_205,holder_296,insurer_6
+claim_152,CL-15717,2025-08-12,Water Damage,3404.51,637.18,Denied,policy_475,holder_369,insurer_1
+claim_153,CL-40186,2023-12-09,Theft,19227.87,4092.68,Settled,policy_601,holder_297,insurer_8
+claim_154,CL-24942,2022-12-23,Accident,6429.19,3345.03,Settled,policy_745,holder_147,insurer_7
+claim_155,CL-63656,2025-03-16,Fire,2229.2,1500.13,Pending Review,policy_802,holder_578,insurer_7
+claim_156,CL-73375,2025-10-05,Liability,19469.38,13198.98,Denied,policy_406,holder_500,insurer_4
+claim_157,CL-75397,2024-07-14,Liability,8231.75,352.41,Denied,policy_737,holder_242,insurer_9
+claim_158,CL-22316,2025-02-03,Weather,13350.01,1459.09,Pending Review,policy_1073,holder_511,insurer_2
+claim_159,CL-64893,2022-08-15,Weather,6864.57,3194.0,Pending Review,policy_357,holder_41,insurer_0
+claim_160,CL-76575,2022-07-08,Liability,22010.29,10918.02,Pending Review,policy_982,holder_52,insurer_2
+claim_161,CL-87378,2022-09-01,Accident,5850.45,622.67,Pending Review,policy_468,holder_145,insurer_4
+claim_162,CL-19906,2024-02-19,Weather,2938.46,677.43,Denied,policy_261,holder_411,insurer_6
+claim_163,CL-39534,2023-11-06,Weather,7761.01,2066.96,Settled,policy_984,holder_101,insurer_5
+claim_164,CL-29504,2025-02-13,Vandalism,23613.82,1658.36,Pending Review,policy_1039,holder_481,insurer_6
+claim_165,CL-69066,2025-03-28,Accident,14729.85,14151.32,Denied,policy_1106,holder_290,insurer_4
+claim_166,CL-27760,2023-09-16,Weather,1136.02,227.76,Open,policy_263,holder_477,insurer_3
+claim_167,CL-89781,2024-08-16,Liability,6492.7,5586.63,Open,policy_1167,holder_348,insurer_8
+claim_168,CL-12205,2023-10-21,Water Damage,15114.3,10100.32,Denied,policy_278,holder_385,insurer_3
+claim_169,CL-33867,2026-01-22,Liability,19950.95,6334.39,Denied,policy_985,holder_448,insurer_9
+claim_170,CL-62466,2024-01-21,Fire,1734.27,694.7,Pending Review,policy_112,holder_250,insurer_6
+claim_171,CL-52384,2026-07-31,Accident,29336.03,24148.41,Open,policy_113,holder_462,insurer_9
+claim_172,CL-42419,2024-04-14,Fire,17082.63,14432.57,Settled,policy_58,holder_444,insurer_6
+claim_173,CL-24076,2025-08-15,Theft,25917.74,25585.65,Denied,policy_148,holder_131,insurer_8
+claim_174,CL-78553,2025-04-16,Theft,2915.29,53.26,Settled,policy_212,holder_249,insurer_7
+claim_175,CL-17107,2026-01-09,Theft,978.04,490.8,Pending Review,policy_104,holder_276,insurer_2
+claim_176,CL-30059,2024-02-08,Liability,25390.68,22614.52,Settled,policy_90,holder_527,insurer_1
+claim_177,CL-82375,2026-02-06,Theft,18361.02,12848.47,Denied,policy_379,holder_73,insurer_5
+claim_178,CL-95428,2024-04-08,Theft,8024.42,3140.12,Open,policy_13,holder_293,insurer_0
+claim_179,CL-15674,2023-04-21,Accident,21558.63,14948.31,Denied,policy_634,holder_304,insurer_4
+claim_180,CL-18986,2022-06-29,Weather,10249.51,629.05,Open,policy_692,holder_401,insurer_1
+claim_181,CL-47647,2023-09-26,Accident,3574.77,2349.91,Pending Review,policy_201,holder_326,insurer_9
+claim_182,CL-39110,2026-02-24,Weather,13846.7,3983.7,Denied,policy_958,holder_420,insurer_7
+claim_183,CL-40735,2023-11-14,Liability,13214.91,7940.11,Open,policy_776,holder_262,insurer_7
+claim_184,CL-45649,2024-11-19,Fire,12399.17,11733.41,Settled,policy_1068,holder_316,insurer_1
+claim_185,CL-57041,2023-12-28,Water Damage,20535.63,16126.43,Pending Review,policy_140,holder_193,insurer_3
+claim_186,CL-62686,2023-06-28,Weather,10482.12,7260.46,Open,policy_742,holder_330,insurer_4
+claim_187,CL-83508,2024-04-23,Water Damage,16270.18,1636.5,Pending Review,policy_1117,holder_59,insurer_8
+claim_188,CL-12304,2024-05-27,Accident,29952.47,22211.99,Open,policy_590,holder_338,insurer_4
+claim_189,CL-83357,2024-12-09,Vandalism,16459.27,14269.69,Open,policy_828,holder_169,insurer_2
+claim_190,CL-89202,2024-05-05,Water Damage,17334.7,9015.67,Settled,policy_14,holder_289,insurer_3
+claim_191,CL-98126,2023-12-23,Weather,24465.82,9269.84,Settled,policy_637,holder_108,insurer_1
+claim_192,CL-42896,2023-06-15,Accident,24546.64,10073.05,Pending Review,policy_40,holder_595,insurer_5
+claim_193,CL-49657,2022-09-02,Theft,8523.39,2898.47,Settled,policy_1069,holder_524,insurer_9
+claim_194,CL-29213,2022-09-29,Water Damage,11237.71,1809.12,Pending Review,policy_1069,holder_524,insurer_9
+claim_195,CL-25797,2023-10-14,Water Damage,4040.66,317.75,Open,policy_477,holder_535,insurer_0
+claim_196,CL-11425,2022-07-03,Vandalism,27582.46,16213.03,Open,policy_328,holder_272,insurer_4
+claim_197,CL-32273,2026-01-01,Vandalism,2463.42,787.34,Denied,policy_1195,holder_131,insurer_1
+claim_198,CL-16861,2025-02-03,Liability,3307.48,347.03,Denied,policy_84,holder_349,insurer_6
+claim_199,CL-97724,2025-05-09,Liability,24353.99,2515.4,Settled,policy_243,holder_421,insurer_2
+claim_200,CL-93698,2023-03-28,Vandalism,21101.01,4851.48,Settled,policy_331,holder_27,insurer_3
+claim_201,CL-41874,2024-10-16,Vandalism,19727.73,19356.72,Denied,policy_830,holder_164,insurer_2
+claim_202,CL-87953,2027-12-18,Accident,16221.04,11955.25,Pending Review,policy_810,holder_318,insurer_4
+claim_203,CL-57433,2023-06-11,Liability,24968.3,9873.62,Open,policy_493,holder_11,insurer_3
+claim_204,CL-25100,2022-05-06,Weather,24302.47,505.95,Denied,policy_461,holder_27,insurer_5
+claim_205,CL-64303,2023-11-27,Fire,6415.52,2342.17,Denied,policy_737,holder_242,insurer_9
+claim_206,CL-81264,2024-02-19,Liability,22996.9,20333.1,Open,policy_938,holder_87,insurer_7
+claim_207,CL-63731,2026-02-17,Water Damage,5988.97,2033.79,Pending Review,policy_76,holder_155,insurer_7
+claim_208,CL-57484,2022-05-27,Weather,25060.61,17345.0,Settled,policy_789,holder_331,insurer_1
+claim_209,CL-10541,2024-12-04,Vandalism,11870.81,10662.16,Pending Review,policy_896,holder_512,insurer_4
+claim_210,CL-36289,2023-02-16,Fire,17028.97,3770.49,Pending Review,policy_763,holder_432,insurer_0
+claim_211,CL-66223,2024-03-11,Water Damage,14493.23,2854.06,Settled,policy_699,holder_593,insurer_4
+claim_212,CL-79438,2023-01-30,Theft,28755.42,9898.97,Settled,policy_808,holder_440,insurer_4
+claim_213,CL-91013,2023-04-21,Water Damage,10705.86,2320.58,Settled,policy_825,holder_54,insurer_2
+claim_214,CL-25299,2023-08-19,Liability,11034.7,7082.08,Open,policy_1074,holder_501,insurer_1
+claim_215,CL-74921,2024-01-27,Vandalism,4168.61,3103.35,Settled,policy_258,holder_48,insurer_9
+claim_216,CL-30671,2024-08-17,Water Damage,15966.63,15262.35,Denied,policy_140,holder_193,insurer_3
+claim_217,CL-44136,2026-06-16,Accident,843.19,408.0,Open,policy_798,holder_427,insurer_5
+claim_218,CL-46293,2023-12-06,Vandalism,25735.89,4104.24,Denied,policy_471,holder_580,insurer_5
+claim_219,CL-12670,2025-02-08,Weather,7210.72,6220.26,Pending Review,policy_180,holder_565,insurer_7
+claim_220,CL-53238,2024-04-08,Weather,18171.9,2844.58,Settled,policy_978,holder_28,insurer_5
+claim_221,CL-35424,2024-12-26,Weather,17665.77,8473.19,Pending Review,policy_1116,holder_250,insurer_0
+claim_222,CL-14993,2025-10-06,Accident,13144.5,9256.16,Pending Review,policy_235,holder_82,insurer_5
+claim_223,CL-35120,2024-02-06,Water Damage,19636.46,20.53,Pending Review,policy_764,holder_87,insurer_6
+claim_224,CL-23567,2025-04-10,Liability,25502.87,4183.08,Settled,policy_485,holder_408,insurer_6
+claim_225,CL-65137,2023-04-21,Theft,9835.76,1226.73,Pending Review,policy_334,holder_66,insurer_2
+claim_226,CL-78320,2025-03-19,Accident,15705.94,569.98,Denied,policy_15,holder_483,insurer_7
+claim_227,CL-99305,2024-10-10,Theft,1105.43,312.89,Pending Review,policy_364,holder_416,insurer_7
+claim_228,CL-99334,2025-03-15,Vandalism,27553.85,2629.59,Pending Review,policy_410,holder_98,insurer_4
+claim_229,CL-80414,2025-12-11,Theft,9144.17,4011.02,Settled,policy_35,holder_389,insurer_4
+claim_230,CL-31153,2024-03-27,Weather,24747.82,3939.08,Denied,policy_283,holder_96,insurer_7
+claim_231,CL-72672,2025-01-23,Weather,11508.61,5772.45,Denied,policy_129,holder_484,insurer_9
+claim_232,CL-91821,2026-08-12,Liability,19216.17,17888.52,Denied,policy_707,holder_81,insurer_4
+claim_233,CL-12268,2025-09-07,Accident,21320.8,11328.97,Settled,policy_1028,holder_214,insurer_3
+claim_234,CL-47545,2026-02-28,Theft,29774.61,10557.53,Settled,policy_618,holder_356,insurer_3
+claim_235,CL-46515,2024-04-19,Water Damage,29499.18,13994.12,Denied,policy_304,holder_259,insurer_9
+claim_236,CL-90168,2022-05-30,Weather,21006.82,8309.29,Denied,policy_82,holder_549,insurer_9
+claim_237,CL-25615,2024-11-23,Theft,936.8,103.48,Denied,policy_976,holder_25,insurer_3
+claim_238,CL-74965,2024-07-16,Water Damage,20044.44,7242.3,Settled,policy_1049,holder_88,insurer_7
+claim_239,CL-91654,2023-09-20,Liability,14087.09,5390.33,Pending Review,policy_155,holder_386,insurer_9
+claim_240,CL-71776,2025-07-26,Water Damage,16342.64,10888.88,Denied,policy_1146,holder_344,insurer_1
+claim_241,CL-82690,2025-01-02,Water Damage,11201.1,1339.63,Open,policy_401,holder_180,insurer_4
+claim_242,CL-98064,2025-01-18,Accident,21662.8,804.5,Pending Review,policy_588,holder_465,insurer_3
+claim_243,CL-70969,2023-10-28,Vandalism,17784.84,17113.25,Pending Review,policy_444,holder_399,insurer_5
+claim_244,CL-87271,2022-08-30,Water Damage,14529.56,1737.41,Open,policy_170,holder_589,insurer_9
+claim_245,CL-36360,2023-01-29,Water Damage,8176.41,391.99,Pending Review,policy_274,holder_549,insurer_6
+claim_246,CL-77239,2026-08-31,Theft,4986.27,2402.17,Settled,policy_1098,holder_240,insurer_3
+claim_247,CL-10792,2023-12-01,Liability,2481.04,1916.18,Pending Review,policy_289,holder_195,insurer_4
+claim_248,CL-33965,2023-01-28,Theft,23283.71,22101.38,Settled,policy_1065,holder_242,insurer_5
+claim_249,CL-46543,2022-09-17,Water Damage,14383.99,4249.51,Open,policy_562,holder_292,insurer_5
+claim_250,CL-62267,2023-02-24,Vandalism,21845.5,16357.61,Denied,policy_267,holder_45,insurer_7
+claim_251,CL-91785,2026-01-09,Theft,8571.28,7554.59,Open,policy_307,holder_361,insurer_3
+claim_252,CL-86271,2025-04-21,Water Damage,22245.71,8941.21,Settled,policy_347,holder_368,insurer_8
+claim_253,CL-10116,2023-08-02,Vandalism,17816.97,13662.22,Pending Review,policy_593,holder_65,insurer_1
+claim_254,CL-52680,2025-02-24,Liability,4000.24,3006.51,Settled,policy_1104,holder_503,insurer_8
+claim_255,CL-74098,2023-07-23,Liability,29525.61,22278.75,Pending Review,policy_253,holder_52,insurer_3
+claim_256,CL-26707,2024-01-20,Water Damage,28591.49,3980.84,Open,policy_968,holder_161,insurer_4
+claim_257,CL-32705,2024-09-13,Weather,2664.46,451.33,Open,policy_156,holder_240,insurer_7
+claim_258,CL-72272,2024-08-02,Liability,19664.11,18962.21,Settled,policy_151,holder_423,insurer_7
+claim_259,CL-62782,2023-09-29,Accident,26336.73,7267.48,Denied,policy_399,holder_302,insurer_9
+claim_260,CL-41577,2023-08-29,Fire,29510.32,28661.69,Denied,policy_296,holder_218,insurer_3
+claim_261,CL-49620,2023-03-17,Liability,28082.26,20445.13,Denied,policy_871,holder_154,insurer_6
+claim_262,CL-69740,2026-05-13,Theft,7586.5,1312.21,Open,policy_551,holder_337,insurer_0
+claim_263,CL-10020,2023-08-18,Vandalism,16248.24,1241.53,Denied,policy_1177,holder_443,insurer_1
+claim_264,CL-18281,2025-11-25,Fire,21709.3,15719.7,Pending Review,policy_301,holder_162,insurer_3
+claim_265,CL-60602,2025-05-13,Theft,22399.17,1413.1,Denied,policy_804,holder_517,insurer_4
+claim_266,CL-28975,2023-07-25,Water Damage,3431.01,1079.15,Open,policy_950,holder_118,insurer_6
+claim_267,CL-38539,2023-09-18,Water Damage,26421.85,9852.31,Settled,policy_1165,holder_32,insurer_8
+claim_268,CL-84161,2025-03-26,Theft,16192.72,4581.61,Open,policy_1052,holder_104,insurer_9
+claim_269,CL-76469,2024-05-29,Weather,17155.22,11808.39,Pending Review,policy_481,holder_408,insurer_7
+claim_270,CL-10426,2025-08-07,Accident,1123.78,1034.13,Pending Review,policy_998,holder_497,insurer_5
+claim_271,CL-59963,2024-05-29,Liability,24577.74,9902.52,Open,policy_384,holder_254,insurer_7
+claim_272,CL-78189,2025-01-13,Theft,26248.24,18318.04,Open,policy_548,holder_206,insurer_5
+claim_273,CL-20734,2024-06-30,Fire,8661.71,964.58,Denied,policy_115,holder_61,insurer_1
+claim_274,CL-86289,2025-07-20,Liability,20970.31,18493.43,Denied,policy_784,holder_157,insurer_2
+claim_275,CL-86942,2024-10-23,Liability,17058.72,13178.61,Settled,policy_526,holder_32,insurer_1
+claim_276,CL-77213,2024-07-11,Vandalism,7298.02,1131.58,Pending Review,policy_411,holder_439,insurer_2
+claim_277,CL-95809,2023-03-17,Water Damage,18496.24,16141.76,Denied,policy_230,holder_355,insurer_0
+claim_278,CL-96124,2025-01-30,Liability,24433.79,21481.45,Settled,policy_319,holder_436,insurer_4
+claim_279,CL-59015,2023-05-26,Weather,27752.72,21989.31,Settled,policy_132,holder_318,insurer_9
+claim_280,CL-88006,2023-11-21,Vandalism,24727.52,2596.84,Pending Review,policy_984,holder_101,insurer_5
+claim_281,CL-42694,2022-05-13,Liability,27719.41,14866.35,Denied,policy_741,holder_360,insurer_2
+claim_282,CL-35806,2023-09-07,Water Damage,6980.29,474.94,Settled,policy_283,holder_96,insurer_7
+claim_283,CL-41129,2023-07-20,Accident,3728.43,1379.03,Settled,policy_64,holder_184,insurer_1
+claim_284,CL-92146,2023-04-22,Accident,26574.56,83.07,Settled,policy_169,holder_599,insurer_9
+claim_285,CL-79135,2025-05-20,Fire,22460.83,13413.34,Denied,policy_234,holder_281,insurer_2
+claim_286,CL-25147,2023-07-29,Theft,23035.12,2439.6,Denied,policy_587,holder_305,insurer_2
+claim_287,CL-82977,2023-11-19,Liability,22797.2,15047.38,Pending Review,policy_911,holder_35,insurer_8
+claim_288,CL-80126,2024-11-11,Theft,15794.94,3923.71,Open,policy_1096,holder_91,insurer_5
+claim_289,CL-64166,2024-09-17,Weather,12121.36,6770.83,Open,policy_710,holder_297,insurer_3
+claim_290,CL-80797,2025-07-21,Vandalism,25954.92,21167.36,Open,policy_551,holder_337,insurer_0
+claim_291,CL-66963,2024-06-15,Water Damage,14611.89,9717.54,Pending Review,policy_240,holder_301,insurer_6
+claim_292,CL-66457,2025-01-13,Vandalism,10994.71,4755.89,Settled,policy_544,holder_234,insurer_2
+claim_293,CL-16810,2026-02-02,Liability,1455.62,637.1,Open,policy_609,holder_559,insurer_7
+claim_294,CL-16074,2022-09-07,Weather,11400.86,6593.28,Pending Review,policy_704,holder_296,insurer_7
+claim_295,CL-35443,2024-05-29,Water Damage,13490.56,111.93,Settled,policy_58,holder_444,insurer_6
+claim_296,CL-41464,2023-07-16,Vandalism,27581.86,2986.93,Denied,policy_688,holder_32,insurer_8
+claim_297,CL-31277,2022-08-08,Water Damage,18495.6,18059.74,Denied,policy_550,holder_140,insurer_6
+claim_298,CL-77709,2024-02-18,Accident,1639.3,1066.36,Pending Review,policy_617,holder_206,insurer_0
+claim_299,CL-98285,2024-03-17,Water Damage,23835.34,14141.77,Open,policy_906,holder_62,insurer_7
+claim_300,CL-14624,2025-06-10,Liability,20252.05,16455.97,Denied,policy_1195,holder_131,insurer_1
+claim_301,CL-46264,2023-11-23,Theft,25273.53,11802.61,Open,policy_557,holder_376,insurer_1
+claim_302,CL-44795,2024-10-01,Fire,15803.93,4582.08,Denied,policy_16,holder_451,insurer_1
+claim_303,CL-28570,2026-08-22,Vandalism,3782.82,1507.59,Open,policy_530,holder_416,insurer_1
+claim_304,CL-43710,2024-02-01,Accident,25317.94,12651.07,Settled,policy_972,holder_543,insurer_5
+claim_305,CL-86588,2023-03-28,Water Damage,16357.06,12742.02,Pending Review,policy_807,holder_518,insurer_1
+claim_306,CL-64117,2025-01-03,Water Damage,22170.37,12040.32,Open,policy_751,holder_146,insurer_4
+claim_307,CL-12134,2025-03-26,Liability,16377.83,5475.91,Denied,policy_1124,holder_526,insurer_0
+claim_308,CL-69063,2025-10-27,Accident,2440.41,1370.6,Pending Review,policy_522,holder_571,insurer_5
+claim_309,CL-91957,2026-01-31,Water Damage,7578.89,500.29,Open,policy_1062,holder_480,insurer_3
+claim_310,CL-43930,2022-04-23,Water Damage,9070.27,3038.78,Pending Review,policy_780,holder_210,insurer_3
+claim_311,CL-10974,2024-03-21,Weather,15026.48,3261.53,Open,policy_1199,holder_231,insurer_5
+claim_312,CL-48365,2023-07-20,Fire,2985.78,154.9,Open,policy_402,holder_308,insurer_4
+claim_313,CL-68779,2023-11-23,Liability,2618.08,1004.73,Pending Review,policy_1080,holder_338,insurer_3
+claim_314,CL-61129,2025-04-07,Theft,10915.55,717.46,Pending Review,policy_1196,holder_288,insurer_9
+claim_315,CL-13404,2026-01-26,Accident,11341.89,10677.02,Pending Review,policy_1067,holder_457,insurer_5
+claim_316,CL-22497,2023-05-03,Water Damage,18075.07,9565.77,Pending Review,policy_580,holder_550,insurer_2
+claim_317,CL-23537,2023-11-28,Theft,1789.19,344.54,Settled,policy_94,holder_118,insurer_1
+claim_318,CL-51646,2024-10-14,Weather,2089.42,90.89,Pending Review,policy_417,holder_299,insurer_1
+claim_319,CL-40312,2025-08-25,Weather,1628.45,760.01,Denied,policy_798,holder_427,insurer_5
+claim_320,CL-97993,2023-12-23,Fire,11202.59,1059.2,Denied,policy_256,holder_14,insurer_1
+claim_321,CL-72437,2023-08-09,Water Damage,18275.74,5414.6,Settled,policy_1040,holder_557,insurer_0
+claim_322,CL-30841,2023-11-21,Water Damage,19839.15,6281.25,Open,policy_1103,holder_127,insurer_0
+claim_323,CL-94115,2023-07-02,Liability,4714.75,3936.66,Denied,policy_1040,holder_557,insurer_0
+claim_324,CL-49272,2025-04-01,Weather,20062.61,8305.84,Pending Review,policy_681,holder_249,insurer_4
+claim_325,CL-80888,2024-12-07,Fire,3915.27,2324.27,Open,policy_291,holder_469,insurer_6
+claim_326,CL-64685,2023-11-16,Water Damage,24892.28,7228.77,Open,policy_479,holder_188,insurer_6
+claim_327,CL-67532,2023-06-05,Water Damage,10843.45,1637.28,Open,policy_757,holder_63,insurer_6
+claim_328,CL-46792,2023-02-01,Accident,26532.25,13818.67,Pending Review,policy_807,holder_518,insurer_1
+claim_329,CL-31338,2022-08-31,Fire,15650.09,15233.27,Pending Review,policy_550,holder_140,insurer_6
+claim_330,CL-62968,2024-12-17,Theft,8497.79,602.44,Settled,policy_985,holder_448,insurer_9
+claim_331,CL-44622,2022-12-14,Vandalism,10898.62,4137.76,Settled,policy_8,holder_572,insurer_1
+claim_332,CL-97406,2025-10-16,Accident,20714.31,8861.25,Denied,policy_986,holder_585,insurer_5
+claim_333,CL-86427,2024-12-10,Fire,17635.76,2392.31,Settled,policy_381,holder_158,insurer_9
+claim_334,CL-73961,2024-02-18,Vandalism,19626.88,4868.98,Settled,policy_861,holder_463,insurer_9
+claim_335,CL-77365,2024-10-15,Theft,18920.03,16890.4,Settled,policy_596,holder_546,insurer_6
+claim_336,CL-78602,2024-11-20,Fire,8538.35,61.22,Pending Review,policy_266,holder_356,insurer_0
+claim_337,CL-87398,2025-07-12,Water Damage,27954.42,3030.01,Settled,policy_638,holder_81,insurer_3
+claim_338,CL-40651,2024-02-25,Water Damage,21023.65,13013.8,Pending Review,policy_490,holder_339,insurer_0
+claim_339,CL-48241,2023-06-03,Theft,6934.46,4433.65,Denied,policy_670,holder_218,insurer_4
+claim_340,CL-29538,2023-02-05,Vandalism,1388.56,309.21,Denied,policy_1144,holder_379,insurer_2
+claim_341,CL-77097,2024-03-29,Accident,10807.73,584.24,Denied,policy_806,holder_134,insurer_3
+claim_342,CL-39516,2024-03-07,Accident,18909.86,15438.32,Pending Review,policy_819,holder_224,insurer_1
+claim_343,CL-21981,2024-10-16,Liability,13971.19,8244.83,Settled,policy_1009,holder_171,insurer_2
+claim_344,CL-49047,2023-07-26,Vandalism,4119.26,3155.13,Settled,policy_413,holder_127,insurer_1
+claim_345,CL-13396,2023-09-09,Accident,13998.68,657.3,Settled,policy_1041,holder_7,insurer_3
+claim_346,CL-80634,2024-09-16,Theft,10125.66,1656.42,Open,policy_260,holder_554,insurer_6
+claim_347,CL-65824,2024-11-05,Accident,17978.95,6125.52,Settled,policy_728,holder_214,insurer_8
+claim_348,CL-14110,2022-10-08,Weather,9494.0,6516.67,Open,policy_336,holder_372,insurer_3
+claim_349,CL-51163,2024-08-19,Accident,9869.21,7586.51,Open,policy_657,holder_146,insurer_4
+claim_350,CL-87222,2024-07-07,Weather,28344.1,22287.2,Settled,policy_209,holder_462,insurer_2
+claim_351,CL-54758,2023-07-22,Accident,11530.78,6396.42,Pending Review,policy_535,holder_237,insurer_3
+claim_352,CL-61643,2024-07-21,Accident,22985.33,21106.63,Open,policy_879,holder_442,insurer_9
+claim_353,CL-24555,2024-12-26,Water Damage,23501.88,10238.42,Open,policy_78,holder_528,insurer_0
+claim_354,CL-64883,2022-11-09,Weather,23894.86,19406.36,Denied,policy_984,holder_101,insurer_5
+claim_355,CL-22838,2023-02-15,Theft,20185.41,1408.56,Settled,policy_1198,holder_282,insurer_9
+claim_356,CL-91586,2022-06-12,Water Damage,12647.53,10206.7,Denied,policy_403,holder_97,insurer_1
+claim_357,CL-41216,2025-05-26,Theft,21449.97,4497.04,Pending Review,policy_309,holder_514,insurer_5
+claim_358,CL-42038,2024-05-17,Theft,23229.0,15055.14,Settled,policy_1166,holder_3,insurer_3
+claim_359,CL-14907,2023-01-23,Water Damage,23880.3,2182.55,Denied,policy_738,holder_271,insurer_8
+claim_360,CL-21832,2024-01-15,Liability,19541.63,5651.06,Open,policy_1049,holder_88,insurer_7
+claim_361,CL-78947,2022-06-10,Fire,7433.4,5703.89,Pending Review,policy_90,holder_527,insurer_1
+claim_362,CL-34646,2023-10-25,Fire,28668.4,8549.59,Settled,policy_315,holder_152,insurer_8
+claim_363,CL-55695,2023-07-24,Water Damage,4892.66,514.05,Open,policy_675,holder_591,insurer_2
+claim_364,CL-42517,2022-09-11,Theft,11884.27,10624.09,Pending Review,policy_594,holder_28,insurer_7
+claim_365,CL-12259,2026-03-28,Water Damage,7737.1,5482.75,Settled,policy_591,holder_556,insurer_2
+claim_366,CL-27321,2023-12-19,Water Damage,4285.24,3861.57,Open,policy_418,holder_138,insurer_9
+claim_367,CL-58860,2026-04-01,Fire,26365.56,5179.06,Pending Review,policy_518,holder_595,insurer_1
+claim_368,CL-33805,2023-10-12,Fire,27205.99,2985.05,Pending Review,policy_1093,holder_35,insurer_5
+claim_369,CL-86458,2024-08-11,Weather,19630.45,18736.84,Settled,policy_963,holder_353,insurer_5
+claim_370,CL-49429,2022-12-02,Water Damage,8505.37,8497.9,Pending Review,policy_176,holder_375,insurer_6
+claim_371,CL-74716,2025-01-24,Water Damage,13193.37,627.17,Settled,policy_920,holder_264,insurer_4
+claim_372,CL-62503,2024-08-03,Theft,1749.7,1714.8,Pending Review,policy_342,holder_46,insurer_2
+claim_373,CL-79448,2025-09-13,Fire,25850.26,19664.43,Open,policy_1067,holder_457,insurer_5
+claim_374,CL-13939,2024-11-29,Weather,10240.08,6146.82,Open,policy_19,holder_44,insurer_8
+claim_375,CL-27601,2022-09-08,Fire,15788.27,11086.31,Settled,policy_298,holder_233,insurer_0
+claim_376,CL-41605,2025-03-09,Theft,7366.3,6173.55,Pending Review,policy_1199,holder_231,insurer_5
+claim_377,CL-78223,2023-07-01,Theft,1659.5,719.08,Settled,policy_3,holder_245,insurer_7
+claim_378,CL-43881,2024-03-08,Vandalism,8094.5,6543.4,Open,policy_604,holder_214,insurer_3
+claim_379,CL-83572,2023-12-17,Liability,20836.02,14780.7,Settled,policy_674,holder_474,insurer_4
+claim_380,CL-12495,2026-04-06,Accident,2311.44,1857.2,Open,policy_359,holder_419,insurer_3
+claim_381,CL-86860,2024-03-11,Accident,10852.16,6954.87,Open,policy_754,holder_213,insurer_5
+claim_382,CL-83188,2025-06-27,Accident,16787.05,1666.87,Denied,policy_433,holder_199,insurer_2
+claim_383,CL-63839,2025-04-17,Fire,6135.72,931.49,Pending Review,policy_1197,holder_155,insurer_4
+claim_384,CL-20994,2024-07-05,Water Damage,525.24,31.15,Denied,policy_1149,holder_566,insurer_2
+claim_385,CL-76950,2025-03-22,Vandalism,17424.71,9682.21,Open,policy_347,holder_368,insurer_8
+claim_386,CL-52817,2024-06-10,Accident,14554.58,428.69,Pending Review,policy_1001,holder_71,insurer_6
+claim_387,CL-85451,2026-05-05,Weather,9348.75,3391.71,Denied,policy_483,holder_558,insurer_3
+claim_388,CL-79155,2024-03-28,Accident,2612.43,1081.57,Open,policy_279,holder_80,insurer_7
+claim_389,CL-22706,2025-01-01,Theft,17284.1,10373.65,Open,policy_457,holder_525,insurer_7
+claim_390,CL-26089,2025-03-19,Fire,26589.1,9806.81,Settled,policy_898,holder_12,insurer_1
+claim_391,CL-26025,2023-07-09,Accident,1901.81,750.42,Denied,policy_673,holder_196,insurer_1
+claim_392,CL-78571,2026-10-16,Theft,23824.03,7558.25,Pending Review,policy_960,holder_492,insurer_2
+claim_393,CL-17987,2024-05-06,Liability,5200.19,2906.87,Open,policy_200,holder_513,insurer_9
+claim_394,CL-88700,2025-08-09,Liability,21243.36,17378.15,Open,policy_532,holder_468,insurer_3
+claim_395,CL-78841,2023-11-14,Fire,26159.08,10224.36,Denied,policy_322,holder_234,insurer_8
+claim_396,CL-44168,2023-11-13,Vandalism,21375.52,21097.7,Pending Review,policy_1157,holder_581,insurer_2
+claim_397,CL-53953,2025-03-05,Theft,28340.4,17561.09,Pending Review,policy_1031,holder_583,insurer_8
+claim_398,CL-18057,2024-12-14,Fire,29849.85,11580.09,Denied,policy_1169,holder_423,insurer_3
+claim_399,CL-89866,2025-12-17,Liability,17111.25,9546.9,Settled,policy_744,holder_124,insurer_5
+claim_400,CL-99523,2024-09-25,Accident,9052.73,1534.26,Open,policy_525,holder_15,insurer_6
+claim_401,CL-59290,2023-11-21,Fire,28897.58,6869.94,Settled,policy_596,holder_546,insurer_6
+claim_402,CL-41278,2026-10-29,Vandalism,13009.2,8257.83,Pending Review,policy_510,holder_419,insurer_7
+claim_403,CL-64329,2024-11-23,Fire,18690.88,10610.5,Pending Review,policy_449,holder_69,insurer_4
+claim_404,CL-93195,2024-06-17,Theft,26936.18,3865.61,Denied,policy_559,holder_447,insurer_4
+claim_405,CL-35242,2023-11-17,Liability,1340.13,239.26,Pending Review,policy_444,holder_399,insurer_5
+claim_406,CL-61854,2023-06-28,Weather,25099.51,10298.07,Pending Review,policy_1040,holder_557,insurer_0
+claim_407,CL-64150,2023-05-02,Theft,14587.55,3.02,Denied,policy_461,holder_27,insurer_5
+claim_408,CL-95340,2023-11-29,Accident,4555.37,3039.67,Pending Review,policy_270,holder_473,insurer_5
+claim_409,CL-34324,2023-08-05,Accident,16406.07,4769.04,Denied,policy_722,holder_147,insurer_6
+claim_410,CL-15212,2024-03-27,Weather,4925.01,4491.1,Open,policy_1182,holder_429,insurer_5
+claim_411,CL-85565,2024-01-16,Fire,29574.11,22867.85,Denied,policy_236,holder_147,insurer_7
+claim_412,CL-23097,2025-05-30,Liability,22249.42,1347.17,Denied,policy_158,holder_473,insurer_1
+claim_413,CL-18397,2025-02-07,Theft,18988.62,11394.12,Settled,policy_393,holder_576,insurer_3
+claim_414,CL-11645,2026-07-17,Fire,15920.8,12363.05,Denied,policy_788,holder_567,insurer_3
+claim_415,CL-17850,2026-05-27,Accident,6955.52,3988.9,Denied,policy_280,holder_446,insurer_2
+claim_416,CL-17318,2024-11-05,Liability,27704.09,6085.22,Open,policy_170,holder_589,insurer_9
+claim_417,CL-77602,2023-01-22,Weather,22243.38,20751.07,Settled,policy_1037,holder_106,insurer_5
+claim_418,CL-30439,2025-01-23,Accident,581.0,209.6,Open,policy_731,holder_298,insurer_4
+claim_419,CL-89025,2025-03-26,Accident,1069.96,239.34,Open,policy_417,holder_299,insurer_1
+claim_420,CL-76742,2022-09-05,Liability,16350.89,14750.8,Open,policy_1178,holder_331,insurer_5
+claim_421,CL-99813,2024-03-04,Weather,5242.98,3789.21,Pending Review,policy_285,holder_96,insurer_6
+claim_422,CL-15557,2023-09-16,Accident,11634.12,1469.15,Pending Review,policy_268,holder_324,insurer_6
+claim_423,CL-84891,2024-06-06,Theft,8562.15,3679.31,Pending Review,policy_736,holder_158,insurer_7
+claim_424,CL-38182,2024-03-21,Weather,26036.18,6986.14,Pending Review,policy_323,holder_163,insurer_2
+claim_425,CL-24869,2023-01-26,Water Damage,18008.42,11872.71,Open,policy_116,holder_446,insurer_1
+claim_426,CL-45356,2026-11-03,Vandalism,27985.65,15868.2,Denied,policy_1112,holder_258,insurer_2
+claim_427,CL-88844,2024-02-27,Liability,25680.33,11587.46,Settled,policy_277,holder_203,insurer_8
+claim_428,CL-87888,2024-11-25,Vandalism,22208.97,7179.25,Settled,policy_1009,holder_171,insurer_2
+claim_429,CL-70157,2025-01-10,Water Damage,15823.57,11659.58,Pending Review,policy_1114,holder_135,insurer_7
+claim_430,CL-13678,2022-11-29,Accident,8676.26,1437.1,Pending Review,policy_265,holder_376,insurer_0
+claim_431,CL-23788,2025-04-27,Liability,26106.08,15421.69,Denied,policy_374,holder_107,insurer_9
+claim_432,CL-91984,2025-01-21,Water Damage,27728.33,8068.16,Settled,policy_1036,holder_39,insurer_7
+claim_433,CL-76062,2025-02-15,Theft,18186.16,6506.17,Settled,policy_255,holder_98,insurer_0
+claim_434,CL-97050,2024-05-23,Accident,26748.58,7539.99,Settled,policy_338,holder_392,insurer_9
+claim_435,CL-50957,2025-10-27,Liability,4264.72,3112.52,Settled,policy_262,holder_144,insurer_8
+claim_436,CL-27314,2024-10-23,Theft,8680.22,698.25,Denied,policy_942,holder_2,insurer_4
+claim_437,CL-97413,2023-08-29,Theft,24045.79,11859.9,Pending Review,policy_724,holder_444,insurer_7
+claim_438,CL-81420,2027-05-07,Vandalism,28044.82,27862.71,Pending Review,policy_896,holder_512,insurer_4
+claim_439,CL-48287,2025-10-08,Theft,22724.52,6065.95,Denied,policy_835,holder_551,insurer_9
+claim_440,CL-15009,2025-09-22,Accident,19458.8,16379.52,Pending Review,policy_938,holder_87,insurer_7
+claim_441,CL-86607,2024-04-13,Liability,6060.04,4485.7,Settled,policy_344,holder_68,insurer_7
+claim_442,CL-64842,2024-12-05,Water Damage,15633.32,453.01,Open,policy_1001,holder_71,insurer_6
+claim_443,CL-92672,2025-03-19,Weather,1976.86,744.09,Denied,policy_1064,holder_31,insurer_1
+claim_444,CL-11538,2023-12-05,Weather,11615.5,6371.56,Settled,policy_505,holder_271,insurer_5
+claim_445,CL-45675,2026-07-07,Water Damage,6356.84,6328.58,Settled,policy_502,holder_47,insurer_2
+claim_446,CL-52804,2023-12-18,Fire,16338.21,5383.65,Settled,policy_601,holder_297,insurer_8
+claim_447,CL-47259,2024-11-11,Liability,7921.8,6909.7,Pending Review,policy_190,holder_315,insurer_1
+claim_448,CL-33833,2024-08-25,Theft,15842.16,12645.66,Open,policy_31,holder_366,insurer_0
+claim_449,CL-28698,2027-01-17,Theft,1787.62,188.76,Open,policy_212,holder_249,insurer_7
+claim_450,CL-75201,2024-06-20,Theft,3370.89,422.71,Denied,policy_56,holder_228,insurer_2
+claim_451,CL-27201,2025-05-21,Liability,10535.57,1433.36,Denied,policy_1118,holder_74,insurer_0
+claim_452,CL-44959,2023-10-24,Accident,11983.33,4219.29,Open,policy_150,holder_93,insurer_9
+claim_453,CL-89689,2023-09-27,Vandalism,18963.17,5488.24,Open,policy_630,holder_248,insurer_0
+claim_454,CL-16455,2026-02-09,Fire,5071.9,249.56,Denied,policy_1152,holder_122,insurer_1
+claim_455,CL-17735,2022-09-24,Theft,12112.9,12053.93,Denied,policy_895,holder_580,insurer_4
+claim_456,CL-59710,2023-08-07,Weather,24711.74,23643.14,Settled,policy_888,holder_371,insurer_8
+claim_457,CL-40453,2024-06-29,Vandalism,24623.31,17954.11,Open,policy_339,holder_394,insurer_1
+claim_458,CL-46642,2024-02-15,Fire,12063.11,8059.83,Open,policy_1051,holder_586,insurer_0
+claim_459,CL-96161,2025-05-28,Theft,9097.19,4157.34,Open,policy_1097,holder_21,insurer_6
+claim_460,CL-18702,2024-12-11,Theft,5225.64,2486.04,Settled,policy_125,holder_312,insurer_4
+claim_461,CL-97884,2022-07-08,Weather,28084.56,173.12,Open,policy_222,holder_269,insurer_1
+claim_462,CL-88025,2022-11-01,Water Damage,22296.82,19991.84,Pending Review,policy_1059,holder_238,insurer_6
+claim_463,CL-14932,2025-04-17,Accident,25202.43,14567.58,Denied,policy_310,holder_591,insurer_4
+claim_464,CL-56518,2024-01-14,Liability,29319.24,11265.49,Settled,policy_970,holder_108,insurer_0
+claim_465,CL-76697,2023-11-24,Liability,28988.87,25479.98,Pending Review,policy_278,holder_385,insurer_3
+claim_466,CL-57633,2023-03-07,Vandalism,11746.92,6124.54,Open,policy_96,holder_92,insurer_1
+claim_467,CL-48123,2024-05-17,Vandalism,27139.81,22312.8,Settled,policy_698,holder_8,insurer_6
+claim_468,CL-55825,2025-07-16,Weather,5133.24,616.34,Denied,policy_305,holder_358,insurer_6
+claim_469,CL-23827,2025-02-25,Theft,6273.33,5600.67,Denied,policy_624,holder_394,insurer_1
+claim_470,CL-25990,2026-10-22,Accident,18555.5,6375.49,Open,policy_1097,holder_21,insurer_6
+claim_471,CL-19751,2022-09-30,Theft,15431.23,14978.91,Denied,policy_298,holder_233,insurer_0
+claim_472,CL-49347,2023-12-28,Theft,1518.22,924.88,Open,policy_546,holder_229,insurer_2
+claim_473,CL-53707,2022-06-28,Accident,2597.02,1566.3,Denied,policy_895,holder_580,insurer_4
+claim_474,CL-38988,2023-07-03,Liability,28231.24,16981.95,Denied,policy_1003,holder_15,insurer_2
+claim_475,CL-14307,2024-04-07,Water Damage,21038.95,4675.54,Settled,policy_1073,holder_511,insurer_2
+claim_476,CL-73116,2022-07-13,Fire,28964.37,23750.56,Settled,policy_763,holder_432,insurer_0
+claim_477,CL-78899,2024-08-24,Accident,8940.31,6821.96,Denied,policy_140,holder_193,insurer_3
+claim_478,CL-98557,2022-11-10,Fire,6857.84,2688.72,Settled,policy_594,holder_28,insurer_7
+claim_479,CL-28987,2024-11-07,Accident,6349.57,5982.22,Open,policy_1051,holder_586,insurer_0
+claim_480,CL-72377,2024-04-04,Water Damage,15430.45,1601.58,Pending Review,policy_954,holder_21,insurer_1
+claim_481,CL-83134,2023-04-05,Theft,2252.27,37.22,Open,policy_1005,holder_70,insurer_8
+claim_482,CL-38165,2024-05-12,Water Damage,19121.67,6490.89,Settled,policy_532,holder_468,insurer_3
+claim_483,CL-83531,2025-03-15,Weather,14502.5,7383.7,Open,policy_1152,holder_122,insurer_1
+claim_484,CL-68395,2024-04-14,Water Damage,1245.9,461.6,Pending Review,policy_498,holder_44,insurer_9
+claim_485,CL-77756,2024-05-31,Liability,12081.84,9569.13,Open,policy_1171,holder_565,insurer_7
+claim_486,CL-18803,2024-05-11,Weather,18339.99,14991.03,Settled,policy_289,holder_195,insurer_4
+claim_487,CL-82243,2024-01-12,Water Damage,12951.84,9867.04,Denied,policy_346,holder_254,insurer_7
+claim_488,CL-59329,2023-01-16,Weather,20048.59,3188.22,Open,policy_46,holder_101,insurer_3
+claim_489,CL-28893,2024-04-03,Vandalism,11746.24,6011.97,Pending Review,policy_608,holder_508,insurer_7
+claim_490,CL-75316,2025-05-21,Theft,29246.06,15875.8,Denied,policy_592,holder_505,insurer_4
+claim_491,CL-12193,2022-08-02,Liability,565.25,10.87,Denied,policy_982,holder_52,insurer_2
+claim_492,CL-98201,2025-01-23,Vandalism,6522.03,928.82,Pending Review,policy_160,holder_374,insurer_8
+claim_493,CL-37050,2024-11-25,Fire,26989.96,11363.41,Open,policy_751,holder_146,insurer_4
+claim_494,CL-78621,2023-11-10,Theft,27640.77,11905.61,Settled,policy_546,holder_229,insurer_2
+claim_495,CL-19983,2023-06-27,Fire,23813.6,23701.63,Settled,policy_996,holder_433,insurer_7
+claim_496,CL-95368,2025-02-23,Accident,13336.46,1748.67,Denied,policy_934,holder_68,insurer_3
+claim_497,CL-36990,2024-06-10,Theft,15674.08,13423.51,Open,policy_831,holder_535,insurer_0
+claim_498,CL-70731,2024-10-16,Weather,16811.73,8812.86,Pending Review,policy_855,holder_253,insurer_1
+claim_499,CL-85565,2023-11-26,Liability,14735.5,6515.29,Pending Review,policy_494,holder_63,insurer_9
+claim_500,CL-58125,2022-11-15,Theft,16088.82,12223.07,Open,policy_380,holder_11,insurer_0
+claim_501,CL-97831,2023-08-14,Theft,28017.19,6118.61,Open,policy_179,holder_242,insurer_6
+claim_502,CL-31196,2024-08-15,Accident,5455.14,286.2,Settled,policy_151,holder_423,insurer_7
+claim_503,CL-33975,2025-02-02,Vandalism,15176.24,10431.89,Open,policy_909,holder_68,insurer_3
+claim_504,CL-78668,2024-05-07,Water Damage,4006.27,2831.81,Settled,policy_651,holder_21,insurer_0
+claim_505,CL-27639,2023-04-01,Theft,25477.49,16478.2,Pending Review,policy_613,holder_330,insurer_7
+claim_506,CL-96577,2024-09-03,Fire,2218.77,2025.83,Denied,policy_605,holder_373,insurer_2
+claim_507,CL-26055,2024-11-11,Accident,14833.36,13490.42,Denied,policy_654,holder_403,insurer_3
+claim_508,CL-21602,2025-02-07,Liability,24910.32,3211.0,Denied,policy_1027,holder_500,insurer_6
+claim_509,CL-95861,2023-01-03,Vandalism,9224.87,7239.52,Settled,policy_824,holder_285,insurer_8
+claim_510,CL-81376,2025-07-29,Weather,28954.1,16296.94,Denied,policy_643,holder_98,insurer_6
+claim_511,CL-88172,2023-03-12,Accident,10227.28,1525.61,Denied,policy_70,holder_339,insurer_9
+claim_512,CL-26246,2025-07-03,Weather,27434.96,26529.11,Denied,policy_89,holder_463,insurer_5
+claim_513,CL-96410,2022-09-14,Accident,27829.44,19399.86,Pending Review,policy_419,holder_198,insurer_7
+claim_514,CL-17171,2025-02-25,Water Damage,28710.21,21115.46,Pending Review,policy_254,holder_159,insurer_8
+claim_515,CL-37928,2023-11-13,Water Damage,28153.03,439.97,Settled,policy_185,holder_117,insurer_6
+claim_516,CL-90968,2023-04-23,Accident,11386.59,8499.41,Denied,policy_634,holder_304,insurer_4
+claim_517,CL-27754,2023-04-10,Vandalism,10749.13,9359.81,Open,policy_1174,holder_458,insurer_1
+claim_518,CL-97619,2024-02-21,Weather,17683.3,12208.27,Open,policy_889,holder_422,insurer_5
+claim_519,CL-60566,2025-05-14,Liability,1060.21,214.37,Open,policy_762,holder_581,insurer_0
+claim_520,CL-76698,2023-11-29,Accident,25611.28,24847.21,Open,policy_112,holder_250,insurer_6
+claim_521,CL-31142,2023-04-28,Fire,20656.44,17714.05,Pending Review,policy_962,holder_530,insurer_7
+claim_522,CL-56147,2024-11-13,Vandalism,3374.69,1463.24,Denied,policy_723,holder_69,insurer_3
+claim_523,CL-80277,2024-07-28,Vandalism,3770.07,3428.01,Denied,policy_1022,holder_366,insurer_5
+claim_524,CL-70940,2025-07-17,Theft,26485.25,9921.09,Settled,policy_820,holder_247,insurer_2
+claim_525,CL-56255,2023-04-22,Weather,23554.17,11071.88,Denied,policy_634,holder_304,insurer_4
+claim_526,CL-46699,2025-09-10,Weather,5975.86,1925.32,Pending Review,policy_81,holder_420,insurer_9
+claim_527,CL-90371,2023-01-08,Theft,21397.07,11424.69,Open,policy_613,holder_330,insurer_7
+claim_528,CL-42549,2024-07-27,Liability,12515.63,11482.77,Pending Review,policy_1193,holder_498,insurer_4
+claim_529,CL-17507,2022-07-15,Vandalism,19934.82,13603.39,Denied,policy_1178,holder_331,insurer_5
+claim_530,CL-56109,2025-05-07,Accident,15341.4,3033.98,Pending Review,policy_470,holder_379,insurer_9
+claim_531,CL-54756,2023-04-17,Fire,22275.1,21410.61,Settled,policy_1003,holder_15,insurer_2
+claim_532,CL-61873,2023-03-07,Liability,22783.41,11209.58,Pending Review,policy_1083,holder_77,insurer_5
+claim_533,CL-86553,2023-06-16,Weather,1840.6,1196.17,Open,policy_534,holder_250,insurer_3
+claim_534,CL-74731,2022-04-14,Vandalism,16458.77,15741.48,Denied,policy_177,holder_259,insurer_0
+claim_535,CL-28639,2024-01-13,Water Damage,16450.67,5254.39,Open,policy_55,holder_188,insurer_1
+claim_536,CL-92263,2024-10-14,Weather,17614.27,10686.26,Open,policy_69,holder_84,insurer_8
+claim_537,CL-92353,2024-08-03,Liability,8561.32,7426.82,Pending Review,policy_494,holder_63,insurer_9
+claim_538,CL-55113,2023-05-03,Liability,2016.98,531.75,Denied,policy_1047,holder_410,insurer_5
+claim_539,CL-89504,2024-05-09,Weather,24305.2,151.46,Settled,policy_1162,holder_335,insurer_4
+claim_540,CL-84408,2024-01-25,Vandalism,25960.22,12252.05,Open,policy_654,holder_403,insurer_3
+claim_541,CL-84730,2024-11-16,Accident,3974.92,1522.97,Denied,policy_597,holder_512,insurer_5
+claim_542,CL-58785,2025-08-06,Accident,12276.38,4161.37,Denied,policy_654,holder_403,insurer_3
+claim_543,CL-89613,2023-11-18,Liability,6436.96,3916.65,Pending Review,policy_596,holder_546,insurer_6
+claim_544,CL-84528,2023-11-04,Accident,23543.84,9744.24,Denied,policy_181,holder_291,insurer_9
+claim_545,CL-45193,2023-07-18,Theft,1159.29,769.52,Settled,policy_649,holder_200,insurer_2
+claim_546,CL-25848,2022-05-20,Liability,1422.29,72.47,Settled,policy_231,holder_484,insurer_7
+claim_547,CL-23843,2026-03-22,Liability,7748.43,1308.43,Pending Review,policy_1049,holder_88,insurer_7
+claim_548,CL-55979,2024-10-21,Vandalism,4683.22,2860.66,Open,policy_437,holder_49,insurer_5
+claim_549,CL-21254,2024-10-10,Water Damage,3153.24,2136.28,Open,policy_450,holder_523,insurer_2
+claim_550,CL-93214,2023-06-04,Fire,15316.91,14910.45,Settled,policy_738,holder_271,insurer_8
+claim_551,CL-42746,2025-01-30,Liability,10159.52,3592.52,Pending Review,policy_114,holder_47,insurer_5
+claim_552,CL-58584,2024-04-14,Theft,12382.31,7411.05,Open,policy_248,holder_260,insurer_8
+claim_553,CL-27331,2024-10-02,Theft,28376.12,1889.9,Pending Review,policy_84,holder_349,insurer_6
+claim_554,CL-11990,2025-10-10,Fire,1289.66,1213.27,Open,policy_538,holder_598,insurer_4
+claim_555,CL-37156,2022-09-11,Theft,15529.58,1447.23,Settled,policy_1069,holder_524,insurer_9
+claim_556,CL-61497,2025-11-19,Liability,29044.18,27848.61,Denied,policy_307,holder_361,insurer_3
+claim_557,CL-96052,2025-01-26,Fire,12773.21,871.1,Settled,policy_144,holder_245,insurer_3
+claim_558,CL-20654,2024-12-08,Vandalism,18075.9,16142.4,Open,policy_765,holder_72,insurer_1
+claim_559,CL-70389,2023-03-19,Water Damage,23052.09,14956.59,Pending Review,policy_438,holder_112,insurer_5
+claim_560,CL-10202,2023-08-15,Weather,13145.61,12494.87,Pending Review,policy_892,holder_350,insurer_0
+claim_561,CL-56070,2025-03-07,Vandalism,12447.54,9133.71,Settled,policy_573,holder_451,insurer_8
+claim_562,CL-58848,2022-12-22,Weather,17453.21,15233.88,Open,policy_366,holder_255,insurer_3
+claim_563,CL-35882,2022-10-24,Theft,12173.44,2147.44,Settled,policy_1041,holder_7,insurer_3
+claim_564,CL-75852,2023-10-30,Weather,11664.02,10930.05,Pending Review,policy_580,holder_550,insurer_2
+claim_565,CL-62380,2024-05-02,Vandalism,2903.24,2187.67,Denied,policy_19,holder_44,insurer_8
+claim_566,CL-59773,2025-04-29,Fire,13427.91,3531.89,Open,policy_700,holder_328,insurer_1
+claim_567,CL-72430,2025-06-10,Accident,6736.88,3037.33,Open,policy_960,holder_492,insurer_2
+claim_568,CL-99020,2022-03-21,Vandalism,20065.41,5017.43,Settled,policy_668,holder_459,insurer_3
+claim_569,CL-53765,2024-11-02,Liability,19840.08,15018.99,Pending Review,policy_829,holder_468,insurer_6
+claim_570,CL-30121,2025-02-07,Liability,15863.0,10991.9,Pending Review,policy_78,holder_528,insurer_0
+claim_571,CL-72607,2023-02-14,Water Damage,16777.66,8233.23,Pending Review,policy_265,holder_376,insurer_0
+claim_572,CL-81313,2024-07-26,Theft,28035.05,17177.58,Denied,policy_927,holder_58,insurer_7
+claim_573,CL-85852,2025-02-26,Weather,21935.72,12706.22,Settled,policy_455,holder_152,insurer_4
+claim_574,CL-84106,2022-11-08,Liability,9252.73,5439.66,Open,policy_274,holder_549,insurer_6
+claim_575,CL-21264,2023-03-17,Liability,17443.74,2768.57,Open,policy_1008,holder_309,insurer_6
+claim_576,CL-25741,2024-03-21,Liability,5386.91,3972.97,Denied,policy_851,holder_170,insurer_2
+claim_577,CL-49712,2024-10-30,Vandalism,25532.22,17501.94,Settled,policy_774,holder_318,insurer_8
+claim_578,CL-47505,2025-02-09,Fire,4627.41,3303.06,Settled,policy_255,holder_98,insurer_0
+claim_579,CL-69863,2025-02-07,Theft,5602.28,5353.13,Pending Review,policy_559,holder_447,insurer_4
+claim_580,CL-32784,2022-05-14,Water Damage,27298.71,23846.06,Denied,policy_248,holder_260,insurer_8
+claim_581,CL-20083,2023-01-08,Vandalism,4616.18,1144.91,Settled,policy_555,holder_143,insurer_4
+claim_582,CL-35867,2023-02-09,Weather,8222.49,1153.84,Pending Review,policy_380,holder_11,insurer_0
+claim_583,CL-92650,2025-08-01,Theft,23335.65,20543.03,Pending Review,policy_257,holder_551,insurer_2
+claim_584,CL-51194,2025-03-03,Weather,8327.99,8158.03,Open,policy_728,holder_214,insurer_8
+claim_585,CL-89842,2023-09-22,Liability,28539.14,13883.44,Pending Review,policy_1142,holder_332,insurer_7
+claim_586,CL-27954,2024-02-17,Water Damage,12315.7,9621.95,Open,policy_664,holder_525,insurer_3
+claim_587,CL-86876,2025-02-19,Water Damage,12425.94,11433.63,Denied,policy_1185,holder_59,insurer_5
+claim_588,CL-38804,2025-01-16,Liability,28391.45,11842.56,Settled,policy_941,holder_194,insurer_4
+claim_589,CL-18778,2025-03-31,Liability,7786.99,6085.34,Denied,policy_998,holder_497,insurer_5
+claim_590,CL-95135,2024-01-16,Fire,14752.41,9145.06,Denied,policy_878,holder_559,insurer_9
+claim_591,CL-51346,2023-02-09,Water Damage,8118.78,8049.55,Settled,policy_1168,holder_37,insurer_7
+claim_592,CL-15638,2023-09-12,Vandalism,22898.26,3225.6,Pending Review,policy_1126,holder_82,insurer_4
+claim_593,CL-24523,2024-03-15,Vandalism,27254.72,20581.73,Denied,policy_471,holder_580,insurer_5
+claim_594,CL-84628,2026-12-18,Theft,17512.92,5614.98,Settled,policy_788,holder_567,insurer_3
+claim_595,CL-74888,2024-07-19,Accident,27061.17,21091.36,Open,policy_602,holder_475,insurer_5
+claim_596,CL-61566,2022-05-13,Liability,2837.7,1842.75,Settled,policy_503,holder_456,insurer_5
+claim_597,CL-12737,2022-09-27,Weather,4036.65,3666.27,Pending Review,policy_704,holder_296,insurer_7
+claim_598,CL-68309,2026-08-12,Accident,17064.51,6829.26,Denied,policy_109,holder_508,insurer_8
+claim_599,CL-12205,2022-07-17,Weather,12634.02,93.9,Open,policy_172,holder_203,insurer_6
+claim_600,CL-54845,2024-06-29,Fire,25669.9,15415.94,Pending Review,policy_673,holder_196,insurer_1
+claim_601,CL-69559,2023-01-01,Fire,17272.57,5182.54,Open,policy_816,holder_353,insurer_4
+claim_602,CL-27915,2024-04-20,Theft,16657.97,13282.92,Settled,policy_411,holder_439,insurer_2
+claim_603,CL-40071,2024-06-14,Liability,5291.16,3405.49,Open,policy_633,holder_109,insurer_5
+claim_604,CL-53866,2024-04-16,Vandalism,16512.52,8627.0,Open,policy_209,holder_462,insurer_2
+claim_605,CL-96986,2025-01-02,Vandalism,1456.46,773.32,Pending Review,policy_513,holder_60,insurer_2
+claim_606,CL-13548,2023-08-02,Theft,7084.55,6436.89,Denied,policy_400,holder_488,insurer_6
+claim_607,CL-52941,2025-06-12,Weather,28205.13,18836.71,Denied,policy_846,holder_38,insurer_4
+claim_608,CL-65684,2024-11-27,Liability,19416.85,2749.17,Denied,policy_262,holder_144,insurer_8
+claim_609,CL-28813,2023-12-16,Weather,12746.27,57.71,Denied,policy_14,holder_289,insurer_3
+claim_610,CL-97355,2024-10-25,Water Damage,14860.59,2572.21,Denied,policy_748,holder_52,insurer_9
+claim_611,CL-60049,2023-08-14,Fire,15899.23,13246.13,Open,policy_995,holder_137,insurer_0
+claim_612,CL-98948,2023-05-15,Weather,27899.94,2453.4,Settled,policy_684,holder_183,insurer_0
+claim_613,CL-81772,2024-10-28,Liability,28526.45,2596.21,Open,policy_933,holder_521,insurer_6
+claim_614,CL-36596,2024-12-03,Accident,18353.52,10893.32,Denied,policy_1037,holder_106,insurer_5
+claim_615,CL-69203,2025-12-01,Theft,12049.99,1684.53,Denied,policy_775,holder_449,insurer_3
+claim_616,CL-46697,2024-10-03,Liability,19478.09,9248.75,Pending Review,policy_676,holder_56,insurer_2
+claim_617,CL-12088,2024-01-08,Fire,28554.45,16542.39,Settled,policy_14,holder_289,insurer_3
+claim_618,CL-16873,2026-07-15,Liability,12643.16,8458.09,Pending Review,policy_30,holder_60,insurer_5
+claim_619,CL-15862,2024-07-22,Weather,13915.36,13460.35,Denied,policy_1162,holder_335,insurer_4
+claim_620,CL-34870,2023-04-22,Theft,10128.95,6376.09,Open,policy_445,holder_497,insurer_7
+claim_621,CL-25693,2026-08-12,Theft,24510.51,10089.85,Denied,policy_1035,holder_59,insurer_7
+claim_622,CL-75331,2025-02-14,Weather,10202.58,9575.35,Settled,policy_602,holder_475,insurer_5
+claim_623,CL-54102,2024-02-21,Liability,3561.59,1830.17,Denied,policy_285,holder_96,insurer_6
+claim_624,CL-96623,2024-03-10,Accident,1197.71,1000.08,Pending Review,policy_641,holder_499,insurer_9
+claim_625,CL-75818,2024-07-16,Liability,17842.89,11285.45,Open,policy_847,holder_134,insurer_8
+claim_626,CL-85699,2023-05-17,Vandalism,27815.96,21973.62,Open,policy_169,holder_599,insurer_9
+claim_627,CL-34907,2026-03-26,Accident,1014.56,199.21,Pending Review,policy_136,holder_355,insurer_9
+claim_628,CL-69887,2025-08-03,Weather,919.26,705.72,Settled,policy_424,holder_279,insurer_4
+claim_629,CL-54428,2026-02-01,Theft,10736.81,10543.74,Pending Review,policy_350,holder_432,insurer_4
+claim_630,CL-33408,2022-08-17,Vandalism,3480.78,2298.33,Open,policy_760,holder_12,insurer_0
+claim_631,CL-18448,2022-06-24,Accident,23295.05,4430.21,Settled,policy_840,holder_370,insurer_4
+claim_632,CL-39734,2023-04-06,Theft,1351.42,771.05,Settled,policy_1044,holder_403,insurer_4
+claim_633,CL-89959,2026-02-16,Water Damage,15059.52,3457.53,Pending Review,policy_672,holder_316,insurer_6
+claim_634,CL-37419,2024-06-16,Fire,13423.74,12597.68,Open,policy_168,holder_499,insurer_9
+claim_635,CL-69284,2023-04-15,Vandalism,19433.18,3663.49,Open,policy_763,holder_432,insurer_0
+claim_636,CL-49282,2024-10-25,Vandalism,11604.56,9865.54,Denied,policy_724,holder_444,insurer_7
+claim_637,CL-58270,2022-11-20,Vandalism,29893.42,12902.53,Pending Review,policy_818,holder_337,insurer_1
+claim_638,CL-17860,2023-04-06,Vandalism,9235.68,8666.34,Open,policy_1007,holder_111,insurer_2
+claim_639,CL-42127,2025-09-10,Vandalism,4343.41,2202.58,Pending Review,policy_642,holder_533,insurer_0
+claim_640,CL-89827,2023-10-18,Weather,1207.8,599.39,Denied,policy_335,holder_119,insurer_0
+claim_641,CL-47548,2024-01-28,Theft,21399.37,12869.86,Denied,policy_900,holder_137,insurer_2
+claim_642,CL-64337,2024-03-11,Fire,10490.97,7127.71,Open,policy_411,holder_439,insurer_2
+claim_643,CL-39412,2023-03-02,Theft,22983.25,8794.23,Open,policy_20,holder_28,insurer_7
+claim_644,CL-81109,2024-05-26,Theft,3655.68,3634.09,Denied,policy_1117,holder_59,insurer_8
+claim_645,CL-50043,2026-11-29,Water Damage,14963.41,6473.34,Pending Review,policy_371,holder_100,insurer_1
+claim_646,CL-16477,2025-06-02,Fire,23811.72,14526.36,Denied,policy_1051,holder_586,insurer_0
+claim_647,CL-36731,2025-09-21,Weather,20203.24,8995.78,Pending Review,policy_270,holder_473,insurer_5
+claim_648,CL-42724,2026-04-27,Weather,20646.15,11084.7,Open,policy_370,holder_336,insurer_9
+claim_649,CL-96456,2024-05-26,Vandalism,10483.41,9162.76,Denied,policy_1161,holder_212,insurer_4
+claim_650,CL-49600,2024-08-09,Accident,26129.21,18094.98,Settled,policy_1004,holder_579,insurer_6
+claim_651,CL-70709,2025-02-25,Theft,10783.0,10546.14,Denied,policy_856,holder_540,insurer_4
+claim_652,CL-86802,2025-05-14,Liability,26045.13,10987.7,Settled,policy_719,holder_371,insurer_2
+claim_653,CL-35571,2023-05-22,Fire,3088.52,2081.51,Pending Review,policy_749,holder_221,insurer_6
+claim_654,CL-61877,2025-11-11,Weather,19394.83,9432.06,Settled,policy_648,holder_568,insurer_6
+claim_655,CL-35262,2024-10-02,Accident,4937.19,3727.91,Settled,policy_762,holder_581,insurer_0
+claim_656,CL-11668,2023-03-18,Liability,6172.07,1349.61,Denied,policy_871,holder_154,insurer_6
+claim_657,CL-28797,2024-02-02,Liability,29033.93,18526.49,Denied,policy_331,holder_27,insurer_3
+claim_658,CL-92153,2023-07-11,Vandalism,17540.6,7324.03,Open,policy_500,holder_240,insurer_5
+claim_659,CL-50949,2025-10-30,Liability,1629.33,973.55,Settled,policy_804,holder_517,insurer_4
+claim_660,CL-38995,2024-08-30,Fire,10890.67,10069.42,Pending Review,policy_968,holder_161,insurer_4
+claim_661,CL-33105,2022-06-10,Liability,28440.54,6733.42,Open,policy_649,holder_200,insurer_2
+claim_662,CL-88691,2022-06-21,Liability,17137.92,3198.18,Open,policy_575,holder_149,insurer_3
+claim_663,CL-54920,2024-07-11,Theft,19424.71,602.06,Settled,policy_723,holder_69,insurer_3
+claim_664,CL-11654,2026-06-10,Accident,18020.39,12088.42,Open,policy_204,holder_340,insurer_7
+claim_665,CL-94873,2023-01-21,Vandalism,9206.75,1607.29,Denied,policy_150,holder_93,insurer_9
+claim_666,CL-70060,2024-04-23,Liability,29206.02,11508.03,Pending Review,policy_144,holder_245,insurer_3
+claim_667,CL-43218,2024-01-10,Vandalism,17531.66,13767.78,Open,policy_713,holder_165,insurer_9
+claim_668,CL-70767,2024-06-26,Accident,16797.67,3094.55,Denied,policy_476,holder_570,insurer_5
+claim_669,CL-16395,2024-06-17,Water Damage,19126.07,12548.51,Denied,policy_471,holder_580,insurer_5
+claim_670,CL-26732,2025-07-13,Accident,20756.57,20095.94,Open,policy_86,holder_165,insurer_7
+claim_671,CL-10591,2023-04-16,Water Damage,20487.11,11196.08,Pending Review,policy_614,holder_392,insurer_3
+claim_672,CL-10826,2022-10-05,Vandalism,28022.49,9727.65,Denied,policy_380,holder_11,insurer_0
+claim_673,CL-11735,2025-01-04,Liability,18922.01,4533.43,Settled,policy_863,holder_236,insurer_0
+claim_674,CL-66906,2026-01-28,Theft,11984.37,2424.24,Open,policy_1000,holder_157,insurer_8
+claim_675,CL-15789,2023-06-12,Water Damage,3420.21,2726.94,Settled,policy_948,holder_200,insurer_9
+claim_676,CL-31505,2024-07-12,Water Damage,22474.01,1424.38,Pending Review,policy_1158,holder_521,insurer_7
+claim_677,CL-35911,2024-03-04,Accident,4095.2,2183.87,Pending Review,policy_883,holder_135,insurer_4
+claim_678,CL-17296,2024-09-11,Fire,28304.82,17546.47,Pending Review,policy_849,holder_183,insurer_6
+claim_679,CL-94435,2022-08-05,Vandalism,17227.09,16994.62,Pending Review,policy_102,holder_382,insurer_5
+claim_680,CL-77742,2023-04-05,Accident,18275.19,2478.52,Pending Review,policy_511,holder_461,insurer_7
+claim_681,CL-57003,2023-01-28,Vandalism,16745.03,13803.89,Settled,policy_419,holder_198,insurer_7
+claim_682,CL-98897,2022-10-06,Weather,29586.11,9309.09,Open,policy_984,holder_101,insurer_5
+claim_683,CL-56126,2024-02-15,Theft,14114.92,1907.16,Open,policy_702,holder_153,insurer_1
+claim_684,CL-13336,2023-07-26,Fire,11920.34,3175.21,Settled,policy_101,holder_582,insurer_0
+claim_685,CL-34718,2023-10-27,Weather,16779.08,873.71,Pending Review,policy_640,holder_326,insurer_4
+claim_686,CL-58935,2023-05-18,Fire,13841.03,4853.68,Open,policy_346,holder_254,insurer_7
+claim_687,CL-77632,2023-09-05,Fire,2497.84,1090.37,Pending Review,policy_29,holder_223,insurer_8
+claim_688,CL-90050,2024-10-31,Liability,14532.29,14051.54,Open,policy_1057,holder_299,insurer_7
+claim_689,CL-54834,2023-08-25,Accident,2205.41,111.18,Denied,policy_282,holder_230,insurer_8
+claim_690,CL-95462,2025-06-16,Water Damage,10309.03,2712.02,Settled,policy_391,holder_296,insurer_5
+claim_691,CL-74969,2025-09-10,Fire,8191.35,4515.24,Pending Review,policy_998,holder_497,insurer_5
+claim_692,CL-15932,2023-04-03,Liability,22783.91,12114.17,Denied,policy_834,holder_205,insurer_7
+claim_693,CL-43960,2026-04-23,Theft,9708.02,7156.97,Denied,policy_1112,holder_258,insurer_2
+claim_694,CL-36313,2024-08-07,Liability,14997.25,1413.92,Settled,policy_325,holder_327,insurer_0
+claim_695,CL-29220,2023-08-28,Weather,3944.1,28.87,Denied,policy_757,holder_63,insurer_6
+claim_696,CL-39255,2024-12-31,Water Damage,1572.75,263.8,Settled,policy_310,holder_591,insurer_4
+claim_697,CL-24768,2023-01-16,Liability,27482.47,22081.72,Settled,policy_264,holder_160,insurer_4
+claim_698,CL-51396,2022-08-25,Weather,24830.23,22455.92,Pending Review,policy_572,holder_438,insurer_2
+claim_699,CL-38569,2023-10-10,Vandalism,25123.4,19910.57,Open,policy_904,holder_125,insurer_0
+claim_700,CL-16399,2025-01-10,Fire,1372.52,849.45,Pending Review,policy_488,holder_496,insurer_4
+claim_701,CL-39943,2022-12-15,Accident,26667.23,26333.1,Open,policy_666,holder_503,insurer_9
+claim_702,CL-34715,2025-06-01,Liability,7777.64,7488.74,Pending Review,policy_107,holder_401,insurer_0
+claim_703,CL-34567,2022-12-11,Vandalism,21722.51,1258.41,Open,policy_564,holder_160,insurer_3
+claim_704,CL-75926,2022-09-23,Fire,7106.01,499.35,Open,policy_574,holder_527,insurer_9
+claim_705,CL-57982,2023-10-26,Vandalism,19319.77,14043.2,Open,policy_90,holder_527,insurer_1
+claim_706,CL-94770,2024-12-31,Fire,6751.6,2842.82,Denied,policy_243,holder_421,insurer_2
+claim_707,CL-39147,2024-04-15,Vandalism,10473.39,6793.14,Open,policy_735,holder_478,insurer_2
+claim_708,CL-39463,2025-01-07,Theft,14372.89,7731.91,Denied,policy_543,holder_117,insurer_9
+claim_709,CL-47870,2024-01-28,Liability,18668.5,15074.28,Settled,policy_853,holder_331,insurer_1
+claim_710,CL-69910,2023-05-07,Weather,10226.11,5527.73,Settled,policy_1119,holder_146,insurer_3
+claim_711,CL-58844,2022-09-21,Vandalism,10885.64,8435.85,Settled,policy_1059,holder_238,insurer_6
+claim_712,CL-88153,2023-02-25,Theft,4315.25,3590.08,Open,policy_1063,holder_446,insurer_4
+claim_713,CL-82632,2024-04-22,Water Damage,5572.78,5441.39,Settled,policy_107,holder_401,insurer_0
+claim_714,CL-50791,2024-02-04,Liability,21802.94,12163.79,Denied,policy_1179,holder_347,insurer_7
+claim_715,CL-17916,2023-06-11,Water Damage,18686.9,1181.87,Open,policy_112,holder_250,insurer_6
+claim_716,CL-43645,2023-03-07,Vandalism,27213.67,1880.8,Denied,policy_956,holder_180,insurer_3
+claim_717,CL-12487,2026-07-23,Vandalism,14199.54,12525.6,Denied,policy_703,holder_170,insurer_5
+claim_718,CL-96517,2024-01-16,Accident,9401.95,2619.07,Pending Review,policy_101,holder_582,insurer_0
+claim_719,CL-22962,2025-01-25,Vandalism,25894.3,7530.97,Pending Review,policy_806,holder_134,insurer_3
+claim_720,CL-41405,2024-12-28,Weather,29061.24,12047.21,Open,policy_644,holder_273,insurer_5
+claim_721,CL-54507,2024-01-26,Accident,26366.4,2626.94,Denied,policy_903,holder_379,insurer_5
+claim_722,CL-56091,2024-02-22,Water Damage,3254.85,2919.17,Open,policy_1070,holder_597,insurer_6
+claim_723,CL-94141,2024-10-24,Theft,11535.07,2241.98,Pending Review,policy_312,holder_129,insurer_4
+claim_724,CL-14935,2026-01-01,Theft,3051.57,645.75,Denied,policy_234,holder_281,insurer_2
+claim_725,CL-74116,2024-09-17,Fire,25342.27,10537.75,Pending Review,policy_913,holder_138,insurer_8
+claim_726,CL-49626,2023-01-03,Water Damage,29424.84,3142.32,Settled,policy_190,holder_315,insurer_1
+claim_727,CL-38297,2024-10-13,Theft,23383.7,16559.01,Pending Review,policy_76,holder_155,insurer_7
+claim_728,CL-60068,2024-04-06,Weather,18747.03,1828.15,Pending Review,policy_51,holder_365,insurer_2
+claim_729,CL-67548,2024-06-27,Weather,19520.85,5641.68,Denied,policy_97,holder_150,insurer_4
+claim_730,CL-39874,2024-11-23,Liability,6158.45,216.74,Denied,policy_15,holder_483,insurer_7
+claim_731,CL-34993,2023-08-02,Water Damage,7920.86,7374.41,Pending Review,policy_1126,holder_82,insurer_4
+claim_732,CL-77552,2023-05-13,Fire,26270.07,12368.29,Settled,policy_290,holder_59,insurer_4
+claim_733,CL-16543,2025-06-14,Vandalism,9073.86,3714.21,Open,policy_762,holder_581,insurer_0
+claim_734,CL-50832,2025-01-26,Accident,26680.87,23875.89,Open,policy_1098,holder_240,insurer_3
+claim_735,CL-40361,2024-02-22,Fire,5670.09,5249.25,Pending Review,policy_262,holder_144,insurer_8
+claim_736,CL-92417,2024-07-09,Water Damage,25807.21,19601.74,Pending Review,policy_486,holder_381,insurer_5
+claim_737,CL-21083,2024-08-28,Weather,6514.23,938.76,Pending Review,policy_974,holder_542,insurer_5
+claim_738,CL-11990,2024-12-27,Water Damage,11066.96,86.13,Pending Review,policy_774,holder_318,insurer_8
+claim_739,CL-19555,2022-12-21,Vandalism,20203.5,9788.16,Denied,policy_341,holder_470,insurer_0
+claim_740,CL-92075,2024-10-29,Weather,13928.1,13465.89,Denied,policy_381,holder_158,insurer_9
+claim_741,CL-51153,2025-07-06,Fire,23976.99,1995.89,Open,policy_426,holder_152,insurer_0
+claim_742,CL-78810,2024-02-19,Weather,26774.21,11484.9,Settled,policy_996,holder_433,insurer_7
+claim_743,CL-15609,2023-03-07,Liability,16193.56,11286.69,Pending Review,policy_871,holder_154,insurer_6
+claim_744,CL-49818,2025-02-17,Theft,1764.03,1571.52,Pending Review,policy_160,holder_374,insurer_8
+claim_745,CL-43213,2025-01-26,Fire,18697.22,5183.28,Open,policy_531,holder_12,insurer_8
+claim_746,CL-79949,2022-12-10,Vandalism,28362.77,2830.13,Denied,policy_43,holder_488,insurer_7
+claim_747,CL-50692,2025-02-12,Theft,28611.86,6907.68,Pending Review,policy_128,holder_429,insurer_3
+claim_748,CL-17760,2024-09-15,Water Damage,24272.35,23741.93,Pending Review,policy_720,holder_261,insurer_5
+claim_749,CL-55839,2025-01-16,Vandalism,29598.62,14219.43,Denied,policy_97,holder_150,insurer_4
+claim_750,CL-26110,2024-11-22,Weather,7547.24,2208.5,Settled,policy_724,holder_444,insurer_7
+claim_751,CL-33086,2026-10-15,Water Damage,9505.12,6790.43,Open,policy_235,holder_82,insurer_5
+claim_752,CL-13919,2023-04-15,Vandalism,6796.2,6523.24,Settled,policy_807,holder_518,insurer_1
+claim_753,CL-57144,2023-02-21,Accident,4950.09,1437.46,Denied,policy_155,holder_386,insurer_9
+claim_754,CL-67063,2024-03-13,Liability,7286.52,3873.78,Open,policy_365,holder_568,insurer_9
+claim_755,CL-54188,2022-08-21,Vandalism,29899.38,14562.42,Denied,policy_858,holder_61,insurer_0
+claim_756,CL-60597,2024-03-04,Fire,23483.97,7232.5,Denied,policy_387,holder_100,insurer_4
+claim_757,CL-44614,2023-06-27,Weather,20193.44,17016.38,Settled,policy_699,holder_593,insurer_4
+claim_758,CL-48716,2023-07-27,Vandalism,28552.81,13864.4,Pending Review,policy_418,holder_138,insurer_9
+claim_759,CL-77611,2024-05-27,Theft,10763.28,6644.17,Open,policy_853,holder_331,insurer_1
+claim_760,CL-34987,2023-12-07,Weather,5648.87,3636.31,Pending Review,policy_19,holder_44,insurer_8
+claim_761,CL-74052,2022-10-30,Fire,28802.59,1717.13,Open,policy_897,holder_447,insurer_7
+claim_762,CL-65775,2025-04-26,Accident,13011.75,7886.29,Settled,policy_1004,holder_579,insurer_6
+claim_763,CL-53820,2024-11-15,Liability,27988.46,21220.3,Open,policy_1088,holder_545,insurer_5
+claim_764,CL-42645,2024-10-26,Vandalism,10436.23,2834.11,Open,policy_83,holder_52,insurer_5
+claim_765,CL-89149,2024-06-05,Liability,19870.26,17955.07,Pending Review,policy_22,holder_223,insurer_3
+claim_766,CL-40465,2023-02-03,Liability,24606.09,13771.91,Denied,policy_847,holder_134,insurer_8
+claim_767,CL-83159,2024-09-25,Theft,19951.63,16771.7,Pending Review,policy_811,holder_568,insurer_2
+claim_768,CL-84103,2024-12-21,Weather,20112.19,6164.73,Pending Review,policy_196,holder_60,insurer_6
+claim_769,CL-40422,2024-05-27,Accident,1035.32,635.41,Denied,policy_637,holder_108,insurer_1
+claim_770,CL-55699,2023-04-04,Water Damage,26790.44,786.81,Pending Review,policy_1007,holder_111,insurer_2
+claim_771,CL-78677,2023-12-22,Water Damage,10251.7,6702.23,Open,policy_760,holder_12,insurer_0
+claim_772,CL-28283,2025-07-14,Fire,13797.37,2311.69,Pending Review,policy_586,holder_182,insurer_9
+claim_773,CL-10142,2023-09-11,Water Damage,17082.09,10562.08,Settled,policy_282,holder_230,insurer_8
+claim_774,CL-20869,2023-07-11,Liability,24367.09,22686.78,Open,policy_944,holder_95,insurer_1
+claim_775,CL-36664,2025-01-02,Accident,24740.29,5244.64,Settled,policy_563,holder_171,insurer_2
+claim_776,CL-82933,2025-05-16,Liability,22225.48,14220.61,Pending Review,policy_1130,holder_164,insurer_2
+claim_777,CL-24390,2026-09-25,Accident,28351.11,11714.57,Open,policy_280,holder_446,insurer_2
+claim_778,CL-31994,2025-02-05,Theft,20350.77,16523.02,Denied,policy_378,holder_501,insurer_2
+claim_779,CL-16479,2023-05-25,Theft,24786.47,14301.81,Denied,policy_419,holder_198,insurer_7
+claim_780,CL-63645,2025-03-16,Weather,26694.09,2003.82,Open,policy_1097,holder_21,insurer_6
+claim_781,CL-73363,2025-10-22,Theft,9995.74,5777.33,Pending Review,policy_628,holder_118,insurer_0
+claim_782,CL-48667,2024-06-18,Fire,29722.78,8787.18,Settled,policy_532,holder_468,insurer_3
+claim_783,CL-92853,2024-02-29,Liability,23461.62,18034.25,Settled,policy_1147,holder_112,insurer_8
+claim_784,CL-48734,2024-01-01,Fire,28507.28,4766.05,Denied,policy_1036,holder_39,insurer_7
+claim_785,CL-87926,2023-06-19,Weather,21402.46,13734.0,Denied,policy_515,holder_58,insurer_1
+claim_786,CL-30424,2025-06-26,Weather,22090.2,17283.36,Pending Review,policy_252,holder_404,insurer_6
+claim_787,CL-54174,2023-12-02,Liability,14037.87,12294.29,Settled,policy_937,holder_487,insurer_0
+claim_788,CL-27769,2025-03-15,Theft,2722.96,485.51,Denied,policy_966,holder_52,insurer_7
+claim_789,CL-57934,2026-02-04,Liability,23130.59,13749.0,Pending Review,policy_729,holder_442,insurer_4
+claim_790,CL-83309,2026-02-11,Liability,12496.21,6343.84,Settled,policy_1034,holder_511,insurer_3
+claim_791,CL-79042,2023-03-02,Liability,26394.88,181.75,Settled,policy_290,holder_59,insurer_4
+claim_792,CL-33113,2024-05-11,Water Damage,24638.11,13089.97,Pending Review,policy_652,holder_536,insurer_4
+claim_793,CL-50675,2023-05-07,Fire,29578.78,6117.26,Settled,policy_493,holder_11,insurer_3
+claim_794,CL-25530,2023-07-22,Water Damage,12808.16,9929.85,Open,policy_1145,holder_6,insurer_5
+claim_795,CL-32730,2024-10-15,Theft,20875.88,5685.77,Settled,policy_961,holder_129,insurer_3
+claim_796,CL-14882,2023-01-23,Water Damage,5876.44,5363.36,Pending Review,policy_807,holder_518,insurer_1
+claim_797,CL-54926,2024-02-24,Vandalism,11200.88,5247.78,Open,policy_593,holder_65,insurer_1
+claim_798,CL-40643,2024-02-23,Accident,14585.03,12938.91,Pending Review,policy_352,holder_4,insurer_1
+claim_799,CL-29922,2024-04-04,Weather,3189.95,1474.21,Open,policy_218,holder_289,insurer_4
