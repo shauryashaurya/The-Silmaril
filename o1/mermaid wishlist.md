@@ -52,3 +52,27 @@ classDiagram
   class Character other2    
   class Genre other3      
 ```     
+
+----   
+
+for some reason only one type of relationships can be successfully rendered:
+
+```
+%%% fails
+association Song *--| Artist : performedBy
+association Song o--| Album : featuredOn
+association Song *--| Genre : hasGenre
+
+
+%% fails...by creating additional nodes (Actor 1, Director 1 etc. etc.)... :(
+Actor 1--* Movie : Association (hasActor)
+Director 1--* Movie : Association (hasDirector)
+Genre 1--* Movie : Association (belongsToGenre)
+
+%% works
+Movie "1" --> "1..*" Actor : Association (hasActor)
+Movie "1" --> "1..*" Director : Association (hasDirector)
+Movie "1" --> "1..*" Genre : Association (belongsToGenre)
+Actor "1" --> "1" Character : Association (playsCharacter)
+
+```
