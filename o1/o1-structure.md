@@ -42,6 +42,11 @@ classDiagram
     
     Actor --|> Person    
     Director --|> Person    
+	
+    Movie *--o Actor : hasActor  
+    Movie *--o Director : hasDirector  
+    Movie *--o Genre : belongsToGenre  
+    Actor --o Character : playsCharacter  
 ```         
                     
 ```UML                    
