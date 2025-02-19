@@ -1,0 +1,51 @@
+id,machineName,machineType,maintenanceDueDate,lineID,operatorIDs
+machine_0,WeldingMachine_0,Welding,2025-07-11T14:50:01.043564,line_4,"['operator_28', 'operator_32', 'operator_38']"
+machine_1,WeldingMachine_1,Welding,2025-05-24T14:50:01.043564,line_10,"['operator_24', 'operator_5']"
+machine_2,AssemblyMachine_2,Assembly,2025-07-10T14:50:01.043564,line_28,"['operator_39', 'operator_28', 'operator_17']"
+machine_3,CuttingMachine_3,Cutting,2025-05-17T14:50:01.043564,line_18,"['operator_14', 'operator_39']"
+machine_4,CuttingMachine_4,Cutting,2025-04-05T14:50:01.043564,line_8,"['operator_17', 'operator_4']"
+machine_5,WeldingMachine_5,Welding,2025-04-28T14:50:01.043564,line_2,"['operator_27', 'operator_5']"
+machine_6,PressingMachine_6,Pressing,2025-06-03T14:50:01.043564,line_23,"['operator_5', 'operator_11']"
+machine_7,CuttingMachine_7,Cutting,2025-04-19T14:50:01.043564,line_1,['operator_38']
+machine_8,PackagingMachine_8,Packaging,2025-08-03T14:50:01.043564,line_7,['operator_33']
+machine_9,PackagingMachine_9,Packaging,2025-04-23T14:50:01.043564,line_14,"['operator_17', 'operator_14', 'operator_32']"
+machine_10,WeldingMachine_10,Welding,2025-06-07T14:50:01.043564,line_24,['operator_35']
+machine_11,CuttingMachine_11,Cutting,2025-05-23T14:50:01.043564,line_8,"['operator_20', 'operator_25']"
+machine_12,PressingMachine_12,Pressing,2025-03-04T14:50:01.043564,line_16,"['operator_18', 'operator_33', 'operator_5']"
+machine_13,AssemblyMachine_13,Assembly,2025-08-03T14:50:01.043564,line_20,"['operator_18', 'operator_31']"
+machine_14,CuttingMachine_14,Cutting,2025-03-08T14:50:01.043564,line_19,"['operator_30', 'operator_17', 'operator_4']"
+machine_15,AssemblyMachine_15,Assembly,2025-07-09T14:50:01.043564,line_19,"['operator_33', 'operator_21', 'operator_1']"
+machine_16,PackagingMachine_16,Packaging,2025-03-14T14:50:01.043564,line_1,"['operator_36', 'operator_32', 'operator_22']"
+machine_17,PressingMachine_17,Pressing,2025-06-23T14:50:01.043564,line_28,"['operator_16', 'operator_17']"
+machine_18,AssemblyMachine_18,Assembly,2025-04-29T14:50:01.043564,line_6,['operator_38']
+machine_19,PackagingMachine_19,Packaging,2025-02-22T14:50:01.043564,line_7,"['operator_4', 'operator_10']"
+machine_20,WeldingMachine_20,Welding,2025-05-25T14:50:01.043564,line_28,"['operator_25', 'operator_28']"
+machine_21,CuttingMachine_21,Cutting,2025-04-09T14:50:01.043564,line_3,"['operator_14', 'operator_22', 'operator_11']"
+machine_22,PackagingMachine_22,Packaging,2025-06-10T14:50:01.043564,line_26,"['operator_7', 'operator_3']"
+machine_23,CuttingMachine_23,Cutting,2025-07-13T14:50:01.043564,line_2,"['operator_13', 'operator_2']"
+machine_24,WeldingMachine_24,Welding,2025-06-14T14:50:01.043564,line_16,['operator_1']
+machine_25,WeldingMachine_25,Welding,2025-04-28T14:50:01.043564,line_8,['operator_29']
+machine_26,WeldingMachine_26,Welding,2025-07-19T14:50:01.043564,line_6,"['operator_25', 'operator_38', 'operator_6']"
+machine_27,PressingMachine_27,Pressing,2025-06-29T14:50:01.043564,line_14,"['operator_9', 'operator_11']"
+machine_28,PackagingMachine_28,Packaging,2025-02-25T14:50:01.043564,line_17,"['operator_22', 'operator_35', 'operator_25']"
+machine_29,PackagingMachine_29,Packaging,2025-02-28T14:50:01.043564,line_17,"['operator_34', 'operator_33']"
+machine_30,PressingMachine_30,Pressing,2025-03-21T14:50:01.043564,line_15,['operator_18']
+machine_31,PackagingMachine_31,Packaging,2025-05-26T14:50:01.043564,line_19,"['operator_19', 'operator_12']"
+machine_32,WeldingMachine_32,Welding,2025-04-21T14:50:01.043564,line_14,"['operator_9', 'operator_3', 'operator_7']"
+machine_33,PressingMachine_33,Pressing,2025-06-15T14:50:01.043564,line_25,"['operator_32', 'operator_35']"
+machine_34,PressingMachine_34,Pressing,2025-07-15T14:50:01.043564,line_1,"['operator_2', 'operator_39']"
+machine_35,WeldingMachine_35,Welding,2025-02-19T14:50:01.043564,line_18,"['operator_35', 'operator_25']"
+machine_36,PackagingMachine_36,Packaging,2025-07-13T14:50:01.043564,line_20,"['operator_39', 'operator_33']"
+machine_37,PressingMachine_37,Pressing,2025-04-30T14:50:01.043564,line_9,"['operator_6', 'operator_11']"
+machine_38,WeldingMachine_38,Welding,2025-04-06T14:50:01.043564,line_22,['operator_0']
+machine_39,CuttingMachine_39,Cutting,2025-07-23T14:50:01.043564,line_2,"['operator_21', 'operator_39']"
+machine_40,CuttingMachine_40,Cutting,2025-03-11T14:50:01.043564,line_26,"['operator_36', 'operator_21']"
+machine_41,AssemblyMachine_41,Assembly,2025-06-01T14:50:01.043564,line_7,"['operator_37', 'operator_18', 'operator_39']"
+machine_42,CuttingMachine_42,Cutting,2025-04-14T14:50:01.043564,line_9,"['operator_37', 'operator_6']"
+machine_43,PackagingMachine_43,Packaging,2025-05-11T14:50:01.043564,line_26,['operator_21']
+machine_44,WeldingMachine_44,Welding,2025-02-28T14:50:01.043564,line_20,"['operator_32', 'operator_8', 'operator_2']"
+machine_45,PackagingMachine_45,Packaging,2025-03-03T14:50:01.043564,line_4,"['operator_8', 'operator_3', 'operator_34']"
+machine_46,PressingMachine_46,Pressing,2025-02-28T14:50:01.043564,line_13,"['operator_26', 'operator_17']"
+machine_47,WeldingMachine_47,Welding,2025-03-11T14:50:01.043564,line_21,"['operator_29', 'operator_1', 'operator_3']"
+machine_48,CuttingMachine_48,Cutting,2025-07-08T14:50:01.043564,line_10,"['operator_14', 'operator_16']"
+machine_49,WeldingMachine_49,Welding,2025-03-20T14:50:01.043564,line_28,"['operator_38', 'operator_7', 'operator_19']"

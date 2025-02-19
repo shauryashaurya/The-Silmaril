@@ -1,0 +1,81 @@
+id,workOrderNumber,quantity,startDate,dueDate,status,lineID,materialIDs,productID
+wo_0,WO-5691,837,2024-11-15,2024-12-09,In Progress,line_13,['material_44'],product_5
+wo_1,WO-8823,167,2024-11-05,2025-01-01,Scheduled,line_1,"['material_44', 'material_43']",product_5
+wo_2,WO-4756,612,2024-10-28,2024-12-24,Completed,line_0,"['material_3', 'material_9', 'material_40']",product_39
+wo_3,WO-1144,709,2024-10-22,2024-11-08,In Progress,line_29,['material_49'],product_5
+wo_4,WO-3780,806,2024-11-21,2025-01-04,Completed,line_17,"['material_37', 'material_31', 'material_42']",product_29
+wo_5,WO-9838,373,2024-10-05,2024-11-16,Scheduled,line_1,"['material_50', 'material_55', 'material_34']",product_27
+wo_6,WO-2950,245,2024-09-09,2024-09-24,Completed,line_24,"['material_59', 'material_30', 'material_16']",product_10
+wo_7,WO-2402,94,2024-10-18,2024-10-27,Completed,line_4,[],product_13
+wo_8,WO-6577,360,2024-11-07,2024-12-31,Cancelled,line_2,"['material_28', 'material_23']",product_9
+wo_9,WO-8652,275,2025-02-01,2025-02-21,Cancelled,line_21,[],product_28
+wo_10,WO-5768,683,2024-10-09,2024-11-07,Cancelled,line_16,"['material_27', 'material_11', 'material_14']",product_5
+wo_11,WO-5571,485,2024-12-11,2025-01-15,Cancelled,line_20,"['material_49', 'material_2', 'material_34']",product_27
+wo_12,WO-1215,545,2024-09-09,2024-10-22,Scheduled,line_28,[],product_0
+wo_13,WO-1561,48,2024-11-06,2024-12-04,Cancelled,line_1,[],product_25
+wo_14,WO-3130,952,2024-10-24,2024-12-21,Completed,line_8,[],product_11
+wo_15,WO-8245,346,2025-01-29,2025-03-17,Cancelled,line_25,"['material_25', 'material_3', 'material_8']",product_14
+wo_16,WO-5017,688,2024-12-07,2025-01-20,Completed,line_13,[],product_2
+wo_17,WO-4072,242,2024-12-13,2025-01-27,Scheduled,line_12,['material_58'],product_21
+wo_18,WO-6691,293,2024-11-09,2025-01-07,Scheduled,line_23,['material_38'],product_28
+wo_19,WO-4282,726,2025-02-11,2025-04-02,Completed,line_24,[],product_23
+wo_20,WO-9707,777,2024-11-09,2024-11-17,Completed,line_1,['material_4'],product_37
+wo_21,WO-1792,357,2024-10-25,2024-12-22,Completed,line_27,[],product_17
+wo_22,WO-8070,587,2024-09-08,2024-10-25,Completed,line_10,[],product_19
+wo_23,WO-8437,511,2024-11-14,2024-12-22,Cancelled,line_28,['material_49'],product_19
+wo_24,WO-9090,251,2024-08-29,2024-09-06,Scheduled,line_9,[],product_0
+wo_25,WO-1900,95,2024-11-30,2025-01-12,Cancelled,line_4,"['material_43', 'material_27']",product_8
+wo_26,WO-5004,217,2025-01-05,2025-03-06,Completed,line_24,[],product_18
+wo_27,WO-2547,145,2024-09-11,2024-10-14,Scheduled,line_28,"['material_40', 'material_46', 'material_11']",product_26
+wo_28,WO-6332,287,2024-12-27,2025-01-16,Completed,line_13,"['material_32', 'material_46']",product_3
+wo_29,WO-2135,407,2024-09-04,2024-09-28,Completed,line_7,['material_42'],product_9
+wo_30,WO-3053,591,2024-09-20,2024-10-08,In Progress,line_10,['material_14'],product_18
+wo_31,WO-5681,228,2024-12-06,2024-12-14,Scheduled,line_19,['material_54'],product_38
+wo_32,WO-3198,584,2024-11-17,2024-12-12,Completed,line_26,[],product_7
+wo_33,WO-7743,939,2024-08-28,2024-09-20,In Progress,line_11,"['material_40', 'material_37', 'material_38']",product_23
+wo_34,WO-1945,793,2024-11-11,2024-12-16,Cancelled,line_18,"['material_10', 'material_16']",product_6
+wo_35,WO-8873,830,2024-10-12,2024-11-17,Scheduled,line_14,[],product_18
+wo_36,WO-3775,430,2025-01-06,2025-02-13,Cancelled,line_29,"['material_8', 'material_25']",product_28
+wo_37,WO-8303,774,2025-02-10,2025-03-27,Scheduled,line_16,[],product_6
+wo_38,WO-2945,740,2024-09-23,2024-10-24,In Progress,line_12,[],product_34
+wo_39,WO-4905,444,2024-09-30,2024-10-29,Scheduled,line_16,['material_38'],product_28
+wo_40,WO-7189,321,2024-11-06,2024-12-08,Scheduled,line_14,"['material_9', 'material_50', 'material_27']",product_37
+wo_41,WO-7515,55,2025-02-18,2025-04-18,Scheduled,line_18,['material_29'],product_39
+wo_42,WO-6948,331,2025-01-10,2025-01-19,Scheduled,line_3,[],product_0
+wo_43,WO-7803,388,2024-09-28,2024-11-19,Scheduled,line_23,[],product_33
+wo_44,WO-4899,982,2024-10-22,2024-12-08,Completed,line_11,[],product_6
+wo_45,WO-2358,32,2024-11-14,2025-01-02,Scheduled,line_7,"['material_36', 'material_28']",product_25
+wo_46,WO-7292,631,2024-08-27,2024-10-20,Cancelled,line_9,['material_44'],product_3
+wo_47,WO-3993,334,2025-01-18,2025-02-10,Scheduled,line_29,['material_7'],product_34
+wo_48,WO-9352,488,2025-01-26,2025-02-01,Cancelled,line_6,[],product_30
+wo_49,WO-6968,569,2024-12-01,2024-12-08,Cancelled,line_2,"['material_22', 'material_48', 'material_40']",product_39
+wo_50,WO-5940,864,2024-11-22,2025-01-18,Scheduled,line_25,"['material_15', 'material_20', 'material_32']",product_31
+wo_51,WO-6995,230,2024-11-10,2024-12-27,Cancelled,line_27,"['material_25', 'material_15']",product_28
+wo_52,WO-1401,332,2024-09-22,2024-11-03,In Progress,line_0,"['material_3', 'material_12', 'material_13']",product_13
+wo_53,WO-7571,115,2024-11-26,2024-12-05,Completed,line_13,"['material_25', 'material_9', 'material_41']",product_29
+wo_54,WO-7479,821,2025-01-07,2025-02-18,Completed,line_20,"['material_11', 'material_54', 'material_29']",product_34
+wo_55,WO-2234,878,2025-02-13,2025-04-11,Scheduled,line_28,"['material_13', 'material_7', 'material_39']",product_1
+wo_56,WO-4663,639,2024-09-28,2024-11-09,Cancelled,line_28,[],product_0
+wo_57,WO-6074,308,2024-10-06,2024-11-24,Completed,line_7,"['material_11', 'material_47']",product_7
+wo_58,WO-7016,398,2024-10-10,2024-11-09,Scheduled,line_24,[],product_38
+wo_59,WO-9137,891,2025-01-23,2025-02-27,Completed,line_4,['material_57'],product_4
+wo_60,WO-7820,694,2024-11-20,2025-01-12,Scheduled,line_19,"['material_5', 'material_49']",product_34
+wo_61,WO-1147,232,2024-09-13,2024-09-25,Completed,line_18,[],product_6
+wo_62,WO-8825,163,2025-02-01,2025-02-16,Cancelled,line_23,[],product_7
+wo_63,WO-4078,295,2024-12-21,2025-02-07,Cancelled,line_17,"['material_53', 'material_7']",product_34
+wo_64,WO-3874,638,2024-10-03,2024-11-18,In Progress,line_5,[],product_0
+wo_65,WO-4534,545,2024-08-29,2024-10-25,In Progress,line_5,['material_49'],product_24
+wo_66,WO-4152,835,2024-10-16,2024-11-11,In Progress,line_4,"['material_27', 'material_7']",product_6
+wo_67,WO-6271,153,2024-09-28,2024-11-08,Completed,line_12,[],product_36
+wo_68,WO-5797,920,2024-10-14,2024-11-23,In Progress,line_21,"['material_44', 'material_8']",product_17
+wo_69,WO-4406,54,2024-11-23,2025-01-10,Completed,line_0,"['material_28', 'material_47']",product_18
+wo_70,WO-1341,76,2024-12-05,2025-01-21,Scheduled,line_20,['material_17'],product_34
+wo_71,WO-9559,47,2025-01-21,2025-03-09,In Progress,line_8,"['material_5', 'material_58', 'material_21']",product_34
+wo_72,WO-2415,991,2024-10-21,2024-11-24,Cancelled,line_18,[],product_31
+wo_73,WO-4423,23,2024-12-23,2025-02-20,Scheduled,line_3,['material_31'],product_32
+wo_74,WO-3000,107,2024-11-20,2024-12-27,Completed,line_17,[],product_32
+wo_75,WO-9095,347,2024-11-08,2025-01-02,Cancelled,line_17,[],product_6
+wo_76,WO-2304,540,2024-09-16,2024-09-21,Scheduled,line_27,[],product_4
+wo_77,WO-5273,243,2024-09-17,2024-10-08,Cancelled,line_14,"['material_39', 'material_58', 'material_21']",product_28
+wo_78,WO-7915,820,2024-10-01,2024-10-23,Cancelled,line_5,[],product_0
+wo_79,WO-9894,989,2024-12-31,2025-01-11,Completed,line_6,['material_41'],product_19
