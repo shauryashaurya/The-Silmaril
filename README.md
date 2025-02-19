@@ -11,17 +11,18 @@ Practice **#ontology engineering** with Python (and other languages).
       
 ## List of Ontologies    
       
-### Very simple ones, to better understand the concepts      
+### I. Very simple ones, to better understand the concepts      
       
 I have tried to include rudimentary explanations on how to work out the ontologies, how one can create sample data to hydrate the ontology and finally how one can ask simple questions on the ontology (in PySpark).  
   
 1. [Movie Domain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o1)      
 2. [Music Domain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o2)      
       
-### Getting more 'real-world' now        
+### II. Getting more 'real' now        
       
-[![Sh!t just got real...](https://img.youtube.com/vi/SdOwGHpekd4/0.jpg)](https://youtu.be/SdOwGHpekd4?si=jU8ItO5qL2RP4IfN&t=10)  
-Things are getting more intense...
+(you know what the bad boys're going to say right?)
+[![Sh!t just got real...](https://img.youtube.com/vi/SdOwGHpekd4/0.jpg)](https://youtu.be/SdOwGHpekd4?si=jU8ItO5qL2RP4IfN&t=10){:target="_blank"}  
+Things are getting more intense... 'real-world' adjacent. Get a cup of coffee, put your game face on. :)
          
 In some examples/exercises, we will leverage the "connected" nature of Ontologies for analysis, and see if we can build an intuition about how the Ontological representation is more beneficial for certain types of questions.
 For the technically inclined, we'll try to show differences in code as well (comparing relational/OOP code with ontology/semantic approach).      
