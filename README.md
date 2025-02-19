@@ -13,15 +13,31 @@ Practice **#ontology engineering** with Python (and other languages).
       
 ### Very simple ones, to better understand the concepts      
       
-1. [Movies](https://github.com/shauryashaurya/The-Silmaril/tree/main/o1)      
-2. [Music](https://github.com/shauryashaurya/The-Silmaril/tree/main/o2)      
+I have tried to include rudimentary explanations on how to work out the ontologies, how one can create sample data to hydrate the ontology and finally how one can ask simple questions on the ontology (in PySpark).  
+  
+1. [Movie Domain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o1)      
+2. [Music Domain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o2)      
       
 ### Getting more 'real-world' now        
       
-These are a bit more complex, but we are still treating these datasets as relational, object-oriented representations of the domain.       
-In later examples/exercises, we will leverage the "connected" nature of Ontologies for data analysis.    
-      
-3. [Supply Chain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o3)      
-4. [Insurance](https://github.com/shauryashaurya/The-Silmaril/tree/main/o4)       
-5. [Construction](https://github.com/shauryashaurya/The-Silmaril/tree/main/o5)      
+[![Sh!t just got real...](https://img.youtube.com/vi/SdOwGHpekd4/0.jpg)](https://youtu.be/SdOwGHpekd4?si=jU8ItO5qL2RP4IfN&t=10)  
+Things are getting more intense...
+         
+In some examples/exercises, we will leverage the "connected" nature of Ontologies for analysis, and see if we can build an intuition about how the Ontological representation is more beneficial for certain types of questions.
+For the technically inclined, we'll try to show differences in code as well (comparing relational/OOP code with ontology/semantic approach).      
+       
+3. [Supply Chain (logistics, orders, suppliers, warehouses)](https://github.com/shauryashaurya/The-Silmaril/tree/main/o3)      
+4. [Property & Casualty Insurance](https://github.com/shauryashaurya/The-Silmaril/tree/main/o4)       
+5. [Construction (projects, tasks, materials, subcontractors, etc.)](https://github.com/shauryashaurya/The-Silmaril/tree/main/o5)      
+6. [Manufacturing (production lines, work orders, materials, products, etc.)](https://github.com/shauryashaurya/The-Silmaril/tree/main/o6)      
+7. [Stock Market / Equities Trading](https://github.com/shauryashaurya/The-Silmaril/tree/main/o7)      
+8. [Healthcare / EHR + Claims](https://github.com/shauryashaurya/The-Silmaril/tree/main/o8)      
+
+In future ontologies, we'll explore higher order problems like matching two ontologies, looking for limitations in an ontology etc. etc.  
+  
+  
+.
+
+
+
   
