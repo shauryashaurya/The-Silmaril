@@ -1,4 +1,4 @@
-# Ontology #5: Construction         
+# Ontology #6: Manufacturing (production lines, work orders, materials, products, etc.)         
           
 ## Ontology Structure                                            
                                                                         
@@ -10,7 +10,7 @@ classDiagram
         -plantName : string        
         -location : string        
         %% Object Properties        
-        +hasProductionLine *--| ProductionLine        
+        +hasProductionLine *-- ProductionLine        
     }        
         
     class ProductionLine {        
@@ -18,8 +18,8 @@ classDiagram
         -lineName : string        
         -capacity : int        
         %% Object Properties        
-        +hasMachine *--| Machine        
-        +producesProduct *--| Product        
+        +hasMachine *-- Machine        
+        +producesProduct *-- Product        
     }        
         
     class Machine {        
@@ -28,7 +28,7 @@ classDiagram
         -machineType : string        
         -maintenanceDueDate : date        
         %% Object Properties        
-        +operatedBy *--| Operator        
+        +operatedBy *-- Operator        
     }        
         
     class Operator {        
@@ -64,8 +64,8 @@ classDiagram
         -status : string        
         %% Object Properties        
         +consumesMaterial *--o Material        
-        +producesProduct |-| Product        
-        +scheduledOn  |-| ProductionLine        
+        +producesProduct - Product        
+        +scheduledOn  - ProductionLine        
     }        
         
     class QualityInspection {        
@@ -74,19 +74,19 @@ classDiagram
         -result : string        
         -notes : string        
         %% Object Properties        
-        +inspectedBy o--| Operator        
-        +inspectsWorkOrder  |-| WorkOrder        
+        +inspectedBy o-- Operator        
+        +inspectsWorkOrder  - WorkOrder        
     }        
         
-    ManufacturingPlant *--| ProductionLine : Association (hasProductionLine)        
-    ProductionLine *--| Machine : Association (hasMachine)        
-    Machine *--| Operator : Association (operatedBy)        
+    ManufacturingPlant *-- ProductionLine : Association (hasProductionLine)        
+    ProductionLine *-- Machine : Association (hasMachine)        
+    Machine *-- Operator : Association (operatedBy)        
     WorkOrder *--o Material : Association (consumesMaterial)        
-    WorkOrder |-| Product : Association (producesProduct)        
-    WorkOrder |-| ProductionLine : Association (scheduledOn)        
-    QualityInspection o--| Operator : Association (inspectedBy)        
-    QualityInspection |-| WorkOrder : Association (inspectsWorkOrder)        
-    ProductionLine *--| Product : Association (producesProduct)             
+    WorkOrder - Product : Association (producesProduct)        
+    WorkOrder - ProductionLine : Association (scheduledOn)        
+    QualityInspection o-- Operator : Association (inspectedBy)        
+    QualityInspection - WorkOrder : Association (inspectsWorkOrder)        
+    ProductionLine *-- Product : Association (producesProduct)             
 ```                                 
                                             
 ---                  
