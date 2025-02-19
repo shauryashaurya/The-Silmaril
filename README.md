@@ -18,7 +18,7 @@ I have tried to include rudimentary explanations on how to work out the ontologi
 1. [Movie Domain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o1)      
 2. [Music Domain](https://github.com/shauryashaurya/The-Silmaril/tree/main/o2)      
       
-### II. Getting more 'real' now        
+### II. Getting more 'real' (and interesting) now        
       
   
 Things are getting more intense... 'real-world' adjacent. Get a cup of coffee, put your game face on. :)
@@ -35,6 +35,12 @@ For the technically inclined, we'll try to show differences in code as well (com
 
 In future ontologies, we'll explore higher order problems like matching two ontologies, looking for limitations in an ontology etc. etc.  
   
+  
+### III. Higher order fun with Ontologies
+    
+As we get into more interesting Ontology examples, things get even more interesting for us.   
+	
+9. [Pharmaceutical Supply Chain *( + Bonus: Ontology Matching)*](https://github.com/shauryashaurya/The-Silmaril/tree/main/o9)      
   
 .
 
