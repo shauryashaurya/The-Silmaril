@@ -41,6 +41,7 @@ In future ontologies, we'll explore higher order problems like matching two onto
 As we get into more interesting Ontology examples, things get even more interesting for us.   
 	
 9. [Pharmaceutical Supply Chain *( + Bonus: Ontology Matching)*](https://github.com/shauryashaurya/The-Silmaril/tree/main/o9)      
+10. [EPCC / LEMS / PMBoK based ontology for a large construction project](https://github.com/shauryashaurya/The-Silmaril/tree/main/o10)      
   
 .
 
