@@ -1,0 +1,11 @@
+id,facilityName,facilityType,location
+fac_0,Williams-Phillips Hospital,Hospital,Sarahmouth
+fac_1,Wolfe LLC Hospital,OutpatientCenter,Donaldland
+fac_2,"Patterson, Lee and Silva Center",Hospital,Williamsbury
+fac_3,Lewis Ltd Clinic,OutpatientCenter,Christopherberg
+fac_4,"Sparks, Anderson and Wade Clinic",ER,Johnmouth
+fac_5,"Turner, Hunt and Shepard Center",ER,Gonzalezborough
+fac_6,Perez Inc Clinic,OutpatientCenter,Barrborough
+fac_7,Walker-Burton Center,ER,Danielland
+fac_8,Munoz and Sons Clinic,Hospital,Lake Patricktown
+fac_9,Lopez-Cooper Clinic,Clinic,Annaton

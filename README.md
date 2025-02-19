@@ -20,8 +20,7 @@ I have tried to include rudimentary explanations on how to work out the ontologi
       
 ### II. Getting more 'real' now        
       
-(you know what the bad boys're going to say right?)
-[![Sh!t just got real...](https://img.youtube.com/vi/SdOwGHpekd4/0.jpg)](https://youtu.be/SdOwGHpekd4?si=jU8ItO5qL2RP4IfN&t=10){:target="_blank"}  
+  
 Things are getting more intense... 'real-world' adjacent. Get a cup of coffee, put your game face on. :)
          
 In some examples/exercises, we will leverage the "connected" nature of Ontologies for analysis, and see if we can build an intuition about how the Ontological representation is more beneficial for certain types of questions.

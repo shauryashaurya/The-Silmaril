@@ -233,6 +233,5 @@ Class: CashAccount (optional)
     
 ```             
               
-*(We could add many more details—like quantity, material unit-of-measure, labor hours, etc. We are still in early stages, for this exercise, this may be enough.)*              
-  
+    
   
