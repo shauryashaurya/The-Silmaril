@@ -1,96 +1,96 @@
 # Ontology Structure                                                
                                                   
-```mermaid                                                  
-classDiagram        
-    class PharmaManufacturer {        
-        %% Data Properties        
-        -manufacturerName : string        
-        -location : string        
-        -licenseNumber : string        
-        %% Object Properties        
-        +manufacturesProduct *--| MedicationProduct        
-    }        
-        
-    class Distributor {        
-        %% Data Properties        
-        -distributorName : string        
-        -location : string        
-        -distributorID : string        
-        %% Object Properties        
-    }        
-        
-    class PharmacyOrHospital {        
-        %% Data Properties        
-        -facilityName : string        
-        -facilityType : string        
-        -location : string        
-        %% Object Properties        
-    }        
-        
-  class MedicationProduct{        
-        %% Data Properties        
-        -internalProductCode : string        
-        -brandName : string        
-        -genericName : string        
-        -strength : string        
-        -form : string        
-        -rxNormCode : string        
-        %% Object Properties        
-        +approvedBy *--| RegulatoryApproval        
-    }        
-        
-    class BatchOrLot {        
-        %% Data Properties        
-        -batchNumber : string        
-        -expiryDate : date        
-        -quantityProduced : int        
-        %% Object Properties        
-        +belongsToProduct |-| MedicationProduct        
-    }        
-        
-    class Shipment {        
-        %% Data Properties        
-        -shipmentID : string        
-        -shipDate : dateTime        
-        -receiveDate : dateTime        
-        %% Object Properties        
-        +fromEntity o--| PharmaManufacturer        
-        +fromEntity2 o--| Distributor          
-        +toEntity o--| Distributor        
-        +toEntity2 o--| PharmacyOrHospital        
-        +includesBatch *--o BatchOrLot        
-    }        
-        
-    class Prescription {        
-        %% Data Properties        
-        -prescriptionID : string        
-        -prescribedDate : date        
-        -quantity : int        
-        %% Object Properties        
-        +medicationRef o--| MedicationProduct        
-    }        
-        
-  class RegulatoryApproval{        
-        %% Data Properties        
-        -approvalID : string        
-        -agencyName : string        
-        -approvalDate : date        
-        %% Object Properties        
-        +referencesProduct |-| MedicationProduct        
-  }        
-        
-    PharmaManufacturer *--| MedicationProduct : Association (manufacturesProduct)        
-    BatchOrLot |-| MedicationProduct : Association (belongsToProduct)        
-    Shipment *--o BatchOrLot : Association (includesBatch)        
-    Prescription o--| MedicationProduct : Association (medicationRef)        
-    RegulatoryApproval |-| MedicationProduct : Association (referencesProduct)        
-    MedicationProduct *--| RegulatoryApproval : Association (approvedBy)        
-             
-    Shipment o--| PharmaManufacturer : Association (fromEntity)        
-    Shipment o--| Distributor : Association (fromEntity2)        
-    Shipment o--| Distributor : Association (toEntity)        
-    Shipment o--| PharmacyOrHospital : Association (toEntity2)        
-```                                     
+```mermaid                                                      
+classDiagram    
+    class PharmaManufacturer {    
+        %% Data Properties    
+        -manufacturerName : string    
+        -location : string    
+        -licenseNumber : string    
+        %% Object Properties    
+        +manufacturesProduct *-- MedicationProduct    
+    }    
+    
+    class Distributor {    
+        %% Data Properties    
+        -distributorName : string    
+        -location : string    
+        -distributorID : string    
+        %% Object Properties    
+    }    
+    
+    class PharmacyOrHospital {    
+        %% Data Properties    
+        -facilityName : string    
+        -facilityType : string    
+        -location : string    
+        %% Object Properties    
+    }    
+    
+  class MedicationProduct{    
+        %% Data Properties    
+        -internalProductCode : string    
+        -brandName : string    
+        -genericName : string    
+        -strength : string    
+        -form : string    
+        -rxNormCode : string    
+        %% Object Properties    
+        +approvedBy *-- RegulatoryApproval    
+    }    
+    
+    class BatchOrLot {    
+        %% Data Properties    
+        -batchNumber : string    
+        -expiryDate : date    
+        -quantityProduced : int    
+        %% Object Properties    
+        +belongsToProduct -- MedicationProduct    
+    }    
+    
+    class Shipment {    
+        %% Data Properties    
+        -shipmentID : string    
+        -shipDate : dateTime    
+        -receiveDate : dateTime    
+        %% Object Properties    
+        +fromEntity o-- PharmaManufacturer    
+        +fromEntity2 o-- Distributor      
+        +toEntity o-- Distributor    
+        +toEntity2 o-- PharmacyOrHospital    
+        +includesBatch *-- BatchOrLot    
+    }    
+    
+    class Prescription {    
+        %% Data Properties    
+        -prescriptionID : string    
+        -prescribedDate : date    
+        -quantity : int    
+        %% Object Properties    
+        +medicationRef o-- MedicationProduct    
+    }    
+    
+  class RegulatoryApproval{    
+        %% Data Properties    
+        -approvalID : string    
+        -agencyName : string    
+        -approvalDate : date    
+        %% Object Properties    
+        +referencesProduct -- MedicationProduct    
+  }    
+    
+    PharmaManufacturer *-- MedicationProduct : Association (manufacturesProduct)    
+    BatchOrLot -- MedicationProduct : Association (belongsToProduct)    
+    Shipment *-- BatchOrLot : Association (includesBatch)    
+    Prescription o-- MedicationProduct : Association (medicationRef)    
+    RegulatoryApproval -- MedicationProduct : Association (referencesProduct)    
+    MedicationProduct *-- RegulatoryApproval : Association (approvedBy)    
+         
+    Shipment o-- PharmaManufacturer : Association (fromEntity)    
+    Shipment o-- Distributor : Association (fromEntity2)    
+    Shipment o-- Distributor : Association (toEntity)    
+    Shipment o-- PharmacyOrHospital : Association (toEntity2)      
+```                                         
                                                 
 ---                      
                       
