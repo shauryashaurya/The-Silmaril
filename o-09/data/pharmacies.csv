@@ -1,0 +1,21 @@
+id,facilityName,facilityType,location
+ph_0,Peterson-Dyer Hospital,HospitalPharmacy,West Jose
+ph_1,"Henson, White and Mcgee Hospital",RetailPharmacy,South Stuartside
+ph_2,"Smith, Hicks and Clark Pharmacy",RetailPharmacy,North James
+ph_3,Meadows Inc Hospital,RetailPharmacy,North Kyletown
+ph_4,Campbell-Hebert Hospital,HospitalPharmacy,Waltonville
+ph_5,Davis Ltd Pharmacy,RetailPharmacy,Zacharyton
+ph_6,Gutierrez-Boyd Hospital,RetailPharmacy,Danielmouth
+ph_7,"Thompson, Alvarado and Lawrence Pharmacy",HospitalPharmacy,East Shawnburgh
+ph_8,Best LLC Pharmacy,RetailPharmacy,Port Charles
+ph_9,Lowery-Rodriguez Pharmacy,HospitalPharmacy,Paulville
+ph_10,Mack PLC Pharmacy,HospitalPharmacy,Greenstad
+ph_11,Davis Group Hospital,HospitalPharmacy,Burtonton
+ph_12,Kelly Inc Pharmacy,HospitalPharmacy,North Noah
+ph_13,Price PLC Pharmacy,RetailPharmacy,Donnaview
+ph_14,"Joyce, Gordon and Wagner Pharmacy",RetailPharmacy,Jennifermouth
+ph_15,"Keller, Haley and Thomas Pharmacy",HospitalPharmacy,Port Mitchellmouth
+ph_16,"Liu, Solomon and Pena Hospital",HospitalPharmacy,East Dawnborough
+ph_17,Dalton PLC Pharmacy,HospitalPharmacy,Moorebury
+ph_18,Christensen and Sons Pharmacy,HospitalPharmacy,South Madisonside
+ph_19,"Hill, Sullivan and Day Pharmacy",RetailPharmacy,Jamesbury
