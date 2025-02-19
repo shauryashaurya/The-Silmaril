@@ -1,0 +1,16 @@
+id,brokerName,brokerLicenseID,commissionPlanID
+broker_0,"Austin, Smith and Walton Brokerage",BR-1818,plan_4
+broker_1,"Ray, Price and Jackson Brokerage",BR-8456,plan_1
+broker_2,Andrade Inc Brokerage,BR-9422,plan_5
+broker_3,Reese-Parker Brokerage,BR-2107,plan_1
+broker_4,Harris-Rivera Brokerage,BR-8847,plan_4
+broker_5,Johnson-Vasquez Brokerage,BR-5469,plan_1
+broker_6,Martin-Strong Brokerage,BR-9949,plan_5
+broker_7,Ward Group Brokerage,BR-2927,plan_2
+broker_8,"Klein, Thomas and Lloyd Brokerage",BR-7742,plan_4
+broker_9,"Smith, Walters and Evans Brokerage",BR-7246,plan_3
+broker_10,Morton-Little Brokerage,BR-4633,plan_2
+broker_11,Hicks-Park Brokerage,BR-3244,plan_0
+broker_12,"Ellis, Miller and Miller Brokerage",BR-8779,plan_4
+broker_13,Mooney-Elliott Brokerage,BR-1873,plan_5
+broker_14,Wilson and Sons Brokerage,BR-2528,plan_2
