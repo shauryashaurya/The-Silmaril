@@ -8,13 +8,13 @@ graph LR
     classDef movieClass fill:#ccf,stroke:#333,stroke-width:2px;    
     classDef genreClass fill:#fcf,stroke:#333,stroke-width:2px;    
     
-    Movie --> hasActor --> Actor;    
-    Movie --> hasDirector --> Director;    
-    Movie --> belongsToGenre --> Genre;    
-    Movie --> movieCharacter --> Character;    
-    Actor --> playsCharacter --> Character;    
-    Actor --> Person;    
-    Director --> Person;    
+    Movie --> hasActor --> Actor;
+    Movie --> hasDirector --> Director;
+    Movie --> belongsToGenre --> Genre;
+    Movie --> movieCharacter --> Character;
+    Actor --> playsCharacter --> Character;
+    Actor --> Person : extends;
+    Director --> Person : extends;  
     
     class Movie movieClass;    
     class Actor personClass;    
