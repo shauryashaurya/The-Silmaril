@@ -13,8 +13,8 @@ graph LR
     Movie --> belongsToGenre --> Genre;    
     Movie --> movieCharacter --> Character;    
     Actor --> playsCharacter --> Character;    
-    Actor --|> Person : extends;    
-    Director --|> Person : extends;    
+    Actor --| Person : extends;    
+    Director --| Person : extends;    
     
     class Movie movieClass;    
     class Actor,Director,Person personClass;    
