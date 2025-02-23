@@ -49,7 +49,7 @@ A knowledge representation for songs, artists, albums, record labels, awards, an
 ---  
     
 ## Outcome  
-The structure of the final ontology is here: [o2-structure.md](https://github.com/shauryashaurya/The-Silmaril/blob/main/o2/o2-structure.md)  
+The structure of the final ontology is here: [o2-structure.md](https://github.com/shauryashaurya/The-Silmaril/blob/main/o-02/o2-structure.md)  
      
 The accompanying notebook creates sample data for the ontology for you to import and analyze.
   
