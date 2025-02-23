@@ -159,10 +159,12 @@ graph LR
     %% Disjoint Classes (None explicitly stated, consider adding if applicable)        
         
      %% Inverse Properties        
-        Album -- songsOnAlbum --> Song %% Inverse of featuredOn can be declared        
+        Album -- songsOnAlbum --> Song  
+		%% Inverse of featuredOn can be declared        
         
     %% Functional Properties (Examples - adjust based on actual constraints)        
-      Song -- hasUniqueSongID_string --> hasUniqueSongID[(hasUniqueSongID)] %% Example: Assuming a unique song ID        
+      Song -- hasUniqueSongID_string --> hasUniqueSongID[(hasUniqueSongID)] 
+	  %% Example: Assuming a unique song ID        
       Album -- hasUniqueAlbumID_string --> hasUniqueAlbumID[(hasUniqueAlbumID)]        
         
     %% Inverse Functional Properties (Examples - adjust based on actual constraints)        
@@ -176,3 +178,7 @@ graph LR
     %% owl:inverseOf -  If 'songsOnAlbum' is inverse of 'featuredOn',  'songsOnAlbum(album1, song1)' infers 'featuredOn(song1, album1)'.        
     %% owl:FunctionalProperty - If 'hasUniqueSongID' is functional, owlrl ensures a song has only one ID.        
     %% owl:InverseFunctionalProperty -  'hasUniqueArtistID(artist1, id1)' and 'hasUniqueArtistID(artist2, id1)' infers artist1 = artist2.
+```  
+  
+  
+  .
