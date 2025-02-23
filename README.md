@@ -63,21 +63,22 @@ Morever,
 
 Additionally,  
 *   **Foundry:** 
-	-- The Action framework allows you to define user-initiated actions that modify data in the Ontology. This is crucial for building operational applications. 
-	-- Workshop provides a drag-and-drop interface for building interactive applications that directly use the Foundry Ontology. This is a major advantage for creating user-facing applications based on your data.
-	-- The Ontology is tightly integrated with Foundry's robust security model. Permissions can be defined at the object type, property, and even individual object level. This is essential for building secure applications in enterprise environments.
+	- The Action framework allows you to define user-initiated actions that modify data in the Ontology. This is crucial for building operational applications.    
+	- Workshop provides a drag-and-drop interface for building interactive applications that directly use the Foundry Ontology. This is a major advantage for creating user-facing applications based on your data.    
+	- The Ontology is tightly integrated with Foundry's robust security model. Permissions can be defined at the object type, property, and even individual object level. This is essential for building secure applications in enterprise environments.   
 
 *   **OWL:**  
-	-- Doesn't have a concept of "actions" in the same way that Foundry does.  OWL is about *describing* knowledge, not about *acting* on it.
-	-- Security and access control are typically handled *outside* the ontology itself (e.g., at the level of the triple store or application).
+	- Doesn't have a concept of "actions" in the same way that Foundry does.  OWL is about *describing* knowledge, not about *acting* on it.
+	- Security and access control are typically handled *outside* the ontology itself (e.g., at the level of the triple store or application).
 *   **Example:** In Foundry, you can create an Action to "Approve a Request" that updates the status of a `Request` object and potentially triggers other downstream actions.  This kind of operational workflow is not directly addressed by OWL.    
   
-Finally, think about **Data Lineage and Provenance:**  
-  
-    *   **Foundry:**  Provides built-in data lineage tracking. You can see where data came from, how it was transformed, and who modified it. This is crucial for data governance and auditability.
-    *   **OWL:** While you can *represent* provenance information using RDF and OWL (e.g., using the PROV-O ontology), it's not a core, built-in feature.
-    * **Implication:** For tracking the origin and transformations of data which is important in many real-world scenarios, Foundry is better suited.
-   
+Finally, think about **Data Lineage and Provenance:**     
+      
+* **Foundry:**  Provides built-in data lineage tracking. You can see where data came from, how it was transformed, and who modified it. This is crucial for data governance and auditability.    
+* **OWL:** While you can *represent* provenance information using RDF and OWL (e.g., using the PROV-O ontology), it's not a core, built-in feature.    
+* **Implication:** For tracking the origin and transformations of data which is important in many real-world scenarios, Foundry is better suited.    
+      
+	  
 So, for now I thought I'll focus on Foundry first. This is not to say I am avoiding OWL, there are [other projects](https://github.com/shauryashaurya/elegant) I am working on, in parallel, where I am creating reasoners and proof checkers that will leverage OWL. In this initiative, I want to focus on 'how' to think about ontologies, without getting bogged down by the learning curve of OWL (which is not trivial) or getting stuck in unnecessary details of the myriad syntactical details instead of building a good intuition about how ontologies work.  
    
 .  
