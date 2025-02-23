@@ -75,7 +75,7 @@ Additionally,
 Finally, think about **Data Lineage and Provenance:**     
       
 * **Foundry:**  Provides built-in data lineage tracking. You can see where data came from, how it was transformed, and who modified it. This is crucial for data governance and auditability.    
-* **OWL:** While you can *represent* provenance information using RDF and OWL (e.g., using the PROV-O ontology), it's not a core, built-in feature.    
+* **OWL:** While you can *represent* provenance information using RDF and OWL (e.g., using [the PROV-O ontology](https://www.w3.org/TR/prov-o/)), it's not a core, built-in feature.    
 * **Implication:** For tracking the origin and transformations of data which is important in many real-world scenarios, Foundry is better suited.    
       
 	  
