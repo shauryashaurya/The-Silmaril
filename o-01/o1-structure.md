@@ -1,82 +1,7 @@
 # Draft Ontology Structure                                                    
                                                       
 					                                  
-					                                  
-```mermaid                                
-graph LR    
-    subgraph Classes    
-        Movie["Movie"]    
-        Person["Person"]    
-        Actor["Actor"]    
-        Director["Director"]    
-        Character_Class["Character"]    
-        Genre["Genre"]    
-        DisjointPersonGenre["DisjointPersonGenre"]    
-    end    
-    
-    subgraph Data Properties    
-        Movie -- title_string --> title[(title)]    
-        Movie -- releaseYear_integer --> releaseYear[(releaseYear)]    
-        Movie -- duration_integer --> duration[(duration)]    
-        Movie -- rating_float --> rating[(rating)]    
-        Person -- name_string --> name[(name)]    
-        Person -- birthDate_date --> birthDate[(birthDate)]    
-        Character_Class -- characterName_string --> characterName[(characterName)]    
-        Genre -- genreName_string --> genreName[(genreName)]    
-        Movie -- hasUniqueMovieID_string --> hasUniqueMovieID[(hasUniqueMovieID)]    
-        Person -- personHasUniqueID_string --> personHasUniqueID[(personHasUniqueID)]    
-    
-    end    
-    
-    subgraph Object Properties    
-        Movie -- hasActor --> Actor    
-        Movie -- hasDirector --> Director    
-        Movie -- belongsToGenre --> Genre    
-        Actor -- playsCharacter --> Character_Class    
-        Actor -- actedIn --> Movie    
-        Director -- directed --> Movie    
-        Character_Class -- characterIn --> Movie    
-        Movie -- hasCharacter --> Character_Class    
-    
-    end    
-    
-    subgraph Individuals    
-        action["action_Genre"]    
-        comedy["comedy_Genre"]    
-        spielberg["spielberg_Director"]    
-        hanks["hanks_Actor"]    
-        forrest_gump["forrest_gump_Movie"]    
-        forrest["forrest_Character"]    
-    end    
-            
-    subgraph ClassHierarchy    
-      Person -- inherits --> Actor    
-      Person -- inherits --> Director    
-    end    
-    
-    subgraph Disjointness    
-      DisjointPersonGenre -- disjointWith --> Genre    
-      DisjointPersonGenre -- unionOf --> Actor    
-      DisjointPersonGenre -- unionOf --> Director    
-    end    
-      
-  subgraph InverseProperties    
-    hasActor -- inverseOf --> actedIn    
-    hasDirector -- inverseOf --> directed    
-    hasCharacter -- inverseOf --> characterIn    
-  end    
-      
-  subgraph FunctionalProperties    
-    hasUniqueMovieID -- Functional --> Movie    
-  end    
-    
-  subgraph InverseFunctionalProperties    
-    personHasUniqueID -- InverseFunctional --> Person    
-  end          
-```                                
-                                    
----                   
-                    
+					                                
 ```mermaid                                
 graph LR                    
     classDef personClass fill:#f0f8ff,stroke:#a9a9a9,stroke-width:2px;                      
@@ -188,4 +113,83 @@ Class: Character
 Class: Genre                                                         
    Properties (data):                                                         
       - name : string                                                         
-```
+```  
+  
+---  
+  
+**Limited use (IMO) more detailed LR diagram for the Ontology**  
+  
+```mermaid                                
+graph LR    
+    subgraph Classes    
+        Movie["Movie"]    
+        Person["Person"]    
+        Actor["Actor"]    
+        Director["Director"]    
+        Character_Class["Character"]    
+        Genre["Genre"]    
+        DisjointPersonGenre["DisjointPersonGenre"]    
+    end    
+    
+    subgraph Data Properties    
+        Movie -- title_string --> title[(title)]    
+        Movie -- releaseYear_integer --> releaseYear[(releaseYear)]    
+        Movie -- duration_integer --> duration[(duration)]    
+        Movie -- rating_float --> rating[(rating)]    
+        Person -- name_string --> name[(name)]    
+        Person -- birthDate_date --> birthDate[(birthDate)]    
+        Character_Class -- characterName_string --> characterName[(characterName)]    
+        Genre -- genreName_string --> genreName[(genreName)]    
+        Movie -- hasUniqueMovieID_string --> hasUniqueMovieID[(hasUniqueMovieID)]    
+        Person -- personHasUniqueID_string --> personHasUniqueID[(personHasUniqueID)]    
+    
+    end    
+    
+    subgraph Object Properties    
+        Movie -- hasActor --> Actor    
+        Movie -- hasDirector --> Director    
+        Movie -- belongsToGenre --> Genre    
+        Actor -- playsCharacter --> Character_Class    
+        Actor -- actedIn --> Movie    
+        Director -- directed --> Movie    
+        Character_Class -- characterIn --> Movie    
+        Movie -- hasCharacter --> Character_Class    
+    
+    end    
+    
+    subgraph Individuals    
+        action["action_Genre"]    
+        comedy["comedy_Genre"]    
+        spielberg["spielberg_Director"]    
+        hanks["hanks_Actor"]    
+        forrest_gump["forrest_gump_Movie"]    
+        forrest["forrest_Character"]    
+    end    
+            
+    subgraph ClassHierarchy    
+      Person -- inherits --> Actor    
+      Person -- inherits --> Director    
+    end    
+    
+    subgraph Disjointness    
+      DisjointPersonGenre -- disjointWith --> Genre    
+      DisjointPersonGenre -- unionOf --> Actor    
+      DisjointPersonGenre -- unionOf --> Director    
+    end    
+      
+  subgraph InverseProperties    
+    hasActor -- inverseOf --> actedIn    
+    hasDirector -- inverseOf --> directed    
+    hasCharacter -- inverseOf --> characterIn    
+  end    
+      
+  subgraph FunctionalProperties    
+    hasUniqueMovieID -- Functional --> Movie    
+  end    
+    
+  subgraph InverseFunctionalProperties    
+    personHasUniqueID -- InverseFunctional --> Person    
+  end          
+```                                
+                                    
+---                   
