@@ -131,7 +131,7 @@ Movies can be multi-genre, so we will allow one movie to link to multiple genres
 ---    
 
 ## Outcome  
-The structure of the final ontology is here: [o1-structure.md](https://github.com/shauryashaurya/The-Silmaril/blob/main/o1/o1-structure.md)  
+The structure of the final ontology is here: [o1-structure.md](https://github.com/shauryashaurya/The-Silmaril/blob/main/o-1/o1-structure.md)  
      
 The accompanying notebook creates sample data for the ontology for you to import into a typical SQL database and perform analysis.
 
