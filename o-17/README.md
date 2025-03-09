@@ -1,15 +1,12 @@
-# A **Star Wars** Ontology!                    
-        
-## Citation        
-Inspired by [Dorian Smiley's The Star Wars Stack](https://github.com/doriansmiley/TheStarWarsStack) idea, which in turn is inspired by the ["Ticker Symbol: YOU" (channel) video on YouTube](https://www.youtube.com/watch?v=Rq3JjUUgTBI&t=924s)          
-My attempt is to just try and craft an almost simple ontology, not the full blown project, and slowly grow it so it can run simulations and scenarios on the fictional timeline of Star Wars.           
-This is very cool, but just for fun...        
-                
----                
-                
-## Ontology Structure: Core Classes / Entities (Domain Ontology)                
-                
-Below is a conceptual structure, with a **pseudocode** approach.         
+# Ontology #17 A VERY _"out-there"_ Space Mission & Crew Domain
+  
+## Domain
+Models space missions, spacecraft, crew membership, payload, launch sites, experiments, anomalies, and simulation modules.
+
+## Sample Competency Questions:
+* Which mission uses which spacecraft, and who is on the crew?
+* Which mission anomalies have been encountered, and how do they affect the mission timeline?
+* Which payload is carried by which spacecraft for which experiment or docking module?      
         
                 
                 

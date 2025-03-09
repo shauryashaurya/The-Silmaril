@@ -1,9 +1,11 @@
-# A **Star Wars** Ontology!                    
+# Ontology #20 Global Finance & Trading Domain                     
         
-## Citation        
-Inspired by [Dorian Smiley's The Star Wars Stack](https://github.com/doriansmiley/TheStarWarsStack) idea, which in turn is inspired by the ["Ticker Symbol: YOU" (channel) video on YouTube](https://www.youtube.com/watch?v=Rq3JjUUgTBI&t=924s)          
-My attempt is to just try and craft an almost simple ontology, not the full blown project, and slowly grow it so it can run simulations and scenarios on the fictional timeline of Star Wars.           
-This is very cool, but just for fun...        
+## Domain
+Models a finance system with StockExchanges, ListedCompanies, Stocks, Traders, Transactions, Indices, Derivatives, MarketAlerts, etc.
+## Sample Competency Questions
+* “Which stocks belong to which index, and which transactions are in which trading account?”
+* “Which derivative references which underlying stock, and does it belong to a certain regulatory authority?”
+* “Which fund invests in which stocks, and which simulation references a specific derivative?”
                 
 ---                
                 

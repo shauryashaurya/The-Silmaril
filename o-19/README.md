@@ -1,9 +1,11 @@
-# A **Star Wars** Ontology!                    
-        
-## Citation        
-Inspired by [Dorian Smiley's The Star Wars Stack](https://github.com/doriansmiley/TheStarWarsStack) idea, which in turn is inspired by the ["Ticker Symbol: YOU" (channel) video on YouTube](https://www.youtube.com/watch?v=Rq3JjUUgTBI&t=924s)          
-My attempt is to just try and craft an almost simple ontology, not the full blown project, and slowly grow it so it can run simulations and scenarios on the fictional timeline of Star Wars.           
-This is very cool, but just for fun...        
+# Ontology #19 Cultural & Heritage Management 
+
+## Domain
+Models a CulturalNetwork with Nations, Provinces, Cities, HistoricalSites, Museums, Artifacts, Festivals, Events, PerformingArtsGroups, etc.
+## Sample Competency Questions
+* “Which city hosts which museum containing which artifacts from which era?”
+* “Which festival organizes which cultural event with which performing arts group?”
+* “Which site is recognized by UNESCO and which cultural simulation references which arts group?”     
                 
 ---                
                 
