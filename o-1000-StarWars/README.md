@@ -351,68 +351,129 @@ Relationship: alliedWith (Smuggler → Character, 0..*)
 Relationship: commandedBy (MilitaryUnit → Character, 0..1)        
 Relationship: guardedBy (Holocron → Jedi, 0..1)        
         
-// 10 NEW RELATIONSHIPS (ADDED PREVIOUSLY):        
-Relationship: hasSidekick (Character → Character, 0..1)        
-Relationship: alliedWithFaction (Faction → Faction, 0..*)        
-Relationship: spiedOnBy (Character → Droid, 0..*)        
-Relationship: constructedBy (Lightsaber → Jedi, 0..1)        
-Relationship: incorporatesVehicle (Battle → Vehicle, 0..*)        
-Relationship: hiddenIn (Smuggler → Spaceship, 0..1)        
-Relationship: stealsFrom (BountyHunter → Smuggler, 0..*)        
-Relationship: studiedHolocron (Jedi → Holocron, 0..*)        
-Relationship: overseesUnit (Politician → MilitaryUnit, 0..*)        
-Relationship: protectsArtifact (Mission → Artifact, 0..*)        
-        
-// ========== RULES & CONSTRAINTS ==========        
-        
-// 1) Subclass constraints:        
-   // Jedi and Sith are subclasses of Character        
-   // => implies Jedi, Sith must also have data properties from Character        
-        
-// 2) Droid cannot have ForceAbility:        
-   // i.e., if "X hasAbility Y" then X cannot be of type Droid        
-        
-// 3) Only Jedi or Sith may have Lightsaber:        
-   // If "WieldedBy(Weapon -> Character)" and Weapon is Lightsaber,        
-   // then Character must be instanceOf(Jedi or Sith).        
-        
-// 4) Each Battle must have at least two Factions involved:        
-   // i.e. (Battle -> factionParticipants) >= 2 in the story sense        
-   // Implementation: "participatesIn" from at least two distinct Factions        
-        
-// 5) A Character can be either RebelAllianceMember or EmpireMember, but not both:        
-   // Disjointness constraint for RebelAllianceMember vs. EmpireMember        
-        
-// 6) If an apprenticeTo(Sith -> Character), that Character must be a Sith or a MasterSith:        
-   // i.e., the "apprenticeTo" references a master who is presumably also a Sith or an advanced Dark Side user        
-        
-// 7) If "Character.forceSensitive = true" => (Character is Jedi or Sith).        
-   // Another approach: only Jedi or Sith can have "forceSensitive = true"        
-        
-// 8) If "spaceship.hyperdriveEquipped = false," it cannot "pilotedBy" any character who travels interstellar:        
-   // This is a domain constraint: a sublight-only ship might be restricted.         
-   // Real logic: "We do not allow Missions to plan hyperdrive routes if spaceship hyperdriveEquipped=false."        
-        
-// 9) If "Battle.outcome = 'AllianceVictory'," then at least one participating faction must be "Rebel Alliance."        
-   // domain logic for storyline        
-        
-//10) If "Sith.darkSideLevel > 80," then "Sith.sithTitle" must exist (e.g., "Darth" or "Dark Lord").        
+// MOAR RELATIONSHIPS....MWAAHAHAHA!!!                                
+Relationship: hasSidekick (Character → Character, 0..1)                                
+Relationship: alliedWithFaction (Faction → Faction, 0..*)                                
+Relationship: spiedOnBy (Character → Droid, 0..*)                                
+Relationship: constructedBy (Lightsaber → Jedi, 0..1)                                
+Relationship: incorporatesVehicle (Battle → Vehicle, 0..*)                                
+Relationship: hiddenIn (Smuggler → Spaceship, 0..1)                                
+Relationship: stealsFrom (BountyHunter → Smuggler, 0..*)                                
+Relationship: studiedHolocron (Jedi → Holocron, 0..*)                                
+Relationship: overseesUnit (Politician → MilitaryUnit, 0..*)                                
+Relationship: protectsArtifact (Mission → Artifact, 0..*)                                
+                                
+// ========== RULES & CONSTRAINTS ==========                                
+                                
+// 1) Subclass constraints:                                
+   // Jedi and Sith are subclasses of Character                                
+   // => implies Jedi, Sith must also have data properties from Character                                
+                                
+// 2) Droid cannot have ForceAbility:                                
+   // i.e., if "X hasAbility Y" then X cannot be of type Droid                                
+                                
+// 3) Only Jedi or Sith may have Lightsaber:                                
+   // If "WieldedBy(Weapon -> Character)" and Weapon is Lightsaber,                                
+   // then Character must be instanceOf(Jedi or Sith).                                
+                                
+// 4) Each Battle must have at least two Factions involved:                                
+   // i.e. (Battle -> factionParticipants) >= 2 in the story sense                                
+   // Implementation: "participatesIn" from at least two distinct Factions                                
+                                
+// 5) A Character can be either RebelAllianceMember or EmpireMember, but not both:                                
+   // Disjointness constraint for RebelAllianceMember vs. EmpireMember                                
+                                
+// 6) If an apprenticeTo(Sith -> Character), that Character must be a Sith or a MasterSith:                                
+   // i.e., the "apprenticeTo" references a master who is presumably also a Sith or an advanced Dark Side user                                
+                                
+// 7) If "Character.forceSensitive = true" => (Character is Jedi or Sith).                                
+   // Another approach: only Jedi or Sith can have "forceSensitive = true"                                
+                                
+// 8) If "spaceship.hyperdriveEquipped = false," it cannot "pilotedBy" any character who travels interstellar:                                
+   // This is a domain constraint: a sublight-only ship might be restricted.                                 
+   // Real logic: "We do not allow Missions to plan hyperdrive routes if spaceship hyperdriveEquipped=false."                                
+                                
+// 9) If "Battle.outcome = 'AllianceVictory'," then at least one participating faction must be "Rebel Alliance."                                
+   // domain logic for storyline                                
+                                
+//10) If "Sith.darkSideLevel > 80," then "Sith.sithTitle" must exist (e.g., "Darth" or "Dark Lord").                                
+                                        
+// 11) "BountyHunter.lethalEfficiency" must be > 0 if "notorietyLevel" is not 'novice'                                 
+   // minimal domain logic                                
+                                
+// 12) "Planet.orbitalPeriodDays < 1000" if "planetName != 'Tatooine'"                                 
+   // e.g., fictional logic for local system                                
+                                
+// 13) "Battle.casualties > 0" if "Battle.outcome = 'EmpireVictory'"                                
+                                
+// 14) If "Faction.ideology = 'Sith Doctrine'," must have "leader" referencing a known Sith                                
+                                
+// 15) "Mission.successRate <= 100.0"                                 
+   // typical numeric constraint                                
+                               
+```                        
+                  
+# Playing with the ontology                
                 
-// 11) "BountyHunter.lethalEfficiency" must be > 0 if "notorietyLevel" is not 'novice'         
-   // minimal domain logic        
-        
-// 12) "Planet.orbitalPeriodDays < 1000" if "planetName != 'Tatooine'"         
-   // e.g., fictional logic for local system        
-        
-// 13) "Battle.casualties > 0" if "Battle.outcome = 'EmpireVictory'"        
-        
-// 14) If "Faction.ideology = 'Sith Doctrine'," must have "leader" referencing a known Sith        
-        
-// 15) "Mission.successRate <= 100.0"         
-   // typical numeric constraint        
-        
-                 
-```                    
+```python                
+// Character instances                
+Character darth_vader = {                
+  characterID: "char_001",                
+  name: "Darth Vader",                
+  species: "Human",                
+  gender: "Male",                
+  affiliation: "Galactic Empire",                
+  rank: "Supreme Commander",                
+  forceSensitive: true,                
+  starSign: "Unknown",                
+  cameoAppearance: false                
+}                
+                
+Sith darth_vader_sith = {                
+  // Inherits from Character darth_vader                
+  darkSideLevel: 95,                
+  apprenticeOf: "Emperor Palpatine",                
+  sithTitle: "Darth"                
+}                
+                
+Character luke_skywalker = {                
+  characterID: "char_002",                
+  name: "Luke Skywalker",                
+  species: "Human",                
+  gender: "Male",                
+  affiliation: "Rebel Alliance",                
+  rank: "Commander",                
+  forceSensitive: true,                
+  starSign: "Unknown",                
+  cameoAppearance: false                
+}                
+                
+Jedi luke_skywalker_jedi = {                
+  // Inherits from Character luke_skywalker                
+  lightsaberColor: "green",                
+  midiChlorianCount: 20000,                
+  jediRank: "Padawan"                
+}                
+                
+// The revelation event                
+Event vader_revelation = {                
+  eventID: "event_001",                
+  description: "Darth Vader reveals to Luke Skywalker that he is his father",                
+  timestamp: "3 ABY",                
+  significanceLevel: "High"                
+}                
+                
+// Creating a new relationship not explicitly defined in the ontology                
+// This could be added to the object properties section                
+Relationship: biologicalParentOf (Character → Character, 0..*)                
+                
+// Instance of the relationship (spoiler alert!)        
+// Vader: "Luke, I am your Father..."
+// Luke Skywalker: "Nooooooo.....!!!"        
+biologicalParentOf(darth_vader, luke_skywalker)               
+```                   
+                
+                    
                     
 ### I just thought this was cool                    
                     
