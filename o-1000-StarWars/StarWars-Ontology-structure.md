@@ -399,7 +399,7 @@ Relationship: protectsArtifact (Mission → Artifact, 0..*)
                                
 '''                        
                   
-# Use:                
+# Playing with the ontology                
                 
 '''python                
 // Character instances                

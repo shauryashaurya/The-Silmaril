@@ -1,0 +1,84 @@
+{
+  "characters": [
+    {
+      "characterID": "char_b3288d7a",
+      "name": "Anakin Skywalker / Darth Vader",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Supreme Commander",
+      "forceSensitive": true,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    {
+      "characterID": "char_dc19db82",
+      "name": "Padm\u00e9 Amidala",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Republic",
+      "rank": "Senator",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    {
+      "characterID": "char_dd13e2bd",
+      "name": "Luke Skywalker",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    {
+      "characterID": "char_d0f16a16",
+      "name": "Leia Organa",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Rebel Alliance",
+      "rank": "Princess",
+      "forceSensitive": true,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "biologicalParentOf",
+      "parent": "char_b3288d7a",
+      "child": "char_dd13e2bd"
+    },
+    {
+      "relationshipType": "biologicalParentOf",
+      "parent": "char_b3288d7a",
+      "child": "char_d0f16a16"
+    },
+    {
+      "relationshipType": "biologicalParentOf",
+      "parent": "char_dc19db82",
+      "child": "char_dd13e2bd"
+    },
+    {
+      "relationshipType": "biologicalParentOf",
+      "parent": "char_dc19db82",
+      "child": "char_d0f16a16"
+    }
+  ],
+  "events": [
+    {
+      "eventID": "event_1dbee469",
+      "description": "Darth Vader reveals to Luke Skywalker that he is his father",
+      "timestamp": "3-ABY",
+      "significanceLevel": "High",
+      "location": "Cloud City, Bespin",
+      "participants": [
+        "char_b3288d7a",
+        "char_dd13e2bd"
+      ],
+      "quote": "No, I am your father."
+    }
+  ]
+}
