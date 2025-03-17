@@ -777,7 +777,7 @@ def generate_sample_data():
     return dataset
 
 
-def serialize_to_json(dataset, filename="./data/star_wars_data.json"):
+def serialize_to_json(dataset, filename="./data/star_wars_data_v01.json"):
     """Serialize the dataset to JSON file"""
     # Convert any datetime objects to strings
     def json_serial(obj):
@@ -898,7 +898,7 @@ if __name__ == "__main__":
 
     # Generate the family tree example
     family_tree = generate_family_tree_example()
-    serialize_to_json(family_tree, "./data/skywalker_family.json")
+    serialize_to_json(family_tree, "./data/skywalker_family_v01.json")
 
     # Print the famous revelation event
     print("\nThe famous revelation:")

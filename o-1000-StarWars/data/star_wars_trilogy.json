@@ -1,7 +1,7 @@
 {
   "characters": {
-    "char_20bf383c": {
-      "characterID": "char_20bf383c",
+    "char_3462015d": {
+      "characterID": "char_3462015d",
       "name": "Luke Skywalker",
       "species": "Human",
       "gender": "Male",
@@ -11,8 +11,8 @@
       "starSign": "Sarlacc",
       "cameoAppearance": false
     },
-    "char_25022642": {
-      "characterID": "char_25022642",
+    "char_c548e2e6": {
+      "characterID": "char_c548e2e6",
       "name": "Admiral Piett",
       "species": "Human",
       "gender": "Male",
@@ -22,8 +22,8 @@
       "starSign": "Mynock",
       "cameoAppearance": false
     },
-    "char_9071379a": {
-      "characterID": "char_9071379a",
+    "char_74860ffe": {
+      "characterID": "char_74860ffe",
       "name": "R2-D2",
       "species": "Droid",
       "gender": "Programming",
@@ -33,8 +33,8 @@
       "starSign": "Sarlacc",
       "cameoAppearance": false
     },
-    "char_a613232c": {
-      "characterID": "char_a613232c",
+    "char_44750e2a": {
+      "characterID": "char_44750e2a",
       "name": "Emperor Palpatine",
       "species": "Human",
       "gender": "Male",
@@ -44,8 +44,8 @@
       "starSign": "Bantha",
       "cameoAppearance": false
     },
-    "char_f75c4685": {
-      "characterID": "char_f75c4685",
+    "char_5c185f0a": {
+      "characterID": "char_5c185f0a",
       "name": "Jabba the Hutt",
       "species": "Hutt",
       "gender": "Male",
@@ -55,8 +55,8 @@
       "starSign": "Mynock",
       "cameoAppearance": false
     },
-    "char_61ae63c4": {
-      "characterID": "char_61ae63c4",
+    "char_85f5afa2": {
+      "characterID": "char_85f5afa2",
       "name": "Mon Mothma",
       "species": "Human",
       "gender": "Female",
@@ -66,8 +66,8 @@
       "starSign": "Krayt",
       "cameoAppearance": false
     },
-    "char_63aa2eae": {
-      "characterID": "char_63aa2eae",
+    "char_e1fa6870": {
+      "characterID": "char_e1fa6870",
       "name": "Admiral Piett",
       "species": "Human",
       "gender": "Male",
@@ -77,8 +77,8 @@
       "starSign": "Mynock",
       "cameoAppearance": false
     },
-    "char_325edcd7": {
-      "characterID": "char_325edcd7",
+    "char_187e285a": {
+      "characterID": "char_187e285a",
       "name": "Chewbacca",
       "species": "Wookiee",
       "gender": "Male",
@@ -88,8 +88,8 @@
       "starSign": "Krayt",
       "cameoAppearance": true
     },
-    "char_214b3c74": {
-      "characterID": "char_214b3c74",
+    "char_b42a2c7a": {
+      "characterID": "char_b42a2c7a",
       "name": "Lando Calrissian",
       "species": "Human",
       "gender": "Male",
@@ -99,8 +99,8 @@
       "starSign": "Sarlacc",
       "cameoAppearance": false
     },
-    "char_9ab511ed": {
-      "characterID": "char_9ab511ed",
+    "char_c7da478b": {
+      "characterID": "char_c7da478b",
       "name": "Mon Mothma",
       "species": "Human",
       "gender": "Female",
@@ -110,8 +110,8 @@
       "starSign": "Bantha",
       "cameoAppearance": false
     },
-    "char_49f98b05": {
-      "characterID": "char_49f98b05",
+    "char_353f5456": {
+      "characterID": "char_353f5456",
       "name": "Wicket W. Warrick",
       "species": "Ewok",
       "gender": "Male",
@@ -121,8 +121,8 @@
       "starSign": "Krayt",
       "cameoAppearance": false
     },
-    "char_b038133c": {
-      "characterID": "char_b038133c",
+    "char_a5b1e92e": {
+      "characterID": "char_a5b1e92e",
       "name": "Admiral Ozzel",
       "species": "Human",
       "gender": "Male",
@@ -132,8 +132,8 @@
       "starSign": "Sarlacc",
       "cameoAppearance": false
     },
-    "char_717a2db4": {
-      "characterID": "char_717a2db4",
+    "char_42cb9bda": {
+      "characterID": "char_42cb9bda",
       "name": "Lobot",
       "species": "Human",
       "gender": "Male",
@@ -143,8 +143,8 @@
       "starSign": "Mynock",
       "cameoAppearance": false
     },
-    "char_ddfb113a": {
-      "characterID": "char_ddfb113a",
+    "char_e269a689": {
+      "characterID": "char_e269a689",
       "name": "Leia Organa",
       "species": "Human",
       "gender": "Female",
@@ -154,8 +154,8 @@
       "starSign": "Krayt",
       "cameoAppearance": false
     },
-    "char_6e476d79": {
-      "characterID": "char_6e476d79",
+    "char_962a2a4d": {
+      "characterID": "char_962a2a4d",
       "name": "Han Solo",
       "species": "Human",
       "gender": "Male",
@@ -165,8 +165,8 @@
       "starSign": "Mynock",
       "cameoAppearance": false
     },
-    "char_0483b1e1": {
-      "characterID": "char_0483b1e1",
+    "char_85b1aa46": {
+      "characterID": "char_85b1aa46",
       "name": "Lobot",
       "species": "Human",
       "gender": "Male",
@@ -176,8 +176,8 @@
       "starSign": "Rancor",
       "cameoAppearance": false
     },
-    "char_653934ce": {
-      "characterID": "char_653934ce",
+    "char_7493367e": {
+      "characterID": "char_7493367e",
       "name": "Emperor Palpatine",
       "species": "Human",
       "gender": "Male",
@@ -187,8 +187,8 @@
       "starSign": "Sarlacc",
       "cameoAppearance": false
     },
-    "char_178d7a6b": {
-      "characterID": "char_178d7a6b",
+    "char_23f9c981": {
+      "characterID": "char_23f9c981",
       "name": "R2-D2",
       "species": "Droid",
       "gender": "Programming",
@@ -198,8 +198,8 @@
       "starSign": "Mynock",
       "cameoAppearance": false
     },
-    "char_47fd8764": {
-      "characterID": "char_47fd8764",
+    "char_2290e64a": {
+      "characterID": "char_2290e64a",
       "name": "Jabba the Hutt",
       "species": "Hutt",
       "gender": "Male",
@@ -209,8 +209,8 @@
       "starSign": "Sarlacc",
       "cameoAppearance": false
     },
-    "char_10a8ecb6": {
-      "characterID": "char_10a8ecb6",
+    "char_6c79d68b": {
+      "characterID": "char_6c79d68b",
       "name": "Leia Organa",
       "species": "Human",
       "gender": "Female",
@@ -220,42 +220,247 @@
       "starSign": "Sarlacc",
       "cameoAppearance": false
     },
-    "char_4f833e0a": {
-      "characterID": "char_4f833e0a",
+    "char_eda37e88": {
+      "characterID": "char_eda37e88",
       "name": "Darth Vader",
       "species": "Human",
       "gender": "Male",
       "affiliation": "Galactic Empire",
       "forceSensitive": true
     },
-    "char_f0517e68": {
-      "characterID": "char_f0517e68",
+    "char_abebd352": {
+      "characterID": "char_abebd352",
       "name": "Obi-Wan Kenobi",
       "species": "Human",
       "gender": "Male",
       "affiliation": "Rebel Alliance",
       "forceSensitive": true
     },
-    "char_8efb27a9": {
-      "characterID": "char_8efb27a9",
+    "char_caa5a7c3": {
+      "characterID": "char_caa5a7c3",
       "name": "Grand Moff Tarkin",
       "species": "Human",
       "gender": "Male",
       "affiliation": "Galactic Empire",
       "forceSensitive": false
     },
-    "char_b67e8fc2": {
-      "characterID": "char_b67e8fc2",
+    "char_c4c3c6e0": {
+      "characterID": "char_c4c3c6e0",
+      "name": "Biggs Darklighter",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_88aface3": {
+      "characterID": "char_88aface3",
+      "name": "Wedge Antilles",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "forceSensitive": false
+    },
+    "char_46180ee2": {
+      "characterID": "char_46180ee2",
+      "name": "Garven Dreis",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_ee6c48d8": {
+      "characterID": "char_ee6c48d8",
+      "name": "Jon Vander",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_39c54a80": {
+      "characterID": "char_39c54a80",
+      "name": "Greedo",
+      "species": "Rodian",
+      "gender": "Male",
+      "affiliation": "Bounty Hunters Guild",
+      "forceSensitive": false
+    },
+    "char_50094c5a": {
+      "characterID": "char_50094c5a",
+      "name": "Owen Lars",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_3c529ffe": {
+      "characterID": "char_3c529ffe",
+      "name": "Beru Lars",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_7c7e5a44": {
+      "characterID": "char_7c7e5a44",
+      "name": "Jawas",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_1f7eda73": {
+      "characterID": "char_1f7eda73",
+      "name": "Tusken Raiders",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_4ccf4fa6": {
+      "characterID": "char_4ccf4fa6",
       "name": "Yoda",
       "species": "Unknown",
       "gender": "Male",
       "affiliation": "Jedi Order",
       "forceSensitive": true
+    },
+    "char_56d33e2a": {
+      "characterID": "char_56d33e2a",
+      "name": "Boba Fett",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Bounty Hunters Guild",
+      "forceSensitive": false
+    },
+    "char_d9dae277": {
+      "characterID": "char_d9dae277",
+      "name": "Captain Needa",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_2d21f085": {
+      "characterID": "char_2d21f085",
+      "name": "General Veers",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "forceSensitive": false
+    },
+    "char_fbab0b70": {
+      "characterID": "char_fbab0b70",
+      "name": "Wampa",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_630a3945": {
+      "characterID": "char_630a3945",
+      "name": "Rebel Officer",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_6dda8460": {
+      "characterID": "char_6dda8460",
+      "name": "Admiral Ackbar",
+      "species": "Mon Calamari",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "forceSensitive": false
+    },
+    "char_99eb6f1f": {
+      "characterID": "char_99eb6f1f",
+      "name": "Bib Fortuna",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_f4d8a2f3": {
+      "characterID": "char_f4d8a2f3",
+      "name": "Gamorrean Guard",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_74d6effd": {
+      "characterID": "char_74d6effd",
+      "name": "Ewoks",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_514a76e8": {
+      "characterID": "char_514a76e8",
+      "name": "Rancor",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
+    },
+    "char_736ad82c": {
+      "characterID": "char_736ad82c",
+      "name": "Moff Jerjerrod",
+      "species": "Human",
+      "gender": "Unknown",
+      "affiliation": "Unknown",
+      "rank": "Unknown",
+      "forceSensitive": false,
+      "starSign": "Unknown",
+      "cameoAppearance": false
     }
   },
   "jedis": {
-    "char_20bf383c": {
-      "characterID": "char_20bf383c",
+    "char_3462015d": {
+      "characterID": "char_3462015d",
       "name": "Luke Skywalker",
       "species": "Human",
       "gender": "Male",
@@ -270,8 +475,8 @@
     }
   },
   "siths": {
-    "char_4f833e0a": {
-      "characterID": "char_4f833e0a",
+    "char_eda37e88": {
+      "characterID": "char_eda37e88",
       "name": "Darth Vader",
       "species": "Human",
       "gender": "Male",
@@ -281,8 +486,8 @@
       "apprenticeOf": "Emperor Palpatine",
       "sithTitle": "Darth"
     },
-    "char_a613232c": {
-      "characterID": "char_a613232c",
+    "char_44750e2a": {
+      "characterID": "char_44750e2a",
       "name": "Emperor Palpatine",
       "species": "Human",
       "gender": "Male",
@@ -297,8 +502,8 @@
     }
   },
   "droids": {
-    "droid_a15facf7": {
-      "characterID": "droid_a15facf7",
+    "droid_1324fdc4": {
+      "characterID": "droid_1324fdc4",
       "name": "R2-D2",
       "species": "Droid",
       "gender": "Programming",
@@ -312,8 +517,8 @@
       "owner": "",
       "memoryWipes": 0
     },
-    "droid_7dc6a1c4": {
-      "characterID": "droid_7dc6a1c4",
+    "droid_0ef9105d": {
+      "characterID": "droid_0ef9105d",
       "name": "C-3PO",
       "species": "Droid",
       "gender": "Programming",
@@ -327,8 +532,8 @@
       "owner": "",
       "memoryWipes": 0
     },
-    "droid_218cfdcf": {
-      "characterID": "droid_218cfdcf",
+    "droid_888ff7e9": {
+      "characterID": "droid_888ff7e9",
       "name": "E-1188",
       "species": "Droid",
       "gender": "Programming",
@@ -342,8 +547,8 @@
       "owner": "",
       "memoryWipes": 10
     },
-    "droid_de99e551": {
-      "characterID": "droid_de99e551",
+    "droid_f7ed448b": {
+      "characterID": "droid_f7ed448b",
       "name": "M-2827",
       "species": "Droid",
       "gender": "Programming",
@@ -357,8 +562,8 @@
       "owner": "",
       "memoryWipes": 7
     },
-    "droid_9a2e170c": {
-      "characterID": "droid_9a2e170c",
+    "droid_15e0d491": {
+      "characterID": "droid_15e0d491",
       "name": "R-9201",
       "species": "Droid",
       "gender": "Programming",
@@ -372,8 +577,8 @@
       "owner": "",
       "memoryWipes": 1
     },
-    "droid_cf4328de": {
-      "characterID": "droid_cf4328de",
+    "droid_a40aaa32": {
+      "characterID": "droid_a40aaa32",
       "name": "A-3504",
       "species": "Droid",
       "gender": "Programming",
@@ -387,8 +592,8 @@
       "owner": "",
       "memoryWipes": 8
     },
-    "droid_5e252963": {
-      "characterID": "droid_5e252963",
+    "droid_b6ef0ddd": {
+      "characterID": "droid_b6ef0ddd",
       "name": "R-9005",
       "species": "Droid",
       "gender": "Programming",
@@ -404,8 +609,8 @@
     }
   },
   "planets": {
-    "planet_8a2b56b0": {
-      "planetID": "planet_8a2b56b0",
+    "planet_231d0b6c": {
+      "planetID": "planet_231d0b6c",
       "planetName": "Planet-6038",
       "starSystem": "Corellia",
       "climate": "Toxic",
@@ -413,8 +618,8 @@
       "affiliation": "Galactic Empire",
       "orbitalPeriodDays": 391.322395960109
     },
-    "planet_a7dc3650": {
-      "planetID": "planet_a7dc3650",
+    "planet_999cefb0": {
+      "planetID": "planet_999cefb0",
       "planetName": "Planet-2133",
       "starSystem": "Utapau",
       "climate": "Gaseous",
@@ -422,8 +627,8 @@
       "affiliation": "Mandalorians",
       "orbitalPeriodDays": 981.40961044819
     },
-    "planet_b45e7e6e": {
-      "planetID": "planet_b45e7e6e",
+    "planet_c70c7a3a": {
+      "planetID": "planet_c70c7a3a",
       "planetName": "Cloud City",
       "starSystem": "Bespin",
       "climate": "Gaseous",
@@ -431,8 +636,8 @@
       "affiliation": "Death Watch",
       "orbitalPeriodDays": 538.0872142205087
     },
-    "planet_b8659dd0": {
-      "planetID": "planet_b8659dd0",
+    "planet_dcb0a543": {
+      "planetID": "planet_dcb0a543",
       "planetName": "Death Star",
       "starSystem": "Mobile",
       "climate": "Artificial",
@@ -440,8 +645,8 @@
       "affiliation": "Bounty Hunters Guild",
       "orbitalPeriodDays": 918.7916536297134
     },
-    "planet_3f7760ec": {
-      "planetID": "planet_3f7760ec",
+    "planet_cc333137": {
+      "planetID": "planet_cc333137",
       "planetName": "Yavin 4",
       "starSystem": "Yavin",
       "climate": "Jungle",
@@ -449,8 +654,8 @@
       "affiliation": "Crimson Dawn",
       "orbitalPeriodDays": 216.80637374564003
     },
-    "planet_b4d2f53b": {
-      "planetID": "planet_b4d2f53b",
+    "planet_d41a6e86": {
+      "planetID": "planet_d41a6e86",
       "planetName": "Hoth",
       "starSystem": "Hoth",
       "climate": "Frozen",
@@ -458,8 +663,8 @@
       "affiliation": "Galactic Empire",
       "orbitalPeriodDays": 765.5649162922148
     },
-    "planet_3371f91d": {
-      "planetID": "planet_3371f91d",
+    "planet_1da97cb0": {
+      "planetID": "planet_1da97cb0",
       "planetName": "Planet-6413",
       "starSystem": "Corellia",
       "climate": "Ocean",
@@ -467,8 +672,8 @@
       "affiliation": "Bounty Hunters Guild",
       "orbitalPeriodDays": 256.6150225610341
     },
-    "planet_689b3e4d": {
-      "planetID": "planet_689b3e4d",
+    "planet_02a9798d": {
+      "planetID": "planet_02a9798d",
       "planetName": "Jabba's Palace",
       "starSystem": "Tatoo",
       "climate": "Desert",
@@ -476,8 +681,8 @@
       "affiliation": "Imperial Remnant",
       "orbitalPeriodDays": 947.4758782239561
     },
-    "planet_16961334": {
-      "planetID": "planet_16961334",
+    "planet_11b06556": {
+      "planetID": "planet_11b06556",
       "planetName": "Death Star",
       "starSystem": "Mobile",
       "climate": "Artificial",
@@ -485,8 +690,8 @@
       "affiliation": "Galactic Empire",
       "orbitalPeriodDays": 845.1901012155481
     },
-    "planet_334559ce": {
-      "planetID": "planet_334559ce",
+    "planet_f1b63a4d": {
+      "planetID": "planet_f1b63a4d",
       "planetName": "Yavin 4",
       "starSystem": "Yavin",
       "climate": "Jungle",
@@ -494,8 +699,8 @@
       "affiliation": "Death Watch",
       "orbitalPeriodDays": 538.4393197929166
     },
-    "planet_8dfdf744": {
-      "planetID": "planet_8dfdf744",
+    "planet_9f554f3e": {
+      "planetID": "planet_9f554f3e",
       "planetName": "Tatooine",
       "starSystem": "Tatoo",
       "climate": "Desert",
@@ -503,8 +708,8 @@
       "affiliation": "Rebel Alliance",
       "orbitalPeriodDays": 983.3142090474345
     },
-    "planet_1df0462d": {
-      "planetID": "planet_1df0462d",
+    "planet_3a34ca12": {
+      "planetID": "planet_3a34ca12",
       "planetName": "Alderaan",
       "starSystem": "Alderaan",
       "climate": "Temperate",
@@ -512,180 +717,283 @@
       "affiliation": "Galactic Empire",
       "orbitalPeriodDays": 629.5698888772002
     },
-    "planet_4650844d": {
-      "planetID": "planet_4650844d",
+    "planet_0de5b778": {
+      "planetID": "planet_0de5b778",
+      "planetName": "Mos Eisley",
+      "starSystem": "Tatoo",
+      "climate": "Desert",
+      "population": 10763692812,
+      "affiliation": "Hutt Cartel",
+      "orbitalPeriodDays": 945.6742430169735
+    },
+    "planet_91e48172": {
+      "planetID": "planet_91e48172",
       "planetName": "Dagobah",
       "starSystem": "Dagobah",
       "climate": "Swamp",
-      "population": 9640128164,
-      "affiliation": "Mandalorians",
-      "orbitalPeriodDays": 326.03971905342837
+      "population": 18480170406,
+      "affiliation": "Banking Clan",
+      "orbitalPeriodDays": 722.5270778508753
     },
-    "planet_714335c0": {
-      "planetID": "planet_714335c0",
+    "planet_3415a5b5": {
+      "planetID": "planet_3415a5b5",
       "planetName": "Bespin",
       "starSystem": "Bespin",
       "climate": "Gaseous",
-      "population": 11612615555,
-      "affiliation": "Crimson Dawn",
-      "orbitalPeriodDays": 986.0987948909343
-    },
-    "planet_908040cf": {
-      "planetID": "planet_908040cf",
-      "planetName": "Endor",
-      "starSystem": "Endor",
-      "climate": "Forest",
-      "population": 2272782991,
-      "affiliation": "Death Watch",
-      "orbitalPeriodDays": 852.8662039572539
-    },
-    "planet_9678bf38": {
-      "planetID": "planet_9678bf38",
-      "planetName": "Death Star II",
-      "starSystem": "Endor",
-      "climate": "Artificial",
       "population": 2850232839,
       "affiliation": "Hutt Cartel",
       "orbitalPeriodDays": 411.308271268215
+    },
+    "planet_3ed53e5b": {
+      "planetID": "planet_3ed53e5b",
+      "planetName": "Asteroid Field",
+      "starSystem": "Hoth Sector",
+      "climate": "Asteroid",
+      "population": 3822286999,
+      "affiliation": "Corporate Sector Authority",
+      "orbitalPeriodDays": 642.025689066968
+    },
+    "planet_b02b89e7": {
+      "planetID": "planet_b02b89e7",
+      "planetName": "Echo Base",
+      "starSystem": "Hoth",
+      "climate": "Frozen",
+      "population": 9760661273,
+      "affiliation": "Crimson Dawn",
+      "orbitalPeriodDays": 368.2930941907475
+    },
+    "planet_dbd66959": {
+      "planetID": "planet_dbd66959",
+      "planetName": "Endor",
+      "starSystem": "Endor",
+      "climate": "Forest",
+      "population": 18314671398,
+      "affiliation": "Imperial Remnant",
+      "orbitalPeriodDays": 400.64588040384535
+    },
+    "planet_fda8fe1b": {
+      "planetID": "planet_fda8fe1b",
+      "planetName": "Death Star II",
+      "starSystem": "Endor",
+      "climate": "Artificial",
+      "population": 219179599,
+      "affiliation": "Death Watch",
+      "orbitalPeriodDays": 538.4370422784174
+    },
+    "planet_93bf088b": {
+      "planetID": "planet_93bf088b",
+      "planetName": "Rebel Fleet Assembly Point",
+      "starSystem": "Sullust",
+      "climate": "Space",
+      "population": 1189332531,
+      "affiliation": "Rebel Alliance",
+      "orbitalPeriodDays": 466.51167434546545
+    },
+    "planet_76313207": {
+      "planetID": "planet_76313207",
+      "planetName": "Great Pit of Carkoon",
+      "starSystem": "Tatoo",
+      "climate": "Desert",
+      "population": 12799134754,
+      "affiliation": "Hutt Cartel",
+      "orbitalPeriodDays": 792.2434957699967
+    },
+    "planet_a6feec7d": {
+      "planetID": "planet_a6feec7d",
+      "planetName": "Ewok Village",
+      "starSystem": "Endor",
+      "climate": "Forest",
+      "population": 19017770505,
+      "affiliation": "Rebel Alliance",
+      "orbitalPeriodDays": 289.3872305908787
+    },
+    "planet_7bd883bb": {
+      "planetID": "planet_7bd883bb",
+      "planetName": "Imperial Bunker",
+      "starSystem": "Endor",
+      "climate": "Forest",
+      "population": 17821052475,
+      "affiliation": "Rebel Alliance",
+      "orbitalPeriodDays": 866.8414208889274
     }
   },
   "spaceships": {
-    "ship_948e686d": {
-      "shipID": "ship_948e686d",
+    "ship_af066cd3": {
+      "shipID": "ship_af066cd3",
       "model": "Millennium Falcon",
       "shipClass": "Freighter",
       "speedRating": 1.1039319231534033,
       "hyperdriveEquipped": true,
       "uniqueName": "Millennium Falcon-2790"
     },
-    "ship_affa671b": {
-      "shipID": "ship_affa671b",
+    "ship_d7c4963a": {
+      "shipID": "ship_d7c4963a",
       "model": "Executor-class",
       "shipClass": "Super Star Destroyer",
       "speedRating": 1.3044286308655166,
       "hyperdriveEquipped": true,
       "uniqueName": "Executor"
     },
-    "ship_6691cbe2": {
-      "shipID": "ship_6691cbe2",
+    "ship_e1c3ed12": {
+      "shipID": "ship_e1c3ed12",
       "model": "Firespray-31",
       "shipClass": "Patrol Craft",
       "speedRating": 0.9178177170004107,
       "hyperdriveEquipped": true,
       "uniqueName": "Slave I"
     },
-    "ship_9b4bc9a9": {
-      "shipID": "ship_9b4bc9a9",
+    "ship_4b794df7": {
+      "shipID": "ship_4b794df7",
       "model": "GR-75",
       "shipClass": "Transport",
       "speedRating": 0.613077332561434,
       "hyperdriveEquipped": true,
       "uniqueName": "GR-75 Medium Transport"
     },
-    "ship_65ec0d6d": {
-      "shipID": "ship_65ec0d6d",
+    "ship_34395612": {
+      "shipID": "ship_34395612",
       "model": "Slave I",
       "shipClass": "Destroyer",
       "speedRating": 0.5758824942873219,
       "hyperdriveEquipped": false,
       "uniqueName": "Slave I-1241"
     },
-    "ship_12ca858a": {
-      "shipID": "ship_12ca858a",
+    "ship_cbe76987": {
+      "shipID": "ship_cbe76987",
       "model": "Nebulon-B Frigate",
       "shipClass": "Transport",
       "speedRating": 1.109621086928708,
       "hyperdriveEquipped": true,
       "uniqueName": "Nebulon-B Frigate-7570"
     },
-    "ship_2883607d": {
-      "shipID": "ship_2883607d",
+    "ship_502f39b6": {
+      "shipID": "ship_502f39b6",
       "model": "A-Wing",
       "shipClass": "Interceptor",
       "speedRating": 0.5032330675271397,
       "hyperdriveEquipped": true,
       "uniqueName": "A-Wing-8454"
     },
-    "ship_4876e7ab": {
-      "shipID": "ship_4876e7ab",
+    "ship_3520eb07": {
+      "shipID": "ship_3520eb07",
       "model": "Lambda",
       "shipClass": "Shuttle",
       "speedRating": 1.9359764612895098,
       "hyperdriveEquipped": true,
       "uniqueName": "Lambda-class Shuttle"
     },
-    "ship_1ea45ac8": {
-      "shipID": "ship_1ea45ac8",
+    "ship_d1fb8557": {
+      "shipID": "ship_d1fb8557",
       "model": "Slave I",
       "shipClass": "Assault Ship",
       "speedRating": 0.7321952379110962,
       "hyperdriveEquipped": true,
       "uniqueName": "Slave I-1958"
     },
-    "ship_09c0ae0f": {
-      "shipID": "ship_09c0ae0f",
+    "ship_cafc83ff": {
+      "shipID": "ship_cafc83ff",
       "model": "Imperial-class",
       "shipClass": "Star Destroyer",
       "speedRating": 0.5914363572147737,
       "hyperdriveEquipped": true,
       "uniqueName": "Imperial Star Destroyer"
     },
-    "ship_a6f84833": {
-      "shipID": "ship_a6f84833",
+    "ship_7ee0a353": {
+      "shipID": "ship_7ee0a353",
       "model": "YT-1300 Freighter",
       "shipClass": "Freighter",
-      "speedRating": 1.2588270410731481,
+      "speedRating": 1.8212962605296594,
       "hyperdriveEquipped": true,
       "uniqueName": "Millennium Falcon"
     },
-    "ship_365c7e35": {
-      "shipID": "ship_365c7e35",
+    "ship_1af4ba4e": {
+      "shipID": "ship_1af4ba4e",
       "model": "CR90 Corvette",
       "shipClass": "Corvette",
-      "speedRating": 0.698684855549701,
+      "speedRating": 1.8189053637268142,
       "hyperdriveEquipped": true,
       "uniqueName": "Tantive IV"
     },
-    "ship_fef47ed7": {
-      "shipID": "ship_fef47ed7",
+    "ship_1fb5e18d": {
+      "shipID": "ship_1fb5e18d",
       "model": "T-65 X-Wing",
       "shipClass": "Starfighter",
-      "speedRating": 1.0235132524467727,
+      "speedRating": 1.054290633108326,
       "hyperdriveEquipped": true,
       "uniqueName": "X-Wing Red Five"
+    },
+    "ship_264bc9d2": {
+      "shipID": "ship_264bc9d2",
+      "model": "Unknown",
+      "shipClass": "Transport",
+      "speedRating": 1.1572768595115648,
+      "hyperdriveEquipped": true,
+      "uniqueName": "TIE Fighter"
+    },
+    "ship_026e4808": {
+      "shipID": "ship_026e4808",
+      "model": "Unknown",
+      "shipClass": "Gunship",
+      "speedRating": 0.8053959684911793,
+      "hyperdriveEquipped": true,
+      "uniqueName": "T-47 Snowspeeder"
+    },
+    "ship_3ef65a10": {
+      "shipID": "ship_3ef65a10",
+      "model": "Unknown",
+      "shipClass": "Shuttle",
+      "speedRating": 1.1446800693211576,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Imperial Shuttle Tydirium"
+    },
+    "ship_62019f43": {
+      "shipID": "ship_62019f43",
+      "model": "MC80 Star Cruiser",
+      "shipClass": "Cruiser",
+      "speedRating": 0.5627432872532867,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Home One"
+    },
+    "ship_15066dba": {
+      "shipID": "ship_15066dba",
+      "model": "Unknown",
+      "shipClass": "Bomber",
+      "speedRating": 1.848472233113885,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Jabba's Sail Barge"
     }
   },
   "factions": {
-    "faction_c3d6f510": {
-      "factionID": "faction_c3d6f510",
+    "faction_bfe37333": {
+      "factionID": "faction_bfe37333",
       "name": "Death Watch",
       "leader": "",
       "primaryGoal": "Galactic Domination",
       "ideology": "Authoritarian Control"
     },
-    "faction_f875319a": {
-      "factionID": "faction_f875319a",
+    "faction_d2d53da6": {
+      "factionID": "faction_d2d53da6",
       "name": "Corporate Sector Authority",
       "leader": "",
       "primaryGoal": "Freedom",
       "ideology": "Warrior Culture"
     },
-    "faction_658aab36": {
-      "factionID": "faction_658aab36",
+    "faction_ef2fb10d": {
+      "factionID": "faction_ef2fb10d",
       "name": "Bounty Hunters Guild",
       "leader": "",
       "primaryGoal": "Balance",
       "ideology": "Criminal Enterprise"
     },
-    "faction_afeb441b": {
-      "factionID": "faction_afeb441b",
+    "faction_b37669c3": {
+      "factionID": "faction_b37669c3",
       "name": "Galactic Empire",
       "leader": "",
       "primaryGoal": "Balance",
       "ideology": "Isolationist"
     },
-    "faction_1d38f31b": {
-      "factionID": "faction_1d38f31b",
+    "faction_5719bcdb": {
+      "factionID": "faction_5719bcdb",
       "name": "Black Sun",
       "leader": "",
       "primaryGoal": "Peace",
@@ -693,64 +1001,64 @@
     }
   },
   "battles": {
-    "battle_ba9c1354": {
-      "battleID": "battle_ba9c1354",
+    "battle_e7f4e802": {
+      "battleID": "battle_e7f4e802",
       "name": "Battle of Yavin",
       "outcome": "Rebel Alliance Victory",
       "battleDate": "1978-01-02",
       "casualties": 2000,
       "factions": []
     },
-    "battle_1e1a0c67": {
-      "battleID": "battle_1e1a0c67",
+    "battle_d136fb14": {
+      "battleID": "battle_d136fb14",
       "name": "Battle of Hoth",
       "outcome": "Empire Victory",
       "battleDate": "1980-08-17",
       "casualties": 1500,
       "factions": []
     },
-    "battle_38a0403d": {
-      "battleID": "battle_38a0403d",
+    "battle_fa23ce15": {
+      "battleID": "battle_fa23ce15",
       "name": "Battle of Endor",
       "outcome": "Rebel Alliance Victory",
       "battleDate": "1980-03-02",
       "casualties": 5000,
       "factions": []
     },
-    "battle_a604fead": {
-      "battleID": "battle_a604fead",
+    "battle_065cb390": {
+      "battleID": "battle_065cb390",
       "name": "Defense of Planet-2133",
       "outcome": "Rebel Alliance Victory",
       "battleDate": "1977-02-20",
       "casualties": 3853,
       "factions": []
     },
-    "battle_13c3a7c7": {
-      "battleID": "battle_13c3a7c7",
+    "battle_3f5c7c4b": {
+      "battleID": "battle_3f5c7c4b",
       "name": "Battle of Endor",
       "outcome": "Rebel Alliance Victory",
       "battleDate": "1977-10-20",
       "casualties": 5000,
       "factions": []
     },
-    "battle_b7a41dba": {
-      "battleID": "battle_b7a41dba",
+    "battle_18564684": {
+      "battleID": "battle_18564684",
       "name": "Battle of Yavin",
       "outcome": "Rebel Alliance Victory",
       "battleDate": "1979-11-19",
       "casualties": 2000,
       "factions": []
     },
-    "battle_e885c504": {
-      "battleID": "battle_e885c504",
+    "battle_dc3aac02": {
+      "battleID": "battle_dc3aac02",
       "name": "Duel on Cloud City",
       "outcome": "Empire Victory",
       "battleDate": "1978-04-22",
       "casualties": 5,
       "factions": []
     },
-    "battle_82954354": {
-      "battleID": "battle_82954354",
+    "battle_3de67204": {
+      "battleID": "battle_3de67204",
       "name": "Raid on Death Star",
       "outcome": "Stalemate",
       "battleDate": "1978-07-05",
@@ -759,857 +1067,4259 @@
     }
   },
   "events": {
-    "event_8258a1cb": {
-      "eventID": "event_8258a1cb",
+    "event_a7568773": {
+      "eventID": "event_a7568773",
+      "description": "Tantive IV is pursued by an Imperial Star Destroyer",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_e269a689",
+        "char_eda37e88"
+      ],
+      "location": "ship_1af4ba4e"
+    },
+    "event_b11ad42b": {
+      "eventID": "event_b11ad42b",
+      "description": "Imperial forces board the Tantive IV",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_eda37e88",
+        "char_e269a689"
+      ],
+      "location": "ship_1af4ba4e",
+      "quote": "Where are those transmissions you intercepted?"
+    },
+    "event_c6d0a8bc": {
+      "eventID": "event_c6d0a8bc",
       "description": "Princess Leia hides Death Star plans in R2-D2",
       "timestamp": "0 BBY",
       "significanceLevel": "High",
       "participants": [
-        "char_ddfb113a",
-        "droid_a15facf7"
+        "char_e269a689",
+        "droid_1324fdc4"
       ],
-      "location": "ship_365c7e35"
+      "location": "ship_1af4ba4e",
+      "quote": "Help me, Obi-Wan Kenobi. You're my only hope."
     },
-    "event_7c618b02": {
-      "eventID": "event_7c618b02",
-      "description": "R2-D2 and C-3PO escape to Tatooine",
-      "timestamp": "0 BBY",
-      "significanceLevel": "Medium",
-      "participants": [
-        "droid_a15facf7",
-        "droid_7dc6a1c4"
-      ],
-      "location": "planet_8dfdf744"
-    },
-    "event_8142584b": {
-      "eventID": "event_8142584b",
-      "description": "Luke Skywalker discovers Obi-Wan Kenobi's message",
+    "event_dd1bc9c8": {
+      "eventID": "event_dd1bc9c8",
+      "description": "Darth Vader captures Princess Leia",
       "timestamp": "0 BBY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_f0517e68",
-        "droid_a15facf7"
+        "char_eda37e88",
+        "char_e269a689"
       ],
-      "location": "planet_8dfdf744"
+      "location": "ship_1af4ba4e"
     },
-    "event_4ceebc3b": {
-      "eventID": "event_4ceebc3b",
+    "event_01a35204": {
+      "eventID": "event_01a35204",
+      "description": "R2-D2 and C-3PO escape to Tatooine in a pod",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_1324fdc4",
+        "droid_0ef9105d"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_5e821d6e": {
+      "eventID": "event_5e821d6e",
+      "description": "R2-D2 and C-3PO are captured by Jawas",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Low",
+      "participants": [
+        "droid_1324fdc4",
+        "droid_0ef9105d",
+        "char_7c7e5a44"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_96cdd81d": {
+      "eventID": "event_96cdd81d",
+      "description": "Owen Lars purchases R2-D2 and C-3PO from Jawas",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_50094c5a",
+        "char_3c529ffe",
+        "droid_1324fdc4",
+        "droid_0ef9105d",
+        "char_3462015d"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_8358471b": {
+      "eventID": "event_8358471b",
+      "description": "R2-D2 escapes to find Obi-Wan Kenobi",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_1324fdc4",
+        "char_3462015d"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_4fcbb1e1": {
+      "eventID": "event_4fcbb1e1",
+      "description": "Luke is attacked by Tusken Raiders while searching for R2-D2",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_1f7eda73"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_c387132c": {
+      "eventID": "event_c387132c",
+      "description": "Luke Skywalker meets Obi-Wan Kenobi",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_abebd352",
+        "droid_1324fdc4"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_ee471486": {
+      "eventID": "event_ee471486",
+      "description": "Luke Skywalker discovers Obi-Wan Kenobi's message from Princess Leia",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_abebd352",
+        "droid_1324fdc4",
+        "char_e269a689"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_546fd30c": {
+      "eventID": "event_546fd30c",
+      "description": "Obi-Wan gives Luke his father's lightsaber",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_abebd352"
+      ],
+      "location": "planet_9f554f3e",
+      "quote": "Your father's lightsaber. This is the weapon of a Jedi Knight."
+    },
+    "event_7e091b41": {
+      "eventID": "event_7e091b41",
+      "description": "Imperial Stormtroopers murder Owen and Beru Lars",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_50094c5a",
+        "char_3c529ffe"
+      ],
+      "location": "planet_9f554f3e"
+    },
+    "event_389b492a": {
+      "eventID": "event_389b492a",
+      "description": "Luke decides to go with Obi-Wan to Alderaan",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_abebd352"
+      ],
+      "location": "planet_9f554f3e",
+      "quote": "I want to learn the ways of the Force and become a Jedi like my father."
+    },
+    "event_6fc8ead3": {
+      "eventID": "event_6fc8ead3",
+      "description": "Obi-Wan and Luke hire Han Solo in Mos Eisley Cantina",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_abebd352",
+        "char_962a2a4d",
+        "char_187e285a"
+      ],
+      "location": "planet_0de5b778"
+    },
+    "event_f6306e31": {
+      "eventID": "event_f6306e31",
+      "description": "Han Solo kills Greedo in the Cantina",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_39c54a80"
+      ],
+      "location": "planet_0de5b778",
+      "quote": "Sorry about the mess."
+    },
+    "event_7285a804": {
+      "eventID": "event_7285a804",
+      "description": "Millennium Falcon escapes from Tatooine",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_187e285a",
+        "char_3462015d",
+        "char_abebd352"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_b65baf44": {
+      "eventID": "event_b65baf44",
+      "description": "The Empire tortures Princess Leia for information",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_e269a689",
+        "char_eda37e88"
+      ],
+      "location": "planet_dcb0a543"
+    },
+    "event_548d8512": {
+      "eventID": "event_548d8512",
       "description": "The Empire destroys Alderaan",
       "timestamp": "0 BBY",
       "significanceLevel": "High",
       "participants": [
-        "char_4f833e0a",
-        "char_8efb27a9",
-        "char_ddfb113a"
+        "char_eda37e88",
+        "char_caa5a7c3",
+        "char_e269a689"
       ],
-      "location": "planet_1df0462d"
+      "location": "planet_3a34ca12",
+      "quote": "You may fire when ready."
     },
-    "event_7af3cacf": {
-      "eventID": "event_7af3cacf",
+    "event_469d27db": {
+      "eventID": "event_469d27db",
+      "description": "Millennium Falcon is captured by the Death Star",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_3462015d",
+        "char_abebd352",
+        "char_187e285a"
+      ],
+      "location": "planet_dcb0a543"
+    },
+    "event_5f17ff08": {
+      "eventID": "event_5f17ff08",
+      "description": "Obi-Wan Kenobi disables the Death Star's tractor beam",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_abebd352"
+      ],
+      "location": "planet_dcb0a543"
+    },
+    "event_98d722ad": {
+      "eventID": "event_98d722ad",
+      "description": "Luke, Han, and Chewbacca rescue Princess Leia",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_187e285a",
+        "char_e269a689"
+      ],
+      "location": "planet_dcb0a543",
+      "quote": "Aren't you a little short for a stormtrooper?"
+    },
+    "event_4ad3917e": {
+      "eventID": "event_4ad3917e",
+      "description": "Heroes escape through the Death Star's garbage compactor",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a"
+      ],
+      "location": "planet_dcb0a543",
+      "quote": "One thing's for sure, we're all gonna be a lot thinner!"
+    },
+    "event_628c4505": {
+      "eventID": "event_628c4505",
+      "description": "Obi-Wan Kenobi duels Darth Vader",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_abebd352",
+        "char_eda37e88"
+      ],
+      "location": "planet_dcb0a543",
+      "quote": "If you strike me down, I shall become more powerful than you can possibly imagine."
+    },
+    "event_dded72f7": {
+      "eventID": "event_dded72f7",
       "description": "Obi-Wan Kenobi is killed by Darth Vader",
       "timestamp": "0 BBY",
       "significanceLevel": "High",
       "participants": [
-        "char_f0517e68",
-        "char_4f833e0a",
-        "char_20bf383c"
+        "char_abebd352",
+        "char_eda37e88",
+        "char_3462015d"
       ],
-      "location": "planet_b8659dd0"
+      "location": "planet_dcb0a543"
     },
-    "event_84433535": {
-      "eventID": "event_84433535",
+    "event_8054bfd8": {
+      "eventID": "event_8054bfd8",
+      "description": "Heroes escape the Death Star in the Millennium Falcon",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_a6bc71d1": {
+      "eventID": "event_a6bc71d1",
+      "description": "Rebels analyze Death Star plans at Yavin 4 base",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689"
+      ],
+      "location": "planet_cc333137"
+    },
+    "event_ba4e6d64": {
+      "eventID": "event_ba4e6d64",
+      "description": "Luke reunites with Biggs Darklighter at Rebel base",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Low",
+      "participants": [
+        "char_3462015d",
+        "char_c4c3c6e0"
+      ],
+      "location": "planet_cc333137"
+    },
+    "event_89ca07ed": {
+      "eventID": "event_89ca07ed",
+      "description": "Death Star approaches Yavin 4",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_caa5a7c3",
+        "char_eda37e88"
+      ],
+      "location": "planet_dcb0a543",
+      "quote": "You're all clear, kid! Now let's blow this thing and go home!"
+    },
+    "event_120b48e0": {
+      "eventID": "event_120b48e0",
+      "description": "Battle of Yavin begins",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_c4c3c6e0",
+        "char_88aface3",
+        "char_46180ee2",
+        "char_ee6c48d8"
+      ],
+      "location": "planet_cc333137",
+      "battle": "Battle of Yavin"
+    },
+    "event_92b0c144": {
+      "eventID": "event_92b0c144",
+      "description": "Darth Vader joins the space battle in his TIE fighter",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_eda37e88"
+      ],
+      "location": "ship_264bc9d2",
+      "battle": "Battle of Yavin"
+    },
+    "event_49d7c5c2": {
+      "eventID": "event_49d7c5c2",
+      "description": "Han Solo returns to help Luke during the trench run",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_962a2a4d",
+        "char_187e285a",
+        "char_eda37e88",
+        "char_3462015d"
+      ],
+      "battle": "Battle of Yavin",
+      "ship": "ship_7ee0a353"
+    },
+    "event_a8aaaf49": {
+      "eventID": "event_a8aaaf49",
+      "description": "Luke uses the Force to guide his torpedo shot",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_abebd352"
+      ],
+      "location": "planet_dcb0a543",
+      "quote": "Use the Force, Luke."
+    },
+    "event_8f5e5b46": {
+      "eventID": "event_8f5e5b46",
       "description": "Luke destroys the Death Star",
       "timestamp": "0 BBY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_6e476d79"
+        "char_3462015d",
+        "char_962a2a4d"
       ],
-      "location": "planet_b8659dd0",
+      "location": "planet_dcb0a543",
       "battle": "Battle of Yavin"
     },
-    "event_dc5bec7a": {
-      "eventID": "event_dc5bec7a",
-      "description": "The Empire attacks Rebel base on Hoth",
+    "event_5ce5be9d": {
+      "eventID": "event_5ce5be9d",
+      "description": "Rebels hold victory ceremony on Yavin 4",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_1324fdc4",
+        "droid_0ef9105d"
+      ],
+      "location": "planet_cc333137"
+    },
+    "event_ef9b7d5a": {
+      "eventID": "event_ef9b7d5a",
+      "description": "Luke Skywalker patrols the perimeter of Echo Base",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Low",
+      "participants": [
+        "char_3462015d"
+      ],
+      "location": "planet_d41a6e86"
+    },
+    "event_304c69dc": {
+      "eventID": "event_304c69dc",
+      "description": "Luke is attacked by a Wampa creature",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_fbab0b70"
+      ],
+      "location": "planet_d41a6e86"
+    },
+    "event_ed32fb10": {
+      "eventID": "event_ed32fb10",
+      "description": "Luke escapes the Wampa cave using the Force",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d"
+      ],
+      "location": "planet_d41a6e86"
+    },
+    "event_d1154b84": {
+      "eventID": "event_d1154b84",
+      "description": "Han Solo finds Luke freezing in the Hoth wilderness",
       "timestamp": "3 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_ddfb113a",
-        "char_6e476d79",
-        "char_4f833e0a"
+        "char_962a2a4d",
+        "char_3462015d"
       ],
-      "location": "planet_b4d2f53b",
+      "location": "planet_d41a6e86",
+      "quote": "And I thought they smelled bad on the outside!"
+    },
+    "event_ab8cf2bb": {
+      "eventID": "event_ab8cf2bb",
+      "description": "Luke recovers in bacta tank at Echo Base",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Low",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689",
+        "char_962a2a4d"
+      ],
+      "location": "planet_b02b89e7"
+    },
+    "event_c455c457": {
+      "eventID": "event_c455c457",
+      "description": "Han Solo and Princess Leia argue about his departure",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689"
+      ],
+      "location": "planet_b02b89e7",
+      "quote": "You could use a good kiss!"
+    },
+    "event_404c3dd1": {
+      "eventID": "event_404c3dd1",
+      "description": "Imperial probe droid discovers Rebel base on Hoth",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "location": "planet_d41a6e86"
+    },
+    "event_a6da0554": {
+      "eventID": "event_a6da0554",
+      "description": "Admiral Ozzel brings Imperial fleet out of hyperspace too close to Hoth",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_eda37e88",
+        "char_a5b1e92e",
+        "char_c548e2e6"
+      ],
+      "location": "ship_d7c4963a"
+    },
+    "event_c9170524": {
+      "eventID": "event_c9170524",
+      "description": "Darth Vader executes Admiral Ozzel for his failure",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_eda37e88",
+        "char_a5b1e92e",
+        "char_c548e2e6"
+      ],
+      "location": "ship_d7c4963a",
+      "quote": "You have failed me for the last time, Admiral."
+    },
+    "event_1857feab": {
+      "eventID": "event_1857feab",
+      "description": "Rebels initiate evacuation of Echo Base",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_e269a689",
+        "char_630a3945"
+      ],
+      "location": "planet_b02b89e7"
+    },
+    "event_4f7fa257": {
+      "eventID": "event_4f7fa257",
+      "description": "Imperial forces land on Hoth",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_2d21f085"
+      ],
+      "location": "planet_d41a6e86",
       "battle": "Battle of Hoth"
     },
-    "event_de455040": {
-      "eventID": "event_de455040",
+    "event_10d37959": {
+      "eventID": "event_10d37959",
+      "description": "Rebel snowspeeders engage AT-AT walkers",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d"
+      ],
+      "location": "planet_d41a6e86",
+      "battle": "Battle of Hoth"
+    },
+    "event_f64808f9": {
+      "eventID": "event_f64808f9",
+      "description": "Luke's snowspeeder is shot down",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d"
+      ],
+      "location": "planet_d41a6e86",
+      "battle": "Battle of Hoth"
+    },
+    "event_0f3dc522": {
+      "eventID": "event_0f3dc522",
+      "description": "Luke destroys an AT-AT with a thermal detonator",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d"
+      ],
+      "location": "planet_d41a6e86",
+      "battle": "Battle of Hoth"
+    },
+    "event_0923d507": {
+      "eventID": "event_0923d507",
+      "description": "Han, Leia, Chewie and C-3PO escape on the Millennium Falcon",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_ddda8d7f": {
+      "eventID": "event_ddda8d7f",
+      "description": "Luke and R2-D2 escape Hoth in X-Wing",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "droid_1324fdc4"
+      ],
+      "location": "ship_1fb5e18d"
+    },
+    "event_5365a0d0": {
+      "eventID": "event_5365a0d0",
+      "description": "Luke crash-lands on Dagobah",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "droid_1324fdc4"
+      ],
+      "location": "planet_91e48172"
+    },
+    "event_9167aa3c": {
+      "eventID": "event_9167aa3c",
+      "description": "Luke meets Yoda but doesn't recognize him",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_4ccf4fa6",
+        "droid_1324fdc4"
+      ],
+      "location": "planet_91e48172",
+      "quote": "Judge me by my size, do you?"
+    },
+    "event_cf6730ce": {
+      "eventID": "event_cf6730ce",
+      "description": "Yoda reveals his identity to Luke",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_4ccf4fa6"
+      ],
+      "location": "planet_91e48172"
+    },
+    "event_77f43ec7": {
+      "eventID": "event_77f43ec7",
       "description": "Luke begins training with Yoda on Dagobah",
       "timestamp": "3 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_b67e8fc2"
+        "char_3462015d",
+        "char_4ccf4fa6"
       ],
-      "location": "planet_4650844d"
+      "location": "planet_91e48172",
+      "quote": "Do or do not. There is no try."
     },
-    "event_7d93e610": {
-      "eventID": "event_7d93e610",
+    "event_90c55493": {
+      "eventID": "event_90c55493",
+      "description": "Luke enters the Dark Side Cave",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_91e48172"
+    },
+    "event_a8c257cb": {
+      "eventID": "event_a8c257cb",
+      "description": "Luke sees a vision of his friends in pain",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_4ccf4fa6"
+      ],
+      "location": "planet_91e48172"
+    },
+    "event_2fdbede8": {
+      "eventID": "event_2fdbede8",
+      "description": "Luke decides to leave Dagobah to save his friends",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_4ccf4fa6"
+      ],
+      "location": "planet_91e48172"
+    },
+    "event_41fe0287": {
+      "eventID": "event_41fe0287",
+      "description": "Millennium Falcon evades Star Destroyers",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_6445cc90": {
+      "eventID": "event_6445cc90",
+      "description": "Millennium Falcon hides in an asteroid field",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d"
+      ],
+      "location": "planet_3ed53e5b",
+      "quote": "Never tell me the odds!"
+    },
+    "event_a13e903b": {
+      "eventID": "event_a13e903b",
+      "description": "Han and Leia grow closer while hiding in the asteroid cave",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689"
+      ],
+      "location": "ship_7ee0a353",
+      "quote": "I happen to like nice men."
+    },
+    "event_fd868931": {
+      "eventID": "event_fd868931",
+      "description": "Han realizes they're hiding inside a space slug",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d"
+      ],
+      "location": "planet_3ed53e5b"
+    },
+    "event_733e5297": {
+      "eventID": "event_733e5297",
+      "description": "Millennium Falcon escapes the space slug",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_a9018dac": {
+      "eventID": "event_a9018dac",
+      "description": "Darth Vader hires bounty hunters to find the Millennium Falcon",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_eda37e88",
+        "char_56d33e2a"
+      ],
+      "location": "ship_d7c4963a"
+    },
+    "event_5d6deedf": {
+      "eventID": "event_5d6deedf",
+      "description": "Han Solo eludes the Star Destroyers by attaching to the ship",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_f159f048": {
+      "eventID": "event_f159f048",
+      "description": "Captain Needa apologizes to Vader for losing the Millennium Falcon",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Low",
+      "participants": [
+        "char_d9dae277",
+        "char_eda37e88"
+      ],
+      "location": "ship_d7c4963a",
+      "quote": "Apology accepted, Captain Needa."
+    },
+    "event_ec6321bf": {
+      "eventID": "event_ec6321bf",
+      "description": "Boba Fett tracks the Millennium Falcon",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_56d33e2a"
+      ],
+      "location": "ship_e1c3ed12"
+    },
+    "event_233f5455": {
+      "eventID": "event_233f5455",
       "description": "Han Solo and crew arrive in Cloud City",
       "timestamp": "3 ABY",
       "significanceLevel": "Medium",
       "participants": [
-        "char_6e476d79",
-        "char_ddfb113a",
-        "char_214b3c74"
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d",
+        "char_b42a2c7a"
       ],
-      "location": "planet_b45e7e6e"
+      "location": "planet_c70c7a3a"
     },
-    "event_66cdd9d9": {
-      "eventID": "event_66cdd9d9",
+    "event_b165e257": {
+      "eventID": "event_b165e257",
+      "description": "Lando Calrissian welcomes Han and friends to Cloud City",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "char_b42a2c7a"
+      ],
+      "location": "planet_c70c7a3a",
+      "quote": "How you doin', you old pirate? So good to see you!"
+    },
+    "event_f540da1e": {
+      "eventID": "event_f540da1e",
+      "description": "C-3PO discovers Imperial stormtrooper components and is shot",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_0ef9105d"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_a454a7bc": {
+      "eventID": "event_a454a7bc",
+      "description": "Darth Vader arrives on Cloud City",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_eda37e88",
+        "char_b42a2c7a"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_81cb8acb": {
+      "eventID": "event_81cb8acb",
+      "description": "Lando betrays Han Solo and friends to Darth Vader",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_b42a2c7a",
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "char_eda37e88"
+      ],
+      "location": "planet_c70c7a3a",
+      "quote": "I had no choice. They arrived right before you did."
+    },
+    "event_e754bdf8": {
+      "eventID": "event_e754bdf8",
+      "description": "Darth Vader tortures Han Solo",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_eda37e88",
+        "char_962a2a4d"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_1d19cd19": {
+      "eventID": "event_1d19cd19",
+      "description": "Chewbacca finds dismantled C-3PO",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Low",
+      "participants": [
+        "char_187e285a",
+        "droid_0ef9105d"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_de500977": {
+      "eventID": "event_de500977",
+      "description": "Darth Vader prepares carbon freezing chamber for Luke",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_eda37e88",
+        "char_b42a2c7a"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_7ca97b8a": {
+      "eventID": "event_7ca97b8a",
       "description": "Han Solo is frozen in carbonite",
       "timestamp": "3 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_6e476d79",
-        "char_4f833e0a",
-        "char_ddfb113a",
-        "char_214b3c74"
+        "char_962a2a4d",
+        "char_eda37e88",
+        "char_e269a689",
+        "char_b42a2c7a",
+        "char_187e285a"
       ],
-      "location": "planet_b45e7e6e"
+      "location": "planet_c70c7a3a",
+      "quote": "I love you.I know."
     },
-    "event_d314508d": {
-      "eventID": "event_d314508d",
+    "event_5d360eba": {
+      "eventID": "event_5d360eba",
+      "description": "Boba Fett takes frozen Han Solo to his ship",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_56d33e2a",
+        "char_962a2a4d"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_cd151f46": {
+      "eventID": "event_cd151f46",
+      "description": "Lando has change of heart and helps Leia and Chewie escape",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_b42a2c7a",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_1324fdc4",
+        "droid_0ef9105d"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_de433fb7": {
+      "eventID": "event_de433fb7",
+      "description": "Luke Skywalker arrives at Cloud City",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "droid_1324fdc4"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_e9a01a4b": {
+      "eventID": "event_e9a01a4b",
+      "description": "Luke encounters Boba Fett and stormtroopers",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_56d33e2a"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_0044a65d": {
+      "eventID": "event_0044a65d",
+      "description": "Luke witnesses Han Solo being loaded onto Slave I",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_56d33e2a"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_6b58bb79": {
+      "eventID": "event_6b58bb79",
+      "description": "Luke Skywalker confronts Darth Vader",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_d5aeff6d": {
+      "eventID": "event_d5aeff6d",
+      "description": "Darth Vader and Luke Skywalker duel with lightsabers",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_540ab5d8": {
+      "eventID": "event_540ab5d8",
+      "description": "Darth Vader cuts off Luke's hand",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_df26eb82": {
+      "eventID": "event_df26eb82",
       "description": "Darth Vader reveals he is Luke's father",
       "timestamp": "3 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_4f833e0a"
+        "char_3462015d",
+        "char_eda37e88"
       ],
-      "location": "planet_b45e7e6e",
+      "location": "planet_c70c7a3a",
       "quote": "No, I am your father."
     },
-    "event_6b143528": {
-      "eventID": "event_6b143528",
+    "event_65f3f3ce": {
+      "eventID": "event_65f3f3ce",
+      "description": "Luke chooses to fall rather than join Vader",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_654d7a74": {
+      "eventID": "event_654d7a74",
+      "description": "Luke calls to Leia through the Force",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689"
+      ],
+      "location": "planet_c70c7a3a"
+    },
+    "event_bcd87613": {
+      "eventID": "event_bcd87613",
+      "description": "Leia senses Luke and directs Lando to turn back for him",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_e269a689",
+        "char_b42a2c7a",
+        "char_187e285a"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_4b2f13e1": {
+      "eventID": "event_4b2f13e1",
+      "description": "Luke is rescued from beneath Cloud City",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689",
+        "char_b42a2c7a",
+        "char_187e285a"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_dcc4d92c": {
+      "eventID": "event_dcc4d92c",
       "description": "Luke escapes Cloud City with Leia and Lando",
       "timestamp": "3 ABY",
       "significanceLevel": "Medium",
       "participants": [
-        "char_20bf383c",
-        "char_ddfb113a",
-        "char_214b3c74"
+        "char_3462015d",
+        "char_e269a689",
+        "char_b42a2c7a",
+        "char_187e285a"
       ],
-      "location": "planet_b45e7e6e",
-      "ship": "ship_a6f84833"
+      "location": "planet_c70c7a3a",
+      "ship": "ship_7ee0a353"
     },
-    "event_56b851c3": {
-      "eventID": "event_56b851c3",
-      "description": "Rescue of Han Solo from Jabba's Palace",
+    "event_418f5781": {
+      "eventID": "event_418f5781",
+      "description": "Darth Vader contacts Luke telepathically",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_f5663d37": {
+      "eventID": "event_f5663d37",
+      "description": "Luke gets cybernetic hand attached to replace lost hand",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_322dbca7": {
+      "eventID": "event_322dbca7",
+      "description": "Lando and Chewie prepare to search for Han Solo",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_b42a2c7a",
+        "char_187e285a",
+        "char_e269a689",
+        "char_3462015d"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_deb31839": {
+      "eventID": "event_deb31839",
+      "description": "Rebel fleet regroups as heroes look to the stars",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689",
+        "droid_1324fdc4",
+        "droid_0ef9105d"
+      ],
+      "location": "ship_7ee0a353"
+    },
+    "event_09cd6ffc": {
+      "eventID": "event_09cd6ffc",
+      "description": "C-3PO and R2-D2 arrive at Jabba's Palace",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_0ef9105d",
+        "droid_1324fdc4",
+        "char_99eb6f1f"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_6c536ba7": {
+      "eventID": "event_6c536ba7",
+      "description": "R2-D2 plays Luke's message to Jabba the Hutt",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_1324fdc4",
+        "droid_0ef9105d",
+        "char_5c185f0a"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_aed12fbc": {
+      "eventID": "event_aed12fbc",
+      "description": "C-3PO is forced to become Jabba's interpreter",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Low",
+      "participants": [
+        "droid_0ef9105d",
+        "char_5c185f0a"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_127dbaa3": {
+      "eventID": "event_127dbaa3",
+      "description": "Bounty hunter 'Boushh' (Leia in disguise) arrives with Chewbacca",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_e269a689",
+        "char_187e285a",
+        "char_5c185f0a"
+      ],
+      "location": "planet_02a9798d",
+      "quote": "Yot\u014d. Yot\u014dk\u014d."
+    },
+    "event_059b14b4": {
+      "eventID": "event_059b14b4",
+      "description": "Leia frees Han Solo from carbonite",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_ddfb113a",
-        "char_6e476d79",
-        "char_f75c4685"
+        "char_e269a689",
+        "char_962a2a4d"
       ],
-      "location": "planet_689b3e4d"
+      "location": "planet_02a9798d"
     },
-    "event_cb0d992d": {
-      "eventID": "event_cb0d992d",
+    "event_cdb9af4f": {
+      "eventID": "event_cdb9af4f",
+      "description": "Jabba captures Leia and Han",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_5c185f0a",
+        "char_e269a689",
+        "char_962a2a4d"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_13d7403d": {
+      "eventID": "event_13d7403d",
+      "description": "Jabba forces Leia to become his slave",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_5c185f0a",
+        "char_e269a689"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_b3a1ff77": {
+      "eventID": "event_b3a1ff77",
+      "description": "Luke Skywalker arrives at Jabba's Palace",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_5c185f0a",
+        "char_99eb6f1f"
+      ],
+      "location": "planet_02a9798d",
+      "quote": "You will bring Captain Solo and the Wookiee to me."
+    },
+    "event_6d65168d": {
+      "eventID": "event_6d65168d",
+      "description": "Luke falls into the Rancor pit",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_5c185f0a",
+        "char_514a76e8"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_8cbe8265": {
+      "eventID": "event_8cbe8265",
+      "description": "Luke kills the Rancor",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_514a76e8"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_7251873e": {
+      "eventID": "event_7251873e",
+      "description": "Jabba sentences Luke, Han, and Chewie to death at the Sarlacc pit",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_5c185f0a",
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_187e285a"
+      ],
+      "location": "planet_02a9798d"
+    },
+    "event_88398391": {
+      "eventID": "event_88398391",
+      "description": "Luke, Han and Chewie are taken to the Great Pit of Carkoon",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_187e285a",
+        "char_e269a689",
+        "droid_0ef9105d",
+        "droid_1324fdc4",
+        "char_5c185f0a"
+      ],
+      "location": "planet_76313207"
+    },
+    "event_0c37d9d9": {
+      "eventID": "event_0c37d9d9",
+      "description": "R2-D2 launches Luke's lightsaber to him",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "droid_1324fdc4"
+      ],
+      "location": "planet_76313207"
+    },
+    "event_4bac0bdb": {
+      "eventID": "event_4bac0bdb",
+      "description": "Battle at the Sarlacc Pit",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_187e285a",
+        "char_e269a689",
+        "char_b42a2c7a",
+        "char_56d33e2a",
+        "char_5c185f0a"
+      ],
+      "location": "planet_76313207"
+    },
+    "event_d1a9edf2": {
+      "eventID": "event_d1a9edf2",
+      "description": "Boba Fett falls into the Sarlacc pit",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_56d33e2a",
+        "char_962a2a4d"
+      ],
+      "location": "planet_76313207"
+    },
+    "event_e9d102f8": {
+      "eventID": "event_e9d102f8",
+      "description": "Leia strangles Jabba the Hutt with her chain",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_e269a689",
+        "char_5c185f0a"
+      ],
+      "location": "ship_15066dba"
+    },
+    "event_1f863276": {
+      "eventID": "event_1f863276",
+      "description": "Heroes destroy Jabba's sail barge and escape",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "char_b42a2c7a",
+        "droid_1324fdc4",
+        "droid_0ef9105d"
+      ],
+      "location": "ship_15066dba"
+    },
+    "event_ea263788": {
+      "eventID": "event_ea263788",
+      "description": "Luke returns to Dagobah to complete his training",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "droid_1324fdc4"
+      ],
+      "location": "planet_91e48172"
+    },
+    "event_ddfb09c7": {
+      "eventID": "event_ddfb09c7",
+      "description": "Luke finds Yoda dying",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_4ccf4fa6"
+      ],
+      "location": "planet_91e48172",
+      "quote": "When gone am I, the last of the Jedi will you be."
+    },
+    "event_d8c474a9": {
+      "eventID": "event_d8c474a9",
       "description": "Yoda dies and confirms Vader is Luke's father",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_b67e8fc2"
+        "char_3462015d",
+        "char_4ccf4fa6"
       ],
-      "location": "planet_4650844d"
+      "location": "planet_91e48172"
     },
-    "event_fcb68018": {
-      "eventID": "event_fcb68018",
-      "description": "Luke learns Leia is his twin sister",
+    "event_ff0b7b8b": {
+      "eventID": "event_ff0b7b8b",
+      "description": "Obi-Wan's spirit tells Luke that Leia is his twin sister",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_ddfb113a"
+        "char_3462015d"
       ],
-      "location": "planet_908040cf"
+      "location": "planet_91e48172",
+      "quote": "The other that Yoda spoke of is your twin sister."
     },
-    "event_27fb5baf": {
-      "eventID": "event_27fb5baf",
+    "event_b60a4c5b": {
+      "eventID": "event_b60a4c5b",
+      "description": "Rebel leaders gather to plan attack on Death Star II",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_85f5afa2",
+        "char_6dda8460",
+        "char_e269a689",
+        "char_962a2a4d",
+        "char_187e285a",
+        "droid_0ef9105d"
+      ],
+      "location": "ship_62019f43"
+    },
+    "event_0c1336dc": {
+      "eventID": "event_0c1336dc",
+      "description": "Mon Mothma reveals that Emperor Palpatine is on the Death Star",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_85f5afa2",
+        "char_6dda8460"
+      ],
+      "location": "ship_62019f43"
+    },
+    "event_f0ca29f5": {
+      "eventID": "event_f0ca29f5",
+      "description": "Han Solo volunteers to lead ground assault on shield generator",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "char_3462015d"
+      ],
+      "location": "ship_62019f43"
+    },
+    "event_51573df9": {
+      "eventID": "event_51573df9",
+      "description": "Luke tells Leia that she is his sister and Vader is their father",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689"
+      ],
+      "location": "planet_dbd66959",
+      "quote": "The Force is strong in my family. My father has it. I have it. And... my sister has it."
+    },
+    "event_8e6300fb": {
+      "eventID": "event_8e6300fb",
+      "description": "Imperial Shuttle Tydirium approaches Endor with stolen codes",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_3462015d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d",
+        "droid_1324fdc4"
+      ],
+      "location": "ship_3ef65a10"
+    },
+    "event_f006e2fd": {
+      "eventID": "event_f006e2fd",
+      "description": "Vader senses Luke's presence on the shuttle",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_eda37e88",
+        "char_3462015d"
+      ],
+      "location": "ship_d7c4963a",
+      "quote": "I'm endangering the mission. I shouldn't have come."
+    },
+    "event_d6b788eb": {
+      "eventID": "event_d6b788eb",
+      "description": "Rebels land on Endor",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_962a2a4d",
+        "char_3462015d",
+        "char_e269a689",
+        "char_187e285a",
+        "droid_0ef9105d",
+        "droid_1324fdc4"
+      ],
+      "location": "planet_dbd66959"
+    },
+    "event_e3b08987": {
+      "eventID": "event_e3b08987",
+      "description": "Scout troopers discover the Rebels and Leia becomes separated",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a"
+      ],
+      "location": "planet_dbd66959"
+    },
+    "event_83732e1b": {
+      "eventID": "event_83732e1b",
+      "description": "Leia meets Wicket the Ewok",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_e269a689",
+        "char_353f5456"
+      ],
+      "location": "planet_dbd66959"
+    },
+    "event_d33dbe53": {
+      "eventID": "event_d33dbe53",
+      "description": "Luke, Han, Chewie, and the droids are captured by Ewoks",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_187e285a",
+        "droid_0ef9105d",
+        "droid_1324fdc4",
+        "char_74d6effd"
+      ],
+      "location": "planet_dbd66959"
+    },
+    "event_110610b4": {
+      "eventID": "event_110610b4",
+      "description": "Ewoks worship C-3PO as a god",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_0ef9105d",
+        "char_74d6effd",
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_187e285a"
+      ],
+      "location": "planet_a6feec7d",
+      "quote": "It's against my programming to impersonate a deity."
+    },
+    "event_d6723dcd": {
+      "eventID": "event_d6723dcd",
+      "description": "Luke demonstrates the Force to free his friends",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_3462015d",
+        "droid_0ef9105d",
+        "char_74d6effd"
+      ],
+      "location": "planet_a6feec7d"
+    },
+    "event_0e900a82": {
+      "eventID": "event_0e900a82",
+      "description": "C-3PO tells the Ewoks the story of the Rebellion",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_0ef9105d",
+        "char_74d6effd",
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_e269a689"
+      ],
+      "location": "planet_a6feec7d"
+    },
+    "event_3de69968": {
+      "eventID": "event_3de69968",
+      "description": "Ewoks agree to help the Rebels fight the Empire",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_0ef9105d",
+        "char_74d6effd",
+        "char_3462015d",
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a"
+      ],
+      "location": "planet_a6feec7d"
+    },
+    "event_a66e7b96": {
+      "eventID": "event_a66e7b96",
+      "description": "Luke tells Leia he must confront Vader",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689"
+      ],
+      "location": "planet_a6feec7d",
+      "quote": "There is good in him. I've felt it."
+    },
+    "event_ff02608f": {
+      "eventID": "event_ff02608f",
+      "description": "Luke surrenders to Imperial troops on Endor",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_dbd66959"
+    },
+    "event_86f31717": {
+      "eventID": "event_86f31717",
+      "description": "Luke and Vader meet face to face",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_dbd66959",
+      "quote": "I see you have constructed a new lightsaber."
+    },
+    "event_f4ecaa37": {
+      "eventID": "event_f4ecaa37",
+      "description": "Luke is taken to the Death Star to meet the Emperor",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_670b4322": {
+      "eventID": "event_670b4322",
       "description": "Battle of Endor begins",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_ddfb113a",
-        "char_6e476d79",
-        "char_214b3c74"
+        "char_3462015d",
+        "char_e269a689",
+        "char_962a2a4d",
+        "char_187e285a",
+        "char_b42a2c7a",
+        "char_6dda8460",
+        "char_74d6effd"
       ],
-      "location": "planet_908040cf",
+      "location": "planet_dbd66959",
       "battle": "Battle of Endor"
     },
-    "event_1ec08fcb": {
-      "eventID": "event_1ec08fcb",
-      "description": "Luke confronts Emperor Palpatine and Darth Vader",
+    "event_06bf31a6": {
+      "eventID": "event_06bf31a6",
+      "description": "Rebels and Ewoks attack Imperial bunker",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_4f833e0a",
-        "char_a613232c"
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a",
+        "char_74d6effd"
       ],
-      "location": "planet_9678bf38"
+      "location": "planet_7bd883bb",
+      "battle": "Battle of Endor"
     },
-    "event_861c564f": {
-      "eventID": "event_861c564f",
-      "description": "Darth Vader turns against the Emperor and saves Luke",
+    "event_5e26cd23": {
+      "eventID": "event_5e26cd23",
+      "description": "Rebel fleet arrives at Endor to find the shield still up",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_4f833e0a",
-        "char_a613232c"
+        "char_b42a2c7a",
+        "char_6dda8460"
       ],
-      "location": "planet_9678bf38"
+      "location": "ship_62019f43",
+      "battle": "Battle of Endor",
+      "quote": "It's a trap!"
     },
-    "event_3607b838": {
-      "eventID": "event_3607b838",
+    "event_51395c1d": {
+      "eventID": "event_51395c1d",
+      "description": "Imperial fleet ambushes the Rebel fleet",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_b42a2c7a",
+        "char_6dda8460"
+      ],
+      "location": "ship_62019f43",
+      "battle": "Battle of Endor"
+    },
+    "event_381a4c85": {
+      "eventID": "event_381a4c85",
+      "description": "Leia is wounded during the Endor battle",
+      "timestamp": "4 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_e269a689",
+        "char_962a2a4d"
+      ],
+      "location": "planet_dbd66959",
+      "battle": "Battle of Endor"
+    },
+    "event_b7d11a2e": {
+      "eventID": "event_b7d11a2e",
+      "description": "Han and Leia capture the bunker",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a"
+      ],
+      "location": "planet_7bd883bb",
+      "battle": "Battle of Endor"
+    },
+    "event_5493a8b7": {
+      "eventID": "event_5493a8b7",
+      "description": "Rebels destroy the shield generator",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_962a2a4d",
+        "char_e269a689",
+        "char_187e285a"
+      ],
+      "location": "planet_7bd883bb",
+      "battle": "Battle of Endor"
+    },
+    "event_c7daf261": {
+      "eventID": "event_c7daf261",
+      "description": "Luke confronts Emperor Palpatine",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88",
+        "char_44750e2a"
+      ],
+      "location": "planet_fda8fe1b",
+      "quote": "Welcome, young Skywalker. I have been expecting you."
+    },
+    "event_28818728": {
+      "eventID": "event_28818728",
+      "description": "Emperor reveals that the Rebel attack is a trap",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_44750e2a",
+        "char_3462015d"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_91ff75f1": {
+      "eventID": "event_91ff75f1",
+      "description": "Emperor goads Luke to take his lightsaber and strike him down",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_44750e2a",
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_fda8fe1b",
+      "quote": "Strike me down with all your hatred and your journey towards the dark side will be complete."
+    },
+    "event_3b0e8aeb": {
+      "eventID": "event_3b0e8aeb",
+      "description": "Luke fights Vader in the Emperor's throne room",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88",
+        "char_44750e2a"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_5c6739bf": {
+      "eventID": "event_5c6739bf",
+      "description": "Vader discovers that Luke has a sister",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_fda8fe1b",
+      "quote": "If you will not turn to the dark side, then perhaps she will."
+    },
+    "event_6f3d9caa": {
+      "eventID": "event_6f3d9caa",
+      "description": "Luke attacks Vader in anger",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_f8ad2d65": {
+      "eventID": "event_f8ad2d65",
+      "description": "Luke defeats Vader and cuts off his hand",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88",
+        "char_44750e2a"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_2fc665ff": {
+      "eventID": "event_2fc665ff",
+      "description": "Luke refuses to kill Vader and join the dark side",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88",
+        "char_44750e2a"
+      ],
+      "location": "planet_fda8fe1b",
+      "quote": "I'll never turn to the dark side. You've failed, Your Highness. I am a Jedi, like my father before me."
+    },
+    "event_9e5ac681": {
+      "eventID": "event_9e5ac681",
+      "description": "Emperor attacks Luke with Force lightning",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_44750e2a",
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_b094b622": {
+      "eventID": "event_b094b622",
+      "description": "Vader turns against the Emperor and saves Luke",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88",
+        "char_44750e2a"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_49fa7cff": {
+      "eventID": "event_49fa7cff",
+      "description": "Vader throws the Emperor down a reactor shaft",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_eda37e88",
+        "char_44750e2a"
+      ],
+      "location": "planet_fda8fe1b"
+    },
+    "event_85786914": {
+      "eventID": "event_85786914",
+      "description": "Lando leads fighters into the Death Star's core",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_b42a2c7a"
+      ],
+      "location": "ship_7ee0a353",
+      "battle": "Battle of Endor"
+    },
+    "event_7c61005b": {
+      "eventID": "event_7c61005b",
+      "description": "Dying Vader asks Luke to remove his mask",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_fda8fe1b",
+      "quote": "Luke, help me take this mask off."
+    },
+    "event_a8b1aabc": {
+      "eventID": "event_a8b1aabc",
+      "description": "Darth Vader dies after returning to the light side",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "planet_fda8fe1b",
+      "quote": "You were right about me. Tell your sister... you were right."
+    },
+    "event_4373618d": {
+      "eventID": "event_4373618d",
+      "description": "Luke escapes the Death Star with Vader's body",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_eda37e88"
+      ],
+      "location": "ship_3ef65a10"
+    },
+    "event_a90a04fa": {
+      "eventID": "event_a90a04fa",
+      "description": "Rebels destroy the Death Star's main reactor",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_b42a2c7a"
+      ],
+      "location": "planet_fda8fe1b",
+      "ship": "ship_7ee0a353"
+    },
+    "event_866f0568": {
+      "eventID": "event_866f0568",
       "description": "Rebels destroy the second Death Star",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_214b3c74"
+        "char_b42a2c7a"
       ],
-      "location": "planet_9678bf38",
-      "ship": "ship_a6f84833"
+      "location": "planet_fda8fe1b",
+      "ship": "ship_7ee0a353"
     },
-    "event_151275b6": {
-      "eventID": "event_151275b6",
-      "description": "Celebration of the fall of the Empire",
+    "event_6bd1f8be": {
+      "eventID": "event_6bd1f8be",
+      "description": "Luke burns Vader's armor in a funeral pyre on Endor",
       "timestamp": "4 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_20bf383c",
-        "char_ddfb113a",
-        "char_6e476d79",
-        "char_214b3c74"
+        "char_3462015d"
       ],
-      "location": "planet_908040cf"
+      "location": "planet_dbd66959"
+    },
+    "event_fd218b5d": {
+      "eventID": "event_fd218b5d",
+      "description": "Celebration of the fall of the Empire across the galaxy",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d",
+        "char_e269a689",
+        "char_962a2a4d",
+        "char_b42a2c7a",
+        "char_187e285a",
+        "droid_0ef9105d",
+        "droid_1324fdc4",
+        "char_74d6effd"
+      ],
+      "location": "planet_dbd66959"
+    },
+    "event_cf704fc2": {
+      "eventID": "event_cf704fc2",
+      "description": "Luke sees the spirits of Obi-Wan, Yoda, and Anakin Skywalker",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_3462015d"
+      ],
+      "location": "planet_dbd66959"
     }
   },
   "force_abilities": {
-    "ability_17fdea5b": {
-      "abilityID": "ability_17fdea5b",
-      "name": "Force Bond",
+    "ability_65f2ed16": {
+      "abilityID": "ability_65f2ed16",
+      "name": "Force Ghost",
       "type": "Defensive",
-      "difficultyLevel": 9,
-      "isLightSide": true,
-      "isDarkSide": false
-    },
-    "ability_41749f87": {
-      "abilityID": "ability_41749f87",
-      "name": "Force Jump",
-      "type": "Light Side",
-      "difficultyLevel": 5,
-      "isLightSide": true,
-      "isDarkSide": false
-    },
-    "ability_31d4a7c6": {
-      "abilityID": "ability_31d4a7c6",
-      "name": "Force Valor",
-      "type": "Control",
       "difficultyLevel": 6,
       "isLightSide": true,
       "isDarkSide": false
     },
-    "ability_967de3d9": {
-      "abilityID": "ability_967de3d9",
+    "ability_f32e8edb": {
+      "abilityID": "ability_f32e8edb",
       "name": "Battle Meditation",
-      "type": "Light Side",
-      "difficultyLevel": 9,
+      "type": "Control",
+      "difficultyLevel": 2,
       "isLightSide": true,
       "isDarkSide": false
     },
-    "ability_e8f8afc6": {
-      "abilityID": "ability_e8f8afc6",
-      "name": "Force Shield",
-      "type": "Light Side",
-      "difficultyLevel": 1,
-      "isLightSide": true,
-      "isDarkSide": false
-    },
-    "ability_a106f365": {
-      "abilityID": "ability_a106f365",
-      "name": "Mind Trick",
+    "ability_221600a5": {
+      "abilityID": "ability_221600a5",
+      "name": "Force Vision",
       "type": "Universal",
-      "difficultyLevel": 5,
-      "isLightSide": false,
-      "isDarkSide": true
+      "difficultyLevel": 10,
+      "isLightSide": true,
+      "isDarkSide": false
     },
-    "ability_e108d176": {
-      "abilityID": "ability_e108d176",
-      "name": "Force Lightning",
+    "ability_becdf14f": {
+      "abilityID": "ability_becdf14f",
+      "name": "Force Projection",
+      "type": "Control",
+      "difficultyLevel": 4,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_90f3f8ad": {
+      "abilityID": "ability_90f3f8ad",
+      "name": "Force Concealment",
+      "type": "Control",
+      "difficultyLevel": 3,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_f3cbb9fd": {
+      "abilityID": "ability_f3cbb9fd",
+      "name": "Force Projection",
       "type": "Offensive",
-      "difficultyLevel": 6,
-      "isLightSide": false,
-      "isDarkSide": true
-    },
-    "ability_71ece627": {
-      "abilityID": "ability_71ece627",
-      "name": "Force Jump",
-      "type": "Dark Side",
       "difficultyLevel": 3,
       "isLightSide": false,
       "isDarkSide": true
     },
-    "ability_ae8c70f3": {
-      "abilityID": "ability_ae8c70f3",
-      "name": "Force Ghost",
+    "ability_359e62e4": {
+      "abilityID": "ability_359e62e4",
+      "name": "Force Rage",
       "type": "Universal",
-      "difficultyLevel": 9,
+      "difficultyLevel": 4,
       "isLightSide": false,
       "isDarkSide": true
     },
-    "ability_fbf71e34": {
-      "abilityID": "ability_fbf71e34",
-      "name": "Force Push",
-      "type": "Offensive",
+    "ability_fe4fe682": {
+      "abilityID": "ability_fe4fe682",
+      "name": "Force Telepathy",
+      "type": "Alter",
       "difficultyLevel": 2,
       "isLightSide": false,
       "isDarkSide": true
     },
-    "ability_d947e3bd": {
-      "abilityID": "ability_d947e3bd",
-      "name": "Force Jump",
+    "ability_95480d86": {
+      "abilityID": "ability_95480d86",
+      "name": "Force Drain",
       "type": "Offensive",
-      "difficultyLevel": 6,
+      "difficultyLevel": 8,
       "isLightSide": false,
       "isDarkSide": true
     },
-    "ability_4b2b5098": {
-      "abilityID": "ability_4b2b5098",
-      "name": "Force Jump",
-      "type": "Universal",
-      "difficultyLevel": 3,
-      "isLightSide": false,
-      "isDarkSide": true
-    },
-    "ability_f8ea74eb": {
-      "abilityID": "ability_f8ea74eb",
-      "name": "Force Vision",
-      "type": "Defensive",
-      "difficultyLevel": 6,
-      "isLightSide": true,
-      "isDarkSide": false
-    },
-    "ability_bf46093c": {
-      "abilityID": "ability_bf46093c",
-      "name": "Battle Meditation",
-      "type": "Defensive",
-      "difficultyLevel": 6,
-      "isLightSide": true,
-      "isDarkSide": false
-    },
-    "ability_f3d510bc": {
-      "abilityID": "ability_f3d510bc",
-      "name": "Force Projection",
+    "ability_29ac88a0": {
+      "abilityID": "ability_29ac88a0",
+      "name": "Force Shield",
       "type": "Alter",
-      "difficultyLevel": 4,
+      "difficultyLevel": 8,
       "isLightSide": false,
       "isDarkSide": true
+    },
+    "ability_e3fc3a08": {
+      "abilityID": "ability_e3fc3a08",
+      "name": "Force Concealment",
+      "type": "Control",
+      "difficultyLevel": 4,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_fedb9761": {
+      "abilityID": "ability_fedb9761",
+      "name": "Battle Meditation",
+      "type": "Universal",
+      "difficultyLevel": 6,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_0f2afa4e": {
+      "abilityID": "ability_0f2afa4e",
+      "name": "Mind Trick",
+      "type": "Light Side",
+      "difficultyLevel": 6,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_cfc5329b": {
+      "abilityID": "ability_cfc5329b",
+      "name": "Force Drain",
+      "type": "Dark Side",
+      "difficultyLevel": 1,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_ffc6a44b": {
+      "abilityID": "ability_ffc6a44b",
+      "name": "Force Healing",
+      "type": "Control",
+      "difficultyLevel": 10,
+      "isLightSide": true,
+      "isDarkSide": false
     }
   },
   "lightsabers": {
-    "saber_fcbffffa": {
-      "weaponID": "saber_fcbffffa",
-      "name": "Lightsaber of 3662",
+    "saber_02d4f8d6": {
+      "weaponID": "saber_02d4f8d6",
+      "name": "Lightsaber of 5349",
       "weaponType": "Lightsaber",
-      "destructiveCapacity": 99.52412065861925,
-      "color": "Red",
+      "destructiveCapacity": 80.76514394706525,
+      "color": "Black",
       "hiltDesign": "Lightwhip"
     },
-    "saber_39e93daf": {
-      "weaponID": "saber_39e93daf",
-      "name": "Lightsaber of 1406",
+    "saber_7b2dd390": {
+      "weaponID": "saber_7b2dd390",
+      "name": "Lightsaber of 6663",
       "weaponType": "Lightsaber",
-      "destructiveCapacity": 83.58721326836414,
+      "destructiveCapacity": 94.57090121305409,
       "color": "White",
       "hiltDesign": "Lightwhip"
     },
-    "saber_47f94f01": {
-      "weaponID": "saber_47f94f01",
-      "name": "Lightsaber of 5065",
+    "saber_10355633": {
+      "weaponID": "saber_10355633",
+      "name": "Lightsaber of 9379",
       "weaponType": "Lightsaber",
-      "destructiveCapacity": 85.33611419188944,
-      "color": "Green",
-      "hiltDesign": "Lightwhip"
-    },
-    "saber_e7c81d6b": {
-      "weaponID": "saber_e7c81d6b",
-      "name": "Lightsaber of 1634",
-      "weaponType": "Lightsaber",
-      "destructiveCapacity": 97.17186502675563,
-      "color": "Purple",
+      "destructiveCapacity": 82.31291568058661,
+      "color": "Black",
       "hiltDesign": "Cross-guard"
     },
-    "saber_ed28232b": {
-      "weaponID": "saber_ed28232b",
-      "name": "Lightsaber of 8541",
+    "saber_d1f8332d": {
+      "weaponID": "saber_d1f8332d",
+      "name": "Lightsaber of 5173",
       "weaponType": "Lightsaber",
-      "destructiveCapacity": 86.99316848891837,
-      "color": "Purple",
+      "destructiveCapacity": 80.88773067426462,
+      "color": "Orange",
+      "hiltDesign": "Standard"
+    },
+    "saber_5f51fbbe": {
+      "weaponID": "saber_5f51fbbe",
+      "name": "Lightsaber of 9518",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 98.51150330998166,
+      "color": "Silver",
       "hiltDesign": "Cross-guard"
     }
   },
   "artifacts": {
-    "artifact_636ad87a": {
-      "artifactID": "artifact_636ad87a",
+    "artifact_1ae3115d": {
+      "artifactID": "artifact_1ae3115d",
+      "name": "Anakin's Lightsaber",
+      "originEra": "Clone Wars",
+      "forceRelated": true
+    },
+    "artifact_27059534": {
+      "artifactID": "artifact_27059534",
+      "name": "Stolen [Faction] Codes",
+      "originEra": "Republic Era",
+      "forceRelated": true
+    },
+    "artifact_ec1ba32c": {
+      "artifactID": "artifact_ec1ba32c",
+      "name": "Emperor's Cane",
+      "originEra": "Imperial Era",
+      "forceRelated": true
+    },
+    "artifact_a8064452": {
+      "artifactID": "artifact_a8064452",
+      "name": "Emperor's Cane",
+      "originEra": "Imperial Era",
+      "forceRelated": true
+    },
+    "artifact_4b97a326": {
+      "artifactID": "artifact_4b97a326",
       "name": "Darth Vader's Lightsaber",
-      "originEra": "Imperial Era",
-      "forceRelated": true
-    },
-    "artifact_e63a71f8": {
-      "artifactID": "artifact_e63a71f8",
-      "name": "Emperor's Cane",
-      "originEra": "Imperial Era",
-      "forceRelated": true
-    },
-    "artifact_638b6f79": {
-      "artifactID": "artifact_638b6f79",
-      "name": "[Faction] Battle Plans",
-      "originEra": "Unknown",
-      "forceRelated": true
-    },
-    "artifact_b106c262": {
-      "artifactID": "artifact_b106c262",
-      "name": "Emperor's Cane",
-      "originEra": "Imperial Era",
-      "forceRelated": true
-    },
-    "artifact_f8000987": {
-      "artifactID": "artifact_f8000987",
-      "name": "Emperor's Cane",
       "originEra": "Imperial Era",
       "forceRelated": true
     }
   },
   "technologies": {
-    "tech_40ff934e": {
-      "technologyID": "tech_40ff934e",
-      "techType": "Superlaser",
-      "inventor": "Imperial Engineers",
-      "functionDescription": "Planet-destroying weapon"
-    },
-    "tech_109caa2e": {
-      "technologyID": "tech_109caa2e",
-      "techType": "Tractor Beam",
+    "tech_8f3096f8": {
+      "technologyID": "tech_8f3096f8",
+      "techType": "Deflector Shield",
       "inventor": "Unknown",
-      "functionDescription": "Gravitational capture beam"
+      "functionDescription": "Energy barrier protection"
     },
-    "tech_66a93232": {
-      "technologyID": "tech_66a93232",
-      "techType": "Transportation",
-      "inventor": "Republic Scientists",
-      "functionDescription": "Hyperspace navigation"
+    "tech_d2de20e3": {
+      "technologyID": "tech_d2de20e3",
+      "techType": "Blaster",
+      "inventor": "Unknown",
+      "functionDescription": "Energy projectile weapon"
     },
-    "tech_708f863c": {
-      "technologyID": "tech_708f863c",
-      "techType": "Superlaser",
-      "inventor": "Imperial Engineers",
-      "functionDescription": "Planet-destroying weapon"
+    "tech_d409249f": {
+      "technologyID": "tech_d409249f",
+      "techType": "Hyperdrive",
+      "inventor": "Unknown",
+      "functionDescription": "Faster-than-light travel"
     },
-    "tech_d3c5a8fb": {
-      "technologyID": "tech_d3c5a8fb",
-      "techType": "Lightsaber",
-      "inventor": "Ancient Jedi",
-      "functionDescription": "Energy blade weapon"
+    "tech_5959474b": {
+      "technologyID": "tech_5959474b",
+      "techType": "Carbonite Freezing",
+      "inventor": "Unknown",
+      "functionDescription": "Preservation technology"
+    },
+    "tech_24748a21": {
+      "technologyID": "tech_24748a21",
+      "techType": "Hyperdrive",
+      "inventor": "Unknown",
+      "functionDescription": "Faster-than-light travel"
     }
   },
   "vehicles": {
-    "vehicle_34a2f887": {
-      "vehicleID": "vehicle_34a2f887",
-      "type": "Walker",
-      "speed": 378.34663353961224,
-      "terrainType": "Multi-terrain"
+    "vehicle_2833981f": {
+      "vehicleID": "vehicle_2833981f",
+      "type": "Imperial Shuttle",
+      "speed": 850.0,
+      "terrainType": "Air/Space"
     },
-    "vehicle_da7538f6": {
-      "vehicleID": "vehicle_da7538f6",
-      "type": "AT-AT Walker",
-      "speed": 60.0,
-      "terrainType": "Ground"
-    },
-    "vehicle_6b5c36b2": {
-      "vehicleID": "vehicle_6b5c36b2",
-      "type": "Hover Craft",
-      "speed": 447.51412466409414,
-      "terrainType": "Air"
-    },
-    "vehicle_f4b1b559": {
-      "vehicleID": "vehicle_f4b1b559",
-      "type": "Troop Transport",
-      "speed": 369.7720777036303,
-      "terrainType": "Urban"
-    },
-    "vehicle_4e5a2d9f": {
-      "vehicleID": "vehicle_4e5a2d9f",
+    "vehicle_65300885": {
+      "vehicleID": "vehicle_65300885",
       "type": "Jabba's Sail Barge",
       "speed": 100.0,
       "terrainType": "Desert"
+    },
+    "vehicle_73ca2212": {
+      "vehicleID": "vehicle_73ca2212",
+      "type": "T-47 Airspeeder (Snowspeeder)",
+      "speed": 650.0,
+      "terrainType": "Air"
+    },
+    "vehicle_3723b440": {
+      "vehicleID": "vehicle_3723b440",
+      "type": "AT-ST Walker",
+      "speed": 90.0,
+      "terrainType": "Ground"
+    },
+    "vehicle_1c60f71b": {
+      "vehicleID": "vehicle_1c60f71b",
+      "type": "Imperial Shuttle",
+      "speed": 850.0,
+      "terrainType": "Air/Space"
     }
   },
   "missions": {
-    "mission_db0bf5bb": {
-      "missionID": "mission_db0bf5bb",
+    "mission_dd530079": {
+      "missionID": "mission_dd530079",
       "missionType": "Reconnaissance",
-      "missionGoal": "Recover valuable artifact",
-      "successRate": 38.08724423996497
+      "missionGoal": "Obtain enemy intel",
+      "successRate": 95.61217845368415
     },
-    "mission_adffe018": {
-      "missionID": "mission_adffe018",
-      "missionType": "Sabotage",
-      "missionGoal": "Destroy enemy installation",
-      "successRate": 49.94240170842629
+    "mission_4033253b": {
+      "missionID": "mission_4033253b",
+      "missionType": "Extraction",
+      "missionGoal": "Eliminate high-value target",
+      "successRate": 36.9597084743376
     },
-    "mission_4ac7fc63": {
-      "missionID": "mission_4ac7fc63",
-      "missionType": "Retrieval",
-      "missionGoal": "Secure new base location",
-      "successRate": 68.47391701538115
-    },
-    "mission_0fabe034": {
-      "missionID": "mission_0fabe034",
-      "missionType": "Rescue",
+    "mission_354adee6": {
+      "missionID": "mission_354adee6",
+      "missionType": "Assault",
       "missionGoal": "Establish alliance with local faction",
-      "successRate": 62.05403524789133
+      "successRate": 18.871784007178455
     },
-    "mission_bd8be682": {
-      "missionID": "mission_bd8be682",
-      "missionType": "Sabotage",
-      "missionGoal": "Capture enemy leader",
-      "successRate": 37.25680310254808
+    "mission_fb15a21f": {
+      "missionID": "mission_fb15a21f",
+      "missionType": "Assault",
+      "missionGoal": "Destroy enemy installation",
+      "successRate": 31.340863269742385
+    },
+    "mission_34428bce": {
+      "missionID": "mission_34428bce",
+      "missionType": "Assault",
+      "missionGoal": "Test experimental technology",
+      "successRate": 12.320411834048503
     }
   },
   "creatures": {
-    "creature_4df98590": {
-      "creatureID": "creature_4df98590",
-      "speciesName": "Krayt Dragon",
+    "creature_b0f9ef01": {
+      "creatureID": "creature_b0f9ef01",
+      "speciesName": "Sarlacc",
       "habitat": "Urban",
-      "dangerLevel": 4.473681566695734
+      "dangerLevel": 4.2029660088774214
     },
-    "creature_b3c76316": {
-      "creatureID": "creature_b3c76316",
+    "creature_681fe000": {
+      "creatureID": "creature_681fe000",
       "speciesName": "Wookiee",
-      "habitat": "Space",
-      "dangerLevel": 4.784543240502329
+      "habitat": "Jungle",
+      "dangerLevel": 4.994333973203325
     },
-    "creature_fc1cdf29": {
-      "creatureID": "creature_fc1cdf29",
-      "speciesName": "Dewback",
-      "habitat": "Volcanic",
-      "dangerLevel": 0.9394758135787052
+    "creature_ccb21a17": {
+      "creatureID": "creature_ccb21a17",
+      "speciesName": "Ewok",
+      "habitat": "Forest",
+      "dangerLevel": 6.594974310006663
     },
-    "creature_379691eb": {
-      "creatureID": "creature_379691eb",
-      "speciesName": "Opee Sea Killer",
-      "habitat": "Volcanic",
-      "dangerLevel": 6.366114472081377
-    },
-    "creature_7ffe3d4a": {
-      "creatureID": "creature_7ffe3d4a",
-      "speciesName": "Krayt Dragon",
+    "creature_c5ac2e4f": {
+      "creatureID": "creature_c5ac2e4f",
+      "speciesName": "Rancor",
       "habitat": "Ice",
-      "dangerLevel": 8.202392298912976
+      "dangerLevel": 7.806362026996518
+    },
+    "creature_ee531979": {
+      "creatureID": "creature_ee531979",
+      "speciesName": "Ewok",
+      "habitat": "Forest",
+      "dangerLevel": 8.060687576114116
     }
   },
   "relationships": [
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_4f833e0a",
-      "child": "char_20bf383c"
+      "parent": "char_eda37e88",
+      "child": "char_3462015d"
     },
     {
       "relationshipType": "sibling",
-      "sibling1": "char_20bf383c",
-      "sibling2": "char_ddfb113a"
+      "sibling1": "char_3462015d",
+      "sibling2": "char_e269a689"
     },
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_4f833e0a",
-      "child": "char_ddfb113a"
+      "parent": "char_eda37e88",
+      "child": "char_e269a689"
     },
     {
       "relationshipType": "hasSidekick",
-      "character": "char_6e476d79",
-      "sidekick": "char_325edcd7"
+      "character": "char_962a2a4d",
+      "sidekick": "char_187e285a"
     },
     {
       "relationshipType": "ownedBy",
-      "droid": "droid_a15facf7",
-      "owner": "char_20bf383c"
+      "droid": "droid_1324fdc4",
+      "owner": "char_3462015d"
     },
     {
       "relationshipType": "ownedBy",
-      "droid": "droid_7dc6a1c4",
-      "owner": "char_20bf383c"
+      "droid": "droid_0ef9105d",
+      "owner": "char_3462015d"
     },
     {
       "relationshipType": "pilotedBy",
-      "ship": "ship_a6f84833",
-      "pilot": "char_6e476d79"
+      "ship": "ship_7ee0a353",
+      "pilot": "char_962a2a4d"
     }
   ],
   "timelines": {
     "episode_4": [
       {
-        "eventID": "event_8258a1cb",
+        "eventID": "event_a7568773",
+        "description": "Tantive IV is pursued by an Imperial Star Destroyer",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_e269a689",
+          "char_eda37e88"
+        ],
+        "location": "ship_1af4ba4e"
+      },
+      {
+        "eventID": "event_b11ad42b",
+        "description": "Imperial forces board the Tantive IV",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_eda37e88",
+          "char_e269a689"
+        ],
+        "location": "ship_1af4ba4e",
+        "quote": "Where are those transmissions you intercepted?"
+      },
+      {
+        "eventID": "event_c6d0a8bc",
         "description": "Princess Leia hides Death Star plans in R2-D2",
         "timestamp": "0 BBY",
         "significanceLevel": "High",
         "participants": [
-          "char_ddfb113a",
-          "droid_a15facf7"
+          "char_e269a689",
+          "droid_1324fdc4"
         ],
-        "location": "ship_365c7e35"
+        "location": "ship_1af4ba4e",
+        "quote": "Help me, Obi-Wan Kenobi. You're my only hope."
       },
       {
-        "eventID": "event_7c618b02",
-        "description": "R2-D2 and C-3PO escape to Tatooine",
-        "timestamp": "0 BBY",
-        "significanceLevel": "Medium",
-        "participants": [
-          "droid_a15facf7",
-          "droid_7dc6a1c4"
-        ],
-        "location": "planet_8dfdf744"
-      },
-      {
-        "eventID": "event_8142584b",
-        "description": "Luke Skywalker discovers Obi-Wan Kenobi's message",
+        "eventID": "event_dd1bc9c8",
+        "description": "Darth Vader captures Princess Leia",
         "timestamp": "0 BBY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_f0517e68",
-          "droid_a15facf7"
+          "char_eda37e88",
+          "char_e269a689"
         ],
-        "location": "planet_8dfdf744"
+        "location": "ship_1af4ba4e"
       },
       {
-        "eventID": "event_4ceebc3b",
+        "eventID": "event_01a35204",
+        "description": "R2-D2 and C-3PO escape to Tatooine in a pod",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_1324fdc4",
+          "droid_0ef9105d"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_5e821d6e",
+        "description": "R2-D2 and C-3PO are captured by Jawas",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Low",
+        "participants": [
+          "droid_1324fdc4",
+          "droid_0ef9105d",
+          "char_7c7e5a44"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_96cdd81d",
+        "description": "Owen Lars purchases R2-D2 and C-3PO from Jawas",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_50094c5a",
+          "char_3c529ffe",
+          "droid_1324fdc4",
+          "droid_0ef9105d",
+          "char_3462015d"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_8358471b",
+        "description": "R2-D2 escapes to find Obi-Wan Kenobi",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_1324fdc4",
+          "char_3462015d"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_4fcbb1e1",
+        "description": "Luke is attacked by Tusken Raiders while searching for R2-D2",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_1f7eda73"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_c387132c",
+        "description": "Luke Skywalker meets Obi-Wan Kenobi",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_abebd352",
+          "droid_1324fdc4"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_ee471486",
+        "description": "Luke Skywalker discovers Obi-Wan Kenobi's message from Princess Leia",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_abebd352",
+          "droid_1324fdc4",
+          "char_e269a689"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_546fd30c",
+        "description": "Obi-Wan gives Luke his father's lightsaber",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_abebd352"
+        ],
+        "location": "planet_9f554f3e",
+        "quote": "Your father's lightsaber. This is the weapon of a Jedi Knight."
+      },
+      {
+        "eventID": "event_7e091b41",
+        "description": "Imperial Stormtroopers murder Owen and Beru Lars",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_50094c5a",
+          "char_3c529ffe"
+        ],
+        "location": "planet_9f554f3e"
+      },
+      {
+        "eventID": "event_389b492a",
+        "description": "Luke decides to go with Obi-Wan to Alderaan",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_abebd352"
+        ],
+        "location": "planet_9f554f3e",
+        "quote": "I want to learn the ways of the Force and become a Jedi like my father."
+      },
+      {
+        "eventID": "event_6fc8ead3",
+        "description": "Obi-Wan and Luke hire Han Solo in Mos Eisley Cantina",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_abebd352",
+          "char_962a2a4d",
+          "char_187e285a"
+        ],
+        "location": "planet_0de5b778"
+      },
+      {
+        "eventID": "event_f6306e31",
+        "description": "Han Solo kills Greedo in the Cantina",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_39c54a80"
+        ],
+        "location": "planet_0de5b778",
+        "quote": "Sorry about the mess."
+      },
+      {
+        "eventID": "event_7285a804",
+        "description": "Millennium Falcon escapes from Tatooine",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_187e285a",
+          "char_3462015d",
+          "char_abebd352"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_b65baf44",
+        "description": "The Empire tortures Princess Leia for information",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_e269a689",
+          "char_eda37e88"
+        ],
+        "location": "planet_dcb0a543"
+      },
+      {
+        "eventID": "event_548d8512",
         "description": "The Empire destroys Alderaan",
         "timestamp": "0 BBY",
         "significanceLevel": "High",
         "participants": [
-          "char_4f833e0a",
-          "char_8efb27a9",
-          "char_ddfb113a"
+          "char_eda37e88",
+          "char_caa5a7c3",
+          "char_e269a689"
         ],
-        "location": "planet_1df0462d"
+        "location": "planet_3a34ca12",
+        "quote": "You may fire when ready."
       },
       {
-        "eventID": "event_7af3cacf",
+        "eventID": "event_469d27db",
+        "description": "Millennium Falcon is captured by the Death Star",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_3462015d",
+          "char_abebd352",
+          "char_187e285a"
+        ],
+        "location": "planet_dcb0a543"
+      },
+      {
+        "eventID": "event_5f17ff08",
+        "description": "Obi-Wan Kenobi disables the Death Star's tractor beam",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_abebd352"
+        ],
+        "location": "planet_dcb0a543"
+      },
+      {
+        "eventID": "event_98d722ad",
+        "description": "Luke, Han, and Chewbacca rescue Princess Leia",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_187e285a",
+          "char_e269a689"
+        ],
+        "location": "planet_dcb0a543",
+        "quote": "Aren't you a little short for a stormtrooper?"
+      },
+      {
+        "eventID": "event_4ad3917e",
+        "description": "Heroes escape through the Death Star's garbage compactor",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a"
+        ],
+        "location": "planet_dcb0a543",
+        "quote": "One thing's for sure, we're all gonna be a lot thinner!"
+      },
+      {
+        "eventID": "event_628c4505",
+        "description": "Obi-Wan Kenobi duels Darth Vader",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_abebd352",
+          "char_eda37e88"
+        ],
+        "location": "planet_dcb0a543",
+        "quote": "If you strike me down, I shall become more powerful than you can possibly imagine."
+      },
+      {
+        "eventID": "event_dded72f7",
         "description": "Obi-Wan Kenobi is killed by Darth Vader",
         "timestamp": "0 BBY",
         "significanceLevel": "High",
         "participants": [
-          "char_f0517e68",
-          "char_4f833e0a",
-          "char_20bf383c"
+          "char_abebd352",
+          "char_eda37e88",
+          "char_3462015d"
         ],
-        "location": "planet_b8659dd0"
+        "location": "planet_dcb0a543"
       },
       {
-        "eventID": "event_84433535",
+        "eventID": "event_8054bfd8",
+        "description": "Heroes escape the Death Star in the Millennium Falcon",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_a6bc71d1",
+        "description": "Rebels analyze Death Star plans at Yavin 4 base",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689"
+        ],
+        "location": "planet_cc333137"
+      },
+      {
+        "eventID": "event_ba4e6d64",
+        "description": "Luke reunites with Biggs Darklighter at Rebel base",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Low",
+        "participants": [
+          "char_3462015d",
+          "char_c4c3c6e0"
+        ],
+        "location": "planet_cc333137"
+      },
+      {
+        "eventID": "event_89ca07ed",
+        "description": "Death Star approaches Yavin 4",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_caa5a7c3",
+          "char_eda37e88"
+        ],
+        "location": "planet_dcb0a543",
+        "quote": "You're all clear, kid! Now let's blow this thing and go home!"
+      },
+      {
+        "eventID": "event_120b48e0",
+        "description": "Battle of Yavin begins",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_c4c3c6e0",
+          "char_88aface3",
+          "char_46180ee2",
+          "char_ee6c48d8"
+        ],
+        "location": "planet_cc333137",
+        "battle": "Battle of Yavin"
+      },
+      {
+        "eventID": "event_92b0c144",
+        "description": "Darth Vader joins the space battle in his TIE fighter",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_eda37e88"
+        ],
+        "location": "ship_264bc9d2",
+        "battle": "Battle of Yavin"
+      },
+      {
+        "eventID": "event_49d7c5c2",
+        "description": "Han Solo returns to help Luke during the trench run",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_962a2a4d",
+          "char_187e285a",
+          "char_eda37e88",
+          "char_3462015d"
+        ],
+        "battle": "Battle of Yavin",
+        "ship": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_a8aaaf49",
+        "description": "Luke uses the Force to guide his torpedo shot",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_abebd352"
+        ],
+        "location": "planet_dcb0a543",
+        "quote": "Use the Force, Luke."
+      },
+      {
+        "eventID": "event_8f5e5b46",
         "description": "Luke destroys the Death Star",
         "timestamp": "0 BBY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_6e476d79"
+          "char_3462015d",
+          "char_962a2a4d"
         ],
-        "location": "planet_b8659dd0",
+        "location": "planet_dcb0a543",
         "battle": "Battle of Yavin"
+      },
+      {
+        "eventID": "event_5ce5be9d",
+        "description": "Rebels hold victory ceremony on Yavin 4",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_1324fdc4",
+          "droid_0ef9105d"
+        ],
+        "location": "planet_cc333137"
       }
     ],
     "episode_5": [
       {
-        "eventID": "event_dc5bec7a",
-        "description": "The Empire attacks Rebel base on Hoth",
+        "eventID": "event_ef9b7d5a",
+        "description": "Luke Skywalker patrols the perimeter of Echo Base",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Low",
+        "participants": [
+          "char_3462015d"
+        ],
+        "location": "planet_d41a6e86"
+      },
+      {
+        "eventID": "event_304c69dc",
+        "description": "Luke is attacked by a Wampa creature",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_fbab0b70"
+        ],
+        "location": "planet_d41a6e86"
+      },
+      {
+        "eventID": "event_ed32fb10",
+        "description": "Luke escapes the Wampa cave using the Force",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d"
+        ],
+        "location": "planet_d41a6e86"
+      },
+      {
+        "eventID": "event_d1154b84",
+        "description": "Han Solo finds Luke freezing in the Hoth wilderness",
         "timestamp": "3 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_ddfb113a",
-          "char_6e476d79",
-          "char_4f833e0a"
+          "char_962a2a4d",
+          "char_3462015d"
         ],
-        "location": "planet_b4d2f53b",
+        "location": "planet_d41a6e86",
+        "quote": "And I thought they smelled bad on the outside!"
+      },
+      {
+        "eventID": "event_ab8cf2bb",
+        "description": "Luke recovers in bacta tank at Echo Base",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Low",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689",
+          "char_962a2a4d"
+        ],
+        "location": "planet_b02b89e7"
+      },
+      {
+        "eventID": "event_c455c457",
+        "description": "Han Solo and Princess Leia argue about his departure",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689"
+        ],
+        "location": "planet_b02b89e7",
+        "quote": "You could use a good kiss!"
+      },
+      {
+        "eventID": "event_404c3dd1",
+        "description": "Imperial probe droid discovers Rebel base on Hoth",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "location": "planet_d41a6e86"
+      },
+      {
+        "eventID": "event_a6da0554",
+        "description": "Admiral Ozzel brings Imperial fleet out of hyperspace too close to Hoth",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_eda37e88",
+          "char_a5b1e92e",
+          "char_c548e2e6"
+        ],
+        "location": "ship_d7c4963a"
+      },
+      {
+        "eventID": "event_c9170524",
+        "description": "Darth Vader executes Admiral Ozzel for his failure",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_eda37e88",
+          "char_a5b1e92e",
+          "char_c548e2e6"
+        ],
+        "location": "ship_d7c4963a",
+        "quote": "You have failed me for the last time, Admiral."
+      },
+      {
+        "eventID": "event_1857feab",
+        "description": "Rebels initiate evacuation of Echo Base",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_e269a689",
+          "char_630a3945"
+        ],
+        "location": "planet_b02b89e7"
+      },
+      {
+        "eventID": "event_4f7fa257",
+        "description": "Imperial forces land on Hoth",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_2d21f085"
+        ],
+        "location": "planet_d41a6e86",
         "battle": "Battle of Hoth"
       },
       {
-        "eventID": "event_de455040",
+        "eventID": "event_10d37959",
+        "description": "Rebel snowspeeders engage AT-AT walkers",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d"
+        ],
+        "location": "planet_d41a6e86",
+        "battle": "Battle of Hoth"
+      },
+      {
+        "eventID": "event_f64808f9",
+        "description": "Luke's snowspeeder is shot down",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d"
+        ],
+        "location": "planet_d41a6e86",
+        "battle": "Battle of Hoth"
+      },
+      {
+        "eventID": "event_0f3dc522",
+        "description": "Luke destroys an AT-AT with a thermal detonator",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d"
+        ],
+        "location": "planet_d41a6e86",
+        "battle": "Battle of Hoth"
+      },
+      {
+        "eventID": "event_0923d507",
+        "description": "Han, Leia, Chewie and C-3PO escape on the Millennium Falcon",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_ddda8d7f",
+        "description": "Luke and R2-D2 escape Hoth in X-Wing",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "droid_1324fdc4"
+        ],
+        "location": "ship_1fb5e18d"
+      },
+      {
+        "eventID": "event_5365a0d0",
+        "description": "Luke crash-lands on Dagobah",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "droid_1324fdc4"
+        ],
+        "location": "planet_91e48172"
+      },
+      {
+        "eventID": "event_9167aa3c",
+        "description": "Luke meets Yoda but doesn't recognize him",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_4ccf4fa6",
+          "droid_1324fdc4"
+        ],
+        "location": "planet_91e48172",
+        "quote": "Judge me by my size, do you?"
+      },
+      {
+        "eventID": "event_cf6730ce",
+        "description": "Yoda reveals his identity to Luke",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_4ccf4fa6"
+        ],
+        "location": "planet_91e48172"
+      },
+      {
+        "eventID": "event_77f43ec7",
         "description": "Luke begins training with Yoda on Dagobah",
         "timestamp": "3 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_b67e8fc2"
+          "char_3462015d",
+          "char_4ccf4fa6"
         ],
-        "location": "planet_4650844d"
+        "location": "planet_91e48172",
+        "quote": "Do or do not. There is no try."
       },
       {
-        "eventID": "event_7d93e610",
+        "eventID": "event_90c55493",
+        "description": "Luke enters the Dark Side Cave",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_91e48172"
+      },
+      {
+        "eventID": "event_a8c257cb",
+        "description": "Luke sees a vision of his friends in pain",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_4ccf4fa6"
+        ],
+        "location": "planet_91e48172"
+      },
+      {
+        "eventID": "event_2fdbede8",
+        "description": "Luke decides to leave Dagobah to save his friends",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_4ccf4fa6"
+        ],
+        "location": "planet_91e48172"
+      },
+      {
+        "eventID": "event_41fe0287",
+        "description": "Millennium Falcon evades Star Destroyers",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_6445cc90",
+        "description": "Millennium Falcon hides in an asteroid field",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d"
+        ],
+        "location": "planet_3ed53e5b",
+        "quote": "Never tell me the odds!"
+      },
+      {
+        "eventID": "event_a13e903b",
+        "description": "Han and Leia grow closer while hiding in the asteroid cave",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689"
+        ],
+        "location": "ship_7ee0a353",
+        "quote": "I happen to like nice men."
+      },
+      {
+        "eventID": "event_fd868931",
+        "description": "Han realizes they're hiding inside a space slug",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d"
+        ],
+        "location": "planet_3ed53e5b"
+      },
+      {
+        "eventID": "event_733e5297",
+        "description": "Millennium Falcon escapes the space slug",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_a9018dac",
+        "description": "Darth Vader hires bounty hunters to find the Millennium Falcon",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_eda37e88",
+          "char_56d33e2a"
+        ],
+        "location": "ship_d7c4963a"
+      },
+      {
+        "eventID": "event_5d6deedf",
+        "description": "Han Solo eludes the Star Destroyers by attaching to the ship",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_f159f048",
+        "description": "Captain Needa apologizes to Vader for losing the Millennium Falcon",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Low",
+        "participants": [
+          "char_d9dae277",
+          "char_eda37e88"
+        ],
+        "location": "ship_d7c4963a",
+        "quote": "Apology accepted, Captain Needa."
+      },
+      {
+        "eventID": "event_ec6321bf",
+        "description": "Boba Fett tracks the Millennium Falcon",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_56d33e2a"
+        ],
+        "location": "ship_e1c3ed12"
+      },
+      {
+        "eventID": "event_233f5455",
         "description": "Han Solo and crew arrive in Cloud City",
         "timestamp": "3 ABY",
         "significanceLevel": "Medium",
         "participants": [
-          "char_6e476d79",
-          "char_ddfb113a",
-          "char_214b3c74"
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d",
+          "char_b42a2c7a"
         ],
-        "location": "planet_b45e7e6e"
+        "location": "planet_c70c7a3a"
       },
       {
-        "eventID": "event_66cdd9d9",
+        "eventID": "event_b165e257",
+        "description": "Lando Calrissian welcomes Han and friends to Cloud City",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "char_b42a2c7a"
+        ],
+        "location": "planet_c70c7a3a",
+        "quote": "How you doin', you old pirate? So good to see you!"
+      },
+      {
+        "eventID": "event_f540da1e",
+        "description": "C-3PO discovers Imperial stormtrooper components and is shot",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_0ef9105d"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_a454a7bc",
+        "description": "Darth Vader arrives on Cloud City",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_eda37e88",
+          "char_b42a2c7a"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_81cb8acb",
+        "description": "Lando betrays Han Solo and friends to Darth Vader",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_b42a2c7a",
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "char_eda37e88"
+        ],
+        "location": "planet_c70c7a3a",
+        "quote": "I had no choice. They arrived right before you did."
+      },
+      {
+        "eventID": "event_e754bdf8",
+        "description": "Darth Vader tortures Han Solo",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_eda37e88",
+          "char_962a2a4d"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_1d19cd19",
+        "description": "Chewbacca finds dismantled C-3PO",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Low",
+        "participants": [
+          "char_187e285a",
+          "droid_0ef9105d"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_de500977",
+        "description": "Darth Vader prepares carbon freezing chamber for Luke",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_eda37e88",
+          "char_b42a2c7a"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_7ca97b8a",
         "description": "Han Solo is frozen in carbonite",
         "timestamp": "3 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_6e476d79",
-          "char_4f833e0a",
-          "char_ddfb113a",
-          "char_214b3c74"
+          "char_962a2a4d",
+          "char_eda37e88",
+          "char_e269a689",
+          "char_b42a2c7a",
+          "char_187e285a"
         ],
-        "location": "planet_b45e7e6e"
+        "location": "planet_c70c7a3a",
+        "quote": "I love you.I know."
       },
       {
-        "eventID": "event_d314508d",
+        "eventID": "event_5d360eba",
+        "description": "Boba Fett takes frozen Han Solo to his ship",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_56d33e2a",
+          "char_962a2a4d"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_cd151f46",
+        "description": "Lando has change of heart and helps Leia and Chewie escape",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_b42a2c7a",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_1324fdc4",
+          "droid_0ef9105d"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_de433fb7",
+        "description": "Luke Skywalker arrives at Cloud City",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "droid_1324fdc4"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_e9a01a4b",
+        "description": "Luke encounters Boba Fett and stormtroopers",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_56d33e2a"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_0044a65d",
+        "description": "Luke witnesses Han Solo being loaded onto Slave I",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_56d33e2a"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_6b58bb79",
+        "description": "Luke Skywalker confronts Darth Vader",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_d5aeff6d",
+        "description": "Darth Vader and Luke Skywalker duel with lightsabers",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_540ab5d8",
+        "description": "Darth Vader cuts off Luke's hand",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_df26eb82",
         "description": "Darth Vader reveals he is Luke's father",
         "timestamp": "3 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_4f833e0a"
+          "char_3462015d",
+          "char_eda37e88"
         ],
-        "location": "planet_b45e7e6e",
+        "location": "planet_c70c7a3a",
         "quote": "No, I am your father."
       },
       {
-        "eventID": "event_6b143528",
+        "eventID": "event_65f3f3ce",
+        "description": "Luke chooses to fall rather than join Vader",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_654d7a74",
+        "description": "Luke calls to Leia through the Force",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689"
+        ],
+        "location": "planet_c70c7a3a"
+      },
+      {
+        "eventID": "event_bcd87613",
+        "description": "Leia senses Luke and directs Lando to turn back for him",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_e269a689",
+          "char_b42a2c7a",
+          "char_187e285a"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_4b2f13e1",
+        "description": "Luke is rescued from beneath Cloud City",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689",
+          "char_b42a2c7a",
+          "char_187e285a"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_dcc4d92c",
         "description": "Luke escapes Cloud City with Leia and Lando",
         "timestamp": "3 ABY",
         "significanceLevel": "Medium",
         "participants": [
-          "char_20bf383c",
-          "char_ddfb113a",
-          "char_214b3c74"
+          "char_3462015d",
+          "char_e269a689",
+          "char_b42a2c7a",
+          "char_187e285a"
         ],
-        "location": "planet_b45e7e6e",
-        "ship": "ship_a6f84833"
+        "location": "planet_c70c7a3a",
+        "ship": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_418f5781",
+        "description": "Darth Vader contacts Luke telepathically",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_f5663d37",
+        "description": "Luke gets cybernetic hand attached to replace lost hand",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_322dbca7",
+        "description": "Lando and Chewie prepare to search for Han Solo",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_b42a2c7a",
+          "char_187e285a",
+          "char_e269a689",
+          "char_3462015d"
+        ],
+        "location": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_deb31839",
+        "description": "Rebel fleet regroups as heroes look to the stars",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689",
+          "droid_1324fdc4",
+          "droid_0ef9105d"
+        ],
+        "location": "ship_7ee0a353"
       }
     ],
     "episode_6": [
       {
-        "eventID": "event_56b851c3",
-        "description": "Rescue of Han Solo from Jabba's Palace",
+        "eventID": "event_09cd6ffc",
+        "description": "C-3PO and R2-D2 arrive at Jabba's Palace",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_0ef9105d",
+          "droid_1324fdc4",
+          "char_99eb6f1f"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_6c536ba7",
+        "description": "R2-D2 plays Luke's message to Jabba the Hutt",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_1324fdc4",
+          "droid_0ef9105d",
+          "char_5c185f0a"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_aed12fbc",
+        "description": "C-3PO is forced to become Jabba's interpreter",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Low",
+        "participants": [
+          "droid_0ef9105d",
+          "char_5c185f0a"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_127dbaa3",
+        "description": "Bounty hunter 'Boushh' (Leia in disguise) arrives with Chewbacca",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_e269a689",
+          "char_187e285a",
+          "char_5c185f0a"
+        ],
+        "location": "planet_02a9798d",
+        "quote": "Yot\u014d. Yot\u014dk\u014d."
+      },
+      {
+        "eventID": "event_059b14b4",
+        "description": "Leia frees Han Solo from carbonite",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_ddfb113a",
-          "char_6e476d79",
-          "char_f75c4685"
+          "char_e269a689",
+          "char_962a2a4d"
         ],
-        "location": "planet_689b3e4d"
+        "location": "planet_02a9798d"
       },
       {
-        "eventID": "event_cb0d992d",
+        "eventID": "event_cdb9af4f",
+        "description": "Jabba captures Leia and Han",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_5c185f0a",
+          "char_e269a689",
+          "char_962a2a4d"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_13d7403d",
+        "description": "Jabba forces Leia to become his slave",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_5c185f0a",
+          "char_e269a689"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_b3a1ff77",
+        "description": "Luke Skywalker arrives at Jabba's Palace",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_5c185f0a",
+          "char_99eb6f1f"
+        ],
+        "location": "planet_02a9798d",
+        "quote": "You will bring Captain Solo and the Wookiee to me."
+      },
+      {
+        "eventID": "event_6d65168d",
+        "description": "Luke falls into the Rancor pit",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_5c185f0a",
+          "char_514a76e8"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_8cbe8265",
+        "description": "Luke kills the Rancor",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_514a76e8"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_7251873e",
+        "description": "Jabba sentences Luke, Han, and Chewie to death at the Sarlacc pit",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_5c185f0a",
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_187e285a"
+        ],
+        "location": "planet_02a9798d"
+      },
+      {
+        "eventID": "event_88398391",
+        "description": "Luke, Han and Chewie are taken to the Great Pit of Carkoon",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_187e285a",
+          "char_e269a689",
+          "droid_0ef9105d",
+          "droid_1324fdc4",
+          "char_5c185f0a"
+        ],
+        "location": "planet_76313207"
+      },
+      {
+        "eventID": "event_0c37d9d9",
+        "description": "R2-D2 launches Luke's lightsaber to him",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "droid_1324fdc4"
+        ],
+        "location": "planet_76313207"
+      },
+      {
+        "eventID": "event_4bac0bdb",
+        "description": "Battle at the Sarlacc Pit",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_187e285a",
+          "char_e269a689",
+          "char_b42a2c7a",
+          "char_56d33e2a",
+          "char_5c185f0a"
+        ],
+        "location": "planet_76313207"
+      },
+      {
+        "eventID": "event_d1a9edf2",
+        "description": "Boba Fett falls into the Sarlacc pit",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_56d33e2a",
+          "char_962a2a4d"
+        ],
+        "location": "planet_76313207"
+      },
+      {
+        "eventID": "event_e9d102f8",
+        "description": "Leia strangles Jabba the Hutt with her chain",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_e269a689",
+          "char_5c185f0a"
+        ],
+        "location": "ship_15066dba"
+      },
+      {
+        "eventID": "event_1f863276",
+        "description": "Heroes destroy Jabba's sail barge and escape",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "char_b42a2c7a",
+          "droid_1324fdc4",
+          "droid_0ef9105d"
+        ],
+        "location": "ship_15066dba"
+      },
+      {
+        "eventID": "event_ea263788",
+        "description": "Luke returns to Dagobah to complete his training",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "droid_1324fdc4"
+        ],
+        "location": "planet_91e48172"
+      },
+      {
+        "eventID": "event_ddfb09c7",
+        "description": "Luke finds Yoda dying",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_4ccf4fa6"
+        ],
+        "location": "planet_91e48172",
+        "quote": "When gone am I, the last of the Jedi will you be."
+      },
+      {
+        "eventID": "event_d8c474a9",
         "description": "Yoda dies and confirms Vader is Luke's father",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_b67e8fc2"
+          "char_3462015d",
+          "char_4ccf4fa6"
         ],
-        "location": "planet_4650844d"
+        "location": "planet_91e48172"
       },
       {
-        "eventID": "event_fcb68018",
-        "description": "Luke learns Leia is his twin sister",
+        "eventID": "event_ff0b7b8b",
+        "description": "Obi-Wan's spirit tells Luke that Leia is his twin sister",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_ddfb113a"
+          "char_3462015d"
         ],
-        "location": "planet_908040cf"
+        "location": "planet_91e48172",
+        "quote": "The other that Yoda spoke of is your twin sister."
       },
       {
-        "eventID": "event_27fb5baf",
+        "eventID": "event_b60a4c5b",
+        "description": "Rebel leaders gather to plan attack on Death Star II",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_85f5afa2",
+          "char_6dda8460",
+          "char_e269a689",
+          "char_962a2a4d",
+          "char_187e285a",
+          "droid_0ef9105d"
+        ],
+        "location": "ship_62019f43"
+      },
+      {
+        "eventID": "event_0c1336dc",
+        "description": "Mon Mothma reveals that Emperor Palpatine is on the Death Star",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_85f5afa2",
+          "char_6dda8460"
+        ],
+        "location": "ship_62019f43"
+      },
+      {
+        "eventID": "event_f0ca29f5",
+        "description": "Han Solo volunteers to lead ground assault on shield generator",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "char_3462015d"
+        ],
+        "location": "ship_62019f43"
+      },
+      {
+        "eventID": "event_51573df9",
+        "description": "Luke tells Leia that she is his sister and Vader is their father",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689"
+        ],
+        "location": "planet_dbd66959",
+        "quote": "The Force is strong in my family. My father has it. I have it. And... my sister has it."
+      },
+      {
+        "eventID": "event_8e6300fb",
+        "description": "Imperial Shuttle Tydirium approaches Endor with stolen codes",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_3462015d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d",
+          "droid_1324fdc4"
+        ],
+        "location": "ship_3ef65a10"
+      },
+      {
+        "eventID": "event_f006e2fd",
+        "description": "Vader senses Luke's presence on the shuttle",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_eda37e88",
+          "char_3462015d"
+        ],
+        "location": "ship_d7c4963a",
+        "quote": "I'm endangering the mission. I shouldn't have come."
+      },
+      {
+        "eventID": "event_d6b788eb",
+        "description": "Rebels land on Endor",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_962a2a4d",
+          "char_3462015d",
+          "char_e269a689",
+          "char_187e285a",
+          "droid_0ef9105d",
+          "droid_1324fdc4"
+        ],
+        "location": "planet_dbd66959"
+      },
+      {
+        "eventID": "event_e3b08987",
+        "description": "Scout troopers discover the Rebels and Leia becomes separated",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a"
+        ],
+        "location": "planet_dbd66959"
+      },
+      {
+        "eventID": "event_83732e1b",
+        "description": "Leia meets Wicket the Ewok",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_e269a689",
+          "char_353f5456"
+        ],
+        "location": "planet_dbd66959"
+      },
+      {
+        "eventID": "event_d33dbe53",
+        "description": "Luke, Han, Chewie, and the droids are captured by Ewoks",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_187e285a",
+          "droid_0ef9105d",
+          "droid_1324fdc4",
+          "char_74d6effd"
+        ],
+        "location": "planet_dbd66959"
+      },
+      {
+        "eventID": "event_110610b4",
+        "description": "Ewoks worship C-3PO as a god",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_0ef9105d",
+          "char_74d6effd",
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_187e285a"
+        ],
+        "location": "planet_a6feec7d",
+        "quote": "It's against my programming to impersonate a deity."
+      },
+      {
+        "eventID": "event_d6723dcd",
+        "description": "Luke demonstrates the Force to free his friends",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_3462015d",
+          "droid_0ef9105d",
+          "char_74d6effd"
+        ],
+        "location": "planet_a6feec7d"
+      },
+      {
+        "eventID": "event_0e900a82",
+        "description": "C-3PO tells the Ewoks the story of the Rebellion",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_0ef9105d",
+          "char_74d6effd",
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_e269a689"
+        ],
+        "location": "planet_a6feec7d"
+      },
+      {
+        "eventID": "event_3de69968",
+        "description": "Ewoks agree to help the Rebels fight the Empire",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_0ef9105d",
+          "char_74d6effd",
+          "char_3462015d",
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a"
+        ],
+        "location": "planet_a6feec7d"
+      },
+      {
+        "eventID": "event_a66e7b96",
+        "description": "Luke tells Leia he must confront Vader",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689"
+        ],
+        "location": "planet_a6feec7d",
+        "quote": "There is good in him. I've felt it."
+      },
+      {
+        "eventID": "event_ff02608f",
+        "description": "Luke surrenders to Imperial troops on Endor",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_dbd66959"
+      },
+      {
+        "eventID": "event_86f31717",
+        "description": "Luke and Vader meet face to face",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_dbd66959",
+        "quote": "I see you have constructed a new lightsaber."
+      },
+      {
+        "eventID": "event_f4ecaa37",
+        "description": "Luke is taken to the Death Star to meet the Emperor",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_670b4322",
         "description": "Battle of Endor begins",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_ddfb113a",
-          "char_6e476d79",
-          "char_214b3c74"
+          "char_3462015d",
+          "char_e269a689",
+          "char_962a2a4d",
+          "char_187e285a",
+          "char_b42a2c7a",
+          "char_6dda8460",
+          "char_74d6effd"
         ],
-        "location": "planet_908040cf",
+        "location": "planet_dbd66959",
         "battle": "Battle of Endor"
       },
       {
-        "eventID": "event_1ec08fcb",
-        "description": "Luke confronts Emperor Palpatine and Darth Vader",
+        "eventID": "event_06bf31a6",
+        "description": "Rebels and Ewoks attack Imperial bunker",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_4f833e0a",
-          "char_a613232c"
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a",
+          "char_74d6effd"
         ],
-        "location": "planet_9678bf38"
+        "location": "planet_7bd883bb",
+        "battle": "Battle of Endor"
       },
       {
-        "eventID": "event_861c564f",
-        "description": "Darth Vader turns against the Emperor and saves Luke",
+        "eventID": "event_5e26cd23",
+        "description": "Rebel fleet arrives at Endor to find the shield still up",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_4f833e0a",
-          "char_a613232c"
+          "char_b42a2c7a",
+          "char_6dda8460"
         ],
-        "location": "planet_9678bf38"
+        "location": "ship_62019f43",
+        "battle": "Battle of Endor",
+        "quote": "It's a trap!"
       },
       {
-        "eventID": "event_3607b838",
+        "eventID": "event_51395c1d",
+        "description": "Imperial fleet ambushes the Rebel fleet",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_b42a2c7a",
+          "char_6dda8460"
+        ],
+        "location": "ship_62019f43",
+        "battle": "Battle of Endor"
+      },
+      {
+        "eventID": "event_381a4c85",
+        "description": "Leia is wounded during the Endor battle",
+        "timestamp": "4 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_e269a689",
+          "char_962a2a4d"
+        ],
+        "location": "planet_dbd66959",
+        "battle": "Battle of Endor"
+      },
+      {
+        "eventID": "event_b7d11a2e",
+        "description": "Han and Leia capture the bunker",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a"
+        ],
+        "location": "planet_7bd883bb",
+        "battle": "Battle of Endor"
+      },
+      {
+        "eventID": "event_5493a8b7",
+        "description": "Rebels destroy the shield generator",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_962a2a4d",
+          "char_e269a689",
+          "char_187e285a"
+        ],
+        "location": "planet_7bd883bb",
+        "battle": "Battle of Endor"
+      },
+      {
+        "eventID": "event_c7daf261",
+        "description": "Luke confronts Emperor Palpatine",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88",
+          "char_44750e2a"
+        ],
+        "location": "planet_fda8fe1b",
+        "quote": "Welcome, young Skywalker. I have been expecting you."
+      },
+      {
+        "eventID": "event_28818728",
+        "description": "Emperor reveals that the Rebel attack is a trap",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_44750e2a",
+          "char_3462015d"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_91ff75f1",
+        "description": "Emperor goads Luke to take his lightsaber and strike him down",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_44750e2a",
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_fda8fe1b",
+        "quote": "Strike me down with all your hatred and your journey towards the dark side will be complete."
+      },
+      {
+        "eventID": "event_3b0e8aeb",
+        "description": "Luke fights Vader in the Emperor's throne room",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88",
+          "char_44750e2a"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_5c6739bf",
+        "description": "Vader discovers that Luke has a sister",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_fda8fe1b",
+        "quote": "If you will not turn to the dark side, then perhaps she will."
+      },
+      {
+        "eventID": "event_6f3d9caa",
+        "description": "Luke attacks Vader in anger",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_f8ad2d65",
+        "description": "Luke defeats Vader and cuts off his hand",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88",
+          "char_44750e2a"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_2fc665ff",
+        "description": "Luke refuses to kill Vader and join the dark side",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88",
+          "char_44750e2a"
+        ],
+        "location": "planet_fda8fe1b",
+        "quote": "I'll never turn to the dark side. You've failed, Your Highness. I am a Jedi, like my father before me."
+      },
+      {
+        "eventID": "event_9e5ac681",
+        "description": "Emperor attacks Luke with Force lightning",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_44750e2a",
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_b094b622",
+        "description": "Vader turns against the Emperor and saves Luke",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88",
+          "char_44750e2a"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_49fa7cff",
+        "description": "Vader throws the Emperor down a reactor shaft",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_eda37e88",
+          "char_44750e2a"
+        ],
+        "location": "planet_fda8fe1b"
+      },
+      {
+        "eventID": "event_85786914",
+        "description": "Lando leads fighters into the Death Star's core",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_b42a2c7a"
+        ],
+        "location": "ship_7ee0a353",
+        "battle": "Battle of Endor"
+      },
+      {
+        "eventID": "event_7c61005b",
+        "description": "Dying Vader asks Luke to remove his mask",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_fda8fe1b",
+        "quote": "Luke, help me take this mask off."
+      },
+      {
+        "eventID": "event_a8b1aabc",
+        "description": "Darth Vader dies after returning to the light side",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "planet_fda8fe1b",
+        "quote": "You were right about me. Tell your sister... you were right."
+      },
+      {
+        "eventID": "event_4373618d",
+        "description": "Luke escapes the Death Star with Vader's body",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_eda37e88"
+        ],
+        "location": "ship_3ef65a10"
+      },
+      {
+        "eventID": "event_a90a04fa",
+        "description": "Rebels destroy the Death Star's main reactor",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_b42a2c7a"
+        ],
+        "location": "planet_fda8fe1b",
+        "ship": "ship_7ee0a353"
+      },
+      {
+        "eventID": "event_866f0568",
         "description": "Rebels destroy the second Death Star",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_214b3c74"
+          "char_b42a2c7a"
         ],
-        "location": "planet_9678bf38",
-        "ship": "ship_a6f84833"
+        "location": "planet_fda8fe1b",
+        "ship": "ship_7ee0a353"
       },
       {
-        "eventID": "event_151275b6",
-        "description": "Celebration of the fall of the Empire",
+        "eventID": "event_6bd1f8be",
+        "description": "Luke burns Vader's armor in a funeral pyre on Endor",
         "timestamp": "4 ABY",
         "significanceLevel": "High",
         "participants": [
-          "char_20bf383c",
-          "char_ddfb113a",
-          "char_6e476d79",
-          "char_214b3c74"
+          "char_3462015d"
         ],
-        "location": "planet_908040cf"
+        "location": "planet_dbd66959"
+      },
+      {
+        "eventID": "event_fd218b5d",
+        "description": "Celebration of the fall of the Empire across the galaxy",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d",
+          "char_e269a689",
+          "char_962a2a4d",
+          "char_b42a2c7a",
+          "char_187e285a",
+          "droid_0ef9105d",
+          "droid_1324fdc4",
+          "char_74d6effd"
+        ],
+        "location": "planet_dbd66959"
+      },
+      {
+        "eventID": "event_cf704fc2",
+        "description": "Luke sees the spirits of Obi-Wan, Yoda, and Anakin Skywalker",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_3462015d"
+        ],
+        "location": "planet_dbd66959"
       }
     ]
   }

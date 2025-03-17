@@ -1,15 +1,15 @@
 {
   "characters": {
-    "char_506125be": {
-      "characterID": "char_506125be",
+    "char_a9c55dc6": {
+      "characterID": "char_a9c55dc6",
       "name": "Darth Vader",
       "species": "Human",
       "gender": "Male",
       "affiliation": "Galactic Empire",
       "forceSensitive": true
     },
-    "char_580c5900": {
-      "characterID": "char_580c5900",
+    "char_26b67a3b": {
+      "characterID": "char_26b67a3b",
       "name": "Luke Skywalker",
       "species": "Human",
       "gender": "Male",
@@ -18,8 +18,8 @@
     }
   },
   "siths": {
-    "char_506125be": {
-      "characterID": "char_506125be",
+    "char_a9c55dc6": {
+      "characterID": "char_a9c55dc6",
       "name": "Darth Vader",
       "species": "Human",
       "gender": "Male",
@@ -31,68 +31,68 @@
     }
   },
   "jedis": {
-    "char_580c5900": {
-      "characterID": "char_580c5900",
+    "char_26b67a3b": {
+      "characterID": "char_26b67a3b",
       "name": "Luke Skywalker",
       "species": "Human",
       "gender": "Male",
       "affiliation": "Rebel Alliance",
       "forceSensitive": true,
       "lightsaberColor": "Blue",
-      "midiChlorianCount": 11680,
+      "midiChlorianCount": 8822,
       "jediRank": "Padawan"
     }
   },
   "planets": {
-    "planet_6376de08": {
-      "planetID": "planet_6376de08",
+    "planet_1327d436": {
+      "planetID": "planet_1327d436",
       "planetName": "Cloud City",
       "starSystem": "Bespin",
       "climate": "Gaseous",
-      "population": 633880459,
-      "affiliation": "Rebel Alliance",
-      "orbitalPeriodDays": 395.62919271860176
+      "population": 13407133110,
+      "affiliation": "Hutt Cartel",
+      "orbitalPeriodDays": 840.3318647760893
     }
   },
   "battles": {
-    "battle_4445163c": {
-      "battleID": "battle_4445163c",
+    "battle_4c72230d": {
+      "battleID": "battle_4c72230d",
       "name": "Duel at Cloud City",
       "outcome": "Empire Victory",
-      "battleDate": "1979-10-28",
+      "battleDate": "1981-09-18",
       "casualties": 5,
       "factions": []
     }
   },
   "events": {
-    "event_eebc80ca": {
-      "eventID": "event_eebc80ca",
+    "event_065011be": {
+      "eventID": "event_065011be",
       "description": "Darth Vader reveals he is Luke's father",
       "timestamp": "3 ABY",
       "significanceLevel": "High",
       "participants": [
-        "char_506125be",
-        "char_580c5900"
+        "char_a9c55dc6",
+        "char_26b67a3b"
       ],
-      "location": "planet_6376de08",
-      "battle": "battle_4445163c",
+      "location": "planet_1327d436",
+      "battle": "battle_4c72230d",
       "quote": "No, I am your father."
     }
   },
   "lightsabers": {
-    "saber_a7cbbc64": {
-      "weaponID": "saber_a7cbbc64",
+    "saber_aa1064c8": {
+      "weaponID": "saber_aa1064c8",
       "name": "Anakin's Lightsaber",
       "weaponType": "Lightsaber",
-      "destructiveCapacity": 89.10832336760178,
+      "destructiveCapacity": 99.00079216886311,
       "color": "Blue",
       "hiltDesign": "Training"
     },
-    "saber_1e9dd652": {
-      "weaponID": "saber_1e9dd652",
+    "saber_0b158192": {
+      "weaponID": "saber_0b158192",
       "name": "Darth Vader's Lightsaber",
       "weaponType": "Lightsaber",
-      "destructiveCapacity": 94.36691830997978,
+      "destructiveCapacity": 88.53481513717311,
       "color": "Red",
       "hiltDesign": "Shoto"
     }
@@ -100,33 +100,33 @@
   "relationships": [
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_506125be",
-      "child": "char_580c5900"
+      "parent": "char_a9c55dc6",
+      "child": "char_26b67a3b"
     }
   ],
   "dialogue": [
     {
-      "speaker": "char_506125be",
+      "speaker": "char_a9c55dc6",
       "line": "Obi-Wan never told you what happened to your father."
     },
     {
-      "speaker": "char_580c5900",
+      "speaker": "char_26b67a3b",
       "line": "He told me enough! He told me you killed him!"
     },
     {
-      "speaker": "char_506125be",
+      "speaker": "char_a9c55dc6",
       "line": "No. I am your father."
     },
     {
-      "speaker": "char_580c5900",
+      "speaker": "char_26b67a3b",
       "line": "No. No. That's not true. That's impossible!"
     },
     {
-      "speaker": "char_506125be",
+      "speaker": "char_a9c55dc6",
       "line": "Search your feelings; you know it to be true!"
     },
     {
-      "speaker": "char_580c5900",
+      "speaker": "char_26b67a3b",
       "line": "No! No!"
     }
   ]

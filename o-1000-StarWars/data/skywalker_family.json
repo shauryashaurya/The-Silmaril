@@ -1,7 +1,7 @@
 {
   "characters": [
     {
-      "characterID": "char_1c94d609",
+      "characterID": "char_208e22f5",
       "name": "Anakin Skywalker / Darth Vader",
       "species": "Human",
       "gender": "Male",
@@ -12,7 +12,7 @@
       "cameoAppearance": false
     },
     {
-      "characterID": "char_c9cb155c",
+      "characterID": "char_4ae3f31d",
       "name": "Padm\u00e9 Amidala",
       "species": "Human",
       "gender": "Female",
@@ -23,7 +23,7 @@
       "cameoAppearance": false
     },
     {
-      "characterID": "char_7c4a5fb9",
+      "characterID": "char_12b92cfb",
       "name": "Luke Skywalker",
       "species": "Human",
       "gender": "Male",
@@ -34,7 +34,7 @@
       "cameoAppearance": false
     },
     {
-      "characterID": "char_9e0d7f0e",
+      "characterID": "char_1503c836",
       "name": "Leia Organa",
       "species": "Human",
       "gender": "Female",
@@ -48,40 +48,40 @@
   "relationships": [
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_1c94d609",
-      "child": "char_7c4a5fb9"
+      "parent": "char_208e22f5",
+      "child": "char_12b92cfb"
     },
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_1c94d609",
-      "child": "char_9e0d7f0e"
+      "parent": "char_208e22f5",
+      "child": "char_1503c836"
     },
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_c9cb155c",
-      "child": "char_7c4a5fb9"
+      "parent": "char_4ae3f31d",
+      "child": "char_12b92cfb"
     },
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_c9cb155c",
-      "child": "char_9e0d7f0e"
+      "parent": "char_4ae3f31d",
+      "child": "char_1503c836"
     },
     {
       "relationshipType": "sibling",
-      "sibling1": "char_7c4a5fb9",
-      "sibling2": "char_9e0d7f0e"
+      "sibling1": "char_12b92cfb",
+      "sibling2": "char_1503c836"
     }
   ],
   "events": [
     {
-      "eventID": "event_5d37470e",
+      "eventID": "event_1b81c12d",
       "description": "Darth Vader reveals to Luke Skywalker that he is his father",
       "timestamp": "3-ABY",
       "significanceLevel": "High",
       "location": "Cloud City, Bespin",
       "participants": [
-        "char_1c94d609",
-        "char_7c4a5fb9"
+        "char_208e22f5",
+        "char_12b92cfb"
       ],
       "quote": "No, I am your father."
     }
