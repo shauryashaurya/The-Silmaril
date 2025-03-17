@@ -47,9 +47,6 @@ DarkFortress["DarkFortress<br>fortressID<br>fortressName<br>defenseLevel float<b
 Army["Army<br>armyID<br>armyName<br>totalUnits int<br>moraleLevel float<br>bannerSymbol"]        
 MagicSpell["MagicSpell<br>spellID<br>spellName<br>spellType<br>manaCost float<br>effectPower float"]        
 Council["Council<br>councilID<br>councilName<br>purpose<br>convenedDate dateTime<br>secrecyLevel float"]        
-        
-%% 10 NEW CLASSES:        
-        
 Valar["Valar<br>valarID<br>valarName<br>domainOfPower<br>cosmicRank float"]        
 Maiar["Maiar<br>maiarID<br>maiarName<br>maiarOrder<br>spiritualPotency float"]        
 Rune["Rune<br>runeID<br>runeScript<br>mysticValue float<br>originAge int"]        
@@ -124,9 +121,6 @@ Council -- "invites_Kingdom (0-To-Many)" --> Kingdom
 Ring -- "ring_Origin (0-To-1)" --> Kingdom        
 AncientProphecy -- "prophecy_Tested_In (0-To-Many)" --> Battle        
 DarkFortress -- "fortress_In_Alliance (0-To-1)" --> Alliance        
-        
-%% Additional relationships for new classes        
-        
 RuneSmith -- "smiths_Rune (0-To-Many)" --> Rune        
 RuneSmith -- "smiths_Weapon (0-To-Many)" --> Weapon        
 Rune -- "bound_To_Language (0-To-1)" --> Language        
@@ -149,9 +143,6 @@ Ring -. "only_One_Ring" .-> Ring
 Hobbit -. "stealth_Trait" .-> Person        
 Wizard -. "staff_Power_Req" .-> MagicSpell        
 DarkFortress -. "overshadow_Limit" .-> Orc        
-        
-%% Additional rules for new classes:        
-        
 Valar -. "cosmic_Influence" .-> MiddleEarth        
 Silmaril -. "holy_Object_Only" .-> Elf        
 Rune -. "requires_RuneSmith" .-> RuneSmith        
@@ -328,7 +319,6 @@ Class: Council
   - convenedDate: dateTime        
   - secrecyLevel: float        
         
-// NEW 10 CLASSES:        
 Class: Valar        
   - valarID: string        
   - valarName: string        
@@ -448,7 +438,6 @@ Ring --> ring_Origin (0-To-1) --> Kingdom
 AncientProphecy --> prophecy_Tested_In (0-To-Many) --> Battle        
 DarkFortress --> fortress_In_Alliance (0-To-1) --> Alliance        
         
-// Additional new relationships for new classes:        
 RuneSmith --> smiths_Rune (0-To-Many) --> Rune        
 RuneSmith --> smiths_Weapon (0-To-Many) --> Weapon        
 Rune --> bound_To_Language (0-To-1) --> Language        
@@ -482,7 +471,7 @@ ElvenScript --> script_BasedOn (0-To-1) --> Language
 ---        
         
 ```pseudocode           
-// ========== Expand and review some of the OBJECT PROPERTIES ==========        
+// ========== Not fun enuf, let's add/refine more OBJECT PROPERTIES ==========        
         
 // Core, referencing classes:        
         
@@ -614,4 +603,8 @@ Relationship: fortressInAlliance (DarkFortress → Alliance, 0..1)
             
 ### I just thought this was cool            
             
-But it is still under development - eventually I want to be able to run scenario simulations for this one too, just like the Star Wars universe.
+But it is still under development - eventually I want to be able to run scenario simulations for this one too, just like the Star Wars universe.    
+**Update**:   
+Just worked on building data for the Star Wars Trilogy - my brain is fried.    
+As of now this is going to be frozen.    
+Unless you, dear ontology enthusiast want to submit a PR. :)
