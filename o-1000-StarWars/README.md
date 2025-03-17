@@ -7,11 +7,22 @@
                 
 Below is a conceptual structure, with a **pseudocode** approach.         
         
+        
+        
+        
+### SVG    
+Created using the mermaid code in [Draw.io](https://app.diagrams.net) `[Arrange>Insert>Advanced>Mermaid]`
 <html>         
 	<img src="./StarWars-Ontology.svg" width="95%" align="center" alt="StarWars-Ontology, Image © Shaurya Agarwal, created using draw.io and mermaid" />                 
 </html>     
                 
-                                                              
+                
+                
+                
+                
+                
+        
+### Interactive Mermaid diagram
 ```mermaid                                                              
 graph TD        
         
