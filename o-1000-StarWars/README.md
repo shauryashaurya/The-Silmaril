@@ -19,7 +19,16 @@ Created using the mermaid code in [Draw.io](https://app.diagrams.net) `[Arrange>
                 
                 
                 
-                
+## Data  
+The [`.'data`](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-1000-StarWars/data) folder carries a full timeline of all the events of the original trilogy.
+Thanks to [Wookieepedia](https://starwars.fandom.com/wiki/Main_Page).   
+Also tried to model the "Luke, I am your father!" bit.
+The data has several events which can be loaded and streamed to run analysis - which let's you _play_ the movies out, explore event predicates, the whole plot line etc. etc.
+
+
+### Data Dictionary
+Also carries a full [data dictionary](https://github.com/shauryashaurya/The-Silmaril/blob/main/o-1000-StarWars/star_wars_data_dictionary.md) for the generated data.
+I honestly think this page can be improved. In due time, when I have more time. For now, click around, read a bit, see what you like etc. etc. :)
                 
         
 ### Interactive Mermaid diagram
