@@ -1,17 +1,15 @@
 # A **Star Wars** Ontology!                    
         
-## Citation        
-Inspired by [Dorian Smiley's The Star Wars Stack](https://github.com/doriansmiley/TheStarWarsStack) idea, which in turn is inspired by the ["Ticker Symbol: YOU" (channel) video on YouTube](https://www.youtube.com/watch?v=Rq3JjUUgTBI&t=924s)          
-My attempt is to just try and craft an almost simple ontology, not the full blown project, and slowly grow it so it can run simulations and scenarios on the fictional timeline of Star Wars.           
-This is very cool, but just for fun...        
-                
+             
 ---                
                 
 ## Ontology Structure: Core Classes / Entities (Domain Ontology)                
                 
 Below is a conceptual structure, with a **pseudocode** approach.         
         
-                
+<html>         
+	<img src="./StarWars-Ontology.svg" width="95%" align="center" alt="StarWars-Ontology, Image © Shaurya Agarwal, created using draw.io and mermaid" />                 
+</html>     
                 
                                                               
 ```mermaid                                                              
@@ -478,3 +476,8 @@ biologicalParentOf(darth_vader, luke_skywalker)
 ### I just thought this was cool                    
                     
 But it is still under development - eventually I want to be able to run scenario simulations for the Star Wars universe.
+
+## Citation        
+Inspired by [Dorian Smiley's The Star Wars Stack](https://github.com/doriansmiley/TheStarWarsStack) idea, which in turn is inspired by the ["Ticker Symbol: YOU" (channel) video on YouTube](https://www.youtube.com/watch?v=Rq3JjUUgTBI&t=924s)          
+My attempt is to just try and craft an almost simple ontology, not the full blown project, and slowly grow it so it can run simulations and scenarios on the fictional timeline of Star Wars.           
+.        
