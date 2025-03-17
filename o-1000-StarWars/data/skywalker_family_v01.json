@@ -1,7 +1,7 @@
 {
   "characters": [
     {
-      "characterID": "char_1c94d609",
+      "characterID": "char_2dff088e",
       "name": "Anakin Skywalker / Darth Vader",
       "species": "Human",
       "gender": "Male",
@@ -12,7 +12,7 @@
       "cameoAppearance": false
     },
     {
-      "characterID": "char_c9cb155c",
+      "characterID": "char_dbf62dec",
       "name": "Padm\u00e9 Amidala",
       "species": "Human",
       "gender": "Female",
@@ -23,7 +23,7 @@
       "cameoAppearance": false
     },
     {
-      "characterID": "char_7c4a5fb9",
+      "characterID": "char_c30041c6",
       "name": "Luke Skywalker",
       "species": "Human",
       "gender": "Male",
@@ -34,7 +34,7 @@
       "cameoAppearance": false
     },
     {
-      "characterID": "char_9e0d7f0e",
+      "characterID": "char_654d73a1",
       "name": "Leia Organa",
       "species": "Human",
       "gender": "Female",
@@ -48,40 +48,35 @@
   "relationships": [
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_1c94d609",
-      "child": "char_7c4a5fb9"
+      "parent": "char_2dff088e",
+      "child": "char_c30041c6"
     },
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_1c94d609",
-      "child": "char_9e0d7f0e"
+      "parent": "char_2dff088e",
+      "child": "char_654d73a1"
     },
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_c9cb155c",
-      "child": "char_7c4a5fb9"
+      "parent": "char_dbf62dec",
+      "child": "char_c30041c6"
     },
     {
       "relationshipType": "biologicalParentOf",
-      "parent": "char_c9cb155c",
-      "child": "char_9e0d7f0e"
-    },
-    {
-      "relationshipType": "sibling",
-      "sibling1": "char_7c4a5fb9",
-      "sibling2": "char_9e0d7f0e"
+      "parent": "char_dbf62dec",
+      "child": "char_654d73a1"
     }
   ],
   "events": [
     {
-      "eventID": "event_5d37470e",
+      "eventID": "event_e731af54",
       "description": "Darth Vader reveals to Luke Skywalker that he is his father",
       "timestamp": "3-ABY",
       "significanceLevel": "High",
       "location": "Cloud City, Bespin",
       "participants": [
-        "char_1c94d609",
-        "char_7c4a5fb9"
+        "char_2dff088e",
+        "char_c30041c6"
       ],
       "quote": "No, I am your father."
     }

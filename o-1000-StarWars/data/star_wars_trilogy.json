@@ -1,0 +1,1616 @@
+{
+  "characters": {
+    "char_20bf383c": {
+      "characterID": "char_20bf383c",
+      "name": "Luke Skywalker",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false
+    },
+    "char_25022642": {
+      "characterID": "char_25022642",
+      "name": "Admiral Piett",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Captain",
+      "forceSensitive": false,
+      "starSign": "Mynock",
+      "cameoAppearance": false
+    },
+    "char_9071379a": {
+      "characterID": "char_9071379a",
+      "name": "R2-D2",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": false,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false
+    },
+    "char_a613232c": {
+      "characterID": "char_a613232c",
+      "name": "Emperor Palpatine",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Captain",
+      "forceSensitive": true,
+      "starSign": "Bantha",
+      "cameoAppearance": false
+    },
+    "char_f75c4685": {
+      "characterID": "char_f75c4685",
+      "name": "Jabba the Hutt",
+      "species": "Hutt",
+      "gender": "Male",
+      "affiliation": "Hutt Cartel",
+      "rank": "Lieutenant",
+      "forceSensitive": false,
+      "starSign": "Mynock",
+      "cameoAppearance": false
+    },
+    "char_61ae63c4": {
+      "characterID": "char_61ae63c4",
+      "name": "Mon Mothma",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Rebel Alliance",
+      "rank": "Admiral",
+      "forceSensitive": false,
+      "starSign": "Krayt",
+      "cameoAppearance": false
+    },
+    "char_63aa2eae": {
+      "characterID": "char_63aa2eae",
+      "name": "Admiral Piett",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Lieutenant",
+      "forceSensitive": false,
+      "starSign": "Mynock",
+      "cameoAppearance": false
+    },
+    "char_325edcd7": {
+      "characterID": "char_325edcd7",
+      "name": "Chewbacca",
+      "species": "Wookiee",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Private",
+      "forceSensitive": false,
+      "starSign": "Krayt",
+      "cameoAppearance": true
+    },
+    "char_214b3c74": {
+      "characterID": "char_214b3c74",
+      "name": "Lando Calrissian",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": false,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false
+    },
+    "char_9ab511ed": {
+      "characterID": "char_9ab511ed",
+      "name": "Mon Mothma",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Rebel Alliance",
+      "rank": "Private",
+      "forceSensitive": false,
+      "starSign": "Bantha",
+      "cameoAppearance": false
+    },
+    "char_49f98b05": {
+      "characterID": "char_49f98b05",
+      "name": "Wicket W. Warrick",
+      "species": "Ewok",
+      "gender": "Male",
+      "affiliation": "Ewok Tribe",
+      "rank": "Lieutenant",
+      "forceSensitive": false,
+      "starSign": "Krayt",
+      "cameoAppearance": false
+    },
+    "char_b038133c": {
+      "characterID": "char_b038133c",
+      "name": "Admiral Ozzel",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Captain",
+      "forceSensitive": false,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false
+    },
+    "char_717a2db4": {
+      "characterID": "char_717a2db4",
+      "name": "Lobot",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Cloud City",
+      "rank": "Private",
+      "forceSensitive": false,
+      "starSign": "Mynock",
+      "cameoAppearance": false
+    },
+    "char_ddfb113a": {
+      "characterID": "char_ddfb113a",
+      "name": "Leia Organa",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Rebel Alliance",
+      "rank": "Captain",
+      "forceSensitive": true,
+      "starSign": "Krayt",
+      "cameoAppearance": false
+    },
+    "char_6e476d79": {
+      "characterID": "char_6e476d79",
+      "name": "Han Solo",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Captain",
+      "forceSensitive": false,
+      "starSign": "Mynock",
+      "cameoAppearance": false
+    },
+    "char_0483b1e1": {
+      "characterID": "char_0483b1e1",
+      "name": "Lobot",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Cloud City",
+      "rank": "General",
+      "forceSensitive": false,
+      "starSign": "Rancor",
+      "cameoAppearance": false
+    },
+    "char_653934ce": {
+      "characterID": "char_653934ce",
+      "name": "Emperor Palpatine",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Lieutenant",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false
+    },
+    "char_178d7a6b": {
+      "characterID": "char_178d7a6b",
+      "name": "R2-D2",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Private",
+      "forceSensitive": false,
+      "starSign": "Mynock",
+      "cameoAppearance": false
+    },
+    "char_47fd8764": {
+      "characterID": "char_47fd8764",
+      "name": "Jabba the Hutt",
+      "species": "Hutt",
+      "gender": "Male",
+      "affiliation": "Hutt Cartel",
+      "rank": "Captain",
+      "forceSensitive": false,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false
+    },
+    "char_10a8ecb6": {
+      "characterID": "char_10a8ecb6",
+      "name": "Leia Organa",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false
+    },
+    "char_4f833e0a": {
+      "characterID": "char_4f833e0a",
+      "name": "Darth Vader",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "forceSensitive": true
+    },
+    "char_f0517e68": {
+      "characterID": "char_f0517e68",
+      "name": "Obi-Wan Kenobi",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "forceSensitive": true
+    },
+    "char_8efb27a9": {
+      "characterID": "char_8efb27a9",
+      "name": "Grand Moff Tarkin",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "forceSensitive": false
+    },
+    "char_b67e8fc2": {
+      "characterID": "char_b67e8fc2",
+      "name": "Yoda",
+      "species": "Unknown",
+      "gender": "Male",
+      "affiliation": "Jedi Order",
+      "forceSensitive": true
+    }
+  },
+  "jedis": {
+    "char_20bf383c": {
+      "characterID": "char_20bf383c",
+      "name": "Luke Skywalker",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false,
+      "lightsaberColor": "Yellow",
+      "midiChlorianCount": 17771,
+      "jediRank": "Padawan"
+    }
+  },
+  "siths": {
+    "char_4f833e0a": {
+      "characterID": "char_4f833e0a",
+      "name": "Darth Vader",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "forceSensitive": true,
+      "darkSideLevel": 95,
+      "apprenticeOf": "Emperor Palpatine",
+      "sithTitle": "Darth"
+    },
+    "char_a613232c": {
+      "characterID": "char_a613232c",
+      "name": "Emperor Palpatine",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Captain",
+      "forceSensitive": true,
+      "starSign": "Bantha",
+      "cameoAppearance": false,
+      "darkSideLevel": 100,
+      "apprenticeOf": "",
+      "sithTitle": "Darth"
+    }
+  },
+  "droids": {
+    "droid_a15facf7": {
+      "characterID": "droid_a15facf7",
+      "name": "R2-D2",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "Unknown",
+      "primaryFunction": "Unknown",
+      "owner": "",
+      "memoryWipes": 0
+    },
+    "droid_7dc6a1c4": {
+      "characterID": "droid_7dc6a1c4",
+      "name": "C-3PO",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "Unknown",
+      "primaryFunction": "Unknown",
+      "owner": "",
+      "memoryWipes": 0
+    },
+    "droid_218cfdcf": {
+      "characterID": "droid_218cfdcf",
+      "name": "E-1188",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Death Watch",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "EG-6 Power",
+      "primaryFunction": "Maintenance",
+      "owner": "",
+      "memoryWipes": 10
+    },
+    "droid_de99e551": {
+      "characterID": "droid_de99e551",
+      "name": "M-2827",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Mandalorians",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "MSE Mouse",
+      "primaryFunction": "Translator",
+      "owner": "",
+      "memoryWipes": 7
+    },
+    "droid_9a2e170c": {
+      "characterID": "droid_9a2e170c",
+      "name": "R-9201",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Banking Clan",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "R2 Series",
+      "primaryFunction": "Maintenance",
+      "owner": "",
+      "memoryWipes": 1
+    },
+    "droid_cf4328de": {
+      "characterID": "droid_cf4328de",
+      "name": "A-3504",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Trade Federation",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "ASP Labor",
+      "primaryFunction": "Mining",
+      "owner": "",
+      "memoryWipes": 8
+    },
+    "droid_5e252963": {
+      "characterID": "droid_5e252963",
+      "name": "R-9005",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "R2 Series",
+      "primaryFunction": "Translator",
+      "owner": "",
+      "memoryWipes": 5
+    }
+  },
+  "planets": {
+    "planet_8a2b56b0": {
+      "planetID": "planet_8a2b56b0",
+      "planetName": "Planet-6038",
+      "starSystem": "Corellia",
+      "climate": "Toxic",
+      "population": 4068116918,
+      "affiliation": "Galactic Empire",
+      "orbitalPeriodDays": 391.322395960109
+    },
+    "planet_a7dc3650": {
+      "planetID": "planet_a7dc3650",
+      "planetName": "Planet-2133",
+      "starSystem": "Utapau",
+      "climate": "Gaseous",
+      "population": 6657355760,
+      "affiliation": "Mandalorians",
+      "orbitalPeriodDays": 981.40961044819
+    },
+    "planet_b45e7e6e": {
+      "planetID": "planet_b45e7e6e",
+      "planetName": "Cloud City",
+      "starSystem": "Bespin",
+      "climate": "Gaseous",
+      "population": 14224713178,
+      "affiliation": "Death Watch",
+      "orbitalPeriodDays": 538.0872142205087
+    },
+    "planet_b8659dd0": {
+      "planetID": "planet_b8659dd0",
+      "planetName": "Death Star",
+      "starSystem": "Mobile",
+      "climate": "Artificial",
+      "population": 1940118223,
+      "affiliation": "Bounty Hunters Guild",
+      "orbitalPeriodDays": 918.7916536297134
+    },
+    "planet_3f7760ec": {
+      "planetID": "planet_3f7760ec",
+      "planetName": "Yavin 4",
+      "starSystem": "Yavin",
+      "climate": "Jungle",
+      "population": 6675042115,
+      "affiliation": "Crimson Dawn",
+      "orbitalPeriodDays": 216.80637374564003
+    },
+    "planet_b4d2f53b": {
+      "planetID": "planet_b4d2f53b",
+      "planetName": "Hoth",
+      "starSystem": "Hoth",
+      "climate": "Frozen",
+      "population": 4548828192,
+      "affiliation": "Galactic Empire",
+      "orbitalPeriodDays": 765.5649162922148
+    },
+    "planet_3371f91d": {
+      "planetID": "planet_3371f91d",
+      "planetName": "Planet-6413",
+      "starSystem": "Corellia",
+      "climate": "Ocean",
+      "population": 15759139559,
+      "affiliation": "Bounty Hunters Guild",
+      "orbitalPeriodDays": 256.6150225610341
+    },
+    "planet_689b3e4d": {
+      "planetID": "planet_689b3e4d",
+      "planetName": "Jabba's Palace",
+      "starSystem": "Tatoo",
+      "climate": "Desert",
+      "population": 19633480602,
+      "affiliation": "Imperial Remnant",
+      "orbitalPeriodDays": 947.4758782239561
+    },
+    "planet_16961334": {
+      "planetID": "planet_16961334",
+      "planetName": "Death Star",
+      "starSystem": "Mobile",
+      "climate": "Artificial",
+      "population": 818804383,
+      "affiliation": "Galactic Empire",
+      "orbitalPeriodDays": 845.1901012155481
+    },
+    "planet_334559ce": {
+      "planetID": "planet_334559ce",
+      "planetName": "Yavin 4",
+      "starSystem": "Yavin",
+      "climate": "Jungle",
+      "population": 3132356954,
+      "affiliation": "Death Watch",
+      "orbitalPeriodDays": 538.4393197929166
+    },
+    "planet_8dfdf744": {
+      "planetID": "planet_8dfdf744",
+      "planetName": "Tatooine",
+      "starSystem": "Tatoo",
+      "climate": "Desert",
+      "population": 4019948187,
+      "affiliation": "Rebel Alliance",
+      "orbitalPeriodDays": 983.3142090474345
+    },
+    "planet_1df0462d": {
+      "planetID": "planet_1df0462d",
+      "planetName": "Alderaan",
+      "starSystem": "Alderaan",
+      "climate": "Temperate",
+      "population": 4279201677,
+      "affiliation": "Galactic Empire",
+      "orbitalPeriodDays": 629.5698888772002
+    },
+    "planet_4650844d": {
+      "planetID": "planet_4650844d",
+      "planetName": "Dagobah",
+      "starSystem": "Dagobah",
+      "climate": "Swamp",
+      "population": 9640128164,
+      "affiliation": "Mandalorians",
+      "orbitalPeriodDays": 326.03971905342837
+    },
+    "planet_714335c0": {
+      "planetID": "planet_714335c0",
+      "planetName": "Bespin",
+      "starSystem": "Bespin",
+      "climate": "Gaseous",
+      "population": 11612615555,
+      "affiliation": "Crimson Dawn",
+      "orbitalPeriodDays": 986.0987948909343
+    },
+    "planet_908040cf": {
+      "planetID": "planet_908040cf",
+      "planetName": "Endor",
+      "starSystem": "Endor",
+      "climate": "Forest",
+      "population": 2272782991,
+      "affiliation": "Death Watch",
+      "orbitalPeriodDays": 852.8662039572539
+    },
+    "planet_9678bf38": {
+      "planetID": "planet_9678bf38",
+      "planetName": "Death Star II",
+      "starSystem": "Endor",
+      "climate": "Artificial",
+      "population": 2850232839,
+      "affiliation": "Hutt Cartel",
+      "orbitalPeriodDays": 411.308271268215
+    }
+  },
+  "spaceships": {
+    "ship_948e686d": {
+      "shipID": "ship_948e686d",
+      "model": "Millennium Falcon",
+      "shipClass": "Freighter",
+      "speedRating": 1.1039319231534033,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Millennium Falcon-2790"
+    },
+    "ship_affa671b": {
+      "shipID": "ship_affa671b",
+      "model": "Executor-class",
+      "shipClass": "Super Star Destroyer",
+      "speedRating": 1.3044286308655166,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Executor"
+    },
+    "ship_6691cbe2": {
+      "shipID": "ship_6691cbe2",
+      "model": "Firespray-31",
+      "shipClass": "Patrol Craft",
+      "speedRating": 0.9178177170004107,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Slave I"
+    },
+    "ship_9b4bc9a9": {
+      "shipID": "ship_9b4bc9a9",
+      "model": "GR-75",
+      "shipClass": "Transport",
+      "speedRating": 0.613077332561434,
+      "hyperdriveEquipped": true,
+      "uniqueName": "GR-75 Medium Transport"
+    },
+    "ship_65ec0d6d": {
+      "shipID": "ship_65ec0d6d",
+      "model": "Slave I",
+      "shipClass": "Destroyer",
+      "speedRating": 0.5758824942873219,
+      "hyperdriveEquipped": false,
+      "uniqueName": "Slave I-1241"
+    },
+    "ship_12ca858a": {
+      "shipID": "ship_12ca858a",
+      "model": "Nebulon-B Frigate",
+      "shipClass": "Transport",
+      "speedRating": 1.109621086928708,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Nebulon-B Frigate-7570"
+    },
+    "ship_2883607d": {
+      "shipID": "ship_2883607d",
+      "model": "A-Wing",
+      "shipClass": "Interceptor",
+      "speedRating": 0.5032330675271397,
+      "hyperdriveEquipped": true,
+      "uniqueName": "A-Wing-8454"
+    },
+    "ship_4876e7ab": {
+      "shipID": "ship_4876e7ab",
+      "model": "Lambda",
+      "shipClass": "Shuttle",
+      "speedRating": 1.9359764612895098,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Lambda-class Shuttle"
+    },
+    "ship_1ea45ac8": {
+      "shipID": "ship_1ea45ac8",
+      "model": "Slave I",
+      "shipClass": "Assault Ship",
+      "speedRating": 0.7321952379110962,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Slave I-1958"
+    },
+    "ship_09c0ae0f": {
+      "shipID": "ship_09c0ae0f",
+      "model": "Imperial-class",
+      "shipClass": "Star Destroyer",
+      "speedRating": 0.5914363572147737,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Imperial Star Destroyer"
+    },
+    "ship_a6f84833": {
+      "shipID": "ship_a6f84833",
+      "model": "YT-1300 Freighter",
+      "shipClass": "Freighter",
+      "speedRating": 1.2588270410731481,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Millennium Falcon"
+    },
+    "ship_365c7e35": {
+      "shipID": "ship_365c7e35",
+      "model": "CR90 Corvette",
+      "shipClass": "Corvette",
+      "speedRating": 0.698684855549701,
+      "hyperdriveEquipped": true,
+      "uniqueName": "Tantive IV"
+    },
+    "ship_fef47ed7": {
+      "shipID": "ship_fef47ed7",
+      "model": "T-65 X-Wing",
+      "shipClass": "Starfighter",
+      "speedRating": 1.0235132524467727,
+      "hyperdriveEquipped": true,
+      "uniqueName": "X-Wing Red Five"
+    }
+  },
+  "factions": {
+    "faction_c3d6f510": {
+      "factionID": "faction_c3d6f510",
+      "name": "Death Watch",
+      "leader": "",
+      "primaryGoal": "Galactic Domination",
+      "ideology": "Authoritarian Control"
+    },
+    "faction_f875319a": {
+      "factionID": "faction_f875319a",
+      "name": "Corporate Sector Authority",
+      "leader": "",
+      "primaryGoal": "Freedom",
+      "ideology": "Warrior Culture"
+    },
+    "faction_658aab36": {
+      "factionID": "faction_658aab36",
+      "name": "Bounty Hunters Guild",
+      "leader": "",
+      "primaryGoal": "Balance",
+      "ideology": "Criminal Enterprise"
+    },
+    "faction_afeb441b": {
+      "factionID": "faction_afeb441b",
+      "name": "Galactic Empire",
+      "leader": "",
+      "primaryGoal": "Balance",
+      "ideology": "Isolationist"
+    },
+    "faction_1d38f31b": {
+      "factionID": "faction_1d38f31b",
+      "name": "Black Sun",
+      "leader": "",
+      "primaryGoal": "Peace",
+      "ideology": "Authoritarian Control"
+    }
+  },
+  "battles": {
+    "battle_ba9c1354": {
+      "battleID": "battle_ba9c1354",
+      "name": "Battle of Yavin",
+      "outcome": "Rebel Alliance Victory",
+      "battleDate": "1978-01-02",
+      "casualties": 2000,
+      "factions": []
+    },
+    "battle_1e1a0c67": {
+      "battleID": "battle_1e1a0c67",
+      "name": "Battle of Hoth",
+      "outcome": "Empire Victory",
+      "battleDate": "1980-08-17",
+      "casualties": 1500,
+      "factions": []
+    },
+    "battle_38a0403d": {
+      "battleID": "battle_38a0403d",
+      "name": "Battle of Endor",
+      "outcome": "Rebel Alliance Victory",
+      "battleDate": "1980-03-02",
+      "casualties": 5000,
+      "factions": []
+    },
+    "battle_a604fead": {
+      "battleID": "battle_a604fead",
+      "name": "Defense of Planet-2133",
+      "outcome": "Rebel Alliance Victory",
+      "battleDate": "1977-02-20",
+      "casualties": 3853,
+      "factions": []
+    },
+    "battle_13c3a7c7": {
+      "battleID": "battle_13c3a7c7",
+      "name": "Battle of Endor",
+      "outcome": "Rebel Alliance Victory",
+      "battleDate": "1977-10-20",
+      "casualties": 5000,
+      "factions": []
+    },
+    "battle_b7a41dba": {
+      "battleID": "battle_b7a41dba",
+      "name": "Battle of Yavin",
+      "outcome": "Rebel Alliance Victory",
+      "battleDate": "1979-11-19",
+      "casualties": 2000,
+      "factions": []
+    },
+    "battle_e885c504": {
+      "battleID": "battle_e885c504",
+      "name": "Duel on Cloud City",
+      "outcome": "Empire Victory",
+      "battleDate": "1978-04-22",
+      "casualties": 5,
+      "factions": []
+    },
+    "battle_82954354": {
+      "battleID": "battle_82954354",
+      "name": "Raid on Death Star",
+      "outcome": "Stalemate",
+      "battleDate": "1978-07-05",
+      "casualties": 7491,
+      "factions": []
+    }
+  },
+  "events": {
+    "event_8258a1cb": {
+      "eventID": "event_8258a1cb",
+      "description": "Princess Leia hides Death Star plans in R2-D2",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_ddfb113a",
+        "droid_a15facf7"
+      ],
+      "location": "ship_365c7e35"
+    },
+    "event_7c618b02": {
+      "eventID": "event_7c618b02",
+      "description": "R2-D2 and C-3PO escape to Tatooine",
+      "timestamp": "0 BBY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "droid_a15facf7",
+        "droid_7dc6a1c4"
+      ],
+      "location": "planet_8dfdf744"
+    },
+    "event_8142584b": {
+      "eventID": "event_8142584b",
+      "description": "Luke Skywalker discovers Obi-Wan Kenobi's message",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_f0517e68",
+        "droid_a15facf7"
+      ],
+      "location": "planet_8dfdf744"
+    },
+    "event_4ceebc3b": {
+      "eventID": "event_4ceebc3b",
+      "description": "The Empire destroys Alderaan",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_4f833e0a",
+        "char_8efb27a9",
+        "char_ddfb113a"
+      ],
+      "location": "planet_1df0462d"
+    },
+    "event_7af3cacf": {
+      "eventID": "event_7af3cacf",
+      "description": "Obi-Wan Kenobi is killed by Darth Vader",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_f0517e68",
+        "char_4f833e0a",
+        "char_20bf383c"
+      ],
+      "location": "planet_b8659dd0"
+    },
+    "event_84433535": {
+      "eventID": "event_84433535",
+      "description": "Luke destroys the Death Star",
+      "timestamp": "0 BBY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_6e476d79"
+      ],
+      "location": "planet_b8659dd0",
+      "battle": "Battle of Yavin"
+    },
+    "event_dc5bec7a": {
+      "eventID": "event_dc5bec7a",
+      "description": "The Empire attacks Rebel base on Hoth",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_ddfb113a",
+        "char_6e476d79",
+        "char_4f833e0a"
+      ],
+      "location": "planet_b4d2f53b",
+      "battle": "Battle of Hoth"
+    },
+    "event_de455040": {
+      "eventID": "event_de455040",
+      "description": "Luke begins training with Yoda on Dagobah",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_b67e8fc2"
+      ],
+      "location": "planet_4650844d"
+    },
+    "event_7d93e610": {
+      "eventID": "event_7d93e610",
+      "description": "Han Solo and crew arrive in Cloud City",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_6e476d79",
+        "char_ddfb113a",
+        "char_214b3c74"
+      ],
+      "location": "planet_b45e7e6e"
+    },
+    "event_66cdd9d9": {
+      "eventID": "event_66cdd9d9",
+      "description": "Han Solo is frozen in carbonite",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_6e476d79",
+        "char_4f833e0a",
+        "char_ddfb113a",
+        "char_214b3c74"
+      ],
+      "location": "planet_b45e7e6e"
+    },
+    "event_d314508d": {
+      "eventID": "event_d314508d",
+      "description": "Darth Vader reveals he is Luke's father",
+      "timestamp": "3 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_4f833e0a"
+      ],
+      "location": "planet_b45e7e6e",
+      "quote": "No, I am your father."
+    },
+    "event_6b143528": {
+      "eventID": "event_6b143528",
+      "description": "Luke escapes Cloud City with Leia and Lando",
+      "timestamp": "3 ABY",
+      "significanceLevel": "Medium",
+      "participants": [
+        "char_20bf383c",
+        "char_ddfb113a",
+        "char_214b3c74"
+      ],
+      "location": "planet_b45e7e6e",
+      "ship": "ship_a6f84833"
+    },
+    "event_56b851c3": {
+      "eventID": "event_56b851c3",
+      "description": "Rescue of Han Solo from Jabba's Palace",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_ddfb113a",
+        "char_6e476d79",
+        "char_f75c4685"
+      ],
+      "location": "planet_689b3e4d"
+    },
+    "event_cb0d992d": {
+      "eventID": "event_cb0d992d",
+      "description": "Yoda dies and confirms Vader is Luke's father",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_b67e8fc2"
+      ],
+      "location": "planet_4650844d"
+    },
+    "event_fcb68018": {
+      "eventID": "event_fcb68018",
+      "description": "Luke learns Leia is his twin sister",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_ddfb113a"
+      ],
+      "location": "planet_908040cf"
+    },
+    "event_27fb5baf": {
+      "eventID": "event_27fb5baf",
+      "description": "Battle of Endor begins",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_ddfb113a",
+        "char_6e476d79",
+        "char_214b3c74"
+      ],
+      "location": "planet_908040cf",
+      "battle": "Battle of Endor"
+    },
+    "event_1ec08fcb": {
+      "eventID": "event_1ec08fcb",
+      "description": "Luke confronts Emperor Palpatine and Darth Vader",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_4f833e0a",
+        "char_a613232c"
+      ],
+      "location": "planet_9678bf38"
+    },
+    "event_861c564f": {
+      "eventID": "event_861c564f",
+      "description": "Darth Vader turns against the Emperor and saves Luke",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_4f833e0a",
+        "char_a613232c"
+      ],
+      "location": "planet_9678bf38"
+    },
+    "event_3607b838": {
+      "eventID": "event_3607b838",
+      "description": "Rebels destroy the second Death Star",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_214b3c74"
+      ],
+      "location": "planet_9678bf38",
+      "ship": "ship_a6f84833"
+    },
+    "event_151275b6": {
+      "eventID": "event_151275b6",
+      "description": "Celebration of the fall of the Empire",
+      "timestamp": "4 ABY",
+      "significanceLevel": "High",
+      "participants": [
+        "char_20bf383c",
+        "char_ddfb113a",
+        "char_6e476d79",
+        "char_214b3c74"
+      ],
+      "location": "planet_908040cf"
+    }
+  },
+  "force_abilities": {
+    "ability_17fdea5b": {
+      "abilityID": "ability_17fdea5b",
+      "name": "Force Bond",
+      "type": "Defensive",
+      "difficultyLevel": 9,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_41749f87": {
+      "abilityID": "ability_41749f87",
+      "name": "Force Jump",
+      "type": "Light Side",
+      "difficultyLevel": 5,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_31d4a7c6": {
+      "abilityID": "ability_31d4a7c6",
+      "name": "Force Valor",
+      "type": "Control",
+      "difficultyLevel": 6,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_967de3d9": {
+      "abilityID": "ability_967de3d9",
+      "name": "Battle Meditation",
+      "type": "Light Side",
+      "difficultyLevel": 9,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_e8f8afc6": {
+      "abilityID": "ability_e8f8afc6",
+      "name": "Force Shield",
+      "type": "Light Side",
+      "difficultyLevel": 1,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_a106f365": {
+      "abilityID": "ability_a106f365",
+      "name": "Mind Trick",
+      "type": "Universal",
+      "difficultyLevel": 5,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_e108d176": {
+      "abilityID": "ability_e108d176",
+      "name": "Force Lightning",
+      "type": "Offensive",
+      "difficultyLevel": 6,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_71ece627": {
+      "abilityID": "ability_71ece627",
+      "name": "Force Jump",
+      "type": "Dark Side",
+      "difficultyLevel": 3,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_ae8c70f3": {
+      "abilityID": "ability_ae8c70f3",
+      "name": "Force Ghost",
+      "type": "Universal",
+      "difficultyLevel": 9,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_fbf71e34": {
+      "abilityID": "ability_fbf71e34",
+      "name": "Force Push",
+      "type": "Offensive",
+      "difficultyLevel": 2,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_d947e3bd": {
+      "abilityID": "ability_d947e3bd",
+      "name": "Force Jump",
+      "type": "Offensive",
+      "difficultyLevel": 6,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_4b2b5098": {
+      "abilityID": "ability_4b2b5098",
+      "name": "Force Jump",
+      "type": "Universal",
+      "difficultyLevel": 3,
+      "isLightSide": false,
+      "isDarkSide": true
+    },
+    "ability_f8ea74eb": {
+      "abilityID": "ability_f8ea74eb",
+      "name": "Force Vision",
+      "type": "Defensive",
+      "difficultyLevel": 6,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_bf46093c": {
+      "abilityID": "ability_bf46093c",
+      "name": "Battle Meditation",
+      "type": "Defensive",
+      "difficultyLevel": 6,
+      "isLightSide": true,
+      "isDarkSide": false
+    },
+    "ability_f3d510bc": {
+      "abilityID": "ability_f3d510bc",
+      "name": "Force Projection",
+      "type": "Alter",
+      "difficultyLevel": 4,
+      "isLightSide": false,
+      "isDarkSide": true
+    }
+  },
+  "lightsabers": {
+    "saber_fcbffffa": {
+      "weaponID": "saber_fcbffffa",
+      "name": "Lightsaber of 3662",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 99.52412065861925,
+      "color": "Red",
+      "hiltDesign": "Lightwhip"
+    },
+    "saber_39e93daf": {
+      "weaponID": "saber_39e93daf",
+      "name": "Lightsaber of 1406",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 83.58721326836414,
+      "color": "White",
+      "hiltDesign": "Lightwhip"
+    },
+    "saber_47f94f01": {
+      "weaponID": "saber_47f94f01",
+      "name": "Lightsaber of 5065",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 85.33611419188944,
+      "color": "Green",
+      "hiltDesign": "Lightwhip"
+    },
+    "saber_e7c81d6b": {
+      "weaponID": "saber_e7c81d6b",
+      "name": "Lightsaber of 1634",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 97.17186502675563,
+      "color": "Purple",
+      "hiltDesign": "Cross-guard"
+    },
+    "saber_ed28232b": {
+      "weaponID": "saber_ed28232b",
+      "name": "Lightsaber of 8541",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 86.99316848891837,
+      "color": "Purple",
+      "hiltDesign": "Cross-guard"
+    }
+  },
+  "artifacts": {
+    "artifact_636ad87a": {
+      "artifactID": "artifact_636ad87a",
+      "name": "Darth Vader's Lightsaber",
+      "originEra": "Imperial Era",
+      "forceRelated": true
+    },
+    "artifact_e63a71f8": {
+      "artifactID": "artifact_e63a71f8",
+      "name": "Emperor's Cane",
+      "originEra": "Imperial Era",
+      "forceRelated": true
+    },
+    "artifact_638b6f79": {
+      "artifactID": "artifact_638b6f79",
+      "name": "[Faction] Battle Plans",
+      "originEra": "Unknown",
+      "forceRelated": true
+    },
+    "artifact_b106c262": {
+      "artifactID": "artifact_b106c262",
+      "name": "Emperor's Cane",
+      "originEra": "Imperial Era",
+      "forceRelated": true
+    },
+    "artifact_f8000987": {
+      "artifactID": "artifact_f8000987",
+      "name": "Emperor's Cane",
+      "originEra": "Imperial Era",
+      "forceRelated": true
+    }
+  },
+  "technologies": {
+    "tech_40ff934e": {
+      "technologyID": "tech_40ff934e",
+      "techType": "Superlaser",
+      "inventor": "Imperial Engineers",
+      "functionDescription": "Planet-destroying weapon"
+    },
+    "tech_109caa2e": {
+      "technologyID": "tech_109caa2e",
+      "techType": "Tractor Beam",
+      "inventor": "Unknown",
+      "functionDescription": "Gravitational capture beam"
+    },
+    "tech_66a93232": {
+      "technologyID": "tech_66a93232",
+      "techType": "Transportation",
+      "inventor": "Republic Scientists",
+      "functionDescription": "Hyperspace navigation"
+    },
+    "tech_708f863c": {
+      "technologyID": "tech_708f863c",
+      "techType": "Superlaser",
+      "inventor": "Imperial Engineers",
+      "functionDescription": "Planet-destroying weapon"
+    },
+    "tech_d3c5a8fb": {
+      "technologyID": "tech_d3c5a8fb",
+      "techType": "Lightsaber",
+      "inventor": "Ancient Jedi",
+      "functionDescription": "Energy blade weapon"
+    }
+  },
+  "vehicles": {
+    "vehicle_34a2f887": {
+      "vehicleID": "vehicle_34a2f887",
+      "type": "Walker",
+      "speed": 378.34663353961224,
+      "terrainType": "Multi-terrain"
+    },
+    "vehicle_da7538f6": {
+      "vehicleID": "vehicle_da7538f6",
+      "type": "AT-AT Walker",
+      "speed": 60.0,
+      "terrainType": "Ground"
+    },
+    "vehicle_6b5c36b2": {
+      "vehicleID": "vehicle_6b5c36b2",
+      "type": "Hover Craft",
+      "speed": 447.51412466409414,
+      "terrainType": "Air"
+    },
+    "vehicle_f4b1b559": {
+      "vehicleID": "vehicle_f4b1b559",
+      "type": "Troop Transport",
+      "speed": 369.7720777036303,
+      "terrainType": "Urban"
+    },
+    "vehicle_4e5a2d9f": {
+      "vehicleID": "vehicle_4e5a2d9f",
+      "type": "Jabba's Sail Barge",
+      "speed": 100.0,
+      "terrainType": "Desert"
+    }
+  },
+  "missions": {
+    "mission_db0bf5bb": {
+      "missionID": "mission_db0bf5bb",
+      "missionType": "Reconnaissance",
+      "missionGoal": "Recover valuable artifact",
+      "successRate": 38.08724423996497
+    },
+    "mission_adffe018": {
+      "missionID": "mission_adffe018",
+      "missionType": "Sabotage",
+      "missionGoal": "Destroy enemy installation",
+      "successRate": 49.94240170842629
+    },
+    "mission_4ac7fc63": {
+      "missionID": "mission_4ac7fc63",
+      "missionType": "Retrieval",
+      "missionGoal": "Secure new base location",
+      "successRate": 68.47391701538115
+    },
+    "mission_0fabe034": {
+      "missionID": "mission_0fabe034",
+      "missionType": "Rescue",
+      "missionGoal": "Establish alliance with local faction",
+      "successRate": 62.05403524789133
+    },
+    "mission_bd8be682": {
+      "missionID": "mission_bd8be682",
+      "missionType": "Sabotage",
+      "missionGoal": "Capture enemy leader",
+      "successRate": 37.25680310254808
+    }
+  },
+  "creatures": {
+    "creature_4df98590": {
+      "creatureID": "creature_4df98590",
+      "speciesName": "Krayt Dragon",
+      "habitat": "Urban",
+      "dangerLevel": 4.473681566695734
+    },
+    "creature_b3c76316": {
+      "creatureID": "creature_b3c76316",
+      "speciesName": "Wookiee",
+      "habitat": "Space",
+      "dangerLevel": 4.784543240502329
+    },
+    "creature_fc1cdf29": {
+      "creatureID": "creature_fc1cdf29",
+      "speciesName": "Dewback",
+      "habitat": "Volcanic",
+      "dangerLevel": 0.9394758135787052
+    },
+    "creature_379691eb": {
+      "creatureID": "creature_379691eb",
+      "speciesName": "Opee Sea Killer",
+      "habitat": "Volcanic",
+      "dangerLevel": 6.366114472081377
+    },
+    "creature_7ffe3d4a": {
+      "creatureID": "creature_7ffe3d4a",
+      "speciesName": "Krayt Dragon",
+      "habitat": "Ice",
+      "dangerLevel": 8.202392298912976
+    }
+  },
+  "relationships": [
+    {
+      "relationshipType": "biologicalParentOf",
+      "parent": "char_4f833e0a",
+      "child": "char_20bf383c"
+    },
+    {
+      "relationshipType": "sibling",
+      "sibling1": "char_20bf383c",
+      "sibling2": "char_ddfb113a"
+    },
+    {
+      "relationshipType": "biologicalParentOf",
+      "parent": "char_4f833e0a",
+      "child": "char_ddfb113a"
+    },
+    {
+      "relationshipType": "hasSidekick",
+      "character": "char_6e476d79",
+      "sidekick": "char_325edcd7"
+    },
+    {
+      "relationshipType": "ownedBy",
+      "droid": "droid_a15facf7",
+      "owner": "char_20bf383c"
+    },
+    {
+      "relationshipType": "ownedBy",
+      "droid": "droid_7dc6a1c4",
+      "owner": "char_20bf383c"
+    },
+    {
+      "relationshipType": "pilotedBy",
+      "ship": "ship_a6f84833",
+      "pilot": "char_6e476d79"
+    }
+  ],
+  "timelines": {
+    "episode_4": [
+      {
+        "eventID": "event_8258a1cb",
+        "description": "Princess Leia hides Death Star plans in R2-D2",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_ddfb113a",
+          "droid_a15facf7"
+        ],
+        "location": "ship_365c7e35"
+      },
+      {
+        "eventID": "event_7c618b02",
+        "description": "R2-D2 and C-3PO escape to Tatooine",
+        "timestamp": "0 BBY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "droid_a15facf7",
+          "droid_7dc6a1c4"
+        ],
+        "location": "planet_8dfdf744"
+      },
+      {
+        "eventID": "event_8142584b",
+        "description": "Luke Skywalker discovers Obi-Wan Kenobi's message",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_f0517e68",
+          "droid_a15facf7"
+        ],
+        "location": "planet_8dfdf744"
+      },
+      {
+        "eventID": "event_4ceebc3b",
+        "description": "The Empire destroys Alderaan",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_4f833e0a",
+          "char_8efb27a9",
+          "char_ddfb113a"
+        ],
+        "location": "planet_1df0462d"
+      },
+      {
+        "eventID": "event_7af3cacf",
+        "description": "Obi-Wan Kenobi is killed by Darth Vader",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_f0517e68",
+          "char_4f833e0a",
+          "char_20bf383c"
+        ],
+        "location": "planet_b8659dd0"
+      },
+      {
+        "eventID": "event_84433535",
+        "description": "Luke destroys the Death Star",
+        "timestamp": "0 BBY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_6e476d79"
+        ],
+        "location": "planet_b8659dd0",
+        "battle": "Battle of Yavin"
+      }
+    ],
+    "episode_5": [
+      {
+        "eventID": "event_dc5bec7a",
+        "description": "The Empire attacks Rebel base on Hoth",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_ddfb113a",
+          "char_6e476d79",
+          "char_4f833e0a"
+        ],
+        "location": "planet_b4d2f53b",
+        "battle": "Battle of Hoth"
+      },
+      {
+        "eventID": "event_de455040",
+        "description": "Luke begins training with Yoda on Dagobah",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_b67e8fc2"
+        ],
+        "location": "planet_4650844d"
+      },
+      {
+        "eventID": "event_7d93e610",
+        "description": "Han Solo and crew arrive in Cloud City",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_6e476d79",
+          "char_ddfb113a",
+          "char_214b3c74"
+        ],
+        "location": "planet_b45e7e6e"
+      },
+      {
+        "eventID": "event_66cdd9d9",
+        "description": "Han Solo is frozen in carbonite",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_6e476d79",
+          "char_4f833e0a",
+          "char_ddfb113a",
+          "char_214b3c74"
+        ],
+        "location": "planet_b45e7e6e"
+      },
+      {
+        "eventID": "event_d314508d",
+        "description": "Darth Vader reveals he is Luke's father",
+        "timestamp": "3 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_4f833e0a"
+        ],
+        "location": "planet_b45e7e6e",
+        "quote": "No, I am your father."
+      },
+      {
+        "eventID": "event_6b143528",
+        "description": "Luke escapes Cloud City with Leia and Lando",
+        "timestamp": "3 ABY",
+        "significanceLevel": "Medium",
+        "participants": [
+          "char_20bf383c",
+          "char_ddfb113a",
+          "char_214b3c74"
+        ],
+        "location": "planet_b45e7e6e",
+        "ship": "ship_a6f84833"
+      }
+    ],
+    "episode_6": [
+      {
+        "eventID": "event_56b851c3",
+        "description": "Rescue of Han Solo from Jabba's Palace",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_ddfb113a",
+          "char_6e476d79",
+          "char_f75c4685"
+        ],
+        "location": "planet_689b3e4d"
+      },
+      {
+        "eventID": "event_cb0d992d",
+        "description": "Yoda dies and confirms Vader is Luke's father",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_b67e8fc2"
+        ],
+        "location": "planet_4650844d"
+      },
+      {
+        "eventID": "event_fcb68018",
+        "description": "Luke learns Leia is his twin sister",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_ddfb113a"
+        ],
+        "location": "planet_908040cf"
+      },
+      {
+        "eventID": "event_27fb5baf",
+        "description": "Battle of Endor begins",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_ddfb113a",
+          "char_6e476d79",
+          "char_214b3c74"
+        ],
+        "location": "planet_908040cf",
+        "battle": "Battle of Endor"
+      },
+      {
+        "eventID": "event_1ec08fcb",
+        "description": "Luke confronts Emperor Palpatine and Darth Vader",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_4f833e0a",
+          "char_a613232c"
+        ],
+        "location": "planet_9678bf38"
+      },
+      {
+        "eventID": "event_861c564f",
+        "description": "Darth Vader turns against the Emperor and saves Luke",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_4f833e0a",
+          "char_a613232c"
+        ],
+        "location": "planet_9678bf38"
+      },
+      {
+        "eventID": "event_3607b838",
+        "description": "Rebels destroy the second Death Star",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_214b3c74"
+        ],
+        "location": "planet_9678bf38",
+        "ship": "ship_a6f84833"
+      },
+      {
+        "eventID": "event_151275b6",
+        "description": "Celebration of the fall of the Empire",
+        "timestamp": "4 ABY",
+        "significanceLevel": "High",
+        "participants": [
+          "char_20bf383c",
+          "char_ddfb113a",
+          "char_6e476d79",
+          "char_214b3c74"
+        ],
+        "location": "planet_908040cf"
+      }
+    ]
+  }
+}

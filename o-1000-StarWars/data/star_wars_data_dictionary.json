@@ -1,0 +1,290 @@
+{
+  "overview": {
+    "description": "This dataset contains information about the Star Wars original trilogy (Episodes IV-VI) including characters, locations, events, and relationships.",
+    "dataVersion": "1.0",
+    "moviesIncluded": [
+      "Episode IV: A New Hope (1977)",
+      "Episode V: The Empire Strikes Back (1980)",
+      "Episode VI: Return of the Jedi (1983)"
+    ],
+    "abbreviations": {
+      "BBY": "Before Battle of Yavin - Years before the destruction of the first Death Star in Episode IV",
+      "ABY": "After Battle of Yavin - Years after the destruction of the first Death Star in Episode IV",
+      "0 BBY": "The year of the Battle of Yavin (Death Star destruction) in Episode IV",
+      "3 ABY": "Approximately when the events of Empire Strikes Back occur",
+      "4 ABY": "Approximately when the events of Return of the Jedi occur"
+    }
+  },
+  "entities": {
+    "characters": {
+      "description": "Individuals that appear in the Star Wars universe",
+      "fields": {
+        "characterID": "Unique identifier for the character",
+        "name": "Character's name",
+        "species": "Character's species or race",
+        "gender": "Character's gender",
+        "affiliation": "Organization or faction the character belongs to",
+        "rank": "Character's position or title within their organization",
+        "forceSensitive": "Boolean indicating if the character can use the Force",
+        "starSign": "Fictional star sign within the Star Wars universe",
+        "cameoAppearance": "Boolean indicating if the character appears briefly"
+      }
+    },
+    "jedis": {
+      "description": "Force-sensitive characters aligned with the light side",
+      "fields": {
+        "characterID": "Reference to the base character",
+        "lightsaberColor": "Color of their lightsaber (typically blue, green, or purple)",
+        "midiChlorianCount": "Fictional measure of Force potential",
+        "jediRank": "Rank within the Jedi Order (Padawan, Knight, Master, etc.)"
+      }
+    },
+    "siths": {
+      "description": "Force-sensitive characters aligned with the dark side",
+      "fields": {
+        "characterID": "Reference to the base character",
+        "darkSideLevel": "Measure of dark side corruption (0-100)",
+        "apprenticeOf": "Their Sith master (if applicable)",
+        "sithTitle": "Sith title (typically 'Darth')"
+      }
+    },
+    "droids": {
+      "description": "Robotic characters",
+      "fields": {
+        "characterID": "Reference to the base character",
+        "modelNumber": "Droid model or series designation",
+        "primaryFunction": "Main purpose the droid was built for",
+        "owner": "Character who owns or is associated with the droid",
+        "memoryWipes": "Number of times the droid's memory has been reset"
+      }
+    },
+    "planets": {
+      "description": "Celestial bodies that serve as locations",
+      "fields": {
+        "planetID": "Unique identifier for the planet",
+        "planetName": "Name of the planet",
+        "starSystem": "Star system the planet belongs to",
+        "climate": "Predominant climate type",
+        "population": "Approximate number of inhabitants",
+        "affiliation": "Faction controlling the planet",
+        "orbitalPeriodDays": "Days required for one orbit around its star"
+      }
+    },
+    "spaceships": {
+      "description": "Vehicles capable of space travel",
+      "fields": {
+        "shipID": "Unique identifier for the ship",
+        "model": "Ship's model designation",
+        "shipClass": "Category of spaceship",
+        "speedRating": "Relative speed capability",
+        "hyperdriveEquipped": "Boolean indicating FTL travel capability",
+        "uniqueName": "Specific name for notable ships",
+        "canTravelInterstellar": "Boolean indicating capability for interstellar travel"
+      }
+    },
+    "factions": {
+      "description": "Political or military organizations",
+      "fields": {
+        "factionID": "Unique identifier for the faction",
+        "name": "Name of the organization",
+        "leader": "Character leading the faction",
+        "primaryGoal": "Main objective of the faction",
+        "ideology": "Guiding principles of the faction"
+      }
+    },
+    "battles": {
+      "description": "Military conflicts",
+      "fields": {
+        "battleID": "Unique identifier for the battle",
+        "name": "Name of the battle",
+        "outcome": "Result of the conflict",
+        "battleDate": "Date when the battle occurred",
+        "casualties": "Approximate number of deaths",
+        "factions": "List of factions involved in the battle"
+      }
+    },
+    "events": {
+      "description": "Significant moments in the timeline",
+      "fields": {
+        "eventID": "Unique identifier for the event",
+        "description": "What happened during the event",
+        "timestamp": "When the event occurred (BBY/ABY format)",
+        "significanceLevel": "Importance of the event (Low/Medium/High/Galactic)",
+        "participants": "Characters involved in the event",
+        "location": "Where the event took place",
+        "battle": "Associated battle (if applicable)",
+        "quote": "Memorable quote from the event",
+        "ship": "Associated ship (if applicable)"
+      }
+    },
+    "force_abilities": {
+      "description": "Powers that Force-sensitive characters can use",
+      "fields": {
+        "abilityID": "Unique identifier for the ability",
+        "name": "Name of the Force power",
+        "type": "Category of ability",
+        "difficultyLevel": "Difficulty to master (1-10)",
+        "isLightSide": "Boolean indicating light side association",
+        "isDarkSide": "Boolean indicating dark side association"
+      }
+    },
+    "lightsabers": {
+      "description": "Energy sword weapons used by Jedi and Sith",
+      "fields": {
+        "weaponID": "Unique identifier for the lightsaber",
+        "name": "Name of the lightsaber (if notable)",
+        "weaponType": "Always 'Lightsaber'",
+        "destructiveCapacity": "Measure of weapon power",
+        "color": "Color of the lightsaber blade",
+        "hiltDesign": "Style of the lightsaber handle"
+      }
+    },
+    "artifacts": {
+      "description": "Notable objects of significance",
+      "fields": {
+        "artifactID": "Unique identifier for the artifact",
+        "name": "Name of the artifact",
+        "originEra": "Time period when the artifact was created",
+        "forceRelated": "Boolean indicating if connected to the Force"
+      }
+    },
+    "technologies": {
+      "description": "Scientific and technological developments",
+      "fields": {
+        "technologyID": "Unique identifier for the technology",
+        "techType": "Category of technology",
+        "inventor": "Creator of the technology",
+        "functionDescription": "What the technology does"
+      }
+    },
+    "vehicles": {
+      "description": "Ground, air, or sea transportation",
+      "fields": {
+        "vehicleID": "Unique identifier for the vehicle",
+        "type": "Model or category of vehicle",
+        "speed": "Maximum speed in appropriate units",
+        "terrainType": "Environment the vehicle operates in"
+      }
+    },
+    "creatures": {
+      "description": "Non-sentient life forms",
+      "fields": {
+        "creatureID": "Unique identifier for the creature",
+        "speciesName": "Type of creature",
+        "habitat": "Environment where the creature lives",
+        "dangerLevel": "Threat level (0.1-10.0)"
+      }
+    },
+    "missions": {
+      "description": "Objectives undertaken by characters",
+      "fields": {
+        "missionID": "Unique identifier for the mission",
+        "missionType": "Category of mission",
+        "missionGoal": "Objective of the mission",
+        "successRate": "Probability of success (0-100)"
+      }
+    }
+  },
+  "relationships": {
+    "description": "Connections between entities",
+    "types": {
+      "biologicalParentOf": "Genetic parent-child relationship",
+      "sibling": "Characters who share at least one parent",
+      "hasSidekick": "Character with a loyal companion",
+      "ownedBy": "Droid belonging to a character",
+      "pilotedBy": "Ship operated by a character",
+      "apprenticeOf": "Force user trained by another Force user",
+      "memberOf": "Character belonging to a faction"
+    }
+  },
+  "timelines": {
+    "description": "Chronological sequences of events from each film",
+    "episode_4": "Events from Episode IV: A New Hope (0 BBY)",
+    "episode_5": "Events from Episode V: The Empire Strikes Back (3 ABY)",
+    "episode_6": "Events from Episode VI: Return of the Jedi (4 ABY)"
+  },
+  "keyEvents": {
+    "destructionOfAlderaan": {
+      "description": "The Empire destroys Princess Leia's home planet",
+      "film": "Episode IV: A New Hope",
+      "timestamp": "0 BBY",
+      "characters": [
+        "Darth Vader",
+        "Grand Moff Tarkin",
+        "Princess Leia"
+      ]
+    },
+    "battleOfYavin": {
+      "description": "The Rebels destroy the first Death Star",
+      "film": "Episode IV: A New Hope",
+      "timestamp": "0 BBY",
+      "characters": [
+        "Luke Skywalker",
+        "Han Solo",
+        "Darth Vader"
+      ]
+    },
+    "battleOfHoth": {
+      "description": "The Empire attacks the Rebel base on Hoth",
+      "film": "Episode V: The Empire Strikes Back",
+      "timestamp": "3 ABY",
+      "characters": [
+        "Luke Skywalker",
+        "Princess Leia",
+        "Han Solo",
+        "Darth Vader"
+      ]
+    },
+    "iAmYourFather": {
+      "description": "Darth Vader reveals to Luke that he is his father",
+      "film": "Episode V: The Empire Strikes Back",
+      "timestamp": "3 ABY",
+      "characters": [
+        "Luke Skywalker",
+        "Darth Vader"
+      ],
+      "quote": "No, I am your father."
+    },
+    "hanSoloCarbonite": {
+      "description": "Han Solo is frozen in carbonite",
+      "film": "Episode V: The Empire Strikes Back",
+      "timestamp": "3 ABY",
+      "characters": [
+        "Han Solo",
+        "Princess Leia",
+        "Darth Vader",
+        "Boba Fett"
+      ]
+    },
+    "jabbaPalace": {
+      "description": "Rescue of Han Solo from Jabba the Hutt",
+      "film": "Episode VI: Return of the Jedi",
+      "timestamp": "4 ABY",
+      "characters": [
+        "Luke Skywalker",
+        "Princess Leia",
+        "Han Solo",
+        "Jabba the Hutt"
+      ]
+    },
+    "vaderRedemption": {
+      "description": "Darth Vader turns against the Emperor to save Luke",
+      "film": "Episode VI: Return of the Jedi",
+      "timestamp": "4 ABY",
+      "characters": [
+        "Luke Skywalker",
+        "Darth Vader",
+        "Emperor Palpatine"
+      ]
+    },
+    "battleOfEndor": {
+      "description": "The Rebels destroy the second Death Star",
+      "film": "Episode VI: Return of the Jedi",
+      "timestamp": "4 ABY",
+      "characters": [
+        "Lando Calrissian",
+        "Admiral Ackbar"
+      ]
+    }
+  }
+}

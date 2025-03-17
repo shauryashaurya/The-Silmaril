@@ -1,0 +1,495 @@
+{
+  "characters": {
+    "char_1f68a004": {
+      "characterID": "char_1f68a004",
+      "name": "Jabba the Hutt",
+      "species": "Hutt",
+      "gender": "Male",
+      "affiliation": "Hutt Cartel",
+      "rank": "Admiral",
+      "forceSensitive": true,
+      "starSign": "Krayt",
+      "cameoAppearance": false
+    },
+    "char_b7c82fc7": {
+      "characterID": "char_b7c82fc7",
+      "name": "Leia Organa",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Rebel Alliance",
+      "rank": "Captain",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false,
+      "isRebelMember": true,
+      "isEmpireMember": false
+    },
+    "char_e900f588": {
+      "characterID": "char_e900f588",
+      "name": "Darth Vader",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Private",
+      "forceSensitive": true,
+      "starSign": "Mynock",
+      "cameoAppearance": false,
+      "isRebelMember": false,
+      "isEmpireMember": true
+    },
+    "char_70429249": {
+      "characterID": "char_70429249",
+      "name": "Emperor Palpatine",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false,
+      "isRebelMember": false,
+      "isEmpireMember": true
+    },
+    "char_9113d9bf": {
+      "characterID": "char_9113d9bf",
+      "name": "Han Solo",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Captain",
+      "forceSensitive": false,
+      "starSign": "Bantha",
+      "cameoAppearance": false,
+      "isRebelMember": true,
+      "isEmpireMember": false
+    },
+    "char_d3845322": {
+      "characterID": "char_d3845322",
+      "name": "Obi-Wan Kenobi",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Lieutenant",
+      "forceSensitive": true,
+      "starSign": "Mynock",
+      "cameoAppearance": false,
+      "isRebelMember": true,
+      "isEmpireMember": false
+    },
+    "char_ea6b3253": {
+      "characterID": "char_ea6b3253",
+      "name": "C-3PO",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Admiral",
+      "forceSensitive": false,
+      "starSign": "Krayt",
+      "cameoAppearance": false,
+      "isRebelMember": true,
+      "isEmpireMember": false
+    },
+    "char_f9a92bde": {
+      "characterID": "char_f9a92bde",
+      "name": "R2-D2",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Lieutenant",
+      "forceSensitive": false,
+      "starSign": "Mynock",
+      "cameoAppearance": false,
+      "isRebelMember": true,
+      "isEmpireMember": false
+    },
+    "char_46f6f34f": {
+      "characterID": "char_46f6f34f",
+      "name": "Darth Vader",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Private",
+      "forceSensitive": true,
+      "starSign": "Krayt",
+      "cameoAppearance": true,
+      "isRebelMember": false,
+      "isEmpireMember": true
+    },
+    "char_0b3e8566": {
+      "characterID": "char_0b3e8566",
+      "name": "Emperor Palpatine",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false,
+      "isRebelMember": false,
+      "isEmpireMember": true
+    },
+    "char_9e495bb8": {
+      "characterID": "char_9e495bb8",
+      "name": "Luke Skywalker",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Unknown",
+      "cameoAppearance": false,
+      "isRebelMember": true,
+      "isEmpireMember": false
+    }
+  },
+  "jedis": {
+    "char_1f68a004": {
+      "characterID": "char_1f68a004",
+      "name": "Jabba the Hutt",
+      "species": "Hutt",
+      "gender": "Male",
+      "affiliation": "Hutt Cartel",
+      "rank": "Admiral",
+      "forceSensitive": true,
+      "starSign": "Krayt",
+      "cameoAppearance": false,
+      "lightsaberColor": "Yellow",
+      "midiChlorianCount": 12554,
+      "jediRank": "Grand Master"
+    },
+    "char_b7c82fc7": {
+      "characterID": "char_b7c82fc7",
+      "name": "Leia Organa",
+      "species": "Human",
+      "gender": "Female",
+      "affiliation": "Rebel Alliance",
+      "rank": "Captain",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false,
+      "lightsaberColor": "Purple",
+      "midiChlorianCount": 10664,
+      "jediRank": "Master"
+    },
+    "char_9e495bb8": {
+      "characterID": "char_9e495bb8",
+      "name": "Luke Skywalker",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Rebel Alliance",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Unknown",
+      "cameoAppearance": false,
+      "lightsaberColor": "Green",
+      "midiChlorianCount": 9133,
+      "jediRank": "Padawan"
+    }
+  },
+  "siths": {
+    "char_e900f588": {
+      "characterID": "char_e900f588",
+      "name": "Darth Vader",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Private",
+      "forceSensitive": true,
+      "starSign": "Mynock",
+      "cameoAppearance": false,
+      "darkSideLevel": 82,
+      "apprenticeOf": "",
+      "sithTitle": "Darth"
+    },
+    "char_70429249": {
+      "characterID": "char_70429249",
+      "name": "Emperor Palpatine",
+      "species": "Human",
+      "gender": "Male",
+      "affiliation": "Galactic Empire",
+      "rank": "Commander",
+      "forceSensitive": true,
+      "starSign": "Sarlacc",
+      "cameoAppearance": false,
+      "darkSideLevel": 73,
+      "apprenticeOf": "",
+      "sithTitle": ""
+    }
+  },
+  "droids": {
+    "droid_5e1a1a21": {
+      "characterID": "droid_5e1a1a21",
+      "name": "R-3803",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Mandalorians",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "R5 Astromech",
+      "primaryFunction": "Protocol",
+      "owner": "",
+      "memoryWipes": 2
+    },
+    "droid_23afb269": {
+      "characterID": "droid_23afb269",
+      "name": "E-5422",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Trade Federation",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "EV-9D9 Supervisor",
+      "primaryFunction": "Mining",
+      "owner": "",
+      "memoryWipes": 3
+    },
+    "droid_6ed1d1cf": {
+      "characterID": "droid_6ed1d1cf",
+      "name": "2-4752",
+      "species": "Droid",
+      "gender": "Programming",
+      "affiliation": "Rebel Alliance",
+      "rank": "Technical Unit",
+      "forceSensitive": false,
+      "starSign": "None",
+      "cameoAppearance": false,
+      "modelNumber": "2-1B Medical",
+      "primaryFunction": "Astromech",
+      "owner": "",
+      "memoryWipes": 6
+    }
+  },
+  "planets": {
+    "planet_02cf06c6": {
+      "planetID": "planet_02cf06c6",
+      "planetName": "Dagobah",
+      "starSystem": "Dagobah",
+      "climate": "Swamp",
+      "population": 11674352911,
+      "affiliation": "Galactic Empire",
+      "orbitalPeriodDays": 929.5957632242505
+    },
+    "planet_e30ec88e": {
+      "planetID": "planet_e30ec88e",
+      "planetName": "Alderaan",
+      "starSystem": "Alderaan",
+      "climate": "Temperate",
+      "population": 15646929650,
+      "affiliation": "Galactic Empire",
+      "orbitalPeriodDays": 906.8618399554753
+    },
+    "planet_76dce3cf": {
+      "planetID": "planet_76dce3cf",
+      "planetName": "Dagobah",
+      "starSystem": "Dagobah",
+      "climate": "Swamp",
+      "population": 10905824424,
+      "affiliation": "Trade Federation",
+      "orbitalPeriodDays": 795.2461966911936
+    },
+    "planet_1aa9789d": {
+      "planetID": "planet_1aa9789d",
+      "planetName": "Alderaan",
+      "starSystem": "Alderaan",
+      "climate": "Temperate",
+      "population": 17774999492,
+      "affiliation": "Bounty Hunters Guild",
+      "orbitalPeriodDays": 489.23515852717514
+    },
+    "planet_877d589a": {
+      "planetID": "planet_877d589a",
+      "planetName": "Tatooine",
+      "starSystem": "Tatoo",
+      "climate": "Desert",
+      "population": 15808546452,
+      "affiliation": "Mandalorians",
+      "orbitalPeriodDays": 1144.4411638666663
+    }
+  },
+  "spaceships": {},
+  "factions": {
+    "faction_86d06408": {
+      "factionID": "faction_86d06408",
+      "name": "Trade Federation",
+      "leader": "",
+      "primaryGoal": "Galactic Domination",
+      "ideology": "Democracy"
+    },
+    "faction_af258fab": {
+      "factionID": "faction_af258fab",
+      "name": "Trade Federation",
+      "leader": "",
+      "primaryGoal": "Freedom",
+      "ideology": "Criminal Enterprise"
+    },
+    "faction_913a735c": {
+      "factionID": "faction_913a735c",
+      "name": "Galactic Empire",
+      "leader": "",
+      "primaryGoal": "Balance",
+      "ideology": "Authoritarian Control"
+    }
+  },
+  "battles": {
+    "battle_d9e5357a": {
+      "battleID": "battle_d9e5357a",
+      "name": "Siege of Dagobah",
+      "outcome": "Inconclusive",
+      "battleDate": "1979-07-20",
+      "casualties": 8669,
+      "factions": [
+        "faction_86d06408",
+        "faction_af258fab"
+      ]
+    },
+    "battle_1b6d2369": {
+      "battleID": "battle_1b6d2369",
+      "name": "Siege of Tatooine",
+      "outcome": "Empire Victory",
+      "battleDate": "1976-11-24",
+      "casualties": 8797,
+      "factions": [
+        "faction_86d06408",
+        "faction_af258fab"
+      ]
+    },
+    "battle_c8f4eec4": {
+      "battleID": "battle_c8f4eec4",
+      "name": "Battle of Dagobah",
+      "outcome": "Empire Victory",
+      "battleDate": "1976-05-14",
+      "casualties": 7533,
+      "factions": [
+        "faction_86d06408",
+        "faction_af258fab"
+      ]
+    }
+  },
+  "events": {
+    "event_c39e4c61": {
+      "eventID": "event_c39e4c61",
+      "description": "A secret alliance forms between [Faction] and [Faction]",
+      "timestamp": "1981-12-09",
+      "significanceLevel": "Low"
+    },
+    "event_1dfa1495": {
+      "eventID": "event_1dfa1495",
+      "description": "[Character] reveals a shocking truth to [Character]",
+      "timestamp": "1981-05-27",
+      "significanceLevel": "Medium"
+    },
+    "event_d123190f": {
+      "eventID": "event_d123190f",
+      "description": "The [Character] discovers a hidden [Item] on [Planet]",
+      "timestamp": "1978-03-18",
+      "significanceLevel": "High"
+    },
+    "event_1eb723a7": {
+      "eventID": "event_1eb723a7",
+      "description": "[Character] learns to use the Force ability [Force Ability]",
+      "timestamp": "1979-01-04",
+      "significanceLevel": "High"
+    },
+    "event_3ac6be1c": {
+      "eventID": "event_3ac6be1c",
+      "description": "[Character] confronts [Character] during the Battle of [Planet]",
+      "timestamp": "1977-01-08",
+      "significanceLevel": "Low"
+    },
+    "event_a2537120": {
+      "eventID": "event_a2537120",
+      "description": "Darth Vader reveals to Luke Skywalker that he is his father",
+      "timestamp": "3-ABY",
+      "significanceLevel": "High",
+      "location": "Cloud City, Bespin",
+      "participants": [
+        "char_e900f588",
+        "char_9e495bb8"
+      ],
+      "quote": "No, I am your father."
+    }
+  },
+  "force_abilities": {
+    "force_ec1efdbd": {
+      "abilityID": "force_ec1efdbd",
+      "name": "Mind Trick",
+      "abilityType": "Sense",
+      "strengthLevel": 9.521638117344917
+    },
+    "force_57f9391f": {
+      "abilityID": "force_57f9391f",
+      "name": "Mind Trick",
+      "abilityType": "Control",
+      "strengthLevel": 5.749064086764286
+    },
+    "force_66b9ca85": {
+      "abilityID": "force_66b9ca85",
+      "name": "Force Healing",
+      "abilityType": "Defensive",
+      "strengthLevel": 9.360221437019591
+    },
+    "force_9f707ee1": {
+      "abilityID": "force_9f707ee1",
+      "name": "Force Choke",
+      "abilityType": "Control",
+      "strengthLevel": 4.590930699976862
+    },
+    "force_10667562": {
+      "abilityID": "force_10667562",
+      "name": "Battle Meditation",
+      "abilityType": "Sense",
+      "strengthLevel": 9.096526761786508
+    }
+  },
+  "lightsabers": {
+    "saber_ac6e7f15": {
+      "weaponID": "saber_ac6e7f15",
+      "name": "Lightsaber of 8397",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 82.42008391736532,
+      "color": "Green",
+      "hiltDesign": "Standard"
+    },
+    "saber_4769c479": {
+      "weaponID": "saber_4769c479",
+      "name": "Lightsaber of 6539",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 80.42068520014118,
+      "color": "Yellow",
+      "hiltDesign": "Curved"
+    },
+    "saber_ad19f1e3": {
+      "weaponID": "saber_ad19f1e3",
+      "name": "Lightsaber of 4608",
+      "weaponType": "Lightsaber",
+      "destructiveCapacity": 80.14381677970187,
+      "color": "White",
+      "hiltDesign": "Standard"
+    }
+  },
+  "relationships": [
+    {
+      "relationshipType": "biologicalParentOf",
+      "parent": "char_e900f588",
+      "child": "char_9e495bb8"
+    }
+  ],
+  "wielded_by": [
+    {
+      "weapon": "saber_ac6e7f15",
+      "character": "char_1f68a004"
+    },
+    {
+      "weapon": "saber_4769c479",
+      "character": "char_b7c82fc7"
+    },
+    {
+      "weapon": "saber_ad19f1e3",
+      "character": "char_e900f588"
+    }
+  ]
+}
