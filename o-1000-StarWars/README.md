@@ -17,13 +17,16 @@ Created using the mermaid code in [Draw.io](https://app.diagrams.net) `[Arrange>
 </html>     
                 
                 
-                
+## Joseph Campbell's *Monomyth* or The [Hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey)            
+<html>         
+	<img src="./images/Character_Interaction_Network_in_Star_Wars_Trilogy.svg" width="95%" align="center" alt="Character_Interaction_Network_in_Star_Wars_Trilogy, Image © Shaurya Agarwal" />                 
+</html>      
                 
 ## Data  
-The [`.'data`](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-1000-StarWars/data) folder carries a full timeline of all the events of the original trilogy.
-Thanks to [Wookieepedia](https://starwars.fandom.com/wiki/Main_Page).   
-Also tried to model the "Luke, I am your father!" bit.
-The data has several events which can be loaded and streamed to run analysis - which let's you _play_ the movies out, explore event predicates, the whole plot line etc. etc.
+The [`.'data`](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-1000-StarWars/data) folder carries a full timeline of all the events of the original trilogy.   
+Thanks to [Wookieepedia](https://starwars.fandom.com/wiki/Main_Page).      
+Also tried to model the "Luke, I am your father!" bit.   
+The data has several events which can be loaded and streamed to run analysis - which let's you _play_ the movies out, explore event predicates, the whole plot line etc. etc.    
 
 
 ### Data Dictionary
