@@ -17,10 +17,15 @@ Created using the mermaid code in [Draw.io](https://app.diagrams.net) `[Arrange>
 </html>     
                 
                 
-## Joseph Campbell's *Monomyth* or The [Hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey)            
+## Joseph Campbell's *Monomyth* or [The Hero's journey](https://en.wikipedia.org/wiki/Hero%27s_journey)            
 <html>         
 	<img src="./images/Character_Interaction_Network_in_Star_Wars_Trilogy.svg" width="95%" align="center" alt="Character_Interaction_Network_in_Star_Wars_Trilogy, Image © Shaurya Agarwal" />                 
 </html>      
+
+## Networks by Episodes 
+<html>         
+	<img src="./images/Character_Networks_by_Episode.svg" width="95%" align="center" alt="Character_Networks_by_Episode, Image © Shaurya Agarwal" />                 
+</html>     
                 
 ## Data  
 The [`.'data`](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-1000-StarWars/data) folder carries a full timeline of all the events of the original trilogy.   
