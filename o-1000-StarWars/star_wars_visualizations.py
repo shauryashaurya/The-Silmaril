@@ -23,7 +23,7 @@ battles = data['battles']
 relationships = data['relationships']
 timelines = data['timelines']
 
-# 1. Timeline Visualization: Events across the trilogy
+# 1. Timeline Visualization: Events across the trilogy - not fun enough, removed.
 
 
 def timeline_visualization():
@@ -194,8 +194,8 @@ def character_interaction_network():
                                showticklabels=False),
                     yaxis=dict(showgrid=False, zeroline=False,
                                showticklabels=False),
-                    width=1000,
-                    height=800))
+                    width=2600,
+                    height=1200))
 
     return fig
 
