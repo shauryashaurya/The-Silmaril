@@ -242,7 +242,7 @@ def location_frequency():
                  title='Top 10 Most Frequently Featured Locations by Episode')
 
     fig.update_layout(xaxis_title='Location', yaxis_title='Number of Events',
-                      legend_title='Episode', height=600, width=1000)
+                      legend_title='Episode', height=1024, width=1600)
 
     return fig
 
@@ -291,7 +291,7 @@ def character_appearances():
                  barmode='group', title='Top 10 Character Appearances by Episode')
 
     fig.update_layout(xaxis_title='Character', yaxis_title='Number of Appearances',
-                      legend_title='Episode', height=600, width=1000)
+                      legend_title='Episode', height=1024, width=1600)
 
     return fig
 
@@ -341,7 +341,7 @@ def event_significance():
                  })
 
     fig.update_layout(xaxis_title='Episode', yaxis_title='Number of Events',
-                      legend_title='Significance Level', height=600, width=1000)
+                      legend_title='Significance Level', height=1024, width=1600)
 
     return fig
 
@@ -428,8 +428,8 @@ def quote_analysis():
 
     fig.update_layout(
         title='Memorable Quotes in Star Wars Trilogy',
-        height=800,
-        width=1000,
+        height=1024,
+        width=1600,
         showlegend=False
     )
 
@@ -468,7 +468,7 @@ def battle_analysis():
                  title='Casualties in Major Star Wars Battles')
 
     fig.update_layout(xaxis_title='Battle', yaxis_title='Casualties',
-                      legend_title='Outcome', height=600, width=1000)
+                      legend_title='Outcome', height=1024, width=1600)
 
     # Add text annotations for casualty counts
     for i, row in battle_df.iterrows():
@@ -558,8 +558,8 @@ def force_user_analysis():
     fig.update_layout(
         title_text="Force Users in Star Wars Trilogy",
         showlegend=False,
-        height=600,
-        width=1000
+        height=1024,
+        width=1600
     )
 
     return fig
@@ -635,8 +635,8 @@ def ship_analysis():
         xaxis_title="Ship",
         yaxis_title="Number of Appearances",
         legend_title="Ship Class",
-        height=600,
-        width=1000
+        height=1024,
+        width=1600
     )
 
     return fig
@@ -861,8 +861,8 @@ def faction_distribution():
 
     fig.update_layout(
         title_text="Faction Distribution in Star Wars Trilogy",
-        height=600,
-        width=1000
+        height=1024,
+        width=1600
     )
 
     return fig

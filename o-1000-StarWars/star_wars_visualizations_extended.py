@@ -302,7 +302,7 @@ def character_appearances_timeline(data):
 
     fig.update_layout(
         height=800,
-        width=1400
+        width=1600
     )
 
     return fig
@@ -1519,7 +1519,7 @@ def battle_analysis_through_trilogy(data):
         specs=[[{"type": "scatter"}], [{"type": "table"}]],
         subplot_titles=("Battle Scale by Episode", "Battle Details"),
         row_heights=[0.6, 0.4],
-        vertical_spacing=0.1
+        vertical_spacing=0.05
     )
 
     # Add the bubble chart
@@ -1533,8 +1533,8 @@ def battle_analysis_through_trilogy(data):
     )
 
     combined_fig.update_layout(
-        height=800,
-        width=1200,
+        height=1024,
+        width=1600,
         title_text="Battle Analysis Through the Trilogy"
     )
 
