@@ -1,419 +1,169 @@
-# A **Star Wars** Ontology!                    
-        
-## Citation        
-Inspired by [Dorian Smiley's The Star Wars Stack](https://github.com/doriansmiley/TheStarWarsStack) idea, which in turn is inspired by the ["Ticker Symbol: YOU" (channel) video on YouTube](https://www.youtube.com/watch?v=Rq3JjUUgTBI&t=924s)          
-My attempt is to just try and craft an almost simple ontology, not the full blown project, and slowly grow it so it can run simulations and scenarios on the fictional timeline of Star Wars.           
-This is very cool, but just for fun...        
-                
----                
-                
-## Ontology Structure: Core Classes / Entities (Domain Ontology)                
-                
-Below is a conceptual structure, with a **pseudocode** approach.         
-        
-                
-                
-                                                              
-```mermaid                                                              
-graph TD        
-        
-%% Top-down layout, ensuring no colons or pipes in labels.        
-%% We now represent cardinalities in parentheses like (0-To-1), (0-To-Many), etc.        
-        
-%% =========================        
-%% CLASSES AND DATA PROPERTIES        
-%% =========================        
-        
-Character["Character<br>characterID<br>name<br>species<br>gender<br>affiliation<br>rank<br>forceSensitive boolean<br>starSign<br>cameoAppearance boolean"]        
-Jedi["Jedi<br>lightsaberColor<br>midiChlorianCount int<br>jediRank"]        
-Sith["Sith<br>darkSideLevel int<br>apprenticeOf<br>sithTitle"]        
-Droid["Droid<br>modelNumber<br>primaryFunction<br>owner<br>memoryWipes int"]        
-Spaceship["Spaceship<br>shipID<br>model<br>shipClass<br>speedRating float<br>hyperdriveEquipped boolean<br>uniqueName"]        
-Planet["Planet<br>planetID<br>planetName<br>starSystem<br>climate<br>population long<br>affiliation<br>orbitalPeriodDays float"]        
-StarSystem["StarSystem<br>systemID<br>systemName<br>coordinates"]        
-Faction["Faction<br>factionID<br>name<br>leader<br>primaryGoal<br>ideology"]        
-Battle["Battle<br>battleID<br>name<br>outcome<br>battleDate dateTime<br>casualties int"]        
-EventNode["Event<br>eventID<br>description<br>timestamp dateTime<br>significanceLevel"]        
-Weapon["Weapon<br>weaponID<br>name<br>weaponType<br>destructiveCapacity float"]        
-Lightsaber["Lightsaber<br>color<br>hiltDesign"]        
-ForceAbility["ForceAbility<br>abilityID<br>name<br>abilityType<br>strengthLevel float"]        
-Vehicle["Vehicle<br>vehicleID<br>type<br>speed float<br>terrainType"]        
-Mission["Mission<br>missionID<br>missionType<br>missionGoal<br>successRate float"]        
-AllianceBase["AllianceBase<br>baseID<br>name<br>hiddenLocation boolean"]        
-EmpireFacility["EmpireFacility<br>facilityID<br>name<br>securityLevel"]        
-RebelAllianceMember["RebelAllianceMember<br>memberID<br>joinedDate dateTime<br>role"]        
-EmpireMember["EmpireMember<br>memberID<br>joinedDate dateTime<br>rank"]        
-Creature["Creature<br>creatureID<br>speciesName<br>habitat<br>dangerLevel float"]        
-Technology["Technology<br>technologyID<br>techType<br>inventor<br>functionDescription"]        
-Artifact["Artifact<br>artifactID<br>artifactName<br>originEra<br>isCursed boolean<br>powerLevel float"]        
-Holocron["Holocron<br>holocronID<br>keeper<br>containsKnowledge"]        
-SpaceStation["SpaceStation<br>stationID<br>name<br>operationalStatus"]        
-DeathStar["DeathStar<br>weaponCapacity float<br>shieldStatus"]        
-BountyHunter["BountyHunter<br>hunterID<br>notorietyLevel<br>pricePerHunt float<br>lethalEfficiency float"]        
-Smuggler["Smuggler<br>smugglerID<br>smugglingSkill float<br>wantedStatus boolean"]        
-Politician["Politician<br>politicianID<br>politicalAffiliation<br>influenceLevel float"]        
-MilitaryUnit["MilitaryUnit<br>unitID<br>size int<br>deploymentStatus"]        
-SimulationScenario["SimulationScenario<br>scenarioID<br>description<br>outcome"]        
-Prophecy["Prophecy<br>prophecyID<br>prophecyText<br>fulfilled boolean"]        
-        
-%% =========================        
-%% SUBCLASS HIERARCHIES (DOTTED LINES)        
-%% use spaces around subClassOf to avoid parse errors        
-%% =========================        
-        
-Jedi -. subClassOf .-> Character        
-Sith -. subClassOf .-> Character        
-RebelAllianceMember -. subClassOf .-> Character        
-EmpireMember -. subClassOf .-> Character        
-        
-%% =========================        
-%% DISJOINT CLASSES (DOTTED LINES)        
-%% e.g., RebelAllianceMember vs EmpireMember        
-%% =========================        
-        
-RebelAllianceMember -. disjointWith .-> EmpireMember        
-        
-%% =========================        
-%% OBJECT PROPERTIES WITH CARDINALITIES IN PARENS        
-%% =========================        
-        
-Character -- "member_Of (0-To-1)" --> Faction        
-Character -- "leads_Faction (0-To-1)" --> Faction        
-Sith -- "apprentice_To (0-To-1)" --> Character        
-Jedi -- "master_Of (0-To-Many)" --> Character        
-Character -- "participates_In (0-To-Many)" --> Battle        
-Battle -- "located_At (0-To-1)" --> Planet        
-Battle -- "triggers_Event (0-To-Many)" --> EventNode        
-Droid -- "owned_By (0-To-1)" --> Character        
-Spaceship -- "piloted_By (0-To-Many)" --> Character        
-Planet -- "within_System (Exactly-1)" --> StarSystem        
-Weapon -- "wielded_By (0-To-Many)" --> Character        
-Character -- "has_Ability (0-To-Many)" --> ForceAbility        
-Vehicle -- "deployed_In (0-To-Many)" --> Battle        
-Mission -- "assigned_To (0-To-Many)" --> Character        
-Mission -- "mission_Location (0-To-1)" --> Planet        
-Faction -- "operates_Facility (0-To-Many)" --> EmpireFacility        
-Faction -- "owns_Base (0-To-Many)" --> AllianceBase        
-Creature -- "inhabits (0-To-1)" --> Planet        
-Technology -- "invented_By (0-To-1)" --> Character        
-Artifact -- "possessed_By (0-To-1)" --> Character        
-SpaceStation -- "controlled_By (0-To-1)" --> Faction        
-SimulationScenario -- "scenario_Includes (0-To-Many)" --> Battle        
-Prophecy -- "predicts (0-To-Many)" --> EventNode        
-Politician -- "influences (0-To-Many)" --> Faction        
-BountyHunter -- "hunts_Target (0-To-Many)" --> Character        
-Smuggler -- "allied_With (0-To-Many)" --> Character        
-MilitaryUnit -- "commanded_By (0-To-1)" --> Character        
-Holocron -- "guarded_By (0-To-1)" --> Jedi        
-        
-%% Additional expansions        
-Character -- "has_Sidekick (0-To-1)" --> Character        
-Faction -- "allied_With_Faction (0-To-Many)" --> Faction        
-Character -- "spied_On_By (0-To-Many)" --> Droid        
-Lightsaber -- "constructed_By (0-To-1)" --> Jedi        
-Battle -- "incorporates_Vehicle (0-To-Many)" --> Vehicle        
-Smuggler -- "hidden_In (0-To-1)" --> Spaceship        
-BountyHunter -- "steals_From (0-To-Many)" --> Smuggler        
-Jedi -- "studied_Holocron (0-To-Many)" --> Holocron        
-Politician -- "oversees_Unit (0-To-Many)" --> MilitaryUnit        
-Mission -- "protects_Artifact (0-To-Many)" --> Artifact        
-        
-%% =========================        
-%% PROPERTY RESTRICTIONS (DOTTED LINES)        
-%% e.g., short constraints or domain notes        
-%% =========================        
-        
-Droid -. "no_Force_Ability" .-> ForceAbility        
-Lightsaber -. "only_Jedi_Or_Sith" .-> Character        
-Battle -. "min_Factions_2" .-> Faction        
-Sith -. "apprentice_Master_Link" .-> Sith        
-Jedi -. "force_Sensitive_Only" .-> Character        
-         
-```                                                 
-                                                            
----                                  
-                                  
-```pseudocode                                
-// ======================        
-// Star Wars Ontology (Episodes 4,5,6)             
-// ======================        
-        
-// ========== CLASSES (31) ==========        
-        
-Class: Character        
-  - characterID: string        
-  - name: string        
-  - species: string        
-  - gender: string        
-  - affiliation: string        
-  - rank: string        
-  - forceSensitive: boolean        
-  - starSign: string                         
-  - cameoAppearance: boolean                 
-        
-Class: Jedi        
-  - lightsaberColor: string        
-  - midiChlorianCount: int        
-  - jediRank: string                        
-        
-Class: Sith        
-  - darkSideLevel: int        
-  - apprenticeOf: string        
-  - sithTitle: string                       
-        
-Class: Droid        
-  - modelNumber: string        
-  - primaryFunction: string        
-  - owner: string        
-  - memoryWipes: int                        
-        
-Class: Spaceship        
-  - shipID: string        
-  - model: string        
-  - shipClass: string        
-  - speedRating: float        
-  - hyperdriveEquipped: boolean        
-  - uniqueName: string                      
-        
-Class: Planet        
-  - planetID: string        
-  - planetName: string        
-  - starSystem: string        
-  - climate: string        
-  - population: long        
-  - affiliation: string        
-  - orbitalPeriodDays: float                
-        
-Class: StarSystem        
-  - systemID: string        
-  - systemName: string        
-  - coordinates: string        
-        
-Class: Faction        
-  - factionID: string        
-  - name: string        
-  - leader: string        
-  - primaryGoal: string        
-  - ideology: string                        
-        
-Class: Battle        
-  - battleID: string        
-  - name: string        
-  - outcome: string        
-  - battleDate: dateTime        
-  - casualties: int                         
-        
-Class: Event        
-  - eventID: string        
-  - description: string        
-  - timestamp: dateTime        
-  - significanceLevel: string        
-        
-Class: Weapon        
-  - weaponID: string        
-  - name: string        
-  - weaponType: string        
-  - destructiveCapacity: float        
-        
-Class: Lightsaber        
-  - color: string        
-  - hiltDesign: string        
-        
-Class: ForceAbility        
-  - abilityID: string        
-  - name: string        
-  - abilityType: string        
-  - strengthLevel: float        
-        
-Class: Vehicle        
-  - vehicleID: string        
-  - type: string        
-  - speed: float        
-  - terrainType: string        
-        
-Class: Mission        
-  - missionID: string        
-  - missionType: string        
-  - missionGoal: string        
-  - successRate: float        
-        
-Class: AllianceBase        
-  - baseID: string        
-  - name: string        
-  - hiddenLocation: boolean        
-        
-Class: EmpireFacility        
-  - facilityID: string        
-  - name: string        
-  - securityLevel: string        
-        
-Class: RebelAllianceMember        
-  - memberID: string        
-  - joinedDate: dateTime        
-  - role: string        
-        
-Class: EmpireMember        
-  - memberID: string        
-  - joinedDate: dateTime        
-  - rank: string        
-        
-Class: Creature        
-  - creatureID: string        
-  - speciesName: string        
-  - habitat: string        
-  - dangerLevel: float        
-        
-Class: Technology        
-  - technologyID: string        
-  - techType: string        
-  - inventor: string        
-  - functionDescription: string        
-        
-Class: Artifact        
-  - artifactID: string        
-  - originEra: string        
-  - forceRelated: boolean        
-        
-Class: Holocron        
-  - holocronID: string        
-  - keeper: string        
-  - containsKnowledge: string        
-        
-Class: SpaceStation        
-  - stationID: string        
-  - name: string        
-  - operationalStatus: string        
-        
-Class: DeathStar        
-  - weaponCapacity: float        
-  - shieldStatus: string        
-        
-Class: BountyHunter        
-  - hunterID: string        
-  - notorietyLevel: string        
-  - pricePerHunt: float        
-  - lethalEfficiency: float                  
-        
-Class: Smuggler        
-  - smugglerID: string        
-  - smugglingSkill: float        
-  - wantedStatus: boolean        
-        
-Class: Politician        
-  - politicianID: string        
-  - politicalAffiliation: string        
-  - influenceLevel: float        
-        
-Class: MilitaryUnit        
-  - unitID: string        
-  - size: int        
-  - deploymentStatus: string        
-        
-Class: SimulationScenario        
-  - scenarioID: string        
-  - description: string        
-  - outcome: string        
-        
-Class: Prophecy        
-  - prophecyID: string        
-  - prophecyText: string        
-  - fulfilled: boolean        
-        
-// ========== OBJECT PROPERTIES ==========        
-        
-// EXISTING RELATIONSHIPS:        
-Relationship: memberOf (Character → Faction, 0..1)        
-Relationship: leadsFaction (Character → Faction, 0..1)        
-Relationship: apprenticeTo (Sith → Character, 0..1)        
-Relationship: masterOf (Jedi → Character, 0..*)        
-Relationship: participatesIn (Character → Battle, 0..*)        
-Relationship: locatedAt (Battle → Planet, 0..1)        
-Relationship: triggersEvent (Battle → Event, 0..*)        
-Relationship: ownedBy (Droid → Character, 0..1)        
-Relationship: pilotedBy (Spaceship → Character, 0..*)        
-Relationship: withinSystem (Planet → StarSystem, 1..1)        
-Relationship: wieldedBy (Weapon → Character, 0..*)        
-Relationship: hasAbility (Character → ForceAbility, 0..*)        
-Relationship: deployedIn (Vehicle → Battle, 0..*)        
-Relationship: assignedTo (Mission → Character, 0..*)        
-Relationship: missionLocation (Mission → Planet, 0..1)        
-Relationship: operatesFacility (Faction → EmpireFacility, 0..*)        
-Relationship: ownsBase (Faction → AllianceBase, 0..*)        
-Relationship: inhabits (Creature → Planet, 0..1)        
-Relationship: inventedBy (Technology → Character, 0..1)        
-Relationship: possessedBy (Artifact → Character, 0..1)        
-Relationship: controlledBy (SpaceStation → Faction, 0..1)        
-Relationship: scenarioIncludes (SimulationScenario → Battle, 0..*)        
-Relationship: predicts (Prophecy → Event, 0..*)        
-Relationship: influences (Politician → Faction, 0..*)        
-Relationship: huntsTarget (BountyHunter → Character, 0..*)        
-Relationship: alliedWith (Smuggler → Character, 0..*)        
-Relationship: commandedBy (MilitaryUnit → Character, 0..1)        
-Relationship: guardedBy (Holocron → Jedi, 0..1)        
-        
-// 10 NEW RELATIONSHIPS (ADDED PREVIOUSLY):        
-Relationship: hasSidekick (Character → Character, 0..1)        
-Relationship: alliedWithFaction (Faction → Faction, 0..*)        
-Relationship: spiedOnBy (Character → Droid, 0..*)        
-Relationship: constructedBy (Lightsaber → Jedi, 0..1)        
-Relationship: incorporatesVehicle (Battle → Vehicle, 0..*)        
-Relationship: hiddenIn (Smuggler → Spaceship, 0..1)        
-Relationship: stealsFrom (BountyHunter → Smuggler, 0..*)        
-Relationship: studiedHolocron (Jedi → Holocron, 0..*)        
-Relationship: overseesUnit (Politician → MilitaryUnit, 0..*)        
-Relationship: protectsArtifact (Mission → Artifact, 0..*)        
-        
-// ========== RULES & CONSTRAINTS ==========        
-        
-// 1) Subclass constraints:        
-   // Jedi and Sith are subclasses of Character        
-   // => implies Jedi, Sith must also have data properties from Character        
-        
-// 2) Droid cannot have ForceAbility:        
-   // i.e., if "X hasAbility Y" then X cannot be of type Droid        
-        
-// 3) Only Jedi or Sith may have Lightsaber:        
-   // If "WieldedBy(Weapon -> Character)" and Weapon is Lightsaber,        
-   // then Character must be instanceOf(Jedi or Sith).        
-        
-// 4) Each Battle must have at least two Factions involved:        
-   // i.e. (Battle -> factionParticipants) >= 2 in the story sense        
-   // Implementation: "participatesIn" from at least two distinct Factions        
-        
-// 5) A Character can be either RebelAllianceMember or EmpireMember, but not both:        
-   // Disjointness constraint for RebelAllianceMember vs. EmpireMember        
-        
-// 6) If an apprenticeTo(Sith -> Character), that Character must be a Sith or a MasterSith:        
-   // i.e., the "apprenticeTo" references a master who is presumably also a Sith or an advanced Dark Side user        
-        
-// 7) If "Character.forceSensitive = true" => (Character is Jedi or Sith).        
-   // Another approach: only Jedi or Sith can have "forceSensitive = true"        
-        
-// 8) If "spaceship.hyperdriveEquipped = false," it cannot "pilotedBy" any character who travels interstellar:        
-   // This is a domain constraint: a sublight-only ship might be restricted.         
-   // Real logic: "We do not allow Missions to plan hyperdrive routes if spaceship hyperdriveEquipped=false."        
-        
-// 9) If "Battle.outcome = 'AllianceVictory'," then at least one participating faction must be "Rebel Alliance."        
-   // domain logic for storyline        
-        
-//10) If "Sith.darkSideLevel > 80," then "Sith.sithTitle" must exist (e.g., "Darth" or "Dark Lord").        
-                
-// 11) "BountyHunter.lethalEfficiency" must be > 0 if "notorietyLevel" is not 'novice'         
-   // minimal domain logic        
-        
-// 12) "Planet.orbitalPeriodDays < 1000" if "planetName != 'Tatooine'"         
-   // e.g., fictional logic for local system        
-        
-// 13) "Battle.casualties > 0" if "Battle.outcome = 'EmpireVictory'"        
-        
-// 14) If "Faction.ideology = 'Sith Doctrine'," must have "leader" referencing a known Sith        
-        
-// 15) "Mission.successRate <= 100.0"         
-   // typical numeric constraint        
-        
-                 
+#Ontology #11: Smart Building / Facility Management                         
+                                    
+---                                    
+                                    
+## A. High-Level Description                    
+                    
+1. **Domain**: A large commercial or institutional building (or campus) with:                    
+   - **Floors** and **Zones** (subdivisions for occupant grouping).                      
+   - **Equipment** resources (HVAC units, lighting, security devices).                      
+   - **Sensors** (temperature, occupancy, air quality).                      
+   - **OccupantGroups** or individual occupants.                      
+   - **MaintenanceTasks** to keep equipment functional.                      
+   - **SimulationScenarios** (e.g., “What if HVAC fails in Zone 3?”).                      
+                    
+2. **Purpose**: Provide a digital twin or **smart facility** approach, capturing:                    
+   - **Real-time** or near real-time sensor data.                      
+   - **Equipment** statuses (running, off, maintenance).                      
+   - **Occupant** or occupant group patterns for comfort or security.                      
+   - **Maintenance** scheduling.                      
+   - Potential for **simulation** of “what if” equipment fails or occupant density changes.                    
+                    
+3. **Use Cases**:                    
+   - **Real-Time Monitoring**: Summarize sensor readings, occupant comfort, equipment usage.                      
+   - **Energy Efficiency**: Simulate equipment behavior under occupant load changes.                      
+   - **Maintenance**: Identify tasks for failing equipment, assign technicians, or schedule tasks.                      
+   - **Scenario**: “What if occupant density is 30% higher next week in floor 2’s zone B?” and see if HVAC can handle it.                      
+                    
+## B. Pseudocode (Classes, Data Properties, Object Properties, and Constraints)                    
+                    
+```plaintext                    
+// ======================                    
+// CLASSES & DATA PROPERTIES                    
+// ======================                    
+                    
+Class: Building                    
+  - buildingID: string                    
+  - buildingName: string                    
+  - totalFloors: int                    
+  - managementCompany: string                    
+  - energyRating: float                    
+                    
+Class: Floor                    
+  - floorID: string                    
+  - floorNumber: int                    
+  - usableAreaSqFt: float                    
+  - occupancyCapacity: int                    
+                    
+Class: Zone                    
+  - zoneID: string                    
+  - zoneName: string                    
+  - zoneFunction: string    // e.g., Office, Hallway, ServerRoom                    
+  - areaSqFt: float                    
+                    
+Class: EquipmentResource                    
+  - equipmentID: string                    
+  - equipmentType: string  // HVACUnit, Lighting, SecurityCam, etc.                    
+  - status: string         // Running, Off, Maintenance                    
+  - powerRating: float                    
+                    
+Class: Sensor                    
+  - sensorID: string                    
+  - sensorType: string     // Temperature, Occupancy, AirQuality                    
+  - currentReading: float                    
+  - lastUpdateTime: dateTime                    
+                    
+Class: OccupantGroup                    
+  - groupID: string                    
+  - groupName: string                    
+  - occupantCount: int                    
+  - occupantType: string   // e.g., Employees, Visitors                    
+                    
+Class: Occupant                    
+  - occupantID: string                    
+  - occupantName: string                    
+  - occupantRole: string   // e.g., Employee, Guest                    
+  - comfortPreference: float                    
+                    
+Class: MaintenanceTask                    
+  - taskID: string                    
+  - description: string                    
+  - plannedStartTime: dateTime                    
+  - plannedEndTime: dateTime                    
+  - taskStatus: string     // e.g. Scheduled, InProgress, Completed                    
+                    
+Class: Supplier                    
+  - supplierID: string                    
+  - supplierName: string                    
+  - contactEmail: string                    
+                    
+Class: SimulationScenario                    
+  - scenarioID: string                    
+  - scenarioName: string                    
+  - hypothesis: string     // e.g., "HVAC fails in zone 2"                    
+  - predictedOutcome: string                    
+                    
+// ======================                    
+// OBJECT PROPERTIES w/ CARDINALITIES                    
+// ======================                    
+                    
+// Building structure                    
+Relationship: hasFloor (Building → Floor, 1-To-Many)                    
+Relationship: hasZone (Floor → Zone, 0-To-Many)                    
+                    
+// Equipment & Zones                    
+Relationship: locatedIn (EquipmentResource → Zone, 0-To-1)                    
+                    
+// Sensors & Zones or Equipment                    
+Relationship: monitorsZone (Sensor → Zone, 0-To-1)                    
+Relationship: monitorsEquipment (Sensor → EquipmentResource, 0-To-1)                    
+                    
+// Occupants & Zones                    
+Relationship: occupiesZone (Occupant → Zone, 0-To-1)                    
+Relationship: occupantGroupZone (OccupantGroup → Zone, 0-To-Many)                    
+                    
+// Maintenance                    
+Relationship: targetsEquipment (MaintenanceTask → EquipmentResource, 1-To-1)                    
+Relationship: performedBy (MaintenanceTask → Supplier, 0-To-1)                    
+// or if you have Technicians, you can link them, but we keep it simple                    
+                    
+// Building Supplier relationships                    
+Relationship: contractedSupplier (Building → Supplier, 0-To-Many)                    
+                    
+// Simulation & Scenarios                    
+Relationship: scenarioFocus (SimulationScenario → Zone, 0-To-Many)                    
+Relationship: scenarioEquipmentFail (SimulationScenario → EquipmentResource, 0-To-Many)                    
+                    
+// Additional occupant/equipment relationships                    
+Relationship: occupantUsesEquipment (Occupant → EquipmentResource, 0-To-Many)                    
+                    
+// ======================                    
+// SAMPLE RULES/CONSTRAINTS                    
+// ======================                    
+                    
+// 1) If EquipmentResource.status = "Maintenance", sensor readings in that zone might be partial or flagged                    
+// 2) A Floor can have multiple zones but must have at least one if floorNumber > 0                    
+// 3) If occupantCount in OccupantGroup > zoneFunction capacity, occupantGroup must be split                    
+// 4) A MaintenanceTask must have plannedStartTime < plannedEndTime                    
+// 5) If building’s energyRating < X, we might require new sensors or maintenance tasks                    
+// 6) If scenarioFocus references multiple zones, each zone must belong to the same building for the scenario                    
+// 7) occupantUsesEquipment => occupant must be in the same zone or a super-zone for that equipment                    
+// 8) If lastUpdateTime > 24 hours old for a sensor, produce an alert or degrade reliability of currentReading                    
+// 9) Only an EquipmentResource with status="Off" or "Maintenance" can be replaced or upgraded                    
+                    
 ```                    
                     
-### I just thought this was cool                    
+## Explanation & Use Cases                    
                     
-But it is still under development - eventually I want to be able to run scenario simulations for the Star Wars universe.
+- **Classes**:                     
+  - `Building`, `Floor`, `Zone` handle the physical structure.                      
+  - `EquipmentResource` and `Sensor` track the building’s devices.                      
+  - `Occupant` or `OccupantGroup` represent the people.                      
+  - `MaintenanceTask` ties equipment maintenance scheduling.                      
+  - `Supplier` for external contractor references.                      
+  - `SimulationScenario` for what-if logic.                    
+                    
+- **Object Properties** specify cardinalities. E.g., `hasFloor (Building -> Floor, 1-To-Many)` means each building has at least one floor. `scenarioFocus` might reference multiple zones or equipment.                      
+- **Constraints** ensure domain consistency (like sensor reading staleness or occupant group capacity).          
+          
+          
+          
+# How This Ontology Works in Palantir Foundry (Not OWL)          
+          
+- Each **class** becomes a “**Type**” or “Object Type” referencing Foundry datasets or typed transformations (e.g., `Zone`, `EquipmentResource`, `Sensor`).            
+- **Relationships** become typed reference fields: e.g. “EquipmentResource.locatedIn -> zoneID.”            
+- **Constraints** or domain logic are usually enforced via **pipeline transforms** or **code-workbooks** that check if occupant count surpasses a zone’s capacity, etc. If a constraint is violated, you might see pipeline errors or special flags.            
+- **Scenarios**: You can create separate Foundry branches to tweak data properties or relationships (like “Equipment X = status=Maintenance”). Then re-run the pipeline or code-workbook logic to see new outcomes.          
+          
+          
+          
