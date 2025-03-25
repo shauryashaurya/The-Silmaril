@@ -8,7 +8,19 @@ Models a finance system with StockExchanges, ListedCompanies, Stocks, Traders, T
 * “Which stocks belong to which index, and which transactions are in which trading account?”           
 * “Which derivative references which underlying stock, and does it belong to a certain regulatory authority?”           
 * “Which fund invests in which stocks, and which simulation references a specific derivative?”           
-                           
+* “Which derivatives are close to expiration, referencing which underlying stock that belongs to which index?”  
+* “Which traders hold multiple accounts across different brokerages with conflicting compliance policies?”  
+* “Which market alerts referencing which risk model triggered the greatest shift in fund NAV?”  
+* “Which portfolio invests in derivatives and is impacted by a negative scenario simulation?”  
+* “Which listing companies are recognizedBy a certain regulatory authority but are also supervised by a second authority?”  
+* “Which financesim scenario includes which stock exchanges, producing changes in sharePrice > X percent?”  
+* “Which fund invests in conflicting underlying assets that violate some compliance policy?”
+
+**Palantir Foundry Context**:
+- Each entity (StockExchange, ListedCompany, Trader, Fund, Portfolio) is an object type in Foundry.  
+- Code-workbooks or transforms unify transactions, derivative data, risk models, compliance policy references.  
+- Real-time or daily updates can recalc share prices or fund NAV.  
+- Branch merges handle new or changed properties (like adding “shortSellingAllowed = true” to certain accounts).                    
 				           
            
 ---                      

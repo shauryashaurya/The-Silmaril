@@ -8,7 +8,18 @@ Models a CulturalNetwork with Nations, Provinces, Cities, HistoricalSites, Museu
 * “Which city hosts which museum containing which artifacts from which era?”
 * “Which festival organizes which cultural event with which performing arts group?”
 * “Which site is recognized by UNESCO and which cultural simulation references which arts group?”     
+* “Which historical sites recognized by UNESCO have zero city preserving them?”  
+* “Which ethnic groups are featured in the city’s festival lineup, and how does that reflect local tradition?”  
+* “Which media publication invests in city-based cultural programs (like we saw in investsIn property) with the highest event attendance?”  
+* “Which sub-languages or scripts are utilized by certain provinces for official documents?”  
+* “Which cultural events revolve around a single performing arts group but are repeated across multiple festivals?”  
+* “Which monarchy or diplomatic mission supervises tourist attractions with highest popularityIndex?”
 
+**Palantir Foundry Context**:
+- Each **Nation**, **Province**, **City**, **Museum**, **Artifact** is an object type referencing specific datasets.  
+- Merging or referencing external data about UNESCO recognized sites or local language distribution.  
+- Branch approach helps if new domain expansions arrive (like new city or festival data).  
+- Code transforms might detect unsynced references for “site recognized but no host city.”
 ---           
            
 ## **Scenario-based competency questions** for Ontology #19: Cultural & Heritage Management           

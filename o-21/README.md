@@ -5,9 +5,24 @@
 Models a global energy grid with PowerPlants, Lines, Substations, Consumers, Storage, MarketOperator, Contract, LoadSheddingPlans, Simulations, etc.                      
                         
 ## Sample Competency Questions:                        
-“Which power plants feed which transmission lines, eventually supplying which consumer endpoints?”                      
-“Which system is governed by which market operator and contract, and how are we doing carbon offset or compliance with a regulatory standard?”                      
-“Which flood or demand response simulation references which substation or pipeline?”                          
+1. "Which power plants feed which transmission lines, eventually supplying which consumer endpoints?”                      
+1. "Which system is governed by which market operator and contract, and how are we doing carbon offset or compliance with a regulatory standard?”                      
+1. "Which flood or demand response simulation references which substation or pipeline?”      
+1. “Which power plants have an operationalStatus = ‘offline’ but are still connected to a substation that expects supply?”  
+1. “Which consumer endpoints are part of a demand response program that had a curtailment order triggered by extreme weather?”  
+1. “How many carbon credits are traded by the market operator for a single power plant in a season?”  
+1. “Which lines have lineLossPercent over 10.0 and which storages or lines can mitigate that?”  
+1. “Which grid maintenance schedules conflict with load shedding plans for the same substation?”  
+1. “Which distribution feeders rely on an overshadowed power plant from a severe storm scenario?”  
+1. “Which regulatory standards are not complied with by a certain power plant?”  
+1. “Which incident reports are triggered by consumer endpoints with usageKWh above threshold?”  
+1. “Which simulation scenario tests a meltdown condition for a majority of the lines or storages?”
+
+**Palantir Foundry Context**:
+- Each **PowerPlant**, **TransmissionLine**, **Substation**, **ConsumerEndpoint** is an object type referencing pipeline data from real grid logs or predictions.  
+- Code-workbooks might detect lineLoss or usage patterns, generating “CurtailmentOrder” if threshold is exceeded.  
+- Branch approach for new policies or expansions, e.g. “GreenEnergyPolicy,” tested in a separate branch to ensure pipeline transformations remain valid.  
+- Merging results unify the new logic with production.                    
 ---                                      
 ## **Scenario-based competency questions** for Ontology #21: Global Energy Grid & Market Domain                                 
                                  
