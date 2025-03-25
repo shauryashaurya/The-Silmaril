@@ -70,9 +70,130 @@ Below is a conceptual structure, with a **pseudocode** approach.
 ```                                                            
                                                                        
 ---                                             
-                                             
-```pseudocode                                           
-                 
-                   
-                            
-```                           
+                                           
+
+```plaintext
+Class: GlobalFinanceSystem
+  - systemID: string
+  - regionCoverage: string
+  - foundationYear: int              
+  - mainCurrency: string             
+
+Class: StockExchange
+  - exchangeID: string
+  - exchangeName: string
+  - country: string
+  - exchangeVolume: float            
+
+Class: ListedCompany
+  - companyID: string
+  - companyName: string
+  - sector: string
+
+Class: Stock
+  - stockID: string
+  - tickerSymbol: string
+  - sharePrice: float
+
+Class: Trader
+  - traderID: string
+  - traderName: string
+  - licenseID: string
+  - yearsActive: int                 
+
+Class: Brokerage
+  - brokerageID: string
+  - brokerageName: string
+
+Class: TradingAccount
+  - accountID: string
+  - balance: float
+
+Class: Transaction
+  - transactionID: string
+  - transactionDate: dateTime
+  - transactionType: string
+  - quantity: int
+
+Class: MarketIndex
+  - indexID: string
+  - indexName: string
+  - currentValue: float
+
+Class: Derivative
+  - derivativeID: string
+  - derivativeType: string
+  - underlyingAsset: string
+  - expirationDate: dateTime         
+
+Class: RegulatoryAuthority
+  - authorityID: string
+  - authorityName: string
+
+Class: MarketAlert
+  - alertID: string
+  - alertDescription: string
+  - severity: string
+
+Class: RiskModel
+  - modelID: string
+  - modelName: string
+
+Class: Fund
+  - fundID: string
+  - fundName: string
+  - fundType: string
+  - fundNAV: float                   
+
+Class: Portfolio
+  - portfolioID: string
+  - portfolioValue: float
+
+Class: ExchangeEvent
+  - eventID: string
+  - eventType: string
+  - eventTime: dateTime
+
+Class: CompliancePolicy
+  - policyID: string
+  - policyScope: string
+
+Class: FinanceSimulation
+  - simID: string
+  - scenarioDesc: string
+
+// relationships:
+// 1) includesExchange (GlobalFinanceSystem → StockExchange, 1..*)
+// 2) listsCompany (StockExchange → ListedCompany, 0..*)
+// 3) hasStock (ListedCompany → Stock, 1..*)
+// 4) tradesAt (Trader → StockExchange, 0..*)
+// 5) usesBrokerage (Trader → Brokerage, 0..1)
+// 6) holdsAccount (Trader → TradingAccount, 1..*)
+// 7) recordsTransaction (TradingAccount → Transaction, 0..*)
+// 8) belongsToIndex (Stock -> MarketIndex, 0..*)
+// 9) referencesUnderlying (Derivative -> Stock, 0..1)
+// 10) supervisedBy (StockExchange -> RegulatoryAuthority, 0..1)
+// 11) triggersAlert (ExchangeEvent -> MarketAlert, 0..*)
+// 12) appliesModel (RiskModel -> Fund, 0..*)
+// 13) investsIn (Portfolio -> Stock, 0..*)
+// 14) subjectToPolicy (Brokerage -> CompliancePolicy, 0..*)
+// 15) runsSimulation (FinanceSimulation -> StockExchange, 0..*)
+// 16) impactedBy (FinanceSimulation -> Derivative, 0..*)
+// 17) referencingFund (FinanceSimulation -> Fund, 0..1)
+
+Relationship: recognizedBy (Stock → RegulatoryAuthority, 0..*)
+  // e.g., a particular regulatory body recognized a certain stock listing
+
+Relationship: investsDerivative (Portfolio → Derivative, 0..*)  
+  // portfolio invests in derivative instruments as well
+
+Relationship: referencesRisk (MarketAlert → RiskModel, 0..1)  
+  // an alert might reference a risk model that triggered it
+
+Relationship: calculatesNAV (Fund → MarketIndex, 0..*)
+  // a fund might reference an index as a benchmark for NAV calculations
+
+Relationship: influencesAccount (CompliancePolicy → TradingAccount, 0..*)
+  // certain compliance policies can impose restrictions or checks on trading accounts
+```
+                          

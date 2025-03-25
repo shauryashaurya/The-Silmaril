@@ -69,8 +69,144 @@ Below is a conceptual structure, with a **pseudocode** approach.
                                                             
 ---                                  
                                   
-```pseudocode                                
-      
-        
-                 
-```                
+```pseudocode
+Class: CulturalNetwork
+  - networkID: string
+  - region: string
+  - culturalDiversityIndex: float        
+  - predominantReligion: string          
+
+Class: Nation
+  - nationID: string
+  - nationName: string
+  - governanceType: string
+
+Class: Province
+  - provinceID: string
+  - provinceName: string
+  - population: int
+  - localGDP: float                     
+
+Class: City
+  - cityID: string
+  - cityName: string
+  - citySize: string
+  - foundingYear: int                   
+
+Class: HistoricalSite
+  - siteID: string
+  - siteName: string
+  - era: string
+
+Class: Museum
+  - museumID: string
+  - museumName: string
+
+Class: Artifact
+  - artifactID: string
+  - artifactName: string
+  - originDate: date
+
+Class: Festival
+  - festivalID: string
+  - festivalName: string
+  - dateRange: string
+
+Class: Language
+  - languageID: string
+  - languageName: string
+  - scriptType: string
+
+Class: EthnicGroup
+  - groupID: string
+  - groupName: string
+  - tradition: string
+
+Class: CulturalEvent
+  - eventID: string
+  - eventType: string
+  - eventDate: dateTime
+
+Class: TouristAttraction
+  - attractionID: string
+  - attractionName: string
+  - popularityIndex: float
+
+Class: PerformingArtsGroup
+  - artsGroupID: string
+  - groupName: string
+
+Class: MediaPublication
+  - publicationID: string
+  - publicationTitle: string
+
+Class: UNESCOProgram
+  - programID: string
+  - programFocus: string
+
+Class: DiplomaticMission
+  - missionID: string
+  - missionType: string
+
+Class: CultureSimulation
+  - simID: string
+  - scenario: string
+
+// relationships:
+// includesNation (CulturalNetwork → Nation, 1..*)
+// hasProvince (Nation → Province, 1..*)
+// holdsCity (Province → City, 1..*)
+// preservesSite (City → HistoricalSite, 0..*)
+// hostsMuseum (City → Museum, 0..*)
+// exhibitsArtifact (Museum → Artifact, 0..*)
+// organizesFestival (City → Festival, 0..*)
+// spokenLanguage (Nation → Language, 0..*)
+// inhabitedBy (Nation → EthnicGroup, 0..*)
+// organizesEvent (Festival → CulturalEvent, 0..*)
+// hasAttraction (City → TouristAttraction, 0..*)
+// performsIn (PerformingArtsGroup → CulturalEvent, 0..*)
+// publishesMedia (MediaPublication → EthnicGroup, 0..*)
+// recognizedBy (HistoricalSite → UNESCOProgram, 0..1)
+// assignedMission (DiplomaticMission → Nation, 0..*)
+// simFocus (CultureSimulation → Festival, 0..*)
+// referencesArts (CultureSimulation → PerformingArtsGroup, 0..*)
+
+Relationship: capitalCity (Nation → City, 0..1)  
+  // a nation might designate a certain city as its capital
+
+Relationship: supervisesAttraction (TouristAttraction → DiplomaticMission, 0..*)  
+  // scenario: some mission or cultural office oversees tourism, e.g. UNESCO involvement
+
+Relationship: studiedBy (ResearchStudy => ???)  
+  // Not in Ont #19. We'll define new property with existing classes or new relevant classes.
+  // But we don't have "ResearchStudy" here. Let's skip. We'll define 5 new with existing classes:
+
+Relationship: investsIn (MediaPublication → City, 0..*)  
+  // e.g., a media house invests in city cultural programs
+
+Relationship: sponsorsFestival (PerformingArtsGroup → Festival, 0..*)  
+  // a group might sponsor certain festivals
+
+Relationship: tiesLanguage (UNESCOProgram → Language, 0..*)  
+  // UNESCO program supporting or preserving a language
+
+Relationship: referencesDiplomatic (CultureSimulation → DiplomaticMission, 0..*)  
+  // a cultural simulation that references a diplomatic mission scenario
+
+/* 
+Addl object properties:
+1) capitalCity (Nation → City)
+2) supervisesAttraction (TouristAttraction → DiplomaticMission) 
+3) investsIn (MediaPublication → City)
+4) sponsorsFestival (PerformingArtsGroup → Festival)
+5) tiesLanguage (UNESCOProgram → Language)
+
+We'll skip the "referencesDiplomatic" for now, as we have 5 new relationships.
+*/
+
+Relationship: capitalCity (Nation → City, 0..1)
+Relationship: supervisesAttraction (TouristAttraction → DiplomaticMission, 0..*)
+Relationship: investsIn (MediaPublication → City, 0..*)
+Relationship: sponsorsFestival (PerformingArtsGroup → Festival, 0..*)
+Relationship: tiesLanguage (UNESCOProgram → Language, 0..*)
+```
