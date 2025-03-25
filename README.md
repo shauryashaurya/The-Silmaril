@@ -42,8 +42,18 @@ As we get into more interesting Ontology examples, things get even more interest
 	                
 9. [Pharmaceutical Supply Chain *( + Bonus: Ontology Matching)*](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-09)                      
 10. [EPCC / LEMS / PMBoK based ontology for a large construction project](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-10)                      
-                  
-                  
+11. [Smart Building / Facility Management](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-11)                      
+12. [System Monitoring & Maintenance](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-12)                      
+13. [Ecological & Migration Tracking](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-13)                      
+14. [Distribution & Logistics](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-14)                      
+15. [Water Infrastructure & Management ](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-15)                      
+16. [Healthcare Network & Clinical](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-16)                      
+17. [Space Mission & Crew](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-17)                      
+18. [Galactic Trade & Alliance](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-18)                      
+19. [Cultural & Heritage Management](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-19)                      
+20. [Global Finance & Trading](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-20)                      
+21. [Global Energy Grid & Market](https://github.com/shauryashaurya/The-Silmaril/tree/main/o-21)                      
+                    
                   
                   
 # **Star Wars** and **The Lord Of The Rings**                
