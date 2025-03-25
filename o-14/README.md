@@ -1,6 +1,19 @@
 # Ontology #14: Distribution & Logistics Domain                      
                       
----                                 
+## **Competency Questions**
+
+* “Which transport hubs are operating below capacity, and which vehicles are idle?”  
+* “Which shipments have missed their schedule and need re-routing?”  
+* “Which driver is available to take an urgent route if we have a vehicle breakdown?”  
+* “How many supply contracts are active in each distribution network region, and do they align with fleet management constraints?”  
+* “How does seasonal warehouse capacity usage correlate with the location’s temperature control requirement?”  
+* “Which edges in the route graph cause the highest delays?”
+
+**Palantir Foundry Context**:
+- Each **Warehouse**, **TransportHub**, **Vehicle** is an **object type** referencing data sets.  
+- **Shipment** and **SupplyContract** can exist in separate tables, referencing each other by ID.  
+- You can do advanced pipeline logic to compute route distances, or code-workbooks to handle real-time scheduling.  
+- Foundry’s lineage let you see if a rename from “capacity” to “maxCapacity” breaks existing transformations.                                 
                                  
 ## **Scenario-based competency questions** for Ontology #14: Distribution & Logistics Domain                                 
                                  

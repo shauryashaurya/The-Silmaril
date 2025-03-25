@@ -1,6 +1,17 @@
 # Ontology #15: Water Infrastructure & Management           
 
----           
+## Sample Competency Questions:           
+    
+* “Which dams have the highest risk of structural failure if canal flowRate spikes?”  
+* “Which water treatment plants measure poor water quality sensor readings, and does it trigger an alert event?”  
+* “Which flood simulations incorporate which maintenance plan, ensuring minimal overshadowing of supply?”
+
+**Palantir Foundry Context**:
+- **Dam**, **Reservoir**, **Canal**, **PumpStation** each is an object type.  
+- Streaming data from water sensors can transform into “WaterQualitySensor → AlertEvent.”  
+- The pipeline merges partial data from different sources, e.g., dam logs, canal flow metrics, and a code transform triggers an alert if a threshold is exceeded.  
+- The branching approach helps you test new or updated data merges before production.
+	
            
 ## **Scenario-based competency questions** for Ontology #15: Water Infrastructure & Management           
            
