@@ -1,4 +1,4 @@
-#Ontology #11: Smart Building / Facility Management                         
+# **Ontology #11** - **Smart Building / Facility Management**                       
                                     
 ---                                    
                                     
