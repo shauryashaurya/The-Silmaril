@@ -1,278 +1,327 @@
-# Ontology #21 Structure                                                                          
-                                                                                
-```mermaid                                                                                
-%% ONTOLOGY #21: Global Energy Grid & Market          
-          
-classDiagram          
-          
-class GlobalEnergyGrid {          
-  string gridID          
-  string region          
-}          
-          
-class PowerPlant {          
-  string plantID          
-  string plantType          
-  float capacityMW          
-}          
-          
-class TransmissionLine {          
-  string lineID          
-  float voltageLevel          
-  float lengthKm          
-}          
-          
-class Substation {          
-  string subID          
-  string substationName          
-  float maxLoad          
-}          
-          
-class DistributionFeeder {          
-  string feederID          
-  string feederName          
-  float lineVoltage          
-}          
-          
-class ConsumerEndpoint {          
-  string endpointID          
-  string endpointType          
-  float usageKWh          
-}          
-          
-class StorageFacility {          
-  string facilityID          
-  string storageType          
-  float capacityKWh          
-}          
-          
-class MarketOperator {          
-  string operatorID          
-  string operatorName          
-}          
-          
-class EnergyContract {          
-  string contractID          
-  string contractTerms          
-  float contractPrice          
-}          
-          
-class LoadSheddingPlan {          
-  string planID          
-  string planDescription          
-}          
-          
-class IncidentReport {          
-  string reportID          
-  string incidentType          
-  string severity          
-}          
-          
-class WeatherSystem {          
-  string weatherID          
-  string weatherType          
-  string intensityLevel          
-}          
-          
-class CurtailmentOrder {          
-  string orderID          
-  string reason          
-  float reductionPercent          
-}          
-          
-class GridMaintenance {          
-  string maintenanceID          
-  dateTime scheduleDate          
-  string status          
-}          
-          
-class EmissionSensor {          
-  string sensorID          
-  float emissionRate          
-  string location          
-}          
-          
-class CarbonCredit {          
-  string creditID          
-  float creditValue          
-}          
-          
-class RegulatoryStandard {          
-  string standardID          
-  string standardName          
-}          
-          
-class EnergySimulation {          
-  string simID          
-  string scenarioType          
-}          
-          
-class DemandResponseProgram {          
-  string programID          
-  string programName          
-  int enrollment          
-}          
-          
-GlobalEnergyGrid "1" --o "1..*" PowerPlant : hasPlant          
-PowerPlant "1" --o "0..*" TransmissionLine : connectsLine          
-TransmissionLine "1" --o "0..1" Substation : hasSubstation          
-Substation "1" --o "1..*" DistributionFeeder : distributesFeeder          
-DistributionFeeder "1" --o "0..*" ConsumerEndpoint : suppliesEndpoint          
-GlobalEnergyGrid "1" --o "0..*" StorageFacility : includesStorage          
-GlobalEnergyGrid "1" --o "0..1" MarketOperator : governedBy          
-MarketOperator "1" --o "0..*" EnergyContract : linkedContract          
-LoadSheddingPlan "1" --o "0..*" Substation : planLoadShedding          
-IncidentReport "1" --o "0..1" DistributionFeeder : logsIncident          
-WeatherSystem "1" --o "0..*" PowerPlant : influencesWeather          
-WeatherSystem "1" --o "0..*" CurtailmentOrder : triggersCurtailment          
-GridMaintenance "1" --o "0..1" TransmissionLine : referencesMaintenance          
-EmissionSensor "1" --o "0..1" PowerPlant : monitorsEmission          
-PowerPlant "1" --o "0..1" CarbonCredit : offsetBy          
-PowerPlant "1" --o "0..1" RegulatoryStandard : compliesWith          
-EnergySimulation "1" --o "0..*" LoadSheddingPlan : simEvaluates          
-DemandResponseProgram "1" --o "0..*" ConsumerEndpoint : offersDemandResponse          
-CurtailmentOrder "1" --o "0..1" MarketOperator : enforcedBy          
-                
-                           
-```                                                                   
-                                                                              
----                                                    
-                                                    
-```pseudocode                                                          
-Class: GlobalEnergyGrid                  
-  - gridID: string                  
-  - region: string                  
-  - peakDemand: float                                 
-  - operationalStatus: string                         
-  - primaryEnergySource: string                       
-                  
-Class: PowerPlant                  
-  - plantID: string                  
-  - plantType: string                  
-  - capacityMW: float                  
-  - annualGeneration: float         // (e.g., total MWh produced yearly)                  
-  - operationalCosts: float                           
-                  
-Class: TransmissionLine                  
-  - lineID: string                  
-  - voltageLevel: float                  
-  - lengthKm: float                  
-  - lineLossPercent: float                            
-                  
-Class: Substation                  
-  - subID: string                  
-  - substationName: string                  
-  - maxLoad: float                  
-  - inspectionScore: int                              
-                  
-Class: DistributionFeeder                  
-  - feederID: string                  
-  - feederName: string                  
-  - lineVoltage: float                  
-                  
-Class: ConsumerEndpoint                  
-  - endpointID: string                  
-  - endpointType: string                  
-  - usageKWh: float                  
-                  
-Class: StorageFacility                  
-  - facilityID: string                  
-  - storageType: string                  
-  - capacityKWh: float                  
-                  
-Class: MarketOperator                  
-  - operatorID: string                  
-  - operatorName: string                  
-                  
-Class: EnergyContract                  
-  - contractID: string                  
-  - contractTerms: string                  
-  - contractPrice: float                  
-                  
-Class: LoadSheddingPlan                  
-  - planID: string                  
-  - planDescription: string                  
-                  
-Class: IncidentReport                  
-  - reportID: string                  
-  - incidentType: string                  
-  - severity: string                  
-  - incidentTime: dateTime                            
-                  
-Class: WeatherSystem                  
-  - weatherID: string                  
-  - weatherType: string                  
-  - intensityLevel: string                  
-                  
-Class: CurtailmentOrder                  
-  - orderID: string                  
-  - reason: string                  
-  - reductionPercent: float                  
-                  
-Class: GridMaintenance                  
-  - maintenanceID: string                  
-  - scheduleDate: dateTime                  
-  - status: string                  
-                  
-Class: EmissionSensor                  
-  - sensorID: string                  
-  - emissionRate: float                  
-  - location: string                  
-                  
-Class: CarbonCredit                  
-  - creditID: string                  
-  - creditValue: float                  
-                  
-Class: RegulatoryStandard                  
-  - standardID: string                  
-  - standardName: string                  
-                  
-Class: EnergySimulation                  
-  - simID: string                  
-  - scenarioType: string                  
-                  
-Class: DemandResponseProgram                  
-  - programID: string                  
-  - programName: string                  
-  - enrollment: int                  
-                  
-// Existing relationships (19 total, unchanged):                  
-// (1) hasPlant (GlobalEnergyGrid → PowerPlant, 1..*)                  
-// (2) connectsLine (PowerPlant → TransmissionLine, 0..*)                  
-// (3) hasSubstation (TransmissionLine → Substation, 0..1)                  
-// (4) distributesFeeder (Substation → DistributionFeeder, 1..*)                  
-// (5) suppliesEndpoint (DistributionFeeder → ConsumerEndpoint, 0..*)                  
-// (6) includesStorage (GlobalEnergyGrid → StorageFacility, 0..*)                  
-// (7) governedBy (GlobalEnergyGrid → MarketOperator, 0..1)                  
-// (8) linkedContract (MarketOperator → EnergyContract, 0..*)                  
-// (9) planLoadShedding (LoadSheddingPlan → Substation, 0..*)                  
-// (10) logsIncident (IncidentReport → DistributionFeeder, 0..1)                  
-// (11) influencesWeather (WeatherSystem → PowerPlant, 0..*)                  
-// (12) triggersCurtailment (WeatherSystem → CurtailmentOrder, 0..*)                  
-// (13) referencesMaintenance (GridMaintenance → TransmissionLine, 0..*)                  
-// (14) monitorsEmission (EmissionSensor → PowerPlant, 0..*)                  
-// (15) offsetBy (PowerPlant → CarbonCredit, 0..*)                  
-// (16) compliesWith (PowerPlant → RegulatoryStandard, 0..*)                  
-// (17) simEvaluates (EnergySimulation → LoadSheddingPlan, 0..*)                  
-// (18) offersDemandResponse (DemandResponseProgram → ConsumerEndpoint, 0..*)                  
-// (19) enforcedBy (CurtailmentOrder → MarketOperator, 0..1)                  
-                  
-// More object properties:                  
-                  
-Relationship: tradesCredit (MarketOperator → CarbonCredit, 0..*)                  
-  // e.g., a market operator might trade or manage carbon credits                  
-                  
-Relationship: underMaintenance (Substation → GridMaintenance, 0..*)                  
-  // substation might be under a certain maintenance process                  
-                  
-Relationship: conflictsWith (CurtailmentOrder → LoadSheddingPlan, 0..1)                  
-  // a curtailment order could override or conflict with an existing load-shedding plan                  
-                  
-Relationship: collectsData (EmissionSensor → Substation, 0..*)                  
-  // a sensor placed near or in a substation to collect local emission data                  
-                  
-Relationship: mitigates (EnergySimulation → IncidentReport, 0..*)                  
-  // a simulation might propose solutions that mitigate certain incidents                  
-                           
+# Ontology #22 - Energy Markets Analysis                                           
                                  
-'''                          
+Here we are focussed on building ontologies to analyse the markets from a EPCC Transmission and Distribution business unit as well as Oil and Gas buisiness unit's perspective. We want to enable the respective teams to explore scenarios and build strategies for investments.
+---
+
+## 1. EnergyMarketForecast Ontology
+
+### **Pseudocode**
+
+```pseudocode
+Ontology EnergyMarketForecast {
+
+  Entity Region {
+    Attributes:
+      - region_id: String
+      - name: String
+      - country: String
+      - sub_region: String
+      - population: Long
+      - major_metropolitan_areas: List<String>
+      - energy_regulatory_body: String
+      - data_source_references: List<String>
+      // (latitude, longitude optional or omitted)
+  }
+
+  Entity Market {
+    Attributes:
+      - market_id: String
+      - name: String
+      - sector: Enum {TRANSMISSION_DISTRIBUTION, OIL_GAS, RENEWABLES, OTHER}
+      - region_id: FK(Region)
+      - currency_code: String
+      - five_year_growth_projection: Float
+      - risk_rating: Float
+      - data_source_references: List<String>
+  }
+
+  Entity TransmissionDistributionProfile {
+    Attributes:
+      - td_profile_id: String
+      - market_id: FK(Market)
+      - total_line_miles: Float
+      - substation_count: Integer
+      - avg_system_voltage_kv: Float
+      - planned_upgrades_count: Integer
+      - projected_load_growth_pct: Float
+      - reliability_metric_sadi: Float
+      - distribution_automation_index: Float
+  }
+
+  Entity OilGasProfile {
+    Attributes:
+      - og_profile_id: String
+      - market_id: FK(Market)
+      - total_proven_reserves_barrels: Float
+      - total_gas_reserves_bcfe: Float
+      - pipeline_miles: Float
+      - production_capacity_barrels_per_day: Float
+      - active_well_count: Integer
+      - refining_capacity_barrels_per_day: Float
+  }
+
+  Entity Forecast {
+    Attributes:
+      - forecast_id: String
+      - market_id: FK(Market)
+      - year: Integer
+      - revenue_usd_million: Float
+      - capex_usd_million: Float
+      - opex_usd_million: Float
+      - demand_index: Float
+      - supply_index: Float
+      - profit_margin_pct: Float
+      - confidence_score: Float
+      - data_source_references: List<String>
+  }
+
+  Relationship Region HAS Market
+  Relationship Market HAS TransmissionDistributionProfile
+  Relationship Market HAS OilGasProfile
+  Relationship Market HAS Forecast
+}
+```
+
+### **Mermaid Diagram**
+
+Below is an ER (Entity-Relationship) style diagram. **All strings** are in **double quotes**, and we use standard Mermaid notations:
+
+```mermaid
+erDiagram
+  %% A Region can have multiple Markets
+  Region ||--o{ Market : HAS
+  %% A Market can have multiple TransmissionDistributionProfiles
+  Market ||--o{ TransmissionDistributionProfile : HAS
+  %% A Market can have multiple OilGasProfiles
+  Market ||--o{ OilGasProfile : HAS
+  %% A Market can have multiple Forecasts
+  Market ||--o{ Forecast : HAS
+
+  Region {
+    string region_id
+    string name
+    string country
+    string sub_region
+    long population
+    string[] major_metropolitan_areas
+    string energy_regulatory_body
+    string[] data_source_references
+  }
+
+  Market {
+    string market_id
+    string name
+    string sector
+    string region_id
+    %% Foreign Key to Region
+    string currency_code
+    float five_year_growth_projection
+    float risk_rating
+    string[] data_source_references
+  }
+
+  TransmissionDistributionProfile {
+    string td_profile_id
+    string market_id
+    %% Foreign Key to Market
+    float total_line_miles
+    int substation_count
+    float avg_system_voltage_kv
+    int planned_upgrades_count
+    float projected_load_growth_pct
+    float reliability_metric_sadi
+    float distribution_automation_index
+  }
+
+  OilGasProfile {
+    string og_profile_id
+    string market_id
+    %% Foreign Key to Market
+    float total_proven_reserves_barrels
+    float total_gas_reserves_bcfe
+    float pipeline_miles
+    float production_capacity_barrels_per_day
+    int active_well_count
+    float refining_capacity_barrels_per_day
+  }
+
+  Forecast {
+    string forecast_id
+    string market_id
+    %% Foreign Key to Market
+    int year
+    float revenue_usd_million
+    float capex_usd_million
+    float opex_usd_million
+    float demand_index
+    float supply_index
+    float profit_margin_pct
+    float confidence_score
+    string[] data_source_references
+  }
+```
+
+---
+
+## 2. EconomicAndStrategicIndicators Ontology (Extended)
+
+### **Pseudocode**
+
+```pseudocode
+Ontology EconomicAndStrategicIndicators {
+
+  // Basic region-level economic data
+  Entity RegionEconomics {
+    Attributes:
+      - region_econ_id: String
+      - region_id: FK(Region)  // or a direct link if "Region" is external
+      - year: Integer
+      - gdp_usd_billion: Float
+      - unemployment_rate_pct: Float
+      - avg_household_income_usd: Float
+      - population_growth_rate_pct: Float
+      - business_growth_index: Float
+      - data_source_references: List<String>
+  }
+
+  Entity WorkforceStats {
+    Attributes:
+      - workforce_id: String
+      - region_id: FK(Region)
+      - year: Integer
+      - total_employees: Long
+      - industry_skilled_labor_pct: Float
+      - avg_salary_usd: Float
+      - skill_availability_index: Float
+      - training_programs_count: Integer
+      - data_source_references: List<String>
+  }
+
+  // Extended macro-level indicators
+  Entity EconomicPerformanceIndicator {
+    Attributes:
+      - epi_id: String
+      - region_id: FK(Region)
+      - year: Integer
+      - inflation_rate_pct: Float
+      - interest_rate_pct: Float
+      - govt_debt_gdp_ratio: Float
+      - govt_budget_balance_usd_billion: Float
+      - consumer_confidence_index: Float
+      - data_source_references: List<String>
+  }
+
+  // News & sentiment data
+  Entity MarketNews {
+    Attributes:
+      - news_id: String
+      - region_id: FK(Region)
+      - date_published: Date
+      - headline: String
+      - sentiment_score: Float
+      - source: String
+      - relevant_keywords: List<String>
+  }
+
+  // Optional: broader strategic indicators
+  Entity StrategicIndicator {
+    Attributes:
+      - strategic_id: String
+      - region_id: FK(Region)
+      - market_id: FK(Market)
+      - year: Integer
+      - regulatory_index: Float
+      - infrastructure_quality_index: Float
+      - competition_index: Float
+      - foreign_investment_usd_million: Float
+      - policy_stability_score: Float
+      - data_source_references: List<String>
+  }
+
+  Relationship RegionEconomics -> Region
+  Relationship WorkforceStats -> Region
+  Relationship EconomicPerformanceIndicator -> Region
+  Relationship MarketNews -> Region
+  Relationship StrategicIndicator -> Region
+  Relationship StrategicIndicator -> Market
+}
+```
+
+### **Mermaid Diagram**
+
+```mermaid
+erDiagram
+  %% RegionEconomics BELONGS_TO Region
+  RegionEconomics }o--|| Region : BELONGS_TO
+  %% WorkforceStats BELONGS_TO Region
+  WorkforceStats }o--|| Region : BELONGS_TO
+  %% EconomicPerformanceIndicator BELONGS_TO Region
+  EconomicPerformanceIndicator }o--|| Region : BELONGS_TO
+  %% MarketNews BELONGS_TO Region
+  MarketNews }o--|| Region : BELONGS_TO
+  %% StrategicIndicator BELONGS_TO Region
+  StrategicIndicator }o--|| Region : BELONGS_TO
+  %% StrategicIndicator AFFECTS Market
+  StrategicIndicator }o--|| Market : AFFECTS
+
+  RegionEconomics {
+    string region_econ_id
+    string region_id
+    int year
+    float gdp_usd_billion
+    float unemployment_rate_pct
+    float avg_household_income_usd
+    float population_growth_rate_pct
+    float business_growth_index
+    string[] data_source_references
+  }
+
+  WorkforceStats {
+    string workforce_id
+    string region_id
+    int year
+    long total_employees
+    float industry_skilled_labor_pct
+    float avg_salary_usd
+    float skill_availability_index
+    int training_programs_count
+    string[] data_source_references
+  }
+
+  EconomicPerformanceIndicator {
+    string epi_id
+    string region_id
+    int year
+    float inflation_rate_pct
+    float interest_rate_pct
+    float govt_debt_gdp_ratio
+    float govt_budget_balance_usd_billion
+    float consumer_confidence_index
+    string[] data_source_references
+  }
+
+  MarketNews {
+    string news_id
+    string region_id
+    date date_published
+    string headline
+    float sentiment_score
+    string source
+    string[] relevant_keywords
+  }
+
+  StrategicIndicator {
+    string strategic_id
+    string region_id
+    string market_id
+    int year
+    float regulatory_index
+    float infrastructure_quality_index
+    float competition_index
+    float foreign_investment_usd_million
+    float policy_stability_score
+    string[] data_source_references
+  }
+```
+
+---
