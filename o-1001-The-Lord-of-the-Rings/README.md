@@ -3,6 +3,13 @@
 ...because while we are talking Palantir, why not a proper LOTR Ontology :)
         
 ---        
+  
+### SVG              
+Created using the mermaid code in [Draw.io](https://app.diagrams.net) `[Arrange>Insert>Advanced>Mermaid]`          
+<html>                   
+	<img src="./LOTR-Ontology.svg" width="95%" align="center" alt="Lord Of The Rings Trilogy - Ontology, Image © Shaurya Agarwal, created using draw.io and mermaid" />                           
+</html>  
+  
         
 ## Ontology Structure: Core Classes / Entities (Domain Ontology)        
         
@@ -11,148 +18,7 @@ Below is a conceptual structure, with a **pseudocode** approach.
                                                       
 # Ontology Structure                                                        
                                                               
-```mermaid                                                              
-graph TD        
-        
-%% Top-down layout. We have 35 classes total, 25 from the original LotR ontology plus 10 new ones.        
-%% We'll keep the same labeling approach: no colons or pipes, cardinalities in parentheses, underscores in relationship names.        
-%% We'll add new data properties and new object properties, plus revised or new constraints.        
-        
-%% =========================        
-%% CLASSES WITH DATA PROPERTIES        
-%% =========================        
-        
-MiddleEarth["MiddleEarth<br>worldID<br>ageCount int<br>currentAge int<br>ageName<br>darkInfluenceLevel float"]        
-Region["Region<br>regionID<br>regionName<br>climateType<br>notableLandmarks<br>localPopulation long"]        
-Race["Race<br>raceID<br>raceName<br>averageLifespan int<br>languageFamily"]        
-Kingdom["Kingdom<br>kingdomID<br>kingdomName<br>foundingYear int<br>leadershipStructure<br>allianceStatus"]        
-Person["Person<br>personID<br>personName<br>gender<br>age int<br>isRingBearer boolean<br>alignment<br>fateStatus"]        
-Hobbit["Hobbit<br>hobbitFamilyName<br>pipeWeedPreference<br>stealthSkill float"]        
-Elf["Elf<br>elfTitle<br>bowSkill float<br>immortalYearsLived int"]        
-Dwarf["Dwarf<br>dwarfClan<br>miningSkill float<br>beardLength float"]        
-Man["Man<br>realmAllegiance<br>swordSkill float<br>lifespanVariance float"]        
-Wizard["Wizard<br>wizardOrder<br>staffPowerLevel float<br>robeColor"]        
-Orc["Orc<br>orcTribe<br>aggressionLevel float<br>dayLightWeakness boolean"]        
-Artifact["Artifact<br>artifactID<br>artifactName<br>originEra<br>isCursed boolean<br>powerLevel float"]        
-Weapon["Weapon<br>weaponID<br>weaponName<br>weaponType<br>forgingSkillRequired float<br>enchantmentLevel float"]        
-Ring["Ring<br>ringID<br>ringName<br>ringPowerType<br>corruptionIndex float<br>forgingAge int<br>isOneRing boolean"]        
-Fellowship["Fellowship<br>fellowshipID<br>name<br>missionObjective<br>formationDate dateTime"]        
-LocationNode["Location<br>locationID<br>locationName<br>terrainType<br>magicalAuraLevel float<br>riskFactor float"]        
-Journey["Journey<br>journeyID<br>journeyName<br>distanceKm float<br>startedDate dateTime<br>endedDate dateTime"]        
-Battle["Battle<br>battleID<br>battleName<br>outcome<br>battleDate dateTime<br>casualtyCount int<br>durationHours float"]        
-Alliance["Alliance<br>allianceID<br>allianceName<br>primaryGoal<br>strengthRating float"]        
-Beast["Beast<br>beastID<br>beastName<br>beastType<br>hostilityLevel float<br>tamable boolean"]        
-AncientProphecy["AncientProphecy<br>prophecyID<br>prophecyText<br>dateForetold dateTime<br>prophecyFulfilled boolean<br>seerName"]        
-DarkFortress["DarkFortress<br>fortressID<br>fortressName<br>defenseLevel float<br>capturedStatus boolean<br>overshadowingEvil float"]        
-Army["Army<br>armyID<br>armyName<br>totalUnits int<br>moraleLevel float<br>bannerSymbol"]        
-MagicSpell["MagicSpell<br>spellID<br>spellName<br>spellType<br>manaCost float<br>effectPower float"]        
-Council["Council<br>councilID<br>councilName<br>purpose<br>convenedDate dateTime<br>secrecyLevel float"]        
-Valar["Valar<br>valarID<br>valarName<br>domainOfPower<br>cosmicRank float"]        
-Maiar["Maiar<br>maiarID<br>maiarName<br>maiarOrder<br>spiritualPotency float"]        
-Rune["Rune<br>runeID<br>runeScript<br>mysticValue float<br>originAge int"]        
-Language["Language<br>languageID<br>languageName<br>writingSystem<br>complexityLevel float"]        
-Silmaril["Silmaril<br>silmarilID<br>radianceLevel float<br>creationAge int<br>fateStatus<br>holyAura boolean"]        
-Numenorean["Numenorean<br>lineagePurity float<br>numenorOriginYear int<br>royalBlood boolean"]        
-Gondorian["Gondorian<br>houseName<br>militaryTradition float<br>numenorDescent boolean"]        
-RuneSmith["RuneSmith<br>smithID<br>smithName<br>masteryLevel float<br>specializationRuneType"]        
-ElvenScript["ElvenScript<br>scriptID<br>scriptStyle<br>graceFactor float<br>rarityIndex float"]        
-Palantir["Palantir<br>palantirID<br>seeingPower float<br>corruptingInfluence float<br>lostStatus boolean"]        
-        
-%% =========================        
-%% SUBCLASS HIERARCHIES (DOTTED LINES)        
-%% Using spaces around subClassOf        
-%% =========================        
-        
-Hobbit -. subClassOf .-> Person        
-Elf -. subClassOf .-> Person        
-Dwarf -. subClassOf .-> Person        
-Man -. subClassOf .-> Person        
-Wizard -. subClassOf .-> Person        
-Orc -. subClassOf .-> Person        
-        
-%% e.g., Numenorean, Gondorian can subClassOf Man        
-Numenorean -. subClassOf .-> Man        
-Gondorian -. subClassOf .-> Man        
-        
-Valar -. subClassOf .-> Race        
-Maiar -. subClassOf .-> Race        
-        
-%% Additional script relation        
-ElvenScript -. subClassOf .-> Language        
-        
-%% =========================        
-%% DISJOINT CLASSES (DOTTED LINES)        
-%% Example: Hobbit disjointWith Orc        
-%% =========================        
-        
-Hobbit -. disjointWith .-> Orc        
-        
-%% =========================        
-%% OBJECT PROPERTIES        
-%% Using underscores, cardinalities in parentheses        
-%% =========================        
-        
-MiddleEarth -- "contains_Region (1-To-Many)" --> Region        
-MiddleEarth -- "fosters_Race (0-To-Many)" --> Race        
-        
-Kingdom -- "situated_In (0-To-1)" --> Region        
-Person -- "belongs_To_Kingdom (0-To-1)" --> Kingdom        
-Person -- "part_Of_Fellowship (0-To-Many)" --> Fellowship        
-Person -- "occupant_Of (0-To-1)" --> LocationNode        
-Person -- "has_Weapon (0-To-Many)" --> Weapon        
-Person -- "has_Artifact (0-To-Many)" --> Artifact        
-Person -- "wields_Ring (0-To-1)" --> Ring        
-Person -- "belongs_To_Army (0-To-Many)" --> Army        
-Fellowship -- "organizes_Journey (0-To-Many)" --> Journey        
-Mission -- "mission_Involves (0-To-Many)" --> Fellowship        
-Journey -- "covers_Location (0-To-Many)" --> LocationNode        
-Journey -- "final_Destination (0-To-1)" --> LocationNode        
-Army -- "fought_In (0-To-Many)" --> Battle        
-Battle -- "took_Place_At (0-To-1)" --> LocationNode        
-Alliance -- "allied_With (0-To-Many)" --> Kingdom        
-Beast -- "tamed_By (0-To-1)" --> Person        
-AncientProphecy -- "prophecy_Concerns (0-To-Many)" --> Person        
-DarkFortress -- "guarded_By_Orcs (0-To-Many)" --> Orc        
-DarkFortress -- "besieged_By (0-To-Many)" --> Army        
-MagicSpell -- "cast_By (0-To-1)" --> Wizard        
-MagicSpell -- "cast_On (0-To-Many)" --> Person        
-Council -- "council_Attended_By (0-To-Many)" --> Race        
-Council -- "invites_Kingdom (0-To-Many)" --> Kingdom        
-Ring -- "ring_Origin (0-To-1)" --> Kingdom        
-AncientProphecy -- "prophecy_Tested_In (0-To-Many)" --> Battle        
-DarkFortress -- "fortress_In_Alliance (0-To-1)" --> Alliance        
-RuneSmith -- "smiths_Rune (0-To-Many)" --> Rune        
-RuneSmith -- "smiths_Weapon (0-To-Many)" --> Weapon        
-Rune -- "bound_To_Language (0-To-1)" --> Language        
-Silmaril -- "kept_In (0-To-1)" --> LocationNode        
-Silmaril -- "claimed_By (0-To-Many)" --> Person        
-Palantir -- "used_By (0-To-Many)" --> Person        
-Palantir -- "enchanted_By (0-To-1)" --> Maiar        
-        
-Numenorean -- "has_Legacy (0-To-Many)" --> Artifact        
-Gondorian -- "pledges_To (0-To-1)" --> Kingdom        
-ElvenScript -- "script_BasedOn (0-To-1)" --> Language        
-        
-%% =========================        
-%% PROPERTY RESTRICTIONS (DOTTED LINES)        
-%% e.g. short constraints        
-%% =========================        
-        
-Dwarf -. "beard_Required" .-> Dwarf        
-Ring -. "only_One_Ring" .-> Ring        
-Hobbit -. "stealth_Trait" .-> Person        
-Wizard -. "staff_Power_Req" .-> MagicSpell        
-DarkFortress -. "overshadow_Limit" .-> Orc        
-Valar -. "cosmic_Influence" .-> MiddleEarth        
-Silmaril -. "holy_Object_Only" .-> Elf        
-Rune -. "requires_RuneSmith" .-> RuneSmith        
-Palantir -. "prone_To_Corruption" .-> Maiar        
-Numenorean -. "mortal_Yet_Special" .-> Man        
-        
-         
-```                                                 
-                                                            
----                                  
+                                 
                                   
 ```pseudocode                                
 Class: MiddleEarth        
@@ -600,6 +466,151 @@ Relationship: fortressInAlliance (DarkFortress → Alliance, 0..1)
         
                  
 ```  
+
+---   
+
+```mermaid                                                              
+graph LR        
+        
+%% Top-down layout. We have 35 classes total, 25 from the original LotR ontology plus 10 new ones.        
+%% We'll keep the same labeling approach: no colons or pipes, cardinalities in parentheses, underscores in relationship names.        
+%% We'll add new data properties and new object properties, plus revised or new constraints.        
+        
+%% =========================        
+%% CLASSES WITH DATA PROPERTIES        
+%% =========================        
+        
+MiddleEarth["MiddleEarth<br>worldID<br>ageCount int<br>currentAge int<br>ageName<br>darkInfluenceLevel float"]        
+Region["Region<br>regionID<br>regionName<br>climateType<br>notableLandmarks<br>localPopulation long"]        
+Race["Race<br>raceID<br>raceName<br>averageLifespan int<br>languageFamily"]        
+Kingdom["Kingdom<br>kingdomID<br>kingdomName<br>foundingYear int<br>leadershipStructure<br>allianceStatus"]        
+Person["Person<br>personID<br>personName<br>gender<br>age int<br>isRingBearer boolean<br>alignment<br>fateStatus"]        
+Hobbit["Hobbit<br>hobbitFamilyName<br>pipeWeedPreference<br>stealthSkill float"]        
+Elf["Elf<br>elfTitle<br>bowSkill float<br>immortalYearsLived int"]        
+Dwarf["Dwarf<br>dwarfClan<br>miningSkill float<br>beardLength float"]        
+Man["Man<br>realmAllegiance<br>swordSkill float<br>lifespanVariance float"]        
+Wizard["Wizard<br>wizardOrder<br>staffPowerLevel float<br>robeColor"]        
+Orc["Orc<br>orcTribe<br>aggressionLevel float<br>dayLightWeakness boolean"]        
+Artifact["Artifact<br>artifactID<br>artifactName<br>originEra<br>isCursed boolean<br>powerLevel float"]        
+Weapon["Weapon<br>weaponID<br>weaponName<br>weaponType<br>forgingSkillRequired float<br>enchantmentLevel float"]        
+Ring["Ring<br>ringID<br>ringName<br>ringPowerType<br>corruptionIndex float<br>forgingAge int<br>isOneRing boolean"]        
+Fellowship["Fellowship<br>fellowshipID<br>name<br>missionObjective<br>formationDate dateTime"]        
+LocationNode["Location<br>locationID<br>locationName<br>terrainType<br>magicalAuraLevel float<br>riskFactor float"]        
+Journey["Journey<br>journeyID<br>journeyName<br>distanceKm float<br>startedDate dateTime<br>endedDate dateTime"]        
+Battle["Battle<br>battleID<br>battleName<br>outcome<br>battleDate dateTime<br>casualtyCount int<br>durationHours float"]        
+Alliance["Alliance<br>allianceID<br>allianceName<br>primaryGoal<br>strengthRating float"]        
+Beast["Beast<br>beastID<br>beastName<br>beastType<br>hostilityLevel float<br>tamable boolean"]        
+AncientProphecy["AncientProphecy<br>prophecyID<br>prophecyText<br>dateForetold dateTime<br>prophecyFulfilled boolean<br>seerName"]        
+DarkFortress["DarkFortress<br>fortressID<br>fortressName<br>defenseLevel float<br>capturedStatus boolean<br>overshadowingEvil float"]        
+Army["Army<br>armyID<br>armyName<br>totalUnits int<br>moraleLevel float<br>bannerSymbol"]        
+MagicSpell["MagicSpell<br>spellID<br>spellName<br>spellType<br>manaCost float<br>effectPower float"]        
+Council["Council<br>councilID<br>councilName<br>purpose<br>convenedDate dateTime<br>secrecyLevel float"]        
+Valar["Valar<br>valarID<br>valarName<br>domainOfPower<br>cosmicRank float"]        
+Maiar["Maiar<br>maiarID<br>maiarName<br>maiarOrder<br>spiritualPotency float"]        
+Rune["Rune<br>runeID<br>runeScript<br>mysticValue float<br>originAge int"]        
+Language["Language<br>languageID<br>languageName<br>writingSystem<br>complexityLevel float"]        
+Silmaril["Silmaril<br>silmarilID<br>radianceLevel float<br>creationAge int<br>fateStatus<br>holyAura boolean"]        
+Numenorean["Numenorean<br>lineagePurity float<br>numenorOriginYear int<br>royalBlood boolean"]        
+Gondorian["Gondorian<br>houseName<br>militaryTradition float<br>numenorDescent boolean"]        
+RuneSmith["RuneSmith<br>smithID<br>smithName<br>masteryLevel float<br>specializationRuneType"]        
+ElvenScript["ElvenScript<br>scriptID<br>scriptStyle<br>graceFactor float<br>rarityIndex float"]        
+Palantir["Palantir<br>palantirID<br>seeingPower float<br>corruptingInfluence float<br>lostStatus boolean"]        
+        
+%% =========================        
+%% SUBCLASS HIERARCHIES (DOTTED LINES)        
+%% Using spaces around subClassOf        
+%% =========================        
+        
+Hobbit -. subClassOf .-> Person        
+Elf -. subClassOf .-> Person        
+Dwarf -. subClassOf .-> Person        
+Man -. subClassOf .-> Person        
+Wizard -. subClassOf .-> Person        
+Orc -. subClassOf .-> Person        
+        
+%% e.g., Numenorean, Gondorian can subClassOf Man        
+Numenorean -. subClassOf .-> Man        
+Gondorian -. subClassOf .-> Man        
+        
+Valar -. subClassOf .-> Race        
+Maiar -. subClassOf .-> Race        
+        
+%% Additional script relation        
+ElvenScript -. subClassOf .-> Language        
+        
+%% =========================        
+%% DISJOINT CLASSES (DOTTED LINES)        
+%% Example: Hobbit disjointWith Orc        
+%% =========================        
+        
+Hobbit -. disjointWith .-> Orc        
+        
+%% =========================        
+%% OBJECT PROPERTIES        
+%% Using underscores, cardinalities in parentheses        
+%% =========================        
+        
+MiddleEarth -- "contains_Region (1-To-Many)" --> Region        
+MiddleEarth -- "fosters_Race (0-To-Many)" --> Race        
+        
+Kingdom -- "situated_In (0-To-1)" --> Region        
+Person -- "belongs_To_Kingdom (0-To-1)" --> Kingdom        
+Person -- "part_Of_Fellowship (0-To-Many)" --> Fellowship        
+Person -- "occupant_Of (0-To-1)" --> LocationNode        
+Person -- "has_Weapon (0-To-Many)" --> Weapon        
+Person -- "has_Artifact (0-To-Many)" --> Artifact        
+Person -- "wields_Ring (0-To-1)" --> Ring        
+Person -- "belongs_To_Army (0-To-Many)" --> Army        
+Fellowship -- "organizes_Journey (0-To-Many)" --> Journey        
+Mission -- "mission_Involves (0-To-Many)" --> Fellowship        
+Journey -- "covers_Location (0-To-Many)" --> LocationNode        
+Journey -- "final_Destination (0-To-1)" --> LocationNode        
+Army -- "fought_In (0-To-Many)" --> Battle        
+Battle -- "took_Place_At (0-To-1)" --> LocationNode        
+Alliance -- "allied_With (0-To-Many)" --> Kingdom        
+Beast -- "tamed_By (0-To-1)" --> Person        
+AncientProphecy -- "prophecy_Concerns (0-To-Many)" --> Person        
+DarkFortress -- "guarded_By_Orcs (0-To-Many)" --> Orc        
+DarkFortress -- "besieged_By (0-To-Many)" --> Army        
+MagicSpell -- "cast_By (0-To-1)" --> Wizard        
+MagicSpell -- "cast_On (0-To-Many)" --> Person        
+Council -- "council_Attended_By (0-To-Many)" --> Race        
+Council -- "invites_Kingdom (0-To-Many)" --> Kingdom        
+Ring -- "ring_Origin (0-To-1)" --> Kingdom        
+AncientProphecy -- "prophecy_Tested_In (0-To-Many)" --> Battle        
+DarkFortress -- "fortress_In_Alliance (0-To-1)" --> Alliance        
+RuneSmith -- "smiths_Rune (0-To-Many)" --> Rune        
+RuneSmith -- "smiths_Weapon (0-To-Many)" --> Weapon        
+Rune -- "bound_To_Language (0-To-1)" --> Language        
+Silmaril -- "kept_In (0-To-1)" --> LocationNode        
+Silmaril -- "claimed_By (0-To-Many)" --> Person        
+Palantir -- "used_By (0-To-Many)" --> Person        
+Palantir -- "enchanted_By (0-To-1)" --> Maiar        
+        
+Numenorean -- "has_Legacy (0-To-Many)" --> Artifact        
+Gondorian -- "pledges_To (0-To-1)" --> Kingdom        
+ElvenScript -- "script_BasedOn (0-To-1)" --> Language        
+        
+%% =========================        
+%% PROPERTY RESTRICTIONS (DOTTED LINES)        
+%% e.g. short constraints        
+%% =========================        
+        
+Dwarf -. "beard_Required" .-> Dwarf        
+Ring -. "only_One_Ring" .-> Ring        
+Hobbit -. "stealth_Trait" .-> Person        
+Wizard -. "staff_Power_Req" .-> MagicSpell        
+DarkFortress -. "overshadow_Limit" .-> Orc        
+Valar -. "cosmic_Influence" .-> MiddleEarth        
+Silmaril -. "holy_Object_Only" .-> Elf        
+Rune -. "requires_RuneSmith" .-> RuneSmith        
+Palantir -. "prone_To_Corruption" .-> Maiar        
+Numenorean -. "mortal_Yet_Special" .-> Man        
+        
+         
+```                                                 
+                                                            
+--- 
             
 ### I just thought this was cool            
             
