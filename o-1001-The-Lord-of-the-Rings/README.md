@@ -5,9 +5,12 @@
 ---        
   
 ### SVG              
-Created using the mermaid code in [Draw.io](https://app.diagrams.net) `[Arrange>Insert>Advanced>Mermaid]`          
+Created using the mermaid code in [Draw.io](https://app.diagrams.net) `[Arrange>Insert>Advanced>Mermaid]`  
+  
+  
+<br/>    
 <html>                   
-	<img src="./LOTR-Ontology.svg" width="95%" align="center" alt="Lord Of The Rings Trilogy - Ontology, Image © Shaurya Agarwal, created using draw.io and mermaid" />                           
+	<img src="./images/LOTR-Ontology.jpg" width="95%" align="center" alt="Lord Of The Rings Trilogy - Ontology, Image © Shaurya Agarwal, created using draw.io and mermaid" />                           
 </html>  
   
         
