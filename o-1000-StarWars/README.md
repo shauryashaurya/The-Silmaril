@@ -43,7 +43,7 @@ I honestly think this page can be improved. In due time, when I have more time. 
                   
 ### Interactive Mermaid diagram          
 ```mermaid                                                                        
-graph TD                  
+graph LR                  
                   
 %% Top-down layout, ensuring no colons or pipes in labels.                  
 %% We now represent cardinalities in parentheses like (0-To-1), (0-To-Many), etc.                  
