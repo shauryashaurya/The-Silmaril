@@ -1,0 +1,44 @@
+[
+    {
+        "battleID": "BAT01",
+        "battleName": "Battle of the Hornburg",
+        "outcome": "Victory for Rohan/Good",
+        "battleDate": "3019-03-03T00:00:00",
+        "casualtyCount": 3000,
+        "durationHours": 8.0,
+        "locationID": "LOC05",
+        "armiesInvolvedIDs": [
+            "ARMY02",
+            "ARMY04"
+        ]
+    },
+    {
+        "battleID": "BAT02",
+        "battleName": "Battle of the Pelennor Fields",
+        "outcome": "Victory for Gondor/Rohan/Good",
+        "battleDate": "3019-03-15T00:00:00",
+        "casualtyCount": 25000,
+        "durationHours": 12.0,
+        "locationID": "LOC06",
+        "armiesInvolvedIDs": [
+            "ARMY01",
+            "ARMY02",
+            "ARMY03",
+            "ARMY05"
+        ]
+    },
+    {
+        "battleID": "BAT03",
+        "battleName": "Battle of the Morannon",
+        "outcome": "Victory for Gondor/Rohan/Good",
+        "battleDate": "3019-03-25T00:00:00",
+        "casualtyCount": 5000,
+        "durationHours": 4.0,
+        "locationID": "LOC14",
+        "armiesInvolvedIDs": [
+            "ARMY01",
+            "ARMY02",
+            "ARMY03"
+        ]
+    }
+]

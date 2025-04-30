@@ -1,0 +1,11 @@
+[
+    {
+        "ringID": "RING01",
+        "ringName": "The One Ring",
+        "ringPowerType": "Dominion/Control",
+        "corruptionIndex": 10.0,
+        "forgingAge": 1600,
+        "isOneRing": true,
+        "artifactID": "ART01"
+    }
+]

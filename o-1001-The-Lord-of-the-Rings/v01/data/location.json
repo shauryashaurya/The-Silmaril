@@ -1,0 +1,194 @@
+[
+    {
+        "locationID": "LOC01",
+        "locationName": "The Shire",
+        "terrainType": "Hills/Farmland",
+        "magicalAuraLevel": 1.0,
+        "riskFactor": 0.5,
+        "situated_In_RegionID": "REG01",
+        "event_notes": [
+            "Return of the Hobbits",
+            "Scouring of the Shire (book)"
+        ]
+    },
+    {
+        "locationID": "LOC02",
+        "locationName": "Rivendell",
+        "terrainType": "Hidden Valley",
+        "magicalAuraLevel": 8.0,
+        "riskFactor": 1.0,
+        "situated_In_RegionID": "REG01",
+        "event_notes": [
+            "Council of Elrond held",
+            "Fellowship formed",
+            "Narsil reforged into And\u00faril"
+        ]
+    },
+    {
+        "locationID": "LOC03",
+        "locationName": "Moria (Khazad-d\u00fbm)",
+        "terrainType": "Underground City/Mines",
+        "magicalAuraLevel": 3.0,
+        "riskFactor": 9.0,
+        "situated_In_RegionID": "REG05",
+        "event_notes": [
+            "Fellowship passage",
+            "Gandalf fights Balrog",
+            "Orc attack at Balin's Tomb"
+        ]
+    },
+    {
+        "locationID": "LOC04",
+        "locationName": "Lothl\u00f3rien",
+        "terrainType": "Forest",
+        "magicalAuraLevel": 9.0,
+        "riskFactor": 2.0,
+        "situated_In_RegionID": "REG06",
+        "event_notes": [
+            "Fellowship rests",
+            "Meeting with Galadriel",
+            "Receiving of Gifts (Phial, Cloaks, Lembas)"
+        ]
+    },
+    {
+        "locationID": "LOC05",
+        "locationName": "Helm's Deep",
+        "terrainType": "Fortress/Valley",
+        "magicalAuraLevel": 2.0,
+        "riskFactor": 7.0,
+        "situated_In_RegionID": "REG02",
+        "event_notes": [
+            "Battle of the Hornburg",
+            "Arrival of Gandalf & Rohirrim",
+            "Huorns destroy Orc army (book)"
+        ]
+    },
+    {
+        "locationID": "LOC06",
+        "locationName": "Minas Tirith",
+        "terrainType": "City/Fortress",
+        "magicalAuraLevel": 4.0,
+        "riskFactor": 8.5,
+        "situated_In_RegionID": "REG03",
+        "event_notes": [
+            "Siege of Gondor",
+            "Battle of Pelennor Fields",
+            "Aragorn uses Houses of Healing",
+            "Coronation of Aragorn"
+        ]
+    },
+    {
+        "locationID": "LOC07",
+        "locationName": "Mount Doom (Orodruin)",
+        "terrainType": "Volcano",
+        "magicalAuraLevel": 6.0,
+        "riskFactor": 10.0,
+        "situated_In_RegionID": "REG04",
+        "event_notes": [
+            "One Ring destroyed",
+            "Gollum falls",
+            "Frodo & Sam rescued by Eagles"
+        ]
+    },
+    {
+        "locationID": "LOC08",
+        "locationName": "Isengard (Orthanc)",
+        "terrainType": "Fortress/Plain",
+        "magicalAuraLevel": 5.0,
+        "riskFactor": 8.0,
+        "situated_In_RegionID": "REG02",
+        "event_notes": [
+            "Saruman's base",
+            "Ents attack and flood",
+            "Saruman confronted / staff broken",
+            "Palant\u00edr recovered"
+        ]
+    },
+    {
+        "locationID": "LOC09",
+        "locationName": "Barad-d\u00fbr",
+        "terrainType": "Dark Tower/Fortress",
+        "magicalAuraLevel": 9.5,
+        "riskFactor": 10.0,
+        "situated_In_RegionID": "REG04",
+        "event_notes": [
+            "Sauron's seat of power",
+            "Tower collapses upon Ring's destruction"
+        ]
+    },
+    {
+        "locationID": "LOC10",
+        "locationName": "Weathertop (Amon S\u00fbl)",
+        "terrainType": "Hill Ruins",
+        "magicalAuraLevel": 2.5,
+        "riskFactor": 6.0,
+        "situated_In_RegionID": "REG01",
+        "event_notes": [
+            "Frodo stabbed by Witch-king",
+            "Gandalf previously fought Nazg\u00fbl"
+        ]
+    },
+    {
+        "locationID": "LOC11",
+        "locationName": "Amon Hen",
+        "terrainType": "Hilltop Seat",
+        "magicalAuraLevel": 3.0,
+        "riskFactor": 5.0,
+        "situated_In_RegionID": "REG06",
+        "event_notes": [
+            "Breaking of the Fellowship",
+            "Boromir's death",
+            "Frodo looks into Seat of Seeing"
+        ]
+    },
+    {
+        "locationID": "LOC12",
+        "locationName": "Cirith Ungol",
+        "terrainType": "Pass/Tower",
+        "magicalAuraLevel": 4.0,
+        "riskFactor": 9.5,
+        "situated_In_RegionID": "REG04",
+        "event_notes": [
+            "Frodo stung by Shelob",
+            "Sam fights Shelob",
+            "Orcs fight over Mithril coat"
+        ]
+    },
+    {
+        "locationID": "LOC13",
+        "locationName": "Edoras",
+        "terrainType": "City/Hillfort",
+        "magicalAuraLevel": 1.5,
+        "riskFactor": 4.0,
+        "situated_In_RegionID": "REG02",
+        "event_notes": [
+            "Capital of Rohan",
+            "Gandalf frees Th\u00e9oden",
+            "Departure for Helm's Deep"
+        ]
+    },
+    {
+        "locationID": "LOC14",
+        "locationName": "Black Gate (Morannon)",
+        "terrainType": "Fortified Gate",
+        "magicalAuraLevel": 5.0,
+        "riskFactor": 9.0,
+        "situated_In_RegionID": "REG04",
+        "event_notes": [
+            "Battle of the Morannon",
+            "Aragorn challenges Sauron",
+            "Frodo & Sam passed nearby earlier"
+        ]
+    },
+    {
+        "locationID": "LOC15",
+        "locationName": "Paths of the Dead",
+        "terrainType": "Caves/Mountain Pass",
+        "magicalAuraLevel": 7.0,
+        "riskFactor": 8.5,
+        "situated_In_RegionID": "REG03",
+        "event_notes": [
+            "Aragorn summons Army of the Dead"
+        ]
+    }
+]

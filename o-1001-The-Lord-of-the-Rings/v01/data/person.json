@@ -1,0 +1,319 @@
+[
+    {
+        "personID": "PER001",
+        "personName": "Frodo Baggins",
+        "gender": "Male",
+        "age": 50,
+        "isRingBearer": true,
+        "alignment": "Good",
+        "fateStatus": "Sailed West",
+        "belongs_To_RaceID": "RACE01",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Stabbed at Weathertop",
+            "Stung at Cirith Ungol",
+            "Claimed Ring at Mt Doom",
+            "Battle of Bywater (book)"
+        ],
+        "homeLocationID": "LOC01"
+    },
+    {
+        "personID": "PER002",
+        "personName": "Samwise Gamgee",
+        "gender": "Male",
+        "age": 33,
+        "isRingBearer": true,
+        "alignment": "Good",
+        "fateStatus": "Sailed West (later)",
+        "belongs_To_RaceID": "RACE01",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Fought Shelob",
+            "Carried Frodo",
+            "Used Phial of Galadriel",
+            "Mayor of Shire"
+        ]
+    },
+    {
+        "personID": "PER003",
+        "personName": "Gandalf",
+        "gender": "Male (appearance)",
+        "age": -1,
+        "isRingBearer": true,
+        "alignment": "Good",
+        "fateStatus": "Returned/Sailed West",
+        "belongs_To_RaceID": "RACE06",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Fell fighting Balrog",
+            "Returned as White",
+            "Freed Th\u00e9oden",
+            "Battle of Hornburg",
+            "Battle of Pelennor Fields",
+            "Battle of Morannon"
+        ]
+    },
+    {
+        "personID": "PER004",
+        "personName": "Aragorn II Elessar",
+        "gender": "Male",
+        "age": 87,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Died (King)",
+        "belongs_To_RaceID": "RACE04",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Battle of Hornburg",
+            "Took Paths of the Dead",
+            "Battle of Pelennor Fields",
+            "Healed in Houses of Healing",
+            "Battle of Morannon",
+            "Crowned King"
+        ],
+        "belongs_To_KingdomID": "KNG01"
+    },
+    {
+        "personID": "PER005",
+        "personName": "Legolas Greenleaf",
+        "gender": "Male",
+        "age": 2931,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Sailed West",
+        "belongs_To_RaceID": "RACE02",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Battle of Hornburg",
+            "Battle of Pelennor Fields",
+            "Took Paths of the Dead",
+            "Battle of Morannon"
+        ]
+    },
+    {
+        "personID": "PER006",
+        "personName": "Gimli",
+        "gender": "Male",
+        "age": 139,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Sailed West",
+        "belongs_To_RaceID": "RACE03",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Battle of Hornburg",
+            "Took Paths of the Dead",
+            "Battle of Pelennor Fields",
+            "Battle of Morannon"
+        ]
+    },
+    {
+        "personID": "PER007",
+        "personName": "Boromir",
+        "gender": "Male",
+        "age": 40,
+        "isRingBearer": false,
+        "alignment": "Good (flawed)",
+        "fateStatus": "Died",
+        "belongs_To_RaceID": "RACE04",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Attempted to take Ring",
+            "Died defending Hobbits at Amon Hen"
+        ],
+        "belongs_To_KingdomID": "KNG01"
+    },
+    {
+        "personID": "PER008",
+        "personName": "Saruman",
+        "gender": "Male (appearance)",
+        "age": -1,
+        "isRingBearer": false,
+        "alignment": "Evil",
+        "fateStatus": "Died",
+        "belongs_To_RaceID": "RACE06",
+        "events_participated": [
+            "Betrayed Council",
+            "Created Uruk-hai",
+            "Defeated at Isengard",
+            "Scouring of the Shire (book)"
+        ]
+    },
+    {
+        "personID": "PER009",
+        "personName": "Sauron",
+        "gender": "Male (spirit)",
+        "age": -1,
+        "isRingBearer": true,
+        "alignment": "Evil",
+        "fateStatus": "Defeated (spirit diminished)",
+        "belongs_To_RaceID": "RACE06",
+        "events_participated": [
+            "Forged One Ring",
+            "War of the Last Alliance (defeated)",
+            "War of the Ring (directed forces)",
+            "Spirit defeated with Ring"
+        ]
+    },
+    {
+        "personID": "PER010",
+        "personName": "Gollum/Sm\u00e9agol",
+        "gender": "Male",
+        "age": 589,
+        "isRingBearer": true,
+        "alignment": "Neutral/Evil",
+        "fateStatus": "Died",
+        "belongs_To_RaceID": "RACE01",
+        "events_participated": [
+            "Found Ring",
+            "Guided Frodo/Sam",
+            "Betrayed Frodo at Cirith Ungol",
+            "Bit off finger",
+            "Fell into Mt Doom"
+        ]
+    },
+    {
+        "personID": "PER011",
+        "personName": "Elrond",
+        "gender": "Male",
+        "age": -1,
+        "isRingBearer": true,
+        "alignment": "Good",
+        "fateStatus": "Sailed West",
+        "belongs_To_RaceID": "RACE02",
+        "events_participated": [
+            "Hosted Council",
+            "Reforged Narsil",
+            "Bearer of Vilya"
+        ]
+    },
+    {
+        "personID": "PER012",
+        "personName": "Galadriel",
+        "gender": "Female",
+        "age": -1,
+        "isRingBearer": true,
+        "alignment": "Good",
+        "fateStatus": "Sailed West",
+        "belongs_To_RaceID": "RACE02",
+        "events_participated": [
+            "Hosted Fellowship",
+            "Gave Gifts (Phial)",
+            "Resisted Ring's temptation",
+            "Bearer of Nenya"
+        ]
+    },
+    {
+        "personID": "PER013",
+        "personName": "Th\u00e9oden",
+        "gender": "Male",
+        "age": 71,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Died",
+        "belongs_To_RaceID": "RACE04",
+        "events_participated": [
+            "Freed by Gandalf",
+            "Led charge at Hornburg",
+            "Led charge at Pelennor Fields",
+            "Killed by Witch-king"
+        ],
+        "belongs_To_KingdomID": "KNG02"
+    },
+    {
+        "personID": "PER014",
+        "personName": "\u00c9owyn",
+        "gender": "Female",
+        "age": 24,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Married Faramir",
+        "belongs_To_RaceID": "RACE04",
+        "events_participated": [
+            "Defended Edoras",
+            "Rode to Pelennor Fields (as Dernhelm)",
+            "Slew Witch-king",
+            "Healed by Aragorn"
+        ],
+        "belongs_To_KingdomID": "KNG02"
+    },
+    {
+        "personID": "PER015",
+        "personName": "Faramir",
+        "gender": "Male",
+        "age": 36,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Steward/Prince of Ithilien",
+        "belongs_To_RaceID": "RACE04",
+        "events_participated": [
+            "Defended Osgiliath",
+            "Captured/Released Frodo & Sam",
+            "Wounded at Siege",
+            "Healed by Aragorn"
+        ],
+        "belongs_To_KingdomID": "KNG01"
+    },
+    {
+        "personID": "PER016",
+        "personName": "Meriadoc Brandybuck",
+        "gender": "Male",
+        "age": 36,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Master of Buckland/Died in Gondor",
+        "belongs_To_RaceID": "RACE01",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Pledged service to Th\u00e9oden",
+            "Rode to Pelennor Fields",
+            "Helped slay Witch-king",
+            "Battle of Bywater (book)"
+        ],
+        "homeLocationID": "LOC01"
+    },
+    {
+        "personID": "PER017",
+        "personName": "Peregrin Took",
+        "gender": "Male",
+        "age": 28,
+        "isRingBearer": false,
+        "alignment": "Good",
+        "fateStatus": "Thain/Died in Gondor",
+        "belongs_To_RaceID": "RACE01",
+        "events_participated": [
+            "Council of Elrond",
+            "Journey of Fellowship",
+            "Looked into Palant\u00edr",
+            "Pledged service to Denethor",
+            "Saved Faramir from pyre",
+            "Battle of Morannon"
+        ],
+        "homeLocationID": "LOC01"
+    },
+    {
+        "personID": "PER018",
+        "personName": "Witch-king of Angmar",
+        "gender": "Male (undead)",
+        "age": -1,
+        "isRingBearer": true,
+        "alignment": "Evil",
+        "fateStatus": "Destroyed",
+        "belongs_To_RaceID": "RACE04",
+        "events_participated": [
+            "Leader of Nazg\u00fbl",
+            "Stabbed Frodo at Weathertop",
+            "Led Siege of Gondor",
+            "Fought Gandalf",
+            "Slain by \u00c9owyn/Merry at Pelennor Fields"
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "councilID": "CNCL01",
+        "councilName": "Council of Elrond",
+        "purpose": "Decide fate of Ring",
+        "convenedDate": "3018-10-25T00:00:00",
+        "secrecyLevel": 8.0,
+        "locationID": "LOC02"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "armyID": "ARMY01",
+        "armyName": "Army of Gondor",
+        "totalUnits": 10000,
+        "moraleLevel": 6.5,
+        "bannerSymbol": "White Tree",
+        "commanderID": "PER015"
+    },
+    {
+        "armyID": "ARMY02",
+        "armyName": "Rohirrim",
+        "totalUnits": 6000,
+        "moraleLevel": 8.0,
+        "bannerSymbol": "White Horse",
+        "commanderID": "PER013"
+    },
+    {
+        "armyID": "ARMY03",
+        "armyName": "Armies of Mordor",
+        "totalUnits": 100000,
+        "moraleLevel": 5.0,
+        "bannerSymbol": "Red Eye",
+        "commanderID": "PER018"
+    },
+    {
+        "armyID": "ARMY04",
+        "armyName": "Uruk-hai of Isengard",
+        "totalUnits": 10000,
+        "moraleLevel": 7.0,
+        "bannerSymbol": "White Hand",
+        "commanderID": "PER008"
+    },
+    {
+        "armyID": "ARMY05",
+        "armyName": "Army of the D ead (Oathbreakers)",
+        "totalUnits": 5000,
+        "moraleLevel": 10.0,
+        "bannerSymbol": "None (Spectral)",
+        "commanderID": "PER004"
+    }
+]

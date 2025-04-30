@@ -1,0 +1,14 @@
+[
+    {
+        "personID": "PER003",
+        "wizardOrder": "Istari",
+        "staffPowerLevel": 9.0,
+        "robeColor": "Grey/White"
+    },
+    {
+        "personID": "PER008",
+        "wizardOrder": "Istari",
+        "staffPowerLevel": 8.5,
+        "robeColor": "White/Many-Coloured"
+    }
+]

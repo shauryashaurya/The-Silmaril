@@ -1,0 +1,32 @@
+[
+    {
+        "personID": "PER001",
+        "hobbitFamilyName": "Baggins",
+        "pipeWeedPreference": "Longbottom Leaf",
+        "stealthSkill": 8.5
+    },
+    {
+        "personID": "PER002",
+        "hobbitFamilyName": "Gamgee",
+        "pipeWeedPreference": "Unknown",
+        "stealthSkill": 7.0
+    },
+    {
+        "personID": "PER010",
+        "hobbitFamilyName": "Unknown (Stoor)",
+        "pipeWeedPreference": "None",
+        "stealthSkill": 9.0
+    },
+    {
+        "personID": "PER016",
+        "hobbitFamilyName": "Brandybuck",
+        "pipeWeedPreference": "Old Toby",
+        "stealthSkill": 6.5
+    },
+    {
+        "personID": "PER017",
+        "hobbitFamilyName": "Took",
+        "pipeWeedPreference": "Unknown",
+        "stealthSkill": 6.0
+    }
+]

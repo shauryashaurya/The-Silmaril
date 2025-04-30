@@ -1,0 +1,32 @@
+[
+    {
+        "languageID": "LANG01",
+        "languageName": "Westron",
+        "writingSystem": "Certar/Tengwar",
+        "complexityLevel": 5.0
+    },
+    {
+        "languageID": "LANG02",
+        "languageName": "Sindarin",
+        "writingSystem": "Tengwar/Certar",
+        "complexityLevel": 7.5
+    },
+    {
+        "languageID": "LANG03",
+        "languageName": "Quenya",
+        "writingSystem": "Tengwar",
+        "complexityLevel": 8.5
+    },
+    {
+        "languageID": "LANG04",
+        "languageName": "Khuzdul",
+        "writingSystem": "Certar (Angerthas Moria/Erebor)",
+        "complexityLevel": 7.0
+    },
+    {
+        "languageID": "LANG05",
+        "languageName": "Black Speech",
+        "writingSystem": "Tengwar (adapted)",
+        "complexityLevel": 6.0
+    }
+]

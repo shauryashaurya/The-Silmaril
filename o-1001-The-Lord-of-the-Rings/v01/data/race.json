@@ -1,0 +1,50 @@
+[
+    {
+        "raceID": "RACE01",
+        "raceName": "Hobbit",
+        "averageLifespan": 100,
+        "languageFamily": "Westron (influenced by Mannish)"
+    },
+    {
+        "raceID": "RACE02",
+        "raceName": "Elf",
+        "averageLifespan": -1,
+        "languageFamily": "Eldarin (Sindarin, Quenya)"
+    },
+    {
+        "raceID": "RACE03",
+        "raceName": "Dwarf",
+        "averageLifespan": 250,
+        "languageFamily": "Khuzdul"
+    },
+    {
+        "raceID": "RACE04",
+        "raceName": "Man",
+        "averageLifespan": 80,
+        "languageFamily": "Westron/Various Mannish"
+    },
+    {
+        "raceID": "RACE05",
+        "raceName": "Orc",
+        "averageLifespan": 40,
+        "languageFamily": "Black Speech/Orkish"
+    },
+    {
+        "raceID": "RACE06",
+        "raceName": "Maiar",
+        "averageLifespan": -1,
+        "languageFamily": "Valarin/Quenya/Various"
+    },
+    {
+        "raceID": "RACE07",
+        "raceName": "Valar",
+        "averageLifespan": -1,
+        "languageFamily": "Valarin"
+    },
+    {
+        "raceID": "RACE08",
+        "raceName": "Ent",
+        "averageLifespan": -1,
+        "languageFamily": "Entish"
+    }
+]

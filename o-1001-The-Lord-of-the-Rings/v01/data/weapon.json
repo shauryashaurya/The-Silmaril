@@ -1,0 +1,26 @@
+[
+    {
+        "weaponID": "WEAP01",
+        "weaponName": "Sting",
+        "weaponType": "Short Sword/Dagger",
+        "forgingSkillRequired": 8.0,
+        "enchantmentLevel": 7.5,
+        "artifactID": "ART02"
+    },
+    {
+        "weaponID": "WEAP02",
+        "weaponName": "And\u00faril (Flame of the West)",
+        "weaponType": "Long Sword",
+        "forgingSkillRequired": 9.5,
+        "enchantmentLevel": 8.5,
+        "artifactID": "ART03"
+    },
+    {
+        "weaponID": "WEAP03",
+        "weaponName": "Glamdring (Foe-hammer)",
+        "weaponType": "Long Sword",
+        "forgingSkillRequired": 8.5,
+        "enchantmentLevel": 8.0,
+        "artifactID": "ART04"
+    }
+]

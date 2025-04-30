@@ -1,0 +1,18 @@
+[
+    {
+        "beastID": "BST01",
+        "beastName": "Shelob",
+        "beastType": "Great Spider",
+        "hostilityLevel": 9.8,
+        "tamable": false,
+        "locationID": "LOC12"
+    },
+    {
+        "beastID": "BST02",
+        "beastName": "Durin's Bane (Balrog)",
+        "beastType": "Maiar (Corrupted)",
+        "hostilityLevel": 10.0,
+        "tamable": false,
+        "locationID": "LOC03"
+    }
+]

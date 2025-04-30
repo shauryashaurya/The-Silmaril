@@ -1,0 +1,66 @@
+[
+    {
+        "artifactID": "ART01",
+        "artifactName": "The One Ring",
+        "originEra": "Second Age",
+        "isCursed": true,
+        "powerLevel": 10.0,
+        "possessedByID": "PER001"
+    },
+    {
+        "artifactID": "ART02",
+        "artifactName": "Sting",
+        "originEra": "First Age",
+        "isCursed": false,
+        "powerLevel": 6.0,
+        "possessedByID": "PER001"
+    },
+    {
+        "artifactID": "ART03",
+        "artifactName": "And\u00faril (Narsil reforged)",
+        "originEra": "First Age/Third Age",
+        "isCursed": false,
+        "powerLevel": 9.0,
+        "possessedByID": "PER004"
+    },
+    {
+        "artifactID": "ART04",
+        "artifactName": "Glamdring",
+        "originEra": "First Age",
+        "isCursed": false,
+        "powerLevel": 7.5,
+        "possessedByID": "PER003"
+    },
+    {
+        "artifactID": "ART05",
+        "artifactName": "Phial of Galadriel",
+        "originEra": "Timeless (Starlight)",
+        "isCursed": false,
+        "powerLevel": 7.0,
+        "possessedByID": "PER002"
+    },
+    {
+        "artifactID": "ART06",
+        "artifactName": "Mithril Coat",
+        "originEra": "Unknown (Dwarven)",
+        "isCursed": false,
+        "powerLevel": 8.5,
+        "possessedByID": "PER001"
+    },
+    {
+        "artifactID": "ART07",
+        "artifactName": "Horn of Gondor",
+        "originEra": "Unknown (Gondorian)",
+        "isCursed": false,
+        "powerLevel": 4.0,
+        "possessedByID": "PER007"
+    },
+    {
+        "artifactID": "ART08",
+        "artifactName": "Palant\u00edr of Orthanc",
+        "originEra": "Second Age?",
+        "isCursed": false,
+        "powerLevel": 8.5,
+        "possessedByID": "PER004"
+    }
+]

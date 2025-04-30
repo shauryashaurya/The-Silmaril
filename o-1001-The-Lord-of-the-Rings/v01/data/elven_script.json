@@ -1,0 +1,9 @@
+[
+    {
+        "scriptID": "SCRIPT01",
+        "scriptStyle": "Tengwar",
+        "graceFactor": 9.0,
+        "rarityIndex": 6.0,
+        "script_BasedOn_LanguageID": "LANG02"
+    }
+]

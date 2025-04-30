@@ -1,0 +1,30 @@
+[
+    {
+        "journeyID": "JOU01",
+        "journeyName": "Journey of the Fellowship (Rivendell to Amon Hen)",
+        "distanceKm": 1500.0,
+        "startedDate": "3018-12-25T00:00:00",
+        "endedDate": "3019-02-26T00:00:00",
+        "startsAtLocationID": "LOC02",
+        "endsAtLocationID": "LOC11",
+        "fellowshipID": "FEL01"
+    },
+    {
+        "journeyID": "JOU02",
+        "journeyName": "Journey of Frodo & Sam (Amon Hen to Mt Doom)",
+        "distanceKm": 1300.0,
+        "startedDate": "3019-02-26T00:00:00",
+        "endedDate": "3019-03-25T00:00:00",
+        "startsAtLocationID": "LOC11",
+        "endsAtLocationID": "LOC07"
+    },
+    {
+        "journeyID": "JOU03",
+        "journeyName": "Journey of Aragorn, Legolas, Gimli (Post-Fellowship)",
+        "distanceKm": 1000.0,
+        "startedDate": "3019-02-26T00:00:00",
+        "endedDate": "3019-03-15T00:00:00",
+        "startsAtLocationID": "LOC11",
+        "endsAtLocationID": "LOC06"
+    }
+]

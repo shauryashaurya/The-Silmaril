@@ -1,0 +1,44 @@
+[
+    {
+        "regionID": "REG01",
+        "regionName": "Eriador",
+        "climateType": "Temperate",
+        "notableLandmarks": "Shire, Rivendell, Bree, Weathertop",
+        "localPopulation": 50000
+    },
+    {
+        "regionID": "REG02",
+        "regionName": "Rohan",
+        "climateType": "Grasslands/Temperate",
+        "notableLandmarks": "Edoras, Helm's Deep",
+        "localPopulation": 150000
+    },
+    {
+        "regionID": "REG03",
+        "regionName": "Gondor",
+        "climateType": "Temperate/Mediterranean",
+        "notableLandmarks": "Minas Tirith, Osgiliath, Minas Morgul",
+        "localPopulation": 500000
+    },
+    {
+        "regionID": "REG04",
+        "regionName": "Mordor",
+        "climateType": "Ash Waste/Volcanic",
+        "notableLandmarks": "Mount Doom, Barad-d\u00fbr, Cirith Ungol",
+        "localPopulation": 200000
+    },
+    {
+        "regionID": "REG05",
+        "regionName": "Misty Mountains",
+        "climateType": "Alpine",
+        "notableLandmarks": "Moria, High Pass",
+        "localPopulation": 10000
+    },
+    {
+        "regionID": "REG06",
+        "regionName": "Rhovanion (Wilderland)",
+        "climateType": "Temperate Forest/Plains",
+        "notableLandmarks": "Lothl\u00f3rien, Mirkwood, Erebor",
+        "localPopulation": 100000
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "personID": "PER005",
+        "elfTitle": "Prince of Mirkwood",
+        "bowSkill": 9.8,
+        "immortalYearsLived": 2931
+    },
+    {
+        "personID": "PER011",
+        "elfTitle": "Lord of Rivendell",
+        "bowSkill": 7.0,
+        "immortalYearsLived": 6520
+    },
+    {
+        "personID": "PER012",
+        "elfTitle": "Lady of L\u00f3rien",
+        "bowSkill": 5.0,
+        "immortalYearsLived": -1
+    }
+]

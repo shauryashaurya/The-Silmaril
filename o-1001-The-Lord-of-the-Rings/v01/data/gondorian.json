@@ -1,0 +1,14 @@
+[
+    {
+        "personID": "PER007",
+        "houseName": "H\u00farin (Stewards)",
+        "militaryTradition": 8.0,
+        "numenorDescent": true
+    },
+    {
+        "personID": "PER015",
+        "houseName": "H\u00farin (Stewards)",
+        "militaryTradition": 7.5,
+        "numenorDescent": true
+    }
+]

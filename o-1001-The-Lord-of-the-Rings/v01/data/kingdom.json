@@ -1,0 +1,18 @@
+[
+    {
+        "kingdomID": "KNG01",
+        "kingdomName": "Gondor",
+        "foundingYear": -3320,
+        "leadershipStructure": "Monarchy (Stewards/King)",
+        "allianceStatus": "Allied with Rohan",
+        "situated_In_RegionID": "REG03"
+    },
+    {
+        "kingdomID": "KNG02",
+        "kingdomName": "Rohan",
+        "foundingYear": 2510,
+        "leadershipStructure": "Monarchy",
+        "allianceStatus": "Allied with Gondor",
+        "situated_In_RegionID": "REG02"
+    }
+]
