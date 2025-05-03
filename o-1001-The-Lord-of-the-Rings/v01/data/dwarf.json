@@ -3,6 +3,10 @@
         "personID": "PER006",
         "dwarfClan": "Durin's Folk",
         "miningSkill": 7.0,
+        "bowSkill": 1.8,
+        "stealthSkill": 2.0,
+        "staffPowerLevel": 0.1,
+        "swordSkill": 1.5,
         "beardLength": 18.0
     }
 ]

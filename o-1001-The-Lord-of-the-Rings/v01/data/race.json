@@ -46,5 +46,11 @@
         "raceName": "Ent",
         "averageLifespan": -1,
         "languageFamily": "Entish"
+    },
+    {
+        "raceID": "RACE09",
+        "raceName": "Wizard",
+        "averageLifespan": -1,
+        "languageFamily": "Westron/Eldarin/Various"
     }
 ]

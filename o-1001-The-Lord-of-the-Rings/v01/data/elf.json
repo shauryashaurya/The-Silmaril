@@ -3,18 +3,30 @@
         "personID": "PER005",
         "elfTitle": "Prince of Mirkwood",
         "bowSkill": 9.8,
+        "stealthSkill": 5.0,
+        "miningSkill": 2.0,
+        "staffPowerLevel": 0.1,
+        "swordSkill": 1.5,
         "immortalYearsLived": 2931
     },
     {
         "personID": "PER011",
         "elfTitle": "Lord of Rivendell",
-        "bowSkill": 7.0,
+        "bowSkill": 8.0,
+        "stealthSkill": 5.5,
+        "miningSkill": 2.0,
+        "staffPowerLevel": 0.1,
+        "swordSkill": 1.5,
         "immortalYearsLived": 6520
     },
     {
         "personID": "PER012",
         "elfTitle": "Lady of L\u00f3rien",
-        "bowSkill": 5.0,
+        "bowSkill": 9.0,
+        "stealthSkill": 5.0,
+        "miningSkill": 2.0,
+        "staffPowerLevel": 0.1,
+        "swordSkill": 1.5,
         "immortalYearsLived": -1
     }
 ]

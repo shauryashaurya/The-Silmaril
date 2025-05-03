@@ -3,12 +3,18 @@
         "personID": "PER003",
         "wizardOrder": "Istari",
         "staffPowerLevel": 9.0,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 8.0,
         "robeColor": "Grey/White"
     },
     {
         "personID": "PER008",
         "wizardOrder": "Istari",
         "staffPowerLevel": 8.5,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 5.5,
         "robeColor": "White/Many-Coloured"
     }
 ]

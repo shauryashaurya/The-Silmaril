@@ -44,7 +44,7 @@
         "isRingBearer": true,
         "alignment": "Good",
         "fateStatus": "Returned/Sailed West",
-        "belongs_To_RaceID": "RACE06",
+        "belongs_To_RaceID": "RACE09",
         "events_participated": [
             "Council of Elrond",
             "Journey of Fellowship",
@@ -138,7 +138,7 @@
         "isRingBearer": false,
         "alignment": "Evil",
         "fateStatus": "Died",
-        "belongs_To_RaceID": "RACE06",
+        "belongs_To_RaceID": "RACE09",
         "events_participated": [
             "Betrayed Council",
             "Created Uruk-hai",

@@ -3,36 +3,60 @@
         "personID": "PER004",
         "realmAllegiance": "Gondor/Arnor",
         "swordSkill": 9.5,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 4.0,
+        "staffPowerLevel": 0.1,
         "lifespanVariance": 2.5
     },
     {
         "personID": "PER007",
         "realmAllegiance": "Gondor",
         "swordSkill": 8.5,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 4.0,
+        "staffPowerLevel": 0.1,
         "lifespanVariance": 1.0
     },
     {
         "personID": "PER013",
         "realmAllegiance": "Rohan",
         "swordSkill": 7.5,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 4.0,
+        "staffPowerLevel": 0.1,
         "lifespanVariance": 1.0
     },
     {
         "personID": "PER014",
         "realmAllegiance": "Rohan",
         "swordSkill": 8.0,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 4.0,
+        "staffPowerLevel": 0.1,
         "lifespanVariance": 1.0
     },
     {
         "personID": "PER015",
         "realmAllegiance": "Gondor",
         "swordSkill": 8.0,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 4.0,
+        "staffPowerLevel": 0.1,
         "lifespanVariance": 1.1
     },
     {
         "personID": "PER018",
         "realmAllegiance": "Angmar/Mordor",
         "swordSkill": 9.0,
+        "miningSkill": 3.0,
+        "bowSkill": 4.0,
+        "stealthSkill": 4.0,
+        "staffPowerLevel": 0.1,
         "lifespanVariance": -1
     }
 ]
