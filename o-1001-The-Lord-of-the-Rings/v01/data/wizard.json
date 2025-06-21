@@ -6,6 +6,7 @@
         "miningSkill": 3.0,
         "bowSkill": 4.0,
         "stealthSkill": 8.0,
+        "swordSkill": 9.5,
         "robeColor": "Grey/White"
     },
     {
@@ -15,6 +16,7 @@
         "miningSkill": 3.0,
         "bowSkill": 4.0,
         "stealthSkill": 5.5,
+        "swordSkill": 3.5,
         "robeColor": "White/Many-Coloured"
     }
 ]
