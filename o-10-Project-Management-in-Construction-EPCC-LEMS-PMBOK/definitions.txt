@@ -1,0 +1,169 @@
+```pseudocode                          
+Class: MegaProject              
+   - projectID: string                // Unique project identifier              
+   - projectName: string              // E.g., "Mega DataCenter Construction"              
+   - overallBudget: float             // Total allocated budget              
+   - startDate: dateTime              // Project start (must be ≤ plannedEndDate)              
+   - plannedEndDate: dateTime         // Planned completion date              
+   - actualEndDate: dateTime (optional) // Recorded completion, if finished              
+              
+   // Relationships:              
+   - hasWorkStream -> WorkStream (1..*)                
+     // RULE: A MegaProject must consist of one or more WorkStreams.              
+                
+Class: WorkStream              
+   - workStreamID: string             // Unique identifier (e.g., WS-1001)              
+   - name: string                     // Descriptive name (e.g., "HVAC & Cooling")              
+   - description: string              // Brief details              
+   - startDate: dateTime              // Must be within the MegaProject's timeframe              
+   - endDate: dateTime                // Must be later than startDate and ≤ MegaProject.plannedEndDate              
+   - budgetAllocated: float           // Portion of project budget              
+              
+   // Relationships:              
+   - belongsToProject -> MegaProject (1..1)              
+   - hasTask -> Task (0..*)              
+   // RULE: Each WorkStream is associated with exactly one MegaProject.              
+                 
+Class: Task              
+   - taskID: string                   // Unique identifier (e.g., TK-1050)              
+   - taskName: string                 // E.g., "Pour Foundation"              
+   - startDate: dateTime              // Actual or scheduled start; must be ≥ WorkStream.startDate              
+   - endDate: dateTime                // Must be > startDate and ideally ≤ WorkStream.endDate              
+   - durationDays: int                // Computed or estimated duration              
+   - costEstimate: float              // Planned cost for this task              
+   - actualCost: float                // Actual cost (may update during progress)              
+   - isCritical: boolean              // TRUE if on the critical path (computed from dependencies)              
+   - milestoneFlag: boolean           // TRUE if task represents a project milestone              
+              
+   // Relationships:              
+   - belongsToWorkStream -> WorkStream (0..1)                
+     // RULE: Typically, a Task belongs to a single WorkStream; if not, it must reference the overall project.              
+   - dependsOn -> Task (0..*)         // List of taskIDs this task depends on              
+      // RULE: For any dependency, the dependent Task’s startDate must be ≥ the dependency’s endDate.              
+   - usesResource -> Resource (0..*)  // Resources (Labor, Equipment, Material) assigned to the task              
+   - assignedTeam -> Team (0..1)        // Optional: a dedicated team performing the task              
+Class: Resource (abstract)              
+   - resourceID: string               // Unique identifier              
+   - resourceName: string             // Descriptive name              
+   - resourceType: string             // One of: "Labor", "Equipment", "Material"              
+                 
+Class: Person  (represents a labor resource)              
+   - personID: string                 // Unique employee identifier (e.g., EMP-5001)              
+   - name: string              
+   - skillType: string                // E.g., "CivilEngineer", "Electrician", "ProjectManager", etc.              
+   - hourlyRate: float                // Must be > 0              
+   // RULE: The value for skillType must be one from a defined set (at least 35 different skills).              
+                 
+Class: EquipmentResource (extends Resource)              
+   - equipmentID: string              // Unique identifier (e.g., EQ-1001)              
+   - equipmentName: string              
+   - equipmentType: string            // E.g., "Crane", "ConcreteMixer", "Digital Equipment", etc.              
+   - dailyRentalCost: float           // > 0              
+   - capacityOrSpecs: string          // Descriptive specification (e.g., "5-ton capacity")              
+   // RULE: Equipment types should cover at least 30 distinct categories.              
+                 
+Class: MaterialResource (extends Resource)              
+   - materialID: string               // Unique identifier (e.g., MAT-1001)              
+   - materialName: string              
+   - materialType: string             // E.g., "Concrete", "SteelBeam", "FiberOptics", etc.              
+   - unitCost: float                  // > 0              
+   - quantityOnHand: int              // Optional: current inventory              
+   // RULE: Material types should cover at least 30 distinct categories.              
+                 
+Class: Supplier              
+   - supplierID: string               // Unique identifier (e.g., SUP-1001)              
+   - supplierName: string              
+   - location: string              
+   - supplies -> MaterialResource or EquipmentResource (0..*)              
+   // RULE: Each supplier may supply one or more resource types.              
+                 
+Class: Team              
+   - teamID: string                   // Unique identifier (e.g., TM-1001)              
+   - teamName: string                 // Descriptive name (e.g., "Foundation Crew")              
+   // Optionally, a team can reference a set of People (labor resources)              
+                 
+Class: ProcurementOrder              
+   - orderNumber: string              // Unique order number              
+   - orderDate: dateTime              // Date when the order was placed              
+   - totalCost: float                 // Total cost for the order              
+   // Relationships:              
+   - fromSupplier -> Supplier (1..1)              
+   - procuresResource -> MaterialResource or EquipmentResource (0..*)              
+   - belongsToProject -> MegaProject (optional)              
+   // RULE: The orderDate must be before or concurrent with the start of tasks using these resources.              
+                 
+              
+                      
+```  
+  
+  
+Sample MegaProject:  
+ {'id': 'proj_0', 'projectID': 'PROJECT-1000', 'projectName': 'MegaDataCenter_0', 'overallBudget': 460459136.18, 'startDate': '2023-11-14T06:25:17', 'plannedEndDate': '2025-08-30T06:25:17', 'actualEndDate': None}  
+  
+Sample WorkStream:  
+ {'id': 'ws_0', 'workStreamID': 'WS-5000', 'name': 'Workstream_0_Song', 'description': 'Degree compare much tough pick effect political.', 'startDate': '2024-08-20T06:25:17', 'endDate': '2024-10-26T06:25:17', 'budgetAllocated': 639931.73, 'projectID': 'proj_0'}  
+  
+Sample Person (Labor):  
+ {'id': 'person_0', 'personID': 'EMP-8000', 'name': 'Robin Anderson', 'skillType': 'CraneOperator', 'hourlyRate': 92.18}  
+  
+Sample Equipment:  
+ {'id': 'equip_0', 'equipmentID': 'EQ-1000', 'equipmentName': 'AirCompressor_0', 'equipmentType': 'AirCompressor', 'dailyRentalCost': 350.36, 'capacityOrSpecs': 'AirCompressor spec details', 'supplierID': 'sup_13'}  
+  
+Sample Material:  
+ {'id': 'mat_0', 'materialID': 'MAT-1000', 'materialName': 'AccessPanels_0', 'materialType': 'AccessPanels', 'unitCost': 21.06, 'quantityOnHand': 53668}  
+  
+Sample Supplier:  
+ {'id': 'sup_0', 'supplierID': 'SUP-1000', 'supplierName': 'Dominguez, Allen and Williams Supplies', 'location': 'North Anthony'}  
+  
+Sample Team:  
+ {'id': 'team_0', 'teamID': 'TM-3000', 'teamName': 'Team_0_Than', 'personIDs': ['person_1859', 'person_530', 'person_578', 'person_1752', 'person_1918', 'person_1792', 'person_1026', 'person_1296']}  
+  
+Sample ProcurementOrder:  
+ {'id': 'po_0', 'orderNumber': 'PO-10000', 'orderDate': '2024-12-16T00:21:45', 'totalCost': 20926.52, 'supplierID': 'sup_66', 'resourceIDs': ['mat_22'], 'belongsToProjectID': 'proj_23'}  
+  
+Sample Task:  
+ {'id': 'task_0', 'taskID': 'TK-10000', 'taskName': 'Task_0_Incentivize B2B Interfaces', 'startDate': '2024-08-23T06:25:17', 'endDate': '2024-09-19T06:25:17', 'durationDays': 27, 'costEstimate': 257265.06, 'actualCost': 0.0, 'isCritical': False, 'milestoneFlag': False, 'workStreamID': 'ws_24', 'dependsOnIDs': [], 'laborIDs': ['person_506', 'person_1959', 'person_568'], 'equipmentIDs': ['equip_33', 'equip_52'], 'materialIDs': ['mat_82'], 'teamID': None, 'classType': 'Task'}  
+   
+   
+   
+data_path = "./data/big"  
+pd.DataFrame(mega_projects).to_csv(data_path+"mega_projects.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(workstreams).to_csv(data_path+"workstreams.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(people).to_csv(data_path+"people.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(equipment_list).to_csv(data_path+"equipment_list.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(material_list).to_csv(data_path+"material_list.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(suppliers).to_csv(data_path+"suppliers.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(teams).to_csv(data_path+"teams.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(procurement_orders).to_csv(data_path+"procurement_orders.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+pd.DataFrame(tasks).to_csv(data_path+"tasks.csv", encoding = "utf-8", escapechar = "\"", index=False)  
+  
+  
+  
+  
+  
+Analysis Ideas  
+  
+* Resource Utilization and Critical Path Analysis  
+	* Examine how resources (labor, equipment, materials) are distributed across critical vs. non-critical tasks  
+	* Visualize the critical path of projects, with resource allocations and bottlenecks  
+	* Analyze resource over-allocation and identify optimization opportunities  
+   
+* Budget vs. Actual Cost Distribution and Flow  
+	* Track budget allocation and actual costs across the project hierarchy  
+	* Analyze cost variances at different levels (MegaProject → WorkStream → Task)  
+	* Identify cost hotspots and areas where budget management needs attention  
+	  
+* Temporal Project Performance and Timeline Analysis  
+	* Visualize project timelines with milestone achievements  
+	* Compare planned vs. actual durations and identify schedule deviations  
+	* Analyze seasonal patterns in project performance and resource utilization  
+	  
+* Resource Network and Interdependency Analysis  
+	* Map the relationships between different elements (Teams, Tasks, Resources)  
+	* Identify key dependency chains and their impact on project timelines  
+	* Visualize resource sharing across workstreams and identify optimization opportunities  
+	  
+* Procurement and Supply Chain Efficiency Analysis  
+	* Analyze procurement patterns and supplier performance  
+	* Track material/equipment availability against task requirements  
+	* Identify supply chain risks and optimization opportunities
