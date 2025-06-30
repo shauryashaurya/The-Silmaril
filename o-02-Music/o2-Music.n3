@@ -1,0 +1,322 @@
+# Design Decisions:
+# 
+# Disambiguated property names: albumTitle vs title, genreName vs name to avoid conflicts
+# Union domains: owl:unionOf for properties like hasGenre and hasWonAward that apply to multiple classes
+# Separate release properties: Distinguish releasedByArtist and releasedByLabel since the two "releasedBy" relationships have different semantics
+# Comprehensive inverse properties: Additional inverse relationships for bidirectional navigation
+
+
+# yeah, just use example.org...
+@prefix : <http://example.org/music#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology Declaration
+<http://example.org/music> a owl:Ontology ;
+    rdfs:label "Music Ontology" ;
+    rdfs:comment "An ontology for representing songs, artists, albums, record labels, genres, and awards in the music industry" .
+
+# ===== CLASS DEFINITIONS =====
+
+# Song Class
+:Song a owl:Class ;
+    rdfs:label "Song" ;
+    rdfs:comment "A musical composition" .
+
+# Artist Class
+:Artist a owl:Class ;
+    rdfs:label "Artist" ;
+    rdfs:comment "A person or group who creates or performs music" .
+
+# Album Class
+:Album a owl:Class ;
+    rdfs:label "Album" ;
+    rdfs:comment "A collection of songs released together" .
+
+# RecordLabel Class
+:RecordLabel a owl:Class ;
+    rdfs:label "Record Label" ;
+    rdfs:comment "A company that manages the production, distribution, and promotion of music" .
+
+# Genre Class
+:Genre a owl:Class ;
+    rdfs:label "Genre" ;
+    rdfs:comment "A category or style of music" .
+
+# Award Class
+:Award a owl:Class ;
+    rdfs:label "Award" ;
+    rdfs:comment "A recognition given for musical achievement" .
+
+# Single Class (subclass of Song)
+:Single a owl:Class ;
+    rdfs:subClassOf :Song ;
+    rdfs:label "Single" ;
+    rdfs:comment "A song released as a standalone track or as a primary track from an album" .
+
+# ExtendedPlay Class (subclass of Album)
+:ExtendedPlay a owl:Class ;
+    rdfs:subClassOf :Album ;
+    rdfs:label "Extended Play" ;
+    rdfs:comment "A musical recording that contains more music than a single but is shorter than an album" .
+
+# ===== DATA PROPERTIES =====
+
+# Song Data Properties
+:title a owl:DatatypeProperty ;
+    rdfs:label "title" ;
+    rdfs:comment "The title of a song" ;
+    rdfs:domain :Song ;
+    rdfs:range xsd:string .
+
+:duration a owl:DatatypeProperty ;
+    rdfs:label "duration" ;
+    rdfs:comment "The duration of a song in seconds" ;
+    rdfs:domain :Song ;
+    rdfs:range xsd:int .
+
+:releaseDate a owl:DatatypeProperty ;
+    rdfs:label "release date" ;
+    rdfs:comment "The date when a song was released" ;
+    rdfs:domain :Song ;
+    rdfs:range xsd:date .
+
+# Artist Data Properties
+:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:comment "The name of an artist" ;
+    rdfs:domain :Artist ;
+    rdfs:range xsd:string .
+
+:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birth date" ;
+    rdfs:comment "The birth date of an artist" ;
+    rdfs:domain :Artist ;
+    rdfs:range xsd:date .
+
+:nationality a owl:DatatypeProperty ;
+    rdfs:label "nationality" ;
+    rdfs:comment "The nationality of an artist" ;
+    rdfs:domain :Artist ;
+    rdfs:range xsd:string .
+
+# Album Data Properties
+:albumTitle a owl:DatatypeProperty ;
+    rdfs:label "album title" ;
+    rdfs:comment "The title of an album" ;
+    rdfs:domain :Album ;
+    rdfs:range xsd:string .
+
+:releaseYear a owl:DatatypeProperty ;
+    rdfs:label "release year" ;
+    rdfs:comment "The year when an album was released" ;
+    rdfs:domain :Album ;
+    rdfs:range xsd:int .
+
+# RecordLabel Data Properties
+:labelName a owl:DatatypeProperty ;
+    rdfs:label "label name" ;
+    rdfs:comment "The name of a record label" ;
+    rdfs:domain :RecordLabel ;
+    rdfs:range xsd:string .
+
+:location a owl:DatatypeProperty ;
+    rdfs:label "location" ;
+    rdfs:comment "The location of a record label" ;
+    rdfs:domain :RecordLabel ;
+    rdfs:range xsd:string .
+
+# Genre Data Properties
+:genreName a owl:DatatypeProperty ;
+    rdfs:label "genre name" ;
+    rdfs:comment "The name of a genre" ;
+    rdfs:domain :Genre ;
+    rdfs:range xsd:string .
+
+:description a owl:DatatypeProperty ;
+    rdfs:label "description" ;
+    rdfs:comment "A description of a genre" ;
+    rdfs:domain :Genre ;
+    rdfs:range xsd:string .
+
+# Award Data Properties
+:awardName a owl:DatatypeProperty ;
+    rdfs:label "award name" ;
+    rdfs:comment "The name of an award" ;
+    rdfs:domain :Award ;
+    rdfs:range xsd:string .
+
+:year a owl:DatatypeProperty ;
+    rdfs:label "year" ;
+    rdfs:comment "The year an award was given" ;
+    rdfs:domain :Award ;
+    rdfs:range xsd:int .
+
+:awardingBody a owl:DatatypeProperty ;
+    rdfs:label "awarding body" ;
+    rdfs:comment "The organization that gives the award" ;
+    rdfs:domain :Award ;
+    rdfs:range xsd:string .
+
+# Single Data Properties
+:isStandalone a owl:DatatypeProperty ;
+    rdfs:label "is standalone" ;
+    rdfs:comment "Whether a single is released independently or as part of an album" ;
+    rdfs:domain :Single ;
+    rdfs:range xsd:boolean .
+
+# ExtendedPlay Data Properties
+:numberOfTracks a owl:DatatypeProperty ;
+    rdfs:label "number of tracks" ;
+    rdfs:comment "The number of tracks in an extended play" ;
+    rdfs:domain :ExtendedPlay ;
+    rdfs:range xsd:int .
+
+# ===== OBJECT PROPERTIES =====
+
+# performedBy: Song -> Artist (one-to-many)
+:performedBy a owl:ObjectProperty ;
+    rdfs:label "performed by" ;
+    rdfs:comment "Relates a song to the artist(s) who perform it" ;
+    rdfs:domain :Song ;
+    rdfs:range :Artist .
+
+# featuredOn: Song -> Album (one-to-many)
+:featuredOn a owl:ObjectProperty ;
+    rdfs:label "featured on" ;
+    rdfs:comment "Relates a song to the album(s) it appears on" ;
+    rdfs:domain :Song ;
+    rdfs:range :Album .
+
+# hasGenre: Song -> Genre (one-to-many) and Album -> Genre (one-to-many)
+:hasGenre a owl:ObjectProperty ;
+    rdfs:label "has genre" ;
+    rdfs:comment "Relates a song or album to its genre(s)" ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :Song :Album ) ] ;
+    rdfs:range :Genre .
+
+# hasWonAward: Song -> Award (one-to-many) and Artist -> Award (one-to-many)
+:hasWonAward a owl:ObjectProperty ;
+    rdfs:label "has won award" ;
+    rdfs:comment "Relates a song or artist to awards they have won" ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :Song :Artist ) ] ;
+    rdfs:range :Award .
+
+# signedTo: Artist -> RecordLabel (one-to-one)
+:signedTo a owl:ObjectProperty ;
+    rdfs:label "signed to" ;
+    rdfs:comment "Relates an artist to the record label they are signed to" ;
+    rdfs:domain :Artist ;
+    rdfs:range :RecordLabel .
+
+# releasedByArtist: Album -> Artist (one-to-many)
+:releasedByArtist a owl:ObjectProperty ;
+    rdfs:label "released by artist" ;
+    rdfs:comment "Relates an album to the artist(s) who released it" ;
+    rdfs:domain :Album ;
+    rdfs:range :Artist .
+
+# releasedByLabel: Album -> RecordLabel (one-to-one)
+:releasedByLabel a owl:ObjectProperty ;
+    rdfs:label "released by label" ;
+    rdfs:comment "Relates an album to the record label that released it" ;
+    rdfs:domain :Album ;
+    rdfs:range :RecordLabel .
+
+# ===== CARDINALITY CONSTRAINTS =====
+
+# Song must be performed by at least one artist
+:Song rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :performedBy ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Song must have at least one genre
+:Song rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasGenre ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Album must have at least one genre
+:Album rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasGenre ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Album must be released by at least one artist
+:Album rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :releasedByArtist ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Album must be released by exactly one record label
+:Album rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :releasedByLabel ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Artist can be signed to at most one record label
+:Artist rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :signedTo ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# ===== INVERSE PROPERTIES =====
+
+# Define inverse relationships for better navigation
+:performs a owl:ObjectProperty ;
+    rdfs:label "performs" ;
+    rdfs:comment "Relates an artist to songs they perform" ;
+    owl:inverseOf :performedBy ;
+    rdfs:domain :Artist ;
+    rdfs:range :Song .
+
+:features a owl:ObjectProperty ;
+    rdfs:label "features" ;
+    rdfs:comment "Relates an album to songs it features" ;
+    owl:inverseOf :featuredOn ;
+    rdfs:domain :Album ;
+    rdfs:range :Song .
+
+:genreOf a owl:ObjectProperty ;
+    rdfs:label "genre of" ;
+    rdfs:comment "Relates a genre to songs or albums that belong to it" ;
+    owl:inverseOf :hasGenre ;
+    rdfs:domain :Genre ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( :Song :Album ) ] .
+
+:awardWonBy a owl:ObjectProperty ;
+    rdfs:label "award won by" ;
+    rdfs:comment "Relates an award to the song or artist that won it" ;
+    owl:inverseOf :hasWonAward ;
+    rdfs:domain :Award ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( :Song :Artist ) ] .
+
+:hasSignedArtist a owl:ObjectProperty ;
+    rdfs:label "has signed artist" ;
+    rdfs:comment "Relates a record label to artists signed to it" ;
+    owl:inverseOf :signedTo ;
+    rdfs:domain :RecordLabel ;
+    rdfs:range :Artist .
+
+:releases a owl:ObjectProperty ;
+    rdfs:label "releases" ;
+    rdfs:comment "Relates an artist to albums they have released" ;
+    owl:inverseOf :releasedByArtist ;
+    rdfs:domain :Artist ;
+    rdfs:range :Album .
+
+:publishedAlbum a owl:ObjectProperty ;
+    rdfs:label "published album" ;
+    rdfs:comment "Relates a record label to albums it has published" ;
+    owl:inverseOf :releasedByLabel ;
+    rdfs:domain :RecordLabel ;
+    rdfs:range :Album .

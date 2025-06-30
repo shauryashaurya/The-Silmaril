@@ -1,0 +1,520 @@
+@prefix : <http://example.org/insurance#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+
+# Ontology Declaration
+<http://example.org/insurance> a owl:Ontology ;
+    rdfs:label "Advanced Insurance Ontology" ;
+    rdfs:comment "A comprehensive ontology for insurance domain with business rules and logical reasoning capabilities" .
+
+# ===== CLASS DEFINITIONS =====
+
+:PolicyHolder a owl:Class ;
+    rdfs:label "Policy Holder" ;
+    rdfs:comment "An individual or entity that owns an insurance policy" .
+
+:Insurer a owl:Class ;
+    rdfs:label "Insurer" ;
+    rdfs:comment "An insurance company that issues policies and handles claims" .
+
+:Underwriter a owl:Class ;
+    rdfs:label "Underwriter" ;
+    rdfs:comment "A professional who evaluates and approves insurance applications" .
+
+:Agent a owl:Class ;
+    rdfs:label "Agent" ;
+    rdfs:comment "A licensed professional who sells insurance policies" .
+
+:Coverage a owl:Class ;
+    rdfs:label "Coverage" ;
+    rdfs:comment "A specific type of protection provided by an insurance policy" .
+
+:Policy a owl:Class ;
+    rdfs:label "Policy" ;
+    rdfs:comment "An insurance contract providing coverage" .
+
+:Claim a owl:Class ;
+    rdfs:label "Claim" ;
+    rdfs:comment "A request for compensation under an insurance policy" .
+
+# Derived Classes for Business Logic
+:ActivePolicy a owl:Class ;
+    rdfs:subClassOf :Policy ;
+    rdfs:label "Active Policy" ;
+    rdfs:comment "A policy that is currently in effect" .
+
+:ExpiredPolicy a owl:Class ;
+    rdfs:subClassOf :Policy ;
+    rdfs:label "Expired Policy" ;
+    rdfs:comment "A policy that has expired" .
+
+:HighRiskPolicyHolder a owl:Class ;
+    rdfs:subClassOf :PolicyHolder ;
+    rdfs:label "High Risk Policy Holder" ;
+    rdfs:comment "A policy holder with multiple claims or high claim amounts" .
+
+:ApprovedClaim a owl:Class ;
+    rdfs:subClassOf :Claim ;
+    rdfs:label "Approved Claim" ;
+    rdfs:comment "A claim that has been approved for payment" .
+
+:PendingClaim a owl:Class ;
+    rdfs:subClassOf :Claim ;
+    rdfs:label "Pending Claim" ;
+    rdfs:comment "A claim that is under review" .
+
+# ===== DATA PROPERTIES =====
+
+# PolicyHolder Properties
+:name a owl:DatatypeProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range xsd:string .
+
+:dateOfBirth a owl:DatatypeProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range xsd:date .
+
+:address a owl:DatatypeProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range xsd:string .
+
+:phoneNumber a owl:DatatypeProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range xsd:string .
+
+# Insurer Properties
+:insurerName a owl:DatatypeProperty ;
+    rdfs:domain :Insurer ;
+    rdfs:range xsd:string .
+
+:headquartersLocation a owl:DatatypeProperty ;
+    rdfs:domain :Insurer ;
+    rdfs:range xsd:string .
+
+:industryRating a owl:DatatypeProperty ;
+    rdfs:domain :Insurer ;
+    rdfs:range xsd:float .
+
+# Underwriter Properties
+:underwriterName a owl:DatatypeProperty ;
+    rdfs:domain :Underwriter ;
+    rdfs:range xsd:string .
+
+:licenseID a owl:DatatypeProperty ;
+    rdfs:domain :Underwriter ;
+    rdfs:range xsd:string .
+
+:experienceYears a owl:DatatypeProperty ;
+    rdfs:domain :Underwriter ;
+    rdfs:range xsd:int .
+
+# Agent Properties
+:agentName a owl:DatatypeProperty ;
+    rdfs:domain :Agent ;
+    rdfs:range xsd:string .
+
+:agencyName a owl:DatatypeProperty ;
+    rdfs:domain :Agent ;
+    rdfs:range xsd:string .
+
+:agentLicense a owl:DatatypeProperty ;
+    rdfs:domain :Agent ;
+    rdfs:range xsd:string .
+
+# Coverage Properties
+:coverageName a owl:DatatypeProperty ;
+    rdfs:domain :Coverage ;
+    rdfs:range xsd:string .
+
+:coverageLimit a owl:DatatypeProperty ;
+    rdfs:domain :Coverage ;
+    rdfs:range xsd:float .
+
+:deductible a owl:DatatypeProperty ;
+    rdfs:domain :Coverage ;
+    rdfs:range xsd:float .
+
+# Policy Properties
+:policyNumber a owl:DatatypeProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range xsd:string .
+
+:policyType a owl:DatatypeProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range xsd:string .
+
+:startDate a owl:DatatypeProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range xsd:date .
+
+:endDate a owl:DatatypeProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range xsd:date .
+
+:premiumAmount a owl:DatatypeProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range xsd:float .
+
+:status a owl:DatatypeProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range xsd:string .
+
+# Claim Properties
+:claimNumber a owl:DatatypeProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:string .
+
+:claimDate a owl:DatatypeProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:date .
+
+:claimType a owl:DatatypeProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:string .
+
+:amountClaimed a owl:DatatypeProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:float .
+
+:amountSettled a owl:DatatypeProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:float .
+
+:claimStatus a owl:DatatypeProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range xsd:string .
+
+# Calculated Properties
+:totalClaimAmount a owl:DatatypeProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Total amount of all claims filed by this policy holder" .
+
+:commissionAmount a owl:DatatypeProperty ;
+    rdfs:domain :Agent ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Commission earned by the agent" .
+
+:riskScore a owl:DatatypeProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Calculated risk score for the policy holder" .
+
+# ===== OBJECT PROPERTIES =====
+
+:hasPolicy a owl:ObjectProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range :Policy .
+
+:files a owl:ObjectProperty ;
+    rdfs:domain :PolicyHolder ;
+    rdfs:range :Claim .
+
+:issues a owl:ObjectProperty ;
+    rdfs:domain :Insurer ;
+    rdfs:range :Policy .
+
+:handles a owl:ObjectProperty ;
+    rdfs:domain :Insurer ;
+    rdfs:range :Claim .
+
+:underwrites a owl:ObjectProperty ;
+    rdfs:domain :Underwriter ;
+    rdfs:range :Policy .
+
+:sells a owl:ObjectProperty ;
+    rdfs:domain :Agent ;
+    rdfs:range :Policy .
+
+:hasCoverage a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Coverage .
+
+:hasPolicyHolder a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :PolicyHolder .
+
+:issuedBy a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Insurer .
+
+:underwrittenBy a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Underwriter .
+
+:soldBy a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Agent .
+
+:filedFor a owl:ObjectProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range :Policy .
+
+:filedBy a owl:ObjectProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range :PolicyHolder .
+
+:handledBy a owl:ObjectProperty ;
+    rdfs:domain :Claim ;
+    rdfs:range :Insurer .
+
+# ===== BUSINESS RULES USING N3 SYNTAX =====
+
+# Rule 1: Policy Status Classification
+{
+    ?policy a :Policy ;
+            :startDate ?start ;
+            :endDate ?end .
+    ?now time:gmtime ?currentTime .
+    ?start time:inSeconds ?startSec .
+    ?end time:inSeconds ?endSec .
+    ?currentTime time:inSeconds ?nowSec .
+    ?startSec math:lessThanOrEqualTo ?nowSec .
+    ?nowSec math:lessThanOrEqualTo ?endSec .
+} => {
+    ?policy a :ActivePolicy ;
+            :status "ACTIVE" .
+} .
+
+{
+    ?policy a :Policy ;
+            :endDate ?end .
+    ?now time:gmtime ?currentTime .
+    ?end time:inSeconds ?endSec .
+    ?currentTime time:inSeconds ?nowSec .
+    ?nowSec math:greaterThan ?endSec .
+} => {
+    ?policy a :ExpiredPolicy ;
+            :status "EXPIRED" .
+} .
+
+# Rule 2: High Risk Policy Holder Classification
+{
+    ?holder a :PolicyHolder .
+    ?holder :files ?claim1, ?claim2, ?claim3 .
+    ?claim1 owl:differentFrom ?claim2 .
+    ?claim2 owl:differentFrom ?claim3 .
+    ?claim1 owl:differentFrom ?claim3 .
+} => {
+    ?holder a :HighRiskPolicyHolder .
+} .
+
+# Rule 3: Total Claim Amount Calculation
+{
+    ?holder a :PolicyHolder .
+    ?holder :files ?claim .
+    ?claim :amountClaimed ?amount .
+    ( ?holder !:files !:amountClaimed ) math:sum ?totalAmount .
+} => {
+    ?holder :totalClaimAmount ?totalAmount .
+} .
+
+# Rule 4: Risk Score Calculation
+{
+    ?holder a :PolicyHolder ;
+            :totalClaimAmount ?totalClaims .
+    ?holder :hasPolicy ?policy .
+    ?policy :premiumAmount ?premium .
+    ( ?holder !:hasPolicy !:premiumAmount ) math:sum ?totalPremiums .
+    ?totalClaims math:quotient ?totalPremiums ?riskRatio .
+    ?riskRatio math:product 100 ?riskScore .
+} => {
+    ?holder :riskScore ?riskScore .
+} .
+
+# Rule 5: Claim Auto-Approval Rules
+{
+    ?claim a :Claim ;
+           :amountClaimed ?amount ;
+           :claimType ?type .
+    ?amount math:lessThan 5000 .
+    ?type string:equalIgnoringCase "AUTO" .
+} => {
+    ?claim a :ApprovedClaim ;
+           :claimStatus "AUTO_APPROVED" .
+} .
+
+# Rule 6: Large Claim Review Required
+{
+    ?claim a :Claim ;
+           :amountClaimed ?amount .
+    ?amount math:greaterThanOrEqualTo 50000 .
+} => {
+    ?claim a :PendingClaim ;
+           :claimStatus "REQUIRES_SENIOR_REVIEW" .
+} .
+
+# Rule 7: Agent Commission Calculation (5% of premium)
+{
+    ?agent a :Agent ;
+           :sells ?policy .
+    ?policy :premiumAmount ?premium .
+    ?premium math:product 0.05 ?commission .
+} => {
+    ?agent :commissionAmount ?commission .
+} .
+
+# Rule 8: Coverage Limit Validation
+{
+    ?claim a :Claim ;
+           :filedFor ?policy ;
+           :amountClaimed ?claimedAmount .
+    ?policy :hasCoverage ?coverage .
+    ?coverage :coverageLimit ?limit .
+    ?claimedAmount math:greaterThan ?limit .
+} => {
+    ?claim :claimStatus "EXCEEDS_COVERAGE_LIMIT" .
+} .
+
+# Rule 9: Policy Renewal Eligibility
+{
+    ?policy a :Policy ;
+            :hasPolicyHolder ?holder ;
+            :endDate ?endDate .
+    ?holder :riskScore ?risk .
+    ?risk math:lessThan 150 .
+    ?endDate time:inSeconds ?endSec .
+    ?now time:gmtime ?currentTime .
+    ?currentTime time:inSeconds ?nowSec .
+    ?endSec math:minus ?nowSec ?daysToExpiry .
+    ?daysToExpiry math:lessThan 2592000 . # 30 days in seconds
+} => {
+    ?policy :status "ELIGIBLE_FOR_RENEWAL" .
+} .
+
+# Rule 10: Underwriter Assignment Based on Policy Value
+{
+    ?policy a :Policy ;
+            :premiumAmount ?premium .
+    ?premium math:greaterThan 10000 .
+    ?underwriter a :Underwriter ;
+                 :experienceYears ?years .
+    ?years math:greaterThan 5 .
+} => {
+    ?policy :underwrittenBy ?underwriter .
+} .
+
+# Rule 11: Claim Settlement Amount Calculation (considering deductible)
+{
+    ?claim a :Claim ;
+           :filedFor ?policy ;
+           :amountClaimed ?claimedAmount .
+    ?policy :hasCoverage ?coverage .
+    ?coverage :deductible ?deductible .
+    ?claimedAmount math:minus ?deductible ?settlementAmount .
+    ?settlementAmount math:greaterThan 0 .
+} => {
+    ?claim :amountSettled ?settlementAmount .
+} .
+
+# Rule 12: Policy Type Inference Based on Coverage
+{
+    ?policy :hasCoverage ?coverage .
+    ?coverage :coverageName ?name .
+    ?name string:contains "AUTO" .
+} => {
+    ?policy :policyType "AUTOMOBILE" .
+} .
+
+{
+    ?policy :hasCoverage ?coverage .
+    ?coverage :coverageName ?name .
+    ?name string:contains "HOME" .
+} => {
+    ?policy :policyType "HOMEOWNERS" .
+} .
+
+# Rule 13: High-Value Customer Recognition
+{
+    ?holder a :PolicyHolder .
+    ( ?holder !:hasPolicy !:premiumAmount ) math:sum ?totalPremiums .
+    ?totalPremiums math:greaterThan 50000 .
+} => {
+    ?holder a :HighValueCustomer .
+} .
+
+# Rule 14: Claim Fraud Detection Pattern
+{
+    ?holder a :PolicyHolder .
+    ?holder :files ?claim1, ?claim2 .
+    ?claim1 :claimDate ?date1 ;
+            :amountClaimed ?amount1 .
+    ?claim2 :claimDate ?date2 ;
+            :amountClaimed ?amount2 .
+    ?date1 time:inSeconds ?sec1 .
+    ?date2 time:inSeconds ?sec2 .
+    ?sec2 math:minus ?sec1 ?timeDiff .
+    ?timeDiff math:lessThan 604800 . # 7 days
+    ?amount1 math:greaterThan 10000 .
+    ?amount2 math:greaterThan 10000 .
+} => {
+    ?holder :status "POTENTIAL_FRAUD_REVIEW" .
+} .
+
+# Rule 15: Policy Discount for Multiple Policies
+{
+    ?holder a :PolicyHolder .
+    ?holder :hasPolicy ?policy1, ?policy2, ?policy3 .
+    ?policy1 owl:differentFrom ?policy2 .
+    ?policy2 owl:differentFrom ?policy3 .
+    ?policy1 owl:differentFrom ?policy3 .
+} => {
+    ?holder :eligibleForDiscount "MULTI_POLICY_DISCOUNT" .
+} .
+
+# ===== CARDINALITY CONSTRAINTS =====
+
+:Policy rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasPolicyHolder ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+:Policy rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :issuedBy ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+:Policy rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasCoverage ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+:Claim rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :filedFor ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+:Claim rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :filedBy ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# ===== ADDITIONAL DERIVED CLASSES =====
+
+:HighValueCustomer a owl:Class ;
+    rdfs:subClassOf :PolicyHolder ;
+    rdfs:label "High Value Customer" ;
+    rdfs:comment "A customer with high total premium amounts" .
+
+# ===== SAMPLE ENUMERATED VALUES =====
+
+:PolicyStatusEnum a owl:Class ;
+    owl:oneOf ( "ACTIVE" "EXPIRED" "SUSPENDED" "CANCELLED" "PENDING" ) .
+
+:ClaimStatusEnum a owl:Class ;
+    owl:oneOf ( "SUBMITTED" "UNDER_REVIEW" "APPROVED" "DENIED" "SETTLED" "CLOSED" ) .
+
+:status rdfs:range :PolicyStatusEnum .
+:claimStatus rdfs:range :ClaimStatusEnum .

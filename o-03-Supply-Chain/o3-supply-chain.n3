@@ -1,0 +1,427 @@
+# Decisions:
+# Split ordersFrom property: Retailers ordering from both warehouses and manufacturers, therefore create separate properties ordersFromWarehouse and ordersFromManufacturer for better semantic clarity.
+# Union ranges for polymorphic relationships: Used owl:unionOf for hasShipper and billedBy properties since shipments can originate from either warehouses or manufacturers, and invoices can be issued by either entity type.
+# Disambiguated property names: Added entity-specific prefixes (e.g., supplierLocation, manufacturerLocation) to avoid naming conflicts while maintaining semantic clarity.
+# Comprehensive cardinality modeling: Implemented all cardinality constraints including the critical business rule that orders must contain at least one product.
+
+@prefix : <http://example.org/supplychain#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology Declaration
+<http://example.org/supplychain> a owl:Ontology ;
+    rdfs:label "Supply Chain Ontology" ;
+    rdfs:comment "An ontology for representing supply chain entities, relationships, and processes including suppliers, manufacturers, warehouses, retailers, products, orders, shipments, and invoices" .
+
+# ===== CLASS DEFINITIONS =====
+
+# Supplier Class
+:Supplier a owl:Class ;
+    rdfs:label "Supplier" ;
+    rdfs:comment "An entity that provides raw materials or components to manufacturers" .
+
+# Manufacturer Class
+:Manufacturer a owl:Class ;
+    rdfs:label "Manufacturer" ;
+    rdfs:comment "An entity that produces finished goods from raw materials or components" .
+
+# Warehouse Class
+:Warehouse a owl:Class ;
+    rdfs:label "Warehouse" ;
+    rdfs:comment "A facility for storing and distributing products" .
+
+# Retailer Class
+:Retailer a owl:Class ;
+    rdfs:label "Retailer" ;
+    rdfs:comment "An entity that sells products directly to end customers" .
+
+# Product Class
+:Product a owl:Class ;
+    rdfs:label "Product" ;
+    rdfs:comment "A manufactured item or good" .
+
+# Order Class
+:Order a owl:Class ;
+    rdfs:label "Order" ;
+    rdfs:comment "A request to purchase specific products" .
+
+# Shipment Class
+:Shipment a owl:Class ;
+    rdfs:label "Shipment" ;
+    rdfs:comment "A batch of products being transported from one location to another" .
+
+# Invoice Class
+:Invoice a owl:Class ;
+    rdfs:label "Invoice" ;
+    rdfs:comment "A bill requesting payment for products or services" .
+
+# ===== DATA PROPERTIES =====
+
+# Supplier Data Properties
+:supplierName a owl:DatatypeProperty ;
+    rdfs:label "supplier name" ;
+    rdfs:comment "The name of the supplier" ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:string .
+
+:supplierLocation a owl:DatatypeProperty ;
+    rdfs:label "supplier location" ;
+    rdfs:comment "The location of the supplier" ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:string .
+
+:rating a owl:DatatypeProperty ;
+    rdfs:label "rating" ;
+    rdfs:comment "The quality rating of the supplier" ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:float .
+
+# Manufacturer Data Properties
+:manufacturerName a owl:DatatypeProperty ;
+    rdfs:label "manufacturer name" ;
+    rdfs:comment "The name of the manufacturer" ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range xsd:string .
+
+:manufacturerLocation a owl:DatatypeProperty ;
+    rdfs:label "manufacturer location" ;
+    rdfs:comment "The location of the manufacturer" ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range xsd:string .
+
+:manufacturingCapacity a owl:DatatypeProperty ;
+    rdfs:label "manufacturing capacity" ;
+    rdfs:comment "The production capacity of the manufacturer" ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range xsd:int .
+
+# Warehouse Data Properties
+:warehouseName a owl:DatatypeProperty ;
+    rdfs:label "warehouse name" ;
+    rdfs:comment "The name of the warehouse" ;
+    rdfs:domain :Warehouse ;
+    rdfs:range xsd:string .
+
+:warehouseLocation a owl:DatatypeProperty ;
+    rdfs:label "warehouse location" ;
+    rdfs:comment "The location of the warehouse" ;
+    rdfs:domain :Warehouse ;
+    rdfs:range xsd:string .
+
+:storageCapacity a owl:DatatypeProperty ;
+    rdfs:label "storage capacity" ;
+    rdfs:comment "The storage capacity of the warehouse" ;
+    rdfs:domain :Warehouse ;
+    rdfs:range xsd:int .
+
+# Retailer Data Properties
+:retailerName a owl:DatatypeProperty ;
+    rdfs:label "retailer name" ;
+    rdfs:comment "The name of the retailer" ;
+    rdfs:domain :Retailer ;
+    rdfs:range xsd:string .
+
+:retailerLocation a owl:DatatypeProperty ;
+    rdfs:label "retailer location" ;
+    rdfs:comment "The location of the retailer" ;
+    rdfs:domain :Retailer ;
+    rdfs:range xsd:string .
+
+:retailerType a owl:DatatypeProperty ;
+    rdfs:label "retailer type" ;
+    rdfs:comment "The type or category of retailer" ;
+    rdfs:domain :Retailer ;
+    rdfs:range xsd:string .
+
+# Product Data Properties
+:productName a owl:DatatypeProperty ;
+    rdfs:label "product name" ;
+    rdfs:comment "The name of the product" ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
+
+:sku a owl:DatatypeProperty ;
+    rdfs:label "SKU" ;
+    rdfs:comment "The stock keeping unit identifier for the product" ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
+
+:productType a owl:DatatypeProperty ;
+    rdfs:label "product type" ;
+    rdfs:comment "The category or type of product" ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
+
+:unitPrice a owl:DatatypeProperty ;
+    rdfs:label "unit price" ;
+    rdfs:comment "The price per unit of the product" ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:float .
+
+# Order Data Properties
+:orderNumber a owl:DatatypeProperty ;
+    rdfs:label "order number" ;
+    rdfs:comment "The unique identifier for the order" ;
+    rdfs:domain :Order ;
+    rdfs:range xsd:string .
+
+:orderDate a owl:DatatypeProperty ;
+    rdfs:label "order date" ;
+    rdfs:comment "The date when the order was placed" ;
+    rdfs:domain :Order ;
+    rdfs:range xsd:date .
+
+:orderStatus a owl:DatatypeProperty ;
+    rdfs:label "order status" ;
+    rdfs:comment "The current status of the order" ;
+    rdfs:domain :Order ;
+    rdfs:range xsd:string .
+
+:totalAmount a owl:DatatypeProperty ;
+    rdfs:label "total amount" ;
+    rdfs:comment "The total monetary amount of the order" ;
+    rdfs:domain :Order ;
+    rdfs:range xsd:float .
+
+# Shipment Data Properties
+:shipmentID a owl:DatatypeProperty ;
+    rdfs:label "shipment ID" ;
+    rdfs:comment "The unique identifier for the shipment" ;
+    rdfs:domain :Shipment ;
+    rdfs:range xsd:string .
+
+:shipDate a owl:DatatypeProperty ;
+    rdfs:label "ship date" ;
+    rdfs:comment "The date when the shipment was sent" ;
+    rdfs:domain :Shipment ;
+    rdfs:range xsd:date .
+
+:carrier a owl:DatatypeProperty ;
+    rdfs:label "carrier" ;
+    rdfs:comment "The shipping company or carrier handling the shipment" ;
+    rdfs:domain :Shipment ;
+    rdfs:range xsd:string .
+
+:trackingNumber a owl:DatatypeProperty ;
+    rdfs:label "tracking number" ;
+    rdfs:comment "The tracking number for the shipment" ;
+    rdfs:domain :Shipment ;
+    rdfs:range xsd:string .
+
+# Invoice Data Properties
+:invoiceNumber a owl:DatatypeProperty ;
+    rdfs:label "invoice number" ;
+    rdfs:comment "The unique identifier for the invoice" ;
+    rdfs:domain :Invoice ;
+    rdfs:range xsd:string .
+
+:invoiceDate a owl:DatatypeProperty ;
+    rdfs:label "invoice date" ;
+    rdfs:comment "The date when the invoice was issued" ;
+    rdfs:domain :Invoice ;
+    rdfs:range xsd:date .
+
+:amountDue a owl:DatatypeProperty ;
+    rdfs:label "amount due" ;
+    rdfs:comment "The monetary amount due on the invoice" ;
+    rdfs:domain :Invoice ;
+    rdfs:range xsd:float .
+
+:dueDate a owl:DatatypeProperty ;
+    rdfs:label "due date" ;
+    rdfs:comment "The date when payment is due" ;
+    rdfs:domain :Invoice ;
+    rdfs:range xsd:date .
+
+# ===== OBJECT PROPERTIES =====
+
+# suppliesTo: Supplier -> Manufacturer (many-to-many)
+:suppliesTo a owl:ObjectProperty ;
+    rdfs:label "supplies to" ;
+    rdfs:comment "Relates a supplier to manufacturers they supply" ;
+    rdfs:domain :Supplier ;
+    rdfs:range :Manufacturer .
+
+# manufactures: Manufacturer -> Product (many-to-many)
+:manufactures a owl:ObjectProperty ;
+    rdfs:label "manufactures" ;
+    rdfs:comment "Relates a manufacturer to products they produce" ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range :Product .
+
+# stores: Warehouse -> Product (many-to-many)
+:stores a owl:ObjectProperty ;
+    rdfs:label "stores" ;
+    rdfs:comment "Relates a warehouse to products it stores" ;
+    rdfs:domain :Warehouse ;
+    rdfs:range :Product .
+
+# ordersFromWarehouse: Retailer -> Warehouse (many-to-many)
+:ordersFromWarehouse a owl:ObjectProperty ;
+    rdfs:label "orders from warehouse" ;
+    rdfs:comment "Relates a retailer to warehouses they order from" ;
+    rdfs:domain :Retailer ;
+    rdfs:range :Warehouse .
+
+# ordersFromManufacturer: Retailer -> Manufacturer (many-to-many)
+:ordersFromManufacturer a owl:ObjectProperty ;
+    rdfs:label "orders from manufacturer" ;
+    rdfs:comment "Relates a retailer to manufacturers they order from" ;
+    rdfs:domain :Retailer ;
+    rdfs:range :Manufacturer .
+
+# hasOrderLine: Order -> Product (many-to-many, min 1)
+:hasOrderLine a owl:ObjectProperty ;
+    rdfs:label "has order line" ;
+    rdfs:comment "Relates an order to products included in it" ;
+    rdfs:domain :Order ;
+    rdfs:range :Product .
+
+# shipsOrder: Shipment -> Order (one-to-one)
+:shipsOrder a owl:ObjectProperty ;
+    rdfs:label "ships order" ;
+    rdfs:comment "Relates a shipment to the order it ships" ;
+    rdfs:domain :Shipment ;
+    rdfs:range :Order .
+
+# hasShipper: Shipment -> {Warehouse|Manufacturer} (exactly one)
+:hasShipper a owl:ObjectProperty ;
+    rdfs:label "has shipper" ;
+    rdfs:comment "Relates a shipment to the entity that ships it (warehouse or manufacturer)" ;
+    rdfs:domain :Shipment ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] .
+
+# billedBy: Invoice -> {Warehouse|Manufacturer} (exactly one)
+:billedBy a owl:ObjectProperty ;
+    rdfs:label "billed by" ;
+    rdfs:comment "Relates an invoice to the entity that issued it (warehouse or manufacturer)" ;
+    rdfs:domain :Invoice ;
+    rdfs:range [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] .
+
+# billedTo: Invoice -> Retailer (many-to-one)
+:billedTo a owl:ObjectProperty ;
+    rdfs:label "billed to" ;
+    rdfs:comment "Relates an invoice to the retailer being billed" ;
+    rdfs:domain :Invoice ;
+    rdfs:range :Retailer .
+
+# ===== CARDINALITY CONSTRAINTS =====
+
+# Order must have at least one product
+:Order rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasOrderLine ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Shipment must ship exactly one order
+:Shipment rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :shipsOrder ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Shipment must have exactly one shipper
+:Shipment rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasShipper ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Invoice must be billed by exactly one entity
+:Invoice rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :billedBy ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Invoice must be billed to exactly one retailer
+:Invoice rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :billedTo ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# ===== INVERSE PROPERTIES =====
+
+# suppliedBy: Manufacturer -> Supplier (inverse of suppliesTo)
+:suppliedBy a owl:ObjectProperty ;
+    rdfs:label "supplied by" ;
+    rdfs:comment "Relates a manufacturer to suppliers that supply to them" ;
+    owl:inverseOf :suppliesTo ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range :Supplier .
+
+# manufacturedBy: Product -> Manufacturer (inverse of manufactures)
+:manufacturedBy a owl:ObjectProperty ;
+    rdfs:label "manufactured by" ;
+    rdfs:comment "Relates a product to manufacturers that produce it" ;
+    owl:inverseOf :manufactures ;
+    rdfs:domain :Product ;
+    rdfs:range :Manufacturer .
+
+# storedIn: Product -> Warehouse (inverse of stores)
+:storedIn a owl:ObjectProperty ;
+    rdfs:label "stored in" ;
+    rdfs:comment "Relates a product to warehouses that store it" ;
+    owl:inverseOf :stores ;
+    rdfs:domain :Product ;
+    rdfs:range :Warehouse .
+
+# warehouseOrderedBy: Warehouse -> Retailer (inverse of ordersFromWarehouse)
+:warehouseOrderedBy a owl:ObjectProperty ;
+    rdfs:label "warehouse ordered by" ;
+    rdfs:comment "Relates a warehouse to retailers that order from it" ;
+    owl:inverseOf :ordersFromWarehouse ;
+    rdfs:domain :Warehouse ;
+    rdfs:range :Retailer .
+
+# manufacturerOrderedBy: Manufacturer -> Retailer (inverse of ordersFromManufacturer)
+:manufacturerOrderedBy a owl:ObjectProperty ;
+    rdfs:label "manufacturer ordered by" ;
+    rdfs:comment "Relates a manufacturer to retailers that order from it" ;
+    owl:inverseOf :ordersFromManufacturer ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range :Retailer .
+
+# orderLineOf: Product -> Order (inverse of hasOrderLine)
+:orderLineOf a owl:ObjectProperty ;
+    rdfs:label "order line of" ;
+    rdfs:comment "Relates a product to orders it appears in" ;
+    owl:inverseOf :hasOrderLine ;
+    rdfs:domain :Product ;
+    rdfs:range :Order .
+
+# shippedIn: Order -> Shipment (inverse of shipsOrder)
+:shippedIn a owl:ObjectProperty ;
+    rdfs:label "shipped in" ;
+    rdfs:comment "Relates an order to the shipment that ships it" ;
+    owl:inverseOf :shipsOrder ;
+    rdfs:domain :Order ;
+    rdfs:range :Shipment .
+
+# ships: {Warehouse|Manufacturer} -> Shipment (inverse of hasShipper)
+:ships a owl:ObjectProperty ;
+    rdfs:label "ships" ;
+    rdfs:comment "Relates a warehouse or manufacturer to shipments they send" ;
+    owl:inverseOf :hasShipper ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] ;
+    rdfs:range :Shipment .
+
+# bills: {Warehouse|Manufacturer} -> Invoice (inverse of billedBy)
+:bills a owl:ObjectProperty ;
+    rdfs:label "bills" ;
+    rdfs:comment "Relates a warehouse or manufacturer to invoices they issue" ;
+    owl:inverseOf :billedBy ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] ;
+    rdfs:range :Invoice .
+
+# receivesInvoice: Retailer -> Invoice (inverse of billedTo)
+:receivesInvoice a owl:ObjectProperty ;
+    rdfs:label "receives invoice" ;
+    rdfs:comment "Relates a retailer to invoices they receive" ;
+    owl:inverseOf :billedTo ;
+    rdfs:domain :Retailer ;
+    rdfs:range :Invoice .

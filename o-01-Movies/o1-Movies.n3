@@ -1,0 +1,189 @@
+@prefix : <http://example.org/movies#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Ontology Declaration
+<http://example.org/movies> a owl:Ontology ;
+    rdfs:label "Movies Ontology" ;
+    rdfs:comment "An ontology for representing movies, actors, directors, characters, and genres" .
+
+# ===== CLASS DEFINITIONS =====
+
+# Movie Class
+:Movie a owl:Class ;
+    rdfs:label "Movie" ;
+    rdfs:comment "A motion picture or film" .
+
+# Person Class (Superclass)
+:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A human being" .
+
+# Actor Class (subclass of Person)
+:Actor a owl:Class ;
+    rdfs:subClassOf :Person ;
+    rdfs:label "Actor" ;
+    rdfs:comment "A person who acts in movies" .
+
+# Director Class (subclass of Person)
+:Director a owl:Class ;
+    rdfs:subClassOf :Person ;
+    rdfs:label "Director" ;
+    rdfs:comment "A person who directs movies" .
+
+# Character Class
+:Character a owl:Class ;
+    rdfs:label "Character" ;
+    rdfs:comment "A fictional character in a movie" .
+
+# Genre Class
+:Genre a owl:Class ;
+    rdfs:label "Genre" ;
+    rdfs:comment "A category or type of movie" .
+
+# ===== DATA PROPERTIES =====
+
+# Movie Data Properties
+:title a owl:DatatypeProperty ;
+    rdfs:label "title" ;
+    rdfs:comment "The title of the movie" ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:string .
+
+:releaseYear a owl:DatatypeProperty ;
+    rdfs:label "release year" ;
+    rdfs:comment "The year the movie was released" ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:int .
+
+:duration a owl:DatatypeProperty ;
+    rdfs:label "duration" ;
+    rdfs:comment "The duration of the movie in minutes" ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:int .
+
+:rating a owl:DatatypeProperty ;
+    rdfs:label "rating" ;
+    rdfs:comment "The rating of the movie" ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:float .
+
+# Person Data Properties (inherited by Actor and Director)
+:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:comment "The name of a person" ;
+    rdfs:domain :Person ;
+    rdfs:range xsd:string .
+
+:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birth date" ;
+    rdfs:comment "The birth date of a person" ;
+    rdfs:domain :Person ;
+    rdfs:range xsd:date .
+
+# Character Data Properties
+:characterName a owl:DatatypeProperty ;
+    rdfs:label "character name" ;
+    rdfs:comment "The name of a character" ;
+    rdfs:domain :Character ;
+    rdfs:range xsd:string .
+
+# Genre Data Properties
+:genreName a owl:DatatypeProperty ;
+    rdfs:label "genre name" ;
+    rdfs:comment "The name of a genre" ;
+    rdfs:domain :Genre ;
+    rdfs:range xsd:string .
+
+# ===== OBJECT PROPERTIES =====
+
+# hasActor: Movie -> Actor (one-to-many)
+:hasActor a owl:ObjectProperty ;
+    rdfs:label "has actor" ;
+    rdfs:comment "Relates a movie to an actor who performs in it" ;
+    rdfs:domain :Movie ;
+    rdfs:range :Actor .
+
+# hasDirector: Movie -> Director (one-to-many)
+:hasDirector a owl:ObjectProperty ;
+    rdfs:label "has director" ;
+    rdfs:comment "Relates a movie to a director who directed it" ;
+    rdfs:domain :Movie ;
+    rdfs:range :Director .
+
+# belongsToGenre: Movie -> Genre (one-to-many)
+:belongsToGenre a owl:ObjectProperty ;
+    rdfs:label "belongs to genre" ;
+    rdfs:comment "Relates a movie to a genre it belongs to" ;
+    rdfs:domain :Movie ;
+    rdfs:range :Genre .
+
+# playsCharacter: Actor -> Character (one-to-one)
+:playsCharacter a owl:ObjectProperty ;
+    rdfs:label "plays character" ;
+    rdfs:comment "Relates an actor to a character they portray" ;
+    rdfs:domain :Actor ;
+    rdfs:range :Character .
+
+# ===== CARDINALITY CONSTRAINTS =====
+
+# Movie must have at least one actor
+:Movie rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasActor ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Movie must have at least one director
+:Movie rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasDirector ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Movie must belong to at least one genre
+:Movie rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :belongsToGenre ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# Actor plays exactly one character (one-to-one constraint)
+:Actor rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :playsCharacter ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# ===== INVERSE PROPERTIES =====
+
+# Define inverse relationships for better navigation
+:actorIn a owl:ObjectProperty ;
+    rdfs:label "actor in" ;
+    rdfs:comment "Relates an actor to a movie they act in" ;
+    owl:inverseOf :hasActor ;
+    rdfs:domain :Actor ;
+    rdfs:range :Movie .
+
+:directorOf a owl:ObjectProperty ;
+    rdfs:label "director of" ;
+    rdfs:comment "Relates a director to a movie they directed" ;
+    owl:inverseOf :hasDirector ;
+    rdfs:domain :Director ;
+    rdfs:range :Movie .
+
+:genreOf a owl:ObjectProperty ;
+    rdfs:label "genre of" ;
+    rdfs:comment "Relates a genre to movies that belong to it" ;
+    owl:inverseOf :belongsToGenre ;
+    rdfs:domain :Genre ;
+    rdfs:range :Movie .
+
+:characterPlayedBy a owl:ObjectProperty ;
+    rdfs:label "character played by" ;
+    rdfs:comment "Relates a character to the actor who plays it" ;
+    owl:inverseOf :playsCharacter ;
+    rdfs:domain :Character ;
+    rdfs:range :Actor .
