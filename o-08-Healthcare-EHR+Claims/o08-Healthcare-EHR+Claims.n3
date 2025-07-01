@@ -1,0 +1,242 @@
+# Clinical Workflow Management:
+# 	Temporal validation: Encounter durations, procedure timing, medication periods
+# 	Medical coding compliance: ICD-10, CPT, LOINC, RxNorm format validation
+# 	Care coordination: Provider specialty matching, continuity tracking
+# 
+# Billing and Claims Processing:
+# 	Financial validation: Payment vs billing reconciliation, line item aggregation
+# 	Coverage verification: Insurance period validation, eligibility checking
+# 	Regulatory compliance: Claim timing rules, documentation requirements
+# 
+# Clinical Decision Support:
+# 	Drug interaction detection: Medication safety checks
+# 	Lab value interpretation: Reference range validation, abnormal flag generation
+# 	Quality monitoring: Readmission tracking, provider workload analysis
+# 
+# Other N3 Patterns:
+# 	String processing: Medical code pattern matching and validation
+# 	Mathematical operations: Dose calculations, financial aggregations, duration analysis
+# 	List operations: Multi-encounter analysis, medication interaction checks
+# 	Temporal reasoning: Date/time validation across healthcare workflows
+# 
+# Healthcare Domain Coverage:
+# 	Patient care pathways and encounter management
+# 	Provider credentialing and specialty matching
+# 	Facility utilization and capacity planning
+# 	Insurance claims processing and payment validation
+# 	Clinical quality metrics and patient safety monitoring
+# 	Regulatory compliance and documentation standards
+# 
+# The Ontology rules enable comprehensive healthcare data validation, clinical decision support, and automated compliance checking while maintaining the flexibility needed for complex medical workflows and regulatory requirements.
+
+
+@prefix : <http://example.org/healthcare#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+
+# Healthcare entity classes - N3 comma syntax for conciseness
+:Patient, :Provider, :HealthcareFacility, :InsurancePayer, :Encounter, 
+:Diagnosis, :Procedure, :MedicationOrder, :Medication, :LabTest, 
+:LabResult, :Claim, :ClaimLineItem, :PatientCoverage a rdfs:Class .
+
+# Object Properties - semicolon chaining for same subject
+:belongsTo rdfs:domain :Encounter, :ClaimLineItem ; rdfs:range :Patient, :Claim .
+:attendedBy rdfs:domain :Encounter ; rdfs:range :Provider .
+:occursAt rdfs:domain :Encounter ; rdfs:range :HealthcareFacility .
+:includesDiagnosis rdfs:domain :Encounter ; rdfs:range :Diagnosis .
+:includesProcedure rdfs:domain :Encounter ; rdfs:range :Procedure .
+:hasMedicationOrder rdfs:domain :Encounter ; rdfs:range :MedicationOrder .
+:performedLabTest rdfs:domain :Encounter ; rdfs:range :LabTest .
+:billedTo rdfs:domain :Claim ; rdfs:range :InsurancePayer .
+:claimFor rdfs:domain :Claim ; rdfs:range :Encounter .
+:dispensedAs rdfs:domain :MedicationOrder ; rdfs:range :Medication .
+:hasResult rdfs:domain :LabTest ; rdfs:range :LabResult .
+:referencesPayer rdfs:domain :PatientCoverage ; rdfs:range :InsurancePayer .
+:referencesPatient rdfs:domain :PatientCoverage ; rdfs:range :Patient .
+
+# Data Properties grouped by type - N3 comma syntax for efficiency
+:firstName, :lastName, :gender, :address, :phoneNumber, :providerName, 
+:licenseNumber, :specialty, :facilityName, :facilityType, :location, 
+:payerName, :payerType, :contactInfo, :encounterID, :reasonForVisit, 
+:encounterType, :diagnosisCode, :codeSystem, :diagnosisDesc, :procedureCode, 
+:procedureDesc, :orderID, :dosage, :frequency, :brandName, :genericName, 
+:rxNormCode, :strength, :testID, :testName, :testCode, :specimenType, 
+:units, :referenceRange, :claimNumber, :status, :lineCode rdfs:range xsd:string .
+
+:resultValue, :totalBilled, :totalPaid, :billedAmount, :allowedAmount rdfs:range xsd:float .
+:birthDate, :startDate, :endDate, :claimDate, :coverageStart, :coverageEnd rdfs:range xsd:date .
+:startDateTime, :endDateTime, :procedureDate, :resultDateTime rdfs:range xsd:dateTime .
+
+# Clinical Workflow Validation Rules
+
+# Encounter Duration Validation - N3 time comparison for healthcare workflows
+{ ?encounter a :Encounter ; :startDateTime ?start ; :endDateTime ?end .
+  ?end time:before ?start } 
+=> { ?encounter :temporalError "End time before start time" } .
+
+# Inpatient Stay Duration Rule - healthcare domain constraint
+{ ?encounter a :Encounter ; :encounterType "Inpatient" ; 
+  :startDateTime ?start ; :endDateTime ?end .
+  (?start ?end) time:hoursBetween ?duration .
+  ?duration math:lessThan 24 } 
+=> { ?encounter :durationViolation "Inpatient stay less than 24 hours" } .
+
+# Medical Coding Standards Validation - N3 string pattern matching
+{ ?diagnosis a :Diagnosis ; :codeSystem "ICD-10" ; :diagnosisCode ?code .
+  ?code string:matches "^[A-Z][0-9]{2}(\\.[0-9X]{1,4})?$" log:notEqualTo true } 
+=> { ?diagnosis :codingError "Invalid ICD-10 format" ; :invalidCode ?code } .
+
+{ ?procedure a :Procedure ; :codeSystem "CPT" ; :procedureCode ?code .
+  ?code string:matches "^[0-9]{5}$" log:notEqualTo true } 
+=> { ?procedure :codingError "Invalid CPT format" ; :invalidCode ?code } .
+
+# Procedure Timing Validation - N3 temporal constraints within encounters
+{ ?encounter a :Encounter ; :includesProcedure ?procedure ; 
+  :startDateTime ?encStart ; :endDateTime ?encEnd .
+  ?procedure :procedureDate ?procDate .
+  ?procDate time:before ?encStart } 
+=> { ?procedure :timingError "Procedure before encounter start" } .
+
+{ ?encounter a :Encounter ; :includesProcedure ?procedure ; 
+  :startDateTime ?encStart ; :endDateTime ?encEnd .
+  ?procedure :procedureDate ?procDate .
+  ?procDate time:after ?encEnd } 
+=> { ?procedure :timingError "Procedure after encounter end" } .
+
+# Medication Order Duration Validation
+{ ?medOrder a :MedicationOrder ; :startDate ?start ; :endDate ?end .
+  ?end time:before ?start } 
+=> { ?medOrder :dateError "End date before start date" } .
+
+# RxNorm Code Validation - simplified pattern check
+{ ?medication a :Medication ; :rxNormCode ?code .
+  ?code string:matches "^[0-9]{1,8}$" log:notEqualTo true } 
+=> { ?medication :codingError "Invalid RxNorm format" ; :invalidCode ?code } .
+
+# Lab Test Completion Rule - N3 existential quantification
+{ ?labTest a :LabTest ; :testStatus "Completed" .
+  { ?labTest :hasResult ?result } log:collectAllIn ?results .
+  ?results list:length 0 } 
+=> { ?labTest :dataError "Completed test missing results" } .
+
+# LOINC Code Validation for Lab Tests
+{ ?labTest a :LabTest ; :codeSystem "LOINC" ; :testCode ?code .
+  ?code string:matches "^[0-9]{1,5}-[0-9]$" log:notEqualTo true } 
+=> { ?labTest :codingError "Invalid LOINC format" ; :invalidCode ?code } .
+
+# Claims and Billing Validation Rules
+
+# Payment vs Billing Validation - N3 financial constraints
+{ ?claim a :Claim ; :status "Paid" ; :totalBilled ?billed ; :totalPaid ?paid .
+  ?paid math:greaterThan ?billed } 
+=> { ?claim :paymentError "Payment exceeds billed amount" ; :overpayment [ math:difference (?paid ?billed) ] } .
+
+# Claim Date vs Encounter Date - temporal billing constraints
+{ ?claim a :Claim ; :claimFor ?encounter ; :claimDate ?claimDate .
+  ?encounter :endDateTime ?endDateTime .
+  ?claimDate time:before ?endDateTime } 
+=> { ?claim :timingError "Claim date before encounter end" } .
+
+# Claim Line Item Aggregation - N3 mathematical validation
+{ ?claim a :Claim ; :totalBilled ?total .
+  { ?lineItem :belongsTo ?claim ; :billedAmount ?amount } log:collectAllIn ?amounts .
+  ?amounts math:sum ?calculatedTotal .
+  ?calculatedTotal log:notEqualTo ?total } 
+=> { ?claim :aggregationError "Line items don't sum to total" ; :expected ?total ; :actual ?calculatedTotal } .
+
+# Insurance Coverage Validation - temporal coverage constraints
+{ ?encounter a :Encounter ; :belongsTo ?patient ; :startDateTime ?encStart .
+  ?patient :referencesPatient ?coverage .
+  ?coverage :coverageStart ?covStart ; :coverageEnd ?covEnd ; :referencesPayer ?payer .
+  ?claim :claimFor ?encounter ; :billedTo ?payer .
+  ?encStart time:before ?covStart } 
+=> { ?claim :coverageError "Encounter before coverage start" } .
+
+{ ?encounter a :Encounter ; :belongsTo ?patient ; :endDateTime ?encEnd .
+  ?patient :referencesPatient ?coverage .
+  ?coverage :coverageStart ?covStart ; :coverageEnd ?covEnd ; :referencesPayer ?payer .
+  ?claim :claimFor ?encounter ; :billedTo ?payer .
+  ?encEnd time:after ?covEnd } 
+=> { ?claim :coverageError "Encounter after coverage end" } .
+
+# Clinical Decision Support Rules
+
+# Provider Specialty Matching - healthcare domain validation
+{ ?encounter a :Encounter ; :attendedBy ?provider ; :includesDiagnosis ?diagnosis .
+  ?provider :specialty ?specialty .
+  ?diagnosis :diagnosisCode ?code .
+  ?code string:startsWith "I" .  # Cardiovascular conditions
+  ?specialty log:notEqualTo "Cardiology" } 
+=> { ?encounter :specialtyMismatch "Cardiac condition without cardiologist" } .
+
+# Medication Interaction Detection - simplified drug interaction check
+{ ?encounter a :Encounter ; :hasMedicationOrder ?med1, ?med2 .
+  ?med1 :dispensedAs [ :genericName "warfarin" ] .
+  ?med2 :dispensedAs [ :genericName "aspirin" ] .
+  ?med1 log:notEqualTo ?med2 } 
+=> { ?encounter :drugInteraction "Warfarin-Aspirin interaction detected" ; 
+     :riskLevel "HIGH" ; :medications (?med1 ?med2) } .
+
+# Lab Value Range Validation - N3 numeric range checking
+{ ?labResult a :LabResult ; :resultValue ?value ; :referenceRange ?range .
+  ?range string:matches "^([0-9.]+)-([0-9.]+)$" ?matches .
+  ?matches list:first ?lower . ?matches list:rest [ list:first ?upper ] .
+  ?value math:lessThan ?lower } 
+=> { ?labResult :abnormalLow true ; :severity "Below normal range" } .
+
+{ ?labResult a :LabResult ; :resultValue ?value ; :referenceRange ?range .
+  ?range string:matches "^([0-9.]+)-([0-9.]+)$" ?matches .
+  ?matches list:first ?lower . ?matches list:rest [ list:first ?upper ] .
+  ?value math:greaterThan ?upper } 
+=> { ?labResult :abnormalHigh true ; :severity "Above normal range" } .
+
+# Patient Care Continuity Rules
+
+# Readmission Detection - N3 temporal pattern analysis
+{ ?patient a :Patient .
+  ?enc1 :belongsTo ?patient ; :encounterType "Inpatient" ; :endDateTime ?end1 .
+  ?enc2 :belongsTo ?patient ; :encounterType "Inpatient" ; :startDateTime ?start2 .
+  ?enc1 log:notEqualTo ?enc2 .
+  (?end1 ?start2) time:daysBetween ?daysBetween .
+  ?daysBetween math:lessThan 30 } 
+=> { ?patient :readmission true ; :daysBetween ?daysBetween ; :encounters (?enc1 ?enc2) } .
+
+# Provider Workload Analysis - encounter volume tracking
+{ ?provider a :Provider .
+  "" time:localTime ?now . ?now time:day ?today .
+  { ?encounter :attendedBy ?provider ; :startDateTime ?start .
+    ?start time:day ?today } log:collectAllIn ?todayEncounters .
+  ?todayEncounters list:length ?encounterCount .
+  ?encounterCount math:greaterThan 20 } 
+=> { ?provider :highWorkload true ; :dailyEncounters ?encounterCount ; :workloadDate ?today } .
+
+# Facility Utilization Tracking
+{ ?facility a :HealthcareFacility ; :facilityType "ER" .
+  "" time:localTime ?now . ?now time:day ?today .
+  { ?encounter :occursAt ?facility ; :startDateTime ?start .
+    ?start time:day ?today } log:collectAllIn ?erVisits .
+  ?erVisits list:length ?visitCount .
+  ?visitCount math:greaterThan 50 } 
+=> { ?facility :highUtilization true ; :dailyVolume ?visitCount ; :capacityStrain "Critical" } .
+
+# Quality Metrics and Compliance
+
+# Patient Safety - medication dosage validation
+{ ?medOrder a :MedicationOrder ; :dispensedAs ?medication ; :dosage ?dosage .
+  ?medication :genericName "digoxin" .
+  ?dosage string:contains "mg" .
+  ?dosage string:before "mg" ?doseValue .
+  ?doseValue math:greaterThan 0.25 } 
+=> { ?medOrder :dosageAlert "High digoxin dose" ; :reviewRequired true } .
+
+# Documentation Completeness - required fields validation
+{ ?encounter a :Encounter ; :encounterType "Inpatient" .
+  ?encounter :reasonForVisit ?reason .
+  ?reason log:equalTo "" } 
+=> { ?encounter :documentationGap "Missing reason for visit" ; :priority "Medium" } .
