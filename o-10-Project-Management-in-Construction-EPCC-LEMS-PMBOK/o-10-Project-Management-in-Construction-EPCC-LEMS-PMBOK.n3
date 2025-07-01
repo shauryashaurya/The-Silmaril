@@ -1,0 +1,287 @@
+# PMBOK Project Management Integration:
+# 	Critical Path Method: Task dependency validation and schedule analysis
+# 	Earned Value Management: Budget variance tracking and cost performance
+# 	Resource Management: Allocation conflicts and capacity planning
+# 	Risk Management: Lead time validation and skill gap analysis
+# 
+# EPCC Phase Coordination:
+# 	Engineering-Procurement: Design completion before material ordering
+# 	Procurement-Construction: Material availability before installation
+# 	Construction-Commissioning: Build completion before system testing
+# 	Sequential validation: Complex phase interdependencies
+# 
+# LEMS Lifecycle Management:
+# 	Resource optimization: Equipment utilization and team workload balancing
+# 	Supplier performance: Vendor lead time tracking and evaluation
+# 	Quality assurance: Commissioning checklist validation and pass criteria
+# 	Portfolio coordination: Multi-project resource conflict detection
+# 
+# Data Center Construction Specifics:
+# 	Infrastructure sequencing: Power before IT, HVAC before servers, safety before occupancy
+# 	Reliability requirements: Redundant system validation and uptime protection
+# 	Environmental controls: Thermal and fire suppression dependencies
+# 	Technology integration: Complex system interdependencies
+# 
+# N3 Reasoning:
+# 	Temporal logic: Complex date/time validation across project phases
+# 	Mathematical operations: Budget aggregation, variance calculation, utilization metrics
+# 	String processing: Task name pattern matching and skill identification
+# 	List aggregation: Team composition analysis and resource collection
+# 	Inheritance reasoning: Specialized task types and resource hierarchies
+
+@prefix : <http://example.org/datacenter#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+
+# Construction project management classes
+:MegaProject, :WorkStream, :Task, :Resource, :Person, :EquipmentResource, 
+:MaterialResource, :Supplier, :Team, :ProcurementOrder, :CommissioningActivity a rdfs:Class .
+
+# Class hierarchy - N3 inheritance relationships
+:Person rdfs:subClassOf :Resource .
+:EquipmentResource rdfs:subClassOf :Resource .
+:MaterialResource rdfs:subClassOf :Resource .
+:CommissioningActivity rdfs:subClassOf :Task .
+
+# Object Properties with precise domain/range
+:hasWorkStream rdfs:domain :MegaProject ; rdfs:range :WorkStream .
+:hasTask rdfs:domain :WorkStream ; rdfs:range :Task .
+:dependsOn rdfs:domain :Task ; rdfs:range :Task .
+:usesResource rdfs:domain :Task ; rdfs:range :Resource .
+:assignedTeam rdfs:domain :Task ; rdfs:range :Team .
+:supplies rdfs:domain :Supplier ; rdfs:range :MaterialResource, :EquipmentResource .
+:hasMembers rdfs:domain :Team ; rdfs:range :Person .
+:fromSupplier rdfs:domain :ProcurementOrder ; rdfs:range :Supplier .
+:procuresResource rdfs:domain :ProcurementOrder ; rdfs:range :Resource .
+:belongsToProject rdfs:domain :ProcurementOrder ; rdfs:range :MegaProject .
+
+# Data Properties grouped by type
+:projectID, :projectName, :workStreamID, :name, :description, :taskID, :taskName, 
+:resourceID, :resourceName, :resourceType, :personID, :skillType, :equipmentID, 
+:equipmentName, :equipmentType, :capacityOrSpecs, :materialID, :materialName, 
+:materialType, :supplierID, :supplierName, :location, :teamID, :teamName, 
+:orderNumber, :commissioningChecklist rdfs:range xsd:string .
+
+:overallBudget, :budgetAllocated, :costEstimate, :actualCost, :hourlyRate, 
+:dailyRentalCost, :unitCost, :totalCost rdfs:range xsd:float .
+
+:durationDays, :quantityOnHand rdfs:range xsd:integer .
+:isCritical, :milestoneFlag rdfs:range xsd:boolean .
+:startDate, :plannedEndDate, :actualEndDate, :endDate, :orderDate, :passDate rdfs:range xsd:dateTime .
+
+# Project Management and PMBOK Rules
+
+# Task Dependency Validation - Critical Path Method (CPM) implementation
+{ ?task a :Task ; :dependsOn ?predecessor ; :startDate ?taskStart .
+  ?predecessor :endDate ?predEnd .
+  ?taskStart time:before ?predEnd } 
+=> { ?task :scheduleViolation "Task starts before dependency completion" ; 
+     :dependencyConflict ?predecessor } .
+
+# Critical Path Analysis - zero float detection
+{ ?task a :Task ; :isCritical true ; :startDate ?start ; :endDate ?end ; :durationDays ?duration .
+  (?start ?end) time:daysBetween ?actualDuration .
+  ?actualDuration math:greaterThan ?duration } 
+=> { ?task :criticalPathViolation "Critical task exceeds planned duration" ; 
+     :scheduleSlippage [ math:difference (?actualDuration ?duration) ] } .
+
+# Milestone Validation - key project checkpoints
+{ ?task a :Task ; :milestoneFlag true ; :endDate ?planned .
+  "" time:localTime ?now .
+  ?planned time:before ?now .
+  ?task :actualEndDate ?actual .
+  ?actual log:equalTo () } 
+=> { ?task :milestoneOverdue "Milestone not completed on schedule" ; :urgency "HIGH" } .
+
+# Budget Aggregation and Variance Analysis - PMBOK cost control
+{ ?project a :MegaProject ; :overallBudget ?totalBudget .
+  { ?workstream :hasWorkStream ?project . 
+    ?workstream :budgetAllocated ?wsbudget } log:collectAllIn ?workstreamBudgets .
+  ?workstreamBudgets math:sum ?allocatedTotal .
+  ?allocatedTotal math:greaterThan ?totalBudget } 
+=> { ?project :budgetOverallocation "WorkStream budgets exceed project total" ; 
+     :overallocation [ math:difference (?allocatedTotal ?totalBudget) ] } .
+
+# Task Cost Variance - Earned Value Management (EVM)
+{ ?task a :Task ; :costEstimate ?estimate ; :actualCost ?actual .
+  (?actual ?estimate) math:quotient ?variance .
+  ?variance math:greaterThan 1.1 } 
+=> { ?task :costOverrun "Task exceeds budget by >10%" ; :varianceRatio ?variance ; 
+     :budgetAlert "CRITICAL" } .
+
+# Resource Allocation Conflict Detection - PMBOK resource management
+{ ?resource a :Resource .
+  ?task1 a :Task ; :usesResource ?resource ; :startDate ?start1 ; :endDate ?end1 .
+  ?task2 a :Task ; :usesResource ?resource ; :startDate ?start2 ; :endDate ?end2 .
+  ?task1 log:notEqualTo ?task2 .
+  ?start1 time:notAfter ?end2 .
+  ?start2 time:notAfter ?end1 } 
+=> { ?resource :allocationConflict "Double-booked resource" ; 
+     :conflictingTasks (?task1 ?task2) } .
+
+# Team Skill Matching - competency-based resource allocation
+{ ?task a :Task ; :assignedTeam ?team ; :requiredSkill ?skill .
+  ?team :hasMembers ?person .
+  { ?person :skillType ?personSkill } log:collectAllIn ?teamSkills .
+  ?teamSkills log:notIncludes ?skill } 
+=> { ?task :skillGap "Required skill not available in assigned team" ; 
+     :missingSkill ?skill ; :reassignmentNeeded true } .
+
+# Procurement Lead Time Validation - supply chain integration
+{ ?order a :ProcurementOrder ; :orderDate ?orderDate ; :procuresResource ?resource .
+  ?task :usesResource ?resource ; :startDate ?taskStart .
+  (?orderDate ?taskStart) time:daysBetween ?leadTime .
+  ?resource a :EquipmentResource .
+  ?leadTime math:lessThan 30 } 
+=> { ?order :inadequateLeadTime "Equipment procurement too close to task start" ; 
+     :riskLevel "HIGH" ; :leadTimeDays ?leadTime } .
+
+# Material Inventory Validation - just-in-time delivery
+{ ?task a :Task ; :usesResource ?material ; :requiredQuantity ?needed .
+  ?material a :MaterialResource ; :quantityOnHand ?available .
+  ?needed math:greaterThan ?available } 
+=> { ?task :materialShortage "Insufficient material inventory" ; 
+     :shortfall [ math:difference (?needed ?available) ] } .
+
+# EPCC Phase Sequencing Rules
+
+# Engineering-Procurement Sequencing - design before procurement
+{ ?engineeringTask a :Task ; :taskName ?engName ; :endDate ?engEnd .
+  ?engName string:contains "Design" .
+  ?procurementOrder a :ProcurementOrder ; :orderDate ?orderDate ; :belongsToProject ?project .
+  ?engineeringTask :belongsToWorkStream [ :hasWorkStream ?project ] .
+  ?orderDate time:before ?engEnd } 
+=> { ?procurementOrder :sequenceViolation "Procurement before engineering completion" ; 
+     :designTask ?engineeringTask } .
+
+# Construction-Commissioning Sequencing - build before test
+{ ?commissioningActivity a :CommissioningActivity ; :startDate ?commStart .
+  ?constructionTask a :Task ; :taskName ?constName ; :endDate ?constEnd .
+  ?constName string:contains "Install" .
+  ?commissioningActivity :commissioningChecklist ?checklist .
+  ?checklist string:contains ?constName .
+  ?commStart time:before ?constEnd } 
+=> { ?commissioningActivity :prematureCommissioning "Commissioning before construction completion" ; 
+     :constructionTask ?constructionTask } .
+
+# Equipment Installation Sequencing - foundation before equipment
+{ ?foundationTask a :Task ; :taskName ?foundName ; :endDate ?foundEnd .
+  ?foundName string:contains "Foundation" .
+  ?equipmentTask a :Task ; :taskName ?equipName ; :startDate ?equipStart .
+  ?equipName string:contains "Install" .
+  ?equipmentTask :usesResource [ a :EquipmentResource ] .
+  ?equipStart time:before ?foundEnd } 
+=> { ?equipmentTask :installationSequenceError "Equipment installation before foundation" ; 
+     :prerequisiteTask ?foundationTask } .
+
+# Data Center Specific Construction Rules
+
+# Power Infrastructure Sequencing - electrical before IT equipment
+{ ?powerTask a :Task ; :taskName ?powerName ; :endDate ?powerEnd .
+  ?powerName string:contains "Electrical" .
+  ?serverTask a :Task ; :taskName ?serverName ; :startDate ?serverStart .
+  ?serverName string:contains "Server" .
+  ?serverStart time:before ?powerEnd } 
+=> { ?serverTask :powerInfrastructureRisk "Server installation before electrical completion" ; 
+     :dependencyMissing ?powerTask } .
+
+# HVAC System Dependencies - cooling before heat-generating equipment
+{ ?hvacTask a :Task ; :taskName ?hvacName ; :endDate ?hvacEnd .
+  ?hvacName string:contains "HVAC" .
+  ?equipmentTask a :Task ; :usesResource ?equipment ; :startDate ?equipStart .
+  ?equipment :equipmentType "Server" .
+  ?equipStart time:before ?hvacEnd } 
+=> { ?equipmentTask :thermalRisk "Heat-generating equipment before HVAC completion" ; 
+     :coolingDependency ?hvacTask } .
+
+# Fire Suppression System Requirements - safety before occupancy
+{ ?fireTask a :Task ; :taskName ?fireName ; :endDate ?fireEnd .
+  ?fireName string:contains "Fire Suppression" .
+  ?commissioningActivity a :CommissioningActivity ; :startDate ?commStart ; 
+  :commissioningChecklist ?checklist .
+  ?checklist string:contains "Occupancy" .
+  ?commStart time:before ?fireEnd } 
+=> { ?commissioningActivity :safetyViolation "Occupancy before fire suppression completion" ; 
+     :safetySystem ?fireTask } .
+
+# Advanced Resource Management
+
+# Equipment Utilization Optimization - maximize expensive equipment usage
+{ ?equipment a :EquipmentResource ; :dailyRentalCost ?cost .
+  ?cost math:greaterThan 1000 .
+  { ?task :usesResource ?equipment ; :startDate ?start ; :endDate ?end .
+    (?start ?end) time:daysBetween ?days } log:collectAllIn ?usagePeriods .
+  ?usagePeriods math:sum ?totalDays .
+  ?totalDays math:lessThan 30 } 
+=> { ?equipment :underutilized "High-cost equipment used less than 30 days" ; 
+     :optimizationOpportunity true } .
+
+# Team Capacity Planning - workload balancing
+{ ?team a :Team .
+  { ?team :hasMembers ?person } log:collectAllIn ?members .
+  ?members list:length ?teamSize .
+  { ?task :assignedTeam ?team ; :durationDays ?duration } log:collectAllIn ?assignments .
+  ?assignments math:sum ?totalWorkDays .
+  (?totalWorkDays ?teamSize) math:quotient ?workloadPerPerson .
+  ?workloadPerPerson math:greaterThan 60 } 
+=> { ?team :overallocated "Team workload exceeds 60 days per person" ; 
+     :workloadPerPerson ?workloadPerPerson ; :scalingRequired true } .
+
+# Supplier Performance Tracking - vendor management
+{ ?supplier a :Supplier .
+  { ?order :fromSupplier ?supplier ; :orderDate ?ordered ; :actualDelivery ?delivered .
+    (?ordered ?delivered) time:daysBetween ?leadTime } log:collectAllIn ?leadTimes .
+  ?leadTimes list:length ?orderCount .
+  ?orderCount math:greaterThan 3 .
+  ?leadTimes math:sum ?totalDays .
+  (?totalDays ?orderCount) math:quotient ?avgLeadTime .
+  ?avgLeadTime math:greaterThan 21 } 
+=> { ?supplier :performanceIssue "Average lead time exceeds 21 days" ; 
+     :averageLeadTime ?avgLeadTime ; :vendorReviewRequired true } .
+
+# Quality and Commissioning Validation
+
+# Commissioning Checklist Completeness - quality assurance
+{ ?commissioningActivity a :CommissioningActivity ; :commissioningChecklist ?checklist .
+  ?checklist string:contains "Partial" } 
+=> { ?commissioningActivity :incompleteChecklist "Commissioning checklist not fully completed" ; 
+     :qualityRisk "MEDIUM" } .
+
+# Commissioning Pass Criteria - system acceptance
+{ ?commissioningActivity a :CommissioningActivity ; :passDate ?passed .
+  ?passed log:equalTo () .
+  ?commissioningActivity :startDate ?started .
+  "" time:localTime ?now .
+  (?started ?now) time:daysBetween ?daysInProgress .
+  ?daysInProgress math:greaterThan 14 } 
+=> { ?commissioningActivity :prolongedTesting "Commissioning exceeds 14 days without pass" ; 
+     :escalationRequired true } .
+
+# Data Center Reliability Requirements - redundancy validation
+{ ?project a :MegaProject ; :projectName ?name .
+  ?name string:contains "Data Center" .
+  ?task :belongsToWorkStream [ :hasWorkStream ?project ] ; :taskName ?taskName .
+  ?taskName string:contains "Backup Power" .
+  ?task :actualEndDate ?completed .
+  ?completed log:equalTo () } 
+=> { ?project :reliabilityRisk "Data center missing backup power system" ; 
+     :criticalSystem ?task ; :uptime threatened } .
+
+# Project Portfolio Management - multi-project resource coordination
+{ ?resource a :Resource .
+  ?project1 a :MegaProject .
+  ?project2 a :MegaProject .
+  ?project1 log:notEqualTo ?project2 .
+  ?task1 :belongsToWorkStream [ :hasWorkStream ?project1 ] ; :usesResource ?resource .
+  ?task2 :belongsToWorkStream [ :hasWorkStream ?project2 ] ; :usesResource ?resource .
+  ?task1 :startDate ?start1 ; :endDate ?end1 .
+  ?task2 :startDate ?start2 ; :endDate ?end2 .
+  ?start1 time:notAfter ?end2 . ?start2 time:notAfter ?end1 } 
+=> { ?resource :crossProjectConflict "Resource allocated to multiple projects simultaneously" ; 
+     :conflictingProjects (?project1 ?project2) } .

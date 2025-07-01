@@ -1,0 +1,229 @@
+# Supply Chain Integrity & Traceability:
+# 	End-to-end tracking: Batch genealogy from manufacturer through distribution to pharmacy
+# 	Multi-hop validation: Complex routing verification through distributors
+# 	Inventory reconciliation: Production vs shipment quantity verification
+# 	Chain of custody: Temporal consistency across shipment handoffs
+# 
+# Regulatory Compliance & Safety:
+# 	FDA approval validation: Ensuring only approved products enter supply chain
+# 	Controlled substance monitoring: DEA compliance for opioids and restricted medications
+# 	License verification: Manufacturer credential validation with pattern matching
+# 	Cross-contamination assessment: Manufacturing facility risk evaluation
+# 
+# Product Quality & Cold Chain Management:
+# 	Expiry monitoring: Real-time batch expiration tracking with early warning systems
+# 	Temperature-sensitive logistics: Cold chain compliance for injectables and refrigerated products
+# 	Transit time validation: Quality preservation through shipping duration limits
+# 	Storage requirement compliance: Facility-appropriate product distribution
+# 
+# Anti-Counterfeiting & Security:
+# 	Serialization validation: Batch number format and length verification for tracking
+# 	Authentication chains: RxNorm code compliance and product coding standards
+# 	Distribution channel validation: Appropriate facility type routing (human vs veterinary)
+# 	Recall management: Automated safety incident response and inventory removal
+# 
+# Analytics & Risk Management:
+# 	Supply disruption detection: Shortage prediction through shipment frequency analysis
+# 	Prescribing pattern monitoring: Unusual volume detection for controlled substances
+# 	Regulatory inconsistency detection: Cross-agency approval date variance analysis
+# 	Quality risk assessment: Manufacturing facility and product form compatibility
+# 
+# Other N3 features:
+# 	Temporal reasoning: Complex date/time validation across multiple entities
+# 	String processing: Medical code validation and facility type matching
+# 	Mathematical aggregation: Quantity tracking, average calculations, threshold monitoring
+# 	List operations: Multi-shipment analysis and batch tracking across distribution networks
+# 	Conditional logic: Complex if-then rules for regulatory compliance and safety monitoring
+
+@prefix : <http://example.org/pharma#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+
+# Pharmaceutical supply chain entity classes
+:PharmaManufacturer, :Distributor, :PharmacyOrHospital, :MedicationProduct, 
+:BatchOrLot, :Shipment, :Prescription, :RegulatoryApproval a rdfs:Class .
+
+# Object Properties - precise domain/range mapping
+:manufacturesProduct rdfs:domain :PharmaManufacturer ; rdfs:range :MedicationProduct .
+:approvedBy rdfs:domain :MedicationProduct ; rdfs:range :RegulatoryApproval .
+:belongsToProduct rdfs:domain :BatchOrLot ; rdfs:range :MedicationProduct .
+:fromEntity rdfs:domain :Shipment ; rdfs:range :PharmaManufacturer .
+:fromEntity2 rdfs:domain :Shipment ; rdfs:range :Distributor .
+:toEntity rdfs:domain :Shipment ; rdfs:range :Distributor .
+:toEntity2 rdfs:domain :Shipment ; rdfs:range :PharmacyOrHospital .
+:includesBatch rdfs:domain :Shipment ; rdfs:range :BatchOrLot .
+:medicationRef rdfs:domain :Prescription ; rdfs:range :MedicationProduct .
+:referencesProduct rdfs:domain :RegulatoryApproval ; rdfs:range :MedicationProduct .
+
+# Data Properties grouped by type
+:manufacturerName, :location, :licenseNumber, :distributorName, :distributorID, 
+:facilityName, :facilityType, :internalProductCode, :brandName, :genericName, 
+:strength, :form, :rxNormCode, :batchNumber, :shipmentID, :prescriptionID, 
+:approvalID, :agencyName rdfs:range xsd:string .
+
+:quantityProduced, :quantity rdfs:range xsd:integer .
+:expiryDate, :prescribedDate, :approvalDate rdfs:range xsd:date .
+:shipDate, :receiveDate rdfs:range xsd:dateTime .
+
+# Pharmaceutical Supply Chain Validation Rules
+
+# Batch Expiry and Safety Monitoring - critical for patient safety
+{ ?batch a :BatchOrLot ; :expiryDate ?expiry .
+  "" time:localTime ?now .
+  ?expiry time:before ?now } 
+=> { ?batch :expired true ; :patientSafetyRisk "HIGH" } .
+
+# Near-expiry warning system - 90 days before expiration
+{ ?batch a :BatchOrLot ; :expiryDate ?expiry .
+  "" time:localTime ?now .
+  (?now ?expiry) time:daysBetween ?daysToExpiry .
+  ?daysToExpiry math:lessThan 90 .
+  ?daysToExpiry math:greaterThan 0 } 
+=> { ?batch :nearExpiry true ; :daysRemaining ?daysToExpiry ; :actionRequired "Prioritize distribution" } .
+
+# Regulatory Approval Validation - N3 ensures only approved products in supply chain
+{ ?product a :MedicationProduct .
+  { ?product :approvedBy ?approval } log:collectAllIn ?approvals .
+  ?approvals list:length 0 } 
+=> { ?product :regulatoryViolation "Product lacks regulatory approval" ; :distributionBlocked true } .
+
+# RxNorm Code Validation - pharmaceutical standard compliance
+{ ?product a :MedicationProduct ; :rxNormCode ?code .
+  ?code string:matches "^[0-9]{1,8}$" log:notEqualTo true } 
+=> { ?product :codingError "Invalid RxNorm format" ; :invalidCode ?code } .
+
+# Supply Chain Traceability - end-to-end batch tracking
+{ ?shipment a :Shipment ; :includesBatch ?batch ; :fromEntity ?origin ; :toEntity ?destination .
+  ?batch :belongsToProduct ?product .
+  ?product :manufacturesProduct ?manufacturer .
+  ?origin log:notEqualTo ?manufacturer } 
+=> { ?shipment :traceabilityGap "Batch origin mismatch" ; :expectedOrigin ?manufacturer ; :actualOrigin ?origin } .
+
+# Shipment Integrity - receive date validation
+{ ?shipment a :Shipment ; :shipDate ?shipped ; :receiveDate ?received .
+  ?received time:before ?shipped } 
+=> { ?shipment :temporalError "Received before shipped" ; :dataIntegrityIssue true } .
+
+# Cold Chain Monitoring - time-sensitive pharmaceutical transport
+{ ?shipment a :Shipment ; :includesBatch ?batch ; :shipDate ?shipped ; :receiveDate ?received .
+  ?batch :belongsToProduct ?product .
+  ?product :form ?form .
+  ?form string:contains "Injectable" .
+  (?shipped ?received) time:hoursBetween ?transitHours .
+  ?transitHours math:greaterThan 72 } 
+=> { ?shipment :coldChainViolation "Extended transit time for injectable" ; :transitHours ?transitHours ; :riskLevel "CRITICAL" } .
+
+# Prescription Validation - medication authenticity
+{ ?prescription a :Prescription ; :medicationRef ?product ; :quantity ?qty .
+  ?product :approvedBy ?approval .
+  ?approval :agencyName ?agency .
+  ?agency log:notEqualTo "FDA" } 
+=> { ?prescription :regulatoryAlert "Non-FDA approved medication prescribed" ; :verificationRequired true } .
+
+# Batch Quantity Tracking - inventory reconciliation
+{ ?batch a :BatchOrLot ; :quantityProduced ?produced .
+  { ?shipment :includesBatch ?batch ; :shippedQuantity ?shipped } log:collectAllIn ?shipments .
+  ?shipments math:sum ?totalShipped .
+  ?totalShipped math:greaterThan ?produced } 
+=> { ?batch :inventoryDiscrepancy "Shipped quantity exceeds production" ; :produced ?produced ; :shipped ?totalShipped } .
+
+# Multi-hop Distribution Validation - supply chain routing logic
+{ ?shipment1 a :Shipment ; :fromEntity ?manufacturer ; :toEntity ?distributor ; :includesBatch ?batch .
+  ?shipment2 a :Shipment ; :fromEntity2 ?distributor ; :toEntity2 ?pharmacy ; :includesBatch ?batch .
+  ?manufacturer a :PharmaManufacturer .
+  ?distributor a :Distributor .
+  ?pharmacy a :PharmacyOrHospital .
+  ?shipment1 :receiveDate ?dist1Received .
+  ?shipment2 :shipDate ?dist2Shipped .
+  ?dist2Shipped time:before ?dist1Received } 
+=> { ?batch :distributionAnomalY "Batch shipped before received by distributor" ; :batchID ?batch } .
+
+# License Validation - regulatory compliance for manufacturers
+{ ?manufacturer a :PharmaManufacturer ; :licenseNumber ?license ; :manufacturesProduct ?product .
+  ?license string:matches "^[A-Z]{2}[0-9]{6}$" log:notEqualTo true } 
+=> { ?manufacturer :licenseFormatError "Invalid license format" ; :invalidLicense ?license } .
+
+# Prescription Date Validation - temporal consistency
+{ ?prescription a :Prescription ; :prescribedDate ?prescribed ; :medicationRef ?product .
+  ?product :approvedBy [ :approvalDate ?approved ] .
+  ?prescribed time:before ?approved } 
+=> { ?prescription :temporalViolation "Prescribed before FDA approval" ; :prescribedDate ?prescribed ; :approvalDate ?approved } .
+
+# Controlled Substance Tracking - DEA compliance patterns
+{ ?product a :MedicationProduct ; :genericName ?name .
+  ?name string:contains "morphine" .
+  ?prescription :medicationRef ?product ; :quantity ?qty .
+  ?qty math:greaterThan 30 } 
+=> { ?prescription :controlledSubstanceAlert "High quantity opioid prescription" ; :deaNotificationRequired true } .
+
+# Supply Chain Disruption Detection - shortage analysis
+{ ?product a :MedicationProduct .
+  "" time:localTime ?now . ?now time:day ?today .
+  { ?shipment :includesBatch [ :belongsToProduct ?product ] ; :receiveDate ?received .
+    ?received time:day ?receivedDay .
+    (?today ?receivedDay) time:daysBetween ?daysSince .
+    ?daysSince math:lessThan 30 } log:collectAllIn ?recentShipments .
+  ?recentShipments list:length ?shipmentCount .
+  ?shipmentCount math:lessThan 3 } 
+=> { ?product :supplyShortage true ; :recentShipments ?shipmentCount ; :alertLevel "WARNING" } .
+
+# Batch Recall Management - safety incident response
+{ ?batch a :BatchOrLot ; :recallIssued true ; :belongsToProduct ?product .
+  ?shipment :includesBatch ?batch ; :toEntity ?destination .
+  ?destination a :PharmacyOrHospital } 
+=> { ?destination :recallNotification ?batch ; :actionRequired "Remove from inventory" ; :urgency "IMMEDIATE" } .
+
+# Cross-contamination Risk Assessment - manufacturing safety
+{ ?manufacturer a :PharmaManufacturer ; :location ?loc .
+  ?product1 :manufacturesProduct ?manufacturer ; :form "Tablet" .
+  ?product2 :manufacturesProduct ?manufacturer ; :form "Injectable" .
+  ?product1 log:notEqualTo ?product2 } 
+=> { ?manufacturer :crossContaminationRisk "Solid and liquid forms at same facility" ; :gmpReviewRequired true } .
+
+# Facility Type Validation - appropriate distribution channels
+{ ?shipment a :Shipment ; :toEntity2 ?facility ; :includesBatch ?batch .
+  ?facility :facilityType "Veterinary" .
+  ?batch :belongsToProduct ?product .
+  ?product :approvedBy [ :agencyName "FDA" ] .
+  ?product :indication ?indication .
+  ?indication string:contains "human" } 
+=> { ?shipment :distributionError "Human medication to veterinary facility" ; :complianceViolation true } .
+
+# Serialization and Anti-Counterfeiting - pharmaceutical authentication
+{ ?batch a :BatchOrLot ; :batchNumber ?batchNum .
+  ?batchNum string:length ?length .
+  ?length math:lessThan 8 } 
+=> { ?batch :serializationRisk "Batch number too short for tracking" ; :securityRisk "HIGH" } .
+
+# Temperature-Sensitive Product Monitoring
+{ ?product a :MedicationProduct ; :form ?form ; :storageRequirement "Refrigerated" .
+  ?shipment :includesBatch [ :belongsToProduct ?product ] ; :shipDate ?shipped ; :receiveDate ?received .
+  (?shipped ?received) time:hoursBetween ?hours .
+  ?hours math:greaterThan 48 } 
+=> { ?shipment :temperatureRisk "Extended transit for refrigerated product" ; :qualityCompromised "POSSIBLE" } .
+
+# Regulatory Agency Cross-Reference Validation
+{ ?product a :MedicationProduct .
+  ?approval1 :referencesProduct ?product ; :agencyName "FDA" ; :approvalDate ?fdaDate .
+  ?approval2 :referencesProduct ?product ; :agencyName "EMA" ; :approvalDate ?emaDate .
+  (?fdaDate ?emaDate) time:daysBetween ?dateDiff .
+  ?dateDiff math:absoluteValue ?daysDifferent .
+  ?daysDifferent math:greaterThan 365 } 
+=> { ?product :regulatoryInconsistency "Major approval date variance between agencies" ; :investigationRequired true } .
+
+# Prescription Volume Analytics - unusual prescribing patterns
+{ ?product a :MedicationProduct .
+  "" time:localTime ?now . ?now time:day ?today .
+  { ?prescription :medicationRef ?product ; :prescribedDate ?prescribed ; :quantity ?qty .
+    ?prescribed time:day ?today } log:collectAllIn ?quantities .
+  ?quantities math:sum ?dailyVolume .
+  ?quantities list:length ?prescriptionCount .
+  (?dailyVolume ?prescriptionCount) math:quotient ?avgPrescription .
+  ?avgPrescription math:greaterThan 90 } 
+=> { ?product :unusualPrescribingPattern "High average daily prescription volume" ; :monitoringFlag true } .
