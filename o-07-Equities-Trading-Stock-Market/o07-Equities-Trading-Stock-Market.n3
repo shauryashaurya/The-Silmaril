@@ -1,0 +1,187 @@
+# Advanced Pattern Matching:
+# 	Conditional logic: Order type validation with string matching
+# 	Temporal reasoning: Time-based expiration and volume aggregation
+# 	Mathematical validation: Tick size compliance and margin calculations
+# 
+# Financial Domain Rules:
+# 	Trade settlement: Quantity reconciliation between orders and trades
+# 	Risk management: Concentration limits and short position detection
+# 	Regulatory compliance: Broker licensing and jurisdiction validation
+# 	Market microstructure: Arbitrage detection and volume analysis
+# 
+# N3 Computational Features:
+# 	Aggregation patterns: Portfolio valuation and daily volume calculation
+# 	State transitions: Position updates from trade executions
+# 	Error detection: Data integrity and business rule violations
+# 	Real-time analysis: Cash sufficiency and margin requirements
+# 
+# Ontology Scope Coverage:
+# 	Order lifecycle management and validation
+# 	Position tracking and portfolio analytics
+# 	Commission calculation and fee structures
+# 	Risk assessment and regulatory compliance
+# 	Market data analysis and arbitrage detection
+
+@prefix : <http://example.org/trading#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+
+# N3 comma syntax for multiple class declarations
+:Investor, :Broker, :CommissionPlan, :Exchange, :FinancialInstrument, 
+:Order, :Trade, :Portfolio, :Position, :CashAccount a rdfs:Class .
+
+# Object Properties with domain/range chains using semicolons
+:places rdfs:domain :Investor ; rdfs:range :Order .
+:belongsTo rdfs:domain :Portfolio, :CashAccount ; rdfs:range :Investor .
+:feeStructure rdfs:domain :Broker ; rdfs:range :CommissionPlan .
+:executedBy rdfs:domain :Order ; rdfs:range :Broker .
+:tradedOn rdfs:domain :Order ; rdfs:range :Exchange .
+:involvesInstrument rdfs:domain :Order ; rdfs:range :FinancialInstrument .
+:referencesInstrument rdfs:domain :Position ; rdfs:range :FinancialInstrument .
+:relatedOrder rdfs:domain :Trade ; rdfs:range :Order .
+:hasPosition rdfs:domain :Portfolio ; rdfs:range :Position .
+
+# Data Properties grouped by type for conciseness
+:investorName, :investorType, :brokerName, :brokerLicenseID, :planID, :planName,
+:exchangeName, :country, :symbol, :description, :instrumentType, :orderID, 
+:orderType, :side, :timeInForce, :status, :tradeID, :portfolioID, :portfolioName, 
+:accountID rdfs:range xsd:string .
+
+:quantity, :currentQuantity rdfs:range xsd:integer .
+:commissionRate, :tickSize, :limitPrice, :price, :averageCost, :balance rdfs:range xsd:float .
+:creationDateTime, :tradeDateTime rdfs:range xsd:dateTime .
+
+# Trading Validation Rules
+
+# Order Type Validation - N3 string matching and logical implications
+{ ?order a :Order ; :orderType "Limit" ; :limitPrice ?price .
+  ?price log:equalTo () } 
+=> { ?order :validationError "Limit orders require limitPrice" } .
+
+{ ?order a :Order ; :orderType "Market" ; :limitPrice ?price .
+  ?price log:notEqualTo () } 
+=> { ?order :validationError "Market orders cannot have limitPrice" } .
+
+# Order Status and Trade Quantity Reconciliation
+{ ?order a :Order ; :status "Filled" ; :quantity ?orderQty .
+  { ?trade :relatedOrder ?order ; :quantity ?tradeQty } log:collectAllIn ?trades .
+  ?trades math:sum ?totalTraded .
+  ?totalTraded log:notEqualTo ?orderQty } 
+=> { ?order :reconciliationError "Trade quantity mismatch" ; :expected ?orderQty ; :actual ?totalTraded } .
+
+{ ?order a :Order ; :status "PartiallyFilled" ; :quantity ?orderQty .
+  { ?trade :relatedOrder ?order ; :quantity ?tradeQty } log:collectAllIn ?trades .
+  ?trades math:sum ?totalTraded .
+  ?totalTraded math:notLessThan ?orderQty } 
+=> { ?order :statusError "PartiallyFilled order has complete fill" } .
+
+# Commission Calculation - N3 arithmetic with broker fee structures
+{ ?order a :Order ; :executedBy ?broker ; :quantity ?qty .
+  ?trade :relatedOrder ?order ; :price ?price ; :quantity ?tradeQty .
+  ?broker :feeStructure [ :commissionRate ?rate ] .
+  (?price ?tradeQty) math:product ?tradeValue .
+  (?tradeValue ?rate) math:product ?commission } 
+=> { ?trade :commission ?commission ; :netValue [ math:difference (?tradeValue ?commission) ] } .
+
+# Position Updates from Trades - N3 aggregation and state management
+{ ?trade a :Trade ; :relatedOrder ?order ; :quantity ?tradeQty ; :price ?tradePrice .
+  ?order :involvesInstrument ?instrument ; :side ?side .
+  ?position :referencesInstrument ?instrument ; :currentQuantity ?currentQty ; :averageCost ?avgCost .
+  ?side log:equalTo "Buy" .
+  (?currentQty ?tradeQty) math:sum ?newQty .
+  (?avgCost ?currentQty) math:product ?currentValue .
+  (?tradePrice ?tradeQty) math:product ?tradeValue .
+  (?currentValue ?tradeValue) math:sum ?totalValue .
+  (?totalValue ?newQty) math:quotient ?newAvgCost } 
+=> { ?position :updatedQuantity ?newQty ; :updatedAverageCost ?newAvgCost } .
+
+# Tick Size Validation - N3 modulo arithmetic for price compliance
+{ ?order a :Order ; :limitPrice ?price ; :involvesInstrument ?instrument .
+  ?instrument :tickSize ?tick .
+  (?price ?tick) math:remainder ?remainder .
+  ?remainder math:greaterThan 0 } 
+=> { ?order :priceViolation "Price not multiple of tick size" ; :tickSize ?tick } .
+
+# Portfolio Value Calculation - N3 list processing and aggregation
+{ ?portfolio a :Portfolio .
+  { ?portfolio :hasPosition ?pos . 
+    ?pos :currentQuantity ?qty ; :referencesInstrument ?instrument .
+    ?instrument :currentPrice ?price .
+    (?qty ?price) math:product ?posValue } log:collectAllIn ?values .
+  ?values math:sum ?totalValue } 
+=> { ?portfolio :marketValue ?totalValue } .
+
+# Risk Management - Concentration Limits
+{ ?portfolio a :Portfolio ; :marketValue ?totalValue .
+  ?position :currentQuantity ?qty ; :referencesInstrument ?instrument .
+  ?instrument :currentPrice ?price .
+  (?qty ?price) math:product ?posValue .
+  (?posValue ?totalValue) math:quotient ?concentration .
+  ?concentration math:greaterThan 0.1 } 
+=> { ?portfolio :concentrationRisk ?instrument ; :riskPercentage ?concentration } .
+
+# Short Selling Detection and Margin Requirements
+{ ?position a :Position ; :currentQuantity ?qty ; :referencesInstrument ?instrument .
+  ?qty math:lessThan 0 .
+  ?instrument :currentPrice ?price .
+  (?qty ?price) math:product ?shortValue .
+  ?shortValue math:absoluteValue ?marginRequired } 
+=> { ?position :shortPosition true ; :marginRequirement ?marginRequired } .
+
+# Order Execution Window Validation - N3 time reasoning
+{ ?order a :Order ; :creationDateTime ?created ; :timeInForce "DAY" .
+  "" time:localTime ?now .
+  (?created ?now) time:daysBetween ?daysDiff .
+  ?daysDiff math:greaterThan 0 } 
+=> { ?order :expired true ; :autoCancel true } .
+
+# Broker License Validation for Execution
+{ ?order a :Order ; :executedBy ?broker ; :tradedOn ?exchange .
+  ?broker :brokerLicenseID ?license .
+  ?exchange :country ?country .
+  ?license string:startsWith ?country log:notEqualTo true } 
+=> { ?order :jurisdictionError "Broker not licensed for exchange country" } .
+
+# Cash Account Sufficiency for Buy Orders
+{ ?order a :Order ; :side "Buy" ; :quantity ?qty ; :limitPrice ?price ; :places ?investor .
+  ?investor :belongsTo ?cashAccount .
+  ?cashAccount :balance ?balance .
+  (?qty ?price) math:product ?requiredCash .
+  ?balance math:lessThan ?requiredCash } 
+=> { ?order :insufficientFunds true ; :required ?requiredCash ; :available ?balance } .
+
+# Trading Volume Analysis - N3 temporal aggregation
+{ ?instrument a :FinancialInstrument .
+  "" time:localTime ?now .
+  ?now time:day ?today .
+  { ?trade a :Trade ; :tradeDateTime ?dt ; :quantity ?qty .
+    ?trade :relatedOrder [ :involvesInstrument ?instrument ] .
+    ?dt time:day ?today } log:collectAllIn ?volumes .
+  ?volumes math:sum ?dailyVolume } 
+=> { ?instrument :dailyVolume ?dailyVolume ; :volumeDate ?today } .
+
+# Multi-Exchange Arbitrage Detection
+{ ?instrument a :FinancialInstrument ; :symbol ?symbol .
+  ?order1 :involvesInstrument ?instrument ; :tradedOn ?exchange1 ; :limitPrice ?price1 .
+  ?order2 :involvesInstrument ?instrument ; :tradedOn ?exchange2 ; :limitPrice ?price2 .
+  ?exchange1 log:notEqualTo ?exchange2 .
+  (?price1 ?price2) math:difference ?priceDiff .
+  ?priceDiff math:absoluteValue ?spread .
+  ?spread math:greaterThan 0.02 } 
+=> { ?instrument :arbitrageOpportunity true ; :priceSpread ?spread ; 
+     :exchanges (?exchange1 ?exchange2) } .
+
+# Institutional vs Retail Order Pattern Analysis
+{ ?investor a :Investor ; :investorType "Institutional" .
+  { ?investor :places ?order . ?order :quantity ?qty } log:collectAllIn ?quantities .
+  ?quantities list:length ?orderCount .
+  ?quantities math:sum ?totalQuantity .
+  (?totalQuantity ?orderCount) math:quotient ?avgOrderSize .
+  ?avgOrderSize math:greaterThan 10000 } 
+=> { ?investor :institutionalPattern true ; :averageOrderSize ?avgOrderSize } .
