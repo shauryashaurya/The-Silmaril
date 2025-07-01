@@ -1,0 +1,51 @@
+groupID,zoneID,groupName,occupantCount,occupantType
+G001,Z952,Executive Team,19,Contractors
+G002,Z793,Visitors Group,5,Visitors
+G003,Z016,Project Team,34,Trainees
+G004,Z300,Advisory Board,9,Visitors
+G005,Z559,Security Team,9,Executives
+G006,Z263,Advisory Board,43,Contractors
+G007,Z441,Contractors,15,Visitors
+G008,Z737,Project Team,6,Visitors
+G009,Z780,Research Group,2,Contractors
+G010,Z523,Training Class,19,Executives
+G011,Z164,Facilities Team,45,Contractors
+G012,Z147,IT Support,56,Contractors
+G013,Z732,Project Team,24,Executives
+G014,Z716,Executive Team,23,Visitors
+G015,Z777,Engineering Team,1,Contractors
+G016,Z634,Advisory Board,28,Executives
+G017,Z594,Security Team,9,Visitors
+G018,Z714,Facilities Team,5,Contractors
+G019,Z418,Sales Team,14,Contractors
+G020,Z571,Security Team,85,Contractors
+G021,Z805,Contractors,6,Contractors
+G022,Z770,Executive Team,34,Contractors
+G023,Z061,Marketing Department,29,Contractors
+G024,Z031,Advisory Board,97,Employees
+G025,Z305,Marketing Department,90,Contractors
+G026,Z302,Project Team,3,Employees
+G027,Z943,Engineering Team,37,Visitors
+G028,Z404,Visitors Group,4,Contractors
+G029,Z172,Marketing Department,43,Contractors
+G030,Z307,IT Support,14,Executives
+G031,Z727,Advisory Board,10,Employees
+G032,Z898,Facilities Team,96,Contractors
+G033,Z508,Advisory Board,16,Visitors
+G034,Z295,Security Team,30,Employees
+G035,Z637,Executive Team,22,Visitors
+G036,Z247,Visitors Group,4,Visitors
+G037,Z339,Facilities Team,87,Trainees
+G038,Z485,Training Class,97,Contractors
+G039,Z541,Contractors,1,Executives
+G040,Z490,Visitors Group,6,Contractors
+G041,Z020,Contractors,38,Employees
+G042,Z874,Research Group,63,Contractors
+G043,Z527,Contractors,19,Trainees
+G044,Z280,Visitors Group,7,Contractors
+G045,Z772,IT Support,41,Trainees
+G046,Z514,Visitors Group,61,Employees
+G047,Z965,Contractors,26,Trainees
+G048,Z317,Sales Team,6,Executives
+G049,Z135,Contractors,4,Executives
+G050,Z368,IT Support,14,Trainees

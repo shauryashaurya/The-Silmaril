@@ -1,0 +1,9 @@
+buildingID,buildingName,totalFloors,managementCompany,energyRating
+B001,"Russell, Hall and Hill Plaza",6,Ramsey LLC Management,2.0
+B002,"Lopez, Poole and Leonard Center",5,Huber-Pierce Management,1.9
+B003,Daniel-Tran Complex,8,Torres and Sons Management,3.5
+B004,Arnold and Sons Complex,4,Waters LLC Management,2.5
+B005,Hull-Taylor Complex,4,Nelson-Drake Management,3.3
+B006,Taylor-Peterson Complex,10,Taylor LLC Management,1.8
+B007,"Leblanc, Roberts and Salazar Complex",12,Richmond and Sons Management,3.6
+B008,"Gibson, Cunningham and Hill Complex",11,Walker-Harvey Management,4.1

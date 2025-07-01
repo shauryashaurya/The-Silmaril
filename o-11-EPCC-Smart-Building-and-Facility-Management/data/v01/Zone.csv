@@ -1,0 +1,6 @@
+zoneID,floorID,zoneName,zoneFunction,areaSqFt
+Z001,F001,Reception,Reception,500
+Z002,F001,Office Area A,Office,4500
+Z003,F002,Office Area B,Office,4500
+Z004,F003,Conference,Conference,1000
+Z005,F004,Server Room,ServerRoom,8000

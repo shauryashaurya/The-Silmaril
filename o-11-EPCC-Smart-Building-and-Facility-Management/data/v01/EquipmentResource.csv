@@ -1,0 +1,6 @@
+equipmentID,zoneID,equipmentType,status,powerRating
+E001,Z001,Lighting,Running,200
+E002,Z002,HVACUnit,Running,5000
+E003,Z003,Lighting,Running,300
+E004,Z004,HVACUnit,Maintenance,4500
+E005,Z005,SecurityCam,Running,50

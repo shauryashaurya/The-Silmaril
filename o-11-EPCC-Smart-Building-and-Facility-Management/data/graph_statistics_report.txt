@@ -1,0 +1,76 @@
+SMART BUILDING RDF GRAPH STATISTICS REPORT
+==================================================
+
+Generated: 2025-07-01 23:47:49
+
+GRAPH OVERVIEW:
+Total triples: 117,679
+Unique subjects: 16,366
+Unique predicates: 55
+Unique objects: 31,929
+
+INSTANCES BY CLASS:
+Occupant: 6,046
+EquipmentResource: 5,510
+Sensor: 3,483
+Zone: 996
+MaintenanceTask: 100
+Floor: 70
+OccupantGroup: 50
+SimulationScenario: 25
+Supplier: 15
+Building: 8
+
+PROPERTIES BY USAGE:
+zoneID: 16,110
+equipmentID: 6,718
+occupantName: 6,046
+occupiesZone: 6,046
+occupantID: 6,046
+occupantRole: 6,046
+comfortPreference: 6,046
+status: 5,510
+equipmentType: 5,510
+powerRating: 5,510
+locatedIn: 5,510
+lastUpdateTime: 3,483
+currentReading: 3,483
+monitorsZone: 3,483
+sensorType: 3,483
+sensorID: 3,483
+monitorsEquipment: 1,088
+floorID: 1,066
+hasZone: 996
+zoneName: 996
+zoneFunction: 996
+occupancyCapacity: 996
+areaSqFt: 996
+supplierID: 115
+plannedEndTime: 100
+taskStatus: 100
+description: 100
+performedBy: 100
+taskID: 100
+plannedStartTime: 100
+targetsEquipment: 100
+buildingID: 78
+hasFloor: 70
+floorNumber: 70
+usableAreaSqFt: 70
+groupID: 50
+groupName: 50
+occupantType: 50
+occupantCount: 50
+occupantGroupZone: 50
+scenarioName: 25
+scenarioID: 25
+scenarioFocus: 25
+predictedOutcome: 25
+hypothesis: 25
+scenarioEquipmentFail: 20
+supplierName: 15
+contactEmail: 15
+managementCompany: 8
+totalFloors: 8
+buildingName: 8
+energyRating: 8

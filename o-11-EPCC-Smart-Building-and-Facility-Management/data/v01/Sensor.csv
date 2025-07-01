@@ -1,0 +1,6 @@
+sensorID,zoneID,sensorType,currentReading,lastUpdateTime
+S001,Z001,Temperature,72.5,2024-01-01 09:00:00
+S002,Z002,Occupancy,0.0,2024-01-01 10:30:00
+S003,Z003,Temperature,71.2,2023-12-20 08:00:00
+S004,Z004,AirQuality,45.0,2024-01-01 11:00:00
+S005,Z005,Temperature,68.9,2024-01-01 09:45:00

@@ -1,0 +1,281 @@
+# IoT Infrastructure Management:
+# 	Sensor reliability: Data freshness validation and maintenance impact assessment
+# 	Equipment monitoring: Predictive maintenance based on IoT sensor readings
+# 	Network integrity: Equipment-sensor relationship validation and status tracking
+# 	Real-time optimization: Automated responses to environmental conditions
+# 
+# Occupancy and Space Management:
+# 	Capacity compliance: Zone occupancy limits and safety violation detection
+# 	Comfort optimization: Temperature preference aggregation and HVAC control
+# 	Space utilization: Individual occupant patterns and efficiency metrics
+# 	Access control: Equipment usage proximity validation and security coverage
+# 
+# Energy and Environmental Control:
+# 	Waste detection: Automated identification of energy waste in unoccupied zones
+# 	HVAC optimization: Intelligent climate control based on occupancy and preferences
+# 	Air quality management: Environmental health monitoring and ventilation control
+# 	Building-wide efficiency: Energy rating correlation with equipment performance
+# 
+# Facility Operations and Maintenance:
+# 	Predictive maintenance: IoT-driven equipment failure prediction and scheduling
+# 	Supplier performance: Contractor reliability tracking and contract management
+# 	Simulation validation: Disaster recovery scenario consistency checking
+# 	Resource coordination: Building-wide system optimization and performance analysis
+# 
+# Advanced Smart Building Intelligence:
+# 	Behavioral analytics: Occupant pattern recognition and space optimization
+# 	Security integration: Camera coverage analysis and access control validation
+# 	Environmental health: Air quality monitoring with occupancy correlation
+# 	Automated control: Smart lighting and HVAC based on real-time sensor data
+# 
+# N3 Reasoning:
+# 	Temporal logic: Complex time-based validation for maintenance and occupancy
+# 	Mathematical aggregation: Energy consumption, comfort preferences, utilization rates
+# 	String processing: Equipment type identification and function-based validation
+# 	List operations: Multi-occupant analysis and building-wide resource tracking
+# 	Conditional automation: Smart building responses based on sensor combinations
+
+@prefix : <http://example.org/smartbuilding#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+
+# Smart building management classes
+:Building, :Floor, :Zone, :EquipmentResource, :Sensor, :OccupantGroup, 
+:Occupant, :MaintenanceTask, :Supplier, :SimulationScenario a rdfs:Class .
+
+# Object Properties - building hierarchy and relationships
+:hasFloor rdfs:domain :Building ; rdfs:range :Floor .
+:hasZone rdfs:domain :Floor ; rdfs:range :Zone .
+:locatedIn rdfs:domain :EquipmentResource ; rdfs:range :Zone .
+:monitorsZone rdfs:domain :Sensor ; rdfs:range :Zone .
+:monitorsEquipment rdfs:domain :Sensor ; rdfs:range :EquipmentResource .
+:occupiesZone rdfs:domain :Occupant ; rdfs:range :Zone .
+:occupantGroupZone rdfs:domain :OccupantGroup ; rdfs:range :Zone .
+:targetsEquipment rdfs:domain :MaintenanceTask ; rdfs:range :EquipmentResource .
+:performedBy rdfs:domain :MaintenanceTask ; rdfs:range :Supplier .
+:contractedSupplier rdfs:domain :Building ; rdfs:range :Supplier .
+:scenarioFocus rdfs:domain :SimulationScenario ; rdfs:range :Zone .
+:scenarioEquipmentFail rdfs:domain :SimulationScenario ; rdfs:range :EquipmentResource .
+:occupantUsesEquipment rdfs:domain :Occupant ; rdfs:range :EquipmentResource .
+
+# Data Properties grouped by type
+:buildingID, :buildingName, :managementCompany, :floorID, :zoneName, :zoneFunction, 
+:equipmentID, :equipmentType, :status, :sensorID, :sensorType, :groupID, :groupName, 
+:occupantType, :occupantID, :occupantName, :occupantRole, :taskID, :description, 
+:taskStatus, :supplierID, :supplierName, :contactEmail, :scenarioID, :scenarioName, 
+:hypothesis, :predictedOutcome rdfs:range xsd:string .
+
+:totalFloors, :floorNumber, :occupancyCapacity, :occupantCount rdfs:range xsd:integer .
+:energyRating, :usableAreaSqFt, :areaSqFt, :powerRating, :currentReading, 
+:comfortPreference rdfs:range xsd:float .
+:lastUpdateTime, :plannedStartTime, :plannedEndTime rdfs:range xsd:dateTime .
+
+# Building Structure and Hierarchy Validation
+
+# Floor Zone Requirement - PMBOK space management
+{ ?floor a :Floor ; :floorNumber ?num .
+  ?num math:greaterThan 0 .
+  { ?floor :hasZone ?zone } log:collectAllIn ?zones .
+  ?zones list:length 0 } 
+=> { ?floor :structuralViolation "Floor above ground level requires at least one zone" ; 
+     :complianceIssue "Building code violation" } .
+
+# Building Energy Rating Threshold - sustainability compliance
+{ ?building a :Building ; :energyRating ?rating .
+  ?rating math:lessThan 3.0 } 
+=> { ?building :energyDeficiency "Below minimum energy efficiency standard" ; 
+     :remediationRequired "Sensor upgrade or maintenance tasks needed" ; :priority "HIGH" } .
+
+# IoT Sensor Network Management
+
+# Sensor Data Freshness Validation - IoT reliability monitoring
+{ ?sensor a :Sensor ; :lastUpdateTime ?lastUpdate .
+  "" time:localTime ?now .
+  (?lastUpdate ?now) time:hoursBetween ?hoursOld .
+  ?hoursOld math:greaterThan 24 } 
+=> { ?sensor :dataStale "Sensor data over 24 hours old" ; :reliability "DEGRADED" ; 
+     :maintenanceAlert true } .
+
+# Equipment Maintenance Impact on Sensor Readings - operational dependencies
+{ ?equipment a :EquipmentResource ; :status "Maintenance" ; :locatedIn ?zone .
+  ?sensor :monitorsZone ?zone } 
+=> { ?sensor :readingReliability "PARTIAL" ; :reason "Equipment under maintenance in monitored zone" ; 
+     :dataQualityFlag true } .
+
+{ ?sensor a :Sensor ; :monitorsEquipment ?equipment .
+  ?equipment :status "Maintenance" } 
+=> { ?sensor :equipmentUnavailable "Monitored equipment under maintenance" ; 
+     :expectedDowntime true } .
+
+# Occupancy Management and Space Optimization
+
+# Zone Capacity Violation - occupancy safety compliance
+{ ?group a :OccupantGroup ; :occupantCount ?count ; :occupantGroupZone ?zone .
+  ?zone :occupancyCapacity ?capacity .
+  ?count math:greaterThan ?capacity } 
+=> { ?group :overcrowded "Occupant count exceeds zone capacity" ; 
+     :safetyViolation true ; :splitRequired true ; :excess [ math:difference (?count ?capacity) ] } .
+
+# Individual Occupant Zone Validation - space utilization
+{ ?occupant a :Occupant ; :occupiesZone ?zone ; :occupantUsesEquipment ?equipment .
+  ?equipment :locatedIn ?equipZone .
+  ?zone log:notEqualTo ?equipZone } 
+=> { ?occupant :equipmentAccessIssue "Using equipment outside occupied zone" ; 
+     :spatialMismatch true ; :equipmentZone ?equipZone ; :occupantZone ?zone } .
+
+# Comfort Preference Optimization - smart building automation
+{ ?zone a :Zone .
+  { ?occupant :occupiesZone ?zone ; :comfortPreference ?pref } log:collectAllIn ?preferences .
+  ?preferences list:length ?occupantCount .
+  ?occupantCount math:greaterThan 1 .
+  ?preferences math:sum ?totalPref .
+  (?totalPref ?occupantCount) math:quotient ?avgComfort .
+  { ?sensor :monitorsZone ?zone ; :sensorType "Temperature" ; :currentReading ?temp } log:collectAllIn ?temps .
+  ?temps list:length ?tempSensorCount .
+  ?tempSensorCount math:greaterThan 0 .
+  ?temps math:sum ?totalTemp .
+  (?totalTemp ?tempSensorCount) math:quotient ?avgTemp .
+  (?avgTemp ?avgComfort) math:difference ?tempVariance .
+  ?tempVariance math:absoluteValue ?variance .
+  ?variance math:greaterThan 2.0 } 
+=> { ?zone :comfortMismatch "Zone temperature differs from occupant preferences" ; 
+     :hvacAdjustmentNeeded true ; :targetTemperature ?avgComfort } .
+
+# Equipment and Maintenance Management
+
+# Maintenance Task Temporal Validation - scheduling consistency
+{ ?task a :MaintenanceTask ; :plannedStartTime ?start ; :plannedEndTime ?end .
+  ?end time:notAfter ?start } 
+=> { ?task :scheduleError "Planned end time before or equal to start time" ; 
+     :scheduleConflict true } .
+
+# Equipment Replacement Eligibility - status-based operations
+{ ?equipment a :EquipmentResource ; :status ?status .
+  ?status log:notEqualTo "Off" .
+  ?status log:notEqualTo "Maintenance" .
+  ?task :targetsEquipment ?equipment ; :description ?desc .
+  ?desc string:contains "Replace" } 
+=> { ?task :operationViolation "Cannot replace running equipment" ; 
+     :statusConflict ?status ; :shutdownRequired true } .
+
+# Predictive Maintenance Scheduling - IoT-driven maintenance
+{ ?equipment a :EquipmentResource ; :equipmentType "HVACUnit" ; :powerRating ?power .
+  ?sensor :monitorsEquipment ?equipment ; :sensorType "Temperature" ; :currentReading ?temp .
+  ?power math:greaterThan 5000 .  # High-power HVAC
+  ?temp math:greaterThan 85 } 
+=> { ?equipment :overheating "High-power HVAC running hot" ; 
+     :predictiveMaintenance "Schedule inspection" ; :priority "URGENT" } .
+
+# Energy Optimization and Efficiency
+
+# Zone Energy Waste Detection - smart building efficiency
+{ ?zone a :Zone ; :zoneFunction "Office" .
+  { ?occupant :occupiesZone ?zone } log:collectAllIn ?occupants .
+  ?occupants list:length 0 .
+  ?equipment :locatedIn ?zone ; :status "Running" ; :equipmentType "Lighting" } 
+=> { ?equipment :energyWaste "Lighting running in unoccupied office zone" ; 
+     :autoShutdownCandidate true ; :energySavingOpportunity true } .
+
+# HVAC Efficiency Monitoring - environmental control optimization
+{ ?zone a :Zone .
+  ?hvac :locatedIn ?zone ; :equipmentType "HVACUnit" ; :status "Running" ; :powerRating ?power .
+  ?tempSensor :monitorsZone ?zone ; :sensorType "Temperature" ; :currentReading ?temp .
+  ?occSensor :monitorsZone ?zone ; :sensorType "Occupancy" ; :currentReading ?occupancy .
+  ?occupancy math:equalTo 0 .
+  ?temp math:greaterThan 70 . ?temp math:lessThan 78 .  # Comfortable range
+  ?power math:greaterThan 3000 } 
+=> { ?hvac :inefficientOperation "High-power HVAC in unoccupied zone with comfortable temperature" ; 
+     :energyOptimization "Reduce power or schedule shutdown" } .
+
+# Simulation and Scenario Planning
+
+# Simulation Scenario Consistency - building-wide analysis
+{ ?scenario a :SimulationScenario .
+  ?scenario :scenarioFocus ?zone1, ?zone2 .
+  ?zone1 :hasZone ?floor1 . ?floor1 :hasFloor ?building1 .
+  ?zone2 :hasZone ?floor2 . ?floor2 :hasFloor ?building2 .
+  ?building1 log:notEqualTo ?building2 } 
+=> { ?scenario :scopeInconsistency "Scenario spans multiple buildings" ; 
+     :refinementNeeded "Limit scope to single building" } .
+
+# Equipment Failure Simulation Validation - disaster recovery planning
+{ ?scenario a :SimulationScenario ; :scenarioEquipmentFail ?equipment ; :hypothesis ?hyp .
+  ?equipment :equipmentType "HVACUnit" .
+  ?hyp string:contains "HVAC fails" .
+  ?equipment :locatedIn ?zone .
+  ?scenario :scenarioFocus ?focusZone .
+  ?zone log:notEqualTo ?focusZone } 
+=> { ?scenario :simulationMismatch "HVAC failure equipment not in scenario focus zone" ; 
+     :consistencyError true } .
+
+# Advanced Smart Building Intelligence
+
+# Air Quality Management - environmental health monitoring
+{ ?zone a :Zone ; :zoneFunction "Office" .
+  ?sensor :monitorsZone ?zone ; :sensorType "AirQuality" ; :currentReading ?quality .
+  ?quality math:lessThan 50 .  # Poor air quality scale
+  { ?occupant :occupiesZone ?zone } log:collectAllIn ?occupants .
+  ?occupants list:length ?count .
+  ?count math:greaterThan 0 } 
+=> { ?zone :airQualityAlert "Poor air quality in occupied office zone" ; 
+     :ventilationIncrease "Required" ; :healthRisk "MODERATE" ; :occupantsAffected ?count } .
+
+# Security Camera Coverage Analysis - safety and security
+{ ?zone a :Zone ; :zoneFunction ?function .
+  ?function log:notEqualTo "Private Office" .
+  { ?camera :locatedIn ?zone ; :equipmentType "SecurityCam" } log:collectAllIn ?cameras .
+  ?cameras list:length 0 } 
+=> { ?zone :securityGap "Public zone lacks security camera coverage" ; 
+     :securityUpgrade "Install cameras" ; :riskLevel "MEDIUM" } .
+
+# Building-wide Resource Coordination - facility management optimization
+{ ?building a :Building .
+  { ?floor :hasFloor ?building . ?zone :hasZone ?floor . 
+    ?equipment :locatedIn ?zone ; :equipmentType "HVACUnit" ; :status "Running" ; 
+    :powerRating ?power } log:collectAllIn ?hvacPowers .
+  ?hvacPowers math:sum ?totalHVACPower .
+  ?building :energyRating ?rating .
+  (?totalHVACPower ?rating) math:quotient ?powerEfficiencyRatio .
+  ?powerEfficiencyRatio math:greaterThan 2000 } 
+=> { ?building :hvacInefficiency "HVAC power consumption high relative to energy rating" ; 
+     :systemOptimization "Required" ; :auditRecommended true } .
+
+# Supplier Performance in Facility Management
+{ ?supplier a :Supplier .
+  { ?task :performedBy ?supplier ; :taskStatus "Completed" ; 
+    :plannedEndTime ?planned ; :actualEndTime ?actual .
+    (?planned ?actual) time:daysBetween ?delay .
+    ?delay math:greaterThan 0 } log:collectAllIn ?delays .
+  ?delays list:length ?delayedTasks .
+  { ?task :performedBy ?supplier } log:collectAllIn ?allTasks .
+  ?allTasks list:length ?totalTasks .
+  (?delayedTasks ?totalTasks) math:quotient ?delayRate .
+  ?delayRate math:greaterThan 0.3 } 
+=> { ?supplier :performanceIssue "Over 30% of tasks completed late" ; 
+     :contractReview "Required" ; :delayRate ?delayRate } .
+
+# Occupant Behavior Analytics - space utilization patterns
+{ ?zone a :Zone ; :areaSqFt ?area .
+  { ?occupant :occupiesZone ?zone } log:collectAllIn ?occupants .
+  ?occupants list:length ?count .
+  (?area ?count) math:quotient ?spacePerPerson .
+  ?spacePerPerson math:lessThan 50 } 
+=> { ?zone :overcrowding "Less than 50 sq ft per person" ; 
+     :spaceOptimization "Consider zone expansion or occupant redistribution" ; 
+     :utilizationRate "HIGH" } .
+
+# Smart Building Automation Rules - integrated system control
+{ ?zone a :Zone .
+  ?occSensor :monitorsZone ?zone ; :sensorType "Occupancy" ; :currentReading ?occ .
+  ?lightSensor :monitorsZone ?zone ; :sensorType "Light" ; :currentReading ?light .
+  ?lighting :locatedIn ?zone ; :equipmentType "Lighting" ; :status "Off" .
+  ?occ math:greaterThan 0 .
+  ?light math:lessThan 300 } 
+=> { ?lighting :autoActivation "Occupancy detected with low light levels" ; 
+     :smartControl "Turn on lighting" ; :energyEfficient true } .

@@ -1,0 +1,4 @@
+taskID,equipmentID,description,plannedStartTime,plannedEndTime,taskStatus
+T001,E004,HVAC Filter Replacement,2024-01-02 09:00:00,2024-01-02 11:00:00,Scheduled
+T002,E001,Replace LED Fixtures,2024-01-03 10:00:00,2024-01-03 09:00:00,Scheduled
+T003,E002,HVAC Calibration,2024-01-04 14:00:00,2024-01-04 16:00:00,Scheduled

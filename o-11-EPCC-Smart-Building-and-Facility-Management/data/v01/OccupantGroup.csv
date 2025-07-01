@@ -1,0 +1,4 @@
+groupID,zoneID,groupName,occupantCount,occupantType
+G001,Z002,Engineering Team,50,Employees
+G002,Z003,Sales Team,30,Employees
+G003,Z004,Executive Team,200,Employees

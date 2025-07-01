@@ -1,0 +1,3 @@
+buildingID,buildingName,totalFloors,managementCompany,energyRating
+B001,Main Office,5,FacilityCorpA,4.2
+B002,Data Center,3,FacilityCorpB,2.8

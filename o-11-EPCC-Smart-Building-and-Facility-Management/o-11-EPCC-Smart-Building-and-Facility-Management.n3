@@ -1,3 +1,4 @@
+# VERBOSE VARIANT SO THAT RDFLIB / OWLREADY LIBRARIES CAN PARSE N3
 # IoT Infrastructure Management:
 # 	Sensor reliability: Data freshness validation and maintenance impact assessment
 # 	Equipment monitoring: Predictive maintenance based on IoT sensor readings
@@ -45,36 +46,263 @@
 @prefix list: <http://www.w3.org/2000/10/swap/list#> .
 @prefix string: <http://www.w3.org/2000/10/swap/string#> .
 
-# Smart building management classes
-:Building, :Floor, :Zone, :EquipmentResource, :Sensor, :OccupantGroup, 
-:Occupant, :MaintenanceTask, :Supplier, :SimulationScenario a rdfs:Class .
+# ===================================
+# CLASS DECLARATIONS
+# ===================================
 
-# Object Properties - building hierarchy and relationships
-:hasFloor rdfs:domain :Building ; rdfs:range :Floor .
-:hasZone rdfs:domain :Floor ; rdfs:range :Zone .
-:locatedIn rdfs:domain :EquipmentResource ; rdfs:range :Zone .
-:monitorsZone rdfs:domain :Sensor ; rdfs:range :Zone .
-:monitorsEquipment rdfs:domain :Sensor ; rdfs:range :EquipmentResource .
-:occupiesZone rdfs:domain :Occupant ; rdfs:range :Zone .
-:occupantGroupZone rdfs:domain :OccupantGroup ; rdfs:range :Zone .
-:targetsEquipment rdfs:domain :MaintenanceTask ; rdfs:range :EquipmentResource .
-:performedBy rdfs:domain :MaintenanceTask ; rdfs:range :Supplier .
-:contractedSupplier rdfs:domain :Building ; rdfs:range :Supplier .
-:scenarioFocus rdfs:domain :SimulationScenario ; rdfs:range :Zone .
-:scenarioEquipmentFail rdfs:domain :SimulationScenario ; rdfs:range :EquipmentResource .
-:occupantUsesEquipment rdfs:domain :Occupant ; rdfs:range :EquipmentResource .
+:Building a rdfs:Class .
+:Floor a rdfs:Class .
+:Zone a rdfs:Class .
+:EquipmentResource a rdfs:Class .
+:Sensor a rdfs:Class .
+:OccupantGroup a rdfs:Class .
+:Occupant a rdfs:Class .
+:MaintenanceTask a rdfs:Class .
+:Supplier a rdfs:Class .
+:SimulationScenario a rdfs:Class .
 
-# Data Properties grouped by type
-:buildingID, :buildingName, :managementCompany, :floorID, :zoneName, :zoneFunction, 
-:equipmentID, :equipmentType, :status, :sensorID, :sensorType, :groupID, :groupName, 
-:occupantType, :occupantID, :occupantName, :occupantRole, :taskID, :description, 
-:taskStatus, :supplierID, :supplierName, :contactEmail, :scenarioID, :scenarioName, 
-:hypothesis, :predictedOutcome rdfs:range xsd:string .
+# ===================================
+# OBJECT PROPERTIES (Domain -> Range)
+# ===================================
 
-:totalFloors, :floorNumber, :occupancyCapacity, :occupantCount rdfs:range xsd:integer .
-:energyRating, :usableAreaSqFt, :areaSqFt, :powerRating, :currentReading, 
-:comfortPreference rdfs:range xsd:float .
-:lastUpdateTime, :plannedStartTime, :plannedEndTime rdfs:range xsd:dateTime .
+# Building hierarchy relationships
+:hasFloor a rdf:Property ;
+    rdfs:domain :Building ;
+    rdfs:range :Floor .
+
+:hasZone a rdf:Property ;
+    rdfs:domain :Floor ;
+    rdfs:range :Zone .
+
+# Equipment and sensor location relationships
+:locatedIn a rdf:Property ;
+    rdfs:domain :EquipmentResource ;
+    rdfs:range :Zone .
+
+:monitorsZone a rdf:Property ;
+    rdfs:domain :Sensor ;
+    rdfs:range :Zone .
+
+:monitorsEquipment a rdf:Property ;
+    rdfs:domain :Sensor ;
+    rdfs:range :EquipmentResource .
+
+# Occupancy relationships
+:occupiesZone a rdf:Property ;
+    rdfs:domain :Occupant ;
+    rdfs:range :Zone .
+
+:occupantGroupZone a rdf:Property ;
+    rdfs:domain :OccupantGroup ;
+    rdfs:range :Zone .
+
+# Maintenance relationships
+:targetsEquipment a rdf:Property ;
+    rdfs:domain :MaintenanceTask ;
+    rdfs:range :EquipmentResource .
+
+:performedBy a rdf:Property ;
+    rdfs:domain :MaintenanceTask ;
+    rdfs:range :Supplier .
+
+# Supplier relationships
+:contractedSupplier a rdf:Property ;
+    rdfs:domain :Building ;
+    rdfs:range :Supplier .
+
+# Simulation relationships
+:scenarioFocus a rdf:Property ;
+    rdfs:domain :SimulationScenario ;
+    rdfs:range :Zone .
+
+:scenarioEquipmentFail a rdf:Property ;
+    rdfs:domain :SimulationScenario ;
+    rdfs:range :EquipmentResource .
+
+# Equipment usage relationships
+:occupantUsesEquipment a rdf:Property ;
+    rdfs:domain :Occupant ;
+    rdfs:range :EquipmentResource .
+
+# ===================================
+# DATA PROPERTIES - STRING TYPE
+# ===================================
+
+:buildingID a rdf:Property ;
+    rdfs:domain :Building ;
+    rdfs:range xsd:string .
+
+:buildingName a rdf:Property ;
+    rdfs:domain :Building ;
+    rdfs:range xsd:string .
+
+:managementCompany a rdf:Property ;
+    rdfs:domain :Building ;
+    rdfs:range xsd:string .
+
+:floorID a rdf:Property ;
+    rdfs:domain :Floor ;
+    rdfs:range xsd:string .
+
+:zoneName a rdf:Property ;
+    rdfs:domain :Zone ;
+    rdfs:range xsd:string .
+
+:zoneFunction a rdf:Property ;
+    rdfs:domain :Zone ;
+    rdfs:range xsd:string .
+
+:equipmentID a rdf:Property ;
+    rdfs:domain :EquipmentResource ;
+    rdfs:range xsd:string .
+
+:equipmentType a rdf:Property ;
+    rdfs:domain :EquipmentResource ;
+    rdfs:range xsd:string .
+
+:status a rdf:Property ;
+    rdfs:domain :EquipmentResource ;
+    rdfs:range xsd:string .
+
+:sensorID a rdf:Property ;
+    rdfs:domain :Sensor ;
+    rdfs:range xsd:string .
+
+:sensorType a rdf:Property ;
+    rdfs:domain :Sensor ;
+    rdfs:range xsd:string .
+
+:groupID a rdf:Property ;
+    rdfs:domain :OccupantGroup ;
+    rdfs:range xsd:string .
+
+:groupName a rdf:Property ;
+    rdfs:domain :OccupantGroup ;
+    rdfs:range xsd:string .
+
+:occupantType a rdf:Property ;
+    rdfs:domain :OccupantGroup ;
+    rdfs:range xsd:string .
+
+:occupantID a rdf:Property ;
+    rdfs:domain :Occupant ;
+    rdfs:range xsd:string .
+
+:occupantName a rdf:Property ;
+    rdfs:domain :Occupant ;
+    rdfs:range xsd:string .
+
+:occupantRole a rdf:Property ;
+    rdfs:domain :Occupant ;
+    rdfs:range xsd:string .
+
+:taskID a rdf:Property ;
+    rdfs:domain :MaintenanceTask ;
+    rdfs:range xsd:string .
+
+:description a rdf:Property ;
+    rdfs:domain :MaintenanceTask ;
+    rdfs:range xsd:string .
+
+:taskStatus a rdf:Property ;
+    rdfs:domain :MaintenanceTask ;
+    rdfs:range xsd:string .
+
+:supplierID a rdf:Property ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:string .
+
+:supplierName a rdf:Property ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:string .
+
+:contactEmail a rdf:Property ;
+    rdfs:domain :Supplier ;
+    rdfs:range xsd:string .
+
+:scenarioID a rdf:Property ;
+    rdfs:domain :SimulationScenario ;
+    rdfs:range xsd:string .
+
+:scenarioName a rdf:Property ;
+    rdfs:domain :SimulationScenario ;
+    rdfs:range xsd:string .
+
+:hypothesis a rdf:Property ;
+    rdfs:domain :SimulationScenario ;
+    rdfs:range xsd:string .
+
+:predictedOutcome a rdf:Property ;
+    rdfs:domain :SimulationScenario ;
+    rdfs:range xsd:string .
+
+# ===================================
+# DATA PROPERTIES - INTEGER TYPE
+# ===================================
+
+:totalFloors a rdf:Property ;
+    rdfs:domain :Building ;
+    rdfs:range xsd:integer .
+
+:floorNumber a rdf:Property ;
+    rdfs:domain :Floor ;
+    rdfs:range xsd:integer .
+
+:occupancyCapacity a rdf:Property ;
+    rdfs:domain :Zone ;
+    rdfs:range xsd:integer .
+
+:occupantCount a rdf:Property ;
+    rdfs:domain :OccupantGroup ;
+    rdfs:range xsd:integer .
+
+# ===================================
+# DATA PROPERTIES - FLOAT TYPE
+# ===================================
+
+:energyRating a rdf:Property ;
+    rdfs:domain :Building ;
+    rdfs:range xsd:float .
+
+:usableAreaSqFt a rdf:Property ;
+    rdfs:domain :Floor ;
+    rdfs:range xsd:float .
+
+:areaSqFt a rdf:Property ;
+    rdfs:domain :Zone ;
+    rdfs:range xsd:float .
+
+:powerRating a rdf:Property ;
+    rdfs:domain :EquipmentResource ;
+    rdfs:range xsd:float .
+
+:currentReading a rdf:Property ;
+    rdfs:domain :Sensor ;
+    rdfs:range xsd:float .
+
+:comfortPreference a rdf:Property ;
+    rdfs:domain :Occupant ;
+    rdfs:range xsd:float .
+
+# ===================================
+# DATA PROPERTIES - DATETIME TYPE
+# ===================================
+
+:lastUpdateTime a rdf:Property ;
+    rdfs:domain :Sensor ;
+    rdfs:range xsd:dateTime .
+
+:plannedStartTime a rdf:Property ;
+    rdfs:domain :MaintenanceTask ;
+    rdfs:range xsd:dateTime .
+
+:plannedEndTime a rdf:Property ;
+    rdfs:domain :MaintenanceTask ;
+    rdfs:range xsd:dateTime .
+
+# ===================================
+# N3 REASONING RULES
+# ===================================
 
 # Building Structure and Hierarchy Validation
 

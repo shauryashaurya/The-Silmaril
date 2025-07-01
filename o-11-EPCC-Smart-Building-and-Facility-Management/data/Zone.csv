@@ -1,0 +1,997 @@
+zoneID,floorID,zoneName,zoneFunction,areaSqFt,occupancyCapacity
+Z001,F001,Workshop 01,Workshop,676.0,5
+Z002,F001,Kitchen 02,Kitchen,2160.0,14
+Z003,F001,Workshop 03,Workshop,326.0,5
+Z004,F001,Hallway 04,Hallway,1102.0,5
+Z005,F001,Laboratory 05,Laboratory,1734.0,11
+Z006,F001,Restroom 06,Restroom,457.0,5
+Z007,F001,Laboratory 07,Laboratory,1978.0,13
+Z008,F001,Lobby 08,Lobby,1011.0,6
+Z009,F001,Reception 09,Reception,1966.0,13
+Z010,F001,Storage 10,Storage,173.0,5
+Z011,F001,ServerRoom 11,ServerRoom,155.0,5
+Z012,F001,Break Room 12,Break Room,881.0,5
+Z013,F001,Break Room 13,Break Room,2281.0,15
+Z014,F001,Kitchen 14,Kitchen,1214.0,8
+Z015,F001,Workshop 15,Workshop,1255.0,8
+Z016,F001,Restroom 16,Restroom,1987.0,13
+Z017,F001,Reception 17,Reception,1391.0,9
+Z018,F001,Lobby 18,Lobby,1463.0,9
+Z019,F002,Workshop 01,Workshop,492.0,5
+Z020,F002,Hallway 02,Hallway,1819.0,9
+Z021,F002,Hallway 03,Hallway,2271.0,11
+Z022,F002,Reception 04,Reception,1288.0,8
+Z023,F002,ServerRoom 05,ServerRoom,316.0,5
+Z024,F002,Training Room 06,Training Room,1266.0,8
+Z025,F002,Storage 07,Storage,2176.0,10
+Z026,F002,Restroom 08,Restroom,1283.0,8
+Z027,F002,Reception 09,Reception,1334.0,8
+Z028,F002,Hallway 10,Hallway,725.0,5
+Z029,F002,Break Room 11,Break Room,540.0,5
+Z030,F002,Kitchen 12,Kitchen,151.0,5
+Z031,F002,Storage 13,Storage,253.0,5
+Z032,F002,Conference 14,Conference,1996.0,19
+Z033,F002,ServerRoom 15,ServerRoom,302.0,5
+Z034,F002,Data Center 16,Data Center,541.0,5
+Z035,F002,Training Room 17,Training Room,1149.0,7
+Z036,F002,Storage 18,Storage,1488.0,7
+Z037,F002,Conference 19,Conference,1302.0,13
+Z038,F003,Laboratory 01,Laboratory,1284.0,8
+Z039,F003,Break Room 02,Break Room,608.0,5
+Z040,F003,Storage 03,Storage,1499.0,7
+Z041,F003,Office 04,Office,538.0,5
+Z042,F003,Storage 05,Storage,1235.0,6
+Z043,F003,Reception 06,Reception,407.0,5
+Z044,F003,Lobby 07,Lobby,374.0,5
+Z045,F003,Conference 08,Conference,1591.0,15
+Z046,F003,Reception 09,Reception,539.0,5
+Z047,F003,Restroom 10,Restroom,1574.0,10
+Z048,F003,Lobby 11,Lobby,815.0,5
+Z049,F003,Workshop 12,Workshop,2293.0,15
+Z050,F003,Kitchen 13,Kitchen,708.0,5
+Z051,F003,Laboratory 14,Laboratory,543.0,5
+Z052,F003,Storage 15,Storage,2478.0,12
+Z053,F003,Workshop 16,Workshop,407.0,5
+Z054,F003,Break Room 17,Break Room,574.0,5
+Z055,F004,Restroom 01,Restroom,367.0,5
+Z056,F004,Reception 02,Reception,1875.0,12
+Z057,F004,Restroom 03,Restroom,2201.0,14
+Z058,F004,ServerRoom 04,ServerRoom,1765.0,11
+Z059,F004,Hallway 05,Hallway,1186.0,5
+Z060,F004,Conference 06,Conference,821.0,8
+Z061,F004,Lobby 07,Lobby,1164.0,7
+Z062,F004,Storage 08,Storage,1922.0,9
+Z063,F004,Kitchen 09,Kitchen,1576.0,10
+Z064,F004,Office 10,Office,2111.0,21
+Z065,F004,Hallway 11,Hallway,280.0,5
+Z066,F004,Kitchen 12,Kitchen,2458.0,16
+Z067,F004,Lobby 13,Lobby,1068.0,7
+Z068,F004,Lobby 14,Lobby,1719.0,11
+Z069,F005,Kitchen 01,Kitchen,1919.0,12
+Z070,F005,Break Room 02,Break Room,718.0,5
+Z071,F005,Conference 03,Conference,321.0,5
+Z072,F005,Storage 04,Storage,1009.0,5
+Z073,F005,Laboratory 05,Laboratory,1845.0,12
+Z074,F005,Data Center 06,Data Center,2283.0,15
+Z075,F005,Restroom 07,Restroom,2396.0,15
+Z076,F005,Workshop 08,Workshop,1914.0,12
+Z077,F005,Storage 09,Storage,624.0,5
+Z078,F006,Lobby 01,Lobby,1049.0,6
+Z079,F006,Lobby 02,Lobby,2183.0,14
+Z080,F006,Reception 03,Reception,534.0,5
+Z081,F006,Data Center 04,Data Center,286.0,5
+Z082,F006,Office 05,Office,1456.0,14
+Z083,F006,Office 06,Office,1308.0,13
+Z084,F006,Conference 07,Conference,1811.0,18
+Z085,F006,Hallway 08,Hallway,1000.0,5
+Z086,F006,Lobby 09,Lobby,238.0,5
+Z087,F006,Restroom 10,Restroom,625.0,5
+Z088,F006,Conference 11,Conference,1469.0,14
+Z089,F006,Lobby 12,Lobby,184.0,5
+Z090,F006,Kitchen 13,Kitchen,2339.0,15
+Z091,F006,Kitchen 14,Kitchen,1216.0,8
+Z092,F006,Kitchen 15,Kitchen,1337.0,8
+Z093,F006,Kitchen 16,Kitchen,279.0,5
+Z094,F007,Restroom 01,Restroom,817.0,5
+Z095,F007,Training Room 02,Training Room,869.0,5
+Z096,F007,Data Center 03,Data Center,931.0,6
+Z097,F007,Lobby 04,Lobby,1027.0,6
+Z098,F007,Hallway 05,Hallway,409.0,5
+Z099,F007,Hallway 06,Hallway,1950.0,9
+Z100,F007,Laboratory 07,Laboratory,1796.0,11
+Z101,F007,Office 08,Office,1522.0,15
+Z102,F007,Kitchen 09,Kitchen,1554.0,10
+Z103,F007,Kitchen 10,Kitchen,171.0,5
+Z104,F007,Office 11,Office,743.0,7
+Z105,F007,ServerRoom 12,ServerRoom,2124.0,14
+Z106,F007,Data Center 13,Data Center,1932.0,12
+Z107,F007,Lobby 14,Lobby,1444.0,9
+Z108,F007,Workshop 15,Workshop,269.0,5
+Z109,F007,Reception 16,Reception,656.0,5
+Z110,F007,Storage 17,Storage,1166.0,5
+Z111,F007,Lobby 18,Lobby,333.0,5
+Z112,F007,Break Room 19,Break Room,621.0,5
+Z113,F008,Training Room 01,Training Room,1016.0,6
+Z114,F008,Workshop 02,Workshop,2017.0,13
+Z115,F008,Restroom 03,Restroom,937.0,6
+Z116,F008,Hallway 04,Hallway,434.0,5
+Z117,F008,Training Room 05,Training Room,1878.0,12
+Z118,F008,Training Room 06,Training Room,971.0,6
+Z119,F008,Kitchen 07,Kitchen,662.0,5
+Z120,F008,Conference 08,Conference,809.0,8
+Z121,F008,Reception 09,Reception,843.0,5
+Z122,F008,Storage 10,Storage,1198.0,5
+Z123,F008,Training Room 11,Training Room,819.0,5
+Z124,F008,Reception 12,Reception,2285.0,15
+Z125,F008,Hallway 13,Hallway,1524.0,7
+Z126,F008,Storage 14,Storage,2182.0,10
+Z127,F009,Storage 01,Storage,2269.0,11
+Z128,F009,Kitchen 02,Kitchen,1957.0,13
+Z129,F009,Break Room 03,Break Room,1067.0,7
+Z130,F009,Data Center 04,Data Center,161.0,5
+Z131,F009,ServerRoom 05,ServerRoom,2063.0,13
+Z132,F009,Laboratory 06,Laboratory,2250.0,15
+Z133,F009,Reception 07,Reception,505.0,5
+Z134,F009,Laboratory 08,Laboratory,375.0,5
+Z135,F009,Kitchen 09,Kitchen,1480.0,9
+Z136,F009,Data Center 10,Data Center,532.0,5
+Z137,F009,Lobby 11,Lobby,1910.0,12
+Z138,F009,Laboratory 12,Laboratory,1742.0,11
+Z139,F009,Hallway 13,Hallway,407.0,5
+Z140,F009,Training Room 14,Training Room,493.0,5
+Z141,F010,Reception 01,Reception,1513.0,10
+Z142,F010,Laboratory 02,Laboratory,323.0,5
+Z143,F010,Storage 03,Storage,1679.0,8
+Z144,F010,Conference 04,Conference,2047.0,20
+Z145,F010,ServerRoom 05,ServerRoom,984.0,6
+Z146,F010,ServerRoom 06,ServerRoom,819.0,5
+Z147,F010,Data Center 07,Data Center,2160.0,14
+Z148,F010,Break Room 08,Break Room,1424.0,9
+Z149,F010,ServerRoom 09,ServerRoom,2484.0,16
+Z150,F010,Conference 10,Conference,1257.0,12
+Z151,F011,Hallway 01,Hallway,980.0,5
+Z152,F011,Storage 02,Storage,758.0,5
+Z153,F011,Restroom 03,Restroom,430.0,5
+Z154,F011,Reception 04,Reception,1430.0,9
+Z155,F011,Laboratory 05,Laboratory,2058.0,13
+Z156,F011,Kitchen 06,Kitchen,1612.0,10
+Z157,F011,Restroom 07,Restroom,2430.0,16
+Z158,F011,Restroom 08,Restroom,1609.0,10
+Z159,F012,Hallway 01,Hallway,432.0,5
+Z160,F012,Lobby 02,Lobby,760.0,5
+Z161,F012,Reception 03,Reception,2450.0,16
+Z162,F012,Kitchen 04,Kitchen,396.0,5
+Z163,F012,Conference 05,Conference,429.0,5
+Z164,F012,ServerRoom 06,ServerRoom,2069.0,13
+Z165,F012,Workshop 07,Workshop,2226.0,14
+Z166,F012,Conference 08,Conference,378.0,5
+Z167,F013,Conference 01,Conference,1118.0,11
+Z168,F013,Laboratory 02,Laboratory,2350.0,15
+Z169,F013,Conference 03,Conference,1456.0,14
+Z170,F013,Conference 04,Conference,977.0,9
+Z171,F013,Conference 05,Conference,828.0,8
+Z172,F013,Reception 06,Reception,1010.0,6
+Z173,F013,Workshop 07,Workshop,267.0,5
+Z174,F013,Kitchen 08,Kitchen,2331.0,15
+Z175,F013,Workshop 09,Workshop,2230.0,14
+Z176,F013,Workshop 10,Workshop,1805.0,12
+Z177,F013,Workshop 11,Workshop,2437.0,16
+Z178,F013,Conference 12,Conference,1474.0,14
+Z179,F013,ServerRoom 13,ServerRoom,503.0,5
+Z180,F013,Data Center 14,Data Center,2414.0,16
+Z181,F013,Office 15,Office,293.0,5
+Z182,F013,Workshop 16,Workshop,1452.0,9
+Z183,F014,Laboratory 01,Laboratory,2224.0,14
+Z184,F014,Office 02,Office,1172.0,11
+Z185,F014,Laboratory 03,Laboratory,2192.0,14
+Z186,F014,Laboratory 04,Laboratory,2225.0,14
+Z187,F014,Lobby 05,Lobby,890.0,5
+Z188,F014,Office 06,Office,1762.0,17
+Z189,F014,Lobby 07,Lobby,619.0,5
+Z190,F014,Workshop 08,Workshop,1766.0,11
+Z191,F014,Hallway 09,Hallway,1877.0,9
+Z192,F014,Restroom 10,Restroom,1386.0,9
+Z193,F015,Workshop 01,Workshop,2363.0,15
+Z194,F015,Hallway 02,Hallway,2070.0,10
+Z195,F015,Kitchen 03,Kitchen,567.0,5
+Z196,F015,Hallway 04,Hallway,854.0,5
+Z197,F015,Hallway 05,Hallway,1497.0,7
+Z198,F015,Workshop 06,Workshop,2412.0,16
+Z199,F015,Reception 07,Reception,2419.0,16
+Z200,F015,Office 08,Office,2379.0,23
+Z201,F015,Conference 09,Conference,322.0,5
+Z202,F015,Laboratory 10,Laboratory,1353.0,9
+Z203,F015,Office 11,Office,2072.0,20
+Z204,F015,Data Center 12,Data Center,238.0,5
+Z205,F015,Laboratory 13,Laboratory,532.0,5
+Z206,F015,Workshop 14,Workshop,2356.0,15
+Z207,F015,Break Room 15,Break Room,1364.0,9
+Z208,F015,Hallway 16,Hallway,1674.0,8
+Z209,F016,Laboratory 01,Laboratory,451.0,5
+Z210,F016,Workshop 02,Workshop,2120.0,14
+Z211,F016,Data Center 03,Data Center,209.0,5
+Z212,F016,Break Room 04,Break Room,2465.0,16
+Z213,F016,Break Room 05,Break Room,2126.0,14
+Z214,F016,Training Room 06,Training Room,628.0,5
+Z215,F016,Break Room 07,Break Room,2295.0,15
+Z216,F016,Hallway 08,Hallway,766.0,5
+Z217,F016,Training Room 09,Training Room,1640.0,10
+Z218,F016,Office 10,Office,587.0,5
+Z219,F016,ServerRoom 11,ServerRoom,2190.0,14
+Z220,F016,Hallway 12,Hallway,1435.0,7
+Z221,F016,Laboratory 13,Laboratory,854.0,5
+Z222,F016,Hallway 14,Hallway,1077.0,5
+Z223,F016,Restroom 15,Restroom,2239.0,14
+Z224,F016,Kitchen 16,Kitchen,649.0,5
+Z225,F017,Reception 01,Reception,2030.0,13
+Z226,F017,Lobby 02,Lobby,333.0,5
+Z227,F017,Kitchen 03,Kitchen,2474.0,16
+Z228,F017,Break Room 04,Break Room,428.0,5
+Z229,F017,Workshop 05,Workshop,2291.0,15
+Z230,F017,Lobby 06,Lobby,845.0,5
+Z231,F017,Lobby 07,Lobby,1088.0,7
+Z232,F017,Data Center 08,Data Center,1956.0,13
+Z233,F017,Training Room 09,Training Room,1084.0,7
+Z234,F017,Workshop 10,Workshop,1265.0,8
+Z235,F017,Laboratory 11,Laboratory,2278.0,15
+Z236,F017,Kitchen 12,Kitchen,948.0,6
+Z237,F018,Laboratory 01,Laboratory,1178.0,7
+Z238,F018,Reception 02,Reception,174.0,5
+Z239,F018,Kitchen 03,Kitchen,2423.0,16
+Z240,F018,Break Room 04,Break Room,1929.0,12
+Z241,F018,Lobby 05,Lobby,1160.0,7
+Z242,F018,Data Center 06,Data Center,2447.0,16
+Z243,F018,Data Center 07,Data Center,1532.0,10
+Z244,F018,Conference 08,Conference,846.0,8
+Z245,F019,Data Center 01,Data Center,739.0,5
+Z246,F019,Workshop 02,Workshop,1802.0,12
+Z247,F019,Lobby 03,Lobby,1455.0,9
+Z248,F019,Training Room 04,Training Room,665.0,5
+Z249,F019,Break Room 05,Break Room,1442.0,9
+Z250,F019,Kitchen 06,Kitchen,1422.0,9
+Z251,F019,Training Room 07,Training Room,2085.0,13
+Z252,F019,Data Center 08,Data Center,752.0,5
+Z253,F019,Storage 09,Storage,594.0,5
+Z254,F019,Reception 10,Reception,568.0,5
+Z255,F019,Data Center 11,Data Center,1246.0,8
+Z256,F019,Restroom 12,Restroom,779.0,5
+Z257,F019,Break Room 13,Break Room,1512.0,10
+Z258,F019,Data Center 14,Data Center,1453.0,9
+Z259,F019,Conference 15,Conference,1236.0,12
+Z260,F019,ServerRoom 16,ServerRoom,841.0,5
+Z261,F019,Data Center 17,Data Center,1623.0,10
+Z262,F020,Lobby 01,Lobby,2487.0,16
+Z263,F020,Workshop 02,Workshop,1415.0,9
+Z264,F020,Workshop 03,Workshop,1368.0,9
+Z265,F020,Data Center 04,Data Center,494.0,5
+Z266,F020,Hallway 05,Hallway,760.0,5
+Z267,F020,ServerRoom 06,ServerRoom,2011.0,13
+Z268,F020,ServerRoom 07,ServerRoom,927.0,6
+Z269,F020,Office 08,Office,2354.0,23
+Z270,F020,Kitchen 09,Kitchen,1596.0,10
+Z271,F020,Workshop 10,Workshop,1850.0,12
+Z272,F020,Storage 11,Storage,1029.0,5
+Z273,F020,Restroom 12,Restroom,255.0,5
+Z274,F020,Storage 13,Storage,702.0,5
+Z275,F020,Break Room 14,Break Room,2222.0,14
+Z276,F020,Restroom 15,Restroom,2103.0,14
+Z277,F020,Laboratory 16,Laboratory,1451.0,9
+Z278,F020,ServerRoom 17,ServerRoom,2379.0,15
+Z279,F020,Workshop 18,Workshop,1996.0,13
+Z280,F020,Reception 19,Reception,2066.0,13
+Z281,F020,Conference 20,Conference,829.0,8
+Z282,F021,Storage 01,Storage,1838.0,9
+Z283,F021,Office 02,Office,2001.0,20
+Z284,F021,Data Center 03,Data Center,1653.0,11
+Z285,F021,Conference 04,Conference,2400.0,24
+Z286,F021,Laboratory 05,Laboratory,318.0,5
+Z287,F021,ServerRoom 06,ServerRoom,1587.0,10
+Z288,F021,Office 07,Office,1629.0,16
+Z289,F021,ServerRoom 08,ServerRoom,2175.0,14
+Z290,F021,Conference 09,Conference,2477.0,24
+Z291,F021,Laboratory 10,Laboratory,1925.0,12
+Z292,F022,Laboratory 01,Laboratory,572.0,5
+Z293,F022,ServerRoom 02,ServerRoom,1969.0,13
+Z294,F022,Kitchen 03,Kitchen,870.0,5
+Z295,F022,Conference 04,Conference,784.0,7
+Z296,F022,Office 05,Office,1118.0,11
+Z297,F022,ServerRoom 06,ServerRoom,1236.0,8
+Z298,F022,ServerRoom 07,ServerRoom,975.0,6
+Z299,F022,Office 08,Office,2293.0,22
+Z300,F022,Conference 09,Conference,201.0,5
+Z301,F022,Storage 10,Storage,2096.0,10
+Z302,F022,ServerRoom 11,ServerRoom,2187.0,14
+Z303,F022,Lobby 12,Lobby,1126.0,7
+Z304,F022,Conference 13,Conference,1024.0,10
+Z305,F022,Hallway 14,Hallway,2417.0,12
+Z306,F022,Break Room 15,Break Room,1911.0,12
+Z307,F022,Reception 16,Reception,1649.0,10
+Z308,F022,Lobby 17,Lobby,467.0,5
+Z309,F022,Data Center 18,Data Center,1203.0,8
+Z310,F023,Restroom 01,Restroom,1621.0,10
+Z311,F023,Reception 02,Reception,200.0,5
+Z312,F023,Workshop 03,Workshop,1123.0,7
+Z313,F023,Data Center 04,Data Center,2292.0,15
+Z314,F023,Workshop 05,Workshop,1149.0,7
+Z315,F023,Laboratory 06,Laboratory,1694.0,11
+Z316,F023,Restroom 07,Restroom,210.0,5
+Z317,F023,Lobby 08,Lobby,1289.0,8
+Z318,F023,Break Room 09,Break Room,2079.0,13
+Z319,F023,Break Room 10,Break Room,1582.0,10
+Z320,F023,Kitchen 11,Kitchen,1695.0,11
+Z321,F023,Kitchen 12,Kitchen,1719.0,11
+Z322,F023,Kitchen 13,Kitchen,2332.0,15
+Z323,F023,Storage 14,Storage,1869.0,9
+Z324,F023,Storage 15,Storage,2491.0,12
+Z325,F024,Lobby 01,Lobby,1925.0,12
+Z326,F024,Kitchen 02,Kitchen,1796.0,11
+Z327,F024,Break Room 03,Break Room,790.0,5
+Z328,F024,Conference 04,Conference,305.0,5
+Z329,F024,ServerRoom 05,ServerRoom,994.0,6
+Z330,F024,Lobby 06,Lobby,180.0,5
+Z331,F024,Data Center 07,Data Center,238.0,5
+Z332,F024,Conference 08,Conference,284.0,5
+Z333,F024,Storage 09,Storage,818.0,5
+Z334,F024,Kitchen 10,Kitchen,327.0,5
+Z335,F024,Training Room 11,Training Room,2072.0,13
+Z336,F024,Break Room 12,Break Room,1124.0,7
+Z337,F025,Storage 01,Storage,1224.0,6
+Z338,F025,Training Room 02,Training Room,2296.0,15
+Z339,F025,Training Room 03,Training Room,1022.0,6
+Z340,F025,Data Center 04,Data Center,1296.0,8
+Z341,F025,Kitchen 05,Kitchen,2037.0,13
+Z342,F025,Data Center 06,Data Center,1474.0,9
+Z343,F025,Reception 07,Reception,763.0,5
+Z344,F025,ServerRoom 08,ServerRoom,856.0,5
+Z345,F025,Storage 09,Storage,2138.0,10
+Z346,F025,Conference 10,Conference,530.0,5
+Z347,F025,Restroom 11,Restroom,2350.0,15
+Z348,F025,ServerRoom 12,ServerRoom,1766.0,11
+Z349,F025,Conference 13,Conference,507.0,5
+Z350,F025,Reception 14,Reception,727.0,5
+Z351,F025,Workshop 15,Workshop,865.0,5
+Z352,F025,Lobby 16,Lobby,1814.0,12
+Z353,F025,Break Room 17,Break Room,2345.0,15
+Z354,F026,Training Room 01,Training Room,1619.0,10
+Z355,F026,Laboratory 02,Laboratory,2472.0,16
+Z356,F026,ServerRoom 03,ServerRoom,1122.0,7
+Z357,F026,Storage 04,Storage,1338.0,6
+Z358,F026,Office 05,Office,1106.0,11
+Z359,F026,ServerRoom 06,ServerRoom,308.0,5
+Z360,F026,Break Room 07,Break Room,1037.0,6
+Z361,F026,Data Center 08,Data Center,726.0,5
+Z362,F026,Restroom 09,Restroom,1490.0,9
+Z363,F026,ServerRoom 10,ServerRoom,624.0,5
+Z364,F026,Laboratory 11,Laboratory,2074.0,13
+Z365,F026,Laboratory 12,Laboratory,183.0,5
+Z366,F026,Kitchen 13,Kitchen,1759.0,11
+Z367,F026,Data Center 14,Data Center,2488.0,16
+Z368,F026,Training Room 15,Training Room,1608.0,10
+Z369,F027,Conference 01,Conference,432.0,5
+Z370,F027,Data Center 02,Data Center,2433.0,16
+Z371,F027,Kitchen 03,Kitchen,967.0,6
+Z372,F027,Kitchen 04,Kitchen,960.0,6
+Z373,F027,Restroom 05,Restroom,2282.0,15
+Z374,F027,Data Center 06,Data Center,449.0,5
+Z375,F027,Conference 07,Conference,1944.0,19
+Z376,F027,Reception 08,Reception,2271.0,15
+Z377,F027,Storage 09,Storage,695.0,5
+Z378,F027,Office 10,Office,1200.0,12
+Z379,F027,Workshop 11,Workshop,882.0,5
+Z380,F027,Training Room 12,Training Room,2236.0,14
+Z381,F027,Office 13,Office,1718.0,17
+Z382,F027,Restroom 14,Restroom,1175.0,7
+Z383,F028,Storage 01,Storage,597.0,5
+Z384,F028,Laboratory 02,Laboratory,1979.0,13
+Z385,F028,Hallway 03,Hallway,1904.0,9
+Z386,F028,Office 04,Office,479.0,5
+Z387,F028,Kitchen 05,Kitchen,1894.0,12
+Z388,F028,Laboratory 06,Laboratory,1483.0,9
+Z389,F028,Break Room 07,Break Room,2496.0,16
+Z390,F028,Kitchen 08,Kitchen,988.0,6
+Z391,F028,Storage 09,Storage,2288.0,11
+Z392,F028,Hallway 10,Hallway,2187.0,10
+Z393,F028,Workshop 11,Workshop,253.0,5
+Z394,F028,Storage 12,Storage,1491.0,7
+Z395,F028,Hallway 13,Hallway,901.0,5
+Z396,F028,Storage 14,Storage,159.0,5
+Z397,F029,Data Center 01,Data Center,853.0,5
+Z398,F029,Data Center 02,Data Center,2430.0,16
+Z399,F029,Laboratory 03,Laboratory,280.0,5
+Z400,F029,Data Center 04,Data Center,1118.0,7
+Z401,F029,Data Center 05,Data Center,1930.0,12
+Z402,F029,Conference 06,Conference,1211.0,12
+Z403,F029,Training Room 07,Training Room,2474.0,16
+Z404,F029,Restroom 08,Restroom,692.0,5
+Z405,F029,Lobby 09,Lobby,2387.0,15
+Z406,F029,Reception 10,Reception,2126.0,14
+Z407,F029,Conference 11,Conference,2101.0,21
+Z408,F029,Storage 12,Storage,694.0,5
+Z409,F029,Conference 13,Conference,1445.0,14
+Z410,F029,ServerRoom 14,ServerRoom,1413.0,9
+Z411,F029,Lobby 15,Lobby,1522.0,10
+Z412,F029,Storage 16,Storage,1888.0,9
+Z413,F029,Break Room 17,Break Room,1119.0,7
+Z414,F029,Office 18,Office,903.0,9
+Z415,F029,Reception 19,Reception,2285.0,15
+Z416,F029,Kitchen 20,Kitchen,1289.0,8
+Z417,F030,Break Room 01,Break Room,741.0,5
+Z418,F030,Laboratory 02,Laboratory,621.0,5
+Z419,F030,Storage 03,Storage,498.0,5
+Z420,F030,ServerRoom 04,ServerRoom,1295.0,8
+Z421,F030,Hallway 05,Hallway,928.0,5
+Z422,F030,Hallway 06,Hallway,757.0,5
+Z423,F030,Storage 07,Storage,2122.0,10
+Z424,F030,ServerRoom 08,ServerRoom,1445.0,9
+Z425,F030,Restroom 09,Restroom,705.0,5
+Z426,F030,ServerRoom 10,ServerRoom,1508.0,10
+Z427,F031,Office 01,Office,1700.0,17
+Z428,F031,Reception 02,Reception,2257.0,15
+Z429,F031,Office 03,Office,1028.0,10
+Z430,F031,Storage 04,Storage,1644.0,8
+Z431,F031,Storage 05,Storage,1644.0,8
+Z432,F031,Hallway 06,Hallway,1203.0,6
+Z433,F031,Laboratory 07,Laboratory,1159.0,7
+Z434,F031,Conference 08,Conference,565.0,5
+Z435,F031,Laboratory 09,Laboratory,2339.0,15
+Z436,F031,Training Room 10,Training Room,1261.0,8
+Z437,F031,Training Room 11,Training Room,2022.0,13
+Z438,F031,Reception 12,Reception,1614.0,10
+Z439,F031,Workshop 13,Workshop,685.0,5
+Z440,F032,Conference 01,Conference,1910.0,19
+Z441,F032,Hallway 02,Hallway,2087.0,10
+Z442,F032,ServerRoom 03,ServerRoom,952.0,6
+Z443,F032,Data Center 04,Data Center,285.0,5
+Z444,F032,Workshop 05,Workshop,413.0,5
+Z445,F032,Data Center 06,Data Center,913.0,6
+Z446,F032,Break Room 07,Break Room,2111.0,14
+Z447,F032,Storage 08,Storage,946.0,5
+Z448,F032,Office 09,Office,1180.0,11
+Z449,F032,Lobby 10,Lobby,1555.0,10
+Z450,F032,Office 11,Office,2071.0,20
+Z451,F032,Hallway 12,Hallway,2444.0,12
+Z452,F032,Restroom 13,Restroom,2413.0,16
+Z453,F032,ServerRoom 14,ServerRoom,410.0,5
+Z454,F032,Hallway 15,Hallway,2455.0,12
+Z455,F032,Training Room 16,Training Room,1192.0,7
+Z456,F032,Training Room 17,Training Room,1296.0,8
+Z457,F032,Training Room 18,Training Room,623.0,5
+Z458,F032,Workshop 19,Workshop,1266.0,8
+Z459,F033,Training Room 01,Training Room,1796.0,11
+Z460,F033,Storage 02,Storage,1328.0,6
+Z461,F033,Training Room 03,Training Room,443.0,5
+Z462,F033,Office 04,Office,1029.0,10
+Z463,F033,ServerRoom 05,ServerRoom,1610.0,10
+Z464,F033,Reception 06,Reception,1026.0,6
+Z465,F033,Office 07,Office,749.0,7
+Z466,F033,Data Center 08,Data Center,470.0,5
+Z467,F033,ServerRoom 09,ServerRoom,1646.0,10
+Z468,F033,Lobby 10,Lobby,273.0,5
+Z469,F033,Conference 11,Conference,730.0,7
+Z470,F033,Hallway 12,Hallway,681.0,5
+Z471,F033,ServerRoom 13,ServerRoom,1383.0,9
+Z472,F033,ServerRoom 14,ServerRoom,1113.0,7
+Z473,F033,Break Room 15,Break Room,1306.0,8
+Z474,F033,Reception 16,Reception,2366.0,15
+Z475,F033,Restroom 17,Restroom,1926.0,12
+Z476,F033,Workshop 18,Workshop,2023.0,13
+Z477,F033,Laboratory 19,Laboratory,241.0,5
+Z478,F034,Restroom 01,Restroom,882.0,5
+Z479,F034,Restroom 02,Restroom,641.0,5
+Z480,F034,Break Room 03,Break Room,1617.0,10
+Z481,F034,Restroom 04,Restroom,781.0,5
+Z482,F034,Laboratory 05,Laboratory,2328.0,15
+Z483,F034,Workshop 06,Workshop,668.0,5
+Z484,F034,ServerRoom 07,ServerRoom,1038.0,6
+Z485,F034,Hallway 08,Hallway,292.0,5
+Z486,F034,Lobby 09,Lobby,2023.0,13
+Z487,F034,Reception 10,Reception,1875.0,12
+Z488,F034,Hallway 11,Hallway,919.0,5
+Z489,F034,Kitchen 12,Kitchen,2171.0,14
+Z490,F034,Hallway 13,Hallway,1512.0,7
+Z491,F034,Kitchen 14,Kitchen,2133.0,14
+Z492,F035,Restroom 01,Restroom,1552.0,10
+Z493,F035,Conference 02,Conference,1920.0,19
+Z494,F035,Hallway 03,Hallway,1909.0,9
+Z495,F035,Office 04,Office,685.0,6
+Z496,F035,Kitchen 05,Kitchen,1588.0,10
+Z497,F035,Storage 06,Storage,1407.0,7
+Z498,F035,Hallway 07,Hallway,2177.0,10
+Z499,F035,Office 08,Office,1827.0,18
+Z500,F035,Restroom 09,Restroom,2073.0,13
+Z501,F035,Reception 10,Reception,1452.0,9
+Z502,F035,Conference 11,Conference,543.0,5
+Z503,F035,ServerRoom 12,ServerRoom,524.0,5
+Z504,F036,Kitchen 01,Kitchen,2415.0,16
+Z505,F036,Workshop 02,Workshop,496.0,5
+Z506,F036,Training Room 03,Training Room,1561.0,10
+Z507,F036,Training Room 04,Training Room,1768.0,11
+Z508,F036,Kitchen 05,Kitchen,1301.0,8
+Z509,F036,Conference 06,Conference,1064.0,10
+Z510,F036,Office 07,Office,485.0,5
+Z511,F036,ServerRoom 08,ServerRoom,1131.0,7
+Z512,F036,Workshop 09,Workshop,1268.0,8
+Z513,F036,Data Center 10,Data Center,2004.0,13
+Z514,F036,Data Center 11,Data Center,2285.0,15
+Z515,F036,Lobby 12,Lobby,602.0,5
+Z516,F036,Restroom 13,Restroom,1451.0,9
+Z517,F036,Data Center 14,Data Center,1959.0,13
+Z518,F036,Storage 15,Storage,699.0,5
+Z519,F036,Storage 16,Storage,2001.0,10
+Z520,F036,Office 17,Office,2393.0,23
+Z521,F037,Laboratory 01,Laboratory,1793.0,11
+Z522,F037,Laboratory 02,Laboratory,332.0,5
+Z523,F037,Workshop 03,Workshop,622.0,5
+Z524,F037,ServerRoom 04,ServerRoom,2316.0,15
+Z525,F037,Reception 05,Reception,320.0,5
+Z526,F037,Storage 06,Storage,1209.0,6
+Z527,F037,Reception 07,Reception,2360.0,15
+Z528,F037,Training Room 08,Training Room,1185.0,7
+Z529,F037,Storage 09,Storage,1477.0,7
+Z530,F037,Data Center 10,Data Center,1821.0,12
+Z531,F037,Lobby 11,Lobby,552.0,5
+Z532,F037,ServerRoom 12,ServerRoom,270.0,5
+Z533,F037,Workshop 13,Workshop,236.0,5
+Z534,F037,Restroom 14,Restroom,2157.0,14
+Z535,F037,Reception 15,Reception,1680.0,11
+Z536,F038,Storage 01,Storage,1795.0,8
+Z537,F038,Break Room 02,Break Room,608.0,5
+Z538,F038,Training Room 03,Training Room,2211.0,14
+Z539,F038,Restroom 04,Restroom,1656.0,11
+Z540,F038,Kitchen 05,Kitchen,700.0,5
+Z541,F038,Office 06,Office,2047.0,20
+Z542,F038,Hallway 07,Hallway,2301.0,11
+Z543,F038,ServerRoom 08,ServerRoom,1407.0,9
+Z544,F038,Restroom 09,Restroom,1979.0,13
+Z545,F038,Laboratory 10,Laboratory,390.0,5
+Z546,F038,Conference 11,Conference,2371.0,23
+Z547,F038,Restroom 12,Restroom,2103.0,14
+Z548,F038,ServerRoom 13,ServerRoom,2193.0,14
+Z549,F038,Data Center 14,Data Center,1089.0,7
+Z550,F038,Break Room 15,Break Room,1733.0,11
+Z551,F038,Hallway 16,Hallway,2481.0,12
+Z552,F039,Hallway 01,Hallway,2368.0,11
+Z553,F039,Break Room 02,Break Room,1612.0,10
+Z554,F039,Restroom 03,Restroom,2228.0,14
+Z555,F039,Break Room 04,Break Room,1547.0,10
+Z556,F039,Lobby 05,Lobby,1660.0,11
+Z557,F039,Workshop 06,Workshop,594.0,5
+Z558,F039,Laboratory 07,Laboratory,1859.0,12
+Z559,F039,Break Room 08,Break Room,318.0,5
+Z560,F039,Restroom 09,Restroom,621.0,5
+Z561,F039,ServerRoom 10,ServerRoom,1899.0,12
+Z562,F039,Restroom 11,Restroom,2393.0,15
+Z563,F039,Laboratory 12,Laboratory,1564.0,10
+Z564,F039,Reception 13,Reception,2198.0,14
+Z565,F039,Hallway 14,Hallway,1350.0,6
+Z566,F039,ServerRoom 15,ServerRoom,2411.0,16
+Z567,F039,Restroom 16,Restroom,499.0,5
+Z568,F039,Laboratory 17,Laboratory,590.0,5
+Z569,F039,Reception 18,Reception,688.0,5
+Z570,F040,Reception 01,Reception,2324.0,15
+Z571,F040,Break Room 02,Break Room,731.0,5
+Z572,F040,Break Room 03,Break Room,836.0,5
+Z573,F040,Workshop 04,Workshop,2410.0,16
+Z574,F040,Break Room 05,Break Room,2424.0,16
+Z575,F040,Hallway 06,Hallway,2397.0,11
+Z576,F040,Reception 07,Reception,823.0,5
+Z577,F040,Data Center 08,Data Center,1427.0,9
+Z578,F040,Training Room 09,Training Room,443.0,5
+Z579,F040,Conference 10,Conference,1058.0,10
+Z580,F040,ServerRoom 11,ServerRoom,1691.0,11
+Z581,F040,Hallway 12,Hallway,1090.0,5
+Z582,F040,ServerRoom 13,ServerRoom,2377.0,15
+Z583,F040,Workshop 14,Workshop,860.0,5
+Z584,F040,Restroom 15,Restroom,1035.0,6
+Z585,F040,Kitchen 16,Kitchen,1131.0,7
+Z586,F040,Reception 17,Reception,548.0,5
+Z587,F041,Storage 01,Storage,1534.0,7
+Z588,F041,Laboratory 02,Laboratory,264.0,5
+Z589,F041,Restroom 03,Restroom,2217.0,14
+Z590,F041,Kitchen 04,Kitchen,203.0,5
+Z591,F041,Workshop 05,Workshop,1700.0,11
+Z592,F041,Laboratory 06,Laboratory,294.0,5
+Z593,F041,Restroom 07,Restroom,1208.0,8
+Z594,F041,Reception 08,Reception,1981.0,13
+Z595,F041,Storage 09,Storage,905.0,5
+Z596,F041,Break Room 10,Break Room,2104.0,14
+Z597,F041,Lobby 11,Lobby,1311.0,8
+Z598,F041,Conference 12,Conference,1028.0,10
+Z599,F041,Storage 13,Storage,2062.0,10
+Z600,F042,Reception 01,Reception,2358.0,15
+Z601,F042,Laboratory 02,Laboratory,2200.0,14
+Z602,F042,Kitchen 03,Kitchen,405.0,5
+Z603,F042,Workshop 04,Workshop,1182.0,7
+Z604,F042,Restroom 05,Restroom,1333.0,8
+Z605,F042,ServerRoom 06,ServerRoom,1050.0,7
+Z606,F042,Hallway 07,Hallway,2190.0,10
+Z607,F042,Hallway 08,Hallway,1819.0,9
+Z608,F042,Training Room 09,Training Room,974.0,6
+Z609,F042,Reception 10,Reception,671.0,5
+Z610,F043,Lobby 01,Lobby,1874.0,12
+Z611,F043,Restroom 02,Restroom,2334.0,15
+Z612,F043,Reception 03,Reception,1889.0,12
+Z613,F043,ServerRoom 04,ServerRoom,1082.0,7
+Z614,F043,Office 05,Office,669.0,6
+Z615,F043,Break Room 06,Break Room,1536.0,10
+Z616,F043,Storage 07,Storage,1717.0,8
+Z617,F043,Conference 08,Conference,1416.0,14
+Z618,F043,ServerRoom 09,ServerRoom,259.0,5
+Z619,F043,Kitchen 10,Kitchen,1333.0,8
+Z620,F043,Training Room 11,Training Room,1773.0,11
+Z621,F043,Restroom 12,Restroom,1491.0,9
+Z622,F044,Kitchen 01,Kitchen,1668.0,11
+Z623,F044,ServerRoom 02,ServerRoom,1556.0,10
+Z624,F044,Reception 03,Reception,536.0,5
+Z625,F044,Laboratory 04,Laboratory,1324.0,8
+Z626,F044,Hallway 05,Hallway,1027.0,5
+Z627,F044,Reception 06,Reception,1599.0,10
+Z628,F044,Storage 07,Storage,614.0,5
+Z629,F044,Conference 08,Conference,2151.0,21
+Z630,F045,Restroom 01,Restroom,1899.0,12
+Z631,F045,Laboratory 02,Laboratory,790.0,5
+Z632,F045,Break Room 03,Break Room,830.0,5
+Z633,F045,Kitchen 04,Kitchen,1900.0,12
+Z634,F045,Conference 05,Conference,1029.0,10
+Z635,F045,Training Room 06,Training Room,225.0,5
+Z636,F045,Office 07,Office,2250.0,22
+Z637,F045,Hallway 08,Hallway,1909.0,9
+Z638,F046,Office 01,Office,2209.0,22
+Z639,F046,Conference 02,Conference,1812.0,18
+Z640,F046,Kitchen 03,Kitchen,1206.0,8
+Z641,F046,Reception 04,Reception,925.0,6
+Z642,F046,Reception 05,Reception,2444.0,16
+Z643,F046,Kitchen 06,Kitchen,1846.0,12
+Z644,F046,Lobby 07,Lobby,364.0,5
+Z645,F046,ServerRoom 08,ServerRoom,1211.0,8
+Z646,F046,Workshop 09,Workshop,1791.0,11
+Z647,F046,Kitchen 10,Kitchen,388.0,5
+Z648,F046,Training Room 11,Training Room,786.0,5
+Z649,F046,Office 12,Office,1207.0,12
+Z650,F046,Storage 13,Storage,708.0,5
+Z651,F046,Conference 14,Conference,192.0,5
+Z652,F047,Conference 01,Conference,1764.0,17
+Z653,F047,Workshop 02,Workshop,1395.0,9
+Z654,F047,Reception 03,Reception,2380.0,15
+Z655,F047,Workshop 04,Workshop,573.0,5
+Z656,F047,Data Center 05,Data Center,341.0,5
+Z657,F047,Laboratory 06,Laboratory,627.0,5
+Z658,F047,Hallway 07,Hallway,1377.0,6
+Z659,F047,Storage 08,Storage,2450.0,12
+Z660,F047,Reception 09,Reception,446.0,5
+Z661,F047,Restroom 10,Restroom,2282.0,15
+Z662,F047,Workshop 11,Workshop,219.0,5
+Z663,F047,Storage 12,Storage,1975.0,9
+Z664,F047,Data Center 13,Data Center,2220.0,14
+Z665,F047,Laboratory 14,Laboratory,2249.0,14
+Z666,F048,Break Room 01,Break Room,409.0,5
+Z667,F048,Workshop 02,Workshop,2139.0,14
+Z668,F048,Workshop 03,Workshop,1551.0,10
+Z669,F048,Restroom 04,Restroom,1525.0,10
+Z670,F048,Reception 05,Reception,208.0,5
+Z671,F048,Reception 06,Reception,1396.0,9
+Z672,F048,Reception 07,Reception,919.0,6
+Z673,F048,Kitchen 08,Kitchen,1704.0,11
+Z674,F048,ServerRoom 09,ServerRoom,1550.0,10
+Z675,F048,Data Center 10,Data Center,895.0,5
+Z676,F048,Reception 11,Reception,444.0,5
+Z677,F048,Lobby 12,Lobby,1339.0,8
+Z678,F048,Restroom 13,Restroom,1201.0,8
+Z679,F048,Hallway 14,Hallway,2089.0,10
+Z680,F048,ServerRoom 15,ServerRoom,746.0,5
+Z681,F048,Hallway 16,Hallway,1799.0,8
+Z682,F049,Office 01,Office,717.0,7
+Z683,F049,Training Room 02,Training Room,1571.0,10
+Z684,F049,Kitchen 03,Kitchen,1792.0,11
+Z685,F049,Lobby 04,Lobby,1083.0,7
+Z686,F049,Workshop 05,Workshop,1771.0,11
+Z687,F049,Break Room 06,Break Room,1620.0,10
+Z688,F049,Laboratory 07,Laboratory,2436.0,16
+Z689,F049,Training Room 08,Training Room,880.0,5
+Z690,F049,Conference 09,Conference,1794.0,17
+Z691,F049,Lobby 10,Lobby,1245.0,8
+Z692,F049,Lobby 11,Lobby,1568.0,10
+Z693,F049,Training Room 12,Training Room,259.0,5
+Z694,F050,Reception 01,Reception,1612.0,10
+Z695,F050,ServerRoom 02,ServerRoom,969.0,6
+Z696,F050,Training Room 03,Training Room,1117.0,7
+Z697,F050,Hallway 04,Hallway,2279.0,11
+Z698,F050,Training Room 05,Training Room,1134.0,7
+Z699,F050,Workshop 06,Workshop,2230.0,14
+Z700,F050,Storage 07,Storage,672.0,5
+Z701,F050,Training Room 08,Training Room,1218.0,8
+Z702,F051,Data Center 01,Data Center,2262.0,15
+Z703,F051,Hallway 02,Hallway,1343.0,6
+Z704,F051,Kitchen 03,Kitchen,1357.0,9
+Z705,F051,Laboratory 04,Laboratory,555.0,5
+Z706,F051,Reception 05,Reception,2336.0,15
+Z707,F051,Kitchen 06,Kitchen,1086.0,7
+Z708,F051,Reception 07,Reception,2239.0,14
+Z709,F051,Workshop 08,Workshop,1123.0,7
+Z710,F051,Lobby 09,Lobby,2377.0,15
+Z711,F052,Hallway 01,Hallway,417.0,5
+Z712,F052,ServerRoom 02,ServerRoom,2174.0,14
+Z713,F052,Conference 03,Conference,1361.0,13
+Z714,F052,Workshop 04,Workshop,406.0,5
+Z715,F052,Kitchen 05,Kitchen,1875.0,12
+Z716,F052,Break Room 06,Break Room,629.0,5
+Z717,F052,Hallway 07,Hallway,1501.0,7
+Z718,F052,Break Room 08,Break Room,1238.0,8
+Z719,F053,Restroom 01,Restroom,666.0,5
+Z720,F053,Workshop 02,Workshop,558.0,5
+Z721,F053,Kitchen 03,Kitchen,2083.0,13
+Z722,F053,Hallway 04,Hallway,528.0,5
+Z723,F053,Laboratory 05,Laboratory,614.0,5
+Z724,F053,Laboratory 06,Laboratory,1837.0,12
+Z725,F053,Office 07,Office,2100.0,21
+Z726,F053,Training Room 08,Training Room,1209.0,8
+Z727,F053,Training Room 09,Training Room,567.0,5
+Z728,F053,Kitchen 10,Kitchen,1152.0,7
+Z729,F053,Hallway 11,Hallway,2421.0,12
+Z730,F054,Kitchen 01,Kitchen,971.0,6
+Z731,F054,Storage 02,Storage,364.0,5
+Z732,F054,Conference 03,Conference,1858.0,18
+Z733,F054,Training Room 04,Training Room,1975.0,13
+Z734,F054,Office 05,Office,982.0,9
+Z735,F054,Conference 06,Conference,2307.0,23
+Z736,F054,Laboratory 07,Laboratory,1788.0,11
+Z737,F054,Reception 08,Reception,1086.0,7
+Z738,F054,Hallway 09,Hallway,1879.0,9
+Z739,F054,Break Room 10,Break Room,1580.0,10
+Z740,F054,Kitchen 11,Kitchen,1458.0,9
+Z741,F054,Training Room 12,Training Room,2078.0,13
+Z742,F054,Conference 13,Conference,603.0,6
+Z743,F054,Reception 14,Reception,330.0,5
+Z744,F054,Laboratory 15,Laboratory,288.0,5
+Z745,F054,Reception 16,Reception,367.0,5
+Z746,F054,Workshop 17,Workshop,2263.0,15
+Z747,F054,Office 18,Office,197.0,5
+Z748,F054,Reception 19,Reception,1806.0,12
+Z749,F054,Kitchen 20,Kitchen,2193.0,14
+Z750,F055,Hallway 01,Hallway,1297.0,6
+Z751,F055,Break Room 02,Break Room,1431.0,9
+Z752,F055,Data Center 03,Data Center,1603.0,10
+Z753,F055,Kitchen 04,Kitchen,1672.0,11
+Z754,F055,Kitchen 05,Kitchen,314.0,5
+Z755,F055,Storage 06,Storage,881.0,5
+Z756,F055,Laboratory 07,Laboratory,828.0,5
+Z757,F055,Workshop 08,Workshop,2404.0,16
+Z758,F055,ServerRoom 09,ServerRoom,682.0,5
+Z759,F055,Hallway 10,Hallway,2400.0,12
+Z760,F055,Hallway 11,Hallway,2383.0,11
+Z761,F055,Data Center 12,Data Center,2478.0,16
+Z762,F055,Storage 13,Storage,1729.0,8
+Z763,F055,Kitchen 14,Kitchen,1499.0,9
+Z764,F055,Conference 15,Conference,1775.0,17
+Z765,F055,ServerRoom 16,ServerRoom,1361.0,9
+Z766,F055,Data Center 17,Data Center,1778.0,11
+Z767,F056,Laboratory 01,Laboratory,2104.0,14
+Z768,F056,Reception 02,Reception,2262.0,15
+Z769,F056,Break Room 03,Break Room,2218.0,14
+Z770,F056,Office 04,Office,285.0,5
+Z771,F056,Office 05,Office,1675.0,16
+Z772,F056,Break Room 06,Break Room,1465.0,9
+Z773,F056,Lobby 07,Lobby,356.0,5
+Z774,F056,Data Center 08,Data Center,539.0,5
+Z775,F056,Kitchen 09,Kitchen,2399.0,15
+Z776,F056,Hallway 10,Hallway,1745.0,8
+Z777,F056,Restroom 11,Restroom,183.0,5
+Z778,F056,Laboratory 12,Laboratory,1909.0,12
+Z779,F056,Kitchen 13,Kitchen,2282.0,15
+Z780,F056,Reception 14,Reception,1333.0,8
+Z781,F056,Conference 15,Conference,1676.0,16
+Z782,F056,ServerRoom 16,ServerRoom,1842.0,12
+Z783,F056,Restroom 17,Restroom,2391.0,15
+Z784,F056,Storage 18,Storage,1267.0,6
+Z785,F056,Restroom 19,Restroom,1192.0,7
+Z786,F056,Reception 20,Reception,1283.0,8
+Z787,F057,Hallway 01,Hallway,1214.0,6
+Z788,F057,Laboratory 02,Laboratory,158.0,5
+Z789,F057,Hallway 03,Hallway,379.0,5
+Z790,F057,Conference 04,Conference,1009.0,10
+Z791,F057,Workshop 05,Workshop,956.0,6
+Z792,F057,Training Room 06,Training Room,1900.0,12
+Z793,F057,Break Room 07,Break Room,433.0,5
+Z794,F057,Office 08,Office,875.0,8
+Z795,F057,Kitchen 09,Kitchen,1646.0,10
+Z796,F057,Office 10,Office,561.0,5
+Z797,F057,Lobby 11,Lobby,1600.0,10
+Z798,F057,Lobby 12,Lobby,2150.0,14
+Z799,F057,Hallway 13,Hallway,2431.0,12
+Z800,F057,Kitchen 14,Kitchen,1479.0,9
+Z801,F057,Hallway 15,Hallway,1726.0,8
+Z802,F058,ServerRoom 01,ServerRoom,1954.0,13
+Z803,F058,Kitchen 02,Kitchen,1507.0,10
+Z804,F058,Data Center 03,Data Center,1394.0,9
+Z805,F058,Laboratory 04,Laboratory,842.0,5
+Z806,F058,Break Room 05,Break Room,1437.0,9
+Z807,F058,Conference 06,Conference,538.0,5
+Z808,F058,Training Room 07,Training Room,1725.0,11
+Z809,F058,Laboratory 08,Laboratory,1961.0,13
+Z810,F058,Conference 09,Conference,1127.0,11
+Z811,F058,Laboratory 10,Laboratory,906.0,6
+Z812,F058,ServerRoom 11,ServerRoom,1820.0,12
+Z813,F058,Conference 12,Conference,1222.0,12
+Z814,F058,Restroom 13,Restroom,420.0,5
+Z815,F059,Reception 01,Reception,1840.0,12
+Z816,F059,Restroom 02,Restroom,634.0,5
+Z817,F059,Lobby 03,Lobby,2280.0,15
+Z818,F059,Lobby 04,Lobby,371.0,5
+Z819,F059,Kitchen 05,Kitchen,812.0,5
+Z820,F059,Laboratory 06,Laboratory,1065.0,7
+Z821,F059,Laboratory 07,Laboratory,2497.0,16
+Z822,F059,Workshop 08,Workshop,1528.0,10
+Z823,F059,Hallway 09,Hallway,820.0,5
+Z824,F059,Kitchen 10,Kitchen,2088.0,13
+Z825,F059,Storage 11,Storage,313.0,5
+Z826,F059,Laboratory 12,Laboratory,2147.0,14
+Z827,F059,ServerRoom 13,ServerRoom,1758.0,11
+Z828,F059,Break Room 14,Break Room,1048.0,6
+Z829,F059,Workshop 15,Workshop,2008.0,13
+Z830,F060,Conference 01,Conference,1510.0,15
+Z831,F060,Break Room 02,Break Room,2239.0,14
+Z832,F060,Restroom 03,Restroom,2335.0,15
+Z833,F060,Data Center 04,Data Center,550.0,5
+Z834,F060,Reception 05,Reception,1661.0,11
+Z835,F060,Storage 06,Storage,2085.0,10
+Z836,F060,Workshop 07,Workshop,1497.0,9
+Z837,F060,Lobby 08,Lobby,1593.0,10
+Z838,F060,Reception 09,Reception,1166.0,7
+Z839,F060,Restroom 10,Restroom,731.0,5
+Z840,F060,Training Room 11,Training Room,1357.0,9
+Z841,F060,ServerRoom 12,ServerRoom,257.0,5
+Z842,F061,Storage 01,Storage,248.0,5
+Z843,F061,Hallway 02,Hallway,365.0,5
+Z844,F061,Kitchen 03,Kitchen,1173.0,7
+Z845,F061,Office 04,Office,1342.0,13
+Z846,F061,Office 05,Office,1906.0,19
+Z847,F061,ServerRoom 06,ServerRoom,284.0,5
+Z848,F061,Data Center 07,Data Center,587.0,5
+Z849,F061,Hallway 08,Hallway,1108.0,5
+Z850,F061,Break Room 09,Break Room,240.0,5
+Z851,F061,ServerRoom 10,ServerRoom,1138.0,7
+Z852,F061,Break Room 11,Break Room,1984.0,13
+Z853,F061,Lobby 12,Lobby,2032.0,13
+Z854,F061,Break Room 13,Break Room,888.0,5
+Z855,F061,Conference 14,Conference,2293.0,22
+Z856,F062,Break Room 01,Break Room,437.0,5
+Z857,F062,Conference 02,Conference,2365.0,23
+Z858,F062,Data Center 03,Data Center,1331.0,8
+Z859,F062,Restroom 04,Restroom,2200.0,14
+Z860,F062,Reception 05,Reception,1245.0,8
+Z861,F062,Lobby 06,Lobby,1504.0,10
+Z862,F062,Workshop 07,Workshop,1088.0,7
+Z863,F062,Workshop 08,Workshop,1419.0,9
+Z864,F062,Break Room 09,Break Room,1245.0,8
+Z865,F062,Laboratory 10,Laboratory,1895.0,12
+Z866,F062,Data Center 11,Data Center,1910.0,12
+Z867,F062,Kitchen 12,Kitchen,931.0,6
+Z868,F062,Reception 13,Reception,1576.0,10
+Z869,F062,Restroom 14,Restroom,2395.0,15
+Z870,F062,Reception 15,Reception,769.0,5
+Z871,F062,ServerRoom 16,ServerRoom,1989.0,13
+Z872,F062,Office 17,Office,2262.0,22
+Z873,F062,Reception 18,Reception,1730.0,11
+Z874,F062,Data Center 19,Data Center,1022.0,6
+Z875,F063,Data Center 01,Data Center,1356.0,9
+Z876,F063,Break Room 02,Break Room,1141.0,7
+Z877,F063,Laboratory 03,Laboratory,1355.0,9
+Z878,F063,Storage 04,Storage,1942.0,9
+Z879,F063,Office 05,Office,588.0,5
+Z880,F063,Hallway 06,Hallway,2247.0,11
+Z881,F063,Laboratory 07,Laboratory,1989.0,13
+Z882,F063,Lobby 08,Lobby,1785.0,11
+Z883,F063,Data Center 09,Data Center,1291.0,8
+Z884,F063,Kitchen 10,Kitchen,1055.0,7
+Z885,F063,Reception 11,Reception,2143.0,14
+Z886,F063,Data Center 12,Data Center,1105.0,7
+Z887,F063,Hallway 13,Hallway,1334.0,6
+Z888,F063,Office 14,Office,887.0,8
+Z889,F063,Restroom 15,Restroom,2445.0,16
+Z890,F064,Restroom 01,Restroom,250.0,5
+Z891,F064,Reception 02,Reception,334.0,5
+Z892,F064,Laboratory 03,Laboratory,1400.0,9
+Z893,F064,Training Room 04,Training Room,1725.0,11
+Z894,F064,Training Room 05,Training Room,1769.0,11
+Z895,F064,Lobby 06,Lobby,921.0,6
+Z896,F064,Restroom 07,Restroom,1846.0,12
+Z897,F064,Workshop 08,Workshop,398.0,5
+Z898,F064,Office 09,Office,2012.0,20
+Z899,F064,Data Center 10,Data Center,501.0,5
+Z900,F064,Workshop 11,Workshop,515.0,5
+Z901,F064,Reception 12,Reception,1827.0,12
+Z902,F064,Break Room 13,Break Room,2135.0,14
+Z903,F064,Training Room 14,Training Room,1968.0,13
+Z904,F064,Hallway 15,Hallway,602.0,5
+Z905,F064,Training Room 16,Training Room,1749.0,11
+Z906,F064,Lobby 17,Lobby,1965.0,13
+Z907,F064,Office 18,Office,542.0,5
+Z908,F065,Restroom 01,Restroom,483.0,5
+Z909,F065,Office 02,Office,929.0,9
+Z910,F065,Workshop 03,Workshop,1956.0,13
+Z911,F065,Office 04,Office,2194.0,21
+Z912,F065,Data Center 05,Data Center,761.0,5
+Z913,F065,Break Room 06,Break Room,905.0,6
+Z914,F065,Office 07,Office,1778.0,17
+Z915,F065,Lobby 08,Lobby,1511.0,10
+Z916,F065,Training Room 09,Training Room,1090.0,7
+Z917,F065,Kitchen 10,Kitchen,2488.0,16
+Z918,F065,ServerRoom 11,ServerRoom,1781.0,11
+Z919,F065,Office 12,Office,2277.0,22
+Z920,F065,Office 13,Office,1035.0,10
+Z921,F066,Storage 01,Storage,160.0,5
+Z922,F066,Break Room 02,Break Room,1764.0,11
+Z923,F066,Hallway 03,Hallway,1200.0,6
+Z924,F066,Office 04,Office,388.0,5
+Z925,F066,Lobby 05,Lobby,1392.0,9
+Z926,F066,Break Room 06,Break Room,1008.0,6
+Z927,F066,Laboratory 07,Laboratory,214.0,5
+Z928,F066,Training Room 08,Training Room,292.0,5
+Z929,F066,Workshop 09,Workshop,493.0,5
+Z930,F066,Training Room 10,Training Room,824.0,5
+Z931,F066,Break Room 11,Break Room,1848.0,12
+Z932,F066,Laboratory 12,Laboratory,644.0,5
+Z933,F066,Reception 13,Reception,621.0,5
+Z934,F066,Storage 14,Storage,1979.0,9
+Z935,F066,Restroom 15,Restroom,1109.0,7
+Z936,F066,Reception 16,Reception,549.0,5
+Z937,F066,Restroom 17,Restroom,543.0,5
+Z938,F067,Workshop 01,Workshop,2349.0,15
+Z939,F067,Hallway 02,Hallway,1392.0,6
+Z940,F067,Data Center 03,Data Center,572.0,5
+Z941,F067,Break Room 04,Break Room,1963.0,13
+Z942,F067,Reception 05,Reception,315.0,5
+Z943,F067,Office 06,Office,1971.0,19
+Z944,F067,Training Room 07,Training Room,2239.0,14
+Z945,F067,Office 08,Office,2385.0,23
+Z946,F067,Workshop 09,Workshop,2075.0,13
+Z947,F068,Kitchen 01,Kitchen,278.0,5
+Z948,F068,Storage 02,Storage,2458.0,12
+Z949,F068,Break Room 03,Break Room,2461.0,16
+Z950,F068,Reception 04,Reception,2439.0,16
+Z951,F068,Workshop 05,Workshop,1325.0,8
+Z952,F068,Restroom 06,Restroom,1319.0,8
+Z953,F068,Lobby 07,Lobby,804.0,5
+Z954,F068,Laboratory 08,Laboratory,685.0,5
+Z955,F068,Training Room 09,Training Room,2371.0,15
+Z956,F068,Hallway 10,Hallway,380.0,5
+Z957,F068,Training Room 11,Training Room,1707.0,11
+Z958,F068,Kitchen 12,Kitchen,204.0,5
+Z959,F068,Conference 13,Conference,2337.0,23
+Z960,F068,Reception 14,Reception,712.0,5
+Z961,F068,Data Center 15,Data Center,2376.0,15
+Z962,F068,ServerRoom 16,ServerRoom,515.0,5
+Z963,F068,Laboratory 17,Laboratory,744.0,5
+Z964,F068,Hallway 18,Hallway,1898.0,9
+Z965,F068,Lobby 19,Lobby,1528.0,10
+Z966,F068,Kitchen 20,Kitchen,674.0,5
+Z967,F069,Kitchen 01,Kitchen,1810.0,12
+Z968,F069,Conference 02,Conference,638.0,6
+Z969,F069,Reception 03,Reception,933.0,6
+Z970,F069,Restroom 04,Restroom,744.0,5
+Z971,F069,Hallway 05,Hallway,1587.0,7
+Z972,F069,Lobby 06,Lobby,502.0,5
+Z973,F069,Lobby 07,Lobby,965.0,6
+Z974,F069,Hallway 08,Hallway,740.0,5
+Z975,F069,Lobby 09,Lobby,1545.0,10
+Z976,F069,Conference 10,Conference,2424.0,24
+Z977,F069,Storage 11,Storage,826.0,5
+Z978,F069,Lobby 12,Lobby,1462.0,9
+Z979,F069,Kitchen 13,Kitchen,691.0,5
+Z980,F069,ServerRoom 14,ServerRoom,1150.0,7
+Z981,F070,Restroom 01,Restroom,1798.0,11
+Z982,F070,Workshop 02,Workshop,697.0,5
+Z983,F070,Conference 03,Conference,1063.0,10
+Z984,F070,Kitchen 04,Kitchen,1380.0,9
+Z985,F070,Lobby 05,Lobby,1638.0,10
+Z986,F070,Office 06,Office,1165.0,11
+Z987,F070,Workshop 07,Workshop,2005.0,13
+Z988,F070,Storage 08,Storage,328.0,5
+Z989,F070,Office 09,Office,995.0,9
+Z990,F070,Reception 10,Reception,2037.0,13
+Z991,F070,Lobby 11,Lobby,1743.0,11
+Z992,F070,Kitchen 12,Kitchen,1319.0,8
+Z993,F070,Lobby 13,Lobby,1124.0,7
+Z994,F070,ServerRoom 14,ServerRoom,1525.0,10
+Z995,F070,Break Room 15,Break Room,1121.0,7
+Z996,F070,Storage 16,Storage,1965.0,9

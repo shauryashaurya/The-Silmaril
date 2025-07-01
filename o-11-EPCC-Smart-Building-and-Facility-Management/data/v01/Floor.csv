@@ -1,0 +1,6 @@
+floorID,buildingID,floorNumber,usableAreaSqFt,occupancyCapacity
+F001,B001,1,10000,150
+F002,B001,2,9500,140
+F003,B001,3,9500,140
+F004,B002,1,15000,200
+F005,B002,2,12000,180
