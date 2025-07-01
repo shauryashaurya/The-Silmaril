@@ -1,0 +1,157 @@
+# Syntactic Sugar & Readability:
+# 	Comma syntax: Multiple objects/subjects in single statement
+# 	Semicolon chaining: Multiple predicates for same subject
+# 	List notation: (?a ?b ?c) for ordered collections
+# 	Blank nodes: [ predicate object ] for anonymous resources
+# 
+# Built-in Functions:
+# 	Math operations: math:sum, math:product, math:quotient for calculations
+# 	Time reasoning: time:before, time:daysBetween for temporal logic
+# 	Log functions: log:notEqualTo, log:includes for comparison and membership
+# 	List processing: list:member, list:length for collection operations
+# 
+# Advanced Rule Patterns:
+# 	Quantification: log:forAllIn for universal quantification over collections
+# 	Aggregation: log:collectAllIn to gather related resources
+# 	Conditional logic: Chained comparisons and nested implications
+# 	Error detection: Rules that identify violations and inconsistencies
+# 
+# Rule Scope Coverage:
+# 	Production capacity and scheduling conflicts
+# 	Material availability and cost calculations
+# 	Quality trend analysis and certification validation
+# 	Maintenance urgency and operator workload balancing
+# 	Risk assessment for deadlines and production mismatches
+
+@prefix : <http://example.org/manufacturing#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+
+# N3 Classes - simple declaration without repetitive typing
+:ManufacturingPlant, :ProductionLine, :Machine, :Operator, 
+:Material, :Product, :WorkOrder, :QualityInspection a rdfs:Class .
+
+# N3 syntactic sugar: semicolon chains properties of same subject
+:hasProductionLine rdfs:domain :ManufacturingPlant ; rdfs:range :ProductionLine .
+:hasMachine rdfs:domain :ProductionLine ; rdfs:range :Machine .
+:operatedBy rdfs:domain :Machine ; rdfs:range :Operator .
+:consumesMaterial rdfs:domain :WorkOrder ; rdfs:range :Material .
+:producesProduct rdfs:domain :WorkOrder, :ProductionLine ; rdfs:range :Product .
+:scheduledOn rdfs:domain :WorkOrder ; rdfs:range :ProductionLine .
+:inspectedBy rdfs:domain :QualityInspection ; rdfs:range :Operator .
+:inspectsWorkOrder rdfs:domain :QualityInspection ; rdfs:range :WorkOrder .
+
+# N3 comma syntax: multiple objects for same predicate
+:plantName, :location, :lineName, :machineName, :machineType, :operatorName, 
+:skillLevel, :materialName, :materialType, :productName, :sku, :workOrderNumber, 
+:status, :result, :notes rdfs:range xsd:string .
+
+:capacity, :quantity rdfs:range xsd:integer .
+:unitCost, :price rdfs:range xsd:float .
+:maintenanceDueDate, :hireDate, :startDate, :dueDate, :inspectionDate rdfs:range xsd:date .
+
+# Advanced N3 Rules with Built-ins and Quantification
+
+# Capacity Validation - N3 uses {} for rule antecedent, => for implication
+{ ?wo a :WorkOrder ; :scheduledOn ?line ; :quantity ?qty .
+  ?line :capacity ?cap . 
+  ?qty math:notGreaterThan ?cap } 
+=> { ?wo :validCapacity true } .
+
+# N3 negation and failure detection
+{ ?wo a :WorkOrder ; :scheduledOn ?line ; :quantity ?qty .
+  ?line :capacity ?cap . 
+  ?qty math:greaterThan ?cap } 
+=> { ?wo :capacityExceeded true ; :priority "HIGH" } .
+
+# Scheduling Conflict Detection - N3 log:includes tests set membership
+{ ?line a :ProductionLine .
+  ?wo1 a :WorkOrder ; :scheduledOn ?line ; :startDate ?start1 ; :dueDate ?due1 .
+  ?wo2 a :WorkOrder ; :scheduledOn ?line ; :startDate ?start2 ; :dueDate ?due2 .
+  ?wo1 log:notEqualTo ?wo2 .
+  ?start1 time:notAfter ?due2 .
+  ?start2 time:notAfter ?due1 } 
+=> { ?line :hasSchedulingConflict true ; :conflictingOrders (?wo1 ?wo2) } .
+
+# Material Availability vs Requirements
+{ ?wo a :WorkOrder ; :consumesMaterial ?material ; :quantity ?needed .
+  ?material :availableQuantity ?available .
+  ?needed math:greaterThan ?available } 
+=> { ?wo :materialShortage ?material ; :shortageAmount [ math:difference (?needed ?available) ] } .
+
+# Operator Experience Matching - N3 string operations and conditionals
+{ ?machine a :Machine ; :machineType "CRITICAL" ; :operatedBy ?operator .
+  ?operator :skillLevel ?skill .
+  ?skill log:notEqualTo "SENIOR" } 
+=> { ?machine :underqualifiedOperator true ; :riskLevel "HIGH" } .
+
+# Quality Pattern Analysis - N3 list processing for trend detection
+{ ?product a :Product .
+  (?qi1 ?qi2 ?qi3) list:member ?qi .
+  ?qi :inspectsWorkOrder [ :producesProduct ?product ] ; :result "FAILED" .
+  ?qi1 :inspectionDate ?date1 .
+  ?qi2 :inspectionDate ?date2 .  
+  ?qi3 :inspectionDate ?date3 .
+  ?date1 time:before ?date2 .
+  ?date2 time:before ?date3 } 
+=> { ?product :qualityTrend "DECLINING" ; :requiresInvestigation true } .
+
+# Production Line Efficiency Calculation - N3 aggregation patterns
+{ ?line a :ProductionLine .
+  ?line :hasMachine ?m1, ?m2, ?m3 .  # N3 comma syntax for multiple values
+  ?m1 :capacity ?c1 . ?m2 :capacity ?c2 . ?m3 :capacity ?c3 .
+  (?c1 ?c2 ?c3) math:sum ?totalCapacity .
+  ?line :actualOutput ?output .
+  (?output ?totalCapacity) math:quotient ?efficiency } 
+=> { ?line :efficiencyRatio ?efficiency } .
+
+# Maintenance Urgency Scoring - N3 arithmetic and comparison chains
+{ ?machine a :Machine ; :maintenanceDueDate ?due ; :machineType ?type .
+  "" time:localTime ?now .
+  (?now ?due) time:daysBetween ?daysPast .
+  ?daysPast math:greaterThan 0 .
+  ?type log:equalTo "CRITICAL" } 
+=> { ?machine :maintenanceUrgency "CRITICAL" ; :daysOverdue ?daysPast } .
+
+# Work Order Cost Aggregation - N3 mathematical operations
+{ ?wo a :WorkOrder .
+  { ?wo :consumesMaterial ?mat . ?mat :unitCost ?cost . ?wo :quantity ?qty .
+    (?cost ?qty) math:product ?matCost } log:forAllIn ?materials .
+  ?materials math:sum ?totalMaterialCost .
+  ?wo :laborHours ?hours . ?hours math:product 50 ?laborCost .  # $50/hour rate
+  (?totalMaterialCost ?laborCost) math:sum ?totalCost } 
+=> { ?wo :totalCost ?totalCost } .
+
+# Production Chain Validation with Error Details
+{ ?wo a :WorkOrder ; :producesProduct ?product ; :scheduledOn ?line .
+  ?line :producesProduct ?allowedProduct .
+  ?product log:notEqualTo ?allowedProduct } 
+=> { ?wo :productionMismatch true ; :expectedProduct ?allowedProduct ; :actualProduct ?product } .
+
+# Operator Workload Balance - N3 counting and comparison
+{ ?operator a :Operator .
+  { ?machine :operatedBy ?operator } log:collectAllIn ?machines .
+  ?machines list:length ?machineCount .
+  ?machineCount math:greaterThan 3 } 
+=> { ?operator :overloaded true ; :machineCount ?machineCount } .
+
+# Quality Inspector Certification Validation
+{ ?qi a :QualityInspection ; :inspectedBy ?operator ; :inspectsWorkOrder ?wo .
+  ?wo :producesProduct ?product .
+  ?product :requiresCertification ?cert .
+  ?operator :certifications ?certs .
+  ?certs log:notIncludes ?cert } 
+=> { ?qi :uncertifiedInspection true ; :requiredCertification ?cert } .
+
+# Production Deadline Risk Assessment - N3 time calculations
+{ ?wo a :WorkOrder ; :dueDate ?due ; :scheduledOn ?line ; :quantity ?qty .
+  ?line :capacity ?cap . (?qty ?cap) math:quotient ?requiredHours .
+  "" time:localTime ?now .
+  (?due ?now) time:hoursBetween ?availableHours .
+  ?requiredHours math:greaterThan ?availableHours } 
+=> { ?wo :deadlineRisk "HIGH" ; :hoursShort [ math:difference (?requiredHours ?availableHours) ] } .

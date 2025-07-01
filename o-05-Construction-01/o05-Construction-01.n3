@@ -1,0 +1,171 @@
+# About some of the N3 Features Used:
+# 	@base + relative URIs: Eliminates namespace repetition
+# 	Property grouping: Multiple properties of same type defined together
+# 	Bracket notation: Compact union class definitions [ owl:unionOf (...) ]
+# 	Semicolon chaining: property1 value1 ; property2 value2
+# 	Built-in functions: math:, string:, log: for powerful rules
+# 	Quantification: log:forAllIn for universal quantification
+
+
+@base <http://example.org/construction-management#> .
+@prefix : <#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+
+# Construction Management Ontology
+# Models construction projects with task scheduling and resource management capabilities
+
+# Class definitions using N3 comma notation for efficiency
+:Client, :ConstructionCompany, :Project, :Task, :Material, 
+:Supplier, :SubContractor, :PurchaseOrder, :Invoice a owl:Class .
+
+:Client rdfs:label "Client" ; rdfs:comment "Project owner and initiator" .
+:ConstructionCompany rdfs:label "Construction Company" ; rdfs:comment "Primary contractor" .
+:Project rdfs:label "Project" ; rdfs:comment "Construction project with scope and timeline" .
+:Task rdfs:label "Task" ; rdfs:comment "Specific work unit" .
+:Material rdfs:label "Material" ; rdfs:comment "Construction resources" .
+:Supplier rdfs:label "Supplier" ; rdfs:comment "Material provider" .
+:SubContractor rdfs:label "SubContractor" ; rdfs:comment "Specialized contractor" .
+:PurchaseOrder rdfs:label "Purchase Order" ; rdfs:comment "Procurement request" .
+:Invoice rdfs:label "Invoice" ; rdfs:comment "Payment request" .
+
+# Data properties grouped by range type - N3 allows multiple properties per statement
+:name, :contactInfo, :companyName, :subContractorName, :supplierName, 
+:materialName, :projectName, :taskName, :specialty, :location,
+:licenseNumber, :orderNumber, :invoiceNumber, :status a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+:startDate, :endDate, :orderDate, :invoiceDate a owl:DatatypeProperty ;
+    rdfs:range xsd:date .
+
+:totalBudget, :costEstimate, :unitCost, :totalCost, :amount, :rating a owl:DatatypeProperty ;
+    rdfs:range xsd:float .
+
+# Domain assignments using N3 union syntax for shared properties
+:location rdfs:domain [ owl:unionOf (:ConstructionCompany :Project :Supplier) ] .
+:licenseNumber rdfs:domain [ owl:unionOf (:ConstructionCompany :SubContractor) ] .
+:startDate, :endDate rdfs:domain [ owl:unionOf (:Project :Task) ] .
+:status rdfs:domain [ owl:unionOf (:Project :Task :Invoice) ] .
+
+# Individual property domains
+:name rdfs:domain :Client .
+:contactInfo rdfs:domain :Client .
+:companyName rdfs:domain :ConstructionCompany .
+:subContractorName rdfs:domain :SubContractor .
+:supplierName rdfs:domain :Supplier .
+:materialName rdfs:domain :Material .
+:projectName rdfs:domain :Project .
+:taskName rdfs:domain :Task .
+:orderNumber rdfs:domain :PurchaseOrder .
+:invoiceNumber rdfs:domain :Invoice .
+
+# Object properties with functional constraints for cardinality enforcement
+:hasClient a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :Project ; rdfs:range :Client ;
+    owl:inverseOf :clientOf .
+
+:executedBy a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :Project ; rdfs:range :ConstructionCompany ;
+    owl:inverseOf :executes .
+
+:purchasedFrom a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :PurchaseOrder ; rdfs:range :Supplier ;
+    owl:inverseOf :sellsTo .
+
+:forProject a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :PurchaseOrder ; rdfs:range :Project ;
+    owl:inverseOf :hasPurchaseOrder .
+
+:invoicedTo a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :Invoice ; rdfs:range :ConstructionCompany ;
+    owl:inverseOf :receivesInvoice .
+
+# Many-to-many relationships without cardinality restrictions
+:hasTask rdfs:domain :Project ; rdfs:range :Task ; owl:inverseOf :taskOf .
+:assignedTo rdfs:domain :Task ; rdfs:range [ owl:unionOf (:SubContractor :ConstructionCompany) ] .
+:usesMaterial rdfs:domain :Task ; rdfs:range :Material ; owl:inverseOf :usedByTask .
+:invoicedBy rdfs:domain :Invoice ; rdfs:range [ owl:unionOf (:Supplier :SubContractor) ] .
+
+# Business rules using N3 implication syntax (=>) for logical inference
+
+# Timeline validation - project dates must be logically consistent
+{ ?project a :Project ; :startDate ?start ; :endDate ?end .
+  ?start math:lessThan ?end } => { ?project :hasValidTimeline true } .
+
+# Task duration calculation using time built-ins for PERT analysis
+{ ?task :startDate ?start ; :endDate ?end .
+  (?end ?start) time:daysBetween ?duration } => { ?task :duration ?duration } .
+
+# Critical path identification - tasks with zero slack time
+{ ?task :taskOf ?project .
+  ?project :startDate ?projStart ; :endDate ?projEnd .
+  ?task :startDate ?taskStart ; :endDate ?taskEnd .
+  (?taskStart ?projStart) time:daysBetween ?earlyStart .
+  (?projEnd ?taskEnd) time:daysBetween ?lateFinish .
+  ?earlyStart math:equalTo ?lateFinish } => { ?task :onCriticalPath true } .
+
+# Resource conflict detection for CPM analysis
+{ ?contractor :assigns ?task1, ?task2 .
+  ?task1 :startDate ?start1 ; :endDate ?end1 .
+  ?task2 :startDate ?start2 ; :endDate ?end2 .
+  ?start2 math:lessThan ?end1 .
+  ?start1 math:lessThan ?end2 } => { ?contractor :hasResourceConflict true } .
+
+# Project completion percentage based on completed tasks
+{ ?project :hasTask ?task .
+  ?task :status "completed" .
+  ?project log:forAllIn ?project { ?allTasks a :Task } .
+  (?completedCount ?totalCount) math:quotient ?percentage } => 
+  { ?project :completionPercentage ?percentage } .
+
+# Budget variance tracking for project control
+{ ?project :totalBudget ?budget .
+  ?project :hasTask ?task .
+  ?task :costEstimate ?estimate .
+  (?estimate ?totalSpent) math:sum ?totalSpent .
+  (?budget ?totalSpent) math:difference ?variance } => 
+  { ?project :budgetVariance ?variance } .
+
+# Task dependency inference - materials must be available before task start
+{ ?task :usesMaterial ?material ; :startDate ?taskStart ; :taskOf ?project .
+  ?project :hasPurchaseOrder ?po .
+  ?po :purchasedFrom ?supplier ; :orderDate ?orderDate .
+  ?orderDate math:lessThan ?taskStart } => { ?task :materialsReady true } .
+
+# Float time calculation for schedule optimization
+{ ?task :taskOf ?project ; :duration ?duration .
+  ?project :endDate ?projEnd .
+  ?task :endDate ?taskEnd .
+  (?projEnd ?taskEnd) time:daysBetween ?totalFloat } => 
+  { ?task :totalFloat ?totalFloat } .
+
+# Quality assurance - specialized tasks require appropriate contractors
+{ ?task :costEstimate ?cost ; :assignedTo ?contractor .
+  ?cost math:greaterThan 50000 .
+  ?contractor a :SubContractor ; :specialty ?spec } => 
+  { ?task :requiresSpecialization ?spec } .
+
+# Payment milestone validation - invoices tied to task completion
+{ ?invoice :invoicedBy ?contractor ; :amount ?amount .
+  ?contractor :assigns ?task .
+  ?task :status "completed" ; :costEstimate ?estimate .
+  ?amount math:lessThanOrEqualTo ?estimate } => 
+  { ?invoice :validPaymentRequest true } .
+
+# Project risk assessment based on budget and timeline metrics
+{ ?project :budgetVariance ?variance ; :completionPercentage ?completion .
+  ?variance math:lessThan 0 .
+  ?completion math:lessThan 0.5 } => { ?project :highRisk true } .
+
+# Resource leveling - identify overallocated periods
+{ ?contractor :assigns ?task .
+  ?task :startDate ?start ; :duration ?duration .
+  (?start ?duration) time:dateSum ?calculatedEnd .
+  ?task :endDate ?actualEnd .
+  ?calculatedEnd math:notEqualTo ?actualEnd } => 
+  { ?contractor :schedulingConflict true } .
