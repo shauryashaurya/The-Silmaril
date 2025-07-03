@@ -16,6 +16,12 @@ import pandas as pd
 # Import the core reasoner
 from music_reasoner import MusicReasonerEngine, normalize_id
 
+# Configure logging
+logging.basicConfig(
+    filename='./music_reasoner_usage.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 logger = logging.getLogger(__name__)
 
 
@@ -825,8 +831,8 @@ class MusicAnalytics:
 
         # Header
         md.append("# Music Industry Ontology Analysis Report\n")
-        md.append(
-            f"**Generated:** {self.analysis_timestamp.strftime('%Y-%m-%d %H:%M:%S')}\n")
+        # md.append(
+        #     f"**Generated:** {self.analysis_timestamp.strftime('%Y-%m-%d %H:%M:%S')}\n")
         md.append(
             f"**Processing Time:** {stats['overview']['processing_info']['processing_time_seconds']:.2f} seconds\n")
         md.append(
@@ -1044,8 +1050,8 @@ class MusicAnalytics:
             f"- **Processing Time**: {overview['processing_info']['processing_time_seconds']:.2f} seconds\n")
         md.append(
             f"- **Total Inferences Made**: {overview['reasoning_results']['total_inferences']}\n")
-        md.append(
-            f"- **Report Generated**: {overview['processing_info']['analysis_timestamp']}\n\n")
+        # md.append(
+        #     f"- **Report Generated**: {overview['processing_info']['analysis_timestamp']}\n\n")
 
         md.append("---\n")
         md.append(
@@ -1130,8 +1136,8 @@ class MusicReasonerUsage:
             'collaborative_songs': len(self.reasoner.collaborative_songs),
             'established_artists': len(self.reasoner.established_artists),
             'successful_labels': len(self.reasoner.successful_labels),
-            'total_inferences': self.reasoner.stats['inferences_made'],
-            'processing_time': self.reasoner.stats['processing_time']
+            'total_inferences': self.reasoner.stats['inferences_made']  # ,
+            # 'processing_time': self.reasoner.stats['processing_time']
         }
 
 
@@ -1155,7 +1161,7 @@ def main():
         print(f"- Collaborative Songs: {insights['collaborative_songs']}")
         print(f"- Established Artists: {insights['established_artists']}")
         print(f"- Successful Labels: {insights['successful_labels']}")
-        print(f"- Processing Time: {insights['processing_time']:.2f}s")
+        # print(f"- Processing Time: {insights['processing_time']:.2f}s")
     else:
         print(f"Analysis failed: {result['error_message']}")
 

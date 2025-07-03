@@ -42,7 +42,7 @@ A knowledge representation for songs, artists, albums, record labels, awards, an
 - **Song**: `title` (string), `duration` (integer in seconds), `releaseDate` (date)  
 - **Artist**: `name` (string), `birthDate` (date) – optional for older artists, `nationality` (string)  
 - **Album**: `album_title` (string), `releaseYear` (integer)  
-- **RecordLabel**: `labelName` (string), `location` (string)  
+- **RecordLabel**: `label_name` (string), `location` (string)  
 - **Genre**: `genre_name` (string), `description` (string) – optional descriptive text  
 - **Award**: `award_name` (string), `year` (integer), `awarding_body` (string)
     
@@ -86,7 +86,7 @@ classDiagram
                 
   class RecordLabel{                
 		%% Data Properties    
-        -labelName : string                
+        -label_name : string                
         -location : string                
   }                
                 

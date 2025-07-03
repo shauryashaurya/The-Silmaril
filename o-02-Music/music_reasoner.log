@@ -1,0 +1,388 @@
+2025-07-03 23:44:15,732 - __main__ - INFO - Loading CSV data from data
+2025-07-03 23:44:15,732 - __main__ - INFO - Loading base entities...
+2025-07-03 23:44:15,736 - __main__ - INFO - Loading 100 artists from data\artists.csv
+2025-07-03 23:44:15,736 - __main__ - INFO - Artists CSV columns: ['id', 'name', 'birthDate', 'nationality', 'labelID']
+2025-07-03 23:44:15,741 - __main__ - INFO - Loaded 100 artists
+2025-07-03 23:44:15,742 - __main__ - INFO - Loading 100 albums from data\albums.csv
+2025-07-03 23:44:15,742 - __main__ - INFO - Albums CSV columns: ['id', 'album_title', 'releaseYear', 'genreIDs']
+2025-07-03 23:44:15,747 - __main__ - INFO - Loaded 100 albums
+2025-07-03 23:44:15,747 - __main__ - WARNING - Record labels file not found: data\record_labels.csv
+2025-07-03 23:44:15,748 - __main__ - INFO - Loading 15 genres from data\genres.csv
+2025-07-03 23:44:15,748 - __main__ - INFO - Loaded 15 genres
+2025-07-03 23:44:15,749 - __main__ - INFO - Loading 30 awards from data\awards.csv
+2025-07-03 23:44:15,749 - __main__ - INFO - Awards CSV columns: ['id', 'award_name', 'year', 'awarding_body']
+2025-07-03 23:44:15,750 - __main__ - INFO - Loaded 30 awards
+2025-07-03 23:44:15,752 - __main__ - INFO - Loading 600 songs from data\songs.csv
+2025-07-03 23:44:15,752 - __main__ - INFO - Songs CSV columns: ['id', 'title', 'duration', 'releaseDate', 'artistIDs', 'albumID', 'genreIDs', 'awardIDs']
+2025-07-03 23:44:15,789 - __main__ - INFO - Loaded 600 songs as central relationship hub
+2025-07-03 23:44:15,789 - __main__ - INFO - PHASE 1: Establishing ALL inverse relationships from direct CSV data...
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_2 references unknown label label_10
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_3 references unknown label label_17
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_6 references unknown label label_10
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_7 references unknown label label_24
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_11 references unknown label label_21
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_13 references unknown label label_21
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_14 references unknown label label_9
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_17 references unknown label label_3
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_20 references unknown label label_18
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_21 references unknown label label_1
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_22 references unknown label label_7
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_30 references unknown label label_15
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_32 references unknown label label_5
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_37 references unknown label label_15
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_38 references unknown label label_24
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_40 references unknown label label_4
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_42 references unknown label label_0
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_44 references unknown label label_6
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_46 references unknown label label_0
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_47 references unknown label label_24
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_49 references unknown label label_3
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_51 references unknown label label_12
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_55 references unknown label label_13
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_57 references unknown label label_7
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_58 references unknown label label_17
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_59 references unknown label label_23
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_60 references unknown label label_4
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_61 references unknown label label_1
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_62 references unknown label label_6
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_63 references unknown label label_10
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_66 references unknown label label_3
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_68 references unknown label label_10
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_70 references unknown label label_22
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_72 references unknown label label_11
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_76 references unknown label label_21
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_77 references unknown label label_14
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_78 references unknown label label_20
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_79 references unknown label label_12
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_85 references unknown label label_22
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_88 references unknown label label_15
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_95 references unknown label label_2
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_96 references unknown label label_0
+2025-07-03 23:44:15,790 - __main__ - WARNING - Artist artist_99 references unknown label label_8
+2025-07-03 23:44:15,790 - __main__ - INFO - PHASE 1 COMPLETE: Established 1863 inverse relationships
+2025-07-03 23:44:15,790 - __main__ - INFO - PHASE 2: Computing ALL derived relationships from inverse relationships...
+2025-07-03 23:44:15,790 - __main__ - INFO - Computing album \u2192 artist derived relationships...
+2025-07-03 23:44:15,791 - __main__ - INFO - Derived artists for 0 albums
+2025-07-03 23:44:15,791 - __main__ - INFO - Computing artist \u2192 album derived relationships...
+2025-07-03 23:44:15,791 - __main__ - INFO - Computing award \u2192 artist derived relationships...
+2025-07-03 23:44:15,791 - __main__ - INFO - Computing artist \u2192 award derived relationships...
+2025-07-03 23:44:15,791 - __main__ - INFO - Computing label \u2192 album derived relationships...
+2025-07-03 23:44:15,791 - __main__ - INFO - Computing album \u2192 label derived relationships...
+2025-07-03 23:44:15,791 - __main__ - INFO - PHASE 2 COMPLETE: Computed 162 derived relationships
+2025-07-03 23:44:15,791 - __main__ - INFO - Relationship chain diagnostics:
+2025-07-03 23:44:15,791 - __main__ - INFO -   Albums with songs: 0/100
+2025-07-03 23:44:15,791 - __main__ - INFO -   Albums with artists: 0/100
+2025-07-03 23:44:15,791 - __main__ - INFO -   Artists with songs: 100/100
+2025-07-03 23:44:15,791 - __main__ - INFO -   Artists with albums: 0/100
+2025-07-03 23:44:15,791 - __main__ - INFO - Validating cardinality constraints...
+2025-07-03 23:44:15,791 - __main__ - WARNING - Found 200 cardinality constraint violations
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_0 'Reverse-engineered human-resource paradigm Album 0' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_0 'Reverse-engineered human-resource paradigm Album 0' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_1 'Automated holistic monitoring Album 1' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_1 'Automated holistic monitoring Album 1' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_2 'Upgradable modular challenge Album 2' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_2 'Upgradable modular challenge Album 2' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_3 'Fully-configurable systematic instruction set Album 3' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:15,791 - __main__ - WARNING -   Album album_3 'Fully-configurable systematic instruction set Album 3' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:15,792 - __main__ - WARNING -   Album album_4 'Pre-emptive grid-enabled hardware Album 4' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:15,792 - __main__ - WARNING -   Album album_4 'Pre-emptive grid-enabled hardware Album 4' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:15,792 - __main__ - WARNING -   ... and 190 more violations
+2025-07-03 23:44:15,792 - __main__ - INFO - Generating loading diagnostics...
+2025-07-03 23:44:15,792 - __main__ - INFO - Final relationship diagnostics:
+2025-07-03 23:44:15,792 - __main__ - INFO -   Songs with artists: 600/600
+2025-07-03 23:44:15,792 - __main__ - INFO -   Songs with genres: 600/600
+2025-07-03 23:44:15,792 - __main__ - INFO -   Songs with albums: 0/600
+2025-07-03 23:44:15,792 - __main__ - INFO -   Songs with awards: 57/600
+2025-07-03 23:44:15,792 - __main__ - INFO -   Albums with artists (computed): 0/100
+2025-07-03 23:44:15,792 - __main__ - INFO -   Albums with genres: 100/100
+2025-07-03 23:44:15,792 - __main__ - INFO -   Artists with labels: 43/100
+2025-07-03 23:44:15,792 - __main__ - INFO -   Artists with songs: 100/100
+2025-07-03 23:44:15,792 - __main__ - INFO - Sample song song_0: 2 artists, 2 genres, 0 albums
+2025-07-03 23:44:15,792 - __main__ - INFO -   Artists: ['artist_91', 'artist_97']...
+2025-07-03 23:44:15,792 - __main__ - INFO -   Genres: ['genre_3', 'genre_4']...
+2025-07-03 23:44:15,792 - __main__ - INFO - Sample artist artist_0: 7 songs, 0 albums
+2025-07-03 23:44:15,792 - __main__ - INFO - Sample album album_0: 0 songs, 0 artists
+2025-07-03 23:44:15,792 - __main__ - INFO - Successfully loaded 845 entities
+2025-07-03 23:44:15,792 - __main__ - INFO - Parsed 1863 direct relationships
+2025-07-03 23:44:15,792 - __main__ - INFO - Established 1863 inverse relationships
+2025-07-03 23:44:15,792 - __main__ - INFO - Computed 162 derived relationships
+2025-07-03 23:44:15,792 - __main__ - INFO - Starting reasoning rule application...
+2025-07-03 23:44:15,792 - __main__ - INFO - Data validation passed: 600 songs, 100 artists, 600 songs with artists
+2025-07-03 23:44:15,792 - __main__ - INFO - Applying Category 1: Basic classification rules...
+2025-07-03 23:44:15,792 - __main__ - INFO - Applying Rule 01: Collaboration Detection
+2025-07-03 23:44:15,792 - __main__ - INFO - Found 302 collaboration relationships
+2025-07-03 23:44:15,793 - __main__ - INFO - Identified 302 collaborative songs
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Rule 07: Contribution Inference
+2025-07-03 23:44:15,793 - __main__ - INFO - Identified 0 contribution relationships
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Category 2: Inheritance rules...
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Rule 02: Genre Inheritance
+2025-07-03 23:44:15,793 - __main__ - INFO - Made 0 genre inheritance inferences
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Category 3: Success classification rules...
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Rule 03: Label Success Inference
+2025-07-03 23:44:15,793 - __main__ - INFO - Identified 0 successful labels
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Rule 04: Artist Establishment
+2025-07-03 23:44:15,793 - __main__ - INFO - Identified 0 established artists
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Category 4: Network analysis rules...
+2025-07-03 23:44:15,793 - __main__ - INFO - Applying Rule 06: Genre-based Influence
+2025-07-03 23:44:15,795 - __main__ - INFO - Created 576 genre-based influence relationships
+2025-07-03 23:44:15,795 - __main__ - INFO - Applying Rule 05: Transitivity for Influence
+2025-07-03 23:44:15,879 - __main__ - INFO - Created 9324 transitive influence relationships
+2025-07-03 23:44:15,879 - __main__ - INFO - Applying Category 5: Quantitative analysis rules...
+2025-07-03 23:44:15,879 - __main__ - INFO - Applying Rule 08: Collaboration Strength Calculation
+2025-07-03 23:44:15,880 - __main__ - INFO - Collaboration strength calculations completed
+2025-07-03 23:44:15,880 - __main__ - INFO - Applying Rule 09: Popularity Score Calculation
+2025-07-03 23:44:15,880 - __main__ - INFO - Popularity score calculations completed
+2025-07-03 23:44:15,880 - __main__ - INFO - Applying Rule 10: Label Success Rating
+2025-07-03 23:44:15,880 - __main__ - INFO - Label success rating calculations completed
+2025-07-03 23:44:15,880 - __main__ - INFO - Applying Category 6: Analysis rules...
+2025-07-03 23:44:15,880 - __main__ - INFO - Applying Rule 11: Genre Similarity Detection
+2025-07-03 23:44:15,880 - __main__ - INFO - Found 12 genre similarities
+2025-07-03 23:44:15,880 - __main__ - INFO - Applying Rule 12: Contemporary Artists
+2025-07-03 23:44:15,880 - __main__ - INFO - Identified 0 contemporary artist relationships
+2025-07-03 23:44:15,880 - __main__ - INFO - Reasoning completed in 0.09 seconds
+2025-07-03 23:44:15,880 - __main__ - INFO - Total inferences made: 10214
+2025-07-03 23:44:15,880 - __main__ - INFO - Reasoning completed successfully
+2025-07-03 23:44:15,880 - __main__ - INFO - Final diagnostics: {
+  "entity_counts": {
+    "songs": 600,
+    "artists": 100,
+    "albums": 100,
+    "record_labels": 0,
+    "genres": 15,
+    "awards": 30
+  },
+  "relationship_counts": {
+    "song_artist_pairs": 902,
+    "song_genre_pairs": 760,
+    "song_album_pairs": 0,
+    "song_award_pairs": 57,
+    "album_genre_pairs": 144,
+    "artist_label_pairs": 43,
+    "total_relationships_parsed": 1863,
+    "inverse_relationships_established": 1863,
+    "derived_relationships_computed": 162
+  },
+  "reasoning_results": {
+    "collaborative_songs": 302,
+    "successful_labels": 0,
+    "established_artists": 0,
+    "total_collaborations": 288,
+    "total_influences": 9900,
+    "genre_similarities": 12
+  },
+  "cardinality_validation": {
+    "total_violations": 200,
+    "violations_list": [
+      "Album album_0 'Reverse-engineered human-resource paradigm Album 0' violates minCardinality 1 for releasedByArtist",
+      "Album album_0 'Reverse-engineered human-resource paradigm Album 0' violates cardinality 1 for releasedByLabel",
+      "Album album_1 'Automated holistic monitoring Album 1' violates minCardinality 1 for releasedByArtist",
+      "Album album_1 'Automated holistic monitoring Album 1' violates cardinality 1 for releasedByLabel",
+      "Album album_2 'Upgradable modular challenge Album 2' violates minCardinality 1 for releasedByArtist",
+      "Album album_2 'Upgradable modular challenge Album 2' violates cardinality 1 for releasedByLabel",
+      "Album album_3 'Fully-configurable systematic instruction set Album 3' violates minCardinality 1 for releasedByArtist",
+      "Album album_3 'Fully-configurable systematic instruction set Album 3' violates cardinality 1 for releasedByLabel",
+      "Album album_4 'Pre-emptive grid-enabled hardware Album 4' violates minCardinality 1 for releasedByArtist",
+      "Album album_4 'Pre-emptive grid-enabled hardware Album 4' violates cardinality 1 for releasedByLabel",
+      "Album album_5 'Multi-channeled regional architecture Album 5' violates minCardinality 1 for releasedByArtist",
+      "Album album_5 'Multi-channeled regional architecture Album 5' violates cardinality 1 for releasedByLabel",
+      "Album album_6 'Pre-emptive asymmetric benchmark Album 6' violates minCardinality 1 for releasedByArtist",
+      "Album album_6 'Pre-emptive asymmetric benchmark Album 6' violates cardinality 1 for releasedByLabel",
+      "Album album_7 'Open-source global moderator Album 7' violates minCardinality 1 for releasedByArtist",
+      "Album album_7 'Open-source global moderator Album 7' violates cardinality 1 for releasedByLabel",
+      "Album album_8 'Monitored zero tolerance success Album 8' violates minCardinality 1 for releasedByArtist",
+      "Album album_8 'Monitored zero tolerance success Album 8' violates cardinality 1 for releasedByLabel",
+      "Album album_9 'Vision-oriented solution-oriented paradigm Album 9' violates minCardinality 1 for releasedByArtist",
+      "Album album_9 'Vision-oriented solution-oriented paradigm Album 9' violates cardinality 1 for releasedByLabel"
+    ]
+  },
+  "statistics": {
+    "entities_loaded": 845,
+    "relationships_parsed": 1863,
+    "inverse_relationships_established": 1863,
+    "derived_relationships_computed": 162,
+    "rules_executed": 0,
+    "inferences_made": 10214,
+    "cardinality_violations": 200,
+    "processing_time": 0.087195
+  },
+  "data_quality": {
+    "song_completeness": {
+      "with_artists": "600/600",
+      "with_genres": "600/600",
+      "with_albums": "0/600",
+      "with_duration": "600/600"
+    },
+    "artist_completeness": {
+      "with_labels": "43/100",
+      "with_birth_dates": "0/100",
+      "with_songs": "100/100",
+      "with_albums": "0/100"
+    },
+    "album_completeness": {
+      "with_artists": "0/100",
+      "with_songs": "0/100",
+      "with_genres": "100/100",
+      "with_labels": "0/100"
+    },
+    "collaboration_density": "0.0582"
+  }
+}
+2025-07-03 23:44:29,167 - __main__ - INFO - Starting complete music industry analysis...
+2025-07-03 23:44:29,168 - __main__ - INFO - Loading CSV data...
+2025-07-03 23:44:29,168 - music_reasoner - INFO - Loading CSV data from data
+2025-07-03 23:44:29,168 - music_reasoner - INFO - Loading base entities...
+2025-07-03 23:44:29,172 - music_reasoner - INFO - Loading 100 artists from data\artists.csv
+2025-07-03 23:44:29,172 - music_reasoner - INFO - Artists CSV columns: ['id', 'name', 'birthDate', 'nationality', 'labelID']
+2025-07-03 23:44:29,176 - music_reasoner - INFO - Loaded 100 artists
+2025-07-03 23:44:29,177 - music_reasoner - INFO - Loading 100 albums from data\albums.csv
+2025-07-03 23:44:29,177 - music_reasoner - INFO - Albums CSV columns: ['id', 'album_title', 'releaseYear', 'genreIDs']
+2025-07-03 23:44:29,181 - music_reasoner - INFO - Loaded 100 albums
+2025-07-03 23:44:29,181 - music_reasoner - WARNING - Record labels file not found: data\record_labels.csv
+2025-07-03 23:44:29,182 - music_reasoner - INFO - Loading 15 genres from data\genres.csv
+2025-07-03 23:44:29,182 - music_reasoner - INFO - Loaded 15 genres
+2025-07-03 23:44:29,183 - music_reasoner - INFO - Loading 30 awards from data\awards.csv
+2025-07-03 23:44:29,183 - music_reasoner - INFO - Awards CSV columns: ['id', 'award_name', 'year', 'awarding_body']
+2025-07-03 23:44:29,184 - music_reasoner - INFO - Loaded 30 awards
+2025-07-03 23:44:29,186 - music_reasoner - INFO - Loading 600 songs from data\songs.csv
+2025-07-03 23:44:29,186 - music_reasoner - INFO - Songs CSV columns: ['id', 'title', 'duration', 'releaseDate', 'artistIDs', 'albumID', 'genreIDs', 'awardIDs']
+2025-07-03 23:44:29,222 - music_reasoner - INFO - Loaded 600 songs as central relationship hub
+2025-07-03 23:44:29,223 - music_reasoner - INFO - PHASE 1: Establishing ALL inverse relationships from direct CSV data...
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_2 references unknown label label_10
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_3 references unknown label label_17
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_6 references unknown label label_10
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_7 references unknown label label_24
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_11 references unknown label label_21
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_13 references unknown label label_21
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_14 references unknown label label_9
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_17 references unknown label label_3
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_20 references unknown label label_18
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_21 references unknown label label_1
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_22 references unknown label label_7
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_30 references unknown label label_15
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_32 references unknown label label_5
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_37 references unknown label label_15
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_38 references unknown label label_24
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_40 references unknown label label_4
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_42 references unknown label label_0
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_44 references unknown label label_6
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_46 references unknown label label_0
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_47 references unknown label label_24
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_49 references unknown label label_3
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_51 references unknown label label_12
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_55 references unknown label label_13
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_57 references unknown label label_7
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_58 references unknown label label_17
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_59 references unknown label label_23
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_60 references unknown label label_4
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_61 references unknown label label_1
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_62 references unknown label label_6
+2025-07-03 23:44:29,223 - music_reasoner - WARNING - Artist artist_63 references unknown label label_10
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_66 references unknown label label_3
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_68 references unknown label label_10
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_70 references unknown label label_22
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_72 references unknown label label_11
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_76 references unknown label label_21
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_77 references unknown label label_14
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_78 references unknown label label_20
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_79 references unknown label label_12
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_85 references unknown label label_22
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_88 references unknown label label_15
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_95 references unknown label label_2
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_96 references unknown label label_0
+2025-07-03 23:44:29,224 - music_reasoner - WARNING - Artist artist_99 references unknown label label_8
+2025-07-03 23:44:29,224 - music_reasoner - INFO - PHASE 1 COMPLETE: Established 1863 inverse relationships
+2025-07-03 23:44:29,224 - music_reasoner - INFO - PHASE 2: Computing ALL derived relationships from inverse relationships...
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Computing album \u2192 artist derived relationships...
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Derived artists for 0 albums
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Computing artist \u2192 album derived relationships...
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Computing award \u2192 artist derived relationships...
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Computing artist \u2192 award derived relationships...
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Computing label \u2192 album derived relationships...
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Computing album \u2192 label derived relationships...
+2025-07-03 23:44:29,224 - music_reasoner - INFO - PHASE 2 COMPLETE: Computed 162 derived relationships
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Relationship chain diagnostics:
+2025-07-03 23:44:29,224 - music_reasoner - INFO -   Albums with songs: 0/100
+2025-07-03 23:44:29,224 - music_reasoner - INFO -   Albums with artists: 0/100
+2025-07-03 23:44:29,224 - music_reasoner - INFO -   Artists with songs: 100/100
+2025-07-03 23:44:29,224 - music_reasoner - INFO -   Artists with albums: 0/100
+2025-07-03 23:44:29,224 - music_reasoner - INFO - Validating cardinality constraints...
+2025-07-03 23:44:29,225 - music_reasoner - WARNING - Found 200 cardinality constraint violations
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_0 'Reverse-engineered human-resource paradigm Album 0' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_0 'Reverse-engineered human-resource paradigm Album 0' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_1 'Automated holistic monitoring Album 1' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_1 'Automated holistic monitoring Album 1' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_2 'Upgradable modular challenge Album 2' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_2 'Upgradable modular challenge Album 2' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_3 'Fully-configurable systematic instruction set Album 3' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_3 'Fully-configurable systematic instruction set Album 3' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_4 'Pre-emptive grid-enabled hardware Album 4' violates minCardinality 1 for releasedByArtist
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   Album album_4 'Pre-emptive grid-enabled hardware Album 4' violates cardinality 1 for releasedByLabel
+2025-07-03 23:44:29,225 - music_reasoner - WARNING -   ... and 190 more violations
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Generating loading diagnostics...
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Final relationship diagnostics:
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Songs with artists: 600/600
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Songs with genres: 600/600
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Songs with albums: 0/600
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Songs with awards: 57/600
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Albums with artists (computed): 0/100
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Albums with genres: 100/100
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Artists with labels: 43/100
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Artists with songs: 100/100
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Sample song song_0: 2 artists, 2 genres, 0 albums
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Artists: ['artist_97', 'artist_91']...
+2025-07-03 23:44:29,225 - music_reasoner - INFO -   Genres: ['genre_3', 'genre_4']...
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Sample artist artist_0: 7 songs, 0 albums
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Sample album album_0: 0 songs, 0 artists
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Successfully loaded 845 entities
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Parsed 1863 direct relationships
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Established 1863 inverse relationships
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Computed 162 derived relationships
+2025-07-03 23:44:29,225 - __main__ - INFO - Applying N3 reasoning rules...
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Starting reasoning rule application...
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Data validation passed: 600 songs, 100 artists, 600 songs with artists
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Applying Category 1: Basic classification rules...
+2025-07-03 23:44:29,225 - music_reasoner - INFO - Applying Rule 01: Collaboration Detection
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Found 302 collaboration relationships
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Identified 302 collaborative songs
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Rule 07: Contribution Inference
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Identified 0 contribution relationships
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Category 2: Inheritance rules...
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Rule 02: Genre Inheritance
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Made 0 genre inheritance inferences
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Category 3: Success classification rules...
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Rule 03: Label Success Inference
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Identified 0 successful labels
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Rule 04: Artist Establishment
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Identified 0 established artists
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Category 4: Network analysis rules...
+2025-07-03 23:44:29,226 - music_reasoner - INFO - Applying Rule 06: Genre-based Influence
+2025-07-03 23:44:29,228 - music_reasoner - INFO - Created 576 genre-based influence relationships
+2025-07-03 23:44:29,228 - music_reasoner - INFO - Applying Rule 05: Transitivity for Influence
+2025-07-03 23:44:29,310 - music_reasoner - INFO - Created 9324 transitive influence relationships
+2025-07-03 23:44:29,310 - music_reasoner - INFO - Applying Category 5: Quantitative analysis rules...
+2025-07-03 23:44:29,310 - music_reasoner - INFO - Applying Rule 08: Collaboration Strength Calculation
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Collaboration strength calculations completed
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Applying Rule 09: Popularity Score Calculation
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Popularity score calculations completed
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Applying Rule 10: Label Success Rating
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Label success rating calculations completed
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Applying Category 6: Analysis rules...
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Applying Rule 11: Genre Similarity Detection
+2025-07-03 23:44:29,311 - music_reasoner - INFO - Found 12 genre similarities
+2025-07-03 23:44:29,312 - music_reasoner - INFO - Applying Rule 12: Contemporary Artists
+2025-07-03 23:44:29,312 - music_reasoner - INFO - Identified 0 contemporary artist relationships
+2025-07-03 23:44:29,312 - music_reasoner - INFO - Reasoning completed in 0.09 seconds
+2025-07-03 23:44:29,312 - music_reasoner - INFO - Total inferences made: 10214
+2025-07-03 23:44:29,312 - __main__ - INFO - Generating comprehensive reports...
+2025-07-03 23:44:29,312 - __main__ - INFO - Generating JSON report at music_analysis_report.json
+2025-07-03 23:44:29,312 - __main__ - INFO - Generating comprehensive statistics...
+2025-07-03 23:44:29,335 - __main__ - INFO - Comprehensive statistics generation completed
+2025-07-03 23:44:29,370 - __main__ - INFO - JSON report saved successfully to music_analysis_report.json
+2025-07-03 23:44:29,371 - __main__ - INFO - Generating Markdown report at music_analysis_report.md
+2025-07-03 23:44:29,371 - __main__ - INFO - Generating comprehensive statistics...
+2025-07-03 23:44:29,387 - __main__ - INFO - Comprehensive statistics generation completed
+2025-07-03 23:44:29,387 - __main__ - INFO - Markdown report saved successfully to music_analysis_report.md
+2025-07-03 23:44:29,387 - __main__ - INFO - Generating comprehensive statistics...
+2025-07-03 23:44:29,411 - __main__ - INFO - Comprehensive statistics generation completed
+2025-07-03 23:44:29,411 - __main__ - INFO - Complete analysis finished successfully!
+2025-07-03 23:44:29,411 - __main__ - INFO - Reports saved to: ./
