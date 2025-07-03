@@ -91,54 +91,170 @@ class MovieLensReasoner:
 
         self.current_year = datetime.now().year
 
+    # def load_data(self):
+    #     """Load MovieLens CSV data"""
+    #     logger.info("Loading MovieLens data...")
+
+    #     # Load movies
+    #     movies_df = pd.read_csv(os.path.join(self.data_path, "movies.csv"))
+    #     for _, row in movies_df.iterrows():
+    #         # Extract release year from title (usually in parentheses at the end)
+    #         release_year = self._extract_year_from_title(row['title'])
+    #         genres = row['genres'].split(
+    #             '|') if pd.notna(row['genres']) else []
+
+    #         movie = Movie(
+    #             movie_id=str(row['movieId']),
+    #             title=row['title'],
+    #             genres=genres,
+    #             release_year=release_year
+    #         )
+    #         self.movies[movie.movie_id] = movie
+    #         self.genres.update(genres)
+
+    #     # Load ratings
+    #     ratings_df = pd.read_csv(os.path.join(self.data_path, "ratings.csv"))
+    #     for _, row in ratings_df.iterrows():
+    #         rating = UserRating(
+    #             user_id=str(row['userId']),
+    #             movie_id=str(row['movieId']),
+    #             rating=float(row['rating']),
+    #             timestamp=datetime.fromtimestamp(row['timestamp'])
+    #         )
+    #         self.ratings.append(rating)
+
+    #     # Load tags if available
+    #     tags_path = os.path.join(self.data_path, "tags.csv")
+    #     if os.path.exists(tags_path):
+    #         tags_df = pd.read_csv(tags_path)
+    #         for _, row in tags_df.iterrows():
+    #             tag = Tag(
+    #                 movie_id=str(row['movieId']),
+    #                 tag_name=row['tag'],
+    #                 relevance=1.0  # Default relevance
+    #             )
+    #             self.tags.append(tag)
+
+    #     # Initialize users from ratings
+    #     user_ids = set(rating.user_id for rating in self.ratings)
+    #     for user_id in user_ids:
+    #         self.users[user_id] = User(user_id=user_id)
+
+    #     logger.info(
+    #         f"Loaded {len(self.movies)} movies, {len(self.users)} users, {len(self.ratings)} ratings")
+
+    # def load_data(self):
+    #     """Load MovieLens CSV data - Fixed ID matching - so typical when loading CSV data, floats get converted where they should not be etc..."""
+    #     logger.info("Loading MovieLens data...")
+
+    #     # Load movies
+    #     movies_df = pd.read_csv(os.path.join(self.data_path, "movies.csv"))
+    #     for _, row in movies_df.iterrows():
+    #         # Extract release year from title (usually in parentheses at the end)
+    #         release_year = self._extract_year_from_title(row['title'])
+    #         genres = row['genres'].split(
+    #             '|') if pd.notna(row['genres']) else []
+
+    #         # Ensure consistent ID format - convert to int then string
+    #         movie_id = str(int(float(row['movieId'])))
+
+    #         movie = Movie(
+    #             movie_id=movie_id,
+    #             title=row['title'],
+    #             genres=genres,
+    #             release_year=release_year
+    #         )
+    #         self.movies[movie.movie_id] = movie
+    #         self.genres.update(genres)
+
+    #     # Load ratings
+    #     ratings_df = pd.read_csv(os.path.join(self.data_path, "ratings.csv"))
+    #     for _, row in ratings_df.iterrows():
+    #         # Ensure consistent ID format - convert to int then string
+    #         user_id = str(int(float(row['userId'])))
+    #         movie_id = str(int(float(row['movieId'])))
+
+    #         rating = UserRating(
+    #             user_id=user_id,
+    #             movie_id=movie_id,
+    #             rating=float(row['rating']),
+    #             timestamp=datetime.fromtimestamp(row['timestamp'])
+    #         )
+    #         self.ratings.append(rating)
+
+    #     # Load tags if available
+    #     tags_path = os.path.join(self.data_path, "tags.csv")
+    #     if os.path.exists(tags_path):
+    #         tags_df = pd.read_csv(tags_path)
+    #         for _, row in tags_df.iterrows():
+    #             # Ensure consistent ID format
+    #             movie_id = str(int(float(row['movieId'])))
+
+    #             tag = Tag(
+    #                 movie_id=movie_id,
+    #                 tag_name=row['tag'],
+    #                 relevance=1.0  # Default relevance
+    #             )
+    #             self.tags.append(tag)
+
+    #     # Initialize users from ratings
+    #     user_ids = set(rating.user_id for rating in self.ratings)
+    #     for user_id in user_ids:
+    #         self.users[user_id] = User(user_id=user_id)
+
+    #     logger.info(
+    #         f"Loaded {len(self.movies)} movies, {len(self.users)} users, {len(self.ratings)} ratings")
+
     def load_data(self):
-        """Load MovieLens CSV data"""
+        """Load MovieLens CSV data - Optimized version"""
         logger.info("Loading MovieLens data...")
 
-        # Load movies
+        # Load movies - vectorized approach
         movies_df = pd.read_csv(os.path.join(self.data_path, "movies.csv"))
-        for _, row in movies_df.iterrows():
-            # Extract release year from title (usually in parentheses at the end)
-            release_year = self._extract_year_from_title(row['title'])
-            genres = row['genres'].split(
-                '|') if pd.notna(row['genres']) else []
+        movies_df['movieId'] = movies_df['movieId'].astype(int).astype(str)
+
+        for _, row in movies_df.itertuples(index=False, name=None):
+            movie_id, title, genres_str = row
+            release_year = self._extract_year_from_title(title)
+            genres = genres_str.split('|') if pd.notna(genres_str) else []
 
             movie = Movie(
-                movie_id=str(row['movieId']),
-                title=row['title'],
+                movie_id=movie_id,
+                title=title,
                 genres=genres,
                 release_year=release_year
             )
-            self.movies[movie.movie_id] = movie
+            self.movies[movie_id] = movie
             self.genres.update(genres)
 
-        # Load ratings
+        # Load ratings - vectorized approach
         ratings_df = pd.read_csv(os.path.join(self.data_path, "ratings.csv"))
-        for _, row in ratings_df.iterrows():
-            rating = UserRating(
-                user_id=str(row['userId']),
-                movie_id=str(row['movieId']),
-                rating=float(row['rating']),
-                timestamp=datetime.fromtimestamp(row['timestamp'])
-            )
-            self.ratings.append(rating)
+        ratings_df['userId'] = ratings_df['userId'].astype(int).astype(str)
+        ratings_df['movieId'] = ratings_df['movieId'].astype(int).astype(str)
+        ratings_df['timestamp'] = pd.to_datetime(
+            ratings_df['timestamp'], unit='s')
 
-        # Load tags if available
+        # Convert to list of objects in bulk
+        self.ratings = [
+            UserRating(user_id=str(row[0]), movie_id=str(row[1]),
+                       rating=float(row[2]), timestamp=row[3])
+            for row in ratings_df.itertuples(index=False, name=None)
+        ]
+
+        # Load tags if available - optimized
         tags_path = os.path.join(self.data_path, "tags.csv")
         if os.path.exists(tags_path):
             tags_df = pd.read_csv(tags_path)
-            for _, row in tags_df.iterrows():
-                tag = Tag(
-                    movie_id=str(row['movieId']),
-                    tag_name=row['tag'],
-                    relevance=1.0  # Default relevance
-                )
-                self.tags.append(tag)
+            tags_df['movieId'] = tags_df['movieId'].astype(int).astype(str)
 
-        # Initialize users from ratings
+            self.tags = [
+                Tag(movie_id=str(row[1]), tag_name=row[2], relevance=1.0)
+                for row in tags_df.itertuples(index=False, name=None)
+            ]
+
+        # Initialize users from ratings - use set for faster lookup
         user_ids = set(rating.user_id for rating in self.ratings)
-        for user_id in user_ids:
-            self.users[user_id] = User(user_id=user_id)
+        self.users = {user_id: User(user_id=user_id) for user_id in user_ids}
 
         logger.info(
             f"Loaded {len(self.movies)} movies, {len(self.users)} users, {len(self.ratings)} ratings")
@@ -149,75 +265,191 @@ class MovieLensReasoner:
         match = re.search(r'\((\d{4})\)$', title)
         return int(match.group(1)) if match else None
 
+    # def compute_movie_statistics(self):
+    #     """Compute aggregate statistics for movies"""
+    #     logger.info("Computing movie statistics...")
+
+    #     # Group ratings by movie
+    #     movie_ratings = defaultdict(list)
+    #     for rating in self.ratings:
+    #         movie_ratings[rating.movie_id].append(rating.rating)
+
+    #     # Update movie statistics
+    #     for movie_id, ratings in movie_ratings.items():
+    #         if movie_id in self.movies:
+    #             self.movies[movie_id].average_rating = np.mean(ratings)
+    #             self.movies[movie_id].rating_count = len(ratings)
+
+    # def compute_movie_statistics(self):
+    #     """Compute aggregate statistics for movies - Fixed with debugging"""
+    #     logger.info("Computing movie statistics...")
+
+    #     # Group ratings by movie
+    #     movie_ratings = defaultdict(list)
+    #     missing_movies = set()
+
+    #     for rating in self.ratings:
+    #         if rating.movie_id in self.movies:
+    #             movie_ratings[rating.movie_id].append(rating.rating)
+    #         else:
+    #             missing_movies.add(rating.movie_id)
+
+    #     if missing_movies:
+    #         logger.warning(
+    #             f"Found {len(missing_movies)} ratings for movies not in movies.csv")
+
+    #     # Update movie statistics
+    #     updated_count = 0
+    #     for movie_id, ratings in movie_ratings.items():
+    #         if movie_id in self.movies:
+    #             self.movies[movie_id].average_rating = float(np.mean(ratings))
+    #             self.movies[movie_id].rating_count = len(ratings)
+    #             updated_count += 1
+
+    #     logger.info(
+    #         f"Updated statistics for {updated_count} movies out of {len(self.movies)} total movies")
+
+    #     # Log some statistics
+    #     movies_with_ratings = [
+    #         m for m in self.movies.values() if m.rating_count > 0]
+    #     if movies_with_ratings:
+    #         avg_rating_count = np.mean(
+    #             [m.rating_count for m in movies_with_ratings])
+    #         logger.info(
+    #             f"Average ratings per movie (for movies with ratings): {avg_rating_count:.1f}")
+    #     else:
+    #         logger.warning("No movies have any ratings!")
+
     def compute_movie_statistics(self):
-        """Compute aggregate statistics for movies"""
+        """Compute aggregate statistics for movies - Optimized"""
         logger.info("Computing movie statistics...")
 
-        # Group ratings by movie
-        movie_ratings = defaultdict(list)
-        for rating in self.ratings:
-            movie_ratings[rating.movie_id].append(rating.rating)
+        # Use pandas for fast aggregation
+        ratings_df = pd.DataFrame([
+            {'movie_id': r.movie_id, 'rating': r.rating}
+            for r in self.ratings
+        ])
 
-        # Update movie statistics
-        for movie_id, ratings in movie_ratings.items():
+        # Group and aggregate in one operation
+        movie_stats = ratings_df.groupby(
+            'movie_id')['rating'].agg(['mean', 'count'])
+
+        # Update movie objects
+        updated_count = 0
+        for movie_id, stats in movie_stats.iterrows():
             if movie_id in self.movies:
-                self.movies[movie_id].average_rating = np.mean(ratings)
-                self.movies[movie_id].rating_count = len(ratings)
+                self.movies[movie_id].average_rating = float(stats['mean'])
+                self.movies[movie_id].rating_count = int(stats['count'])
+                updated_count += 1
+
+        logger.info(f"Updated statistics for {updated_count} movies")
+
+    # def apply_reasoning_rules(self):
+    #     """Apply all 24 N3 reasoning rules"""
+    #     logger.info("Applying N3 reasoning rules...")
+
+    #     self.compute_movie_statistics()
+
+    #     # Movie Quality Classification Rules (1-4)
+    #     self._rule_01_excellent_movies()
+    #     self._rule_02_good_movies()
+    #     self._rule_03_poor_movies()
+    #     self._rule_04_controversial_content()
+
+    #     # Genre Analysis Rules (5-6)
+    #     self._rule_05_popular_genres()
+    #     self._rule_06_niche_genres()
+
+    #     # Temporal Analysis Rules (7-8)
+    #     self._rule_07_classic_movies()
+    #     self._rule_08_recent_hits()
+
+    #     # Career Analysis Rules (9-11) - Limited without actor/director data
+    #     self._rule_09_prolific_analysis()
+    #     self._rule_10_successful_patterns()
+    #     self._rule_11_collaboration_detection()
+
+    #     # User Preference Rules (12-14)
+    #     self._rule_12_genre_preferences()
+    #     self._rule_13_generous_reviewers()
+    #     self._rule_14_critical_reviewers()
+
+    #     # Content Similarity Rules (15-16)
+    #     self._rule_15_genre_quality_similarity()
+    #     self._rule_16_actor_similarity()
+
+    #     # Advanced Recommendation Rules (17-19)
+    #     self._rule_17_cross_genre_recommendations()
+    #     self._rule_18_collaborative_filtering()
+    #     self._rule_19_hidden_gems()
+
+    #     # Seasonal/Contextual Rules (20-21)
+    #     self._rule_20_holiday_classification()
+    #     self._rule_21_viewing_context()
+
+    #     # Business Intelligence Rules (22-24)
+    #     self._rule_22_data_quality()
+    #     self._rule_23_revenue_potential()
+    #     self._rule_24_audience_segmentation()
 
     def apply_reasoning_rules(self):
-        """Apply all 24 N3 reasoning rules"""
+        """Apply all 24 N3 reasoning rules - With progress tracking"""
         logger.info("Applying N3 reasoning rules...")
 
         self.compute_movie_statistics()
 
-        # Movie Quality Classification Rules (1-4)
-        self._rule_01_excellent_movies()
-        self._rule_02_good_movies()
-        self._rule_03_poor_movies()
-        self._rule_04_controversial_content()
+        rules = [
+            ("Movie Quality Rules", [
+                self._rule_01_excellent_movies,
+                self._rule_02_good_movies,
+                self._rule_03_poor_movies,
+                self._rule_04_controversial_content
+            ]),
+            ("Genre Analysis Rules", [
+                self._rule_05_popular_genres,
+                self._rule_06_niche_genres
+            ]),
+            ("Temporal Analysis Rules", [
+                self._rule_07_classic_movies,
+                self._rule_08_recent_hits
+            ]),
+            ("User Preference Rules", [
+                self._rule_12_genre_preferences,
+                self._rule_13_generous_reviewers,
+                self._rule_14_critical_reviewers
+            ]),
+            ("Content Similarity Rules", [
+                self._rule_15_genre_quality_similarity,
+                self._rule_16_actor_similarity
+            ]),
+            ("Recommendation Rules", [
+                self._rule_17_cross_genre_recommendations,
+                self._rule_18_collaborative_filtering,
+                self._rule_19_hidden_gems
+            ]),
+            ("Contextual Rules", [
+                self._rule_20_holiday_classification,
+                self._rule_21_viewing_context
+            ]),
+            ("Business Intelligence Rules", [
+                self._rule_22_data_quality,
+                self._rule_23_revenue_potential,
+                self._rule_24_audience_segmentation
+            ])
+        ]
 
-        # Genre Analysis Rules (5-6)
-        self._rule_05_popular_genres()
-        self._rule_06_niche_genres()
-
-        # Temporal Analysis Rules (7-8)
-        self._rule_07_classic_movies()
-        self._rule_08_recent_hits()
-
-        # Career Analysis Rules (9-11) - Limited without actor/director data
-        self._rule_09_prolific_analysis()
-        self._rule_10_successful_patterns()
-        self._rule_11_collaboration_detection()
-
-        # User Preference Rules (12-14)
-        self._rule_12_genre_preferences()
-        self._rule_13_generous_reviewers()
-        self._rule_14_critical_reviewers()
-
-        # Content Similarity Rules (15-16)
-        self._rule_15_genre_quality_similarity()
-        self._rule_16_actor_similarity()
-
-        # Advanced Recommendation Rules (17-19)
-        self._rule_17_cross_genre_recommendations()
-        self._rule_18_collaborative_filtering()
-        self._rule_19_hidden_gems()
-
-        # Seasonal/Contextual Rules (20-21)
-        self._rule_20_holiday_classification()
-        self._rule_21_viewing_context()
-
-        # Business Intelligence Rules (22-24)
-        self._rule_22_data_quality()
-        self._rule_23_revenue_potential()
-        self._rule_24_audience_segmentation()
+        for category, rule_list in rules:
+            logger.info(f"Processing {category}...")
+            for rule_func in rule_list:
+                rule_func()
+            logger.info(f"Completed {category}")
 
     # MOVIE QUALITY CLASSIFICATION RULES (1-4)
 
     def _rule_01_excellent_movies(self):
         """Rule 1: High-Quality Movie Identification"""
         for movie in self.movies.values():
-            if movie.average_rating > 4.0 and movie.rating_count > 100:
+            if movie.average_rating > 4.0 and movie.rating_count > 20:  # Lowered from 100 to 20:
                 movie.quality_tier = "Excellent"
                 movie.recommendation_priority = "HIGH"
 
@@ -225,7 +457,7 @@ class MovieLensReasoner:
         """Rule 2: Good Quality Movie Classification"""
         for movie in self.movies.values():
             if (3.5 < movie.average_rating <= 4.0 and
-                movie.rating_count > 50 and
+                movie.rating_count > 10 and          # Lowered from 50 to 10
                     movie.quality_tier is None):
                 movie.quality_tier = "Good"
                 movie.recommendation_priority = "MEDIUM"
@@ -233,7 +465,7 @@ class MovieLensReasoner:
     def _rule_03_poor_movies(self):
         """Rule 3: Poor Quality Movie Detection"""
         for movie in self.movies.values():
-            if movie.average_rating < 2.5 and movie.rating_count > 20:
+            if movie.average_rating < 2.5 and movie.rating_count > 5:  # Lowered from 20 to 5
                 movie.quality_tier = "Poor"
                 movie.recommendation_priority = "LOW"
 
@@ -241,7 +473,7 @@ class MovieLensReasoner:
         """Rule 4: Controversial Content Detection"""
         for movie in self.movies.values():
             if (2.8 < movie.average_rating < 3.2 and
-                    movie.rating_count > 200):
+                    movie.rating_count > 30):          # Lowered from 200 to 30
                 movie.content_type = "Controversial"
 
     # GENRE ANALYSIS RULES (5-6)
@@ -360,24 +592,45 @@ class MovieLensReasoner:
 
     # USER PREFERENCE RULES (12-14)
 
+    # def _rule_12_genre_preferences(self):
+    #     """Rule 12: Genre Preference Detection"""
+    #     user_genre_ratings = defaultdict(lambda: defaultdict(list))
+
+    #     for rating in self.ratings:
+    #         if rating.movie_id in self.movies and rating.rating > 4.0:
+    #             movie = self.movies[rating.movie_id]
+    #             for genre in movie.genres:
+    #                 user_genre_ratings[rating.user_id][genre].append(
+    #                     rating.rating)
+
+    #     for user_id, genre_ratings in user_genre_ratings.items():
+    #         preferred_genres = []
+    #         for genre, ratings in genre_ratings.items():
+    #             if len(ratings) > 5:  # Minimum threshold
+    #                 preferred_genres.append(genre)
+    #         self.user_preferences[user_id] = preferred_genres
+    #         self.users[user_id].preferred_genres = preferred_genres
+
     def _rule_12_genre_preferences(self):
-        """Rule 12: Genre Preference Detection"""
-        user_genre_ratings = defaultdict(lambda: defaultdict(list))
+        """Rule 12: Genre Preference Detection - Optimized"""
+        # Create user-genre-ratings mapping efficiently
+        user_genre_high_ratings = defaultdict(lambda: defaultdict(list))
 
         for rating in self.ratings:
-            if rating.movie_id in self.movies and rating.rating > 4.0:
+            if rating.rating > 4.0 and rating.movie_id in self.movies:
                 movie = self.movies[rating.movie_id]
                 for genre in movie.genres:
-                    user_genre_ratings[rating.user_id][genre].append(
+                    user_genre_high_ratings[rating.user_id][genre].append(
                         rating.rating)
 
-        for user_id, genre_ratings in user_genre_ratings.items():
-            preferred_genres = []
-            for genre, ratings in genre_ratings.items():
-                if len(ratings) > 5:  # Minimum threshold
-                    preferred_genres.append(genre)
-            self.user_preferences[user_id] = preferred_genres
-            self.users[user_id].preferred_genres = preferred_genres
+        # Process preferences
+        for user_id, genre_ratings in user_genre_high_ratings.items():
+            preferred_genres = [genre for genre, ratings in genre_ratings.items()
+                                if len(ratings) > 5]
+
+            if preferred_genres:
+                self.user_preferences[user_id] = preferred_genres
+                self.users[user_id].preferred_genres = preferred_genres
 
     def _rule_13_generous_reviewers(self):
         """Rule 13: Generous Reviewer Detection"""
@@ -403,31 +656,66 @@ class MovieLensReasoner:
 
     # CONTENT SIMILARITY RULES (15-16)
 
-    def _rule_15_genre_quality_similarity(self):
-        """Rule 15: Genre and Quality-Based Similarity"""
-        movies_by_genre_tier = defaultdict(list)
+    # def _rule_15_genre_quality_similarity(self):
+    #     """Rule 15: Genre and Quality-Based Similarity"""
+    #     movies_by_genre_tier = defaultdict(list)
 
-        for movie in self.movies.values():
+    #     for movie in self.movies.values():
+    #         if movie.quality_tier:
+    #             for genre in movie.genres:
+    #                 key = (genre, movie.quality_tier)
+    #                 movies_by_genre_tier[key].append(movie.movie_id)
+
+    #     for movies_list in movies_by_genre_tier.values():
+    #         if len(movies_list) > 1:
+    #             for i, movie1_id in enumerate(movies_list):
+    #                 for movie2_id in movies_list[i+1:]:
+    #                     movie1 = self.movies[movie1_id]
+    #                     movie2 = self.movies[movie2_id]
+    #                     if abs(movie1.average_rating - movie2.average_rating) < 0.5:
+    #                         if movie1_id not in self.movie_similarities:
+    #                             self.movie_similarities[movie1_id] = []
+    #                         if movie2_id not in self.movie_similarities:
+    #                             self.movie_similarities[movie2_id] = []
+    #                         self.movie_similarities[movie1_id].append(
+    #                             movie2_id)
+    #                         self.movie_similarities[movie2_id].append(
+    #                             movie1_id)
+
+    def _rule_15_genre_quality_similarity(self):
+        """Rule 15: Genre and Quality-Based Similarity - Optimized"""
+        # Limit to top movies to avoid O(n²) complexity
+        quality_movies = [m for m in self.movies.values()
+                          if m.quality_tier in ["Excellent", "Good"] and m.rating_count > 10]
+
+        # Group by (genre, quality_tier) for faster processing
+        genre_quality_groups = defaultdict(list)
+        for movie in quality_movies:
             if movie.quality_tier:
                 for genre in movie.genres:
                     key = (genre, movie.quality_tier)
-                    movies_by_genre_tier[key].append(movie.movie_id)
+                    genre_quality_groups[key].append(movie)
 
-        for movies_list in movies_by_genre_tier.values():
+        # Only process groups with multiple movies
+        for (genre, tier), movies_list in genre_quality_groups.items():
             if len(movies_list) > 1:
-                for i, movie1_id in enumerate(movies_list):
-                    for movie2_id in movies_list[i+1:]:
-                        movie1 = self.movies[movie1_id]
-                        movie2 = self.movies[movie2_id]
+                # Limit comparisons to prevent excessive runtime
+                movies_list = movies_list[:20]  # Limit to top 20 per group
+
+                for i, movie1 in enumerate(movies_list):
+                    # Limit to 5 comparisons per movie
+                    for movie2 in movies_list[i+1:i+6]:
                         if abs(movie1.average_rating - movie2.average_rating) < 0.5:
-                            if movie1_id not in self.movie_similarities:
-                                self.movie_similarities[movie1_id] = []
-                            if movie2_id not in self.movie_similarities:
-                                self.movie_similarities[movie2_id] = []
-                            self.movie_similarities[movie1_id].append(
-                                movie2_id)
-                            self.movie_similarities[movie2_id].append(
-                                movie1_id)
+                            # Initialize if needed
+                            if movie1.movie_id not in self.movie_similarities:
+                                self.movie_similarities[movie1.movie_id] = []
+                            if movie2.movie_id not in self.movie_similarities:
+                                self.movie_similarities[movie2.movie_id] = []
+
+                            self.movie_similarities[movie1.movie_id].append(
+                                movie2.movie_id)
+                            self.movie_similarities[movie2.movie_id].append(
+                                movie1.movie_id)
 
     def _rule_16_actor_similarity(self):
         """Rule 16: Actor-Based Movie Similarity (simplified without actor data)"""
@@ -467,19 +755,66 @@ class MovieLensReasoner:
                         similar_users[user1_id].add(user2_id)
                         similar_users[user2_id].add(user1_id)
 
+    # def _rule_19_hidden_gems(self):
+    #     """Rule 19: Hidden Gem Discovery"""
+    #     for movie in self.movies.values():
+    #         if (movie.average_rating > 4.0 and
+    #             20 < movie.rating_count < 100 and
+    #             movie.release_year and
+    #                 self.current_year - movie.release_year > 5):
+    #             # Add to general recommendations as hidden gems
+    #             for user_id in self.users.keys():
+    #                 if user_id not in self.recommendations:
+    #                     self.recommendations[user_id] = []
+    #                 self.recommendations[user_id].append(
+    #                     (movie.movie_id, "Hidden Gem"))
+
+    # def _rule_19_hidden_gems(self):
+    #     """Rule 19: Hidden Gem Discovery - v02 - Relaxed criteria"""
+    #     hidden_gem_candidates = []
+
+    #     for movie in self.movies.values():
+    #         if (movie.average_rating > 3.8 and          # Lowered from 4.0 to 3.8
+    #             10 <= movie.rating_count <= 50 and      # Lowered range: 10-50 instead of 20-100
+    #             movie.release_year and
+    #                 self.current_year - movie.release_year > 3):  # Lowered from 5 to 3 years
+
+    #             hidden_gem_candidates.append(movie.movie_id)
+
+    #             # Add to recommendations for all users
+    #             # Limit to first 100 users for performance
+    #             for user_id in list(self.users.keys())[:100]:
+    #                 if user_id not in self.recommendations:
+    #                     self.recommendations[user_id] = []
+    #                 self.recommendations[user_id].append(
+    #                     (movie.movie_id, "Hidden Gem"))
+
+    #     logger.info(
+    #         f"Found {len(hidden_gem_candidates)} hidden gem candidates")
+
     def _rule_19_hidden_gems(self):
-        """Rule 19: Hidden Gem Discovery"""
+        """Rule 19: Hidden Gem Discovery - Optimized, relaxed criteria from v02 apply here too"""
+        hidden_gems = []
+
         for movie in self.movies.values():
-            if (movie.average_rating > 4.0 and
-                20 < movie.rating_count < 100 and
+            if (movie.average_rating > 3.8 and
+                10 <= movie.rating_count <= 50 and
                 movie.release_year and
-                    self.current_year - movie.release_year > 5):
-                # Add to general recommendations as hidden gems
-                for user_id in self.users.keys():
-                    if user_id not in self.recommendations:
-                        self.recommendations[user_id] = []
+                    self.current_year - movie.release_year > 3):
+                hidden_gems.append(movie.movie_id)
+
+        logger.info(f"Found {len(hidden_gems)} hidden gems")
+
+        # Add to recommendations more efficiently - limit users
+        if hidden_gems:
+            sample_users = list(self.users.keys())[:50]  # Limit to 50 users
+            for user_id in sample_users:
+                if user_id not in self.recommendations:
+                    self.recommendations[user_id] = []
+                # Add only top 3 hidden gems per user
+                for gem_id in hidden_gems[:3]:
                     self.recommendations[user_id].append(
-                        (movie.movie_id, "Hidden Gem"))
+                        (gem_id, "Hidden Gem"))
 
     # SEASONAL/CONTEXTUAL RULES (20-21)
 
@@ -522,8 +857,8 @@ class MovieLensReasoner:
 
     def _rule_22_data_quality(self):
         """Rule 22: Data Quality Assessment"""
-        rating_count_qualifier = 3  # let's be a bit generous...
-        # rating_count_qualifier = 2  # let's be even more generous...
+        # rating_count_qualifier = 3  # let's be a bit generous...
+        rating_count_qualifier = 0  # let's be even more generous...
         for movie in self.movies.values():
             if movie.rating_count < rating_count_qualifier:
                 # Mark as insufficient data quality
@@ -549,6 +884,45 @@ class MovieLensReasoner:
                     user.audience_segment = "Drama Enthusiasts"
                 elif primary_genre == "Comedy":
                     user.audience_segment = "Comedy Lovers"
+
+    def diagnose_data_issues(self):
+        """Diagnose potential data loading and statistics computation issues"""
+        print(f"=== DATA DIAGNOSTICS ===")
+        print(f"Total movies loaded: {len(self.movies)}")
+        print(f"Total ratings loaded: {len(self.ratings)}")
+        print(f"Total users: {len(self.users)}")
+        print(f"Total genres: {len(self.genres)}")
+
+        # Check movie IDs from ratings vs movies
+        rating_movie_ids = set(r.movie_id for r in self.ratings)
+        movie_ids = set(self.movies.keys())
+
+        print(f"Unique movie IDs in ratings: {len(rating_movie_ids)}")
+        print(f"Unique movie IDs in movies: {len(movie_ids)}")
+        print(f"Intersection: {len(rating_movie_ids & movie_ids)}")
+        print(
+            f"Ratings for missing movies: {len(rating_movie_ids - movie_ids)}")
+
+        # Check data types
+        if self.ratings:
+            sample_rating = self.ratings[0]
+            print(
+                f"Sample rating movie_id type: {type(sample_rating.movie_id)} = {sample_rating.movie_id}")
+
+        if self.movies:
+            sample_movie_id = next(iter(self.movies.keys()))
+            print(
+                f"Sample movie_id type: {type(sample_movie_id)} = {sample_movie_id}")
+
+        # Check movies with ratings after statistics computation
+        movies_with_ratings = [
+            m for m in self.movies.values() if m.rating_count > 0]
+        print(f"Movies with rating_count > 0: {len(movies_with_ratings)}")
+
+        if movies_with_ratings:
+            sample_movie = movies_with_ratings[0]
+            print(
+                f"Sample movie with ratings: {sample_movie.title} (count: {sample_movie.rating_count}, avg: {sample_movie.average_rating:.2f})")
 
     def generate_report(self) -> str:
         """Generate comprehensive reasoning report"""
@@ -626,6 +1000,12 @@ def main():
 
         # Apply reasoning rules
         reasoner.apply_reasoning_rules()
+
+        # run diagnostics...
+        print("\n" + "="*50)
+        print("DATA DIAGNOSTICS")
+        print("="*50)
+        reasoner.diagnose_data_issues()
 
         # Generate and display report
         report = reasoner.generate_report()

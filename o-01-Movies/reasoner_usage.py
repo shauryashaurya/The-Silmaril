@@ -1,6 +1,5 @@
 # Usage example and extended functionality for the MovieLens N3 Ontology Reasoner
 
-
 import json
 import pandas as pd
 from movielens_reasoner import MovieLensReasoner, Movie, User
@@ -138,21 +137,59 @@ class MovieLensAnalyzer:
 
         return recommendations
 
+    # def analyze_genre_trends(self) -> pd.DataFrame:
+    #     """Analyze genre trends and popularity"""
+    #     genre_data = []
+
+    #     for genre in self.reasoner.genres:
+    #         if genre == "(no genres listed)":
+    #             continue
+
+    #         genre_movies = [
+    #             m for m in self.reasoner.movies.values() if genre in m.genres]
+
+    #         if genre_movies:
+    #             total_ratings = sum(m.rating_count for m in genre_movies)
+    #             avg_rating = sum(
+    #                 m.average_rating * m.rating_count for m in genre_movies) / max(total_ratings, 1)
+    #             movie_count = len(genre_movies)
+
+    #             # Calculate era distribution
+    #             classic_count = sum(
+    #                 1 for m in genre_movies if m.movie_era == "Classic")
+    #             contemporary_count = sum(
+    #                 1 for m in genre_movies if m.movie_era == "Contemporary Hit")
+
+    #             genre_data.append({
+    #                 "genre": genre,
+    #                 "movie_count": movie_count,
+    #                 "total_ratings": total_ratings,
+    #                 "average_rating": avg_rating,
+    #                 "classic_movies": classic_count,
+    #                 "contemporary_hits": contemporary_count,
+    #                 "popularity_level": self.reasoner.genre_stats.get(genre, {}).get("popularity_level", "MEDIUM"),
+    #                 "market_appeal": self.reasoner.genre_stats.get(genre, {}).get("market_appeal", "Standard")
+    #             })
+
+    #     return pd.DataFrame(genre_data).sort_values("total_ratings", ascending=False)
+
     def analyze_genre_trends(self) -> pd.DataFrame:
-        """Analyze genre trends and popularity"""
+        """Analyze genre trends and popularity - Fixed with empty data handling"""
         genre_data = []
 
         for genre in self.reasoner.genres:
             if genre == "(no genres listed)":
                 continue
 
-            genre_movies = [
-                m for m in self.reasoner.movies.values() if genre in m.genres]
+            genre_movies = [m for m in self.reasoner.movies.values()
+                            if genre in m.genres and m.rating_count > 0]
 
             if genre_movies:
                 total_ratings = sum(m.rating_count for m in genre_movies)
-                avg_rating = sum(
-                    m.average_rating * m.rating_count for m in genre_movies) / max(total_ratings, 1)
+                # Weighted average calculation
+                total_weighted_rating = sum(
+                    m.average_rating * m.rating_count for m in genre_movies)
+                avg_rating = total_weighted_rating / total_ratings if total_ratings > 0 else 0
                 movie_count = len(genre_movies)
 
                 # Calculate era distribution
@@ -161,27 +198,51 @@ class MovieLensAnalyzer:
                 contemporary_count = sum(
                     1 for m in genre_movies if m.movie_era == "Contemporary Hit")
 
+                # Get stats from reasoner
+                genre_stats = self.reasoner.genre_stats.get(genre, {})
+
                 genre_data.append({
                     "genre": genre,
                     "movie_count": movie_count,
                     "total_ratings": total_ratings,
-                    "average_rating": avg_rating,
+                    "average_rating": round(avg_rating, 2),
                     "classic_movies": classic_count,
                     "contemporary_hits": contemporary_count,
-                    "popularity_level": self.reasoner.genre_stats.get(genre, {}).get("popularity_level", "MEDIUM"),
-                    "market_appeal": self.reasoner.genre_stats.get(genre, {}).get("market_appeal", "Standard")
+                    "popularity_level": genre_stats.get("popularity_level", "MEDIUM"),
+                    "market_appeal": genre_stats.get("market_appeal", "Standard")
                 })
+
+        # Handle empty data case
+        if not genre_data:
+            # Return empty DataFrame with proper columns
+            return pd.DataFrame(columns=[
+                "genre", "movie_count", "total_ratings", "average_rating",
+                "classic_movies", "contemporary_hits", "popularity_level", "market_appeal"
+            ])
 
         return pd.DataFrame(genre_data).sort_values("total_ratings", ascending=False)
 
-    def find_hidden_gems(self, min_rating: float = 4.0, max_ratings: int = 100) -> List[Tuple[str, float, int]]:
-        """Find hidden gem movies based on criteria"""
+    # def find_hidden_gems(self, min_rating: float = 4.0, max_ratings: int = 100) -> List[Tuple[str, float, int]]:
+    #     """Find hidden gem movies based on criteria"""
+    #     hidden_gems = []
+
+    #     for movie in self.reasoner.movies.values():
+    #         if (movie.average_rating >= min_rating and
+    #             20 <= movie.rating_count <= max_ratings and
+    #                 movie.quality_tier != "Insufficient Data"):
+    #             hidden_gems.append(
+    #                 (movie.title, movie.average_rating, movie.rating_count))
+
+    #     return sorted(hidden_gems, key=lambda x: x[1], reverse=True)
+
+    def find_hidden_gems(self, min_rating: float = 3.8, max_ratings: int = 50) -> List[Tuple[str, float, int]]:
+        """Find hidden gem movies based on slight relaxed criteria due to smaller dataset"""
         hidden_gems = []
 
         for movie in self.reasoner.movies.values():
             if (movie.average_rating >= min_rating and
-                20 <= movie.rating_count <= max_ratings and
-                    movie.quality_tier != "Insufficient Data"):
+                10 <= movie.rating_count <= max_ratings and  # Lowered minimum from 20 to 10
+                    movie.quality_tier not in ["Insufficient Data", "Poor"]):
                 hidden_gems.append(
                     (movie.title, movie.average_rating, movie.rating_count))
 
