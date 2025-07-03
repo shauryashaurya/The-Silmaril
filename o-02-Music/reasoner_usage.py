@@ -121,10 +121,17 @@ class MusicAnalytics:
                 (total_artists - 1) // 2
             actual_collaborations = sum(
                 len(partners) for partners in self.reasoner.collaboration_network.values()) // 2
-            collaboration_stats['collaboration_network_density'] = actual_collaborations / \
-                max_possible_collaborations
-            collaboration_stats['average_collaborations_per_artist'] = (
-                actual_collaborations * 2) / total_artists
+            if max_possible_collaborations > 0:
+                collaboration_stats['collaboration_network_density'] = actual_collaborations / \
+                    max_possible_collaborations
+                collaboration_stats['average_collaborations_per_artist'] = (
+                    actual_collaborations * 2) / total_artists
+            else:
+                collaboration_stats['collaboration_network_density'] = 0.0
+                collaboration_stats['average_collaborations_per_artist'] = 0.0
+        else:
+            collaboration_stats['collaboration_network_density'] = 0.0
+            collaboration_stats['average_collaborations_per_artist'] = 0.0
 
         return collaboration_stats
 
@@ -301,6 +308,9 @@ class MusicAnalytics:
                 len(self.reasoner.albums)
             album_stats['average_album_duration_minutes'] = (
                 total_duration // 60) / len(self.reasoner.albums)
+        else:
+            album_stats['average_tracks_per_album'] = 0.0
+            album_stats['average_album_duration_minutes'] = 0.0
 
         album_stats['collaborative_albums'] = collaborative_albums
         album_stats['genre_inheritance_success'] = albums_with_inherited_genres
@@ -348,6 +358,8 @@ class MusicAnalytics:
         if len(self.reasoner.record_labels) > 0:
             label_stats['average_artists_per_label'] = total_signed_artists / \
                 len(self.reasoner.record_labels)
+        else:
+            label_stats['average_artists_per_label'] = 0.0
 
         # Label size distribution
         size_distribution = Counter()
@@ -461,8 +473,13 @@ class MusicAnalytics:
         total_artists = len(self.reasoner.artists)
         if total_artists > 1:
             max_possible_influences = total_artists * (total_artists - 1)
-            influence_stats['influence_network_density'] = total_influences / \
-                max_possible_influences
+            if max_possible_influences > 0:
+                influence_stats['influence_network_density'] = total_influences / \
+                    max_possible_influences
+            else:
+                influence_stats['influence_network_density'] = 0.0
+        else:
+            influence_stats['influence_network_density'] = 0.0
 
         return influence_stats
 
@@ -542,12 +559,14 @@ class MusicAnalytics:
         unsigned_artists = sum(
             1 for artist in self.reasoner.artists.values() if not artist.label_id)
 
+        total_entities = len(self.reasoner.songs) + len(self.reasoner.albums)
+        orphaned_entities = orphaned_songs + orphaned_albums
+
         quality_metrics['relationship_integrity'] = {
             'orphaned_songs': orphaned_songs,
             'orphaned_albums': orphaned_albums,
             'unsigned_artists': unsigned_artists,
-            'relationship_completeness_score': ((len(self.reasoner.songs) + len(self.reasoner.albums) - orphaned_songs - orphaned_albums) /
-                                                (len(self.reasoner.songs) + len(self.reasoner.albums))) * 100 if (self.reasoner.songs or self.reasoner.albums) else 0
+            'relationship_completeness_score': ((total_entities - orphaned_entities) / total_entities) * 100 if total_entities > 0 else 100
         }
 
         return quality_metrics
@@ -612,8 +631,10 @@ class MusicAnalytics:
         label_insights = []
         for label in self.reasoner.record_labels.values():
             if label.signed_artists:
-                avg_artist_popularity = sum(self.reasoner.artists[aid].popularity_score
-                                            for aid in label.signed_artists if aid in self.reasoner.artists) / len(label.signed_artists)
+                signed_artist_scores = [self.reasoner.artists[aid].popularity_score
+                                        for aid in label.signed_artists if aid in self.reasoner.artists]
+                avg_artist_popularity = sum(
+                    signed_artist_scores) / len(signed_artist_scores) if signed_artist_scores else 0
 
                 label_insights.append({
                     'label_name': label.label_name,
@@ -631,11 +652,13 @@ class MusicAnalytics:
         development_recommendations = []
         for artist in self.reasoner.artists.values():
             if not artist.is_established and artist.popularity_score > 0:
+                potential_score = artist.popularity_score + \
+                    len(artist.collaboration_partners)
                 development_recommendations.append({
                     'artist_name': artist.name,
                     'current_stage': 'developing' if artist.album_count >= 1 else 'emerging',
                     'recommendation': self._get_artist_recommendation(artist),
-                    'potential_score': artist.popularity_score + len(artist.collaboration_partners)
+                    'potential_score': potential_score
                 })
 
         development_recommendations.sort(
@@ -829,16 +852,22 @@ class MusicAnalytics:
             f"- **{overview['reasoning_results']['established_artists']} established artists** with multiple albums and awards\n")
         md.append(
             f"- **{overview['reasoning_results']['successful_labels']} successful record labels** with award-winning artists\n")
+
+        # Safely calculate and display collaboration network density
+        collab_density = stats['collaboration_analysis'].get(
+            'collaboration_network_density', 0.0)
         md.append(
-            f"- **{stats['collaboration_analysis']['collaboration_network_density']:.4f}** collaboration network density\n\n")
+            f"- **{collab_density:.4f}** collaboration network density\n\n")
 
         # Collaboration Analysis
         md.append("## Collaboration Analysis\n")
         collab_stats = stats['collaboration_analysis']
         md.append(
             f"The music industry shows **{collab_stats['total_collaborative_songs']} collaborative songs** ")
+        avg_collabs = collab_stats.get(
+            'average_collaborations_per_artist', 0.0)
         md.append(
-            f"with an average of **{collab_stats['average_collaborations_per_artist']:.1f} collaborations per artist**.\n\n")
+            f"with an average of **{avg_collabs:.1f} collaborations per artist**.\n\n")
 
         if collab_stats['most_collaborative_artists']:
             md.append("### Most Collaborative Artists\n")
@@ -871,8 +900,10 @@ class MusicAnalytics:
         artist_stats = stats['artist_analysis']
         md.append(
             f"The dataset includes **{artist_stats['total_artists']} artists** ")
+        established_percentage = (
+            artist_stats['established_artists'] / artist_stats['total_artists'] * 100) if artist_stats['total_artists'] > 0 else 0
         md.append(
-            f"with **{artist_stats['established_artists']} ({(artist_stats['established_artists']/artist_stats['total_artists']*100):.1f}%) established artists**.\n\n")
+            f"with **{artist_stats['established_artists']} ({established_percentage:.1f}%) established artists**.\n\n")
 
         # Career stage distribution
         stages = artist_stats['artist_career_stages']
@@ -905,11 +936,11 @@ class MusicAnalytics:
         # Album Analysis
         md.append("## Album Analysis\n")
         album_stats = stats['album_analysis']
+        avg_tracks = album_stats.get('average_tracks_per_album', 0.0)
+        avg_duration = album_stats.get('average_album_duration_minutes', 0.0)
         md.append(f"Analysis covers **{album_stats['total_albums']} albums** ")
-        md.append(
-            f"with an average of **{album_stats.get('average_tracks_per_album', 0):.1f} tracks per album** ")
-        md.append(
-            f"and **{album_stats.get('average_album_duration_minutes', 0):.1f} minutes average duration**.\n\n")
+        md.append(f"with an average of **{avg_tracks:.1f} tracks per album** ")
+        md.append(f"and **{avg_duration:.1f} minutes average duration**.\n\n")
 
         # Release timeline
         if album_stats['albums_by_decade']:
@@ -925,8 +956,10 @@ class MusicAnalytics:
         label_stats = stats['label_analysis']
         md.append(
             f"The industry analysis covers **{label_stats['total_labels']} record labels** ")
+        successful_percentage = (
+            label_stats['successful_labels'] / label_stats['total_labels'] * 100) if label_stats['total_labels'] > 0 else 0
         md.append(
-            f"with **{label_stats['successful_labels']} ({(label_stats['successful_labels']/label_stats['total_labels']*100):.1f}%) successful labels**.\n\n")
+            f"with **{label_stats['successful_labels']} ({successful_percentage:.1f}%) successful labels**.\n\n")
 
         if label_stats['top_labels_by_success_rating']:
             md.append("### Top Record Labels by Success Rating\n")
@@ -1016,7 +1049,7 @@ class MusicAnalytics:
 
         md.append("---\n")
         md.append(
-            "*This report was generated using N3 ontology reasoning on music industry data.*")
+            "...")
 
         return "".join(md)
 
@@ -1033,7 +1066,7 @@ class MusicReasonerUsage:
         self.reasoner = MusicReasonerEngine()
         self.analytics = None
 
-    def run_complete_analysis(self, output_dir: str = "./output") -> Dict[str, Any]:
+    def run_complete_analysis(self, output_dir: str = "./") -> Dict[str, Any]:
         """
         Run complete music industry analysis pipeline.
         Loads data, applies reasoning, generates reports, and returns summary statistics.
@@ -1108,7 +1141,7 @@ def main():
     usage = MusicReasonerUsage(data_directory="./data")
 
     # Run complete analysis
-    result = usage.run_complete_analysis(output_dir="./output")
+    result = usage.run_complete_analysis(output_dir="./")
 
     if result['status'] == 'success':
         print("Analysis completed successfully!")
