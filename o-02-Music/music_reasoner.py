@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Music Ontology Reasoner - Corrected Relationship Computation Order
 A comprehensive N3 ontology reasoning system for music industry data.

@@ -500,7 +500,7 @@ class MovieLensAnalyzer:
         lines.extend([
             "---",
             "",
-            "## 🎬 Sample Personalized Recommendations",
+            "## Sample Personalized Recommendations",
             ""
         ])
 

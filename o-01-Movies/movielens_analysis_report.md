@@ -166,7 +166,7 @@ High-quality movies with limited exposure that deserve more attention:
 
 ---
 
-## 🎬 Sample Personalized Recommendations
+## Sample Personalized Recommendations
 
 ### User 77
 

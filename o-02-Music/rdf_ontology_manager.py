@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 RDF Ontology Manager for Music Industry Data
 Converts reasoning results to RDF graphs and exports in multiple formats.

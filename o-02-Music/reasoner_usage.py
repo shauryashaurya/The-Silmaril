@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Music Ontology Reasoner Usage Analytics
 Provides comprehensive analytics, reporting, and business intelligence
