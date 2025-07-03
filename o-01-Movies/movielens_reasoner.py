@@ -206,14 +206,14 @@ class MovieLensReasoner:
     #         f"Loaded {len(self.movies)} movies, {len(self.users)} users, {len(self.ratings)} ratings")
 
     def load_data(self):
-        """Load MovieLens CSV data - Optimized version"""
+        """Load MovieLens CSV data - optimized"""
         logger.info("Loading MovieLens data...")
 
-        # Load movies - vectorized approach
+        # Load movies - fixed tuple unpacking
         movies_df = pd.read_csv(os.path.join(self.data_path, "movies.csv"))
         movies_df['movieId'] = movies_df['movieId'].astype(int).astype(str)
 
-        for _, row in movies_df.itertuples(index=False, name=None):
+        for row in movies_df.itertuples(index=False, name=None):
             movie_id, title, genres_str = row
             release_year = self._extract_year_from_title(title)
             genres = genres_str.split('|') if pd.notna(genres_str) else []
@@ -227,7 +227,7 @@ class MovieLensReasoner:
             self.movies[movie_id] = movie
             self.genres.update(genres)
 
-        # Load ratings - vectorized approach
+        # Load ratings - fixed tuple unpacking
         ratings_df = pd.read_csv(os.path.join(self.data_path, "ratings.csv"))
         ratings_df['userId'] = ratings_df['userId'].astype(int).astype(str)
         ratings_df['movieId'] = ratings_df['movieId'].astype(int).astype(str)
@@ -236,19 +236,19 @@ class MovieLensReasoner:
 
         # Convert to list of objects in bulk
         self.ratings = [
-            UserRating(user_id=str(row[0]), movie_id=str(row[1]),
+            UserRating(user_id=row[0], movie_id=row[1],
                        rating=float(row[2]), timestamp=row[3])
             for row in ratings_df.itertuples(index=False, name=None)
         ]
 
-        # Load tags if available - optimized
+        # Load tags if available - fixed tuple unpacking
         tags_path = os.path.join(self.data_path, "tags.csv")
         if os.path.exists(tags_path):
             tags_df = pd.read_csv(tags_path)
             tags_df['movieId'] = tags_df['movieId'].astype(int).astype(str)
 
             self.tags = [
-                Tag(movie_id=str(row[1]), tag_name=row[2], relevance=1.0)
+                Tag(movie_id=row[1], tag_name=row[2], relevance=1.0)
                 for row in tags_df.itertuples(index=False, name=None)
             ]
 
@@ -491,27 +491,56 @@ class MovieLensReasoner:
     #                 'popularity_level': 'HIGH',
     #                 'market_appeal': 'Mainstream'
     #             }
+    # def _rule_05_popular_genres(self):
+    #     """Rule 5: Popular Genre Identification - changing the calculation"""
+    #     genre_ratings = defaultdict(int)
+    #     genre_movies = defaultdict(int)
+    #     # down from 5000, because it's a small dataset and we are generous minded ppl
+    #     rating_count_qulifier = 1000
+    #     for movie in self.movies.values():
+    #         if movie.rating_count > 0:  # Only count movies with ratings
+    #             for genre in movie.genres:
+    #                 if genre != "(no genres listed)":
+    #                     genre_ratings[genre] += movie.rating_count
+    #                     genre_movies[genre] += 1
+
+    #     for genre, total_ratings in genre_ratings.items():
+    #         if total_ratings > rating_count_qulifier:
+    #             self.genre_stats[genre] = {
+    #                 'popularity_level': 'HIGH',
+    #                 'market_appeal': 'Mainstream',
+    #                 'total_ratings': total_ratings,
+    #                 'movie_count': genre_movies[genre]
+    #             }
+
     def _rule_05_popular_genres(self):
-        """Rule 5: Popular Genre Identification - changing the calculation"""
+        """Rule 5: Popular Genre Identification - Calibrated thresholds"""
         genre_ratings = defaultdict(int)
         genre_movies = defaultdict(int)
-        # down from 5000, because it's a small dataset and we are generous minded ppl
-        rating_count_qulifier = 100
+
         for movie in self.movies.values():
-            if movie.rating_count > 0:  # Only count movies with ratings
+            if movie.rating_count > 0:
                 for genre in movie.genres:
                     if genre != "(no genres listed)":
                         genre_ratings[genre] += movie.rating_count
                         genre_movies[genre] += 1
 
-        for genre, total_ratings in genre_ratings.items():
-            if total_ratings > rating_count_qulifier:
-                self.genre_stats[genre] = {
-                    'popularity_level': 'HIGH',
-                    'market_appeal': 'Mainstream',
-                    'total_ratings': total_ratings,
-                    'movie_count': genre_movies[genre]
-                }
+        # Calculate dataset-relative thresholds
+        if genre_ratings:
+            total_ratings = sum(genre_ratings.values())
+            avg_ratings_per_genre = total_ratings / len(genre_ratings)
+
+            # Top 30% of genres by ratings = mainstream
+            mainstream_threshold = avg_ratings_per_genre * 1.5
+
+            for genre, total_ratings in genre_ratings.items():
+                if total_ratings > mainstream_threshold:
+                    self.genre_stats[genre] = {
+                        'popularity_level': 'HIGH',
+                        'market_appeal': 'Mainstream',
+                        'total_ratings': total_ratings,
+                        'movie_count': genre_movies[genre]
+                    }
 
     # def _rule_06_niche_genres(self):
     #     """Rule 6: Niche Genre Classification"""
@@ -528,30 +557,93 @@ class MovieLensReasoner:
     #                 'popularity_level': 'NICHE',
     #                 'market_appeal': 'Cult Following'
     #             }
+
+    # def _rule_06_niche_genres(self):
+    #     """Rule 6: Niche Genre Classification - v02, as earlier did not return anything meaningful"""
+    #     genre_data = defaultdict(list)
+    #     genre_movies = defaultdict(int)
+    #     rating_count_qulifier = 2
+
+    #     for movie in self.movies.values():
+    #         if movie.average_rating > 0 and movie.rating_count >= rating_count_qulifier:  # Has sufficient ratings
+    #             for genre in movie.genres:
+    #                 if genre != "(no genres listed)":
+    #                     genre_data[genre].append(movie.average_rating)
+    #                     genre_movies[genre] += 1
+
+    #     for genre, ratings in genre_data.items():
+    #         if (5 <= len(ratings) <= 15 and  # Adjusted range: 5-15 movies instead of <20
+    #                 np.mean(ratings) > 3.6):      # Lowered from 3.8 to 3.6, because 3.5 is like mid bro...
+    #             if genre not in self.genre_stats:
+    #                 self.genre_stats[genre] = {}
+    #             self.genre_stats[genre].update({
+    #                 'popularity_level': 'NICHE',
+    #                 'market_appeal': 'Cult Following',
+    #                 'movie_count': len(ratings),
+    #                 'average_rating': np.mean(ratings)
+    #             })
+
     def _rule_06_niche_genres(self):
-        """Rule 6: Niche Genre Classification - v02, as earlier did not return anything meaningful"""
+        """Rule 6: Niche Genre Classification - Independent of popularity"""
         genre_data = defaultdict(list)
         genre_movies = defaultdict(int)
-        rating_count_qulifier = 2
+        genre_ratings = defaultdict(int)
 
         for movie in self.movies.values():
-            if movie.average_rating > 0 and movie.rating_count >= rating_count_qulifier:  # Has sufficient ratings
+            if movie.average_rating > 0 and movie.rating_count >= 3:
                 for genre in movie.genres:
                     if genre != "(no genres listed)":
                         genre_data[genre].append(movie.average_rating)
                         genre_movies[genre] += 1
+                        genre_ratings[genre] += movie.rating_count
 
-        for genre, ratings in genre_data.items():
-            if (5 <= len(ratings) <= 15 and  # Adjusted range: 5-15 movies instead of <20
-                    np.mean(ratings) > 3.6):      # Lowered from 3.8 to 3.6, because 3.5 is like mid bro...
-                if genre not in self.genre_stats:
-                    self.genre_stats[genre] = {}
-                self.genre_stats[genre].update({
-                    'popularity_level': 'NICHE',
-                    'market_appeal': 'Cult Following',
-                    'movie_count': len(ratings),
-                    'average_rating': np.mean(ratings)
-                })
+        # Calculate dataset-relative thresholds for niche detection
+        if genre_movies:
+            movie_counts = list(genre_movies.values())
+            median_movie_count = sorted(movie_counts)[len(movie_counts)//2]
+
+            for genre, ratings in genre_data.items():
+                movie_count = len(ratings)
+                avg_rating = sum(ratings) / len(ratings)
+
+                # Niche criteria: Below median movie count BUT high quality
+                if (movie_count <= median_movie_count and
+                    movie_count >= 5 and  # Minimum for statistical significance
+                        avg_rating > 3.7):    # High quality threshold
+
+                    # Initialize if not exists, or update existing
+                    if genre not in self.genre_stats:
+                        self.genre_stats[genre] = {}
+
+                    self.genre_stats[genre].update({
+                        'popularity_level': 'NICHE',
+                        'market_appeal': 'Cult Following',
+                        'movie_count': movie_count,
+                        'average_rating': avg_rating,
+                        'total_ratings': genre_ratings[genre]
+                    })
+
+    def _add_medium_tier_genres(self):
+        """Add medium tier for genres that are neither mainstream nor niche"""
+        genre_ratings = defaultdict(int)
+        genre_movies = defaultdict(int)
+
+        for movie in self.movies.values():
+            if movie.rating_count > 0:
+                for genre in movie.genres:
+                    if genre != "(no genres listed)":
+                        genre_ratings[genre] += movie.rating_count
+                        genre_movies[genre] += 1
+
+        # Add medium tier for unclassified genres
+        for genre in genre_ratings:
+            if genre not in self.genre_stats:
+                self.genre_stats[genre] = {
+                    'popularity_level': 'MEDIUM',
+                    'market_appeal': 'Standard',
+                    'total_ratings': genre_ratings[genre],
+                    'movie_count': genre_movies[genre]
+                }
 
     # TEMPORAL ANALYSIS RULES (7-8)
 
@@ -724,36 +816,114 @@ class MovieLensReasoner:
 
     # ADVANCED RECOMMENDATION RULES (17-19)
 
+    # def _rule_17_cross_genre_recommendations(self):
+    #     """Rule 17: Cross-Genre Recommendation"""
+    #     for user_id, preferred_genres in self.user_preferences.items():
+    #         if user_id not in self.recommendations:
+    #             self.recommendations[user_id] = []
+
+    #         for movie in self.movies.values():
+    #             if (movie.quality_tier == "Excellent" and
+    #                 len(set(movie.genres) & set(preferred_genres)) > 0 and
+    #                     len(set(movie.genres) - set(preferred_genres)) > 0):
+    #                 self.recommendations[user_id].append(
+    #                     (movie.movie_id, "Genre bridge"))
+
     def _rule_17_cross_genre_recommendations(self):
-        """Rule 17: Cross-Genre Recommendation"""
-        for user_id, preferred_genres in self.user_preferences.items():
+        """Rule 17: Cross-Genre Recommendation - optimized"""
+        if not self.user_preferences:
+            return
+
+        # Pre-filter excellent movies by genre for faster lookup
+        excellent_movies_by_genre = defaultdict(list)
+        for movie in self.movies.values():
+            if movie.quality_tier == "Excellent":
+                for genre in movie.genres:
+                    excellent_movies_by_genre[genre].append(movie)
+
+        # Process only users with preferences, limit recommendations
+        # Limit users
+        for user_id, preferred_genres in list(self.user_preferences.items())[:100]:
             if user_id not in self.recommendations:
                 self.recommendations[user_id] = []
 
-            for movie in self.movies.values():
-                if (movie.quality_tier == "Excellent" and
-                    len(set(movie.genres) & set(preferred_genres)) > 0 and
-                        len(set(movie.genres) - set(preferred_genres)) > 0):
-                    self.recommendations[user_id].append(
-                        (movie.movie_id, "Genre bridge"))
+            preferred_set = set(preferred_genres)
+            recommendations_added = 0
+
+            # Check only movies in preferred genres that also have other genres
+            for genre in preferred_genres:
+                if recommendations_added >= 5:  # Limit recommendations per user
+                    break
+
+                # Limit movies per genre
+                for movie in excellent_movies_by_genre[genre][:10]:
+                    movie_genres_set = set(movie.genres)
+                    if (movie_genres_set & preferred_set and
+                            movie_genres_set - preferred_set):  # Has both preferred and new genres
+                        self.recommendations[user_id].append(
+                            (movie.movie_id, "Genre bridge"))
+                        recommendations_added += 1
+                        if recommendations_added >= 5:
+                            break
+
+    # def _rule_18_collaborative_filtering(self):
+    #     """Rule 18: Collaborative Filtering Pattern"""
+    #     # Find users with similar preferences who both liked the same movies
+    #     similar_users = defaultdict(set)
+
+    #     for user1_id, genres1 in self.user_preferences.items():
+    #         for user2_id, genres2 in self.user_preferences.items():
+    #             if user1_id != user2_id and set(genres1) & set(genres2):
+    #                 # Check if they both liked the same movies
+    #                 user1_high_ratings = {r.movie_id for r in self.ratings
+    #                                       if r.user_id == user1_id and r.rating > 4.0}
+    #                 user2_high_ratings = {r.movie_id for r in self.ratings
+    #                                       if r.user_id == user2_id and r.rating > 4.0}
+
+    #                 if user1_high_ratings & user2_high_ratings:
+    #                     similar_users[user1_id].add(user2_id)
+    #                     similar_users[user2_id].add(user1_id)
 
     def _rule_18_collaborative_filtering(self):
-        """Rule 18: Collaborative Filtering Pattern"""
-        # Find users with similar preferences who both liked the same movies
+        """Rule 18: Collaborative Filtering Pattern - Optimized"""
+        if not self.user_preferences:
+            return
+
+        # Create user high-rating sets efficiently
+        user_high_ratings = {}
+        for rating in self.ratings:
+            if rating.rating > 4.0:
+                if rating.user_id not in user_high_ratings:
+                    user_high_ratings[rating.user_id] = set()
+                user_high_ratings[rating.user_id].add(rating.movie_id)
+
+        # Limit to users with sufficient data and preferences
+        active_users = [uid for uid, ratings in user_high_ratings.items()
+                        if len(ratings) >= 10 and uid in self.user_preferences][:50]  # Limit to 50 users
+
         similar_users = defaultdict(set)
 
-        for user1_id, genres1 in self.user_preferences.items():
-            for user2_id, genres2 in self.user_preferences.items():
-                if user1_id != user2_id and set(genres1) & set(genres2):
-                    # Check if they both liked the same movies
-                    user1_high_ratings = {r.movie_id for r in self.ratings
-                                          if r.user_id == user1_id and r.rating > 4.0}
-                    user2_high_ratings = {r.movie_id for r in self.ratings
-                                          if r.user_id == user2_id and r.rating > 4.0}
+        # Compare only active users with shared preferences
+        for i, user1_id in enumerate(active_users):
+            genres1 = set(self.user_preferences[user1_id])
+            user1_ratings = user_high_ratings[user1_id]
 
-                    if user1_high_ratings & user2_high_ratings:
+            # Limit comparisons per user
+            for user2_id in active_users[i+1:i+6]:
+                genres2 = set(self.user_preferences[user2_id])
+
+                # Quick check: must have overlapping preferences
+                if genres1 & genres2:
+                    user2_ratings = user_high_ratings[user2_id]
+                    shared_movies = user1_ratings & user2_ratings
+
+                    # Must have at least 3 shared high-rated movies
+                    if len(shared_movies) >= 3:
                         similar_users[user1_id].add(user2_id)
                         similar_users[user2_id].add(user1_id)
+
+        logger.info(
+            f"Found {len(similar_users)} users with similar preferences")
 
     # def _rule_19_hidden_gems(self):
     #     """Rule 19: Hidden Gem Discovery"""
@@ -792,27 +962,66 @@ class MovieLensReasoner:
     #     logger.info(
     #         f"Found {len(hidden_gem_candidates)} hidden gem candidates")
 
+    # def _rule_19_hidden_gems(self):
+    #     """Rule 19: Hidden Gem Discovery - Optimized, relaxed criteria from v02 apply here too"""
+    #     hidden_gems = []
+
+    #     for movie in self.movies.values():
+    #         if (movie.average_rating > 3.8 and
+    #             10 <= movie.rating_count <= 50 and
+    #             movie.release_year and
+    #                 self.current_year - movie.release_year > 3):
+    #             hidden_gems.append(movie.movie_id)
+
+    #     logger.info(f"Found {len(hidden_gems)} hidden gems")
+
+    #     # Add to recommendations more efficiently - limit users
+    #     if hidden_gems:
+    #         sample_users = list(self.users.keys())[:50]  # Limit to 50 users
+    #         for user_id in sample_users:
+    #             if user_id not in self.recommendations:
+    #                 self.recommendations[user_id] = []
+    #             # Add only top 3 hidden gems per user
+    #             for gem_id in hidden_gems[:3]:
+    #                 self.recommendations[user_id].append(
+    #                     (gem_id, "Hidden Gem"))
+
     def _rule_19_hidden_gems(self):
-        """Rule 19: Hidden Gem Discovery - Optimized, relaxed criteria from v02 apply here too"""
+        """Rule 19: Hidden Gem Discovery - Highly optimized"""
+        # Find hidden gems efficiently
         hidden_gems = []
 
         for movie in self.movies.values():
             if (movie.average_rating > 3.8 and
                 10 <= movie.rating_count <= 50 and
                 movie.release_year and
-                    self.current_year - movie.release_year > 3):
-                hidden_gems.append(movie.movie_id)
+                self.current_year - movie.release_year > 3 and
+                    movie.quality_tier not in ["Poor", "Insufficient Data"]):
+                hidden_gems.append((movie.movie_id, movie.average_rating))
 
-        logger.info(f"Found {len(hidden_gems)} hidden gems")
+        # Sort by rating and take top gems
+        hidden_gems.sort(key=lambda x: x[1], reverse=True)
+        top_gems = [gem_id for gem_id,
+                    _ in hidden_gems[:10]]  # Limit to top 10
 
-        # Add to recommendations more efficiently - limit users
-        if hidden_gems:
-            sample_users = list(self.users.keys())[:50]  # Limit to 50 users
-            for user_id in sample_users:
+        logger.info(f"Found {len(top_gems)} top hidden gems")
+
+        # Add to recommendations efficiently - very limited scope
+        if top_gems:
+            # Only add to users who have made many ratings (active users)
+            active_user_ratings = defaultdict(int)
+            for rating in self.ratings:
+                active_user_ratings[rating.user_id] += 1
+
+            active_users = [uid for uid, count in active_user_ratings.items()
+                            if count >= 20][:20]  # Top 20 most active users only
+
+            for user_id in active_users:
                 if user_id not in self.recommendations:
                     self.recommendations[user_id] = []
+
                 # Add only top 3 hidden gems per user
-                for gem_id in hidden_gems[:3]:
+                for gem_id in top_gems[:3]:
                     self.recommendations[user_id].append(
                         (gem_id, "Hidden Gem"))
 
@@ -858,7 +1067,7 @@ class MovieLensReasoner:
     def _rule_22_data_quality(self):
         """Rule 22: Data Quality Assessment"""
         # rating_count_qualifier = 3  # let's be a bit generous...
-        rating_count_qualifier = 0  # let's be even more generous...
+        rating_count_qualifier = 2  # let's be even more generous...
         for movie in self.movies.values():
             if movie.rating_count < rating_count_qualifier:
                 # Mark as insufficient data quality
@@ -923,6 +1132,44 @@ class MovieLensReasoner:
             sample_movie = movies_with_ratings[0]
             print(
                 f"Sample movie with ratings: {sample_movie.title} (count: {sample_movie.rating_count}, avg: {sample_movie.average_rating:.2f})")
+
+    def diagnose_genre_distribution(self):
+        """Diagnose genre rating distributions to calibrate thresholds"""
+        print("=== GENRE DISTRIBUTION ANALYSIS ===")
+
+        genre_ratings = defaultdict(int)
+        genre_movies = defaultdict(int)
+        genre_avg_ratings = defaultdict(list)
+
+        for movie in self.movies.values():
+            if movie.rating_count > 0:
+                for genre in movie.genres:
+                    if genre != "(no genres listed)":
+                        genre_ratings[genre] += movie.rating_count
+                        genre_movies[genre] += 1
+                        genre_avg_ratings[genre].append(movie.average_rating)
+
+        # Sort by total ratings
+        sorted_genres = sorted(genre_ratings.items(),
+                               key=lambda x: x[1], reverse=True)
+
+        print(f"{'Genre':<15} {'Movies':<8} {'Total Ratings':<12} {'Avg Rating':<10}")
+        print("-" * 50)
+
+        for genre, total_ratings in sorted_genres:
+            movie_count = genre_movies[genre]
+            avg_rating = sum(
+                genre_avg_ratings[genre]) / len(genre_avg_ratings[genre])
+            print(
+                f"{genre:<15} {movie_count:<8} {total_ratings:<12} {avg_rating:<10.2f}")
+
+        # Show distribution statistics
+        rating_counts = list(genre_ratings.values())
+        print(f"\nRating Distribution Stats:")
+        print(f"Min: {min(rating_counts)}")
+        print(f"Max: {max(rating_counts)}")
+        print(f"Median: {sorted(rating_counts)[len(rating_counts)//2]}")
+        print(f"Mean: {sum(rating_counts)/len(rating_counts):.0f}")
 
     def generate_report(self) -> str:
         """Generate comprehensive reasoning report"""

@@ -1,7 +1,7 @@
 {
-  "export_timestamp": "2025-07-03T16:23:07.614812",
+  "export_timestamp": "2025-07-03T19:08:57.800629",
   "output_directory": "./data/ml-latest-small\\ontologies",
-  "total_triples": 701890,
+  "total_triples": 737470,
   "saved_files": [
     "./data/ml-latest-small\\ontologies\\movielens_ontology.ttl",
     "./data/ml-latest-small\\ontologies\\movielens_ontology.n3",

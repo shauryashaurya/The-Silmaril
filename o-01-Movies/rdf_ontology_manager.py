@@ -103,12 +103,35 @@ class RDFOntologyManager:
 
         logger.info(f"Converted CSV data to {len(self.graph)} RDF triples")
 
+    def _clean_identifier(self, text: str) -> str:
+        """Clean text for use as RDF identifier - Enhanced"""
+        import re
+        # Remove/replace problematic characters
+        cleaned = re.sub(r'[^\w\-_]', '_', str(text))
+        # Ensure it doesn't start with a number (XML name rules)
+        if cleaned and cleaned[0].isdigit():
+            cleaned = f"id_{cleaned}"
+        # Remove multiple underscores
+        cleaned = re.sub(r'_+', '_', cleaned)
+        # Remove trailing underscores
+        cleaned = cleaned.strip('_')
+        return cleaned or "unknown"
+
+    def _create_safe_uri(self, prefix: str, identifier: str) -> URIRef:
+        """Create a safe URI from an identifier"""
+        clean_id = self._clean_identifier(identifier)
+        return self.ns[f"{prefix}_{clean_id}"]
+
     def _convert_movies_to_rdf(self):
-        """Convert movie entities to RDF"""
+        """Convert movie entities to RDF - URI-safe version"""
         for movie_id, movie in self.reasoner.movies.items():
-            movie_uri = self.ns[f"movie_{movie_id}"]
+            # Create safe URI
+            movie_uri = self._create_safe_uri("movie", movie_id)
+
             self.graph.add((movie_uri, RDF.type, self.ns.Movie))
-            self.graph.add((movie_uri, self.ns.movieID, Literal(movie_id)))
+            # Store original ID as literal for reference
+            self.graph.add((movie_uri, self.ns.movieID, Literal(
+                str(movie_id), datatype=XSD.string)))
             self.graph.add((movie_uri, self.ns.title, Literal(movie.title)))
 
             if movie.release_year:
@@ -124,58 +147,60 @@ class RDFOntologyManager:
                 self.graph.add((movie_uri, self.ns.duration, Literal(
                     movie.duration, datatype=XSD.integer)))
 
-            # Add reasoning results
+            # Add reasoning results with explicit datatyping
             if movie.quality_tier:
-                self.graph.add((movie_uri, self.ns.qualityTier,
-                               Literal(movie.quality_tier)))
+                self.graph.add((movie_uri, self.ns.qualityTier, Literal(
+                    movie.quality_tier, datatype=XSD.string)))
             if movie.recommendation_priority:
                 self.graph.add((movie_uri, self.ns.recommendationPriority, Literal(
-                    movie.recommendation_priority)))
+                    movie.recommendation_priority, datatype=XSD.string)))
             if movie.movie_era:
-                self.graph.add((movie_uri, self.ns.movieEra,
-                               Literal(movie.movie_era)))
+                self.graph.add((movie_uri, self.ns.movieEra, Literal(
+                    movie.movie_era, datatype=XSD.string)))
             if movie.content_type:
-                self.graph.add((movie_uri, self.ns.contentType,
-                               Literal(movie.content_type)))
+                self.graph.add((movie_uri, self.ns.contentType, Literal(
+                    movie.content_type, datatype=XSD.string)))
             if movie.trend_status:
-                self.graph.add((movie_uri, self.ns.trendStatus,
-                               Literal(movie.trend_status)))
+                self.graph.add((movie_uri, self.ns.trendStatus, Literal(
+                    movie.trend_status, datatype=XSD.string)))
             if movie.seasonal_type:
-                self.graph.add((movie_uri, self.ns.seasonalType,
-                               Literal(movie.seasonal_type)))
+                self.graph.add((movie_uri, self.ns.seasonalType, Literal(
+                    movie.seasonal_type, datatype=XSD.string)))
             if movie.viewing_occasion:
-                self.graph.add((movie_uri, self.ns.viewingOccasion,
-                               Literal(movie.viewing_occasion)))
+                self.graph.add((movie_uri, self.ns.viewingOccasion, Literal(
+                    movie.viewing_occasion, datatype=XSD.string)))
 
     def _convert_users_to_rdf(self):
-        """Convert user entities to RDF"""
+        """Convert user entities to RDF - URI-safe version"""
         for user_id, user in self.reasoner.users.items():
-            user_uri = self.ns[f"user_{user_id}"]
+            user_uri = self._create_safe_uri("user", user_id)
+
             self.graph.add((user_uri, RDF.type, self.ns.User))
-            self.graph.add((user_uri, self.ns.userID, Literal(user_id)))
+            self.graph.add((user_uri, self.ns.userID, Literal(
+                str(user_id), datatype=XSD.string)))
 
             if user.age:
                 self.graph.add((user_uri, self.ns.age, Literal(
                     user.age, datatype=XSD.integer)))
             if user.occupation:
-                self.graph.add((user_uri, self.ns.occupation,
-                               Literal(user.occupation)))
+                self.graph.add((user_uri, self.ns.occupation, Literal(
+                    user.occupation, datatype=XSD.string)))
             if user.rating_behavior:
-                self.graph.add((user_uri, self.ns.ratingBehavior,
-                               Literal(user.rating_behavior)))
+                self.graph.add((user_uri, self.ns.ratingBehavior, Literal(
+                    user.rating_behavior, datatype=XSD.string)))
             if user.user_type:
-                self.graph.add(
-                    (user_uri, self.ns.userType, Literal(user.user_type)))
+                self.graph.add((user_uri, self.ns.userType, Literal(
+                    user.user_type, datatype=XSD.string)))
             if user.audience_segment:
-                self.graph.add((user_uri, self.ns.audienceSegment,
-                               Literal(user.audience_segment)))
+                self.graph.add((user_uri, self.ns.audienceSegment, Literal(
+                    user.audience_segment, datatype=XSD.string)))
 
     def _convert_ratings_to_rdf(self):
-        """Convert rating entities to RDF"""
+        """Convert rating entities to RDF - URI-safe version"""
         for i, rating in enumerate(self.reasoner.ratings):
-            rating_uri = self.ns[f"rating_{i}"]
-            user_uri = self.ns[f"user_{rating.user_id}"]
-            movie_uri = self.ns[f"movie_{rating.movie_id}"]
+            rating_uri = self._create_safe_uri("rating", str(i))
+            user_uri = self._create_safe_uri("user", rating.user_id)
+            movie_uri = self._create_safe_uri("movie", rating.movie_id)
 
             self.graph.add((rating_uri, RDF.type, self.ns.UserRating))
             self.graph.add((rating_uri, self.ns.ratingValue,
@@ -183,68 +208,80 @@ class RDFOntologyManager:
             self.graph.add((rating_uri, self.ns.ratingTimestamp,
                            Literal(rating.timestamp, datatype=XSD.dateTime)))
 
-            # Object property relationships
+            # Object property relationships with safe URIs
             self.graph.add((rating_uri, self.ns.ratingBy, user_uri))
             self.graph.add((rating_uri, self.ns.ratingFor, movie_uri))
             self.graph.add((movie_uri, self.ns.ratedBy, rating_uri))
 
-    def _convert_tags_to_rdf(self):
-        """Convert tag entities to RDF"""
-        for i, tag in enumerate(self.reasoner.tags):
-            tag_uri = self.ns[f"tag_{i}"]
-            movie_uri = self.ns[f"movie_{tag.movie_id}"]
-
-            self.graph.add((tag_uri, RDF.type, self.ns.Tag))
-            self.graph.add((tag_uri, self.ns.tagName, Literal(tag.tag_name)))
-            self.graph.add((tag_uri, self.ns.tagRelevance,
-                           Literal(tag.relevance, datatype=XSD.float)))
-
-            # Object property relationships
-            self.graph.add((movie_uri, self.ns.taggedWith, tag_uri))
-
     def _convert_genres_to_rdf(self):
-        """Convert genres and genre relationships to RDF"""
+        """Convert genres and genre relationships to RDF - URI-safe version"""
         for genre in self.reasoner.genres:
             if genre != "(no genres listed)":
-                genre_uri = self.ns[f"genre_{self._clean_identifier(genre)}"]
+                genre_uri = self._create_safe_uri("genre", genre)
                 self.graph.add((genre_uri, RDF.type, self.ns.Genre))
-                self.graph.add((genre_uri, self.ns.genreName, Literal(genre)))
+                self.graph.add((genre_uri, self.ns.genreName,
+                               Literal(genre, datatype=XSD.string)))
 
-        # Add movie-genre relationships
+        # Add movie-genre relationships with consistent URI generation
         for movie_id, movie in self.reasoner.movies.items():
-            movie_uri = self.ns[f"movie_{movie_id}"]
+            movie_uri = self._create_safe_uri("movie", movie_id)
             for genre in movie.genres:
                 if genre != "(no genres listed)":
-                    genre_uri = self.ns[f"genre_{self._clean_identifier(genre)}"]
+                    genre_uri = self._create_safe_uri("genre", genre)
                     self.graph.add(
                         (movie_uri, self.ns.belongsToGenre, genre_uri))
 
+    def _convert_tags_to_rdf(self):
+        """Convert tag entities to RDF - URI-safe version"""
+        for i, tag in enumerate(self.reasoner.tags):
+            # Create safe URIs
+            tag_uri = self._create_safe_uri("tag", str(i))
+            movie_uri = self._create_safe_uri("movie", tag.movie_id)
+
+            self.graph.add((tag_uri, RDF.type, self.ns.Tag))
+            self.graph.add((tag_uri, self.ns.tagName, Literal(
+                tag.tag_name, datatype=XSD.string)))
+            self.graph.add((tag_uri, self.ns.tagRelevance,
+                           Literal(tag.relevance, datatype=XSD.float)))
+
+            # Store original movie ID reference for debugging
+            self.graph.add((tag_uri, self.ns.tagForMovieID, Literal(
+                str(tag.movie_id), datatype=XSD.string)))
+
+            # Object property relationships with safe URIs
+            self.graph.add((movie_uri, self.ns.taggedWith, tag_uri))
+            self.graph.add((tag_uri, self.ns.appliedToMovie, movie_uri))
+
     def _add_reasoning_results_to_rdf(self):
-        """Add derived knowledge from reasoning to RDF"""
-        # Add user preferences
+        """Add derived knowledge from reasoning to RDF - URI-safe version"""
+        # Add user preferences with consistent URIs
         for user_id, preferred_genres in self.reasoner.user_preferences.items():
-            user_uri = self.ns[f"user_{user_id}"]
+            user_uri = self._create_safe_uri("user", user_id)
             for genre in preferred_genres:
-                genre_uri = self.ns[f"genre_{self._clean_identifier(genre)}"]
+                genre_uri = self._create_safe_uri("genre", genre)
                 self.graph.add((user_uri, self.ns.preferredGenre, genre_uri))
 
-        # Add movie similarities
+        # Add movie similarities with consistent URIs
         for movie_id, similar_movies in self.reasoner.movie_similarities.items():
-            movie_uri = self.ns[f"movie_{movie_id}"]
+            movie_uri = self._create_safe_uri("movie", movie_id)
             for similar_id in similar_movies:
-                similar_uri = self.ns[f"movie_{similar_id}"]
+                similar_uri = self._create_safe_uri("movie", similar_id)
                 self.graph.add((movie_uri, self.ns.similarTo, similar_uri))
 
-        # Add recommendations
+        # Add recommendations with consistent URIs
         for user_id, recommendations in self.reasoner.recommendations.items():
-            user_uri = self.ns[f"user_{user_id}"]
+            user_uri = self._create_safe_uri("user", user_id)
             for movie_id, reason in recommendations:
-                movie_uri = self.ns[f"movie_{movie_id}"]
+                movie_uri = self._create_safe_uri("movie", movie_id)
                 self.graph.add((movie_uri, self.ns.recommendedFor, user_uri))
-
-    def _clean_identifier(self, text: str) -> str:
-        """Clean text for use as RDF identifier"""
-        return text.replace(' ', '_').replace('-', '_').replace('(', '').replace(')', '').replace('/', '_')
+                # Add recommendation reason as annotation
+                rec_uri = self._create_safe_uri(
+                    "recommendation", f"{user_id}_{movie_id}")
+                self.graph.add((rec_uri, RDF.type, self.ns.Recommendation))
+                self.graph.add((rec_uri, self.ns.recommendationReason,
+                               Literal(reason, datatype=XSD.string)))
+                self.graph.add((rec_uri, self.ns.recommendationFor, user_uri))
+                self.graph.add((rec_uri, self.ns.recommendationOf, movie_uri))
 
     def save_rdf_formats(self, output_dir: str = None):
         """Save RDF graph in multiple formats"""
@@ -397,14 +434,23 @@ class RDFOntologyManager:
         return self.graph
 
     def export_complete_ontology(self, output_dir: str = None):
-        """Export complete ontology in all RDF formats with statistics"""
+        """Export complete ontology in all RDF formats with validation"""
         if output_dir is None:
             output_dir = self.output_dir
 
         logger.info("Exporting complete RDF ontology...")
 
+        # Diagnose potential issues first
+        self.diagnose_uri_issues()
+
         # Load complete graph
         self.load_complete_graph()
+
+        # Validate consistency
+        is_valid = self.validate_rdf_consistency()
+        if not is_valid:
+            logger.warning(
+                "RDF validation found issues - check output carefully")
 
         # Save in all RDF formats
         saved_files = self.save_rdf_formats(output_dir)
@@ -435,6 +481,66 @@ class RDFOntologyManager:
         logger.info(f"Total triples: {stats['total_triples']:,}")
 
         return summary, stats, report_text
+
+    def diagnose_uri_issues(self):
+        """Diagnose potential URI and ID issues"""
+        print("=== RDF URI DIAGNOSTICS ===")
+
+        # Check movie ID patterns
+        movie_ids = list(self.reasoner.movies.keys())
+        print(f"Sample movie IDs: {movie_ids[:10]}")
+
+        # Check for problematic characters
+        problematic_ids = []
+        for movie_id in movie_ids:
+            if not movie_id.replace('_', '').replace('-', '').isalnum():
+                problematic_ids.append(movie_id)
+
+        if problematic_ids:
+            print(f"Problematic IDs found: {problematic_ids[:5]}")
+        else:
+            print("All movie IDs are URI-safe")
+
+        # Check cross-references
+        rating_movie_ids = set(r.movie_id for r in self.reasoner.ratings)
+        movie_ids_set = set(self.reasoner.movies.keys())
+        missing_refs = rating_movie_ids - movie_ids_set
+
+        print(
+            f"Cross-reference integrity: {len(missing_refs)} missing movie references")
+
+        # Check URI generation
+        sample_movie_id = movie_ids[0] if movie_ids else None
+        if sample_movie_id:
+            sample_uri = self.ns[f"movie_{sample_movie_id}"]
+            print(f"Sample URI: {sample_uri}")
+
+    def validate_rdf_consistency(self):
+        """Validate RDF graph consistency and URI integrity"""
+        print("=== RDF VALIDATION ===")
+
+        # Check for broken references
+        all_subjects = set(
+            s for s, p, o in self.graph if isinstance(s, URIRef))
+        all_objects = set(o for s, p, o in self.graph if isinstance(o, URIRef))
+        all_uris = all_subjects | all_objects
+
+        # Check for dangling references
+        referenced_but_not_defined = all_objects - all_subjects
+        if referenced_but_not_defined:
+            print(
+                f"WARNING: {len(referenced_but_not_defined)} dangling URI references")
+            print(f"Sample: {list(referenced_but_not_defined)[:3]}")
+
+        # Check URI patterns
+        movie_uris = [uri for uri in all_uris if 'movie_' in str(uri)]
+        user_uris = [uri for uri in all_uris if 'user_' in str(uri)]
+
+        print(f"Movie URIs: {len(movie_uris)}")
+        print(f"User URIs: {len(user_uris)}")
+        print(f"Total valid URIs: {len(all_uris)}")
+
+        return len(referenced_but_not_defined) == 0
 
 
 def main():
