@@ -344,6 +344,110 @@
     rdfs:domain :Invoice ;
     rdfs:range :Retailer .
 
+# ===== CARDINALITY CONSTRAINTS =====
+
+# A Supplier must supply to at least one Manufacturer.
+:Supplier rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :suppliesTo ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# A Manufacturer must manufacture at least one Product.
+:Manufacturer rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :manufactures ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# An Order must contain at least one Product.
+:Order rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasOrderLine ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# A Shipment must correspond to exactly one Order.
+:Shipment rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :shipsOrder ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# A Shipment must have exactly one shipper (Warehouse or Manufacturer).
+:Shipment rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :hasShipper ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# An Invoice must be billed by exactly one entity (Warehouse or Manufacturer).
+:Invoice rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :billedBy ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# An Invoice must be billed to exactly one Retailer.
+:Invoice rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty :billedTo ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger
+] .
+
+# ===== INVERSE PROPERTIES =====
+
+:suppliedBy a owl:ObjectProperty ;
+    owl:inverseOf :suppliesTo ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range :Supplier .
+
+:manufacturedBy a owl:ObjectProperty ;
+    owl:inverseOf :manufactures ;
+    rdfs:domain :Product ;
+    rdfs:range :Manufacturer .
+
+:storedIn a owl:ObjectProperty ;
+    owl:inverseOf :stores ;
+    rdfs:domain :Product ;
+    rdfs:range :Warehouse .
+
+:warehouseOrderedBy a owl:ObjectProperty ;
+    owl:inverseOf :ordersFromWarehouse ;
+    rdfs:domain :Warehouse ;
+    rdfs:range :Retailer .
+
+:manufacturerOrderedBy a owl:ObjectProperty ;
+    owl:inverseOf :ordersFromManufacturer ;
+    rdfs:domain :Manufacturer ;
+    rdfs:range :Retailer .
+
+:orderLineOf a owl:ObjectProperty ;
+    owl:inverseOf :hasOrderLine ;
+    rdfs:domain :Product ;
+    rdfs:range :Order .
+
+:shippedIn a owl:ObjectProperty ;
+    owl:inverseOf :shipsOrder ;
+    rdfs:domain :Order ;
+    rdfs:range :Shipment .
+
+:ships a owl:ObjectProperty ;
+    owl:inverseOf :hasShipper ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] ;
+    rdfs:range :Shipment .
+
+:bills a owl:ObjectProperty ;
+    owl:inverseOf :billedBy ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] ;
+    rdfs:range :Invoice .
+
+:receivesInvoice a owl:ObjectProperty ;
+    owl:inverseOf :billedTo ;
+    rdfs:domain :Retailer ;
+    rdfs:range :Invoice .
+
+
 # ===== SUPPLY CHAIN BUSINESS RULES =====
 
 # Rule 1: Supplier Performance Classification
@@ -641,86 +745,3 @@
     ?warehouse :serviceLevelAgreement "24_HOUR_PROCESSING" .
 } .
 
-# ===== CARDINALITY CONSTRAINTS =====
-
-:Order rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty :hasOrderLine ;
-    owl:minCardinality "1"^^xsd:nonNegativeInteger
-] .
-
-:Shipment rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty :shipsOrder ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-:Shipment rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty :hasShipper ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-:Invoice rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty :billedBy ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-:Invoice rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty :billedTo ;
-    owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
-
-# ===== INVERSE PROPERTIES =====
-
-:suppliedBy a owl:ObjectProperty ;
-    owl:inverseOf :suppliesTo ;
-    rdfs:domain :Manufacturer ;
-    rdfs:range :Supplier .
-
-:manufacturedBy a owl:ObjectProperty ;
-    owl:inverseOf :manufactures ;
-    rdfs:domain :Product ;
-    rdfs:range :Manufacturer .
-
-:storedIn a owl:ObjectProperty ;
-    owl:inverseOf :stores ;
-    rdfs:domain :Product ;
-    rdfs:range :Warehouse .
-
-:warehouseOrderedBy a owl:ObjectProperty ;
-    owl:inverseOf :ordersFromWarehouse ;
-    rdfs:domain :Warehouse ;
-    rdfs:range :Retailer .
-
-:manufacturerOrderedBy a owl:ObjectProperty ;
-    owl:inverseOf :ordersFromManufacturer ;
-    rdfs:domain :Manufacturer ;
-    rdfs:range :Retailer .
-
-:orderLineOf a owl:ObjectProperty ;
-    owl:inverseOf :hasOrderLine ;
-    rdfs:domain :Product ;
-    rdfs:range :Order .
-
-:shippedIn a owl:ObjectProperty ;
-    owl:inverseOf :shipsOrder ;
-    rdfs:domain :Order ;
-    rdfs:range :Shipment .
-
-:ships a owl:ObjectProperty ;
-    owl:inverseOf :hasShipper ;
-    rdfs:domain [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] ;
-    rdfs:range :Shipment .
-
-:bills a owl:ObjectProperty ;
-    owl:inverseOf :billedBy ;
-    rdfs:domain [ a owl:Class ; owl:unionOf ( :Warehouse :Manufacturer ) ] ;
-    rdfs:range :Invoice .
-
-:receivesInvoice a owl:ObjectProperty ;
-    owl:inverseOf :billedTo ;
-    rdfs:domain :Retailer ;
-    rdfs:range :Invoice .
