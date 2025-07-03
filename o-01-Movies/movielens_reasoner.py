@@ -246,35 +246,80 @@ class MovieLensReasoner:
 
     # GENRE ANALYSIS RULES (5-6)
 
+    # def _rule_05_popular_genres(self):
+    #     """Rule 5: Popular Genre Identification"""
+    #     genre_ratings = defaultdict(int)
+    #     for movie in self.movies.values():
+    #         for genre in movie.genres:
+    #             genre_ratings[genre] += movie.rating_count
+
+    #     for genre, total_ratings in genre_ratings.items():
+    #         if total_ratings > 5000:
+    #             self.genre_stats[genre] = {
+    #                 'popularity_level': 'HIGH',
+    #                 'market_appeal': 'Mainstream'
+    #             }
     def _rule_05_popular_genres(self):
-        """Rule 5: Popular Genre Identification"""
+        """Rule 5: Popular Genre Identification - changing the calculation"""
         genre_ratings = defaultdict(int)
+        genre_movies = defaultdict(int)
+        # down from 5000, because it's a small dataset and we are generous minded ppl
+        rating_count_qulifier = 100
         for movie in self.movies.values():
-            for genre in movie.genres:
-                genre_ratings[genre] += movie.rating_count
+            if movie.rating_count > 0:  # Only count movies with ratings
+                for genre in movie.genres:
+                    if genre != "(no genres listed)":
+                        genre_ratings[genre] += movie.rating_count
+                        genre_movies[genre] += 1
 
         for genre, total_ratings in genre_ratings.items():
-            if total_ratings > 5000:
+            if total_ratings > rating_count_qulifier:
                 self.genre_stats[genre] = {
                     'popularity_level': 'HIGH',
-                    'market_appeal': 'Mainstream'
+                    'market_appeal': 'Mainstream',
+                    'total_ratings': total_ratings,
+                    'movie_count': genre_movies[genre]
                 }
 
+    # def _rule_06_niche_genres(self):
+    #     """Rule 6: Niche Genre Classification"""
+    #     genre_data = defaultdict(list)
+    #     for movie in self.movies.values():
+    #         for genre in movie.genres:
+    #             if movie.average_rating > 0:  # Has ratings
+    #                 genre_data[genre].append(movie.average_rating)
+
+    #     for genre, ratings in genre_data.items():
+    #         if (len(ratings) < 20 and len(ratings) > 5 and
+    #                 np.mean(ratings) > 3.8):
+    #             self.genre_stats[genre] = {
+    #                 'popularity_level': 'NICHE',
+    #                 'market_appeal': 'Cult Following'
+    #             }
     def _rule_06_niche_genres(self):
-        """Rule 6: Niche Genre Classification"""
+        """Rule 6: Niche Genre Classification - v02, as earlier did not return anything meaningful"""
         genre_data = defaultdict(list)
+        genre_movies = defaultdict(int)
+        rating_count_qulifier = 2
+
         for movie in self.movies.values():
-            for genre in movie.genres:
-                if movie.average_rating > 0:  # Has ratings
-                    genre_data[genre].append(movie.average_rating)
+            if movie.average_rating > 0 and movie.rating_count >= rating_count_qulifier:  # Has sufficient ratings
+                for genre in movie.genres:
+                    if genre != "(no genres listed)":
+                        genre_data[genre].append(movie.average_rating)
+                        genre_movies[genre] += 1
 
         for genre, ratings in genre_data.items():
-            if (len(ratings) < 20 and len(ratings) > 5 and
-                    np.mean(ratings) > 3.8):
-                self.genre_stats[genre] = {
+            if (5 <= len(ratings) <= 15 and  # Adjusted range: 5-15 movies instead of <20
+                    np.mean(ratings) > 3.6):      # Lowered from 3.8 to 3.6, because 3.5 is like mid bro...
+                if genre not in self.genre_stats:
+                    self.genre_stats[genre] = {}
+                self.genre_stats[genre].update({
                     'popularity_level': 'NICHE',
-                    'market_appeal': 'Cult Following'
-                }
+                    'market_appeal': 'Cult Following',
+                    'movie_count': len(ratings),
+                    'average_rating': np.mean(ratings)
+                })
 
     # TEMPORAL ANALYSIS RULES (7-8)
 
@@ -478,6 +523,7 @@ class MovieLensReasoner:
     def _rule_22_data_quality(self):
         """Rule 22: Data Quality Assessment"""
         rating_count_qualifier = 3  # let's be a bit generous...
+        # rating_count_qualifier = 2  # let's be even more generous...
         for movie in self.movies.values():
             if movie.rating_count < rating_count_qualifier:
                 # Mark as insufficient data quality
