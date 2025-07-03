@@ -1,19 +1,19 @@
 
-    # Supply Chain Analysis Report
+# Supply Chain Analysis Report
 
-    ## Overall:
+## Overall:
 
-    ### Key Metrics
-    - **Total Entities Analyzed**: 3,090
-    - **Total Revenue**: $11,395,903.62
-    - **Average Order Value**: $7,597.27
-    - **Data Integrity Score**: 100.0%
-    - **Supply Chain Health Score**: 58.7/100
+### Key Metrics
+- **Total Entities Analyzed**: 3,090
+- **Total Revenue**: $11,395,903.62
+- **Average Order Value**: $7,597.27
+- **Data Integrity Score**: 100.0%
+- **Supply Chain Health Score**: 58.7/100
 
-    ### Key Findings
+### Key Findings
 
-    #### Strengths
-    - Comprehensive supply chain visibility and tracking  
+#### Strengths
+- Comprehensive supply chain visibility and tracking  
 - Advanced analytics and reasoning capabilities  
 - Strong data integration across multiple entities  
 - Automated classification and optimization systems  
