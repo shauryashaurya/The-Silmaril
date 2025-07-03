@@ -26,7 +26,7 @@ except ImportError:
 from supply_chain_reasoner import SimpleSupplyChainReasoner
 
 # Configure logging
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(filename='./supply_chain_rdf_ontology_mgr.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -39,7 +39,7 @@ class RDFOntologyManager:
     URI generation and semantic web compliance.
     """
 
-    def __init__(self, data_location: str = './data', output_location: str = './output'):
+    def __init__(self, data_location: str = './data', output_location: str = './data/ontologies'):
         """Initialize the RDF ontology manager."""
         self.reasoner = SimpleSupplyChainReasoner(data_location)
         self.output_location = Path(output_location)
@@ -696,7 +696,7 @@ class RDFOntologyManager:
             'property_usage': dict(property_usage),
             'validation_results': self.validation_results,
             'processing_metadata': {
-                'created_timestamp': self.processing_timestamp.isoformat(),
+                # 'created_timestamp': self.processing_timestamp.isoformat(),
                 'rdf_formats_supported': ['turtle', 'n3', 'xml', 'json-ld', 'nt'],
                 'namespace_uri': str(self.ns),
                 'ontology_version': '1.0'
@@ -711,7 +711,7 @@ class RDFOntologyManager:
             Dictionary mapping format names to file paths
         """
         if not base_filename:
-            base_filename = f"supply_chain_ontology_{self.processing_timestamp.strftime('%Y%m%d_%H%M%S')}"
+            base_filename = f"supply_chain_ontology"
 
         # Ensure graph is created
         if len(self.graph) == 0:
@@ -745,7 +745,7 @@ class RDFOntologyManager:
     def export_rdf_statistics(self, filename: Optional[str] = None) -> str:
         """Export RDF statistics to JSON file."""
         if not filename:
-            filename = f"rdf_statistics_{self.processing_timestamp.strftime('%Y%m%d_%H%M%S')}.json"
+            filename = f"rdf_statistics.json"
 
         filepath = self.output_location / filename
 
@@ -855,7 +855,7 @@ Entity Counts
                 'report_file': report_file,
                 'rdf_statistics': self.rdf_stats,
                 'pipeline_metadata': {
-                    'processing_timestamp': self.processing_timestamp.isoformat(),
+                    # 'processing_timestamp': self.processing_timestamp.isoformat(),
                     'pipeline_version': '1.0',
                     'success': True
                 }

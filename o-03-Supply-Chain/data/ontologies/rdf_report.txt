@@ -1,0 +1,69 @@
+RDF Ontology Report
+==================
+
+Namespace: http://example.org/supplychain#
+
+Graph Metrics
+-------------
+Total Triples: 31,079
+Unique Subjects: 3,112
+Unique Predicates: 74
+Unique Objects: 10,383
+
+Entity Counts
+-------------
+Supplier: 30
+Manufacturer: 20
+Warehouse: 40
+Retailer: 50
+Product: 250
+Order: 1,500
+Shipment: 1,200
+
+Classification Counts
+--------------------
+PreferredSupplier: 0
+CriticalSupplier: 0
+HighVolumeManufacturer: 0
+OvercapacityWarehouse: 0
+PremiumCustomer: 50
+UrgentOrder: 0
+LargeOrder: 0
+DelayedShipment: 1,200
+FastMovingProduct: 0
+SlowMovingProduct: 0
+LowStockProduct: 0
+
+Validation Results
+-------------------
+URI Consistency: PASS
+Datatype Validation: PASS
+Dangling References: 0
+
+Top Property Usage
+------------------
+type: 4,362
+shippingOptimization: 1,500
+orderDate: 1,500
+totalAmount: 1,500
+orderNumber: 1,500
+finalAmount: 1,500
+orderStatus: 1,500
+discountAmount: 1,500
+ships: 1,200
+expectedDeliveryDate: 1,200
+trackingNumber: 1,200
+shipDate: 1,200
+shipsOrder: 1,200
+shippedIn: 1,200
+shipmentID: 1,200
+carrier: 1,200
+hasShipper: 1,200
+warehouseOrderedBy: 838
+ordersFromWarehouse: 838
+ordersFromManufacturer: 364
+
+Export Summary
+--------------
+RDF formats supported: turtle, n3, xml, json-ld, nt
+Ontology version: 1.0
