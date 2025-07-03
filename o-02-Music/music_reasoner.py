@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Music Ontology Reasoner - Complete Rewrite for Embedded List Data Format
+Music Ontology Reasoner - Corrected Data Structure
 A comprehensive N3 ontology reasoning system for music industry data.
-Handles CSV files with embedded list columns (artistIDs, genreIDs, etc.)
-and implements proper cardinality constraints and inverse properties.
+Handles the actual CSV structure where songs are the central hub connecting
+albums and awards, with only specific columns containing embedded lists.
 """
 
 import pandas as pd
@@ -116,13 +116,13 @@ def parse_id_list(value: Any) -> Set[str]:
 
 @dataclass
 class Song:
-    """Represents a musical composition with computed collaboration properties."""
+    """Represents a musical composition - the central hub connecting all other entities."""
     id: str
     title: str
     duration: int = 0  # seconds
     release_date: Optional[date] = None
 
-    # Object properties (loaded from embedded lists in CSV)
+    # Object properties (loaded from embedded lists in songs CSV)
     artist_ids: Set[str] = field(default_factory=set)  # from artistIDs column
     album_ids: Set[str] = field(default_factory=set)   # from albumIDs column
     genre_ids: Set[str] = field(default_factory=set)   # from genreIDs column
@@ -153,16 +153,16 @@ class Artist:
     birth_date: Optional[date] = None
     nationality: str = ""
 
-    # Object properties
-    label_id: str = ""  # signedTo (maxCardinality 1)
+    # Object properties (from artists CSV)
+    label_id: str = ""  # signedTo (maxCardinality 1) - from labelID column
 
-    # Inverse properties (computed from other entities)
+    # Inverse properties (computed from songs)
     performed_song_ids: Set[str] = field(
         default_factory=set)      # inverse of performedBy
     released_album_ids: Set[str] = field(
-        default_factory=set)      # inverse of releasedByArtist
-    won_award_ids: Set[str] = field(
-        default_factory=set)           # inverse of hasWonAward
+        default_factory=set)      # computed from songs->albums
+    # computed from songs->awards
+    won_award_ids: Set[str] = field(default_factory=set)
 
     # Computed properties from reasoning
     is_established: bool = False
@@ -190,15 +190,18 @@ class Album:
     album_title: str
     release_year: int = 0
 
-    # Object properties (loaded from embedded lists in CSV)
-    artist_ids: Set[str] = field(default_factory=set)  # from artistIDs column
-    label_id: str = ""                                  # from labelID column
-    genre_ids: Set[str] = field(default_factory=set)   # from genreIDs column
+    # Object properties (only genreIDs from albums CSV)
+    # from genreIDs column in albums.csv
+    genre_ids: Set[str] = field(default_factory=set)
 
-    # Inverse properties
-    song_ids: Set[str] = field(default_factory=set)    # inverse of featuredOn
+    # Computed properties (derived from songs that reference this album)
+    # computed from songs->artists
+    artist_ids: Set[str] = field(default_factory=set)
+    label_id: str = ""                                  # computed from artist labels
+    # inverse of featuredOn (from songs)
+    song_ids: Set[str] = field(default_factory=set)
 
-    # Computed properties from reasoning
+    # Additional computed properties from reasoning
     inherited_genres: Set[str] = field(default_factory=set)
     total_duration: int = 0
     track_count: int = 0
@@ -226,11 +229,11 @@ class RecordLabel:
     label_name: str
     location: str = ""
 
-    # Inverse properties
+    # Inverse properties (computed from artists)
     signed_artists: Set[str] = field(
         default_factory=set)      # inverse of signedTo
     published_albums: Set[str] = field(
-        default_factory=set)    # inverse of releasedByLabel
+        default_factory=set)    # computed from artist albums
 
     # Computed properties from reasoning
     is_successful: bool = False
@@ -245,10 +248,10 @@ class Genre:
     genre_name: str
     description: str = ""
 
-    # Inverse properties
-    # inverse of hasGenre
+    # Inverse properties (computed from songs and albums)
+    # inverse of hasGenre (from songs)
     song_ids: Set[str] = field(default_factory=set)
-    # inverse of hasGenre
+    # inverse of hasGenre (from albums)
     album_ids: Set[str] = field(default_factory=set)
 
     # Computed properties from reasoning
@@ -260,24 +263,24 @@ class Genre:
 
 @dataclass
 class Award:
-    """Represents a music industry award."""
+    """Represents a music industry award - connected only through songs."""
     id: str
     award_name: str
     year: int = 0
     awarding_body: str = ""
 
-    # Object properties (loaded from embedded lists in CSV)
-    # from artistIDs column
+    # Computed properties (derived from songs that reference this award)
+    # computed from songs->artists
     artist_ids: Set[str] = field(default_factory=set)
-    # from songIDs column
+    # inverse of hasWonAward (from songs)
     song_ids: Set[str] = field(default_factory=set)
 
 
 class MusicReasonerEngine:
     """
     Core reasoning engine for music industry ontology.
-    Handles CSV files with embedded list columns and implements
-    N3 reasoning rules, cardinality constraints, and inverse properties.
+    Handles the actual CSV structure where songs are the central hub connecting
+    albums and awards, with only specific columns containing embedded lists.
     """
 
     def __init__(self):
@@ -314,24 +317,30 @@ class MusicReasonerEngine:
 
     def load_csv_data(self, data_dir: str) -> None:
         """
-        Load music industry data from CSV files with embedded list columns.
-        Parses relationship data from string list representations and establishes
-        bidirectional inverse properties.
+        Load music industry data from CSV files based on actual structure:
+        - songs.csv: Central hub with embedded lists (artistIDs, albumIDs, genreIDs, awardIDs)
+        - albums.csv: Only genreIDs is a list
+        - awards.csv: No relationship columns
+        - artists.csv: Simple structure with labelID
+        - record_labels.csv, genres.csv: Simple structures
         """
         data_path = Path(data_dir)
-        logger.info(f"Loading CSV data with embedded lists from {data_path}")
+        logger.info(f"Loading CSV data from {data_path}")
 
         try:
-            # Phase 1: Load core entities with embedded relationships
-            self._load_entities_with_embedded_relationships(data_path)
+            # Phase 1: Load base entities (no relationships yet)
+            self._load_base_entities(data_path)
 
-            # Phase 2: Establish all inverse properties
-            self._establish_all_inverse_properties()
+            # Phase 2: Load songs with all their embedded relationships (central hub)
+            self._load_songs_as_central_hub(data_path)
 
-            # Phase 3: Validate cardinality constraints
+            # Phase 3: Compute all derived relationships from songs
+            self._compute_derived_relationships()
+
+            # Phase 4: Validate cardinality constraints
             self._validate_all_cardinality_constraints()
 
-            # Phase 4: Generate comprehensive diagnostics
+            # Phase 5: Generate comprehensive diagnostics
             self._generate_loading_diagnostics()
 
             logger.info(
@@ -341,78 +350,18 @@ class MusicReasonerEngine:
             logger.error(f"Error loading CSV data: {e}")
             raise
 
-    def _load_entities_with_embedded_relationships(self, data_path: Path) -> None:
-        """Load all entities and parse embedded relationship lists."""
-        logger.info("Loading entities with embedded relationship lists...")
+    def _load_base_entities(self, data_path: Path) -> None:
+        """Load base entities without relationships first."""
+        logger.info("Loading base entities...")
 
-        self._load_songs_with_relationships(data_path)
-        self._load_artists_with_relationships(data_path)
-        self._load_albums_with_relationships(data_path)
-        self._load_record_labels(data_path)
-        self._load_genres(data_path)
-        self._load_awards_with_relationships(data_path)
+        self._load_artists_base(data_path)
+        self._load_albums_base(data_path)
+        self._load_record_labels_base(data_path)
+        self._load_genres_base(data_path)
+        self._load_awards_base(data_path)
 
-    def _load_songs_with_relationships(self, data_path: Path) -> None:
-        """Load songs with embedded artistIDs, genreIDs, awardIDs lists."""
-        songs_file = data_path / "songs.csv"
-        if not songs_file.exists():
-            logger.warning(f"Songs file not found: {songs_file}")
-            return
-
-        try:
-            df = pd.read_csv(songs_file)
-            logger.info(f"Loading {len(df)} songs from {songs_file}")
-
-            # Log column names for debugging
-            logger.info(f"Songs CSV columns: {list(df.columns)}")
-
-            # Normalize ID column
-            df['id'] = df['id'].apply(normalize_id)
-
-            for _, row in df.iterrows():
-                song_id = normalize_id(row['id'])
-                if not song_id:
-                    continue
-
-                # Create song with basic properties
-                song = Song(
-                    id=song_id,
-                    title=str(row['title']) if pd.notna(
-                        row['title']) else f"Song_{song_id}",
-                    duration=safe_int(row.get('duration', 0)),
-                    release_date=safe_date(row.get('release_date'))
-                )
-
-                # Parse embedded relationship lists
-                if 'artistIDs' in row and pd.notna(row['artistIDs']):
-                    song.artist_ids = parse_id_list(row['artistIDs'])
-                    self.stats['relationships_parsed'] += len(song.artist_ids)
-                    logger.debug(f"Song {song_id} artists: {song.artist_ids}")
-
-                if 'genreIDs' in row and pd.notna(row['genreIDs']):
-                    song.genre_ids = parse_id_list(row['genreIDs'])
-                    self.stats['relationships_parsed'] += len(song.genre_ids)
-                    logger.debug(f"Song {song_id} genres: {song.genre_ids}")
-
-                if 'albumIDs' in row and pd.notna(row['albumIDs']):
-                    song.album_ids = parse_id_list(row['albumIDs'])
-                    self.stats['relationships_parsed'] += len(song.album_ids)
-
-                if 'awardIDs' in row and pd.notna(row['awardIDs']):
-                    song.award_ids = parse_id_list(row['awardIDs'])
-                    self.stats['relationships_parsed'] += len(song.award_ids)
-
-                self.songs[song_id] = song
-                self.stats['entities_loaded'] += 1
-
-            logger.info(f"Loaded {len(self.songs)} songs with relationships")
-
-        except Exception as e:
-            logger.error(f"Error loading songs: {e}")
-            raise
-
-    def _load_artists_with_relationships(self, data_path: Path) -> None:
-        """Load artists with basic properties."""
+    def _load_artists_base(self, data_path: Path) -> None:
+        """Load artists with basic properties including labelID."""
         artists_file = data_path / "artists.csv"
         if not artists_file.exists():
             logger.warning(f"Artists file not found: {artists_file}")
@@ -421,8 +370,6 @@ class MusicReasonerEngine:
         try:
             df = pd.read_csv(artists_file)
             logger.info(f"Loading {len(df)} artists from {artists_file}")
-
-            # Log column names for debugging
             logger.info(f"Artists CSV columns: {list(df.columns)}")
 
             # Normalize ID columns
@@ -439,7 +386,7 @@ class MusicReasonerEngine:
                 if not artist_id:
                     continue
 
-                # Get label ID from either column name
+                # Get label ID from either column name variant
                 label_id = ""
                 if 'labelID' in row and pd.notna(row['labelID']):
                     label_id = normalize_id(row['labelID'])
@@ -465,8 +412,8 @@ class MusicReasonerEngine:
             logger.error(f"Error loading artists: {e}")
             raise
 
-    def _load_albums_with_relationships(self, data_path: Path) -> None:
-        """Load albums with embedded artistIDs, genreIDs lists."""
+    def _load_albums_base(self, data_path: Path) -> None:
+        """Load albums with genreIDs list only."""
         albums_file = data_path / "albums.csv"
         if not albums_file.exists():
             logger.warning(f"Albums file not found: {albums_file}")
@@ -475,60 +422,41 @@ class MusicReasonerEngine:
         try:
             df = pd.read_csv(albums_file)
             logger.info(f"Loading {len(df)} albums from {albums_file}")
-
-            # Log column names for debugging
             logger.info(f"Albums CSV columns: {list(df.columns)}")
 
-            # Normalize ID columns
+            # Normalize ID column
             df['id'] = df['id'].apply(normalize_id)
-            if 'labelID' in df.columns:
-                df['labelID'] = df['labelID'].apply(
-                    lambda x: normalize_id(x) if pd.notna(x) else "")
-            elif 'label_id' in df.columns:
-                df['label_id'] = df['label_id'].apply(
-                    lambda x: normalize_id(x) if pd.notna(x) else "")
 
             for _, row in df.iterrows():
                 album_id = normalize_id(row['id'])
                 if not album_id:
                     continue
 
-                # Get label ID from either column name
-                label_id = ""
-                if 'labelID' in row and pd.notna(row['labelID']):
-                    label_id = normalize_id(row['labelID'])
-                elif 'label_id' in row and pd.notna(row['label_id']):
-                    label_id = normalize_id(row['label_id'])
-
                 # Create album with basic properties
                 album = Album(
                     id=album_id,
                     album_title=str(row['album_title']) if pd.notna(
                         row['album_title']) else f"Album_{album_id}",
-                    release_year=safe_int(row.get('release_year', 0)),
-                    label_id=label_id
+                    release_year=safe_int(row.get('releaseYear', 0))
                 )
 
-                # Parse embedded relationship lists
-                if 'artistIDs' in row and pd.notna(row['artistIDs']):
-                    album.artist_ids = parse_id_list(row['artistIDs'])
-                    self.stats['relationships_parsed'] += len(album.artist_ids)
-
+                # Parse genreIDs list (only list column in albums.csv)
                 if 'genreIDs' in row and pd.notna(row['genreIDs']):
                     album.genre_ids = parse_id_list(row['genreIDs'])
                     self.stats['relationships_parsed'] += len(album.genre_ids)
+                    logger.debug(f"Album {album_id} genres: {album.genre_ids}")
 
                 self.albums[album_id] = album
                 self.stats['entities_loaded'] += 1
 
-            logger.info(f"Loaded {len(self.albums)} albums with relationships")
+            logger.info(f"Loaded {len(self.albums)} albums")
 
         except Exception as e:
             logger.error(f"Error loading albums: {e}")
             raise
 
-    def _load_record_labels(self, data_path: Path) -> None:
-        """Load record labels."""
+    def _load_record_labels_base(self, data_path: Path) -> None:
+        """Load record labels with basic properties."""
         labels_file = data_path / "record_labels.csv"
         if not labels_file.exists():
             logger.warning(f"Record labels file not found: {labels_file}")
@@ -562,8 +490,8 @@ class MusicReasonerEngine:
             logger.error(f"Error loading record labels: {e}")
             raise
 
-    def _load_genres(self, data_path: Path) -> None:
-        """Load genres."""
+    def _load_genres_base(self, data_path: Path) -> None:
+        """Load genres with basic properties."""
         genres_file = data_path / "genres.csv"
         if not genres_file.exists():
             logger.warning(f"Genres file not found: {genres_file}")
@@ -597,8 +525,8 @@ class MusicReasonerEngine:
             logger.error(f"Error loading genres: {e}")
             raise
 
-    def _load_awards_with_relationships(self, data_path: Path) -> None:
-        """Load awards with embedded artistIDs, songIDs lists."""
+    def _load_awards_base(self, data_path: Path) -> None:
+        """Load awards with basic properties only (no relationship columns)."""
         awards_file = data_path / "awards.csv"
         if not awards_file.exists():
             logger.warning(f"Awards file not found: {awards_file}")
@@ -607,8 +535,6 @@ class MusicReasonerEngine:
         try:
             df = pd.read_csv(awards_file)
             logger.info(f"Loading {len(df)} awards from {awards_file}")
-
-            # Log column names for debugging
             logger.info(f"Awards CSV columns: {list(df.columns)}")
 
             df['id'] = df['id'].apply(normalize_id)
@@ -618,7 +544,7 @@ class MusicReasonerEngine:
                 if not award_id:
                     continue
 
-                # Create award with basic properties
+                # Awards only have basic properties - no relationship columns
                 award = Award(
                     id=award_id,
                     award_name=str(row['award_name']) if pd.notna(
@@ -628,79 +554,200 @@ class MusicReasonerEngine:
                         row.get('awarding_body')) else ""
                 )
 
-                # Parse embedded relationship lists
-                if 'artistIDs' in row and pd.notna(row['artistIDs']):
-                    award.artist_ids = parse_id_list(row['artistIDs'])
-                    self.stats['relationships_parsed'] += len(award.artist_ids)
-
-                if 'songIDs' in row and pd.notna(row['songIDs']):
-                    award.song_ids = parse_id_list(row['songIDs'])
-                    self.stats['relationships_parsed'] += len(award.song_ids)
-
                 self.awards[award_id] = award
                 self.stats['entities_loaded'] += 1
 
-            logger.info(f"Loaded {len(self.awards)} awards with relationships")
+            logger.info(f"Loaded {len(self.awards)} awards")
 
         except Exception as e:
             logger.error(f"Error loading awards: {e}")
             raise
 
-    def _establish_all_inverse_properties(self) -> None:
-        """Establish all bidirectional inverse properties from the loaded data."""
-        logger.info("Establishing bidirectional inverse properties...")
+    def _load_songs_as_central_hub(self, data_path: Path) -> None:
+        """Load songs with all embedded relationships - the central connection hub."""
+        songs_file = data_path / "songs.csv"
+        if not songs_file.exists():
+            logger.error(
+                f"Songs file not found: {songs_file} - this is required as the central hub")
+            raise FileNotFoundError(f"Songs file is required: {songs_file}")
 
-        # Song -> Artist inverse relationships
+        try:
+            df = pd.read_csv(songs_file)
+            logger.info(f"Loading {len(df)} songs from {songs_file}")
+            logger.info(f"Songs CSV columns: {list(df.columns)}")
+
+            # Normalize ID column
+            df['id'] = df['id'].apply(normalize_id)
+
+            for _, row in df.iterrows():
+                song_id = normalize_id(row['id'])
+                if not song_id:
+                    continue
+
+                # Create song with basic properties
+                song = Song(
+                    id=song_id,
+                    title=str(row['title']) if pd.notna(
+                        row['title']) else f"Song_{song_id}",
+                    duration=safe_int(row.get('duration', 0)),
+                    release_date=safe_date(row.get('release_date'))
+                )
+
+                # Parse all embedded relationship lists from songs.csv
+                if 'artistIDs' in row and pd.notna(row['artistIDs']):
+                    song.artist_ids = parse_id_list(row['artistIDs'])
+                    self.stats['relationships_parsed'] += len(song.artist_ids)
+                    logger.debug(f"Song {song_id} artists: {song.artist_ids}")
+
+                if 'genreIDs' in row and pd.notna(row['genreIDs']):
+                    song.genre_ids = parse_id_list(row['genreIDs'])
+                    self.stats['relationships_parsed'] += len(song.genre_ids)
+                    logger.debug(f"Song {song_id} genres: {song.genre_ids}")
+
+                if 'albumIDs' in row and pd.notna(row['albumIDs']):
+                    song.album_ids = parse_id_list(row['albumIDs'])
+                    self.stats['relationships_parsed'] += len(song.album_ids)
+                    logger.debug(f"Song {song_id} albums: {song.album_ids}")
+                    if not song.album_ids:
+                        logger.warning(
+                            f"Song {song_id} has albumIDs column but parsed to empty set: '{row['albumIDs']}'")
+                else:
+                    logger.debug(
+                        f"Song {song_id} has no albumIDs or albumIDs is NaN")
+
+                if 'awardIDs' in row and pd.notna(row['awardIDs']):
+                    song.award_ids = parse_id_list(row['awardIDs'])
+                    self.stats['relationships_parsed'] += len(song.award_ids)
+                    logger.debug(f"Song {song_id} awards: {song.award_ids}")
+
+                self.songs[song_id] = song
+                self.stats['entities_loaded'] += 1
+
+            logger.info(
+                f"Loaded {len(self.songs)} songs as central relationship hub")
+
+        except Exception as e:
+            logger.error(f"Error loading songs: {e}")
+            raise
+
+    def _compute_derived_relationships(self) -> None:
+        """Compute all derived relationships from the songs central hub."""
+        logger.info("Computing derived relationships from songs central hub...")
+
+        # Track relationship computation for debugging
+        album_song_links = 0
+        album_artist_derivations = 0
+
+        # Establish artist inverse properties from songs
         for song in self.songs.values():
             for artist_id in song.artist_ids:
                 if artist_id in self.artists:
                     self.artists[artist_id].performed_song_ids.add(song.id)
 
-        # Song -> Genre inverse relationships
+        # Establish genre inverse properties from songs
         for song in self.songs.values():
             for genre_id in song.genre_ids:
                 if genre_id in self.genres:
                     self.genres[genre_id].song_ids.add(song.id)
 
-        # Song -> Album inverse relationships
+        # Establish album inverse properties from songs with debugging
         for song in self.songs.values():
             for album_id in song.album_ids:
                 if album_id in self.albums:
                     self.albums[album_id].song_ids.add(song.id)
+                    album_song_links += 1
+                else:
+                    logger.warning(
+                        f"Song {song.id} references unknown album {album_id}")
 
-        # Album -> Artist inverse relationships
+        # Establish award inverse properties from songs
+        for song in self.songs.values():
+            for award_id in song.award_ids:
+                if award_id in self.awards:
+                    self.awards[award_id].song_ids.add(song.id)
+
+        # Compute album artist relationships (from songs that reference the album)
         for album in self.albums.values():
-            for artist_id in album.artist_ids:
-                if artist_id in self.artists:
-                    self.artists[artist_id].released_album_ids.add(album.id)
+            initial_artist_count = len(album.artist_ids)
+            for song_id in album.song_ids:
+                if song_id in self.songs:
+                    song = self.songs[song_id]
+                    album.artist_ids.update(song.artist_ids)
 
-        # Album -> Genre inverse relationships
-        for album in self.albums.values():
-            for genre_id in album.genre_ids:
-                if genre_id in self.genres:
-                    self.genres[genre_id].album_ids.add(album.id)
+            if len(album.artist_ids) > initial_artist_count:
+                album_artist_derivations += 1
+            elif len(album.song_ids) > 0 and len(album.artist_ids) == 0:
+                logger.error(
+                    f"Album {album.id} has {len(album.song_ids)} songs but no artists derived - checking song artists...")
+                for song_id in album.song_ids:
+                    song = self.songs[song_id]
+                    logger.error(
+                        f"  Song {song_id} has artists: {song.artist_ids}")
 
-        # Artist -> Label inverse relationships
+        logger.info(
+            f"Derived relationships: {album_song_links} album-song links, {album_artist_derivations} albums got artists")
+
+        # Compute artist album relationships (from songs)
+        for artist in self.artists.values():
+            for song_id in artist.performed_song_ids:
+                if song_id in self.songs:
+                    song = self.songs[song_id]
+                    artist.released_album_ids.update(song.album_ids)
+
+        # Compute award artist relationships (from songs that won awards)
+        for award in self.awards.values():
+            for song_id in award.song_ids:
+                if song_id in self.songs:
+                    song = self.songs[song_id]
+                    award.artist_ids.update(song.artist_ids)
+
+        # Compute artist award relationships (from songs)
+        for artist in self.artists.values():
+            for song_id in artist.performed_song_ids:
+                if song_id in self.songs:
+                    song = self.songs[song_id]
+                    artist.won_award_ids.update(song.award_ids)
+
+        # Establish artist-label inverse relationships
         for artist in self.artists.values():
             if artist.label_id and artist.label_id in self.record_labels:
                 self.record_labels[artist.label_id].signed_artists.add(
                     artist.id)
 
-        # Album -> Label inverse relationships
-        for album in self.albums.values():
-            if album.label_id and album.label_id in self.record_labels:
-                self.record_labels[album.label_id].published_albums.add(
-                    album.id)
-
-        # Award -> Artist inverse relationships
-        for award in self.awards.values():
-            for artist_id in award.artist_ids:
+        # Compute label-album relationships (from artists)
+        for label in self.record_labels.values():
+            for artist_id in label.signed_artists:
                 if artist_id in self.artists:
-                    self.artists[artist_id].won_award_ids.add(award.id)
+                    artist = self.artists[artist_id]
+                    label.published_albums.update(artist.released_album_ids)
 
-        # Award -> Song inverse relationships (already handled in song.award_ids)
+        # Establish album genre inverse properties (from albums.csv genreIDs)
+        for album in self.albums.values():
+            for genre_id in album.genre_ids:
+                if genre_id in self.genres:
+                    self.genres[genre_id].album_ids.add(album.id)
 
-        logger.info("All inverse properties established")
+        logger.info(
+            f"Derived relationships: {album_song_links} album-song links, {album_artist_derivations} albums got artists")
+
+        # Diagnostic logging for ID matching
+        logger.info(
+            f"Sample album IDs from albums.csv: {list(self.albums.keys())[:5]}")
+        if self.songs:
+            sample_song = next(iter(self.songs.values()))
+            sample_album_refs = list(sample_song.album_ids)[:5]
+            logger.info(
+                f"Sample album references from songs: {sample_album_refs}")
+
+            # Check for ID normalization mismatches
+            if sample_album_refs:
+                mismatches = [
+                    aid for aid in sample_album_refs if aid not in self.albums]
+                if mismatches:
+                    logger.error(
+                        f"ID mismatch detected! Album IDs referenced by songs but not found in albums: {mismatches}")
+
+        logger.info("All derived relationships computed from songs central hub")
 
     def _validate_all_cardinality_constraints(self) -> None:
         """Validate cardinality constraints for all entities."""
@@ -748,10 +795,18 @@ class MusicReasonerEngine:
             1 for song in self.songs.values() if song.artist_ids)
         songs_with_genres = sum(
             1 for song in self.songs.values() if song.genre_ids)
+        songs_with_albums = sum(
+            1 for song in self.songs.values() if song.album_ids)
+        songs_with_awards = sum(
+            1 for song in self.songs.values() if song.award_ids)
         albums_with_artists = sum(
             1 for album in self.albums.values() if album.artist_ids)
+        albums_with_genres = sum(
+            1 for album in self.albums.values() if album.genre_ids)
         artists_with_labels = sum(
             1 for artist in self.artists.values() if artist.label_id)
+        artists_with_songs = sum(
+            1 for artist in self.artists.values() if artist.performed_song_ids)
 
         logger.info(f"Relationship diagnostics:")
         logger.info(
@@ -759,22 +814,38 @@ class MusicReasonerEngine:
         logger.info(
             f"  Songs with genres: {songs_with_genres}/{len(self.songs)}")
         logger.info(
-            f"  Albums with artists: {albums_with_artists}/{len(self.albums)}")
+            f"  Songs with albums: {songs_with_albums}/{len(self.songs)}")
+        logger.info(
+            f"  Songs with awards: {songs_with_awards}/{len(self.songs)}")
+        logger.info(
+            f"  Albums with artists (computed): {albums_with_artists}/{len(self.albums)}")
+        logger.info(
+            f"  Albums with genres: {albums_with_genres}/{len(self.albums)}")
         logger.info(
             f"  Artists with labels: {artists_with_labels}/{len(self.artists)}")
+        logger.info(
+            f"  Artists with songs: {artists_with_songs}/{len(self.artists)}")
 
         # Sample some entities for verification
         if self.songs:
             sample_song = next(iter(self.songs.values()))
             logger.info(
-                f"Sample song {sample_song.id}: {len(sample_song.artist_ids)} artists, {len(sample_song.genre_ids)} genres")
-            logger.info(f"  Artists: {list(sample_song.artist_ids)[:3]}...")
-            logger.info(f"  Genres: {list(sample_song.genre_ids)[:3]}...")
+                f"Sample song {sample_song.id}: {len(sample_song.artist_ids)} artists, {len(sample_song.genre_ids)} genres, {len(sample_song.album_ids)} albums")
+            if sample_song.artist_ids:
+                logger.info(
+                    f"  Artists: {list(sample_song.artist_ids)[:3]}...")
+            if sample_song.genre_ids:
+                logger.info(f"  Genres: {list(sample_song.genre_ids)[:3]}...")
 
         if self.artists:
             sample_artist = next(iter(self.artists.values()))
             logger.info(
-                f"Sample artist {sample_artist.id}: {len(sample_artist.performed_song_ids)} songs performed")
+                f"Sample artist {sample_artist.id}: {len(sample_artist.performed_song_ids)} songs, {len(sample_artist.released_album_ids)} albums")
+
+        if self.albums:
+            sample_album = next(iter(self.albums.values()))
+            logger.info(
+                f"Sample album {sample_album.id}: {len(sample_album.song_ids)} songs, {len(sample_album.artist_ids)} artists")
 
     def apply_reasoning_rules(self) -> None:
         """
@@ -848,7 +919,7 @@ class MusicReasonerEngine:
             1 for song in self.songs.values() if song.artist_ids)
         if songs_with_artists == 0:
             logger.error(
-                "No songs have associated artists - check embedded list parsing")
+                "No songs have associated artists - check artistIDs column parsing")
             return False
 
         logger.info(
@@ -1105,15 +1176,25 @@ class MusicReasonerEngine:
         contributions_found = 0
 
         for album in self.albums.values():
-            # Artists are contributors
+            # Artists are contributors (computed from songs)
             for artist_id in album.artist_ids:
                 if artist_id in self.artists:
                     album.contributors.add(artist_id)
                     contributions_found += 1
 
-            # Label is contributor
-            if album.label_id and album.label_id in self.record_labels:
-                album.contributors.add(album.label_id)
+            # Find primary label from artist labels
+            label_counts = Counter()
+            for artist_id in album.artist_ids:
+                if artist_id in self.artists:
+                    artist = self.artists[artist_id]
+                    if artist.label_id:
+                        label_counts[artist.label_id] += 1
+
+            # Set most common label as album label
+            if label_counts:
+                most_common_label = label_counts.most_common(1)[0][0]
+                album.label_id = most_common_label
+                album.contributors.add(most_common_label)
                 contributions_found += 1
 
         self.stats['inferences_made'] += contributions_found
@@ -1250,7 +1331,9 @@ class MusicReasonerEngine:
             'relationship_counts': {
                 'song_artist_pairs': sum(len(song.artist_ids) for song in self.songs.values()),
                 'song_genre_pairs': sum(len(song.genre_ids) for song in self.songs.values()),
-                'album_artist_pairs': sum(len(album.artist_ids) for album in self.albums.values()),
+                'song_album_pairs': sum(len(song.album_ids) for song in self.songs.values()),
+                'song_award_pairs': sum(len(song.award_ids) for song in self.songs.values()),
+                'album_genre_pairs': sum(len(album.genre_ids) for album in self.albums.values()),
                 'artist_label_pairs': sum(1 for artist in self.artists.values() if artist.label_id),
                 'total_relationships_parsed': self.stats['relationships_parsed']
             },
@@ -1282,12 +1365,15 @@ class MusicReasonerEngine:
             1 for song in self.songs.values() if song.artist_ids)
         songs_with_genres = sum(
             1 for song in self.songs.values() if song.genre_ids)
+        songs_with_albums = sum(
+            1 for song in self.songs.values() if song.album_ids)
         songs_with_duration = sum(
             1 for song in self.songs.values() if song.duration > 0)
 
         metrics['song_completeness'] = {
             'with_artists': f"{songs_with_artists}/{len(self.songs)}",
             'with_genres': f"{songs_with_genres}/{len(self.songs)}",
+            'with_albums': f"{songs_with_albums}/{len(self.songs)}",
             'with_duration': f"{songs_with_duration}/{len(self.songs)}"
         }
 
@@ -1298,11 +1384,14 @@ class MusicReasonerEngine:
             1 for artist in self.artists.values() if artist.birth_date)
         artists_with_songs = sum(
             1 for artist in self.artists.values() if artist.performed_song_ids)
+        artists_with_albums = sum(
+            1 for artist in self.artists.values() if artist.released_album_ids)
 
         metrics['artist_completeness'] = {
             'with_labels': f"{artists_with_labels}/{len(self.artists)}",
             'with_birth_dates': f"{artists_with_birth_dates}/{len(self.artists)}",
-            'with_songs': f"{artists_with_songs}/{len(self.artists)}"
+            'with_songs': f"{artists_with_songs}/{len(self.artists)}",
+            'with_albums': f"{artists_with_albums}/{len(self.artists)}"
         }
 
         # Album quality metrics
@@ -1310,12 +1399,15 @@ class MusicReasonerEngine:
             1 for album in self.albums.values() if album.artist_ids)
         albums_with_songs = sum(
             1 for album in self.albums.values() if album.song_ids)
+        albums_with_genres = sum(
+            1 for album in self.albums.values() if album.genre_ids)
         albums_with_labels = sum(
             1 for album in self.albums.values() if album.label_id)
 
         metrics['album_completeness'] = {
             'with_artists': f"{albums_with_artists}/{len(self.albums)}",
             'with_songs': f"{albums_with_songs}/{len(self.albums)}",
+            'with_genres': f"{albums_with_genres}/{len(self.albums)}",
             'with_labels': f"{albums_with_labels}/{len(self.albums)}"
         }
 
