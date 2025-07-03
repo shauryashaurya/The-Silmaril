@@ -1,0 +1,49 @@
+================================================================================
+MOVIELENS RDF ONTOLOGY STATISTICS
+================================================================================
+Generated: 2025-07-03 16:23:07
+
+Total Triples: 701,890
+Unique Subjects: 124,658
+Unique Predicates: 21
+Unique Objects: 221,744
+Unique Entities: 231,525
+
+CLASS INSTANCE COUNTS:
+----------------------------------------
+UserRating          :  100,836
+Movie               :    9,742
+Tag                 :    3,683
+User                :      610
+Genre               :       19
+
+TOP 20 PROPERTY USAGE:
+----------------------------------------
+type                          :  114,934
+ratingBy                      :  100,836
+ratingTimestamp               :  100,836
+ratingFor                     :  100,836
+ratingValue                   :  100,836
+ratedBy                       :  100,836
+belongsToGenre                :   22,050
+duration                      :    9,742
+qualityTier                   :    9,742
+title                         :    9,742
+movieID                       :    9,742
+releaseYear                   :    9,718
+taggedWith                    :    3,683
+tagRelevance                  :    3,683
+tagName                       :    3,683
+userID                        :      610
+userType                      :      167
+ratingBehavior                :      167
+seasonalType                  :       20
+genreName                     :       19
+
+REASONING RESULTS STATISTICS:
+----------------------------------------
+qualityTier                   :    9,742
+movieEra                      :        0
+ratingBehavior                :      167
+preferredGenre                :        0
+similarTo                     :        0

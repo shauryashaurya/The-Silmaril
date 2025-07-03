@@ -1,0 +1,37 @@
+{
+  "total_triples": 701890,
+  "class_instances": {
+    "Movie": 9742,
+    "User": 610,
+    "UserRating": 100836,
+    "Tag": 3683,
+    "Genre": 19
+  },
+  "property_usage": {
+    "type": 114934,
+    "ratingBy": 100836,
+    "ratingTimestamp": 100836,
+    "ratingFor": 100836,
+    "ratingValue": 100836,
+    "ratedBy": 100836,
+    "belongsToGenre": 22050,
+    "duration": 9742,
+    "qualityTier": 9742,
+    "title": 9742,
+    "movieID": 9742,
+    "releaseYear": 9718,
+    "taggedWith": 3683,
+    "tagRelevance": 3683,
+    "tagName": 3683,
+    "userID": 610,
+    "userType": 167,
+    "ratingBehavior": 167,
+    "seasonalType": 20,
+    "genreName": 19,
+    "label": 8
+  },
+  "unique_subjects": 124658,
+  "unique_predicates": 21,
+  "unique_objects": 221744,
+  "unique_entities": 231525
+}

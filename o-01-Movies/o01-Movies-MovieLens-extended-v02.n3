@@ -1,0 +1,529 @@
+# Simple Ontology for analysis of MovieLens data...
+# Extending out Movies ontology to add rules...
+# Some explanations of how these rules work in the comments
+# ...
+
+@prefix : <http://example.org/movies#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+
+# Ontology Declaration
+<http://example.org/movies> a owl:Ontology ;
+    rdfs:label "Movies Ontology MovieLens v02" ;
+    rdfs:comment "An ontology for representing movies with reasoning rules for MovieLens analysis" .
+
+# ===== CLASS DEFINITIONS =====
+
+# User Class for MovieLens integration
+:User a owl:Class ;
+    rdfs:label "User" ;
+    rdfs:comment "A user who rates and reviews movies" .
+
+# UserRating Class for representing individual ratings
+:UserRating a owl:Class ;
+    rdfs:label "User Rating" ;
+    rdfs:comment "A rating given by a user to a movie" .
+
+# Tag Class for movie tagging
+:Tag a owl:Class ;
+    rdfs:label "Tag" ;
+    rdfs:comment "A descriptive tag applied to a movie" .
+
+# ===== DATA PROPERTIES =====
+
+# User properties
+:userID a owl:DatatypeProperty ;
+    rdfs:domain :User ;
+    rdfs:range xsd:string .
+
+:age a owl:DatatypeProperty ;
+    rdfs:domain :User ;
+    rdfs:range xsd:int .
+
+:occupation a owl:DatatypeProperty ;
+    rdfs:domain :User ;
+    rdfs:range xsd:string .
+
+# Rating properties
+:ratingValue a owl:DatatypeProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range xsd:float .
+
+:ratingTimestamp a owl:DatatypeProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range xsd:dateTime .
+
+# Aggregated movie properties
+:averageRating a owl:DatatypeProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:float .
+
+:ratingCount a owl:DatatypeProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:int .
+
+# Tag properties
+:tagName a owl:DatatypeProperty ;
+    rdfs:domain :Tag ;
+    rdfs:range xsd:string .
+
+:tagRelevance a owl:DatatypeProperty ;
+    rdfs:domain :Tag ;
+    rdfs:range xsd:float .
+
+# ===== OBJECT PROPERTIES =====
+
+:ratedBy a owl:ObjectProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range :UserRating .
+
+:ratingBy a owl:ObjectProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range :User .
+
+:ratingFor a owl:ObjectProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range :Movie .
+
+:taggedWith a owl:ObjectProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range :Tag .
+
+
+# N3 REASONING RULES FOR MOVIELENS ANALYSIS
+# 
+# UNDERSTANDING N3 RULE FORMAT:
+# - ---   --- -
+# N3 (Notation3) is a logic-based language that extends RDF with rules and built-in functions.
+# Rules in N3 follow the pattern: { ANTECEDENT } => { CONSEQUENT }
+# 
+# KEY N3 SYNTAX ELEMENTS:
+# - Variables start with '?' (e.g., ?movie, ?rating, ?user)
+# - Triples are written as: subject predicate object
+# - Rules express: "IF antecedent conditions are true, THEN consequent assertions follow"
+# - Built-in functions provide mathematical, string, and logical operations
+# - log:collectAllIn aggregates values into lists for processing
+# - math: namespace provides arithmetic operations (greaterThan, sum, quotient, etc.)
+# - string: namespace provides text processing (contains, matches, etc.)
+# 
+# HOW ONTOLOGICAL REASONING WORKS:
+# - ---   --- ----
+# 1. The ontology defines classes (Movie, Actor, etc.) and properties (hasActor, rating, etc.)
+# 2. Instance data provides specific facts (Movie123 hasActor ActorABC, rating 4.5)
+# 3. Rules derive new knowledge by combining existing facts with logical conditions
+# 4. Reasoners execute rules to infer implicit knowledge not explicitly stated
+# 5. This enables intelligent queries, recommendations, and data analysis
+# 
+# BUSINESS VALUE:
+# ---
+# These rules transform raw MovieLens rating data into actionable insights:
+# - Automatic movie quality classification
+# - Personalized recommendation generation  
+# - Market trend analysis and business intelligence
+# - Data quality validation and anomaly detection
+# ---
+
+# ---
+# MOVIE QUALITY CLASSIFICATION RULES
+# ---
+# These rules automatically categorize movies based on user ratings and popularity.
+# They demonstrate how N3 can combine multiple data points to derive classifications.
+
+# RULE 1: High-Quality Movie Identification
+# - ---   --- --
+# LOGIC: IF a movie has both high average rating (>4.0) AND substantial user feedback (>100 ratings)
+#        THEN classify it as "Excellent" with "HIGH" recommendation priority
+#
+# N3 EXPLANATION:
+# - ?movie a :Movie declares that ?movie is an instance of the Movie class
+# - Semicolon (;) chains multiple predicates for the same subject (?movie)
+# - math:greaterThan is a built-in function that performs numerical comparison
+# - The consequent (after =>) adds new properties to the movie instance
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:greaterThan 4.0 .        # Rating threshold for excellence
+  ?count math:greaterThan 100 }          # Minimum ratings for statistical significance
+=> { ?movie :qualityTier "Excellent" ; :recommendationPriority "HIGH" } .
+
+# RULE 2: Good Quality Movie Classification  
+# - ---   --- --
+# LOGIC: Movies with solid ratings (3.5-4.0) and moderate feedback qualify as "Good"
+# DEMONSTRATES: Range checking using multiple math operations
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:greaterThan 3.5 .         # Lower bound for good quality
+  ?rating math:notGreaterThan 4.0 .      # Upper bound (exclusive of excellent tier)
+  ?count math:greaterThan 50 }           # Moderate rating count threshold
+=> { ?movie :qualityTier "Good" ; :recommendationPriority "MEDIUM" } .
+
+# RULE 3: Poor Quality Movie Detection
+# - ---   --- --
+# LOGIC: Movies with consistently low ratings warrant "Poor" classification
+# PURPOSE: Helps filter out low-quality content in recommendation systems
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:lessThan 2.5 .            # Clear indicator of poor quality
+  ?count math:greaterThan 20 }           # Sufficient data to confirm poor reception
+=> { ?movie :qualityTier "Poor" ; :recommendationPriority "LOW" } .
+
+# RULE 4: Controversial Content Detection
+# - ---   --- -----
+# LOGIC: High engagement (many ratings) but mediocre average suggests polarizing content
+# BUSINESS VALUE: Identifies movies that generate strong but divided opinions
+# N3 FEATURE: Demonstrates range detection for "controversial" middle ground
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:greaterThan 2.8 .         # Above poor but not good
+  ?rating math:lessThan 3.2 .            # Narrow range indicates controversy
+  ?count math:greaterThan 200 }          # High engagement despite average rating
+=> { ?movie :contentType "Controversial" ; :analysisNote "Polarizing audience reception" } .
+
+# ---
+# GENRE POPULARITY AND TREND ANALYSIS RULES
+# ---
+# These rules analyze genres across multiple movies to identify market trends.
+# They showcase N3's ability to aggregate data across related instances.
+
+# RULE 5: Popular Genre Identification
+# - ---   --- --
+# LOGIC: Genres with high total engagement across all movies are "mainstream"
+# 
+# N3 ADVANCED FEATURES DEMONSTRATED:
+# - log:collectAllIn: Aggregates values from multiple triples into a list
+# - math:sum: Calculates total across all collected values
+# - Pattern: Collect ratings from all movies in a genre, sum for popularity metric
+{ ?genre a :Genre .
+  { ?movie :belongsToGenre ?genre ; :ratingCount ?count } log:collectAllIn ?ratings .
+  ?ratings math:sum ?totalRatings .      # Sum ratings across all movies in genre
+  ?totalRatings math:greaterThan 5000 }  # Threshold for mainstream popularity
+=> { ?genre :popularityLevel "HIGH" ; :marketAppeal "Mainstream" } .
+
+# RULE 6: Niche Genre Classification
+# - ---   --- 
+# LOGIC: Genres with few movies but high average quality represent "cult followings"
+# 
+# N3 LIST PROCESSING DEMONSTRATED:
+# - list:length: Counts items in collected list
+# - math:quotient: Performs division for average calculation
+# - Complex aggregation: Collect ratings, count movies, calculate average
+{ ?genre a :Genre .
+  { ?movie :belongsToGenre ?genre ; :averageRating ?rating } log:collectAllIn ?ratings .
+  ?ratings list:length ?movieCount .     # Count of movies in this genre
+  ?movieCount math:lessThan 20 .         # Few movies = niche
+  ?ratings math:sum ?totalRating .       # Sum all ratings in genre
+  (?totalRating ?movieCount) math:quotient ?avgGenreRating .  # Calculate average
+  ?avgGenreRating math:greaterThan 3.8 } # High quality despite small size
+=> { ?genre :popularityLevel "NICHE" ; :marketAppeal "Cult Following" } .
+
+# ---
+# TEMPORAL MOVIE ANALYSIS RULES  
+# ---
+# These rules incorporate time-based reasoning to classify movies by era and relevance.
+# They demonstrate N3's temporal reasoning capabilities.
+
+# RULE 7: Classic Movie Identification
+# - ---   --- --
+# LOGIC: Movies released 25+ years ago with sustained high ratings are "classics"
+# 
+# N3 TEMPORAL REASONING FEATURES:
+# - time:localTime: Gets current system time
+# - time:year: Extracts year component from datetime
+# - math:difference: Calculates age of movie
+# - Combines temporal and quality criteria for classification
+{ ?movie a :Movie ; :releaseYear ?year ; :averageRating ?rating .
+  "" time:localTime ?now .               # Get current time (empty string = system)
+  ?now time:year ?currentYear .          # Extract current year
+  (?currentYear ?year) math:difference ?age .  # Calculate movie age
+  ?age math:greaterThan 25 .             # Must be older than 25 years
+  ?rating math:greaterThan 3.8 }         # Must maintain high quality over time
+=> { ?movie :movieEra "Classic" ; :culturalValue "High" } .
+
+# RULE 8: Recent Hit Detection
+# ----
+# LOGIC: Recently released movies with high ratings and engagement are "trending"
+# PURPOSE: Identifies current cultural phenomena for marketing and recommendation
+{ ?movie a :Movie ; :releaseYear ?year ; :averageRating ?rating ; :ratingCount ?count .
+  "" time:localTime ?now .
+  ?now time:year ?currentYear .
+  (?currentYear ?year) math:difference ?age .
+  ?age math:lessThan 3 .                 # Released within last 3 years
+  ?rating math:greaterThan 4.0 .         # High quality
+  ?count math:greaterThan 500 }          # Strong engagement
+=> { ?movie :movieEra "Contemporary Hit" ; :trendStatus "Trending" } .
+
+# ---
+# ACTOR/DIRECTOR CAREER ANALYSIS RULES
+# ---
+# These rules analyze career patterns and professional relationships in the film industry.
+# They showcase N3's ability to perform network analysis and relationship detection.
+
+# RULE 9: Prolific Actor Identification
+# - ---   --- ---
+# LOGIC: Actors with extensive filmographies are classified as "veterans"
+# 
+# N3 RELATIONSHIP AGGREGATION:
+# - Collects all movies where actor appears
+# - Uses list:length to count total appearances
+# - Demonstrates how to analyze career scope
+{ ?actor a :Actor .
+  { ?actor :actorIn ?movie } log:collectAllIn ?movies .  # Collect all movies with this actor
+  ?movies list:length ?filmCount .       # Count total films
+  ?filmCount math:greaterThan 20 }       # Threshold for prolific career
+=> { ?actor :careerStatus "Prolific" ; :experienceLevel "Veteran" } .
+
+# RULE 10: Successful Director Pattern Recognition
+# - ---   --- -
+# LOGIC: Directors with multiple well-rated films demonstrate consistent quality
+# 
+# N3 QUALITY AGGREGATION:
+# - Collects ratings from all director's films
+# - Calculates average quality across career
+# - Combines quantity and quality metrics
+{ ?director a :Director .
+  { ?director :directorOf ?movie . ?movie :averageRating ?rating } log:collectAllIn ?ratings .
+  ?ratings list:length ?filmCount .      # Count of directed films
+  ?filmCount math:greaterThan 5 .        # Minimum films for assessment
+  ?ratings math:sum ?totalRating .       # Sum all movie ratings
+  (?totalRating ?filmCount) math:quotient ?avgDirectorRating .  # Career average
+  ?avgDirectorRating math:greaterThan 3.5 }  # Consistent quality threshold
+=> { ?director :careerStatus "Successful" ; :directorQuality "Consistent" } .
+
+# RULE 11: Actor-Director Collaboration Detection
+# - ---   --- 
+# LOGIC: Frequent collaborations between actors and directors indicate professional relationships
+# 
+# N3 PATTERN MATCHING:
+# - Finds multiple movies with same actor-director pair
+# - log:notEqualTo ensures different movies (not same instance)
+# - Creates bidirectional collaboration relationships
+{ ?actor a :Actor ; :actorIn ?movie1, ?movie2 .      # Actor in multiple movies
+  ?director a :Director ; :directorOf ?movie1, ?movie2 .  # Same director for both
+  ?movie1 log:notEqualTo ?movie2 }       # Ensure different movies
+=> { ?actor :frequentCollaborator ?director ; ?director :frequentCollaborator ?actor } .
+
+# ---
+# USER PREFERENCE AND RECOMMENDATION RULES
+# ---
+# These rules analyze user behavior to enable personalized recommendations.
+# They demonstrate how N3 can perform collaborative filtering and preference learning.
+
+# RULE 12: Genre Preference Detection
+# - ---   --- -
+# LOGIC: Users who consistently rate movies in a genre highly prefer that genre
+# 
+# N3 PREFERENCE LEARNING:
+# - Collects all high ratings (>4.0) by user
+# - Identifies genres of highly-rated movies
+# - Requires minimum threshold (5 ratings) for statistical confidence
+{ ?user a :User .
+  { ?rating :ratingBy ?user ; :ratingFor ?movie ; :ratingValue ?value .
+    ?movie :belongsToGenre ?genre .      # Get genre of rated movie
+    ?value math:greaterThan 4.0 } log:collectAllIn ?highRatings .  # Collect high ratings
+  ?highRatings list:length ?count .      # Count high ratings in this genre
+  ?count math:greaterThan 5 }            # Minimum for preference detection
+=> { ?user :preferredGenre ?genre ; ?genre :preferredBy ?user } .
+
+# RULE 13: Generous Reviewer Detection
+# - ---   --- --
+# LOGIC: Users with high average ratings across many movies are "generous" reviewers
+# 
+# N3 BEHAVIORAL ANALYSIS:
+# - Aggregates all ratings by user
+# - Calculates personal rating average
+# - Classifies rating behavior for recommendation algorithm tuning
+{ ?user a :User .
+  { ?rating :ratingBy ?user ; :ratingValue ?value } log:collectAllIn ?ratings .
+  ?ratings list:length ?ratingCount .    # Total ratings by user
+  ?ratingCount math:greaterThan 50 .     # Active user threshold
+  ?ratings math:sum ?totalRating .       # Sum all user's ratings
+  (?totalRating ?ratingCount) math:quotient ?avgUserRating .  # Personal average
+  ?avgUserRating math:greaterThan 3.8 }  # High personal average
+=> { ?user :ratingBehavior "Generous" ; :userType "Positive Reviewer" } .
+
+# RULE 14: Critical Reviewer Detection
+# - ---   --- --
+# LOGIC: Users with low average ratings are "harsh" or "critical" reviewers
+# PURPOSE: Helps weight recommendations based on reviewer tendencies
+{ ?user a :User .
+  { ?rating :ratingBy ?user ; :ratingValue ?value } log:collectAllIn ?ratings .
+  ?ratings list:length ?ratingCount .
+  ?ratingCount math:greaterThan 50 .     # Sufficient data for analysis
+  ?ratings math:sum ?totalRating .
+  (?totalRating ?ratingCount) math:quotient ?avgUserRating .
+  ?avgUserRating math:lessThan 3.0 }     # Low average indicates critical stance
+=> { ?user :ratingBehavior "Critical" ; :userType "Harsh Reviewer" } .
+
+# ---
+# CONTENT-BASED SIMILARITY RULES
+# ---
+# These rules identify similar movies for recommendation engines.
+# They demonstrate multi-factor similarity detection using N3.
+
+# RULE 15: Genre and Quality-Based Similarity
+# - ---   --- ---
+# LOGIC: Movies in same genre with similar ratings are likely similar content
+# 
+# N3 SIMILARITY CALCULATION:
+# - Finds movies sharing genre and quality tier
+# - Uses math:absoluteValue for rating difference calculation
+# - Creates bidirectional similarity relationships
+{ ?movie1 a :Movie ; :belongsToGenre ?genre ; :averageRating ?rating1 ; :qualityTier ?tier .
+  ?movie2 a :Movie ; :belongsToGenre ?genre ; :averageRating ?rating2 ; :qualityTier ?tier .
+  ?movie1 log:notEqualTo ?movie2 .       # Different movies
+  (?rating1 ?rating2) math:difference ?ratingDiff .  # Calculate difference
+  ?ratingDiff math:absoluteValue ?absDiff .  # Absolute value of difference
+  ?absDiff math:lessThan 0.5 }           # Similar ratings (within 0.5 points)
+=> { ?movie1 :similarTo ?movie2 ; ?movie2 :similarTo ?movie1 } .
+
+# RULE 16: Actor-Based Movie Similarity
+# - ---   --- ---
+# LOGIC: Quality movies sharing actors may appeal to same audiences
+# PURPOSE: Enables "More movies with [Actor Name]" recommendations
+{ ?movie1 a :Movie ; :hasActor ?actor .
+  ?movie2 a :Movie ; :hasActor ?actor .
+  ?movie1 log:notEqualTo ?movie2 .       # Different movies
+  ?movie1 :averageRating ?rating1 .
+  ?movie2 :averageRating ?rating2 .
+  ?rating1 math:greaterThan 3.5 .        # Both movies must be quality
+  ?rating2 math:greaterThan 3.5 }
+=> { ?movie1 :actorSimilarity ?movie2 ; ?actor :connectsMovies (?movie1 ?movie2) } .
+
+# ---
+# ADVANCED RECOMMENDATION LOGIC
+# ---
+# These rules implement sophisticated recommendation strategies.
+
+# RULE 17: Cross-Genre Recommendation
+# - ---   --- -
+# LOGIC: Introduce users to new genres through movies that bridge their preferences
+# 
+# N3 BRIDGE RECOMMENDATION:
+# - Finds movies spanning user's preferred genre plus another
+# - Recommends high-quality multi-genre films as "gateway" content
+{ ?user :preferredGenre ?genre1 .       # User's known preference
+  ?movie :belongsToGenre ?genre1, ?genre2 .  # Movie spans two genres
+  ?genre1 log:notEqualTo ?genre2 .       # Different genres
+  ?movie :qualityTier "Excellent" }      # High quality for successful introduction
+=> { ?movie :crossGenreRecommendation ?user ; :recommendationReason "Genre bridge" } .
+
+# RULE 18: Collaborative Filtering Pattern
+# - ---   --- 
+# LOGIC: Users with similar preferences who both like a movie are "similar users"
+# PURPOSE: Enables "Users like you also enjoyed" recommendations
+{ ?user1 a :User ; :preferredGenre ?genre .
+  ?user2 a :User ; :preferredGenre ?genre .
+  ?user1 log:notEqualTo ?user2 .         # Different users
+  ?rating1 :ratingBy ?user1 ; :ratingFor ?movie ; :ratingValue ?value1 .
+  ?rating2 :ratingBy ?user2 ; :ratingFor ?movie ; :ratingValue ?value2 .
+  ?value1 math:greaterThan 4.0 .         # Both users liked the movie
+  ?value2 math:greaterThan 4.0 }
+=> { ?user1 :similarUser ?user2 ; ?user2 :similarUser ?user1 } .
+
+# RULE 19: Hidden Gem Discovery
+# - ---   --- -
+# LOGIC: High-quality movies with limited exposure are "hidden gems"
+# 
+# N3 DISCOVERY ALGORITHM:
+# - Combines quality, limited popularity, and age criteria
+# - Identifies underappreciated content for discovery recommendations
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count ; :releaseYear ?year .
+  ?rating math:greaterThan 4.0 .         # High quality
+  ?count math:lessThan 100 .             # Limited exposure
+  ?count math:greaterThan 20 .           # But sufficient for confidence
+  "" time:localTime ?now .
+  ?now time:year ?currentYear .
+  (?currentYear ?year) math:difference ?age .
+  ?age math:greaterThan 5 }              # Not brand new (had time for discovery)
+=> { ?movie :recommendationType "Hidden Gem" ; :discoveryPotential "HIGH" } .
+
+# ---
+# SEASONAL AND CONTEXTUAL RECOMMENDATIONS
+# ---
+# These rules provide time and context-aware recommendations.
+
+# RULE 20: Holiday Movie Classification
+# - ---   --- ---
+# LOGIC: Movies tagged with holiday themes get seasonal recommendation status
+# 
+# N3 STRING PROCESSING:
+# - string:contains searches for substrings in tag names
+# - Enables seasonal recommendation engines
+{ ?movie a :Movie ; :taggedWith ?tag .
+  ?tag :tagName ?tagName .
+  ?tagName string:contains "Christmas" }  # Search for Christmas-related tags
+=> { ?movie :seasonalType "Christmas" ; :recommendationPeriod "December" } .
+
+{ ?movie a :Movie ; :taggedWith ?tag .
+  ?tag :tagName ?tagName .
+  ?tagName string:contains "Halloween" }  # Halloween-themed content
+=> { ?movie :seasonalType "Halloween" ; :recommendationPeriod "October" } .
+
+# RULE 21: Viewing Context Recommendations
+# - ---   --- 
+# LOGIC: Movie duration and quality determine optimal viewing occasions
+# PURPOSE: "Quick weeknight movie" vs "Weekend epic" recommendations
+{ ?movie a :Movie ; :duration ?duration ; :averageRating ?rating .
+  ?duration math:greaterThan 150 .       # Long movies (2.5+ hours)
+  ?rating math:greaterThan 3.8 }         # Quality content worth the time investment
+=> { ?movie :viewingOccasion "Weekend" ; :timeCommitment "HIGH" } .
+
+{ ?movie a :Movie ; :duration ?duration ; :averageRating ?rating .
+  ?duration math:lessThan 100 .          # Short movies (under 1.5 hours)
+  ?rating math:greaterThan 3.5 }         # Good quality for limited time
+=> { ?movie :viewingOccasion "Weekday" ; :timeCommitment "LOW" } .
+
+# ---
+# DATA QUALITY AND BUSINESS INTELLIGENCE RULES
+# ---
+# These rules ensure data reliability and provide business insights.
+
+# RULE 22: Data Quality Assessment
+# - ---   --- ----
+# LOGIC: Movies with insufficient ratings have unreliable recommendation scores
+# PURPOSE: Filters unreliable data from recommendation engines
+{ ?movie a :Movie ; :ratingCount ?count .
+  ?count math:lessThan 5 }               # Insufficient statistical base
+=> { ?movie :dataQuality "Insufficient" ; :recommendationReliability "LOW" } .
+
+# RULE 23: Business Intelligence - Revenue Potential
+# - ---   --- ----
+# LOGIC: Movies combining multiple positive indicators have high commercial potential
+# PURPOSE: Investment and marketing decision support
+{ ?movie a :Movie ; :qualityTier "Excellent" ; :popularityLevel "HIGH" ; :movieEra "Contemporary Hit" }
+=> { ?movie :revenuePotential "HIGH" ; :marketingPriority "PREMIUM" } .
+
+# RULE 24: Audience Segmentation for Marketing
+# - ---   --- ----
+# LOGIC: Demographic and preference data enables targeted marketing strategies
+# PURPOSE: Optimizes marketing channel selection and message targeting
+{ ?user a :User ; :age ?age ; :preferredGenre ?genre .
+  ?age math:lessThan 25 .                # Young demographic
+  ?genre :genreName "Action" }           # Action preference
+=> { ?user :audienceSegment "Young Action Fans" ; :marketingChannel "Social Media" } .
+
+{ ?user a :User ; :age ?age ; :preferredGenre ?genre .
+  ?age math:greaterThan 45 .             # Mature demographic  
+  ?genre :genreName "Drama" }            # Drama preference
+=> { ?user :audienceSegment "Mature Drama Enthusiasts" ; :marketingChannel "Traditional Media" } .
+
+# ---
+# SUMMARY: N3 ONTOLOGICAL REASONING BENEFITS
+# ---
+# 
+# These rules demonstrate how N3 ontologies transform static data into intelligent systems:
+#
+# 1. AUTOMATED CLASSIFICATION: Rules automatically categorize content without manual intervention
+# 2. PATTERN DETECTION: Complex patterns emerge from simple data relationships  
+# 3. PERSONALIZATION: User behavior drives customized experiences
+# 4. BUSINESS INTELLIGENCE: Data becomes actionable business insights
+# 5. SCALABILITY: Rules apply consistently across millions of data points
+# 6. MAINTAINABILITY: Business logic is declarative and easily understood
+# 7. FLEXIBILITY: New rules can be added without changing core system architecture
+#
+# The combination of ontological structure (classes and properties) with logical rules
+# (conditions and conclusions) creates a powerful framework for intelligent data processing
+# that goes far beyond simple database queries or hardcoded algorithms.
+# ---

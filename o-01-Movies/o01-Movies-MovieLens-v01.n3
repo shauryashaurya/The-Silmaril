@@ -1,0 +1,338 @@
+# Simple Ontology for analysis of MovieLens data...
+# ...
+
+@prefix : <http://example.org/movies#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix time: <http://www.w3.org/2000/10/swap/time#> .
+@prefix list: <http://www.w3.org/2000/10/swap/list#> .
+@prefix string: <http://www.w3.org/2000/10/swap/string#> .
+
+# Ontology Declaration
+<http://example.org/movies> a owl:Ontology ;
+    rdfs:label "Movies Ontology MovieLens v01" ;
+    rdfs:comment "An ontology for representing movies with reasoning rules for MovieLens analysis" .
+
+# ===== CLASS DEFINITIONS =====
+
+# User Class for MovieLens integration
+:User a owl:Class ;
+    rdfs:label "User" ;
+    rdfs:comment "A user who rates and reviews movies" .
+
+# UserRating Class for representing individual ratings
+:UserRating a owl:Class ;
+    rdfs:label "User Rating" ;
+    rdfs:comment "A rating given by a user to a movie" .
+
+# Tag Class for movie tagging
+:Tag a owl:Class ;
+    rdfs:label "Tag" ;
+    rdfs:comment "A descriptive tag applied to a movie" .
+
+# ===== DATA PROPERTIES =====
+
+# User properties
+:userID a owl:DatatypeProperty ;
+    rdfs:domain :User ;
+    rdfs:range xsd:string .
+
+:age a owl:DatatypeProperty ;
+    rdfs:domain :User ;
+    rdfs:range xsd:int .
+
+:occupation a owl:DatatypeProperty ;
+    rdfs:domain :User ;
+    rdfs:range xsd:string .
+
+# Rating properties
+:ratingValue a owl:DatatypeProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range xsd:float .
+
+:ratingTimestamp a owl:DatatypeProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range xsd:dateTime .
+
+# Aggregated movie properties
+:averageRating a owl:DatatypeProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:float .
+
+:ratingCount a owl:DatatypeProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range xsd:int .
+
+# Tag properties
+:tagName a owl:DatatypeProperty ;
+    rdfs:domain :Tag ;
+    rdfs:range xsd:string .
+
+:tagRelevance a owl:DatatypeProperty ;
+    rdfs:domain :Tag ;
+    rdfs:range xsd:float .
+
+# ===== OBJECT PROPERTIES =====
+
+:ratedBy a owl:ObjectProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range :UserRating .
+
+:ratingBy a owl:ObjectProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range :User .
+
+:ratingFor a owl:ObjectProperty ;
+    rdfs:domain :UserRating ;
+    rdfs:range :Movie .
+
+:taggedWith a owl:ObjectProperty ;
+    rdfs:domain :Movie ;
+    rdfs:range :Tag .
+
+# ===== N3 REASONING RULES FOR MOVIELENS ANALYSIS =====
+
+# Movie Quality Classification Rules
+
+# High-Quality Movie Identification
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:greaterThan 4.0 .
+  ?count math:greaterThan 100 } 
+=> { ?movie :qualityTier "Excellent" ; :recommendationPriority "HIGH" } .
+
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:greaterThan 3.5 .
+  ?rating math:notGreaterThan 4.0 .
+  ?count math:greaterThan 50 } 
+=> { ?movie :qualityTier "Good" ; :recommendationPriority "MEDIUM" } .
+
+# Low-Quality Movie Identification
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:lessThan 2.5 .
+  ?count math:greaterThan 20 } 
+=> { ?movie :qualityTier "Poor" ; :recommendationPriority "LOW" } .
+
+# Controversial Movie Detection (high rating count but average rating)
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:greaterThan 2.8 .
+  ?rating math:lessThan 3.2 .
+  ?count math:greaterThan 200 } 
+=> { ?movie :contentType "Controversial" ; :analysisNote "Polarizing audience reception" } .
+
+# Genre Popularity and Trend Analysis
+
+# Popular Genre Identification
+{ ?genre a :Genre .
+  { ?movie :belongsToGenre ?genre ; :ratingCount ?count } log:collectAllIn ?ratings .
+  ?ratings math:sum ?totalRatings .
+  ?totalRatings math:greaterThan 5000 } 
+=> { ?genre :popularityLevel "HIGH" ; :marketAppeal "Mainstream" } .
+
+# Niche Genre Classification
+{ ?genre a :Genre .
+  { ?movie :belongsToGenre ?genre ; :averageRating ?rating } log:collectAllIn ?ratings .
+  ?ratings list:length ?movieCount .
+  ?movieCount math:lessThan 20 .
+  ?ratings math:sum ?totalRating .
+  (?totalRating ?movieCount) math:quotient ?avgGenreRating .
+  ?avgGenreRating math:greaterThan 3.8 } 
+=> { ?genre :popularityLevel "NICHE" ; :marketAppeal "Cult Following" } .
+
+# Temporal Movie Analysis
+
+# Classic Movie Identification
+{ ?movie a :Movie ; :releaseYear ?year ; :averageRating ?rating .
+  "" time:localTime ?now .
+  ?now time:year ?currentYear .
+  (?currentYear ?year) math:difference ?age .
+  ?age math:greaterThan 25 .
+  ?rating math:greaterThan 3.8 } 
+=> { ?movie :movieEra "Classic" ; :culturalValue "High" } .
+
+# Recent Hit Detection
+{ ?movie a :Movie ; :releaseYear ?year ; :averageRating ?rating ; :ratingCount ?count .
+  "" time:localTime ?now .
+  ?now time:year ?currentYear .
+  (?currentYear ?year) math:difference ?age .
+  ?age math:lessThan 3 .
+  ?rating math:greaterThan 4.0 .
+  ?count math:greaterThan 500 } 
+=> { ?movie :movieEra "Contemporary Hit" ; :trendStatus "Trending" } .
+
+# Actor/Director Career Analysis
+
+# Prolific Actor Identification
+{ ?actor a :Actor .
+  { ?actor :actorIn ?movie } log:collectAllIn ?movies .
+  ?movies list:length ?filmCount .
+  ?filmCount math:greaterThan 20 } 
+=> { ?actor :careerStatus "Prolific" ; :experienceLevel "Veteran" } .
+
+# Successful Director Pattern
+{ ?director a :Director .
+  { ?director :directorOf ?movie . ?movie :averageRating ?rating } log:collectAllIn ?ratings .
+  ?ratings list:length ?filmCount .
+  ?filmCount math:greaterThan 5 .
+  ?ratings math:sum ?totalRating .
+  (?totalRating ?filmCount) math:quotient ?avgDirectorRating .
+  ?avgDirectorRating math:greaterThan 3.5 } 
+=> { ?director :careerStatus "Successful" ; :directorQuality "Consistent" } .
+
+# Actor-Director Collaboration Detection
+{ ?actor a :Actor ; :actorIn ?movie1, ?movie2 .
+  ?director a :Director ; :directorOf ?movie1, ?movie2 .
+  ?movie1 log:notEqualTo ?movie2 } 
+=> { ?actor :frequentCollaborator ?director ; ?director :frequentCollaborator ?actor } .
+
+# User Preference and Recommendation Rules
+
+# Genre Preference Detection
+{ ?user a :User .
+  { ?rating :ratingBy ?user ; :ratingFor ?movie ; :ratingValue ?value .
+    ?movie :belongsToGenre ?genre .
+    ?value math:greaterThan 4.0 } log:collectAllIn ?highRatings .
+  ?highRatings list:length ?count .
+  ?count math:greaterThan 5 } 
+=> { ?user :preferredGenre ?genre ; ?genre :preferredBy ?user } .
+
+# User Rating Behavior Analysis
+{ ?user a :User .
+  { ?rating :ratingBy ?user ; :ratingValue ?value } log:collectAllIn ?ratings .
+  ?ratings list:length ?ratingCount .
+  ?ratingCount math:greaterThan 50 .
+  ?ratings math:sum ?totalRating .
+  (?totalRating ?ratingCount) math:quotient ?avgUserRating .
+  ?avgUserRating math:greaterThan 3.8 } 
+=> { ?user :ratingBehavior "Generous" ; :userType "Positive Reviewer" } .
+
+{ ?user a :User .
+  { ?rating :ratingBy ?user ; :ratingValue ?value } log:collectAllIn ?ratings .
+  ?ratings list:length ?ratingCount .
+  ?ratingCount math:greaterThan 50 .
+  ?ratings math:sum ?totalRating .
+  (?totalRating ?ratingCount) math:quotient ?avgUserRating .
+  ?avgUserRating math:lessThan 3.0 } 
+=> { ?user :ratingBehavior "Critical" ; :userType "Harsh Reviewer" } .
+
+# Content-Based Similarity Rules
+
+# Similar Movies by Genre and Quality
+{ ?movie1 a :Movie ; :belongsToGenre ?genre ; :averageRating ?rating1 ; :qualityTier ?tier .
+  ?movie2 a :Movie ; :belongsToGenre ?genre ; :averageRating ?rating2 ; :qualityTier ?tier .
+  ?movie1 log:notEqualTo ?movie2 .
+  (?rating1 ?rating2) math:difference ?ratingDiff .
+  ?ratingDiff math:absoluteValue ?absDiff .
+  ?absDiff math:lessThan 0.5 } 
+=> { ?movie1 :similarTo ?movie2 ; ?movie2 :similarTo ?movie1 } .
+
+# Actor-Based Movie Similarity
+{ ?movie1 a :Movie ; :hasActor ?actor .
+  ?movie2 a :Movie ; :hasActor ?actor .
+  ?movie1 log:notEqualTo ?movie2 .
+  ?movie1 :averageRating ?rating1 .
+  ?movie2 :averageRating ?rating2 .
+  ?rating1 math:greaterThan 3.5 .
+  ?rating2 math:greaterThan 3.5 } 
+=> { ?movie1 :actorSimilarity ?movie2 ; ?actor :connectsMovies (?movie1 ?movie2) } .
+
+# Advanced Recommendation Logic
+
+# Cross-Genre Recommendation
+{ ?user :preferredGenre ?genre1 .
+  ?movie :belongsToGenre ?genre1, ?genre2 .
+  ?genre1 log:notEqualTo ?genre2 .
+  ?movie :qualityTier "Excellent" } 
+=> { ?movie :crossGenreRecommendation ?user ; :recommendationReason "Genre bridge" } .
+
+# Collaborative Filtering Patterns
+{ ?user1 a :User ; :preferredGenre ?genre .
+  ?user2 a :User ; :preferredGenre ?genre .
+  ?user1 log:notEqualTo ?user2 .
+  ?rating1 :ratingBy ?user1 ; :ratingFor ?movie ; :ratingValue ?value1 .
+  ?rating2 :ratingBy ?user2 ; :ratingFor ?movie ; :ratingValue ?value2 .
+  ?value1 math:greaterThan 4.0 .
+  ?value2 math:greaterThan 4.0 } 
+=> { ?user1 :similarUser ?user2 ; ?user2 :similarUser ?user1 } .
+
+# Discovery Recommendation (Underrated Gems)
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count ; :releaseYear ?year .
+  ?rating math:greaterThan 4.0 .
+  ?count math:lessThan 100 .
+  ?count math:greaterThan 20 .
+  "" time:localTime ?now .
+  ?now time:year ?currentYear .
+  (?currentYear ?year) math:difference ?age .
+  ?age math:greaterThan 5 } 
+=> { ?movie :recommendationType "Hidden Gem" ; :discoveryPotential "HIGH" } .
+
+# Seasonal and Temporal Recommendations
+
+# Holiday Movie Classification
+{ ?movie a :Movie ; :taggedWith ?tag .
+  ?tag :tagName ?tagName .
+  ?tagName string:contains "Christmas" } 
+=> { ?movie :seasonalType "Christmas" ; :recommendationPeriod "December" } .
+
+{ ?movie a :Movie ; :taggedWith ?tag .
+  ?tag :tagName ?tagName .
+  ?tagName string:contains "Halloween" } 
+=> { ?movie :seasonalType "Halloween" ; :recommendationPeriod "October" } .
+
+# Weekend vs Weekday Recommendations
+{ ?movie a :Movie ; :duration ?duration ; :averageRating ?rating .
+  ?duration math:greaterThan 150 .
+  ?rating math:greaterThan 3.8 } 
+=> { ?movie :viewingOccasion "Weekend" ; :timeCommitment "HIGH" } .
+
+{ ?movie a :Movie ; :duration ?duration ; :averageRating ?rating .
+  ?duration math:lessThan 100 .
+  ?rating math:greaterThan 3.5 } 
+=> { ?movie :viewingOccasion "Weekday" ; :timeCommitment "LOW" } .
+
+# Quality Assurance and Data Validation Rules
+
+# Suspicious Rating Detection
+{ ?movie a :Movie ; :ratingCount ?count .
+  ?count math:lessThan 5 } 
+=> { ?movie :dataQuality "Insufficient" ; :recommendationReliability "LOW" } .
+
+# Outlier Movie Detection
+{ ?movie a :Movie ; :averageRating ?rating ; :ratingCount ?count .
+  ?rating math:greaterThan 4.8 .
+  ?count math:lessThan 10 } 
+=> { ?movie :dataQuality "Potential Outlier" ; :requiresReview true } .
+
+# Genre Consistency Validation
+{ ?movie a :Movie ; :belongsToGenre ?genre1, ?genre2, ?genre3, ?genre4, ?genre5 .
+  ?genre1 log:notEqualTo ?genre2 .
+  ?genre2 log:notEqualTo ?genre3 .
+  ?genre3 log:notEqualTo ?genre4 .
+  ?genre4 log:notEqualTo ?genre5 } 
+=> { ?movie :genreClassification "Multi-Genre" ; :recommendationComplexity "HIGH" } .
+
+# Business Intelligence Rules
+
+# Revenue Potential Estimation
+{ ?movie a :Movie ; :qualityTier "Excellent" ; :popularityLevel "HIGH" ; :movieEra "Contemporary Hit" } 
+=> { ?movie :revenuePotential "HIGH" ; :marketingPriority "PREMIUM" } .
+
+# Franchise Opportunity Detection
+{ ?movie1 a :Movie ; :hasDirector ?director ; :qualityTier "Excellent" .
+  ?movie2 a :Movie ; :hasDirector ?director ; :qualityTier "Excellent" .
+  ?movie1 log:notEqualTo ?movie2 } 
+=> { ?director :franchisePotential "HIGH" ; :investmentRisk "LOW" } .
+
+# Audience Segmentation Rules
+{ ?user a :User ; :age ?age ; :preferredGenre ?genre .
+  ?age math:lessThan 25 .
+  ?genre :genreName "Action" } 
+=> { ?user :audienceSegment "Young Action Fans" ; :marketingChannel "Social Media" } .
+
+{ ?user a :User ; :age ?age ; :preferredGenre ?genre .
+  ?age math:greaterThan 45 .
+  ?genre :genreName "Drama" } 
+=> { ?user :audienceSegment "Mature Drama Enthusiasts" ; :marketingChannel "Traditional Media" } .

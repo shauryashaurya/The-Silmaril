@@ -1,0 +1,23 @@
+{
+  "export_timestamp": "2025-07-03T16:23:07.614812",
+  "output_directory": "./data/ml-latest-small\\ontologies",
+  "total_triples": 701890,
+  "saved_files": [
+    "./data/ml-latest-small\\ontologies\\movielens_ontology.ttl",
+    "./data/ml-latest-small\\ontologies\\movielens_ontology.n3",
+    "./data/ml-latest-small\\ontologies\\movielens_ontology.rdf",
+    "./data/ml-latest-small\\ontologies\\movielens_ontology.jsonld",
+    "./data/ml-latest-small\\ontologies\\movielens_ontology.nt"
+  ],
+  "formats": [
+    "Turtle (.ttl)",
+    "N3 (.n3)",
+    "RDF/XML (.rdf)",
+    "JSON-LD (.jsonld)",
+    "N-Triples (.nt)"
+  ],
+  "statistics_files": [
+    "./data/ml-latest-small\\ontologies\\rdf_statistics.txt",
+    "./data/ml-latest-small\\ontologies\\rdf_statistics.json"
+  ]
+}
