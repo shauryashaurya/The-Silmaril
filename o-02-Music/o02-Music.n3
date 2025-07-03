@@ -5,13 +5,14 @@
 # Separate release properties: Distinguish releasedByArtist and releasedByLabel since the two "releasedBy" relationships have different semantics
 # Comprehensive inverse properties: Additional inverse relationships for bidirectional navigation
 
-
-# yeah, just use example.org...
 @prefix : <http://example.org/music#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix str: <http://www.w3.org/2000/10/swap/string#> .
 
 # Ontology Declaration
 <http://example.org/music> a owl:Ontology ;
@@ -20,51 +21,60 @@
 
 # ===== CLASS DEFINITIONS =====
 
-# Song Class
 :Song a owl:Class ;
     rdfs:label "Song" ;
     rdfs:comment "A musical composition" .
 
-# Artist Class
 :Artist a owl:Class ;
     rdfs:label "Artist" ;
     rdfs:comment "A person or group who creates or performs music" .
 
-# Album Class
 :Album a owl:Class ;
     rdfs:label "Album" ;
     rdfs:comment "A collection of songs released together" .
 
-# RecordLabel Class
 :RecordLabel a owl:Class ;
     rdfs:label "Record Label" ;
     rdfs:comment "A company that manages the production, distribution, and promotion of music" .
 
-# Genre Class
 :Genre a owl:Class ;
     rdfs:label "Genre" ;
     rdfs:comment "A category or style of music" .
 
-# Award Class
 :Award a owl:Class ;
     rdfs:label "Award" ;
     rdfs:comment "A recognition given for musical achievement" .
 
-# Single Class (subclass of Song)
 :Single a owl:Class ;
     rdfs:subClassOf :Song ;
     rdfs:label "Single" ;
     rdfs:comment "A song released as a standalone track or as a primary track from an album" .
 
-# ExtendedPlay Class (subclass of Album)
 :ExtendedPlay a owl:Class ;
     rdfs:subClassOf :Album ;
     rdfs:label "Extended Play" ;
     rdfs:comment "A musical recording that contains more music than a single but is shorter than an album" .
 
+# ===== ADDITIONAL INFERRED CLASSES =====
+# These classes emerge from reasoning rules below - not explicitly asserted
+
+:CollaborativeSong a owl:Class ;
+    rdfs:subClassOf :Song ;
+    rdfs:label "Collaborative Song" ;
+    rdfs:comment "A song performed by multiple artists" .
+
+:SuccessfulLabel a owl:Class ;
+    rdfs:subClassOf :RecordLabel ;
+    rdfs:label "Successful Label" ;
+    rdfs:comment "A record label with multiple award-winning artists" .
+
+:EstablishedArtist a owl:Class ;
+    rdfs:subClassOf :Artist ;
+    rdfs:label "Established Artist" ;
+    rdfs:comment "An artist with multiple albums and awards" .
+
 # ===== DATA PROPERTIES =====
 
-# Song Data Properties
 :title a owl:DatatypeProperty ;
     rdfs:label "title" ;
     rdfs:comment "The title of a song" ;
@@ -83,7 +93,6 @@
     rdfs:domain :Song ;
     rdfs:range xsd:date .
 
-# Artist Data Properties
 :name a owl:DatatypeProperty ;
     rdfs:label "name" ;
     rdfs:comment "The name of an artist" ;
@@ -102,7 +111,6 @@
     rdfs:domain :Artist ;
     rdfs:range xsd:string .
 
-# Album Data Properties
 :albumTitle a owl:DatatypeProperty ;
     rdfs:label "album title" ;
     rdfs:comment "The title of an album" ;
@@ -115,7 +123,6 @@
     rdfs:domain :Album ;
     rdfs:range xsd:int .
 
-# RecordLabel Data Properties
 :labelName a owl:DatatypeProperty ;
     rdfs:label "label name" ;
     rdfs:comment "The name of a record label" ;
@@ -128,7 +135,6 @@
     rdfs:domain :RecordLabel ;
     rdfs:range xsd:string .
 
-# Genre Data Properties
 :genreName a owl:DatatypeProperty ;
     rdfs:label "genre name" ;
     rdfs:comment "The name of a genre" ;
@@ -141,7 +147,6 @@
     rdfs:domain :Genre ;
     rdfs:range xsd:string .
 
-# Award Data Properties
 :awardName a owl:DatatypeProperty ;
     rdfs:label "award name" ;
     rdfs:comment "The name of an award" ;
@@ -160,109 +165,132 @@
     rdfs:domain :Award ;
     rdfs:range xsd:string .
 
-# Single Data Properties
 :isStandalone a owl:DatatypeProperty ;
     rdfs:label "is standalone" ;
     rdfs:comment "Whether a single is released independently or as part of an album" ;
     rdfs:domain :Single ;
     rdfs:range xsd:boolean .
 
-# ExtendedPlay Data Properties
 :numberOfTracks a owl:DatatypeProperty ;
     rdfs:label "number of tracks" ;
     rdfs:comment "The number of tracks in an extended play" ;
     rdfs:domain :ExtendedPlay ;
     rdfs:range xsd:int .
 
+# ===== ADDITIONAL INFERRED DATA PROPERTIES =====
+
+:collaborationStrength a owl:DatatypeProperty ;
+    rdfs:label "collaboration strength" ;
+    rdfs:comment "Numeric measure of how often two artists collaborate" ;
+    rdfs:range xsd:int .
+
+:popularityScore a owl:DatatypeProperty ;
+    rdfs:label "popularity score" ;
+    rdfs:comment "Calculated popularity metric based on awards and collaborations" ;
+    rdfs:range xsd:int .
+
+:labelSuccessRating a owl:DatatypeProperty ;
+    rdfs:label "label success rating" ;
+    rdfs:comment "Success metric for record labels based on artist achievements" ;
+    rdfs:range xsd:int .
+
 # ===== OBJECT PROPERTIES =====
 
-# performedBy: Song -> Artist (one-to-many)
 :performedBy a owl:ObjectProperty ;
     rdfs:label "performed by" ;
     rdfs:comment "Relates a song to the artist(s) who perform it" ;
     rdfs:domain :Song ;
     rdfs:range :Artist .
 
-# featuredOn: Song -> Album (one-to-many)
 :featuredOn a owl:ObjectProperty ;
     rdfs:label "featured on" ;
     rdfs:comment "Relates a song to the album(s) it appears on" ;
     rdfs:domain :Song ;
     rdfs:range :Album .
 
-# hasGenre: Song -> Genre (one-to-many) and Album -> Genre (one-to-many)
 :hasGenre a owl:ObjectProperty ;
     rdfs:label "has genre" ;
     rdfs:comment "Relates a song or album to its genre(s)" ;
     rdfs:domain [ a owl:Class ; owl:unionOf ( :Song :Album ) ] ;
     rdfs:range :Genre .
 
-# hasWonAward: Song -> Award (one-to-many) and Artist -> Award (one-to-many)
 :hasWonAward a owl:ObjectProperty ;
     rdfs:label "has won award" ;
     rdfs:comment "Relates a song or artist to awards they have won" ;
     rdfs:domain [ a owl:Class ; owl:unionOf ( :Song :Artist ) ] ;
     rdfs:range :Award .
 
-# signedTo: Artist -> RecordLabel (one-to-one)
 :signedTo a owl:ObjectProperty ;
     rdfs:label "signed to" ;
     rdfs:comment "Relates an artist to the record label they are signed to" ;
     rdfs:domain :Artist ;
     rdfs:range :RecordLabel .
 
-# releasedByArtist: Album -> Artist (one-to-many)
 :releasedByArtist a owl:ObjectProperty ;
     rdfs:label "released by artist" ;
     rdfs:comment "Relates an album to the artist(s) who released it" ;
     rdfs:domain :Album ;
     rdfs:range :Artist .
 
-# releasedByLabel: Album -> RecordLabel (one-to-one)
 :releasedByLabel a owl:ObjectProperty ;
     rdfs:label "released by label" ;
     rdfs:comment "Relates an album to the record label that released it" ;
     rdfs:domain :Album ;
     rdfs:range :RecordLabel .
 
+# ===== ADDITIONAL INFERRED OBJECT PROPERTIES =====
+
+:collaboratesWith a owl:ObjectProperty ;
+    rdfs:label "collaborates with" ;
+    rdfs:comment "Relates artists who have performed songs together" ;
+    rdfs:domain :Artist ;
+    rdfs:range :Artist ;
+    a owl:SymmetricProperty .
+
+:influencedBy a owl:ObjectProperty ;
+    rdfs:label "influenced by" ;
+    rdfs:comment "Relates artists through genre and collaboration networks" ;
+    rdfs:domain :Artist ;
+    rdfs:range :Artist ;
+    a owl:TransitiveProperty .
+
+:isContributor a owl:ObjectProperty ;
+    rdfs:label "is contributor" ;
+    rdfs:comment "Relates an entity to albums they contributed to" ;
+    rdfs:range :Album .
+
 # ===== CARDINALITY CONSTRAINTS =====
 
-# Song must be performed by at least one artist
 :Song rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty :performedBy ;
     owl:minCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-# Song must have at least one genre
 :Song rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty :hasGenre ;
     owl:minCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-# Album must have at least one genre
 :Album rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty :hasGenre ;
     owl:minCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-# Album must be released by at least one artist
 :Album rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty :releasedByArtist ;
     owl:minCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-# Album must be released by exactly one record label
 :Album rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty :releasedByLabel ;
     owl:cardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-# Artist can be signed to at most one record label
 :Artist rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty :signedTo ;
@@ -271,7 +299,6 @@
 
 # ===== INVERSE PROPERTIES =====
 
-# Define inverse relationships for better navigation
 :performs a owl:ObjectProperty ;
     rdfs:label "performs" ;
     rdfs:comment "Relates an artist to songs they perform" ;
@@ -320,3 +347,228 @@
     owl:inverseOf :releasedByLabel ;
     rdfs:domain :RecordLabel ;
     rdfs:range :Album .
+
+# ===== N3 REASONING RULES =====
+# This section demonstrates N3's reasoning capabilities beyond basic OWL.
+# N3 uses => for implication rules, allowing complex logical inference.
+# Unlike relational databases which store facts, ontologies derive new facts through reasoning.
+
+# COLLABORATION DETECTION RULE
+# If two different artists perform the same song, they collaborate.
+# This rule creates implicit relationships not explicitly stored.
+# In a relational DB, you'd need explicit collaboration tables and queries.
+# Here, the reasoner automatically infers collaborations from song performance data.
+{
+    ?song :performedBy ?artist1 .
+    ?song :performedBy ?artist2 .
+    ?artist1 log:notEqualTo ?artist2 .
+} => {
+    ?artist1 :collaboratesWith ?artist2 .
+    ?song a :CollaborativeSong .
+} .
+
+# GENRE INHERITANCE RULE
+# Albums inherit genres from their constituent songs when there's consensus.
+# This shows how ontologies can propagate properties through hierarchies.
+# Unlike flat files where you'd duplicate genre data, ontologies infer it.
+# The reasoner aggregates song-level data to album-level insights.
+{
+    ?album :features ?song1 .
+    ?album :features ?song2 .
+    ?song1 :hasGenre ?genre .
+    ?song2 :hasGenre ?genre .
+    ?song1 log:notEqualTo ?song2 .
+} => {
+    ?album :hasGenre ?genre .
+} .
+
+# LABEL SUCCESS INFERENCE RULE
+# Labels with multiple award-winning artists are classified as successful.
+# This demonstrates how ontologies can automatically categorize entities.
+# The rule counts relationships and applies business logic through reasoning.
+# Traditional databases require explicit queries; here it's automatic.
+{
+    ?label :hasSignedArtist ?artist1 .
+    ?label :hasSignedArtist ?artist2 .
+    ?artist1 :hasWonAward ?award1 .
+    ?artist2 :hasWonAward ?award2 .
+    ?artist1 log:notEqualTo ?artist2 .
+    ?award1 log:notEqualTo ?award2 .
+} => {
+    ?label a :SuccessfulLabel .
+} .
+
+# ARTIST ESTABLISHMENT RULE
+# Artists with multiple albums and awards are established.
+# Shows how ontologies can model career progression automatically.
+# The open-world assumption means we don't need to explicitly state who isn't established.
+# This differs from databases where NULL values require special handling.
+{
+    ?artist :releases ?album1 .
+    ?artist :releases ?album2 .
+    ?artist :hasWonAward ?award .
+    ?album1 log:notEqualTo ?album2 .
+} => {
+    ?artist a :EstablishedArtist .
+} .
+
+# TRANSITIVITY RULE FOR INFLUENCE
+# If Artist A influences B and B influences C, then A influences C.
+# Demonstrates transitive reasoning - impossible in basic relational systems.
+# N3's built-in support for transitivity creates infinite chains of inference.
+# This models how musical influence spreads through networks.
+{
+    ?artist1 :influencedBy ?artist2 .
+    ?artist2 :influencedBy ?artist3 .
+} => {
+    ?artist1 :influencedBy ?artist3 .
+} .
+
+# GENRE-BASED INFLUENCE RULE
+# Artists sharing genres and collaborating are mutually influential.
+# This creates bidirectional influence relationships from unidirectional data.
+# Shows how ontologies can model complex domain relationships automatically.
+{
+    ?artist1 :collaboratesWith ?artist2 .
+    ?artist1 :performs ?song1 .
+    ?artist2 :performs ?song2 .
+    ?song1 :hasGenre ?genre .
+    ?song2 :hasGenre ?genre .
+} => {
+    ?artist1 :influencedBy ?artist2 .
+    ?artist2 :influencedBy ?artist1 .
+} .
+
+# CONTRIBUTION INFERENCE RULE
+# Any entity (artist, label) connected to an album is a contributor.
+# Uses N3's ability to handle multiple domains for properties.
+# This creates a unified view of album contributors regardless of their role.
+{
+    ?album :releasedByArtist ?contributor .
+} => {
+    ?contributor :isContributor ?album .
+} .
+
+{
+    ?album :releasedByLabel ?contributor .
+} => {
+    ?contributor :isContributor ?album .
+} .
+
+# NUMERIC REASONING RULES
+# These rules demonstrate N3's mathematical capabilities.
+# Unlike SQL's procedural approach, these are declarative constraints.
+
+# COLLABORATION STRENGTH CALCULATION
+# Count how many songs two artists have performed together.
+# N3's math: namespace enables numeric operations during reasoning.
+# This creates quantified relationship measures from qualitative data.
+{
+    ?artist1 :collaboratesWith ?artist2 .
+    ( ?song { ?song :performedBy ?artist1 . ?song :performedBy ?artist2 . } ) log:collectAllIn ?songs .
+    ?songs log:length ?strength .
+} => {
+    ?artist1 :collaborationStrength ?strength .
+} .
+
+# POPULARITY SCORE CALCULATION  
+# Combine award count and collaboration count for popularity metric.
+# Shows how ontologies can synthesize multiple data sources into insights.
+# The reasoner automatically maintains these scores as data changes.
+{
+    ?artist :hasWonAward ?award .
+    ( ?collab { ?artist :collaboratesWith ?collab . } ) log:collectAllIn ?collabs .
+    ( ?awardItem { ?artist :hasWonAward ?awardItem . } ) log:collectAllIn ?awards .
+    ?collabs log:length ?collabCount .
+    ?awards log:length ?awardCount .
+    ( ?collabCount 2 ) math:product ?weightedCollabs .
+    ( ?awardCount ?weightedCollabs ) math:sum ?popularity .
+} => {
+    ?artist :popularityScore ?popularity .
+} .
+
+# LABEL SUCCESS RATING
+# Calculate success rating based on signed artists' achievements.
+# Demonstrates aggregation across multiple entities through reasoning.
+{
+    ?label a :RecordLabel .
+    ( ?score { ?label :hasSignedArtist ?artist . ?artist :popularityScore ?score . } ) log:collectAllIn ?scores .
+    ?scores math:sum ?totalScore .
+} => {
+    ?label :labelSuccessRating ?totalScore .
+} .
+
+# STRING PROCESSING RULES
+# N3's string functions enable text analysis during reasoning.
+# These rules show how semantic technologies can process natural language.
+
+# GENRE SIMILARITY DETECTION
+# Find genres with similar names using string matching.
+# This could identify related genres like "Rock" and "Folk Rock".
+{
+    ?genre1 :genreName ?name1 .
+    ?genre2 :genreName ?name2 .
+    ?name1 str:contains ?name2 .
+    ?genre1 log:notEqualTo ?genre2 .
+} => {
+    ?genre1 rdfs:seeAlso ?genre2 .
+} .
+
+# TEMPORAL REASONING RULES
+# These rules show how ontologies can handle time-based logic.
+
+# CONTEMPORARY ARTISTS RULE
+# Artists releasing albums in the same decade are contemporaries.
+# Shows temporal clustering through mathematical reasoning.
+{
+    ?artist1 :releases ?album1 .
+    ?artist2 :releases ?album2 .
+    ?album1 :releaseYear ?year1 .
+    ?album2 :releaseYear ?year2 .
+    ( ?year1 10 ) math:quotient ?decade1 .
+    ( ?year2 10 ) math:quotient ?decade2 .
+    ?decade1 math:equalTo ?decade2 .
+    ?artist1 log:notEqualTo ?artist2 .
+} => {
+    ?artist1 :contemporaryOf ?artist2 .
+} .
+
+# ===== COMMENTS ON ONTOLOGICAL ADVANTAGES =====
+
+# OPEN WORLD ASSUMPTION
+# Unlike databases' closed world (if not stored, it's false), ontologies assume
+# incomplete information. Missing data doesn't mean false data.
+# This enables progressive knowledge building without schema changes.
+
+# SCHEMA EVOLUTION  
+# Adding new properties or classes doesn't break existing data.
+# Ontologies are self-describing - metadata is embedded in the data.
+# Compare this to database schema migrations which require careful planning.
+
+# INFERENCE CAPABILITIES
+# Reasoners automatically derive new facts from existing ones.
+# This creates a "smart" data layer that goes beyond simple storage/retrieval.
+# Business rules become part of the data model, not separate application logic.
+
+# SEMANTIC INTEROPERABILITY
+# Different systems can understand the same data through shared vocabularies.
+# URIs provide global identifiers - no namespace collisions like in databases.
+# Data can be merged from multiple sources without integration complexity.
+
+# GRAPH STRUCTURE BENEFITS
+# Natural representation of many-to-many relationships without junction tables.
+# Path traversal queries are more intuitive than complex SQL joins.
+# Network effects and relationship strength emerge from the graph structure.
+
+# N3 SPECIFIC ADVANTAGES
+# Built-in support for mathematical operations during reasoning.
+# List processing capabilities for aggregation and collection operations.
+# String processing for natural language analysis.
+# Temporal and spatial reasoning through built-in functions.
+# Rules can reference other rules, creating meta-reasoning capabilities.
+
+# REASONING PERFORMANCE NOTES
+# Forward-chaining reasoners derive all possible conclusions upfront.
+# Backward-chaining reasoners derive conclusions on demand for queries.
+# Some rules may create infinite inference chains - transitivity must be controlled.
+# Rule complexity affects reasoning performance - simple rules scale better.
