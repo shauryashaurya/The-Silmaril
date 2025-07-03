@@ -910,13 +910,14 @@ class SupplyChainAnalyticsEngine:
         # Generate markdown content
         stats = self.analysis_results['statistics']
 
-        markdown = """# Supply Chain Analysis Report
+        markdown = """
+    # Supply Chain Analysis Report
 
-    ## Executive Summary
+    ## Overall:
 
     """
 
-        # Add key metrics
+    # Add key metrics
         markdown += f"""### Key Metrics
     - **Total Entities Analyzed**: {sum(stats['entity_counts'].values()):,}
     - **Total Revenue**: ${stats['financial_metrics']['total_order_value']:,.2f}
@@ -931,19 +932,19 @@ class SupplyChainAnalyticsEngine:
 
         # Add strengths
         for strength in self.executive_summary['key_findings']['strengths']:
-            markdown += f"- {strength}\n"
+            markdown += f"- {strength}  \n"
 
-        markdown += "\n#### Opportunities\n"
+        markdown += "  \n#### Opportunities  \n"
 
         # Add opportunities
         for opp in self.executive_summary['key_findings']['opportunities']:
-            markdown += f"- {opp}\n"
+            markdown += f"- {opp}  \n"
 
-        markdown += "\n#### Risks\n"
+        markdown += "  \n#### Risks  \n"
 
         # Add risks
         for risk in self.executive_summary['key_findings']['risks']:
-            markdown += f"- {risk}\n"
+            markdown += f"- {risk}  \n"
 
         # Business Intelligence section
         markdown += f"""
@@ -1028,7 +1029,7 @@ class SupplyChainAnalyticsEngine:
     **Action Items**:
     """
             for item in rec['action_items']:
-                markdown += f"- {item}\n"
+                markdown += f"- {item}  \n"
 
             markdown += f"""
     **Expected Benefit**: {rec['expected_benefit']}
@@ -1038,11 +1039,11 @@ class SupplyChainAnalyticsEngine:
     """
 
         # Risk Assessment section
-        markdown += "## Risk Assessment\n\n### Supply Chain Risks\n"
+        markdown += "## Risk Assessment  \n  \n### Supply Chain Risks  \n"
 
         for risk_type, level in self.business_insights['supply_chain_health']['risk_assessment'].items():
             risk_name = risk_type.replace('_', ' ').title()
-            markdown += f"- **{risk_name}**: {level}\n"
+            markdown += f"- **{risk_name}**: {level}  \n"
 
         markdown += f"""
     ### Financial Impact Projections
@@ -1091,7 +1092,7 @@ def main():
         markdown_file = analytics_engine.generate_markdown_report()
 
         # Print summary
-        print("\n=== SUPPLY CHAIN ANALYTICS SUMMARY ===")
+        print("  \n=== SUPPLY CHAIN ANALYTICS SUMMARY ===")
         print(
             f"Health Score: {analytics_engine.business_insights['supply_chain_health']['overall_health_score']:.1f}/100")
         print(
@@ -1100,7 +1101,7 @@ def main():
             f"Strategic Recommendations: {len(analytics_engine.strategic_recommendations)}")
         print(
             f"High Priority Actions: {len([r for r in analytics_engine.strategic_recommendations if r['priority'] == 'HIGH'])}")
-        print(f"\nReports Generated:")
+        print(f"  \nReports Generated:")
         print(f"- JSON Report: {json_file}")
         print(f"- Markdown Report: {markdown_file}")
 

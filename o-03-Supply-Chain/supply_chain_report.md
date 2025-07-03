@@ -1,6 +1,7 @@
-# Supply Chain Analysis Report
 
-    ## Executive Summary
+    # Supply Chain Analysis Report
+
+    ## Overall:
 
     ### Key Metrics
     - **Total Entities Analyzed**: 3,090
@@ -12,17 +13,17 @@
     ### Key Findings
 
     #### Strengths
-    - Comprehensive supply chain visibility and tracking
-- Advanced analytics and reasoning capabilities
-- Strong data integration across multiple entities
-- Automated classification and optimization systems
-
-#### Opportunities
-- Customer tier advancement and revenue growth
-- Predictive analytics and automation enhancement
-
-#### Risks
-- Delivery performance issues affecting customer satisfaction
+    - Comprehensive supply chain visibility and tracking  
+- Advanced analytics and reasoning capabilities  
+- Strong data integration across multiple entities  
+- Automated classification and optimization systems  
+  
+#### Opportunities  
+- Customer tier advancement and revenue growth  
+- Predictive analytics and automation enhancement  
+  
+#### Risks  
+- Delivery performance issues affecting customer satisfaction  
 
 
     ## Business Intelligence Insights
@@ -92,13 +93,13 @@
 
     ## Strategic Recommendations
 
-    ## Risk Assessment
-
-### Supply Chain Risks
-- **Supplier Risk**: LOW
-- **Capacity Risk**: LOW
-- **Inventory Risk**: LOW
-- **Delivery Risk**: HIGH
+    ## Risk Assessment  
+  
+### Supply Chain Risks  
+- **Supplier Risk**: LOW  
+- **Capacity Risk**: LOW  
+- **Inventory Risk**: LOW  
+- **Delivery Risk**: HIGH  
 
     ### Financial Impact Projections
     - **Potential Savings**: $569,795.18
