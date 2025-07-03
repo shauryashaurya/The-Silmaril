@@ -25,7 +25,7 @@ classDiagram
                                                         
     class Album {                                                        
 		%% Data Properties                                            
-        -title : string                                                        
+        -album_title : string                                                        
         -releaseYear : int                                                        
 		%% Object Properties                                            
         +hasGenre *--1 Genre                                                        
@@ -33,21 +33,21 @@ classDiagram
                                                         
   class RecordLabel{                                                        
 		%% Data Properties                                            
-        -labelName : string                                                        
+        -label_name : string                                                        
         -location : string                                                        
   }                                                        
                                                         
     class Genre {                                                        
 		%% Data Properties                                            
-        -name : string                                                        
+        -genre_name : string                                                        
         -description : string                                                        
     }                                                        
                                                         
   class Award{                                                        
 		%% Data Properties                                            
-        -awardName : string                                                        
+        -award_name : string                                                        
         -year : int                                                        
-        -awardingBody : string                                                        
+        -awarding_body : string                                                        
   }                                                        
                                                         
   class Single{                                                        
@@ -93,23 +93,23 @@ Class: Artist
    - signedTo -> RecordLabel (0..1)  // many are unsigned/independent or signed to exactly one label                                                
                                                 
 Class: Album                                                
-   - title: string                                                
+   - album_title: string                                                
    - releaseYear: integer                                                
    - hasGenre -> Genre (1..*)                                                
    - // we can also keep track of songs via the inverse of featuredOn                                                
                                                 
 Class: RecordLabel                                                
-   - labelName: string                                                
+   - label_name: string                                                
    - location: string                                                
                                                 
 Class: Genre                                                
-   - name: string                                                
+   - genre_name: string                                                
    - description: string                                                
                                                 
 Class: Award                                                
-   - awardName: string                                                
+   - award_name: string                                                
    - year: integer                                                
-   - awardingBody: string                                                
+   - awarding_body: string                                                
 ```                                                 
                                                   
 *(Cardinality can be adjusted. For example, an artist could be signed to multiple labels in different regions, but we’ll keep it simple.)*                                                  
@@ -146,7 +146,7 @@ graph LR
         Genre -- description_string --> description[(description)]
         Award -- awardName_string --> awardName[(awardName)]
         Award -- year_integer --> year[(year)]
-        Award -- awardingBody_string --> awardingBody[(awardingBody)]
+        Award -- awarding_body_string --> awardingBody[(awardingBody)]
     end
 
     %% renders inline as edges between the classes

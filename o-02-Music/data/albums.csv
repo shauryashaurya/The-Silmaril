@@ -1,4 +1,4 @@
-id,title,releaseYear,genreIDs
+id,album_title,releaseYear,genreIDs
 album_0,Reverse-engineered human-resource paradigm Album 0,2004,"['genre_8', 'genre_10']"
 album_1,Automated holistic monitoring Album 1,1993,"['genre_11', 'genre_14']"
 album_2,Upgradable modular challenge Album 2,1986,"['genre_8', 'genre_9']"

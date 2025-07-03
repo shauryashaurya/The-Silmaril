@@ -1,7 +1,7 @@
 {
   "metadata": {
     "report_type": "Music Industry Ontology Analysis",
-    "generated_at": "2025-07-03T22:07:44.766598",
+    "generated_at": "2025-07-03T22:18:27.410824",
     "data_source": "CSV files processed through N3 ontology reasoning",
     "version": "1.0"
   },
@@ -19,12 +19,12 @@
         "collaborative_songs": 0,
         "established_artists": 0,
         "successful_labels": 0,
-        "total_inferences": 12
+        "total_inferences": 0
       },
       "processing_info": {
         "entities_loaded": 845,
-        "processing_time_seconds": 0.001443,
-        "analysis_timestamp": "2025-07-03T22:07:44.766598"
+        "processing_time_seconds": 0.0,
+        "analysis_timestamp": "2025-07-03T22:18:27.410824"
       }
     },
     "collaboration_analysis": {
@@ -38,7 +38,7 @@
       "total_genres": 15,
       "genre_popularity": [],
       "genre_diversity_by_artist": {},
-      "genre_similarities": 9,
+      "genre_similarities": 0,
       "cross_genre_collaborations": 0
     },
     "artist_analysis": {
@@ -11000,9 +11000,7 @@
         "id": "genre_0",
         "genre_name": "Funk",
         "description": "Strong rhythmic groove, syncopated bass lines",
-        "related_genres": [
-          "genre_12"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11011,9 +11009,7 @@
         "id": "genre_1",
         "genre_name": "Soul",
         "description": "Combines elements of gospel and R&B",
-        "related_genres": [
-          "genre_11"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11031,10 +11027,7 @@
         "id": "genre_3",
         "genre_name": "Rock",
         "description": "Characterized by a strong beat and typically guitar-based",
-        "related_genres": [
-          "genre_14",
-          "genre_9"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11061,9 +11054,7 @@
         "id": "genre_6",
         "genre_name": "R&B",
         "description": "Rhythm and Blues, soulful vocals and strong backbeat",
-        "related_genres": [
-          "genre_10"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11090,10 +11081,7 @@
         "id": "genre_9",
         "genre_name": "Rock",
         "description": "Characterized by a strong beat and typically guitar-based",
-        "related_genres": [
-          "genre_3",
-          "genre_14"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11102,9 +11090,7 @@
         "id": "genre_10",
         "genre_name": "R&B",
         "description": "Rhythm and Blues, soulful vocals and strong backbeat",
-        "related_genres": [
-          "genre_6"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11113,9 +11099,7 @@
         "id": "genre_11",
         "genre_name": "Soul",
         "description": "Combines elements of gospel and R&B",
-        "related_genres": [
-          "genre_1"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11124,9 +11108,7 @@
         "id": "genre_12",
         "genre_name": "Funk",
         "description": "Strong rhythmic groove, syncopated bass lines",
-        "related_genres": [
-          "genre_0"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11144,10 +11126,7 @@
         "id": "genre_14",
         "genre_name": "Rock",
         "description": "Characterized by a strong beat and typically guitar-based",
-        "related_genres": [
-          "genre_3",
-          "genre_9"
-        ],
+        "related_genres": [],
         "artist_count": 0,
         "song_count": 0,
         "album_count": 0
@@ -11401,139 +11380,7 @@
     "successful_labels": [],
     "established_artists": [],
     "collaboration_network": {},
-    "influence_network": {
-      "artist_0": [],
-      "artist_1": [],
-      "artist_2": [],
-      "artist_3": [],
-      "artist_4": [],
-      "artist_5": [],
-      "artist_6": [],
-      "artist_7": [],
-      "artist_8": [],
-      "artist_9": [],
-      "artist_10": [],
-      "artist_11": [],
-      "artist_12": [],
-      "artist_13": [],
-      "artist_14": [],
-      "artist_15": [],
-      "artist_16": [],
-      "artist_17": [],
-      "artist_18": [],
-      "artist_19": [],
-      "artist_20": [],
-      "artist_21": [],
-      "artist_22": [],
-      "artist_23": [],
-      "artist_24": [],
-      "artist_25": [],
-      "artist_26": [],
-      "artist_27": [],
-      "artist_28": [],
-      "artist_29": [],
-      "artist_30": [],
-      "artist_31": [],
-      "artist_32": [],
-      "artist_33": [],
-      "artist_34": [],
-      "artist_35": [],
-      "artist_36": [],
-      "artist_37": [],
-      "artist_38": [],
-      "artist_39": [],
-      "artist_40": [],
-      "artist_41": [],
-      "artist_42": [],
-      "artist_43": [],
-      "artist_44": [],
-      "artist_45": [],
-      "artist_46": [],
-      "artist_47": [],
-      "artist_48": [],
-      "artist_49": [],
-      "artist_50": [],
-      "artist_51": [],
-      "artist_52": [],
-      "artist_53": [],
-      "artist_54": [],
-      "artist_55": [],
-      "artist_56": [],
-      "artist_57": [],
-      "artist_58": [],
-      "artist_59": [],
-      "artist_60": [],
-      "artist_61": [],
-      "artist_62": [],
-      "artist_63": [],
-      "artist_64": [],
-      "artist_65": [],
-      "artist_66": [],
-      "artist_67": [],
-      "artist_68": [],
-      "artist_69": [],
-      "artist_70": [],
-      "artist_71": [],
-      "artist_72": [],
-      "artist_73": [],
-      "artist_74": [],
-      "artist_75": [],
-      "artist_76": [],
-      "artist_77": [],
-      "artist_78": [],
-      "artist_79": [],
-      "artist_80": [],
-      "artist_81": [],
-      "artist_82": [],
-      "artist_83": [],
-      "artist_84": [],
-      "artist_85": [],
-      "artist_86": [],
-      "artist_87": [],
-      "artist_88": [],
-      "artist_89": [],
-      "artist_90": [],
-      "artist_91": [],
-      "artist_92": [],
-      "artist_93": [],
-      "artist_94": [],
-      "artist_95": [],
-      "artist_96": [],
-      "artist_97": [],
-      "artist_98": [],
-      "artist_99": []
-    },
-    "genre_similarity_map": {
-      "genre_0": [
-        "genre_12"
-      ],
-      "genre_1": [
-        "genre_11"
-      ],
-      "genre_3": [
-        "genre_14",
-        "genre_9"
-      ],
-      "genre_6": [
-        "genre_10"
-      ],
-      "genre_9": [
-        "genre_3",
-        "genre_14"
-      ],
-      "genre_10": [
-        "genre_6"
-      ],
-      "genre_11": [
-        "genre_1"
-      ],
-      "genre_12": [
-        "genre_0"
-      ],
-      "genre_14": [
-        "genre_3",
-        "genre_9"
-      ]
-    }
+    "influence_network": {},
+    "genre_similarity_map": {}
   }
 }

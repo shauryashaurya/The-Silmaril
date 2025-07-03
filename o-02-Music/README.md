@@ -41,10 +41,10 @@ A knowledge representation for songs, artists, albums, record labels, awards, an
 ### Data Properties
 - **Song**: `title` (string), `duration` (integer in seconds), `releaseDate` (date)  
 - **Artist**: `name` (string), `birthDate` (date) – optional for older artists, `nationality` (string)  
-- **Album**: `title` (string), `releaseYear` (integer)  
+- **Album**: `album_title` (string), `releaseYear` (integer)  
 - **RecordLabel**: `labelName` (string), `location` (string)  
-- **Genre**: `name` (string), `description` (string) – optional descriptive text  
-- **Award**: `awardName` (string), `year` (integer), `awardingBody` (string)
+- **Genre**: `genre_name` (string), `description` (string) – optional descriptive text  
+- **Award**: `award_name` (string), `year` (integer), `awarding_body` (string)
     
 ---  
     
@@ -78,7 +78,7 @@ classDiagram
                 
     class Album {                
 		%% Data Properties    
-        -title : string                
+        -album_title : string                
         -releaseYear : int                
 		%% Object Properties    
         +hasGenre *--1 Genre                
@@ -92,15 +92,15 @@ classDiagram
                 
     class Genre {                
 		%% Data Properties    
-        -name : string                
+        -genre_name : string                
         -description : string                
     }                
                 
   class Award{                
 		%% Data Properties    
-        -awardName : string                
+        -award_name : string                
         -year : int                
-        -awardingBody : string                
+        -awarding_body : string                
   }                
                 
   class Single{                
