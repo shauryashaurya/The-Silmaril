@@ -323,3 +323,205 @@ Class: Invoice
                                               
 *Note: It's superfluous for me to mention that this is no where close to the complexity of a real-world supply chain, which can be far more complex, with sub-assemblies, multi-tier suppliers, partial shipments, returns, etc. We’re keeping it “complex enough” to illustrate the domain.*                                              
   
+# building the reasoner
+  
+If you notice, this is approximately the flow we see in the reasoner:   
+  
+```mermaid
+flowchart LR
+    A[Start: Initialize Reasoner] --> DataPhase
+    
+    subgraph DataPhase ["Phase 1: Data Ingestion"]
+        B1[load_all_data]
+        B2[_load_dataframes]
+        B3[_create_entities_from_dataframes]
+        B4[_build_relationship_mappings]
+        B5[normalize_id & parse_id_list]
+        
+        B1 --> B2
+        B2 --> B3
+        B3 --> B4
+        B4 --> B5
+    end
+    
+    DataPhase --> ReasoningPhase
+    
+    subgraph ReasoningPhase ["Phase 2: Ontological Processing"]
+        C1[_compute_inverse_properties]
+        C2[_calculate_derived_properties]
+        C3[_validate_cardinality_constraints]
+        C4[apply_reasoning_rules]
+        C5[_rule_XX_methods<br/>Business Logic Implementation]
+        C6[Classification & Inference Results]
+        
+        C1 --> C2
+        C2 --> C3
+        C3 --> C4
+        C4 --> C5
+        C5 --> C6
+    end
+    
+    ReasoningPhase --> AnalyticsPhase
+    
+    subgraph AnalyticsPhase ["Phase 3: Analytics & Intelligence"]
+        D1[generate_comprehensive_statistics]
+        D2[get_comprehensive_diagnostic_report]
+        D3[_check_relationship_integrity]
+        E1[run_comprehensive_analysis]
+        E2[_generate_business_insights]
+        E3[_calculate_performance_metrics]
+        E4[_generate_strategic_recommendations]
+        E5[_create_executive_summary]
+        
+        D1 --> D2
+        D2 --> D3
+        D3 --> E1
+        E1 --> E2
+        E2 --> E3
+        E3 --> E4
+        E4 --> E5
+    end
+    
+    AnalyticsPhase --> OutputPhase
+    
+    subgraph OutputPhase ["Phase 4: Output Generation"]
+        F1[export_json_report]
+        F2[generate_markdown_report]
+        G[Structured Data Output]
+        H[Human-Readable Reports]
+        
+        F1 --> G
+        F2 --> H
+    end
+    
+    OutputPhase --> I[End: Complete Analysis Results]
+    
+    %% Styling
+    classDef dataPhase fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef reasoningPhase fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef analyticsPhase fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef outputPhase fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    
+    class B1,B2,B3,B4,B5 dataPhase
+    class C1,C2,C3,C4,C5,C6 reasoningPhase
+    class D1,D2,D3,E1,E2,E3,E4,E5 analyticsPhase
+    class F1,F2,G,H outputPhase
+```
+similarly here's the flow we use for the usage component:
+
+```mermaid
+flowchart LR
+    A[Start: Initialize Analytics Engine] --> InitPhase
+    
+    subgraph InitPhase ["Phase 1: Analysis Initialization"]
+        B1[run_comprehensive_analysis]
+        B2[Import Reasoner Results]
+        B3[Initialize Business Intelligence]
+        B4[Set Analysis Parameters]
+        
+        B1 --> B2
+        B2 --> B3
+        B3 --> B4
+    end
+    
+    InitPhase --> InsightPhase
+    
+    subgraph InsightPhase ["Phase 2: Business Intelligence Generation"]
+        C1[_generate_business_insights]
+        C2[_calculate_health_score]
+        C3[_assess_domain_risks]
+        C4[_analyze_stakeholder_value]
+        C5[_analyze_operational_excellence]
+        C6[_analyze_market_position]
+        
+        C1 --> C2
+        C2 --> C3
+        C3 --> C4
+        C4 --> C5
+        C5 --> C6
+    end
+    
+    InsightPhase --> MetricsPhase
+    
+    subgraph MetricsPhase ["Phase 3: Performance Assessment"]
+        D1[_calculate_performance_metrics]
+        D2[_calculate_financial_kpis]
+        D3[_calculate_operational_kpis]
+        D4[_calculate_quality_kpis]
+        D5[_calculate_strategic_kpis]
+        D6[_calculate_domain_specific_metrics]
+        
+        D1 --> D2
+        D2 --> D3
+        D3 --> D4
+        D4 --> D5
+        D5 --> D6
+    end
+    
+    MetricsPhase --> StrategyPhase
+    
+    subgraph StrategyPhase ["Phase 4: Strategic Planning"]
+        E1[_generate_strategic_recommendations]
+        E2[_identify_competitive_advantages]
+        E3[_identify_growth_opportunities]
+        E4[_identify_bottlenecks]
+        E5[_identify_quick_wins]
+        E6[_calculate_financial_impact]
+        E7[_create_executive_summary]
+        
+        E1 --> E2
+        E2 --> E3
+        E3 --> E4
+        E4 --> E5
+        E5 --> E6
+        E6 --> E7
+    end
+    
+    StrategyPhase --> OutputPhase
+    
+    subgraph OutputPhase ["Phase 5: Reporting & Output"]
+        F1[export_json_report]
+        F2[generate_markdown_report]
+        F3[_create_markdown_content]
+        F4[Structured Analytics Data]
+        F5[Executive Dashboard Reports]
+        F6[Strategic Action Plans]
+        
+        F1 --> F4
+        F2 --> F3
+        F3 --> F5
+        F4 --> F6
+        F5 --> F6
+    end
+    
+    OutputPhase --> G[End: Complete Business Intelligence Output]
+    
+    %% Parallel Helper Methods
+    subgraph HelperMethods ["Universal Helper Methods"]
+        H1[_calculate_efficiency_scores]
+        H2[_analyze_trend_patterns]
+        H3[_perform_benchmarking]
+        H4[_assess_compliance_status]
+        H5[_calculate_roi_projections]
+        H6[_generate_alerting_rules]
+    end
+    
+    InsightPhase -.-> HelperMethods
+    MetricsPhase -.-> HelperMethods
+    StrategyPhase -.-> HelperMethods
+    
+    %% Styling
+    classDef initPhase fill:#e3f2fd,stroke:#0277bd,stroke-width:2px
+    classDef insightPhase fill:#f1f8e9,stroke:#388e3c,stroke-width:2px
+    classDef metricsPhase fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef strategyPhase fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef outputPhase fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef helperPhase fill:#fafafa,stroke:#616161,stroke-width:1px,stroke-dasharray: 5 5
+    
+    class B1,B2,B3,B4 initPhase
+    class C1,C2,C3,C4,C5,C6 insightPhase
+    class D1,D2,D3,D4,D5,D6 metricsPhase
+    class E1,E2,E3,E4,E5,E6,E7 strategyPhase
+    class F1,F2,F3,F4,F5,F6 outputPhase
+    class H1,H2,H3,H4,H5,H6 helperPhase
+```
