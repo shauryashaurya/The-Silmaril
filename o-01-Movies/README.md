@@ -202,3 +202,197 @@ classDiagram
    - **Which “things” (classes) do we need?**    
    - **How do those things interact or relate (relationships)?**    
    - **What descriptive attributes do they have (data properties)?**    
+  
+  
+---
+
+# Thinking about the reasoner  
+
+So what pattern can we see in the reasoner?  
+Let's map the overall flow of the reasoner...
+
+```mermaid
+graph TD
+    %% Input Data Sources
+    INPUT1[N3 Ontology File] --> PARSE1[parse_ontology_schema]
+    INPUT2[CSV Dataset 1] --> LOAD1[load_csv_with_normalization]
+    INPUT3[CSV Dataset 2] --> LOAD2[load_csv_with_normalization]
+    INPUT4[CSV Dataset N] --> LOAD3[load_csv_with_normalization]
+    
+    %% Data Transformation Pipeline
+    PARSE1 --> SCHEMA[Ontology Schema<br/>Classes, Properties, Rules]
+    LOAD1 --> NORM1[normalize_ids_and_types]
+    LOAD2 --> NORM2[normalize_ids_and_types]
+    LOAD3 --> NORM3[normalize_ids_and_types]
+    
+    NORM1 --> ENTITIES[Entity Models<br/>Typed Objects]
+    NORM2 --> ENTITIES
+    NORM3 --> ENTITIES
+    
+    ENTITIES --> VALIDATE[validate_relationships<br/>Foreign Key Integrity]
+    VALIDATE --> CLEAN_DATA[Clean Validated Data<br/>Ready for Reasoning]
+    
+    %% Reasoning Transformation
+    CLEAN_DATA --> STATS[compute_basic_statistics<br/>Aggregations & Metrics]
+    SCHEMA --> RULES[extract_reasoning_rules<br/>N3 → Python Logic]
+    
+    STATS --> APPLY_RULES[apply_reasoning_rules<br/>Classification & Inference]
+    RULES --> APPLY_RULES
+    
+    APPLY_RULES --> ENRICHED[Enriched Entities<br/>+ Classification Properties]
+    ENRICHED --> RELATIONSHIPS[build_relationship_mappings<br/>Similarities, Preferences]
+    RELATIONSHIPS --> DERIVED[Derived Knowledge<br/>Recommendations, Segments]
+    
+    %% Multi-path Output Generation
+    DERIVED --> ANALYTICS_PATH[Analytics Pipeline]
+    DERIVED --> RDF_PATH[RDF Pipeline]
+    DERIVED --> REPORT_PATH[Reporting Pipeline]
+    
+    %% Analytics Transformation
+    ANALYTICS_PATH --> TRENDS[analyze_trends<br/>Statistical Insights]
+    TRENDS --> SEGMENTS[create_segments<br/>User/Entity Groups]
+    SEGMENTS --> RECOMMENDATIONS[generate_recommendations<br/>Personalized Suggestions]
+    RECOMMENDATIONS --> INSIGHTS[extract_business_insights<br/>Actionable Intelligence]
+    INSIGHTS --> JSON_OUT[analytics_results.json]
+    
+    %% RDF Transformation
+    RDF_PATH --> RDF_CONVERT[convert_to_rdf_triples<br/>Entity → URI + Properties]
+    RDF_CONVERT --> RDF_RELATIONS[add_relationship_triples<br/>Object Properties]
+    RDF_RELATIONS --> RDF_REASONING[add_reasoning_annotations<br/>Derived Knowledge]
+    RDF_REASONING --> RDF_VALIDATE[validate_rdf_consistency<br/>URI Integrity Check]
+    RDF_VALIDATE --> MULTI_FORMAT[export_multiple_formats<br/>TTL, N3, JSON-LD, RDF/XML, NT]
+    MULTI_FORMAT --> RDF_STATS[rdf_statistics.json/.txt]
+    
+    %% Reporting Transformation
+    REPORT_PATH --> MD_SECTIONS[generate_report_sections<br/>Executive Summary, Analysis]
+    MD_SECTIONS --> MD_TABLES[format_data_tables<br/>Markdown Tables]
+    MD_TABLES --> MD_INSIGHTS[add_business_insights<br/>Strategic Recommendations]
+    MD_INSIGHTS --> MD_OUT[analysis_report.md]
+    
+    %% Data Quality Monitoring (parallel stream)
+    VALIDATE -.-> QC1[data_quality_checks]
+    APPLY_RULES -.-> QC2[reasoning_quality_checks]
+    RDF_VALIDATE -.-> QC3[rdf_quality_checks]
+    
+    QC1 --> QC_REPORT[quality_diagnostics.log]
+    QC2 --> QC_REPORT
+    QC3 --> QC_REPORT
+    
+    %% Styling for different data types
+    classDef inputData fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    classDef transformation fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef enrichedData fill:#fff8e1,stroke:#ef6c00,stroke-width:2px
+    classDef outputData fill:#fce4ec,stroke:#ad1457,stroke-width:2px
+    classDef qualityCheck fill:#f3e5f5,stroke:#6a1b9a,stroke-width:1px,stroke-dasharray: 3 3
+    
+    class INPUT1,INPUT2,INPUT3,INPUT4 inputData
+    class PARSE1,LOAD1,LOAD2,LOAD3,NORM1,NORM2,NORM3,VALIDATE,STATS,APPLY_RULES,TRENDS,SEGMENTS,RECOMMENDATIONS,RDF_CONVERT,RDF_RELATIONS,RDF_REASONING,MD_SECTIONS,MD_TABLES transformation
+    class SCHEMA,ENTITIES,CLEAN_DATA,ENRICHED,RELATIONSHIPS,DERIVED,INSIGHTS enrichedData
+    class JSON_OUT,MULTI_FORMAT,RDF_STATS,MD_OUT outputData
+    class QC1,QC2,QC3,QC_REPORT qualityCheck
+```
+
+Can we have a interface that shows the essential methods our ontology reasoner class should implement?
+Based on our learnings:
+
+## **Reasoner Interface: Core**
+
+### **Phase 1: Initialization**
+- `__init__(data_path)` - Setup with data location
+- `configure_parameters()` - Set reasoning thresholds and options
+
+### **Phase 2: Data Loading** 
+- `load_data()` - Load all CSV datasets
+- `normalize_entity_ids()` - Handle ID type mismatches
+- `validate_data_integrity()` - Check foreign key relationships
+- `diagnose_data_issues()` - Report data quality problems
+
+### **Phase 3: Reasoning**
+- `compute_basic_statistics()` - Calculate aggregations and metrics
+- `apply_reasoning_rules()` - Execute all N3 reasoning rules
+- `_rule_XX_methods()` - Individual rule implementations
+
+### **Phase 4: Output**
+- `generate_report()` - Create summary of reasoning results
+- `export_reasoning_results()` - Save basic outputs
+
+## **Reasoner Interface: Extensions (Optional)**
+
+### **Analytics Extension**
+- `analyze_distributions()` - Statistical analysis
+- `compute_trends()` - Pattern identification  
+- `generate_recommendations()` - Suggestion algorithms
+- `export_analytics_json()` - Structured data export
+- `generate_markdown_report()` - Human-readable reports
+
+### **RDF Extension**
+- `load_ontology_schema()` - Parse N3 ontology files
+- `convert_entities_to_rdf()` - Transform to semantic triples
+- `export_multiple_formats()` - TTL, N3, JSON-LD, etc.
+- `generate_rdf_statistics()` - RDF-specific metrics
+
+## Simplified flow:
+
+```mermaid
+graph TD
+    %% Core Reasoner Essential Interface
+    subgraph "Core Reasoner Interface"
+        %% Initialization Phase
+        INIT["`**INITIALIZATION**
+        __init__(data_path)
+        configure_parameters()`"]
+        
+        %% Data Loading Phase  
+        DATA["`**DATA LOADING**
+        load_data()
+        normalize_entity_ids()
+        validate_data_integrity()
+        diagnose_data_issues()`"]
+        
+        %% Reasoning Phase
+        REASON["`**REASONING**
+        compute_basic_statistics()
+        apply_reasoning_rules()
+        _rule_XX_methods()`"]
+        
+        %% Output Phase
+        OUTPUT["`**OUTPUT**
+        generate_report()
+        export_reasoning_results()`"]
+    end
+    
+    %% Analytics Extension Interface
+    subgraph "Analytics Extension Interface"
+        ANALYTICS["`**ANALYTICS**
+        analyze_distributions()
+        compute_trends()
+        generate_recommendations()
+        export_analytics_json()
+        generate_markdown_report()`"]
+    end
+    
+    %% RDF Extension Interface
+    subgraph "RDF Extension Interface"
+        RDF["`**RDF MANAGEMENT**
+        load_ontology_schema()
+        convert_entities_to_rdf()
+        export_multiple_formats()
+        generate_rdf_statistics()`"]
+    end
+    
+    %% Flow
+    INIT --> DATA
+    DATA --> REASON
+    REASON --> OUTPUT
+    
+    %% Extensions depend on core
+    OUTPUT -.->|extends| ANALYTICS
+    OUTPUT -.->|extends| RDF
+    
+    %% Styling
+    classDef corePhase fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
+    classDef extensionPhase fill:#f1f8e9,stroke:#388e3c,stroke-width:2px
+    
+    class INIT,DATA,REASON,OUTPUT corePhase
+    class ANALYTICS,RDF extensionPhase
+```
