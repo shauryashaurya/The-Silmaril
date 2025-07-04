@@ -265,6 +265,45 @@
     rdfs:domain :Claim ;
     rdfs:range :Insurer .
 
+# ===== INVERSE OBJECT PROPERTIES =====
+
+# Connects a Policy back to the PolicyHolder that owns it.
+:hasPolicyHolder a owl:ObjectProperty;
+    owl:inverseOf :hasPolicy .
+
+# Connects a Policy back to the Insurer that issued it.
+:issuedBy a owl:ObjectProperty;
+    owl:inverseOf :issues .
+
+# Connects a Claim back to the Insurer that handles it.
+:handledBy a owl:ObjectProperty;
+    owl:inverseOf :handles .
+
+# Connects a Policy back to the Underwriter who assessed it.
+:underwrittenBy a owl:ObjectProperty;
+    owl:inverseOf :underwrites .
+
+# Connects a Policy back to the Agent who sold it.
+:soldBy a owl:ObjectProperty;
+    owl:inverseOf :sells .
+
+# Connects a Claim back to the PolicyHolder who filed it.
+:filedBy a owl:ObjectProperty;
+    owl:inverseOf :files .
+
+# Connects a Policy to the claims filed against it.
+:hasClaim a owl:ObjectProperty ;
+    rdfs:domain :Policy ;
+    rdfs:range :Claim ;
+    owl:inverseOf :filedFor .
+
+# Connects a Coverage to the Policy it applies to.
+:isCoverageFor a owl:ObjectProperty ;
+    rdfs:domain :Coverage ;
+    rdfs:range :Policy ;
+    owl:inverseOf :hasCoverage .
+	
+
 # ===== BUSINESS RULES USING N3 SYNTAX =====
 
 # Rule 1: Policy Status Classification
@@ -508,7 +547,7 @@
     rdfs:label "High Value Customer" ;
     rdfs:comment "A customer with high total premium amounts" .
 
-# ===== SAMPLE ENUMERATED VALUES =====
+# ===== EXAMPLE ENUMERATED VALUES =====
 
 :PolicyStatusEnum a owl:Class ;
     owl:oneOf ( "ACTIVE" "EXPIRED" "SUSPENDED" "CANCELLED" "PENDING" ) .
