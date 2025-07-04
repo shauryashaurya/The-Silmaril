@@ -18,6 +18,7 @@ def run_pipeline(
     2. Process ontology and apply reasoning rules
     3. Generate analytics and insights
     4. Export JSON and Markdown reports
+
     Returns the Reasoner instance for in-memory inspection.
     """
     loader = DataLoader(data_location)
@@ -65,7 +66,8 @@ def generate_yaml_template_multiple(
     """
     Create a YAML template containing `num_templates` empty records for bulk input.
     """
-    path = os.path.join(data_location, f"{entity_type}.csv")
+    entity_file_name = entity_type.lower()
+    path = os.path.join(data_location, f"{entity_file_name}.csv")
     df = pd.read_csv(path)
     templates = [{col: "" for col in df.columns} for _ in range(num_templates)]
     return yaml.dump({entity_type: templates}, sort_keys=False)
@@ -77,7 +79,8 @@ def validate_and_append_records(
     data_location: str = './data'
 ) -> bool:
     """
-    Load multiple records from YAML, validate all via the full Reasoner pipeline,
+    Load multiple records from YAML (either a list or a mapping with entity key),
+    validate all via the full Reasoner pipeline,
     and if _all_ pass, append them to the CSV for entity_type.
     Returns True on success, False on validation failure.
     """
@@ -85,18 +88,32 @@ def validate_and_append_records(
     loader = DataLoader(data_location)
     loader.load_all_data()
 
-    # Read the YAML records
+    # Read the YAML content
     with open(yaml_path) as f:
         content = yaml.safe_load(f)
 
-    raw_records = content.get(entity_type)
+    # Support both dict-wrapped and bare-list YAML structures
+    if isinstance(content, dict):
+        raw_records = content.get(entity_type)
+    elif isinstance(content, list):
+        raw_records = content
+    else:
+        print(
+            f"ERROR: YAML content must be a list or mapping, got {type(content).__name__}")
+        return False
+
     if not isinstance(raw_records, list):
-        print(f"ERROR: YAML must contain a list under key '{entity_type}'")
+        print(
+            f"ERROR: Expected a list of records for '{entity_type}', got {type(raw_records).__name__}")
         return False
 
     # Normalize IDs in each record
     normalized_records = []
     for rec in raw_records:
+        if not isinstance(rec, dict):
+            print(
+                f"ERROR: Each record must be a mapping, got {type(rec).__name__}")
+            return False
         normalized = {}
         for k, v in rec.items():
             normalized[k] = normalize_id(v) if k.lower().endswith('id') else v
@@ -113,10 +130,7 @@ def validate_and_append_records(
     reasoner = Reasoner(loader)
     reasoner.load_and_run()
 
-    # If we reach here without exceptions or logged critical errors, assume pass
-    # (For stricter checking, you could inspect reasoner.stats or a custom error list.)
-
-    # Overwrite CSV
+    # Overwrite CSV if validation passes
     new_df.to_csv(os.path.join(
         data_location, f"{entity_type}.csv"), index=False)
     print(

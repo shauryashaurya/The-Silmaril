@@ -1,0 +1,1201 @@
+id,policyNumber,policyType,startDate,endDate,premiumAmount,status,policyHolderID,insurerID,underwriterID,coverageIDs,agentID
+policy_0,PN-5216-0,Auto,2022-06-21,2023-11-23,278.33,Active,holder_194,insurer_5,underwriter_10,"['coverage_8', 'coverage_10']",agent_14
+policy_1,PN-6391-1,Landlord,2024-07-25,2025-04-20,1602.09,Lapsed,holder_176,insurer_0,underwriter_19,"['coverage_14', 'coverage_10', 'coverage_0', 'coverage_3']",agent_9
+policy_2,PN-6327-2,Auto,2024-09-15,2025-03-19,1516.4,Lapsed,holder_479,insurer_1,underwriter_18,"['coverage_5', 'coverage_3', 'coverage_6']",agent_12
+policy_3,PN-7171-3,Landlord,2022-07-02,2023-07-31,1781.16,Cancelled,holder_143,insurer_1,underwriter_0,"['coverage_0', 'coverage_12']",agent_16
+policy_4,PN-6480-4,Renter,2022-09-06,2024-01-07,1280.51,Lapsed,holder_272,insurer_7,underwriter_1,"['coverage_13', 'coverage_10', 'coverage_0', 'coverage_11']",agent_12
+policy_5,PN-5702-5,Auto,2024-03-04,2025-07-19,1801.23,Lapsed,holder_383,insurer_1,underwriter_8,"['coverage_8', 'coverage_6', 'coverage_14']",agent_14
+policy_6,PN-9383-6,Landlord,2023-03-17,2023-05-08,914.13,Lapsed,holder_586,insurer_5,underwriter_3,['coverage_12'],agent_14
+policy_7,PN-6052-7,Landlord,2023-08-23,2025-10-31,516.99,Active,holder_236,insurer_7,underwriter_2,"['coverage_0', 'coverage_6']",agent_17
+policy_8,PN-1437-8,Umbrella,2024-07-31,2026-05-17,1200.19,Active,holder_32,insurer_0,underwriter_10,['coverage_13'],agent_9
+policy_9,PN-2102-9,Umbrella,2022-07-05,2025-04-24,1901.91,Active,holder_394,insurer_4,underwriter_15,"['coverage_6', 'coverage_2', 'coverage_11']",agent_5
+policy_10,PN-2768-10,Auto,2023-10-06,2026-04-10,1877.59,Lapsed,holder_334,insurer_6,underwriter_1,"['coverage_10', 'coverage_9', 'coverage_1', 'coverage_12']",agent_15
+policy_11,PN-1087-11,Home,2023-08-30,2026-04-06,1819.32,Active,holder_539,insurer_1,underwriter_11,['coverage_8'],agent_6
+policy_12,PN-9234-12,Renter,2023-01-12,2023-04-23,1075.87,Expired,holder_40,insurer_3,underwriter_6,"['coverage_11', 'coverage_0', 'coverage_5', 'coverage_7']",agent_1
+policy_13,PN-4052-13,Home,2023-05-30,2023-11-21,1764.14,Expired,holder_500,insurer_4,underwriter_1,"['coverage_3', 'coverage_12', 'coverage_11']",agent_14
+policy_14,PN-4851-14,Condo,2024-05-25,2025-11-20,1809.78,Cancelled,holder_359,insurer_7,underwriter_11,['coverage_0'],agent_6
+policy_15,PN-4094-15,Renter,2022-12-30,2024-12-03,364.18,Lapsed,holder_126,insurer_1,underwriter_9,['coverage_1'],agent_15
+policy_16,PN-7617-16,Condo,2024-05-25,2025-07-10,1883.33,Cancelled,holder_307,insurer_7,underwriter_17,"['coverage_14', 'coverage_4', 'coverage_0', 'coverage_2']",agent_13
+policy_17,PN-9860-17,Renter,2024-10-29,2025-12-08,786.16,Expired,holder_217,insurer_1,underwriter_3,"['coverage_2', 'coverage_5', 'coverage_8']",agent_2
+policy_18,PN-5604-18,Auto,2022-10-04,2024-08-17,1878.82,Active,holder_570,insurer_0,underwriter_12,"['coverage_13', 'coverage_12', 'coverage_2']",agent_7
+policy_19,PN-6119-19,Umbrella,2024-01-22,2025-07-24,1164.72,Active,holder_166,insurer_2,underwriter_13,"['coverage_13', 'coverage_5', 'coverage_6', 'coverage_7']",agent_5
+policy_20,PN-3979-20,Condo,2023-02-19,2023-09-03,1583.21,Expired,holder_355,insurer_5,underwriter_18,"['coverage_8', 'coverage_12', 'coverage_3', 'coverage_6']",agent_1
+policy_21,PN-8857-21,Auto,2024-11-06,2026-06-07,1539.05,Expired,holder_334,insurer_2,underwriter_10,"['coverage_0', 'coverage_13', 'coverage_7', 'coverage_2']",agent_0
+policy_22,PN-7991-22,Auto,2024-12-08,2025-09-18,1238.77,Cancelled,holder_315,insurer_1,underwriter_15,['coverage_5'],agent_14
+policy_23,PN-2673-23,Umbrella,2022-11-20,2025-09-10,932.54,Active,holder_507,insurer_2,underwriter_4,['coverage_7'],agent_5
+policy_24,PN-5428-24,Condo,2023-02-02,2023-03-26,772.04,Expired,holder_333,insurer_6,underwriter_0,"['coverage_10', 'coverage_12']",agent_10
+policy_25,PN-3746-25,Condo,2024-08-24,2025-10-01,1657.8,Expired,holder_292,insurer_2,underwriter_8,"['coverage_1', 'coverage_2']",agent_17
+policy_26,PN-5743-26,Auto,2024-07-16,2025-05-03,593.13,Expired,holder_57,insurer_6,underwriter_4,"['coverage_1', 'coverage_9', 'coverage_6', 'coverage_2']",agent_5
+policy_27,PN-4805-27,Umbrella,2023-10-26,2026-10-16,568.37,Lapsed,holder_275,insurer_2,underwriter_16,['coverage_5'],agent_15
+policy_28,PN-5404-28,Renter,2022-05-02,2024-09-14,1941.3,Cancelled,holder_318,insurer_3,underwriter_19,['coverage_5'],agent_3
+policy_29,PN-4997-29,Renter,2022-10-15,2025-03-30,1614.59,Cancelled,holder_122,insurer_5,underwriter_17,"['coverage_5', 'coverage_4', 'coverage_7']",agent_12
+policy_30,PN-7183-30,Home,2024-06-19,2025-02-06,1466.01,Expired,holder_502,insurer_9,underwriter_0,"['coverage_2', 'coverage_1', 'coverage_11']",agent_0
+policy_31,PN-1467-31,Condo,2024-01-29,2026-05-28,1175.56,Lapsed,holder_498,insurer_5,underwriter_3,['coverage_14'],agent_8
+policy_32,PN-2354-32,Home,2024-02-09,2026-06-23,912.69,Lapsed,holder_542,insurer_2,underwriter_14,"['coverage_9', 'coverage_11', 'coverage_7', 'coverage_5']",agent_0
+policy_33,PN-3223-33,Umbrella,2024-02-26,2025-09-08,478.31,Active,holder_490,insurer_9,underwriter_14,"['coverage_5', 'coverage_10']",agent_3
+policy_34,PN-2234-34,Auto,2023-06-23,2024-04-27,790.35,Active,holder_134,insurer_5,underwriter_3,"['coverage_6', 'coverage_7']",agent_6
+policy_35,PN-6708-35,Condo,2023-07-09,2025-01-11,699.05,Expired,holder_293,insurer_2,underwriter_19,"['coverage_6', 'coverage_9', 'coverage_11']",agent_6
+policy_36,PN-3875-36,Renter,2023-11-22,2026-03-20,898.52,Active,holder_228,insurer_0,underwriter_3,['coverage_12'],agent_1
+policy_37,PN-7820-37,Umbrella,2022-09-23,2025-01-29,1801.38,Active,holder_599,insurer_3,underwriter_5,"['coverage_7', 'coverage_0']",agent_9
+policy_38,PN-7830-38,Condo,2023-05-10,2024-10-10,1394.8,Lapsed,holder_546,insurer_3,underwriter_7,"['coverage_7', 'coverage_11', 'coverage_1', 'coverage_5']",agent_16
+policy_39,PN-7921-39,Condo,2023-12-11,2024-05-05,1976.91,Expired,holder_94,insurer_0,underwriter_9,"['coverage_4', 'coverage_13']",agent_6
+policy_40,PN-6211-40,Renter,2023-10-01,2026-09-01,884.42,Expired,holder_515,insurer_4,underwriter_2,"['coverage_1', 'coverage_4', 'coverage_0', 'coverage_7']",agent_18
+policy_41,PN-1782-41,Renter,2023-02-14,2023-05-16,1406.93,Lapsed,holder_45,insurer_1,underwriter_10,"['coverage_6', 'coverage_10']",agent_14
+policy_42,PN-4964-42,Umbrella,2022-04-02,2022-11-15,1808.28,Cancelled,holder_246,insurer_0,underwriter_4,"['coverage_10', 'coverage_6']",agent_16
+policy_43,PN-1732-43,Auto,2024-08-28,2025-10-19,247.18,Expired,holder_283,insurer_5,underwriter_3,"['coverage_2', 'coverage_12', 'coverage_3', 'coverage_1']",agent_5
+policy_44,PN-3972-44,Renter,2024-02-16,2026-05-21,285.9,Expired,holder_282,insurer_7,underwriter_16,"['coverage_9', 'coverage_2', 'coverage_7', 'coverage_6']",agent_11
+policy_45,PN-8196-45,Umbrella,2024-04-27,2025-11-06,458.36,Active,holder_304,insurer_7,underwriter_3,"['coverage_0', 'coverage_3', 'coverage_8', 'coverage_6']",agent_12
+policy_46,PN-2801-46,Condo,2024-08-21,2025-10-02,699.73,Lapsed,holder_422,insurer_0,underwriter_17,"['coverage_5', 'coverage_9', 'coverage_2', 'coverage_6']",agent_5
+policy_47,PN-7181-47,Auto,2022-04-30,2024-08-29,1415.43,Cancelled,holder_207,insurer_6,underwriter_7,"['coverage_5', 'coverage_3', 'coverage_2', 'coverage_6']",agent_14
+policy_48,PN-5767-48,Landlord,2022-08-04,2023-11-02,1357.31,Expired,holder_112,insurer_5,underwriter_7,"['coverage_4', 'coverage_9', 'coverage_6']",agent_13
+policy_49,PN-7056-49,Umbrella,2023-12-18,2025-08-06,1167.18,Lapsed,holder_523,insurer_8,underwriter_6,"['coverage_10', 'coverage_6']",agent_16
+policy_50,PN-3498-50,Home,2022-08-13,2022-11-14,1032.8,Cancelled,holder_500,insurer_5,underwriter_17,"['coverage_10', 'coverage_12', 'coverage_6', 'coverage_4']",agent_18
+policy_51,PN-3703-51,Home,2023-06-24,2026-01-29,1420.93,Lapsed,holder_317,insurer_7,underwriter_12,"['coverage_1', 'coverage_0', 'coverage_3']",agent_5
+policy_52,PN-7193-52,Umbrella,2022-12-02,2025-02-24,1515.39,Cancelled,holder_430,insurer_3,underwriter_5,"['coverage_7', 'coverage_14']",agent_0
+policy_53,PN-9979-53,Condo,2023-01-22,2025-05-24,1257.51,Active,holder_508,insurer_3,underwriter_0,"['coverage_7', 'coverage_4', 'coverage_10']",agent_2
+policy_54,PN-3811-54,Landlord,2022-10-22,2023-03-16,1264.47,Cancelled,holder_91,insurer_0,underwriter_7,"['coverage_1', 'coverage_10']",agent_0
+policy_55,PN-7464-55,Renter,2024-07-21,2024-11-07,1591.02,Lapsed,holder_301,insurer_4,underwriter_7,"['coverage_7', 'coverage_5', 'coverage_6']",agent_12
+policy_56,PN-1088-56,Condo,2023-12-31,2024-04-02,846.65,Active,holder_26,insurer_0,underwriter_7,['coverage_6'],agent_8
+policy_57,PN-3270-57,Renter,2022-03-13,2024-09-05,1446.05,Lapsed,holder_389,insurer_3,underwriter_14,"['coverage_6', 'coverage_2']",agent_0
+policy_58,PN-6043-58,Umbrella,2022-12-08,2025-05-22,437.36,Lapsed,holder_181,insurer_7,underwriter_12,"['coverage_4', 'coverage_13']",agent_2
+policy_59,PN-2745-59,Umbrella,2023-09-22,2024-10-13,1359.62,Expired,holder_246,insurer_1,underwriter_0,"['coverage_5', 'coverage_8']",agent_17
+policy_60,PN-6679-60,Umbrella,2022-08-22,2024-01-16,1308.45,Lapsed,holder_342,insurer_0,underwriter_4,['coverage_4'],agent_19
+policy_61,PN-1404-61,Condo,2025-01-29,2027-07-14,907.54,Cancelled,holder_272,insurer_3,underwriter_12,"['coverage_1', 'coverage_14']",agent_11
+policy_62,PN-1740-62,Auto,2022-07-06,2024-07-22,897.28,Lapsed,holder_157,insurer_5,underwriter_10,"['coverage_8', 'coverage_7', 'coverage_5']",agent_16
+policy_63,PN-8841-63,Condo,2022-12-01,2024-03-22,1087.81,Cancelled,holder_530,insurer_1,underwriter_6,['coverage_2'],agent_13
+policy_64,PN-6078-64,Home,2022-04-22,2023-09-19,858.95,Active,holder_161,insurer_3,underwriter_7,['coverage_6'],agent_1
+policy_65,PN-1916-65,Umbrella,2022-03-20,2022-06-13,1879.78,Active,holder_514,insurer_1,underwriter_0,"['coverage_4', 'coverage_14', 'coverage_8']",agent_8
+policy_66,PN-5287-66,Umbrella,2024-06-01,2026-06-16,1051.77,Lapsed,holder_257,insurer_4,underwriter_2,['coverage_8'],agent_19
+policy_67,PN-4407-67,Landlord,2023-08-07,2024-05-28,1680.59,Cancelled,holder_583,insurer_5,underwriter_19,"['coverage_8', 'coverage_12', 'coverage_13']",agent_13
+policy_68,PN-3823-68,Auto,2022-03-30,2024-07-01,1259.08,Lapsed,holder_207,insurer_2,underwriter_9,"['coverage_12', 'coverage_2', 'coverage_11', 'coverage_7']",agent_17
+policy_69,PN-7550-69,Umbrella,2023-03-12,2023-12-08,1716.46,Active,holder_556,insurer_3,underwriter_19,"['coverage_3', 'coverage_12', 'coverage_8']",agent_18
+policy_70,PN-6788-70,Condo,2023-11-18,2025-03-07,1593.88,Lapsed,holder_37,insurer_0,underwriter_15,['coverage_12'],agent_2
+policy_71,PN-1212-71,Auto,2024-07-27,2027-04-06,663.16,Active,holder_30,insurer_0,underwriter_3,"['coverage_2', 'coverage_7', 'coverage_3']",agent_3
+policy_72,PN-8213-72,Auto,2022-07-24,2023-07-30,1368.42,Cancelled,holder_591,insurer_0,underwriter_2,"['coverage_12', 'coverage_1', 'coverage_4']",agent_9
+policy_73,PN-3683-73,Landlord,2022-04-27,2022-08-28,1161.95,Active,holder_572,insurer_5,underwriter_16,"['coverage_1', 'coverage_0', 'coverage_3']",agent_3
+policy_74,PN-7861-74,Umbrella,2023-05-22,2026-01-14,1975.25,Lapsed,holder_164,insurer_0,underwriter_15,"['coverage_3', 'coverage_1']",agent_11
+policy_75,PN-7979-75,Renter,2023-03-10,2023-09-02,496.97,Cancelled,holder_385,insurer_1,underwriter_12,"['coverage_4', 'coverage_8', 'coverage_5']",agent_16
+policy_76,PN-8238-76,Renter,2023-01-27,2025-05-23,1531.44,Active,holder_133,insurer_9,underwriter_10,['coverage_13'],agent_5
+policy_77,PN-4347-77,Auto,2023-11-02,2026-10-14,422.96,Active,holder_307,insurer_2,underwriter_13,"['coverage_0', 'coverage_13', 'coverage_2', 'coverage_14']",agent_0
+policy_78,PN-1655-78,Home,2022-06-29,2023-09-15,220.32,Active,holder_435,insurer_7,underwriter_2,"['coverage_6', 'coverage_3', 'coverage_2']",agent_12
+policy_79,PN-8931-79,Auto,2023-05-12,2025-05-06,1237.53,Cancelled,holder_565,insurer_2,underwriter_9,"['coverage_1', 'coverage_7', 'coverage_14', 'coverage_4']",agent_0
+policy_80,PN-7722-80,Auto,2022-06-02,2024-08-31,1413.85,Active,holder_417,insurer_9,underwriter_18,"['coverage_6', 'coverage_2', 'coverage_14']",agent_4
+policy_81,PN-8517-81,Landlord,2022-11-28,2024-02-09,1296.72,Expired,holder_185,insurer_2,underwriter_10,"['coverage_13', 'coverage_2', 'coverage_12', 'coverage_1']",agent_16
+policy_82,PN-4739-82,Auto,2022-09-09,2025-05-22,1126.69,Cancelled,holder_528,insurer_8,underwriter_16,['coverage_9'],agent_11
+policy_83,PN-3777-83,Condo,2022-04-28,2022-09-29,1335.97,Cancelled,holder_216,insurer_4,underwriter_9,['coverage_4'],agent_1
+policy_84,PN-9639-84,Umbrella,2024-04-27,2024-08-07,1674.6,Expired,holder_468,insurer_2,underwriter_15,['coverage_0'],agent_14
+policy_85,PN-1589-85,Auto,2023-08-17,2025-08-10,510.94,Expired,holder_434,insurer_3,underwriter_14,['coverage_4'],agent_18
+policy_86,PN-4634-86,Landlord,2023-01-17,2024-07-27,1766.14,Active,holder_476,insurer_4,underwriter_9,"['coverage_8', 'coverage_10', 'coverage_12']",agent_12
+policy_87,PN-1088-87,Condo,2024-08-30,2025-06-20,409.83,Active,holder_61,insurer_2,underwriter_10,"['coverage_4', 'coverage_12']",agent_4
+policy_88,PN-5853-88,Home,2023-08-30,2025-09-15,613.45,Expired,holder_247,insurer_8,underwriter_10,"['coverage_6', 'coverage_0', 'coverage_9']",agent_16
+policy_89,PN-3338-89,Renter,2022-11-30,2025-11-08,1478.24,Lapsed,holder_311,insurer_9,underwriter_17,"['coverage_8', 'coverage_3', 'coverage_11', 'coverage_1']",agent_13
+policy_90,PN-3229-90,Renter,2024-02-21,2026-03-31,850.17,Expired,holder_2,insurer_9,underwriter_18,['coverage_2'],agent_16
+policy_91,PN-8321-91,Umbrella,2022-06-24,2023-04-14,1997.43,Expired,holder_456,insurer_1,underwriter_12,['coverage_9'],agent_11
+policy_92,PN-5634-92,Auto,2022-08-07,2022-09-14,727.57,Lapsed,holder_525,insurer_7,underwriter_5,"['coverage_6', 'coverage_1', 'coverage_13', 'coverage_4']",agent_11
+policy_93,PN-7364-93,Condo,2024-12-25,2025-09-17,1359.21,Lapsed,holder_76,insurer_8,underwriter_15,"['coverage_2', 'coverage_3', 'coverage_14', 'coverage_9']",agent_6
+policy_94,PN-5093-94,Landlord,2022-12-05,2025-09-10,839.62,Expired,holder_25,insurer_9,underwriter_13,"['coverage_13', 'coverage_5']",agent_18
+policy_95,PN-6227-95,Landlord,2024-08-04,2025-03-31,841.82,Expired,holder_364,insurer_7,underwriter_4,"['coverage_2', 'coverage_8']",agent_5
+policy_96,PN-8791-96,Home,2024-06-21,2024-12-01,947.44,Cancelled,holder_377,insurer_2,underwriter_8,"['coverage_12', 'coverage_13']",agent_14
+policy_97,PN-6427-97,Renter,2024-03-31,2026-05-25,1967.93,Cancelled,holder_345,insurer_6,underwriter_4,['coverage_13'],agent_8
+policy_98,PN-2880-98,Renter,2022-04-06,2023-08-08,1464.21,Cancelled,holder_459,insurer_2,underwriter_11,"['coverage_1', 'coverage_7', 'coverage_5', 'coverage_0']",agent_6
+policy_99,PN-4561-99,Home,2024-10-18,2025-08-09,383.8,Expired,holder_292,insurer_2,underwriter_4,['coverage_13'],agent_6
+policy_100,PN-6249-100,Auto,2024-02-13,2024-06-14,987.27,Expired,holder_150,insurer_2,underwriter_6,"['coverage_9', 'coverage_1', 'coverage_2']",agent_14
+policy_101,PN-9835-101,Condo,2022-07-07,2023-05-02,1801.33,Expired,holder_536,insurer_0,underwriter_10,"['coverage_2', 'coverage_3']",agent_1
+policy_102,PN-2637-102,Auto,2025-01-09,2027-05-20,721.45,Lapsed,holder_471,insurer_5,underwriter_6,"['coverage_10', 'coverage_13']",agent_3
+policy_103,PN-9013-103,Umbrella,2024-06-28,2024-10-20,514.03,Expired,holder_229,insurer_3,underwriter_3,"['coverage_5', 'coverage_9']",agent_18
+policy_104,PN-9698-104,Renter,2023-12-23,2025-11-19,956.49,Active,holder_35,insurer_8,underwriter_17,"['coverage_14', 'coverage_3', 'coverage_4', 'coverage_8']",agent_19
+policy_105,PN-6055-105,Condo,2024-04-10,2026-06-08,1356.34,Lapsed,holder_45,insurer_7,underwriter_17,['coverage_14'],agent_9
+policy_106,PN-1171-106,Landlord,2023-09-04,2026-01-27,713.66,Expired,holder_530,insurer_1,underwriter_6,"['coverage_5', 'coverage_6', 'coverage_0']",agent_0
+policy_107,PN-9033-107,Landlord,2024-01-15,2026-12-31,1476.58,Expired,holder_126,insurer_1,underwriter_19,"['coverage_9', 'coverage_4', 'coverage_0']",agent_16
+policy_108,PN-5460-108,Auto,2024-08-31,2026-05-13,1773.96,Lapsed,holder_415,insurer_4,underwriter_17,"['coverage_12', 'coverage_4']",agent_17
+policy_109,PN-8476-109,Renter,2023-06-16,2026-05-22,1641.28,Expired,holder_261,insurer_3,underwriter_13,"['coverage_9', 'coverage_1', 'coverage_7', 'coverage_10']",agent_10
+policy_110,PN-3773-110,Landlord,2023-02-08,2024-04-24,1208.89,Active,holder_116,insurer_5,underwriter_9,['coverage_12'],agent_12
+policy_111,PN-9681-111,Landlord,2022-02-26,2024-04-01,744.55,Active,holder_559,insurer_5,underwriter_17,"['coverage_14', 'coverage_0', 'coverage_1', 'coverage_4']",agent_15
+policy_112,PN-8444-112,Home,2024-01-17,2026-08-24,1041.65,Expired,holder_418,insurer_6,underwriter_4,"['coverage_7', 'coverage_5', 'coverage_2', 'coverage_10']",agent_11
+policy_113,PN-5523-113,Umbrella,2023-01-30,2023-09-27,1146.54,Cancelled,holder_452,insurer_7,underwriter_17,"['coverage_14', 'coverage_5', 'coverage_11']",agent_6
+policy_114,PN-1245-114,Renter,2024-03-28,2024-07-15,1286.57,Expired,holder_571,insurer_7,underwriter_13,"['coverage_6', 'coverage_13', 'coverage_1']",agent_0
+policy_115,PN-5765-115,Home,2024-01-15,2025-09-10,1578.14,Active,holder_51,insurer_3,underwriter_19,"['coverage_13', 'coverage_4', 'coverage_1']",agent_19
+policy_116,PN-4214-116,Home,2023-06-19,2024-03-07,755.95,Lapsed,holder_474,insurer_0,underwriter_6,"['coverage_4', 'coverage_13', 'coverage_5', 'coverage_0']",agent_0
+policy_117,PN-9958-117,Home,2024-10-17,2026-09-15,444.15,Active,holder_400,insurer_1,underwriter_12,['coverage_6'],agent_5
+policy_118,PN-2684-118,Condo,2023-10-02,2024-11-12,1202.99,Cancelled,holder_67,insurer_7,underwriter_7,"['coverage_8', 'coverage_1', 'coverage_6']",agent_7
+policy_119,PN-3170-119,Renter,2024-02-23,2025-04-02,1555.43,Expired,holder_280,insurer_8,underwriter_7,"['coverage_11', 'coverage_10', 'coverage_4', 'coverage_7']",agent_1
+policy_120,PN-3784-120,Landlord,2024-07-23,2025-07-14,1923.58,Active,holder_49,insurer_9,underwriter_13,['coverage_14'],agent_16
+policy_121,PN-1790-121,Umbrella,2024-06-07,2026-04-04,1691.36,Cancelled,holder_203,insurer_3,underwriter_3,"['coverage_11', 'coverage_9']",agent_3
+policy_122,PN-8680-122,Renter,2022-11-07,2024-06-13,1008.48,Cancelled,holder_185,insurer_1,underwriter_14,"['coverage_6', 'coverage_1']",agent_8
+policy_123,PN-5292-123,Renter,2024-06-29,2026-10-26,1809.18,Active,holder_264,insurer_3,underwriter_3,"['coverage_6', 'coverage_14', 'coverage_4', 'coverage_10']",agent_11
+policy_124,PN-9021-124,Landlord,2023-04-05,2025-03-07,1643.95,Active,holder_117,insurer_4,underwriter_3,"['coverage_5', 'coverage_7']",agent_16
+policy_125,PN-7025-125,Auto,2022-08-05,2024-01-17,1504.12,Cancelled,holder_234,insurer_5,underwriter_18,"['coverage_12', 'coverage_13', 'coverage_0', 'coverage_3']",agent_16
+policy_126,PN-2897-126,Renter,2022-08-20,2023-06-25,218.16,Active,holder_151,insurer_2,underwriter_2,"['coverage_10', 'coverage_12']",agent_18
+policy_127,PN-3791-127,Condo,2024-08-04,2024-12-08,1608.04,Expired,holder_223,insurer_2,underwriter_13,"['coverage_1', 'coverage_8']",agent_2
+policy_128,PN-2753-128,Landlord,2022-11-17,2024-11-10,527.73,Lapsed,holder_397,insurer_0,underwriter_4,['coverage_14'],agent_12
+policy_129,PN-3834-129,Auto,2022-03-25,2024-05-05,1078.95,Expired,holder_455,insurer_1,underwriter_12,"['coverage_1', 'coverage_12', 'coverage_8', 'coverage_7']",agent_9
+policy_130,PN-2103-130,Condo,2024-06-29,2026-11-08,471.57,Expired,holder_240,insurer_4,underwriter_18,"['coverage_2', 'coverage_10']",agent_0
+policy_131,PN-4217-131,Auto,2023-11-08,2024-01-10,558.83,Expired,holder_62,insurer_5,underwriter_6,"['coverage_7', 'coverage_9', 'coverage_8', 'coverage_11']",agent_16
+policy_132,PN-9522-132,Umbrella,2024-08-05,2026-06-03,1400.38,Lapsed,holder_509,insurer_5,underwriter_3,['coverage_8'],agent_13
+policy_133,PN-6688-133,Auto,2023-08-10,2026-07-08,300.94,Active,holder_360,insurer_9,underwriter_13,['coverage_0'],agent_1
+policy_134,PN-5986-134,Landlord,2024-02-22,2026-08-29,533.01,Lapsed,holder_255,insurer_2,underwriter_9,"['coverage_7', 'coverage_0', 'coverage_10']",agent_19
+policy_135,PN-4477-135,Landlord,2023-11-26,2026-11-11,1600.24,Lapsed,holder_302,insurer_0,underwriter_5,"['coverage_5', 'coverage_11', 'coverage_1', 'coverage_8']",agent_14
+policy_136,PN-8513-136,Landlord,2024-01-17,2026-12-06,1408.78,Cancelled,holder_143,insurer_5,underwriter_3,"['coverage_13', 'coverage_4']",agent_3
+policy_137,PN-5251-137,Condo,2024-11-29,2025-10-17,1191.49,Lapsed,holder_372,insurer_4,underwriter_6,"['coverage_6', 'coverage_12', 'coverage_7', 'coverage_13']",agent_10
+policy_138,PN-6313-138,Renter,2024-08-07,2027-05-27,1765.25,Cancelled,holder_159,insurer_0,underwriter_19,"['coverage_10', 'coverage_13', 'coverage_12']",agent_7
+policy_139,PN-3707-139,Home,2022-04-25,2023-11-13,304.56,Expired,holder_490,insurer_9,underwriter_7,"['coverage_6', 'coverage_11', 'coverage_2']",agent_9
+policy_140,PN-1101-140,Home,2023-08-10,2024-05-06,1728.62,Active,holder_543,insurer_4,underwriter_17,"['coverage_12', 'coverage_4', 'coverage_3', 'coverage_8']",agent_1
+policy_141,PN-3584-141,Landlord,2024-08-15,2026-12-10,1829.95,Cancelled,holder_474,insurer_4,underwriter_16,"['coverage_6', 'coverage_14', 'coverage_1']",agent_11
+policy_142,PN-8980-142,Condo,2024-04-05,2025-11-27,1258.11,Active,holder_344,insurer_5,underwriter_13,"['coverage_2', 'coverage_0']",agent_0
+policy_143,PN-3009-143,Condo,2023-04-23,2024-08-20,1565.69,Active,holder_426,insurer_2,underwriter_1,"['coverage_3', 'coverage_8']",agent_17
+policy_144,PN-9120-144,Condo,2022-11-16,2025-04-22,1782.44,Active,holder_206,insurer_4,underwriter_18,"['coverage_6', 'coverage_4', 'coverage_7']",agent_2
+policy_145,PN-1813-145,Home,2024-03-10,2024-08-05,417.44,Cancelled,holder_137,insurer_8,underwriter_16,"['coverage_11', 'coverage_9', 'coverage_1', 'coverage_2']",agent_16
+policy_146,PN-9428-146,Umbrella,2023-02-11,2023-11-19,556.92,Active,holder_520,insurer_8,underwriter_5,"['coverage_3', 'coverage_14', 'coverage_2', 'coverage_4']",agent_1
+policy_147,PN-1274-147,Home,2022-09-03,2024-05-24,1424.34,Expired,holder_68,insurer_6,underwriter_10,['coverage_5'],agent_13
+policy_148,PN-2869-148,Landlord,2024-09-08,2026-08-29,1270.6,Cancelled,holder_303,insurer_3,underwriter_13,"['coverage_13', 'coverage_8', 'coverage_10', 'coverage_3']",agent_1
+policy_149,PN-4825-149,Condo,2024-10-05,2027-02-09,219.92,Expired,holder_27,insurer_6,underwriter_3,['coverage_5'],agent_1
+policy_150,PN-2050-150,Renter,2024-01-26,2027-01-09,1213.07,Active,holder_284,insurer_2,underwriter_12,"['coverage_14', 'coverage_7', 'coverage_8', 'coverage_13']",agent_3
+policy_151,PN-7311-151,Auto,2023-12-09,2024-10-13,1852.09,Lapsed,holder_137,insurer_8,underwriter_14,"['coverage_14', 'coverage_3', 'coverage_0', 'coverage_7']",agent_19
+policy_152,PN-2247-152,Umbrella,2022-08-28,2023-02-21,1759.61,Active,holder_507,insurer_7,underwriter_1,['coverage_10'],agent_9
+policy_153,PN-2848-153,Umbrella,2023-07-07,2026-02-16,1721.51,Lapsed,holder_312,insurer_0,underwriter_4,['coverage_12'],agent_15
+policy_154,PN-3628-154,Condo,2024-12-15,2027-08-22,1567.98,Active,holder_266,insurer_1,underwriter_6,"['coverage_12', 'coverage_11', 'coverage_13', 'coverage_10']",agent_8
+policy_155,PN-2354-155,Auto,2023-02-07,2024-08-06,1027.37,Lapsed,holder_176,insurer_3,underwriter_16,"['coverage_14', 'coverage_9', 'coverage_13', 'coverage_0']",agent_1
+policy_156,PN-5447-156,Condo,2023-11-18,2025-09-19,1338.68,Cancelled,holder_368,insurer_5,underwriter_7,['coverage_2'],agent_9
+policy_157,PN-3232-157,Renter,2024-11-12,2027-06-17,1226.26,Lapsed,holder_13,insurer_7,underwriter_10,"['coverage_6', 'coverage_3', 'coverage_13', 'coverage_12']",agent_4
+policy_158,PN-1025-158,Umbrella,2022-03-09,2022-08-03,1463.8,Cancelled,holder_379,insurer_3,underwriter_1,"['coverage_12', 'coverage_6', 'coverage_1']",agent_18
+policy_159,PN-3795-159,Umbrella,2025-02-16,2026-07-14,586.98,Lapsed,holder_116,insurer_8,underwriter_0,"['coverage_9', 'coverage_10', 'coverage_1']",agent_9
+policy_160,PN-9590-160,Condo,2024-09-19,2027-04-20,928.03,Lapsed,holder_103,insurer_1,underwriter_1,"['coverage_3', 'coverage_4', 'coverage_12']",agent_9
+policy_161,PN-7919-161,Renter,2024-12-15,2026-11-23,1530.52,Cancelled,holder_342,insurer_0,underwriter_10,['coverage_8'],agent_12
+policy_162,PN-6020-162,Home,2022-10-17,2024-06-22,1337.42,Active,holder_464,insurer_9,underwriter_3,"['coverage_2', 'coverage_7', 'coverage_12']",agent_13
+policy_163,PN-7542-163,Umbrella,2022-08-21,2024-09-05,692.75,Lapsed,holder_7,insurer_5,underwriter_11,"['coverage_8', 'coverage_2', 'coverage_9']",agent_2
+policy_164,PN-1094-164,Condo,2024-09-11,2026-02-13,1910.67,Cancelled,holder_154,insurer_3,underwriter_11,"['coverage_3', 'coverage_7', 'coverage_1']",agent_14
+policy_165,PN-6337-165,Umbrella,2024-07-01,2026-04-22,1571.38,Lapsed,holder_267,insurer_7,underwriter_1,"['coverage_2', 'coverage_7']",agent_2
+policy_166,PN-7252-166,Renter,2024-03-10,2025-06-04,1088.0,Lapsed,holder_427,insurer_7,underwriter_10,"['coverage_8', 'coverage_2', 'coverage_13', 'coverage_7']",agent_10
+policy_167,PN-7281-167,Condo,2022-05-21,2023-05-31,1299.49,Expired,holder_452,insurer_4,underwriter_13,"['coverage_11', 'coverage_1', 'coverage_4', 'coverage_6']",agent_14
+policy_168,PN-9363-168,Renter,2024-11-08,2026-04-05,1750.61,Cancelled,holder_17,insurer_1,underwriter_6,['coverage_9'],agent_1
+policy_169,PN-4161-169,Landlord,2023-09-28,2025-09-13,1919.14,Lapsed,holder_251,insurer_4,underwriter_18,"['coverage_4', 'coverage_2', 'coverage_10', 'coverage_13']",agent_14
+policy_170,PN-5861-170,Home,2023-05-10,2023-09-30,877.71,Expired,holder_232,insurer_5,underwriter_11,"['coverage_2', 'coverage_13', 'coverage_14']",agent_12
+policy_171,PN-8025-171,Condo,2022-12-17,2024-12-23,443.77,Lapsed,holder_325,insurer_1,underwriter_18,"['coverage_2', 'coverage_7', 'coverage_3', 'coverage_1']",agent_10
+policy_172,PN-9850-172,Home,2024-06-03,2025-04-10,1273.84,Lapsed,holder_268,insurer_2,underwriter_18,"['coverage_13', 'coverage_14', 'coverage_2']",agent_15
+policy_173,PN-5250-173,Home,2024-05-26,2027-03-18,1675.71,Cancelled,holder_509,insurer_9,underwriter_13,['coverage_13'],agent_16
+policy_174,PN-7321-174,Auto,2022-06-05,2024-01-21,1067.09,Active,holder_387,insurer_7,underwriter_8,"['coverage_4', 'coverage_14']",agent_15
+policy_175,PN-7455-175,Umbrella,2022-08-11,2023-03-02,225.0,Lapsed,holder_527,insurer_0,underwriter_7,"['coverage_10', 'coverage_13', 'coverage_12']",agent_5
+policy_176,PN-4297-176,Condo,2023-10-22,2024-11-05,1959.32,Active,holder_227,insurer_9,underwriter_15,['coverage_11'],agent_18
+policy_177,PN-3618-177,Renter,2023-05-02,2025-09-14,1474.44,Cancelled,holder_291,insurer_0,underwriter_17,"['coverage_2', 'coverage_11', 'coverage_5']",agent_1
+policy_178,PN-3164-178,Auto,2022-08-06,2024-08-23,1338.17,Cancelled,holder_366,insurer_0,underwriter_8,"['coverage_1', 'coverage_4', 'coverage_9']",agent_11
+policy_179,PN-5934-179,Condo,2024-04-06,2024-05-22,981.35,Expired,holder_261,insurer_4,underwriter_16,"['coverage_4', 'coverage_6']",agent_19
+policy_180,PN-4780-180,Auto,2024-11-21,2026-05-19,1177.85,Expired,holder_328,insurer_0,underwriter_6,"['coverage_14', 'coverage_2', 'coverage_13']",agent_5
+policy_181,PN-5298-181,Home,2023-04-28,2026-01-03,919.24,Active,holder_283,insurer_3,underwriter_19,['coverage_4'],agent_17
+policy_182,PN-1055-182,Landlord,2023-06-21,2023-12-24,1159.91,Active,holder_544,insurer_6,underwriter_11,"['coverage_6', 'coverage_12']",agent_15
+policy_183,PN-7574-183,Auto,2023-01-16,2025-02-17,302.41,Cancelled,holder_102,insurer_4,underwriter_3,"['coverage_11', 'coverage_1', 'coverage_5']",agent_5
+policy_184,PN-5999-184,Home,2023-01-15,2023-08-11,1226.04,Expired,holder_6,insurer_2,underwriter_7,"['coverage_5', 'coverage_7']",agent_7
+policy_185,PN-8600-185,Condo,2024-11-21,2027-10-08,1442.88,Lapsed,holder_561,insurer_7,underwriter_9,"['coverage_14', 'coverage_8', 'coverage_7', 'coverage_2']",agent_0
+policy_186,PN-1753-186,Landlord,2024-06-14,2026-12-03,761.19,Lapsed,holder_13,insurer_2,underwriter_15,"['coverage_14', 'coverage_8', 'coverage_0', 'coverage_4']",agent_2
+policy_187,PN-6738-187,Home,2022-07-25,2023-04-01,955.17,Lapsed,holder_182,insurer_5,underwriter_19,['coverage_2'],agent_3
+policy_188,PN-5512-188,Landlord,2023-05-04,2026-04-30,1732.11,Lapsed,holder_97,insurer_6,underwriter_5,"['coverage_9', 'coverage_8']",agent_7
+policy_189,PN-7636-189,Landlord,2023-03-08,2025-07-23,347.46,Active,holder_173,insurer_7,underwriter_17,"['coverage_3', 'coverage_11']",agent_0
+policy_190,PN-8727-190,Landlord,2024-12-03,2025-03-11,1571.53,Active,holder_278,insurer_7,underwriter_4,"['coverage_8', 'coverage_11', 'coverage_1']",agent_5
+policy_191,PN-7078-191,Umbrella,2023-06-10,2024-04-30,1360.84,Expired,holder_428,insurer_1,underwriter_9,"['coverage_2', 'coverage_10', 'coverage_13', 'coverage_7']",agent_5
+policy_192,PN-2267-192,Renter,2022-05-27,2022-11-24,1591.54,Lapsed,holder_459,insurer_1,underwriter_16,"['coverage_10', 'coverage_1']",agent_1
+policy_193,PN-7848-193,Condo,2023-10-23,2026-04-10,678.58,Lapsed,holder_430,insurer_1,underwriter_7,['coverage_5'],agent_10
+policy_194,PN-4312-194,Renter,2024-02-22,2024-10-30,906.14,Cancelled,holder_235,insurer_1,underwriter_5,"['coverage_2', 'coverage_9']",agent_12
+policy_195,PN-6460-195,Auto,2022-07-24,2023-07-12,1577.1,Expired,holder_129,insurer_8,underwriter_6,['coverage_9'],agent_3
+policy_196,PN-8229-196,Home,2023-08-14,2026-07-19,414.6,Lapsed,holder_472,insurer_7,underwriter_15,"['coverage_7', 'coverage_9', 'coverage_6']",agent_12
+policy_197,PN-8698-197,Home,2024-08-09,2027-01-02,1333.9,Cancelled,holder_242,insurer_7,underwriter_2,"['coverage_8', 'coverage_3', 'coverage_10', 'coverage_11']",agent_14
+policy_198,PN-5492-198,Condo,2022-08-15,2025-04-05,367.46,Cancelled,holder_179,insurer_4,underwriter_4,['coverage_2'],agent_18
+policy_199,PN-3891-199,Home,2023-09-15,2025-09-29,1957.05,Expired,holder_124,insurer_5,underwriter_2,"['coverage_11', 'coverage_7']",agent_16
+policy_200,PN-1333-200,Renter,2022-07-11,2024-05-04,489.83,Cancelled,holder_155,insurer_4,underwriter_12,"['coverage_1', 'coverage_13', 'coverage_7', 'coverage_14']",agent_4
+policy_201,PN-4822-201,Condo,2022-06-27,2024-09-12,1043.54,Active,holder_508,insurer_4,underwriter_7,"['coverage_11', 'coverage_6']",agent_15
+policy_202,PN-7455-202,Condo,2022-06-09,2025-01-09,1418.45,Active,holder_169,insurer_6,underwriter_9,"['coverage_3', 'coverage_7', 'coverage_1']",agent_16
+policy_203,PN-4035-203,Umbrella,2023-11-18,2025-08-09,551.22,Expired,holder_146,insurer_7,underwriter_13,['coverage_5'],agent_10
+policy_204,PN-1516-204,Home,2023-04-27,2023-07-09,1723.56,Expired,holder_319,insurer_1,underwriter_1,"['coverage_11', 'coverage_7']",agent_7
+policy_205,PN-8880-205,Renter,2024-06-18,2027-03-11,1928.29,Expired,holder_4,insurer_4,underwriter_9,"['coverage_12', 'coverage_10']",agent_13
+policy_206,PN-2123-206,Landlord,2024-12-27,2026-06-29,1337.6,Lapsed,holder_261,insurer_6,underwriter_13,['coverage_6'],agent_7
+policy_207,PN-6976-207,Umbrella,2024-02-01,2026-12-20,1625.26,Expired,holder_496,insurer_7,underwriter_2,['coverage_11'],agent_3
+policy_208,PN-2700-208,Auto,2022-04-02,2024-01-04,961.94,Lapsed,holder_38,insurer_6,underwriter_16,"['coverage_11', 'coverage_7']",agent_16
+policy_209,PN-8268-209,Umbrella,2024-06-20,2027-03-18,983.89,Active,holder_126,insurer_4,underwriter_2,"['coverage_13', 'coverage_2', 'coverage_10', 'coverage_0']",agent_8
+policy_210,PN-7662-210,Auto,2024-07-05,2026-09-12,725.21,Cancelled,holder_386,insurer_4,underwriter_10,['coverage_2'],agent_16
+policy_211,PN-9314-211,Auto,2025-02-04,2027-03-14,1624.84,Expired,holder_540,insurer_3,underwriter_12,"['coverage_6', 'coverage_4', 'coverage_10']",agent_12
+policy_212,PN-8105-212,Renter,2024-06-28,2024-09-02,899.22,Cancelled,holder_424,insurer_7,underwriter_4,"['coverage_8', 'coverage_7']",agent_12
+policy_213,PN-3439-213,Condo,2023-05-30,2025-09-06,642.69,Active,holder_187,insurer_7,underwriter_3,"['coverage_11', 'coverage_8', 'coverage_13']",agent_7
+policy_214,PN-9525-214,Auto,2023-11-02,2024-06-27,493.88,Lapsed,holder_44,insurer_7,underwriter_17,"['coverage_9', 'coverage_3']",agent_1
+policy_215,PN-6178-215,Auto,2022-12-28,2025-05-11,819.42,Lapsed,holder_142,insurer_2,underwriter_2,"['coverage_13', 'coverage_10']",agent_15
+policy_216,PN-5389-216,Umbrella,2024-12-15,2025-11-09,804.01,Expired,holder_365,insurer_3,underwriter_15,['coverage_10'],agent_12
+policy_217,PN-7257-217,Renter,2022-10-20,2025-01-03,1439.41,Expired,holder_266,insurer_2,underwriter_4,"['coverage_13', 'coverage_4', 'coverage_1']",agent_17
+policy_218,PN-9166-218,Auto,2022-05-28,2024-11-18,273.97,Expired,holder_221,insurer_4,underwriter_2,"['coverage_1', 'coverage_14']",agent_3
+policy_219,PN-7957-219,Condo,2023-10-27,2026-02-09,1157.36,Cancelled,holder_24,insurer_7,underwriter_15,"['coverage_4', 'coverage_3']",agent_0
+policy_220,PN-4264-220,Landlord,2023-04-11,2024-08-26,1468.34,Lapsed,holder_510,insurer_5,underwriter_14,['coverage_5'],agent_12
+policy_221,PN-3728-221,Home,2023-09-02,2023-12-13,885.85,Expired,holder_409,insurer_0,underwriter_12,['coverage_5'],agent_16
+policy_222,PN-7111-222,Umbrella,2023-01-15,2024-07-07,1287.91,Cancelled,holder_480,insurer_5,underwriter_17,"['coverage_1', 'coverage_8', 'coverage_6', 'coverage_12']",agent_16
+policy_223,PN-1993-223,Landlord,2024-01-31,2027-01-28,1667.0,Lapsed,holder_337,insurer_3,underwriter_0,"['coverage_14', 'coverage_9']",agent_17
+policy_224,PN-3141-224,Renter,2024-03-28,2027-02-04,944.3,Cancelled,holder_395,insurer_8,underwriter_12,['coverage_10'],agent_17
+policy_225,PN-9356-225,Landlord,2025-01-29,2025-10-10,1577.58,Cancelled,holder_251,insurer_8,underwriter_16,"['coverage_4', 'coverage_1']",agent_3
+policy_226,PN-1781-226,Umbrella,2023-10-04,2024-11-26,506.3,Expired,holder_173,insurer_0,underwriter_0,"['coverage_1', 'coverage_12', 'coverage_0']",agent_12
+policy_227,PN-7249-227,Condo,2022-09-07,2025-02-20,1273.97,Expired,holder_446,insurer_1,underwriter_6,"['coverage_4', 'coverage_8']",agent_0
+policy_228,PN-5305-228,Home,2022-11-10,2023-11-05,390.23,Active,holder_94,insurer_0,underwriter_8,"['coverage_1', 'coverage_2', 'coverage_9']",agent_10
+policy_229,PN-5500-229,Auto,2023-02-03,2025-06-02,427.07,Lapsed,holder_578,insurer_5,underwriter_14,['coverage_10'],agent_5
+policy_230,PN-2582-230,Umbrella,2024-08-18,2025-10-31,607.03,Active,holder_18,insurer_0,underwriter_13,"['coverage_14', 'coverage_10', 'coverage_5', 'coverage_12']",agent_1
+policy_231,PN-3674-231,Auto,2022-10-01,2023-12-02,1525.33,Cancelled,holder_132,insurer_7,underwriter_5,"['coverage_3', 'coverage_0', 'coverage_6', 'coverage_2']",agent_4
+policy_232,PN-1039-232,Home,2023-05-08,2024-10-15,1928.71,Expired,holder_176,insurer_2,underwriter_11,"['coverage_14', 'coverage_2']",agent_7
+policy_233,PN-4319-233,Renter,2022-09-07,2023-01-01,1390.47,Active,holder_381,insurer_7,underwriter_12,"['coverage_14', 'coverage_11']",agent_6
+policy_234,PN-7387-234,Landlord,2024-03-18,2026-07-27,1714.08,Active,holder_391,insurer_1,underwriter_4,"['coverage_0', 'coverage_13']",agent_17
+policy_235,PN-9413-235,Renter,2024-12-05,2026-08-20,1381.2,Active,holder_166,insurer_8,underwriter_10,"['coverage_12', 'coverage_0', 'coverage_3']",agent_1
+policy_236,PN-5940-236,Renter,2023-06-11,2025-08-26,1736.93,Cancelled,holder_135,insurer_7,underwriter_11,"['coverage_13', 'coverage_14', 'coverage_7']",agent_2
+policy_237,PN-8796-237,Umbrella,2022-11-29,2024-01-19,1873.49,Lapsed,holder_484,insurer_9,underwriter_3,['coverage_1'],agent_15
+policy_238,PN-8199-238,Landlord,2023-07-19,2026-03-17,371.58,Active,holder_82,insurer_1,underwriter_0,"['coverage_7', 'coverage_8']",agent_5
+policy_239,PN-2552-239,Home,2023-09-13,2024-11-03,1288.05,Cancelled,holder_486,insurer_9,underwriter_9,['coverage_4'],agent_2
+policy_240,PN-3655-240,Condo,2025-02-11,2027-03-22,1275.61,Cancelled,holder_205,insurer_5,underwriter_6,"['coverage_3', 'coverage_9', 'coverage_2', 'coverage_5']",agent_17
+policy_241,PN-5132-241,Umbrella,2022-09-25,2023-02-14,1330.75,Expired,holder_306,insurer_1,underwriter_17,"['coverage_3', 'coverage_2', 'coverage_11']",agent_17
+policy_242,PN-2475-242,Renter,2023-05-02,2025-05-16,436.25,Active,holder_494,insurer_0,underwriter_14,"['coverage_0', 'coverage_13']",agent_3
+policy_243,PN-5581-243,Landlord,2024-04-13,2026-06-05,1399.56,Active,holder_145,insurer_9,underwriter_18,['coverage_7'],agent_3
+policy_244,PN-5015-244,Landlord,2023-08-30,2026-05-16,1057.73,Expired,holder_576,insurer_9,underwriter_15,['coverage_8'],agent_11
+policy_245,PN-2738-245,Landlord,2023-02-25,2024-08-07,1905.96,Active,holder_585,insurer_2,underwriter_14,"['coverage_4', 'coverage_2']",agent_5
+policy_246,PN-9134-246,Renter,2023-02-15,2025-10-18,1322.33,Lapsed,holder_385,insurer_6,underwriter_11,"['coverage_1', 'coverage_8', 'coverage_11']",agent_2
+policy_247,PN-1891-247,Condo,2022-08-21,2023-04-10,922.93,Cancelled,holder_196,insurer_0,underwriter_11,"['coverage_5', 'coverage_2', 'coverage_14', 'coverage_3']",agent_17
+policy_248,PN-3200-248,Landlord,2024-01-29,2025-02-27,925.98,Expired,holder_189,insurer_7,underwriter_4,"['coverage_9', 'coverage_0']",agent_5
+policy_249,PN-4511-249,Home,2024-10-26,2026-07-28,1235.42,Cancelled,holder_540,insurer_4,underwriter_3,"['coverage_3', 'coverage_1', 'coverage_12']",agent_13
+policy_250,PN-6961-250,Umbrella,2024-10-29,2025-12-02,1951.23,Cancelled,holder_194,insurer_6,underwriter_10,"['coverage_12', 'coverage_11', 'coverage_10', 'coverage_13']",agent_8
+policy_251,PN-8716-251,Landlord,2024-01-31,2025-09-11,1205.73,Cancelled,holder_185,insurer_0,underwriter_18,"['coverage_10', 'coverage_11']",agent_1
+policy_252,PN-4382-252,Umbrella,2022-10-30,2024-05-06,609.32,Cancelled,holder_38,insurer_0,underwriter_17,['coverage_9'],agent_16
+policy_253,PN-4779-253,Renter,2025-02-11,2027-08-08,1707.56,Lapsed,holder_503,insurer_1,underwriter_13,"['coverage_14', 'coverage_0', 'coverage_13']",agent_0
+policy_254,PN-2096-254,Renter,2022-05-31,2023-10-11,1577.76,Cancelled,holder_473,insurer_4,underwriter_10,"['coverage_9', 'coverage_3', 'coverage_10', 'coverage_2']",agent_17
+policy_255,PN-5639-255,Condo,2022-09-18,2023-11-12,1230.26,Lapsed,holder_347,insurer_6,underwriter_4,"['coverage_0', 'coverage_13']",agent_13
+policy_256,PN-3688-256,Renter,2022-05-04,2022-06-14,1699.28,Cancelled,holder_8,insurer_5,underwriter_17,"['coverage_1', 'coverage_12', 'coverage_9', 'coverage_8']",agent_10
+policy_257,PN-7296-257,Landlord,2023-01-19,2023-09-05,581.3,Expired,holder_71,insurer_9,underwriter_13,"['coverage_2', 'coverage_8', 'coverage_13']",agent_16
+policy_258,PN-4056-258,Renter,2022-05-27,2022-11-04,1185.21,Expired,holder_543,insurer_9,underwriter_19,"['coverage_2', 'coverage_1']",agent_19
+policy_259,PN-7889-259,Home,2024-09-09,2027-01-05,1733.91,Lapsed,holder_295,insurer_6,underwriter_7,['coverage_2'],agent_10
+policy_260,PN-4742-260,Auto,2022-11-06,2024-12-05,1061.15,Expired,holder_485,insurer_7,underwriter_5,"['coverage_2', 'coverage_12', 'coverage_11', 'coverage_5']",agent_11
+policy_261,PN-3531-261,Renter,2024-12-01,2025-04-23,1814.55,Cancelled,holder_357,insurer_2,underwriter_5,"['coverage_11', 'coverage_1']",agent_3
+policy_262,PN-9205-262,Renter,2023-11-02,2025-06-04,976.45,Cancelled,holder_578,insurer_1,underwriter_19,"['coverage_7', 'coverage_1', 'coverage_9']",agent_10
+policy_263,PN-6095-263,Renter,2025-02-17,2026-08-16,1919.59,Active,holder_315,insurer_2,underwriter_15,['coverage_4'],agent_16
+policy_264,PN-4076-264,Condo,2023-05-25,2025-02-17,1439.42,Active,holder_415,insurer_7,underwriter_19,"['coverage_3', 'coverage_0', 'coverage_11', 'coverage_6']",agent_11
+policy_265,PN-8275-265,Auto,2022-06-11,2024-01-01,1069.93,Active,holder_214,insurer_0,underwriter_6,"['coverage_9', 'coverage_7', 'coverage_14', 'coverage_3']",agent_7
+policy_266,PN-6427-266,Condo,2023-01-23,2024-09-20,464.09,Expired,holder_157,insurer_5,underwriter_18,"['coverage_7', 'coverage_11', 'coverage_4']",agent_17
+policy_267,PN-5511-267,Home,2024-12-26,2027-01-16,471.92,Expired,holder_559,insurer_9,underwriter_13,"['coverage_9', 'coverage_5', 'coverage_6', 'coverage_10']",agent_14
+policy_268,PN-8397-268,Home,2023-11-03,2024-03-29,654.31,Active,holder_187,insurer_0,underwriter_10,"['coverage_4', 'coverage_9']",agent_16
+policy_269,PN-9039-269,Renter,2023-07-20,2025-03-16,640.99,Active,holder_316,insurer_0,underwriter_14,"['coverage_5', 'coverage_1', 'coverage_2', 'coverage_7']",agent_10
+policy_270,PN-4979-270,Auto,2022-10-20,2025-09-14,1346.38,Active,holder_266,insurer_8,underwriter_3,['coverage_9'],agent_11
+policy_271,PN-3412-271,Landlord,2023-09-02,2024-11-01,1041.34,Expired,holder_335,insurer_5,underwriter_1,"['coverage_0', 'coverage_13', 'coverage_9']",agent_12
+policy_272,PN-6411-272,Umbrella,2024-07-11,2025-08-18,1895.35,Active,holder_143,insurer_0,underwriter_9,"['coverage_6', 'coverage_11', 'coverage_3', 'coverage_2']",agent_4
+policy_273,PN-9367-273,Renter,2024-09-23,2025-01-04,1446.63,Expired,holder_190,insurer_8,underwriter_10,"['coverage_14', 'coverage_1']",agent_15
+policy_274,PN-8288-274,Condo,2022-03-02,2023-03-09,1158.63,Cancelled,holder_440,insurer_2,underwriter_7,"['coverage_11', 'coverage_4', 'coverage_9']",agent_18
+policy_275,PN-9104-275,Condo,2023-05-04,2024-12-15,1875.63,Expired,holder_41,insurer_8,underwriter_5,"['coverage_7', 'coverage_11', 'coverage_4']",agent_19
+policy_276,PN-7482-276,Home,2022-09-05,2023-12-11,1830.21,Expired,holder_191,insurer_4,underwriter_2,['coverage_7'],agent_4
+policy_277,PN-5920-277,Umbrella,2024-10-03,2025-07-16,1313.59,Active,holder_72,insurer_4,underwriter_12,['coverage_1'],agent_6
+policy_278,PN-3557-278,Landlord,2024-06-15,2024-11-01,1052.96,Expired,holder_114,insurer_7,underwriter_15,"['coverage_2', 'coverage_4']",agent_9
+policy_279,PN-1131-279,Home,2022-12-28,2024-03-10,1351.64,Active,holder_95,insurer_7,underwriter_8,['coverage_13'],agent_3
+policy_280,PN-4752-280,Home,2022-03-14,2022-09-20,1825.29,Cancelled,holder_137,insurer_3,underwriter_19,"['coverage_11', 'coverage_6']",agent_12
+policy_281,PN-3038-281,Auto,2024-03-03,2026-09-11,1239.45,Cancelled,holder_54,insurer_2,underwriter_8,"['coverage_4', 'coverage_10']",agent_12
+policy_282,PN-5879-282,Umbrella,2022-06-14,2024-05-05,498.59,Cancelled,holder_14,insurer_3,underwriter_1,"['coverage_10', 'coverage_14', 'coverage_4']",agent_19
+policy_283,PN-2944-283,Landlord,2022-08-04,2022-12-23,264.72,Active,holder_348,insurer_6,underwriter_6,"['coverage_2', 'coverage_3', 'coverage_10']",agent_4
+policy_284,PN-3299-284,Renter,2023-10-06,2026-02-04,1364.08,Active,holder_9,insurer_0,underwriter_13,"['coverage_8', 'coverage_1']",agent_6
+policy_285,PN-6856-285,Home,2024-02-06,2026-04-16,274.38,Cancelled,holder_86,insurer_9,underwriter_15,['coverage_11'],agent_9
+policy_286,PN-1168-286,Auto,2023-09-26,2024-07-29,1304.01,Active,holder_360,insurer_6,underwriter_6,"['coverage_8', 'coverage_6', 'coverage_0', 'coverage_11']",agent_9
+policy_287,PN-9869-287,Condo,2024-09-06,2027-07-11,917.04,Lapsed,holder_41,insurer_4,underwriter_18,"['coverage_3', 'coverage_11', 'coverage_8', 'coverage_14']",agent_15
+policy_288,PN-5559-288,Umbrella,2024-11-02,2025-02-17,286.57,Cancelled,holder_326,insurer_9,underwriter_10,"['coverage_14', 'coverage_8', 'coverage_9', 'coverage_12']",agent_13
+policy_289,PN-4315-289,Renter,2022-07-25,2022-09-11,470.6,Cancelled,holder_107,insurer_7,underwriter_4,"['coverage_10', 'coverage_14', 'coverage_11']",agent_17
+policy_290,PN-1932-290,Auto,2024-03-10,2027-02-25,1869.8,Expired,holder_74,insurer_7,underwriter_4,"['coverage_4', 'coverage_1', 'coverage_6', 'coverage_8']",agent_13
+policy_291,PN-9967-291,Condo,2023-03-07,2023-11-13,262.0,Expired,holder_383,insurer_6,underwriter_13,"['coverage_12', 'coverage_1', 'coverage_13']",agent_18
+policy_292,PN-5349-292,Auto,2022-12-30,2025-05-20,1930.87,Cancelled,holder_135,insurer_9,underwriter_4,['coverage_1'],agent_11
+policy_293,PN-8747-293,Condo,2022-02-21,2024-03-15,1683.46,Cancelled,holder_64,insurer_4,underwriter_16,['coverage_8'],agent_4
+policy_294,PN-4973-294,Home,2022-12-14,2024-01-25,357.53,Cancelled,holder_300,insurer_2,underwriter_0,"['coverage_8', 'coverage_5']",agent_0
+policy_295,PN-3642-295,Condo,2024-02-09,2024-07-06,1228.38,Cancelled,holder_71,insurer_2,underwriter_6,"['coverage_3', 'coverage_4', 'coverage_12', 'coverage_9']",agent_6
+policy_296,PN-4902-296,Home,2024-08-25,2024-09-30,1571.95,Lapsed,holder_398,insurer_1,underwriter_6,['coverage_2'],agent_16
+policy_297,PN-7582-297,Auto,2023-09-17,2024-05-12,1207.2,Active,holder_576,insurer_9,underwriter_16,['coverage_0'],agent_17
+policy_298,PN-9321-298,Condo,2024-05-16,2024-10-08,1302.37,Lapsed,holder_98,insurer_7,underwriter_19,"['coverage_14', 'coverage_2', 'coverage_11']",agent_18
+policy_299,PN-1686-299,Renter,2023-12-17,2026-05-19,789.43,Active,holder_444,insurer_7,underwriter_8,"['coverage_2', 'coverage_4', 'coverage_12', 'coverage_11']",agent_15
+policy_300,PN-4166-300,Landlord,2023-07-23,2024-02-09,1684.54,Lapsed,holder_147,insurer_6,underwriter_7,"['coverage_10', 'coverage_13', 'coverage_3']",agent_5
+policy_301,PN-6445-301,Umbrella,2022-06-05,2025-05-02,1524.59,Lapsed,holder_104,insurer_0,underwriter_1,['coverage_12'],agent_16
+policy_302,PN-7937-302,Auto,2023-08-14,2023-11-06,761.72,Expired,holder_287,insurer_0,underwriter_7,"['coverage_10', 'coverage_8']",agent_16
+policy_303,PN-6486-303,Auto,2023-06-26,2025-04-13,1410.51,Cancelled,holder_411,insurer_5,underwriter_13,"['coverage_0', 'coverage_1', 'coverage_4', 'coverage_3']",agent_17
+policy_304,PN-4839-304,Umbrella,2022-03-15,2022-05-14,1890.65,Expired,holder_240,insurer_4,underwriter_2,"['coverage_4', 'coverage_1', 'coverage_3']",agent_1
+policy_305,PN-2901-305,Umbrella,2023-07-13,2025-03-08,1529.72,Cancelled,holder_527,insurer_9,underwriter_2,['coverage_1'],agent_13
+policy_306,PN-7436-306,Home,2022-06-20,2023-01-28,787.17,Cancelled,holder_440,insurer_4,underwriter_11,['coverage_0'],agent_1
+policy_307,PN-4790-307,Renter,2024-12-08,2026-03-30,1070.26,Expired,holder_378,insurer_9,underwriter_8,"['coverage_4', 'coverage_2', 'coverage_8', 'coverage_13']",agent_9
+policy_308,PN-1437-308,Landlord,2022-10-17,2023-03-19,1461.6,Cancelled,holder_509,insurer_6,underwriter_3,"['coverage_10', 'coverage_9']",agent_2
+policy_309,PN-3926-309,Landlord,2024-10-02,2024-11-21,1283.34,Expired,holder_178,insurer_3,underwriter_16,"['coverage_11', 'coverage_6', 'coverage_0', 'coverage_4']",agent_19
+policy_310,PN-5879-310,Condo,2022-07-30,2024-12-12,1238.36,Active,holder_196,insurer_5,underwriter_13,"['coverage_14', 'coverage_1']",agent_4
+policy_311,PN-9794-311,Condo,2023-12-02,2024-08-25,1609.9,Lapsed,holder_194,insurer_7,underwriter_10,['coverage_9'],agent_13
+policy_312,PN-8714-312,Umbrella,2024-06-12,2026-05-12,250.41,Lapsed,holder_478,insurer_8,underwriter_12,"['coverage_5', 'coverage_13']",agent_13
+policy_313,PN-1515-313,Renter,2024-02-01,2026-04-28,1297.36,Lapsed,holder_577,insurer_9,underwriter_3,"['coverage_2', 'coverage_10', 'coverage_0']",agent_12
+policy_314,PN-2841-314,Renter,2023-08-24,2023-10-01,1945.39,Lapsed,holder_67,insurer_1,underwriter_18,"['coverage_13', 'coverage_14', 'coverage_10', 'coverage_5']",agent_3
+policy_315,PN-4882-315,Condo,2024-02-15,2026-05-21,511.91,Cancelled,holder_171,insurer_0,underwriter_13,"['coverage_4', 'coverage_1', 'coverage_12']",agent_7
+policy_316,PN-7475-316,Condo,2022-10-17,2023-10-31,1101.06,Cancelled,holder_244,insurer_4,underwriter_11,"['coverage_0', 'coverage_4', 'coverage_10', 'coverage_8']",agent_15
+policy_317,PN-7056-317,Renter,2023-10-25,2026-05-25,1362.15,Cancelled,holder_335,insurer_8,underwriter_16,"['coverage_3', 'coverage_1', 'coverage_8']",agent_7
+policy_318,PN-3437-318,Umbrella,2023-11-28,2026-04-05,1532.58,Cancelled,holder_122,insurer_0,underwriter_9,"['coverage_14', 'coverage_1']",agent_3
+policy_319,PN-2366-319,Umbrella,2025-02-06,2025-10-17,1146.47,Active,holder_130,insurer_8,underwriter_1,['coverage_4'],agent_14
+policy_320,PN-3367-320,Auto,2025-01-29,2027-08-13,1518.25,Active,holder_139,insurer_2,underwriter_19,"['coverage_7', 'coverage_10', 'coverage_5']",agent_8
+policy_321,PN-9996-321,Umbrella,2023-12-01,2025-02-07,635.38,Active,holder_99,insurer_9,underwriter_3,['coverage_7'],agent_17
+policy_322,PN-8804-322,Umbrella,2024-02-29,2026-12-16,208.01,Cancelled,holder_184,insurer_8,underwriter_4,"['coverage_3', 'coverage_11', 'coverage_14', 'coverage_7']",agent_16
+policy_323,PN-2886-323,Renter,2023-10-18,2024-01-04,1494.82,Active,holder_340,insurer_3,underwriter_6,"['coverage_4', 'coverage_6']",agent_11
+policy_324,PN-4076-324,Condo,2023-08-18,2025-09-27,1942.63,Lapsed,holder_482,insurer_0,underwriter_11,['coverage_2'],agent_9
+policy_325,PN-3650-325,Landlord,2023-12-29,2026-08-26,1022.61,Cancelled,holder_272,insurer_6,underwriter_3,"['coverage_10', 'coverage_12', 'coverage_11', 'coverage_9']",agent_11
+policy_326,PN-4112-326,Umbrella,2022-08-23,2024-12-18,1976.5,Cancelled,holder_443,insurer_8,underwriter_11,"['coverage_10', 'coverage_4', 'coverage_7', 'coverage_2']",agent_10
+policy_327,PN-7160-327,Umbrella,2024-02-11,2025-10-21,715.8,Lapsed,holder_264,insurer_7,underwriter_2,"['coverage_11', 'coverage_14', 'coverage_3', 'coverage_7']",agent_7
+policy_328,PN-5635-328,Auto,2023-05-08,2025-04-21,1466.34,Active,holder_448,insurer_8,underwriter_9,"['coverage_14', 'coverage_4']",agent_3
+policy_329,PN-3313-329,Auto,2024-07-10,2024-12-25,1262.91,Expired,holder_70,insurer_5,underwriter_10,['coverage_11'],agent_10
+policy_330,PN-8784-330,Condo,2025-02-09,2027-07-11,1025.87,Expired,holder_466,insurer_7,underwriter_6,"['coverage_1', 'coverage_2']",agent_10
+policy_331,PN-1066-331,Umbrella,2022-05-29,2023-09-19,723.33,Active,holder_444,insurer_5,underwriter_8,"['coverage_8', 'coverage_2', 'coverage_11', 'coverage_7']",agent_13
+policy_332,PN-1643-332,Landlord,2023-07-27,2024-09-09,1347.9,Cancelled,holder_368,insurer_2,underwriter_10,['coverage_3'],agent_19
+policy_333,PN-5297-333,Umbrella,2022-06-27,2024-01-22,809.64,Expired,holder_171,insurer_0,underwriter_17,"['coverage_13', 'coverage_8']",agent_6
+policy_334,PN-5539-334,Home,2023-09-22,2024-07-14,1101.0,Cancelled,holder_589,insurer_2,underwriter_18,"['coverage_0', 'coverage_3', 'coverage_5']",agent_19
+policy_335,PN-7425-335,Condo,2023-03-29,2025-08-16,1312.26,Cancelled,holder_178,insurer_8,underwriter_6,"['coverage_11', 'coverage_5', 'coverage_14']",agent_15
+policy_336,PN-6873-336,Auto,2024-06-18,2026-05-02,1847.56,Lapsed,holder_570,insurer_2,underwriter_19,"['coverage_5', 'coverage_3', 'coverage_11', 'coverage_0']",agent_6
+policy_337,PN-8336-337,Home,2024-04-21,2025-05-23,948.33,Active,holder_385,insurer_6,underwriter_6,"['coverage_11', 'coverage_13']",agent_3
+policy_338,PN-3154-338,Home,2024-11-11,2026-06-25,1033.2,Lapsed,holder_127,insurer_2,underwriter_3,"['coverage_11', 'coverage_2', 'coverage_9']",agent_14
+policy_339,PN-5992-339,Landlord,2022-03-17,2023-03-06,857.05,Cancelled,holder_175,insurer_7,underwriter_12,"['coverage_9', 'coverage_12']",agent_4
+policy_340,PN-5876-340,Landlord,2024-02-11,2024-06-13,545.39,Active,holder_88,insurer_3,underwriter_13,['coverage_5'],agent_18
+policy_341,PN-4800-341,Home,2022-07-08,2024-05-19,1305.05,Expired,holder_175,insurer_4,underwriter_12,['coverage_4'],agent_18
+policy_342,PN-7212-342,Condo,2022-02-18,2023-09-25,1542.21,Lapsed,holder_124,insurer_9,underwriter_8,"['coverage_12', 'coverage_11', 'coverage_14', 'coverage_8']",agent_9
+policy_343,PN-2781-343,Renter,2023-01-15,2023-03-30,1820.29,Lapsed,holder_196,insurer_7,underwriter_12,['coverage_7'],agent_8
+policy_344,PN-2868-344,Condo,2022-06-17,2022-12-04,454.44,Lapsed,holder_358,insurer_3,underwriter_11,"['coverage_2', 'coverage_8', 'coverage_9']",agent_5
+policy_345,PN-8970-345,Home,2022-02-24,2022-06-03,827.06,Lapsed,holder_382,insurer_5,underwriter_15,"['coverage_11', 'coverage_9', 'coverage_12', 'coverage_8']",agent_2
+policy_346,PN-4525-346,Auto,2024-10-31,2026-08-01,1003.01,Lapsed,holder_26,insurer_4,underwriter_2,['coverage_2'],agent_2
+policy_347,PN-5233-347,Condo,2022-03-10,2023-03-18,1670.63,Active,holder_554,insurer_8,underwriter_3,['coverage_13'],agent_17
+policy_348,PN-5245-348,Umbrella,2023-06-18,2026-02-09,1120.2,Active,holder_595,insurer_8,underwriter_13,['coverage_7'],agent_18
+policy_349,PN-6406-349,Landlord,2023-09-26,2026-08-28,1991.35,Expired,holder_422,insurer_1,underwriter_13,"['coverage_4', 'coverage_13', 'coverage_7', 'coverage_11']",agent_16
+policy_350,PN-1137-350,Renter,2024-06-23,2024-07-28,410.39,Expired,holder_187,insurer_2,underwriter_14,"['coverage_3', 'coverage_4', 'coverage_13']",agent_5
+policy_351,PN-8002-351,Umbrella,2023-12-02,2026-07-23,1134.62,Active,holder_388,insurer_9,underwriter_1,"['coverage_7', 'coverage_1', 'coverage_10', 'coverage_6']",agent_16
+policy_352,PN-4918-352,Condo,2022-04-20,2025-03-14,935.96,Lapsed,holder_507,insurer_4,underwriter_16,['coverage_13'],agent_13
+policy_353,PN-3153-353,Renter,2023-08-17,2025-01-20,1011.66,Expired,holder_123,insurer_2,underwriter_4,"['coverage_6', 'coverage_4', 'coverage_7', 'coverage_14']",agent_12
+policy_354,PN-7305-354,Condo,2024-08-21,2027-02-06,381.0,Cancelled,holder_473,insurer_4,underwriter_6,['coverage_9'],agent_4
+policy_355,PN-2804-355,Auto,2023-07-18,2025-07-01,1890.3,Active,holder_24,insurer_8,underwriter_5,"['coverage_2', 'coverage_6', 'coverage_14']",agent_4
+policy_356,PN-7991-356,Auto,2022-04-29,2023-08-17,817.2,Lapsed,holder_307,insurer_2,underwriter_18,"['coverage_5', 'coverage_13', 'coverage_3']",agent_1
+policy_357,PN-6130-357,Auto,2025-01-10,2026-08-21,442.56,Active,holder_406,insurer_8,underwriter_6,['coverage_3'],agent_9
+policy_358,PN-1334-358,Condo,2023-04-27,2023-11-04,958.47,Active,holder_430,insurer_1,underwriter_15,"['coverage_12', 'coverage_7', 'coverage_5']",agent_3
+policy_359,PN-9922-359,Home,2022-11-21,2023-11-23,522.71,Lapsed,holder_117,insurer_2,underwriter_10,"['coverage_11', 'coverage_12', 'coverage_7']",agent_10
+policy_360,PN-1119-360,Home,2023-10-08,2025-08-07,942.23,Cancelled,holder_573,insurer_9,underwriter_7,"['coverage_10', 'coverage_3']",agent_1
+policy_361,PN-2305-361,Landlord,2025-01-09,2027-02-17,945.95,Active,holder_381,insurer_4,underwriter_3,"['coverage_11', 'coverage_3', 'coverage_4']",agent_11
+policy_362,PN-1103-362,Landlord,2022-12-25,2023-03-29,231.23,Lapsed,holder_521,insurer_2,underwriter_10,['coverage_2'],agent_11
+policy_363,PN-5490-363,Landlord,2023-10-30,2024-07-31,984.68,Active,holder_57,insurer_0,underwriter_10,"['coverage_1', 'coverage_11']",agent_16
+policy_364,PN-9371-364,Landlord,2024-07-07,2026-07-18,1185.0,Lapsed,holder_446,insurer_9,underwriter_18,"['coverage_14', 'coverage_3', 'coverage_2']",agent_9
+policy_365,PN-2589-365,Umbrella,2022-03-03,2024-04-23,1086.33,Expired,holder_596,insurer_1,underwriter_3,"['coverage_1', 'coverage_8']",agent_2
+policy_366,PN-4298-366,Home,2023-02-20,2023-06-19,1281.6,Expired,holder_79,insurer_1,underwriter_3,"['coverage_2', 'coverage_1', 'coverage_9', 'coverage_4']",agent_12
+policy_367,PN-6158-367,Auto,2024-02-01,2026-09-30,592.65,Cancelled,holder_204,insurer_8,underwriter_4,"['coverage_9', 'coverage_13', 'coverage_8', 'coverage_1']",agent_6
+policy_368,PN-1009-368,Umbrella,2023-07-23,2024-12-13,890.13,Lapsed,holder_63,insurer_4,underwriter_17,"['coverage_4', 'coverage_5', 'coverage_7']",agent_3
+policy_369,PN-7277-369,Landlord,2024-01-29,2024-04-02,677.9,Lapsed,holder_442,insurer_9,underwriter_4,"['coverage_2', 'coverage_3']",agent_18
+policy_370,PN-6820-370,Umbrella,2024-04-30,2025-03-10,414.88,Cancelled,holder_23,insurer_9,underwriter_10,"['coverage_2', 'coverage_4', 'coverage_9']",agent_1
+policy_371,PN-5884-371,Home,2024-02-04,2024-04-13,1515.19,Active,holder_4,insurer_1,underwriter_15,"['coverage_1', 'coverage_0', 'coverage_7']",agent_3
+policy_372,PN-9175-372,Auto,2025-02-12,2025-08-13,1070.02,Active,holder_208,insurer_4,underwriter_6,['coverage_3'],agent_19
+policy_373,PN-5143-373,Auto,2024-06-16,2027-03-11,1280.97,Active,holder_439,insurer_4,underwriter_16,"['coverage_11', 'coverage_3', 'coverage_9']",agent_7
+policy_374,PN-9056-374,Landlord,2024-03-25,2024-11-01,383.0,Cancelled,holder_27,insurer_3,underwriter_17,"['coverage_14', 'coverage_8']",agent_10
+policy_375,PN-3437-375,Landlord,2024-05-01,2027-03-12,377.66,Cancelled,holder_355,insurer_3,underwriter_11,['coverage_1'],agent_10
+policy_376,PN-4069-376,Renter,2022-07-17,2022-12-05,1621.97,Expired,holder_178,insurer_8,underwriter_10,"['coverage_3', 'coverage_12', 'coverage_0']",agent_1
+policy_377,PN-3541-377,Auto,2023-08-15,2024-05-30,1914.02,Expired,holder_10,insurer_6,underwriter_12,"['coverage_7', 'coverage_6']",agent_10
+policy_378,PN-9932-378,Landlord,2022-09-27,2024-04-30,447.23,Cancelled,holder_138,insurer_9,underwriter_1,"['coverage_4', 'coverage_11', 'coverage_10', 'coverage_2']",agent_1
+policy_379,PN-8222-379,Condo,2024-09-18,2025-04-13,1655.37,Cancelled,holder_57,insurer_8,underwriter_19,['coverage_9'],agent_5
+policy_380,PN-2381-380,Umbrella,2023-02-14,2025-02-16,1033.54,Active,holder_133,insurer_2,underwriter_4,"['coverage_6', 'coverage_0', 'coverage_11', 'coverage_4']",agent_15
+policy_381,PN-5046-381,Home,2022-06-03,2024-01-28,1313.95,Lapsed,holder_235,insurer_7,underwriter_1,"['coverage_12', 'coverage_1', 'coverage_6', 'coverage_4']",agent_2
+policy_382,PN-6624-382,Umbrella,2022-09-27,2023-07-10,1011.14,Active,holder_336,insurer_6,underwriter_6,['coverage_5'],agent_1
+policy_383,PN-9287-383,Home,2024-03-15,2025-01-05,497.96,Cancelled,holder_520,insurer_8,underwriter_13,['coverage_14'],agent_17
+policy_384,PN-5335-384,Umbrella,2022-07-03,2022-10-26,1112.64,Expired,holder_5,insurer_6,underwriter_18,"['coverage_4', 'coverage_7', 'coverage_9', 'coverage_0']",agent_16
+policy_385,PN-9040-385,Auto,2023-05-15,2025-08-23,295.26,Expired,holder_432,insurer_1,underwriter_6,"['coverage_9', 'coverage_1', 'coverage_12']",agent_17
+policy_386,PN-8665-386,Auto,2022-10-27,2023-08-25,1794.26,Cancelled,holder_6,insurer_9,underwriter_15,['coverage_13'],agent_19
+policy_387,PN-6479-387,Umbrella,2023-04-25,2023-06-19,228.19,Active,holder_166,insurer_6,underwriter_0,['coverage_10'],agent_16
+policy_388,PN-3567-388,Landlord,2023-06-23,2026-03-22,1012.06,Lapsed,holder_227,insurer_0,underwriter_7,"['coverage_6', 'coverage_13']",agent_13
+policy_389,PN-1235-389,Renter,2024-02-11,2024-06-12,661.39,Expired,holder_57,insurer_1,underwriter_2,"['coverage_5', 'coverage_4']",agent_12
+policy_390,PN-7528-390,Auto,2023-01-09,2024-02-18,870.9,Lapsed,holder_411,insurer_8,underwriter_10,"['coverage_14', 'coverage_12', 'coverage_1']",agent_5
+policy_391,PN-6831-391,Renter,2023-10-30,2025-12-25,950.24,Cancelled,holder_543,insurer_1,underwriter_5,['coverage_0'],agent_2
+policy_392,PN-1440-392,Umbrella,2023-04-18,2026-01-04,405.37,Active,holder_445,insurer_9,underwriter_5,['coverage_13'],agent_13
+policy_393,PN-9163-393,Renter,2025-01-18,2025-04-27,1659.48,Expired,holder_567,insurer_0,underwriter_5,"['coverage_4', 'coverage_2']",agent_10
+policy_394,PN-9892-394,Condo,2025-01-27,2025-12-08,472.79,Active,holder_193,insurer_1,underwriter_8,"['coverage_5', 'coverage_8']",agent_3
+policy_395,PN-7624-395,Auto,2023-11-06,2026-10-29,1613.74,Cancelled,holder_343,insurer_2,underwriter_6,"['coverage_4', 'coverage_13', 'coverage_12', 'coverage_5']",agent_5
+policy_396,PN-9300-396,Renter,2024-10-04,2025-01-12,344.24,Active,holder_105,insurer_2,underwriter_0,['coverage_0'],agent_18
+policy_397,PN-1849-397,Renter,2023-10-29,2024-09-20,688.16,Lapsed,holder_346,insurer_9,underwriter_19,"['coverage_12', 'coverage_8', 'coverage_3']",agent_2
+policy_398,PN-5902-398,Home,2023-06-30,2025-10-06,310.74,Active,holder_575,insurer_7,underwriter_10,"['coverage_2', 'coverage_0', 'coverage_5', 'coverage_8']",agent_12
+policy_399,PN-8428-399,Home,2023-07-06,2024-05-21,598.97,Lapsed,holder_324,insurer_4,underwriter_14,"['coverage_12', 'coverage_9', 'coverage_1']",agent_8
+policy_400,PN-4533-400,Home,2024-12-09,2027-03-08,206.85,Lapsed,holder_490,insurer_9,underwriter_0,"['coverage_13', 'coverage_3', 'coverage_7', 'coverage_1']",agent_2
+policy_401,PN-6832-401,Umbrella,2023-02-10,2024-10-12,1364.34,Lapsed,holder_423,insurer_1,underwriter_12,"['coverage_10', 'coverage_3', 'coverage_0']",agent_8
+policy_402,PN-3272-402,Umbrella,2022-12-27,2025-01-09,1344.41,Active,holder_503,insurer_9,underwriter_1,"['coverage_7', 'coverage_4', 'coverage_12', 'coverage_2']",agent_10
+policy_403,PN-7567-403,Landlord,2024-09-12,2024-12-15,1570.65,Active,holder_66,insurer_6,underwriter_12,"['coverage_10', 'coverage_9']",agent_1
+policy_404,PN-5596-404,Umbrella,2023-03-20,2024-06-19,251.64,Cancelled,holder_27,insurer_6,underwriter_1,['coverage_7'],agent_17
+policy_405,PN-4480-405,Home,2023-01-18,2024-12-22,772.9,Lapsed,holder_447,insurer_0,underwriter_4,"['coverage_10', 'coverage_5']",agent_7
+policy_406,PN-5925-406,Auto,2023-03-16,2026-01-10,1714.71,Active,holder_505,insurer_2,underwriter_9,"['coverage_3', 'coverage_12', 'coverage_4', 'coverage_6']",agent_15
+policy_407,PN-3158-407,Condo,2024-12-14,2027-11-02,1032.17,Cancelled,holder_342,insurer_3,underwriter_16,"['coverage_10', 'coverage_13', 'coverage_12', 'coverage_2']",agent_3
+policy_408,PN-3256-408,Auto,2023-07-16,2024-12-21,1704.76,Lapsed,holder_546,insurer_2,underwriter_12,"['coverage_6', 'coverage_5']",agent_7
+policy_409,PN-5898-409,Landlord,2024-09-15,2025-02-15,867.48,Active,holder_388,insurer_2,underwriter_2,"['coverage_0', 'coverage_12']",agent_12
+policy_410,PN-9708-410,Umbrella,2022-12-29,2024-07-07,365.95,Active,holder_450,insurer_2,underwriter_13,"['coverage_13', 'coverage_0']",agent_13
+policy_411,PN-5987-411,Landlord,2022-12-29,2023-11-01,1404.51,Cancelled,holder_450,insurer_5,underwriter_12,"['coverage_7', 'coverage_9', 'coverage_14']",agent_12
+policy_412,PN-9821-412,Auto,2024-09-28,2026-02-17,1715.95,Cancelled,holder_246,insurer_0,underwriter_14,"['coverage_1', 'coverage_7']",agent_0
+policy_413,PN-8205-413,Home,2023-05-03,2026-03-29,243.0,Expired,holder_438,insurer_9,underwriter_18,"['coverage_2', 'coverage_3', 'coverage_14', 'coverage_12']",agent_1
+policy_414,PN-5454-414,Umbrella,2022-12-14,2025-10-18,1774.46,Lapsed,holder_400,insurer_2,underwriter_8,"['coverage_6', 'coverage_14', 'coverage_12', 'coverage_9']",agent_13
+policy_415,PN-1235-415,Landlord,2023-05-30,2024-11-02,1949.97,Lapsed,holder_216,insurer_4,underwriter_0,"['coverage_3', 'coverage_1', 'coverage_0', 'coverage_7']",agent_7
+policy_416,PN-4055-416,Home,2025-02-16,2026-12-10,1960.47,Expired,holder_145,insurer_1,underwriter_5,"['coverage_7', 'coverage_14', 'coverage_2', 'coverage_4']",agent_2
+policy_417,PN-5901-417,Condo,2024-02-23,2026-12-02,1346.49,Expired,holder_38,insurer_5,underwriter_12,"['coverage_3', 'coverage_4', 'coverage_9', 'coverage_1']",agent_9
+policy_418,PN-7222-418,Auto,2024-06-17,2026-09-07,1183.28,Lapsed,holder_38,insurer_3,underwriter_14,"['coverage_10', 'coverage_3', 'coverage_0', 'coverage_12']",agent_2
+policy_419,PN-4354-419,Home,2024-01-31,2024-06-19,361.03,Active,holder_241,insurer_0,underwriter_14,"['coverage_2', 'coverage_0', 'coverage_4', 'coverage_7']",agent_3
+policy_420,PN-1848-420,Umbrella,2022-11-30,2024-07-22,1469.66,Lapsed,holder_468,insurer_7,underwriter_15,"['coverage_5', 'coverage_6']",agent_4
+policy_421,PN-2031-421,Renter,2023-05-30,2026-02-13,577.92,Expired,holder_531,insurer_5,underwriter_4,"['coverage_4', 'coverage_2']",agent_0
+policy_422,PN-6638-422,Landlord,2022-11-19,2024-04-10,1040.02,Expired,holder_9,insurer_9,underwriter_19,"['coverage_14', 'coverage_0']",agent_12
+policy_423,PN-2933-423,Home,2023-10-10,2024-01-12,940.03,Lapsed,holder_162,insurer_2,underwriter_7,['coverage_6'],agent_4
+policy_424,PN-2514-424,Home,2023-02-15,2025-04-25,497.85,Cancelled,holder_341,insurer_1,underwriter_1,"['coverage_0', 'coverage_3']",agent_17
+policy_425,PN-4344-425,Umbrella,2024-04-22,2026-01-10,317.03,Active,holder_407,insurer_0,underwriter_2,['coverage_11'],agent_4
+policy_426,PN-6311-426,Landlord,2022-03-23,2024-10-04,1003.63,Active,holder_213,insurer_7,underwriter_15,"['coverage_5', 'coverage_9', 'coverage_6']",agent_10
+policy_427,PN-8996-427,Umbrella,2023-08-22,2025-06-22,962.67,Cancelled,holder_267,insurer_6,underwriter_11,"['coverage_9', 'coverage_2']",agent_13
+policy_428,PN-4797-428,Home,2022-06-14,2022-09-13,295.63,Active,holder_489,insurer_2,underwriter_16,['coverage_11'],agent_9
+policy_429,PN-5998-429,Home,2024-12-05,2027-05-08,1243.24,Cancelled,holder_440,insurer_6,underwriter_12,"['coverage_10', 'coverage_0']",agent_8
+policy_430,PN-8076-430,Landlord,2023-04-29,2023-10-31,1148.42,Active,holder_481,insurer_7,underwriter_6,['coverage_2'],agent_18
+policy_431,PN-4682-431,Auto,2023-02-17,2023-12-16,918.39,Lapsed,holder_114,insurer_4,underwriter_7,['coverage_9'],agent_15
+policy_432,PN-4672-432,Condo,2024-08-26,2025-03-08,536.25,Expired,holder_568,insurer_3,underwriter_10,"['coverage_2', 'coverage_0']",agent_16
+policy_433,PN-7080-433,Renter,2023-05-05,2025-02-20,324.87,Expired,holder_549,insurer_0,underwriter_10,['coverage_10'],agent_13
+policy_434,PN-3826-434,Landlord,2024-07-14,2025-12-09,304.11,Lapsed,holder_394,insurer_0,underwriter_15,['coverage_3'],agent_2
+policy_435,PN-8867-435,Home,2024-12-16,2027-09-13,1895.22,Active,holder_556,insurer_1,underwriter_7,['coverage_8'],agent_18
+policy_436,PN-2775-436,Renter,2023-04-20,2024-07-11,1516.95,Expired,holder_580,insurer_6,underwriter_2,['coverage_2'],agent_6
+policy_437,PN-5495-437,Renter,2024-10-15,2025-10-20,1371.82,Cancelled,holder_1,insurer_8,underwriter_3,"['coverage_13', 'coverage_6', 'coverage_3', 'coverage_7']",agent_4
+policy_438,PN-9686-438,Auto,2022-12-04,2025-11-05,1675.61,Expired,holder_326,insurer_4,underwriter_14,"['coverage_6', 'coverage_13', 'coverage_3', 'coverage_2']",agent_6
+policy_439,PN-1753-439,Condo,2023-01-23,2023-11-05,704.7,Expired,holder_343,insurer_5,underwriter_14,"['coverage_5', 'coverage_12', 'coverage_6', 'coverage_1']",agent_14
+policy_440,PN-8025-440,Condo,2024-03-09,2025-12-30,613.3,Expired,holder_176,insurer_9,underwriter_0,"['coverage_2', 'coverage_8', 'coverage_9', 'coverage_6']",agent_17
+policy_441,PN-2734-441,Umbrella,2023-08-01,2025-12-12,625.69,Active,holder_546,insurer_9,underwriter_19,"['coverage_12', 'coverage_13', 'coverage_1']",agent_11
+policy_442,PN-9880-442,Auto,2024-03-24,2025-06-12,1072.52,Active,holder_294,insurer_0,underwriter_12,"['coverage_13', 'coverage_9', 'coverage_2']",agent_5
+policy_443,PN-8727-443,Landlord,2024-10-12,2027-06-02,482.07,Expired,holder_135,insurer_9,underwriter_2,"['coverage_14', 'coverage_3']",agent_11
+policy_444,PN-1445-444,Renter,2024-06-05,2027-05-18,831.53,Cancelled,holder_33,insurer_8,underwriter_10,['coverage_3'],agent_1
+policy_445,PN-2228-445,Renter,2023-07-01,2024-07-22,1134.87,Lapsed,holder_28,insurer_1,underwriter_19,"['coverage_5', 'coverage_2', 'coverage_0', 'coverage_6']",agent_16
+policy_446,PN-8317-446,Umbrella,2022-07-21,2023-12-13,1463.04,Active,holder_83,insurer_9,underwriter_7,"['coverage_0', 'coverage_1', 'coverage_10', 'coverage_14']",agent_7
+policy_447,PN-6458-447,Home,2023-01-11,2024-04-03,282.85,Lapsed,holder_17,insurer_4,underwriter_1,"['coverage_1', 'coverage_12', 'coverage_13']",agent_4
+policy_448,PN-1400-448,Renter,2023-02-23,2024-08-23,974.16,Expired,holder_421,insurer_0,underwriter_13,"['coverage_6', 'coverage_1']",agent_19
+policy_449,PN-7763-449,Landlord,2022-03-10,2024-08-04,971.21,Cancelled,holder_218,insurer_3,underwriter_14,"['coverage_5', 'coverage_9', 'coverage_3', 'coverage_12']",agent_0
+policy_450,PN-2684-450,Home,2024-09-16,2025-09-24,231.02,Active,holder_572,insurer_4,underwriter_3,['coverage_9'],agent_0
+policy_451,PN-5559-451,Auto,2024-12-21,2025-02-12,213.95,Lapsed,holder_577,insurer_5,underwriter_6,"['coverage_9', 'coverage_12']",agent_8
+policy_452,PN-6068-452,Auto,2023-03-06,2023-04-08,1556.26,Active,holder_545,insurer_6,underwriter_8,"['coverage_1', 'coverage_5']",agent_6
+policy_453,PN-1965-453,Auto,2023-05-30,2025-11-04,555.51,Cancelled,holder_596,insurer_2,underwriter_8,"['coverage_7', 'coverage_4', 'coverage_3']",agent_17
+policy_454,PN-8846-454,Home,2023-09-12,2025-11-01,476.59,Active,holder_462,insurer_3,underwriter_18,['coverage_4'],agent_14
+policy_455,PN-4067-455,Auto,2024-06-05,2024-07-18,1905.68,Expired,holder_482,insurer_7,underwriter_18,"['coverage_14', 'coverage_11', 'coverage_6']",agent_3
+policy_456,PN-7678-456,Auto,2023-11-04,2024-06-04,327.87,Active,holder_181,insurer_1,underwriter_0,"['coverage_7', 'coverage_9']",agent_2
+policy_457,PN-5940-457,Condo,2023-09-22,2026-04-06,1772.55,Expired,holder_205,insurer_6,underwriter_18,['coverage_5'],agent_18
+policy_458,PN-8266-458,Renter,2023-07-27,2025-12-07,1280.51,Expired,holder_231,insurer_6,underwriter_10,"['coverage_13', 'coverage_3', 'coverage_6', 'coverage_1']",agent_4
+policy_459,PN-7908-459,Renter,2022-12-01,2023-11-02,1034.76,Cancelled,holder_252,insurer_3,underwriter_5,['coverage_11'],agent_12
+policy_460,PN-3165-460,Landlord,2023-11-13,2024-06-01,235.03,Cancelled,holder_293,insurer_8,underwriter_2,"['coverage_12', 'coverage_6']",agent_7
+policy_461,PN-2890-461,Auto,2023-03-26,2025-06-29,475.64,Lapsed,holder_510,insurer_0,underwriter_3,['coverage_13'],agent_1
+policy_462,PN-9972-462,Auto,2025-01-06,2026-08-19,312.09,Expired,holder_434,insurer_9,underwriter_11,"['coverage_7', 'coverage_10', 'coverage_14', 'coverage_2']",agent_18
+policy_463,PN-8104-463,Condo,2022-07-14,2023-04-30,1462.15,Cancelled,holder_527,insurer_1,underwriter_14,"['coverage_1', 'coverage_10']",agent_10
+policy_464,PN-3874-464,Umbrella,2023-08-09,2024-07-29,1123.8,Lapsed,holder_40,insurer_6,underwriter_17,"['coverage_7', 'coverage_2', 'coverage_0']",agent_10
+policy_465,PN-5011-465,Home,2024-11-06,2027-08-03,597.39,Cancelled,holder_405,insurer_5,underwriter_18,"['coverage_0', 'coverage_5', 'coverage_8', 'coverage_10']",agent_16
+policy_466,PN-8387-466,Landlord,2023-02-04,2025-07-25,994.85,Lapsed,holder_456,insurer_4,underwriter_19,"['coverage_13', 'coverage_0', 'coverage_11', 'coverage_8']",agent_7
+policy_467,PN-6135-467,Landlord,2024-02-03,2024-12-18,837.18,Expired,holder_585,insurer_7,underwriter_5,['coverage_14'],agent_11
+policy_468,PN-4878-468,Landlord,2024-03-22,2025-10-07,252.93,Active,holder_231,insurer_3,underwriter_12,"['coverage_6', 'coverage_3']",agent_17
+policy_469,PN-1133-469,Auto,2023-10-01,2024-04-13,1583.89,Active,holder_597,insurer_0,underwriter_8,"['coverage_1', 'coverage_10', 'coverage_6']",agent_16
+policy_470,PN-2587-470,Umbrella,2023-02-10,2025-09-10,1833.88,Expired,holder_592,insurer_6,underwriter_5,"['coverage_9', 'coverage_5', 'coverage_0', 'coverage_7']",agent_11
+policy_471,PN-6871-471,Landlord,2022-12-10,2024-06-28,1356.51,Active,holder_446,insurer_6,underwriter_1,"['coverage_8', 'coverage_5', 'coverage_0']",agent_16
+policy_472,PN-5896-472,Auto,2022-12-16,2024-05-31,1621.21,Cancelled,holder_302,insurer_1,underwriter_10,"['coverage_10', 'coverage_12', 'coverage_6']",agent_16
+policy_473,PN-6880-473,Renter,2023-04-20,2024-11-12,870.68,Cancelled,holder_528,insurer_0,underwriter_8,['coverage_10'],agent_15
+policy_474,PN-2556-474,Auto,2024-05-06,2027-02-08,328.77,Lapsed,holder_510,insurer_1,underwriter_6,"['coverage_8', 'coverage_3', 'coverage_7', 'coverage_13']",agent_6
+policy_475,PN-9825-475,Home,2023-02-28,2023-07-31,960.15,Cancelled,holder_554,insurer_5,underwriter_1,"['coverage_8', 'coverage_4', 'coverage_14']",agent_16
+policy_476,PN-6394-476,Condo,2022-09-28,2023-02-04,1080.94,Active,holder_28,insurer_3,underwriter_17,"['coverage_11', 'coverage_8', 'coverage_14']",agent_5
+policy_477,PN-9688-477,Landlord,2024-05-10,2026-06-25,344.02,Lapsed,holder_510,insurer_5,underwriter_1,"['coverage_5', 'coverage_6', 'coverage_7']",agent_1
+policy_478,PN-9225-478,Home,2023-11-13,2026-03-27,1247.12,Lapsed,holder_582,insurer_9,underwriter_14,"['coverage_11', 'coverage_5', 'coverage_12', 'coverage_8']",agent_14
+policy_479,PN-5658-479,Landlord,2025-01-15,2025-04-13,1671.91,Expired,holder_324,insurer_7,underwriter_15,['coverage_12'],agent_15
+policy_480,PN-6158-480,Landlord,2022-07-21,2024-03-09,1122.7,Cancelled,holder_274,insurer_1,underwriter_18,['coverage_7'],agent_1
+policy_481,PN-4186-481,Renter,2023-07-16,2025-05-05,749.05,Active,holder_474,insurer_7,underwriter_4,"['coverage_5', 'coverage_14', 'coverage_7', 'coverage_10']",agent_18
+policy_482,PN-6131-482,Umbrella,2022-06-24,2024-03-28,1094.02,Active,holder_321,insurer_8,underwriter_2,"['coverage_4', 'coverage_2', 'coverage_10', 'coverage_8']",agent_4
+policy_483,PN-7548-483,Umbrella,2023-09-13,2026-05-05,824.66,Cancelled,holder_246,insurer_0,underwriter_15,['coverage_6'],agent_13
+policy_484,PN-8750-484,Condo,2024-09-08,2026-11-11,1637.98,Lapsed,holder_450,insurer_7,underwriter_10,"['coverage_11', 'coverage_5', 'coverage_4', 'coverage_7']",agent_2
+policy_485,PN-8889-485,Home,2024-03-01,2026-08-08,502.28,Active,holder_433,insurer_2,underwriter_19,['coverage_13'],agent_17
+policy_486,PN-3322-486,Auto,2023-03-07,2023-08-20,1470.9,Lapsed,holder_113,insurer_5,underwriter_16,"['coverage_0', 'coverage_10']",agent_2
+policy_487,PN-2447-487,Auto,2022-03-29,2024-09-24,504.92,Lapsed,holder_158,insurer_0,underwriter_0,"['coverage_7', 'coverage_11', 'coverage_3', 'coverage_0']",agent_9
+policy_488,PN-5058-488,Umbrella,2025-02-10,2026-03-02,1656.43,Active,holder_552,insurer_2,underwriter_15,"['coverage_9', 'coverage_2']",agent_5
+policy_489,PN-1498-489,Umbrella,2024-08-09,2025-09-02,1889.7,Cancelled,holder_339,insurer_4,underwriter_15,"['coverage_14', 'coverage_6']",agent_10
+policy_490,PN-6865-490,Renter,2024-12-12,2025-06-21,959.82,Active,holder_5,insurer_6,underwriter_18,"['coverage_12', 'coverage_6', 'coverage_13']",agent_5
+policy_491,PN-8707-491,Renter,2022-07-19,2022-10-10,274.95,Lapsed,holder_462,insurer_0,underwriter_7,"['coverage_6', 'coverage_7', 'coverage_2', 'coverage_0']",agent_8
+policy_492,PN-7600-492,Auto,2022-05-17,2023-02-28,1783.99,Expired,holder_549,insurer_7,underwriter_7,"['coverage_12', 'coverage_10']",agent_18
+policy_493,PN-6243-493,Home,2022-10-04,2025-05-18,216.07,Expired,holder_233,insurer_3,underwriter_13,"['coverage_1', 'coverage_12', 'coverage_8', 'coverage_10']",agent_12
+policy_494,PN-1298-494,Umbrella,2024-04-01,2026-06-18,653.87,Active,holder_350,insurer_8,underwriter_7,"['coverage_0', 'coverage_5', 'coverage_12']",agent_16
+policy_495,PN-6138-495,Home,2024-02-01,2024-07-21,452.61,Lapsed,holder_189,insurer_0,underwriter_10,['coverage_14'],agent_1
+policy_496,PN-3341-496,Auto,2023-08-10,2026-02-28,512.16,Expired,holder_280,insurer_2,underwriter_1,"['coverage_5', 'coverage_1', 'coverage_3']",agent_17
+policy_497,PN-3330-497,Landlord,2022-07-18,2023-01-15,872.72,Expired,holder_340,insurer_6,underwriter_19,"['coverage_12', 'coverage_2', 'coverage_5', 'coverage_11']",agent_17
+policy_498,PN-4834-498,Condo,2022-12-23,2024-05-07,991.34,Active,holder_304,insurer_3,underwriter_1,['coverage_5'],agent_14
+policy_499,PN-8584-499,Auto,2023-09-17,2026-02-06,683.78,Expired,holder_116,insurer_6,underwriter_2,"['coverage_8', 'coverage_3', 'coverage_11']",agent_9
+policy_500,PN-4549-500,Umbrella,2022-03-04,2022-06-21,893.62,Cancelled,holder_592,insurer_8,underwriter_8,['coverage_5'],agent_3
+policy_501,PN-9022-501,Landlord,2023-10-20,2024-09-30,1741.0,Expired,holder_404,insurer_0,underwriter_1,"['coverage_7', 'coverage_8', 'coverage_2', 'coverage_9']",agent_9
+policy_502,PN-6373-502,Condo,2022-06-12,2023-01-28,1004.76,Lapsed,holder_267,insurer_2,underwriter_5,['coverage_8'],agent_10
+policy_503,PN-4942-503,Landlord,2023-11-10,2024-06-23,1020.25,Lapsed,holder_246,insurer_7,underwriter_14,"['coverage_9', 'coverage_6']",agent_4
+policy_504,PN-8937-504,Auto,2022-09-01,2023-01-26,1709.53,Cancelled,holder_435,insurer_7,underwriter_12,"['coverage_11', 'coverage_12', 'coverage_10']",agent_5
+policy_505,PN-9738-505,Umbrella,2024-06-13,2026-02-28,1812.71,Active,holder_182,insurer_6,underwriter_14,"['coverage_4', 'coverage_10']",agent_14
+policy_506,PN-8707-506,Home,2024-06-10,2027-03-07,1267.57,Expired,holder_118,insurer_4,underwriter_9,"['coverage_9', 'coverage_3']",agent_6
+policy_507,PN-2049-507,Renter,2024-12-03,2027-02-24,955.84,Active,holder_411,insurer_2,underwriter_11,"['coverage_0', 'coverage_2', 'coverage_8', 'coverage_6']",agent_6
+policy_508,PN-5121-508,Umbrella,2024-06-26,2025-02-12,1503.17,Expired,holder_96,insurer_3,underwriter_2,"['coverage_13', 'coverage_12', 'coverage_10']",agent_15
+policy_509,PN-3587-509,Umbrella,2023-07-13,2026-06-02,1678.54,Expired,holder_427,insurer_6,underwriter_7,"['coverage_8', 'coverage_11', 'coverage_9']",agent_11
+policy_510,PN-8334-510,Umbrella,2023-06-09,2025-08-07,548.37,Active,holder_555,insurer_5,underwriter_16,['coverage_4'],agent_0
+policy_511,PN-5059-511,Auto,2024-07-21,2026-02-21,318.28,Lapsed,holder_384,insurer_2,underwriter_9,"['coverage_9', 'coverage_3', 'coverage_4']",agent_12
+policy_512,PN-4930-512,Condo,2024-11-19,2025-08-02,547.22,Cancelled,holder_433,insurer_2,underwriter_9,"['coverage_6', 'coverage_5', 'coverage_11', 'coverage_7']",agent_5
+policy_513,PN-9184-513,Auto,2024-12-01,2027-03-23,586.94,Active,holder_417,insurer_9,underwriter_4,"['coverage_7', 'coverage_3', 'coverage_2', 'coverage_4']",agent_19
+policy_514,PN-1526-514,Auto,2022-11-06,2023-10-29,675.28,Lapsed,holder_63,insurer_4,underwriter_9,['coverage_2'],agent_19
+policy_515,PN-1993-515,Landlord,2022-06-12,2024-01-20,1107.43,Cancelled,holder_49,insurer_3,underwriter_3,"['coverage_5', 'coverage_2', 'coverage_13']",agent_11
+policy_516,PN-8562-516,Renter,2023-05-04,2024-12-15,1150.61,Lapsed,holder_581,insurer_1,underwriter_16,"['coverage_10', 'coverage_11']",agent_10
+policy_517,PN-8248-517,Home,2022-09-20,2023-03-04,1322.57,Expired,holder_593,insurer_0,underwriter_19,"['coverage_8', 'coverage_9', 'coverage_7', 'coverage_3']",agent_2
+policy_518,PN-2047-518,Auto,2023-11-17,2025-03-13,916.4,Lapsed,holder_412,insurer_0,underwriter_13,"['coverage_6', 'coverage_2']",agent_4
+policy_519,PN-2292-519,Renter,2023-08-28,2024-10-06,265.58,Expired,holder_82,insurer_6,underwriter_19,"['coverage_5', 'coverage_10']",agent_0
+policy_520,PN-8640-520,Landlord,2023-11-04,2025-12-19,1744.71,Lapsed,holder_381,insurer_6,underwriter_8,"['coverage_6', 'coverage_9']",agent_15
+policy_521,PN-7518-521,Home,2024-03-20,2026-10-13,1043.15,Cancelled,holder_27,insurer_3,underwriter_2,['coverage_14'],agent_18
+policy_522,PN-8294-522,Home,2025-02-03,2027-09-14,1582.11,Lapsed,holder_465,insurer_8,underwriter_13,"['coverage_12', 'coverage_10', 'coverage_1', 'coverage_5']",agent_14
+policy_523,PN-2858-523,Umbrella,2022-10-26,2024-09-26,1616.04,Expired,holder_487,insurer_8,underwriter_18,"['coverage_7', 'coverage_4', 'coverage_6']",agent_7
+policy_524,PN-6684-524,Umbrella,2023-01-27,2023-05-06,462.57,Cancelled,holder_573,insurer_6,underwriter_9,['coverage_5'],agent_1
+policy_525,PN-7555-525,Landlord,2023-04-30,2025-04-17,1962.27,Active,holder_225,insurer_1,underwriter_10,"['coverage_7', 'coverage_8']",agent_14
+policy_526,PN-5293-526,Umbrella,2023-04-04,2026-03-17,1416.36,Lapsed,holder_567,insurer_9,underwriter_9,"['coverage_9', 'coverage_8', 'coverage_7']",agent_16
+policy_527,PN-9997-527,Home,2025-02-15,2027-01-28,1430.62,Active,holder_353,insurer_5,underwriter_18,"['coverage_0', 'coverage_6']",agent_9
+policy_528,PN-5212-528,Landlord,2022-06-08,2023-10-26,210.5,Lapsed,holder_428,insurer_0,underwriter_13,"['coverage_6', 'coverage_12']",agent_2
+policy_529,PN-5173-529,Auto,2023-09-04,2026-06-26,1454.59,Expired,holder_84,insurer_8,underwriter_15,"['coverage_2', 'coverage_13', 'coverage_11']",agent_5
+policy_530,PN-4323-530,Home,2024-05-25,2027-01-11,1235.16,Expired,holder_201,insurer_1,underwriter_0,"['coverage_3', 'coverage_11']",agent_2
+policy_531,PN-3364-531,Condo,2023-09-13,2025-05-19,768.18,Expired,holder_398,insurer_1,underwriter_3,"['coverage_14', 'coverage_10', 'coverage_4']",agent_1
+policy_532,PN-1860-532,Condo,2023-12-24,2024-09-18,719.1,Cancelled,holder_547,insurer_3,underwriter_1,['coverage_3'],agent_14
+policy_533,PN-2329-533,Condo,2023-02-27,2025-12-28,1293.75,Cancelled,holder_21,insurer_6,underwriter_14,"['coverage_14', 'coverage_8']",agent_12
+policy_534,PN-4293-534,Condo,2022-12-29,2023-10-04,222.41,Expired,holder_431,insurer_1,underwriter_7,"['coverage_13', 'coverage_3', 'coverage_6', 'coverage_7']",agent_15
+policy_535,PN-8217-535,Auto,2024-10-17,2026-04-24,1960.76,Cancelled,holder_534,insurer_2,underwriter_15,"['coverage_6', 'coverage_9', 'coverage_12']",agent_12
+policy_536,PN-6550-536,Umbrella,2024-07-28,2026-04-18,1147.94,Cancelled,holder_169,insurer_5,underwriter_11,"['coverage_6', 'coverage_0', 'coverage_2', 'coverage_7']",agent_15
+policy_537,PN-2560-537,Renter,2025-01-30,2027-04-05,1225.87,Expired,holder_310,insurer_6,underwriter_9,"['coverage_6', 'coverage_10', 'coverage_3', 'coverage_13']",agent_17
+policy_538,PN-3873-538,Renter,2022-12-31,2025-05-02,1651.72,Cancelled,holder_218,insurer_9,underwriter_8,"['coverage_0', 'coverage_6']",agent_11
+policy_539,PN-2599-539,Renter,2023-10-25,2025-01-02,979.14,Active,holder_297,insurer_9,underwriter_14,"['coverage_13', 'coverage_9']",agent_0
+policy_540,PN-9565-540,Condo,2024-07-09,2025-08-11,534.67,Lapsed,holder_112,insurer_5,underwriter_12,"['coverage_14', 'coverage_7', 'coverage_10', 'coverage_11']",agent_2
+policy_541,PN-9391-541,Condo,2022-12-27,2025-02-11,352.96,Expired,holder_322,insurer_6,underwriter_9,"['coverage_6', 'coverage_2', 'coverage_10']",agent_9
+policy_542,PN-3309-542,Renter,2024-11-14,2027-03-16,686.83,Lapsed,holder_591,insurer_2,underwriter_5,"['coverage_10', 'coverage_13', 'coverage_3']",agent_16
+policy_543,PN-7849-543,Landlord,2023-03-18,2026-02-27,765.1,Expired,holder_382,insurer_8,underwriter_1,"['coverage_0', 'coverage_3']",agent_2
+policy_544,PN-8073-544,Landlord,2023-05-24,2024-12-20,1771.88,Expired,holder_467,insurer_9,underwriter_0,"['coverage_1', 'coverage_6', 'coverage_7']",agent_2
+policy_545,PN-5154-545,Landlord,2024-09-29,2027-03-13,485.14,Active,holder_41,insurer_8,underwriter_19,"['coverage_10', 'coverage_1']",agent_2
+policy_546,PN-6971-546,Home,2023-05-01,2025-12-21,667.51,Lapsed,holder_166,insurer_9,underwriter_2,"['coverage_0', 'coverage_14', 'coverage_10']",agent_14
+policy_547,PN-4779-547,Renter,2023-06-30,2025-12-16,1853.89,Active,holder_102,insurer_4,underwriter_12,['coverage_7'],agent_4
+policy_548,PN-3594-548,Umbrella,2024-02-23,2025-05-05,1609.99,Active,holder_84,insurer_9,underwriter_13,"['coverage_0', 'coverage_11', 'coverage_3']",agent_2
+policy_549,PN-4896-549,Renter,2024-09-21,2025-04-01,395.57,Active,holder_133,insurer_9,underwriter_13,"['coverage_3', 'coverage_1', 'coverage_14']",agent_13
+policy_550,PN-2697-550,Landlord,2022-05-24,2023-06-12,1439.75,Active,holder_160,insurer_6,underwriter_9,"['coverage_8', 'coverage_1', 'coverage_7', 'coverage_10']",agent_18
+policy_551,PN-1946-551,Home,2024-06-11,2026-02-03,614.47,Active,holder_371,insurer_7,underwriter_10,['coverage_9'],agent_17
+policy_552,PN-5627-552,Renter,2023-10-18,2025-06-10,786.15,Lapsed,holder_365,insurer_9,underwriter_4,"['coverage_10', 'coverage_13', 'coverage_7', 'coverage_2']",agent_10
+policy_553,PN-9436-553,Renter,2023-06-24,2024-06-25,1714.12,Expired,holder_459,insurer_0,underwriter_10,"['coverage_7', 'coverage_12']",agent_2
+policy_554,PN-2042-554,Condo,2024-06-14,2027-04-19,1222.14,Active,holder_21,insurer_9,underwriter_2,['coverage_13'],agent_6
+policy_555,PN-5439-555,Auto,2022-10-10,2025-09-01,1636.98,Active,holder_24,insurer_5,underwriter_11,"['coverage_1', 'coverage_9', 'coverage_10', 'coverage_12']",agent_7
+policy_556,PN-3119-556,Condo,2023-08-16,2025-07-06,1223.61,Active,holder_418,insurer_0,underwriter_0,['coverage_5'],agent_2
+policy_557,PN-4426-557,Condo,2023-04-08,2024-04-15,315.58,Cancelled,holder_202,insurer_6,underwriter_13,['coverage_7'],agent_2
+policy_558,PN-2879-558,Renter,2022-06-28,2025-01-24,649.52,Cancelled,holder_489,insurer_7,underwriter_12,"['coverage_12', 'coverage_10', 'coverage_2', 'coverage_9']",agent_13
+policy_559,PN-2990-559,Umbrella,2024-09-10,2025-05-19,1307.2,Cancelled,holder_406,insurer_5,underwriter_2,"['coverage_1', 'coverage_4', 'coverage_6']",agent_6
+policy_560,PN-4776-560,Landlord,2022-06-19,2022-12-20,1745.47,Lapsed,holder_71,insurer_1,underwriter_5,"['coverage_12', 'coverage_13']",agent_18
+policy_561,PN-8212-561,Umbrella,2023-11-17,2026-05-17,1882.63,Lapsed,holder_251,insurer_6,underwriter_3,"['coverage_9', 'coverage_2', 'coverage_14', 'coverage_13']",agent_18
+policy_562,PN-5370-562,Condo,2024-10-07,2025-08-01,1888.58,Lapsed,holder_300,insurer_9,underwriter_9,"['coverage_6', 'coverage_14', 'coverage_8', 'coverage_2']",agent_8
+policy_563,PN-2869-563,Auto,2024-06-20,2025-08-23,1163.94,Lapsed,holder_236,insurer_5,underwriter_12,"['coverage_11', 'coverage_3']",agent_18
+policy_564,PN-5612-564,Condo,2022-07-29,2022-12-21,1234.3,Expired,holder_15,insurer_1,underwriter_18,"['coverage_13', 'coverage_7']",agent_18
+policy_565,PN-1769-565,Condo,2022-10-30,2025-06-13,485.14,Active,holder_439,insurer_2,underwriter_16,"['coverage_1', 'coverage_13', 'coverage_10']",agent_7
+policy_566,PN-1751-566,Landlord,2024-12-08,2026-05-20,1304.01,Lapsed,holder_487,insurer_8,underwriter_15,['coverage_11'],agent_0
+policy_567,PN-6356-567,Condo,2023-08-09,2026-01-05,777.74,Expired,holder_508,insurer_4,underwriter_2,"['coverage_7', 'coverage_0', 'coverage_14', 'coverage_6']",agent_16
+policy_568,PN-8270-568,Renter,2022-09-30,2023-01-15,316.9,Expired,holder_503,insurer_8,underwriter_7,"['coverage_9', 'coverage_13', 'coverage_4', 'coverage_5']",agent_1
+policy_569,PN-4177-569,Landlord,2024-09-06,2025-11-18,1949.05,Cancelled,holder_195,insurer_8,underwriter_11,"['coverage_2', 'coverage_10', 'coverage_12', 'coverage_4']",agent_6
+policy_570,PN-5727-570,Umbrella,2022-02-18,2022-08-02,560.23,Active,holder_429,insurer_7,underwriter_19,"['coverage_4', 'coverage_6', 'coverage_9', 'coverage_0']",agent_13
+policy_571,PN-6718-571,Condo,2024-05-17,2027-03-02,785.03,Lapsed,holder_587,insurer_9,underwriter_17,"['coverage_1', 'coverage_2', 'coverage_5']",agent_11
+policy_572,PN-4697-572,Renter,2023-10-10,2023-12-02,250.71,Cancelled,holder_236,insurer_0,underwriter_6,['coverage_4'],agent_5
+policy_573,PN-7353-573,Umbrella,2024-08-02,2026-06-20,1924.56,Lapsed,holder_351,insurer_1,underwriter_17,"['coverage_10', 'coverage_11', 'coverage_2']",agent_17
+policy_574,PN-1170-574,Renter,2024-01-21,2025-02-14,1022.31,Active,holder_485,insurer_7,underwriter_10,"['coverage_13', 'coverage_5', 'coverage_12']",agent_14
+policy_575,PN-7221-575,Home,2022-07-27,2022-10-06,1855.28,Active,holder_17,insurer_2,underwriter_17,"['coverage_7', 'coverage_3', 'coverage_10', 'coverage_5']",agent_19
+policy_576,PN-5171-576,Condo,2024-03-27,2025-01-05,801.75,Lapsed,holder_246,insurer_7,underwriter_0,['coverage_14'],agent_19
+policy_577,PN-4337-577,Home,2023-09-04,2026-03-30,1386.46,Cancelled,holder_544,insurer_8,underwriter_15,['coverage_9'],agent_18
+policy_578,PN-4269-578,Renter,2023-03-16,2023-05-30,887.35,Active,holder_330,insurer_1,underwriter_18,['coverage_7'],agent_2
+policy_579,PN-9016-579,Auto,2024-01-14,2025-07-20,610.24,Active,holder_460,insurer_1,underwriter_2,"['coverage_10', 'coverage_11', 'coverage_0']",agent_0
+policy_580,PN-7415-580,Umbrella,2023-07-19,2025-11-27,361.32,Expired,holder_477,insurer_3,underwriter_2,"['coverage_2', 'coverage_13', 'coverage_3']",agent_12
+policy_581,PN-9053-581,Condo,2023-03-19,2024-03-28,752.53,Active,holder_184,insurer_9,underwriter_7,"['coverage_12', 'coverage_9', 'coverage_5']",agent_17
+policy_582,PN-2029-582,Umbrella,2023-09-19,2026-02-08,1768.06,Cancelled,holder_460,insurer_3,underwriter_15,"['coverage_8', 'coverage_0', 'coverage_9']",agent_0
+policy_583,PN-6508-583,Auto,2023-02-18,2023-07-19,1374.19,Cancelled,holder_334,insurer_4,underwriter_7,"['coverage_10', 'coverage_1']",agent_8
+policy_584,PN-6619-584,Renter,2023-01-22,2023-11-09,1499.45,Cancelled,holder_126,insurer_2,underwriter_1,"['coverage_1', 'coverage_8']",agent_2
+policy_585,PN-1792-585,Auto,2024-10-11,2027-04-14,1360.5,Active,holder_582,insurer_4,underwriter_15,['coverage_2'],agent_7
+policy_586,PN-9369-586,Home,2022-02-21,2025-01-03,1533.87,Expired,holder_457,insurer_0,underwriter_6,"['coverage_5', 'coverage_8', 'coverage_0', 'coverage_14']",agent_0
+policy_587,PN-4345-587,Landlord,2023-07-25,2024-03-15,545.21,Cancelled,holder_67,insurer_2,underwriter_2,['coverage_5'],agent_0
+policy_588,PN-5355-588,Landlord,2022-06-09,2023-11-22,932.15,Cancelled,holder_272,insurer_7,underwriter_18,"['coverage_8', 'coverage_3', 'coverage_10']",agent_18
+policy_589,PN-1799-589,Condo,2023-04-27,2025-12-11,1278.91,Lapsed,holder_562,insurer_9,underwriter_17,"['coverage_9', 'coverage_3', 'coverage_0', 'coverage_1']",agent_18
+policy_590,PN-9256-590,Renter,2022-07-15,2024-02-24,1453.35,Lapsed,holder_373,insurer_2,underwriter_12,['coverage_1'],agent_17
+policy_591,PN-6642-591,Home,2024-04-23,2025-07-17,861.31,Expired,holder_492,insurer_0,underwriter_2,"['coverage_5', 'coverage_0']",agent_12
+policy_592,PN-2518-592,Home,2023-04-15,2025-01-09,932.91,Expired,holder_338,insurer_0,underwriter_13,"['coverage_10', 'coverage_9', 'coverage_2', 'coverage_6']",agent_0
+policy_593,PN-5330-593,Home,2024-10-06,2025-04-20,1432.87,Expired,holder_64,insurer_3,underwriter_13,['coverage_4'],agent_5
+policy_594,PN-9360-594,Renter,2024-05-25,2026-11-19,1819.44,Cancelled,holder_287,insurer_5,underwriter_3,"['coverage_2', 'coverage_6', 'coverage_9', 'coverage_12']",agent_13
+policy_595,PN-7396-595,Home,2024-11-13,2027-06-04,1609.76,Lapsed,holder_142,insurer_3,underwriter_13,"['coverage_10', 'coverage_1', 'coverage_13', 'coverage_7']",agent_19
+policy_596,PN-6904-596,Renter,2022-04-08,2023-05-07,1174.13,Lapsed,holder_94,insurer_5,underwriter_16,"['coverage_12', 'coverage_0', 'coverage_9', 'coverage_2']",agent_2
+policy_597,PN-2399-597,Condo,2024-03-20,2026-03-07,1774.33,Cancelled,holder_158,insurer_5,underwriter_15,"['coverage_3', 'coverage_6']",agent_16
+policy_598,PN-7019-598,Home,2022-07-23,2023-09-27,1396.7,Active,holder_445,insurer_0,underwriter_4,['coverage_14'],agent_14
+policy_599,PN-1725-599,Home,2024-04-04,2026-07-31,333.72,Active,holder_432,insurer_5,underwriter_15,"['coverage_9', 'coverage_12', 'coverage_10']",agent_15
+policy_600,PN-8819-600,Landlord,2024-12-20,2025-07-05,1040.24,Expired,holder_198,insurer_1,underwriter_7,"['coverage_10', 'coverage_3']",agent_13
+policy_601,PN-8922-601,Umbrella,2023-08-03,2024-06-17,989.89,Active,holder_8,insurer_4,underwriter_6,"['coverage_0', 'coverage_14']",agent_6
+policy_602,PN-6328-602,Auto,2023-05-15,2023-06-22,1163.78,Lapsed,holder_554,insurer_0,underwriter_18,"['coverage_5', 'coverage_9']",agent_18
+policy_603,PN-8019-603,Landlord,2022-07-07,2023-12-06,1376.58,Lapsed,holder_191,insurer_5,underwriter_19,"['coverage_5', 'coverage_6', 'coverage_1', 'coverage_3']",agent_8
+policy_604,PN-7241-604,Renter,2025-01-24,2026-03-03,342.05,Cancelled,holder_535,insurer_5,underwriter_19,"['coverage_2', 'coverage_11']",agent_6
+policy_605,PN-8402-605,Umbrella,2024-05-28,2027-04-29,252.3,Cancelled,holder_142,insurer_6,underwriter_10,"['coverage_5', 'coverage_10']",agent_16
+policy_606,PN-7997-606,Auto,2024-12-30,2026-04-03,1316.6,Active,holder_218,insurer_2,underwriter_14,"['coverage_13', 'coverage_9']",agent_5
+policy_607,PN-3869-607,Umbrella,2024-08-05,2027-06-01,668.02,Expired,holder_197,insurer_6,underwriter_19,['coverage_11'],agent_4
+policy_608,PN-4591-608,Renter,2024-06-12,2025-06-19,224.31,Lapsed,holder_16,insurer_2,underwriter_4,['coverage_5'],agent_11
+policy_609,PN-2181-609,Umbrella,2024-06-19,2027-06-06,1842.63,Lapsed,holder_333,insurer_9,underwriter_1,['coverage_7'],agent_17
+policy_610,PN-4866-610,Landlord,2023-06-28,2024-04-27,1115.83,Expired,holder_9,insurer_4,underwriter_9,"['coverage_5', 'coverage_9', 'coverage_2', 'coverage_8']",agent_8
+policy_611,PN-4862-611,Auto,2024-07-11,2025-06-08,1650.1,Expired,holder_84,insurer_5,underwriter_12,"['coverage_2', 'coverage_13']",agent_14
+policy_612,PN-9178-612,Umbrella,2023-07-19,2025-04-03,349.01,Lapsed,holder_344,insurer_1,underwriter_3,"['coverage_4', 'coverage_12', 'coverage_10']",agent_11
+policy_613,PN-7892-613,Condo,2022-03-02,2023-09-30,1456.75,Lapsed,holder_446,insurer_1,underwriter_12,['coverage_0'],agent_11
+policy_614,PN-9575-614,Home,2022-11-02,2025-08-07,1210.94,Active,holder_415,insurer_2,underwriter_3,"['coverage_3', 'coverage_4', 'coverage_2', 'coverage_7']",agent_10
+policy_615,PN-2881-615,Landlord,2022-06-23,2024-07-12,1697.08,Cancelled,holder_111,insurer_0,underwriter_11,"['coverage_8', 'coverage_9', 'coverage_1', 'coverage_13']",agent_3
+policy_616,PN-5596-616,Renter,2024-12-19,2027-12-01,1543.92,Cancelled,holder_141,insurer_1,underwriter_7,"['coverage_1', 'coverage_13']",agent_10
+policy_617,PN-6925-617,Home,2024-04-15,2026-06-20,1787.3,Lapsed,holder_225,insurer_5,underwriter_8,"['coverage_9', 'coverage_12', 'coverage_11', 'coverage_6']",agent_15
+policy_618,PN-8726-618,Renter,2022-09-28,2025-05-08,1787.87,Lapsed,holder_16,insurer_0,underwriter_3,"['coverage_14', 'coverage_8', 'coverage_5', 'coverage_12']",agent_13
+policy_619,PN-7004-619,Condo,2023-06-03,2025-07-17,744.32,Expired,holder_168,insurer_6,underwriter_9,"['coverage_11', 'coverage_14', 'coverage_3', 'coverage_5']",agent_3
+policy_620,PN-9074-620,Renter,2023-09-18,2026-08-02,1880.59,Cancelled,holder_503,insurer_7,underwriter_14,"['coverage_3', 'coverage_14', 'coverage_9', 'coverage_5']",agent_12
+policy_621,PN-1557-621,Home,2023-09-05,2023-12-14,425.07,Lapsed,holder_90,insurer_4,underwriter_18,"['coverage_7', 'coverage_5', 'coverage_13']",agent_8
+policy_622,PN-2413-622,Condo,2024-07-14,2025-03-07,278.04,Lapsed,holder_130,insurer_9,underwriter_7,"['coverage_1', 'coverage_4', 'coverage_7']",agent_8
+policy_623,PN-3305-623,Renter,2024-07-22,2025-02-14,1390.6,Active,holder_422,insurer_5,underwriter_18,"['coverage_1', 'coverage_10']",agent_11
+policy_624,PN-9292-624,Renter,2024-06-15,2025-01-29,813.08,Lapsed,holder_413,insurer_9,underwriter_0,"['coverage_4', 'coverage_1', 'coverage_8']",agent_11
+policy_625,PN-4728-625,Condo,2025-01-25,2025-03-28,1111.02,Active,holder_89,insurer_0,underwriter_11,"['coverage_8', 'coverage_0', 'coverage_4', 'coverage_6']",agent_5
+policy_626,PN-3146-626,Landlord,2022-08-08,2024-07-06,1782.66,Active,holder_504,insurer_6,underwriter_16,['coverage_6'],agent_6
+policy_627,PN-4558-627,Condo,2023-04-16,2024-12-07,1498.06,Expired,holder_462,insurer_7,underwriter_17,['coverage_4'],agent_18
+policy_628,PN-8746-628,Landlord,2024-12-26,2027-02-23,1162.28,Lapsed,holder_447,insurer_9,underwriter_0,"['coverage_10', 'coverage_11', 'coverage_3', 'coverage_13']",agent_0
+policy_629,PN-3472-629,Home,2022-11-14,2025-06-28,597.96,Active,holder_525,insurer_4,underwriter_2,"['coverage_2', 'coverage_4', 'coverage_13', 'coverage_12']",agent_12
+policy_630,PN-7463-630,Renter,2024-11-18,2027-05-05,790.16,Expired,holder_294,insurer_3,underwriter_19,"['coverage_5', 'coverage_3', 'coverage_8']",agent_4
+policy_631,PN-9439-631,Landlord,2024-06-20,2025-10-20,431.3,Active,holder_179,insurer_5,underwriter_6,"['coverage_5', 'coverage_11', 'coverage_3', 'coverage_6']",agent_5
+policy_632,PN-7223-632,Umbrella,2022-06-19,2023-10-12,942.3,Lapsed,holder_167,insurer_5,underwriter_10,"['coverage_3', 'coverage_6', 'coverage_10']",agent_9
+policy_633,PN-9180-633,Renter,2024-08-18,2026-10-30,754.29,Active,holder_532,insurer_3,underwriter_17,"['coverage_8', 'coverage_6', 'coverage_14', 'coverage_10']",agent_18
+policy_634,PN-7824-634,Condo,2024-01-22,2026-05-05,844.09,Expired,holder_197,insurer_6,underwriter_13,"['coverage_6', 'coverage_11', 'coverage_12', 'coverage_2']",agent_2
+policy_635,PN-9925-635,Landlord,2023-07-12,2025-09-04,1280.44,Cancelled,holder_94,insurer_4,underwriter_1,"['coverage_11', 'coverage_9', 'coverage_5', 'coverage_7']",agent_18
+policy_636,PN-8167-636,Umbrella,2023-03-25,2023-06-29,1608.87,Cancelled,holder_547,insurer_3,underwriter_14,"['coverage_8', 'coverage_4']",agent_15
+policy_637,PN-6835-637,Auto,2022-08-10,2024-02-22,1354.63,Active,holder_424,insurer_4,underwriter_10,"['coverage_3', 'coverage_1', 'coverage_10', 'coverage_4']",agent_19
+policy_638,PN-2400-638,Renter,2023-02-21,2025-10-15,341.99,Expired,holder_493,insurer_7,underwriter_3,"['coverage_14', 'coverage_11']",agent_1
+policy_639,PN-8963-639,Condo,2023-03-19,2024-04-24,1092.0,Lapsed,holder_268,insurer_3,underwriter_10,"['coverage_3', 'coverage_6', 'coverage_10']",agent_8
+policy_640,PN-2915-640,Landlord,2022-11-25,2025-02-06,1304.2,Active,holder_304,insurer_4,underwriter_3,"['coverage_13', 'coverage_12', 'coverage_8']",agent_1
+policy_641,PN-7383-641,Umbrella,2022-03-18,2024-07-17,537.52,Active,holder_226,insurer_2,underwriter_11,"['coverage_0', 'coverage_4']",agent_7
+policy_642,PN-3920-642,Condo,2024-12-23,2027-08-07,939.1,Cancelled,holder_503,insurer_8,underwriter_11,"['coverage_12', 'coverage_1']",agent_2
+policy_643,PN-6205-643,Umbrella,2023-02-10,2025-06-21,1087.85,Expired,holder_123,insurer_6,underwriter_11,"['coverage_11', 'coverage_0', 'coverage_4', 'coverage_10']",agent_4
+policy_644,PN-2436-644,Landlord,2023-12-30,2024-11-06,802.5,Active,holder_133,insurer_8,underwriter_9,"['coverage_14', 'coverage_8']",agent_5
+policy_645,PN-4145-645,Umbrella,2023-02-25,2025-12-03,1089.63,Active,holder_121,insurer_0,underwriter_11,"['coverage_1', 'coverage_8', 'coverage_13', 'coverage_12']",agent_18
+policy_646,PN-2116-646,Renter,2023-07-27,2026-07-18,1566.46,Active,holder_505,insurer_6,underwriter_19,"['coverage_1', 'coverage_7']",agent_3
+policy_647,PN-2445-647,Umbrella,2024-07-04,2025-02-10,677.0,Active,holder_27,insurer_4,underwriter_9,"['coverage_12', 'coverage_11']",agent_10
+policy_648,PN-7592-648,Landlord,2022-10-26,2023-09-09,558.72,Lapsed,holder_112,insurer_3,underwriter_1,"['coverage_11', 'coverage_9']",agent_0
+policy_649,PN-8446-649,Condo,2024-01-04,2024-05-08,1478.82,Lapsed,holder_328,insurer_0,underwriter_13,"['coverage_13', 'coverage_5', 'coverage_9']",agent_14
+policy_650,PN-5861-650,Renter,2023-05-03,2024-06-26,1612.26,Active,holder_24,insurer_9,underwriter_0,['coverage_6'],agent_15
+policy_651,PN-2241-651,Landlord,2022-11-14,2025-09-19,214.48,Lapsed,holder_9,insurer_3,underwriter_12,"['coverage_12', 'coverage_9']",agent_4
+policy_652,PN-2557-652,Umbrella,2022-05-15,2024-10-11,1773.66,Cancelled,holder_567,insurer_1,underwriter_16,['coverage_3'],agent_10
+policy_653,PN-9165-653,Renter,2023-04-09,2025-07-20,638.96,Expired,holder_154,insurer_8,underwriter_11,"['coverage_9', 'coverage_6']",agent_5
+policy_654,PN-4621-654,Auto,2023-04-19,2025-03-21,979.37,Cancelled,holder_390,insurer_5,underwriter_5,"['coverage_6', 'coverage_9', 'coverage_4', 'coverage_10']",agent_0
+policy_655,PN-6730-655,Home,2023-08-11,2024-07-21,1954.83,Active,holder_216,insurer_6,underwriter_15,['coverage_2'],agent_1
+policy_656,PN-5407-656,Renter,2023-08-26,2026-03-24,300.89,Lapsed,holder_503,insurer_7,underwriter_16,['coverage_14'],agent_0
+policy_657,PN-2460-657,Auto,2023-11-14,2026-01-29,1371.23,Active,holder_365,insurer_0,underwriter_6,"['coverage_13', 'coverage_5']",agent_3
+policy_658,PN-4252-658,Umbrella,2023-10-28,2026-04-16,1649.29,Expired,holder_577,insurer_2,underwriter_19,['coverage_1'],agent_2
+policy_659,PN-6041-659,Condo,2022-04-23,2022-10-28,1803.72,Expired,holder_421,insurer_7,underwriter_8,"['coverage_4', 'coverage_0', 'coverage_2']",agent_1
+policy_660,PN-2258-660,Landlord,2024-03-03,2026-11-24,1927.35,Active,holder_484,insurer_4,underwriter_6,"['coverage_7', 'coverage_3', 'coverage_5', 'coverage_0']",agent_17
+policy_661,PN-2569-661,Home,2024-05-23,2025-11-20,322.26,Lapsed,holder_368,insurer_8,underwriter_13,"['coverage_10', 'coverage_14']",agent_18
+policy_662,PN-9589-662,Umbrella,2022-06-11,2023-09-28,658.32,Cancelled,holder_453,insurer_7,underwriter_15,"['coverage_1', 'coverage_11', 'coverage_2']",agent_17
+policy_663,PN-8141-663,Landlord,2024-04-17,2026-12-25,525.92,Lapsed,holder_162,insurer_9,underwriter_5,"['coverage_14', 'coverage_10', 'coverage_11', 'coverage_4']",agent_11
+policy_664,PN-6187-664,Landlord,2024-09-04,2024-12-29,1130.66,Active,holder_560,insurer_4,underwriter_13,"['coverage_9', 'coverage_11', 'coverage_0', 'coverage_4']",agent_8
+policy_665,PN-5369-665,Umbrella,2023-05-17,2023-08-30,376.54,Cancelled,holder_228,insurer_2,underwriter_4,"['coverage_1', 'coverage_4', 'coverage_2']",agent_13
+policy_666,PN-4857-666,Condo,2023-06-02,2024-07-20,404.18,Lapsed,holder_21,insurer_8,underwriter_16,"['coverage_2', 'coverage_5', 'coverage_8']",agent_9
+policy_667,PN-9099-667,Umbrella,2022-12-05,2025-03-08,519.12,Lapsed,holder_337,insurer_4,underwriter_15,['coverage_8'],agent_19
+policy_668,PN-7479-668,Renter,2024-06-14,2025-08-19,1606.61,Cancelled,holder_252,insurer_2,underwriter_1,"['coverage_0', 'coverage_12']",agent_1
+policy_669,PN-8952-669,Home,2024-08-07,2026-06-06,1359.4,Expired,holder_508,insurer_5,underwriter_17,"['coverage_10', 'coverage_9']",agent_16
+policy_670,PN-2073-670,Condo,2023-05-27,2026-03-16,1485.2,Cancelled,holder_157,insurer_8,underwriter_17,['coverage_8'],agent_13
+policy_671,PN-9452-671,Landlord,2023-02-01,2025-10-31,1228.64,Lapsed,holder_304,insurer_6,underwriter_3,"['coverage_4', 'coverage_2', 'coverage_9']",agent_5
+policy_672,PN-9779-672,Umbrella,2024-08-25,2025-06-16,1016.44,Active,holder_380,insurer_9,underwriter_1,"['coverage_6', 'coverage_12', 'coverage_4', 'coverage_10']",agent_18
+policy_673,PN-4625-673,Renter,2022-12-13,2024-09-22,786.24,Expired,holder_373,insurer_8,underwriter_7,['coverage_9'],agent_2
+policy_674,PN-5610-674,Auto,2023-03-24,2025-10-05,1623.23,Cancelled,holder_217,insurer_8,underwriter_0,['coverage_14'],agent_13
+policy_675,PN-4500-675,Auto,2023-09-23,2025-05-19,1586.59,Active,holder_79,insurer_2,underwriter_4,['coverage_14'],agent_3
+policy_676,PN-5278-676,Condo,2023-12-29,2025-07-12,1665.78,Active,holder_319,insurer_6,underwriter_10,"['coverage_10', 'coverage_0', 'coverage_5']",agent_4
+policy_677,PN-3416-677,Renter,2023-02-18,2025-04-29,306.31,Expired,holder_497,insurer_8,underwriter_13,"['coverage_0', 'coverage_5', 'coverage_1', 'coverage_14']",agent_17
+policy_678,PN-6892-678,Landlord,2023-06-18,2024-10-15,1923.08,Lapsed,holder_56,insurer_2,underwriter_15,"['coverage_2', 'coverage_3', 'coverage_6']",agent_2
+policy_679,PN-2415-679,Home,2023-01-30,2025-04-24,1658.78,Lapsed,holder_512,insurer_3,underwriter_8,"['coverage_11', 'coverage_14']",agent_16
+policy_680,PN-5885-680,Renter,2023-11-17,2024-05-24,1432.12,Active,holder_19,insurer_0,underwriter_0,['coverage_7'],agent_2
+policy_681,PN-7380-681,Condo,2023-03-06,2024-07-28,1998.52,Cancelled,holder_19,insurer_5,underwriter_15,"['coverage_0', 'coverage_10']",agent_16
+policy_682,PN-1504-682,Renter,2024-05-11,2025-03-05,1775.57,Lapsed,holder_266,insurer_5,underwriter_6,"['coverage_11', 'coverage_0']",agent_18
+policy_683,PN-5066-683,Landlord,2023-06-23,2024-02-29,1683.41,Active,holder_573,insurer_2,underwriter_11,"['coverage_1', 'coverage_3', 'coverage_4']",agent_4
+policy_684,PN-4703-684,Renter,2023-09-01,2024-11-01,1649.33,Active,holder_347,insurer_8,underwriter_0,['coverage_3'],agent_17
+policy_685,PN-8385-685,Home,2023-05-18,2024-04-04,1474.79,Lapsed,holder_514,insurer_3,underwriter_16,"['coverage_6', 'coverage_2', 'coverage_11', 'coverage_12']",agent_11
+policy_686,PN-6620-686,Umbrella,2023-04-26,2024-04-02,1101.6,Cancelled,holder_415,insurer_9,underwriter_2,"['coverage_12', 'coverage_10', 'coverage_1', 'coverage_0']",agent_8
+policy_687,PN-1402-687,Landlord,2023-05-23,2024-05-16,599.05,Cancelled,holder_315,insurer_1,underwriter_14,"['coverage_1', 'coverage_2', 'coverage_3', 'coverage_6']",agent_13
+policy_688,PN-9010-688,Umbrella,2023-04-30,2024-07-24,1042.72,Expired,holder_491,insurer_3,underwriter_3,"['coverage_12', 'coverage_5', 'coverage_1']",agent_16
+policy_689,PN-2183-689,Auto,2023-03-31,2024-10-12,820.73,Active,holder_223,insurer_8,underwriter_11,"['coverage_13', 'coverage_1', 'coverage_10']",agent_17
+policy_690,PN-8729-690,Umbrella,2023-12-01,2026-02-19,715.29,Cancelled,holder_95,insurer_9,underwriter_16,"['coverage_10', 'coverage_13', 'coverage_3', 'coverage_0']",agent_8
+policy_691,PN-3934-691,Renter,2023-08-15,2024-04-17,1135.0,Cancelled,holder_459,insurer_2,underwriter_17,['coverage_14'],agent_17
+policy_692,PN-1381-692,Home,2022-06-16,2025-01-25,429.62,Active,holder_332,insurer_3,underwriter_14,"['coverage_10', 'coverage_3', 'coverage_1']",agent_19
+policy_693,PN-8727-693,Landlord,2022-06-04,2024-01-24,384.61,Expired,holder_331,insurer_1,underwriter_3,"['coverage_9', 'coverage_3']",agent_16
+policy_694,PN-4543-694,Condo,2022-05-14,2023-02-14,1508.96,Lapsed,holder_302,insurer_1,underwriter_13,"['coverage_11', 'coverage_9', 'coverage_7']",agent_9
+policy_695,PN-9724-695,Auto,2022-12-30,2025-09-05,285.2,Active,holder_152,insurer_8,underwriter_6,['coverage_0'],agent_0
+policy_696,PN-7517-696,Auto,2023-05-31,2025-03-30,362.34,Cancelled,holder_514,insurer_9,underwriter_6,"['coverage_1', 'coverage_14']",agent_18
+policy_697,PN-4720-697,Condo,2022-11-24,2023-05-26,468.58,Expired,holder_426,insurer_6,underwriter_13,['coverage_14'],agent_6
+policy_698,PN-6594-698,Umbrella,2024-09-28,2026-11-06,1961.39,Cancelled,holder_487,insurer_4,underwriter_18,"['coverage_10', 'coverage_14', 'coverage_7', 'coverage_5']",agent_9
+policy_699,PN-3510-699,Renter,2024-06-16,2024-11-10,1646.39,Lapsed,holder_373,insurer_8,underwriter_4,"['coverage_11', 'coverage_1', 'coverage_4', 'coverage_10']",agent_4
+policy_700,PN-9361-700,Condo,2022-03-21,2023-12-17,834.12,Lapsed,holder_287,insurer_6,underwriter_14,"['coverage_6', 'coverage_3', 'coverage_11', 'coverage_12']",agent_9
+policy_701,PN-6530-701,Umbrella,2023-04-27,2024-08-10,1590.77,Expired,holder_595,insurer_8,underwriter_5,"['coverage_12', 'coverage_3', 'coverage_9', 'coverage_13']",agent_14
+policy_702,PN-6956-702,Auto,2024-09-05,2025-05-07,1792.53,Active,holder_557,insurer_1,underwriter_17,"['coverage_5', 'coverage_1']",agent_17
+policy_703,PN-7275-703,Landlord,2022-09-12,2025-02-20,1506.22,Expired,holder_351,insurer_8,underwriter_19,['coverage_5'],agent_8
+policy_704,PN-5716-704,Landlord,2024-03-02,2026-12-05,1592.77,Cancelled,holder_343,insurer_8,underwriter_16,"['coverage_9', 'coverage_5']",agent_18
+policy_705,PN-4815-705,Renter,2022-10-23,2025-09-11,206.2,Cancelled,holder_178,insurer_9,underwriter_16,"['coverage_13', 'coverage_2']",agent_0
+policy_706,PN-4781-706,Umbrella,2024-09-25,2025-08-01,1497.79,Active,holder_133,insurer_2,underwriter_4,['coverage_8'],agent_2
+policy_707,PN-1770-707,Home,2023-05-27,2024-10-14,1389.04,Lapsed,holder_527,insurer_1,underwriter_14,"['coverage_7', 'coverage_11']",agent_6
+policy_708,PN-5339-708,Umbrella,2024-12-08,2027-10-14,323.39,Cancelled,holder_123,insurer_8,underwriter_16,['coverage_7'],agent_15
+policy_709,PN-8309-709,Renter,2022-06-20,2022-10-23,1609.52,Expired,holder_553,insurer_7,underwriter_19,['coverage_7'],agent_17
+policy_710,PN-5108-710,Condo,2023-07-16,2026-05-17,550.45,Active,holder_552,insurer_5,underwriter_2,['coverage_7'],agent_10
+policy_711,PN-6937-711,Condo,2023-11-02,2024-05-03,605.14,Lapsed,holder_570,insurer_4,underwriter_17,"['coverage_2', 'coverage_12', 'coverage_13']",agent_18
+policy_712,PN-1433-712,Condo,2023-10-13,2025-12-27,897.46,Active,holder_365,insurer_3,underwriter_13,"['coverage_9', 'coverage_12', 'coverage_4']",agent_7
+policy_713,PN-3323-713,Home,2023-02-14,2025-10-13,764.04,Expired,holder_337,insurer_1,underwriter_2,"['coverage_5', 'coverage_9', 'coverage_3']",agent_10
+policy_714,PN-3238-714,Landlord,2024-02-19,2026-11-08,573.24,Active,holder_282,insurer_4,underwriter_19,"['coverage_9', 'coverage_2', 'coverage_13']",agent_16
+policy_715,PN-7549-715,Landlord,2023-01-25,2024-06-29,1150.65,Cancelled,holder_155,insurer_2,underwriter_10,['coverage_6'],agent_8
+policy_716,PN-7478-716,Home,2024-04-05,2025-07-07,814.67,Cancelled,holder_86,insurer_9,underwriter_8,"['coverage_11', 'coverage_5']",agent_19
+policy_717,PN-5223-717,Renter,2024-09-02,2027-02-23,1842.81,Active,holder_483,insurer_4,underwriter_17,['coverage_11'],agent_11
+policy_718,PN-7887-718,Auto,2023-10-07,2025-01-16,1140.69,Cancelled,holder_169,insurer_5,underwriter_11,"['coverage_12', 'coverage_9', 'coverage_13']",agent_5
+policy_719,PN-6308-719,Condo,2023-08-18,2026-02-27,468.35,Active,holder_298,insurer_4,underwriter_12,"['coverage_1', 'coverage_7']",agent_8
+policy_720,PN-8123-720,Auto,2022-04-04,2023-04-26,1411.36,Cancelled,holder_460,insurer_1,underwriter_1,['coverage_12'],agent_19
+policy_721,PN-2776-721,Condo,2024-02-09,2025-02-07,589.24,Expired,holder_177,insurer_7,underwriter_10,"['coverage_5', 'coverage_3', 'coverage_13']",agent_0
+policy_722,PN-8194-722,Home,2023-04-01,2023-07-27,920.26,Expired,holder_301,insurer_6,underwriter_16,"['coverage_1', 'coverage_6']",agent_13
+policy_723,PN-2107-723,Condo,2023-02-21,2025-09-29,1460.9,Expired,holder_322,insurer_6,underwriter_4,"['coverage_14', 'coverage_3', 'coverage_0', 'coverage_2']",agent_10
+policy_724,PN-4925-724,Landlord,2023-05-24,2024-04-11,1814.62,Expired,holder_572,insurer_5,underwriter_4,['coverage_3'],agent_7
+policy_725,PN-3613-725,Home,2022-06-15,2023-07-15,1452.4,Cancelled,holder_539,insurer_5,underwriter_12,['coverage_11'],agent_8
+policy_726,PN-9402-726,Home,2025-02-12,2027-03-22,1959.92,Expired,holder_218,insurer_9,underwriter_15,"['coverage_5', 'coverage_0', 'coverage_11', 'coverage_9']",agent_4
+policy_727,PN-7575-727,Renter,2022-02-20,2023-12-23,1758.61,Active,holder_555,insurer_8,underwriter_17,"['coverage_9', 'coverage_5', 'coverage_10', 'coverage_2']",agent_1
+policy_728,PN-2123-728,Home,2022-11-28,2024-07-14,220.74,Expired,holder_265,insurer_1,underwriter_15,"['coverage_2', 'coverage_11']",agent_6
+policy_729,PN-9186-729,Renter,2023-03-10,2024-01-17,1473.86,Cancelled,holder_123,insurer_0,underwriter_14,['coverage_12'],agent_4
+policy_730,PN-5453-730,Condo,2025-01-29,2027-04-29,1523.87,Cancelled,holder_202,insurer_8,underwriter_8,['coverage_12'],agent_4
+policy_731,PN-1416-731,Auto,2024-12-02,2027-08-16,1083.85,Lapsed,holder_272,insurer_8,underwriter_19,"['coverage_1', 'coverage_4', 'coverage_9', 'coverage_2']",agent_19
+policy_732,PN-9381-732,Home,2023-07-03,2023-08-10,1203.28,Lapsed,holder_535,insurer_7,underwriter_4,"['coverage_4', 'coverage_0']",agent_9
+policy_733,PN-8747-733,Condo,2022-08-23,2024-12-14,445.68,Active,holder_249,insurer_0,underwriter_13,['coverage_1'],agent_6
+policy_734,PN-2840-734,Renter,2022-03-15,2023-07-28,1929.98,Active,holder_45,insurer_0,underwriter_5,['coverage_5'],agent_1
+policy_735,PN-5944-735,Umbrella,2022-07-06,2025-06-07,1631.69,Cancelled,holder_378,insurer_4,underwriter_15,"['coverage_5', 'coverage_14']",agent_8
+policy_736,PN-4839-736,Landlord,2023-10-17,2024-08-30,799.01,Cancelled,holder_455,insurer_3,underwriter_2,"['coverage_13', 'coverage_1']",agent_10
+policy_737,PN-3734-737,Auto,2024-10-26,2026-10-07,824.83,Expired,holder_214,insurer_2,underwriter_8,"['coverage_2', 'coverage_10', 'coverage_0', 'coverage_7']",agent_0
+policy_738,PN-4139-738,Home,2023-06-24,2024-05-25,608.99,Active,holder_143,insurer_9,underwriter_9,"['coverage_13', 'coverage_7', 'coverage_0', 'coverage_4']",agent_9
+policy_739,PN-7609-739,Auto,2023-04-22,2025-10-04,732.55,Cancelled,holder_63,insurer_9,underwriter_8,"['coverage_11', 'coverage_2', 'coverage_9', 'coverage_1']",agent_12
+policy_740,PN-2115-740,Home,2025-02-09,2026-01-22,1825.93,Expired,holder_587,insurer_7,underwriter_13,['coverage_7'],agent_0
+policy_741,PN-2427-741,Landlord,2023-10-08,2025-02-19,441.62,Expired,holder_134,insurer_1,underwriter_14,"['coverage_10', 'coverage_1', 'coverage_9']",agent_15
+policy_742,PN-4091-742,Umbrella,2023-05-24,2024-04-05,477.5,Active,holder_226,insurer_8,underwriter_4,['coverage_12'],agent_3
+policy_743,PN-3546-743,Umbrella,2024-09-12,2025-02-22,1395.37,Active,holder_423,insurer_7,underwriter_3,['coverage_1'],agent_14
+policy_744,PN-5847-744,Condo,2022-08-11,2023-08-05,837.83,Expired,holder_187,insurer_5,underwriter_3,['coverage_3'],agent_2
+policy_745,PN-6691-745,Renter,2022-07-11,2025-01-12,1024.99,Cancelled,holder_245,insurer_9,underwriter_10,"['coverage_7', 'coverage_0', 'coverage_8', 'coverage_4']",agent_5
+policy_746,PN-8971-746,Landlord,2024-03-24,2025-05-09,655.03,Cancelled,holder_491,insurer_6,underwriter_2,"['coverage_14', 'coverage_13', 'coverage_4', 'coverage_10']",agent_8
+policy_747,PN-1360-747,Home,2024-10-08,2027-07-23,1302.79,Cancelled,holder_513,insurer_2,underwriter_12,['coverage_13'],agent_1
+policy_748,PN-1903-748,Landlord,2024-05-26,2024-07-04,1096.72,Active,holder_311,insurer_3,underwriter_13,"['coverage_8', 'coverage_4', 'coverage_1', 'coverage_12']",agent_8
+policy_749,PN-4229-749,Renter,2024-02-23,2026-03-14,1665.43,Expired,holder_482,insurer_3,underwriter_14,"['coverage_9', 'coverage_13', 'coverage_1']",agent_8
+policy_750,PN-2025-750,Landlord,2023-03-14,2025-04-25,411.91,Lapsed,holder_234,insurer_1,underwriter_10,"['coverage_14', 'coverage_13', 'coverage_1', 'coverage_0']",agent_17
+policy_751,PN-6018-751,Renter,2022-05-07,2024-04-26,1299.27,Active,holder_363,insurer_2,underwriter_9,"['coverage_8', 'coverage_7', 'coverage_10']",agent_8
+policy_752,PN-2824-752,Landlord,2023-01-31,2024-06-22,1882.37,Cancelled,holder_76,insurer_9,underwriter_8,"['coverage_9', 'coverage_10', 'coverage_13']",agent_19
+policy_753,PN-3750-753,Auto,2024-04-12,2024-06-01,1897.99,Expired,holder_103,insurer_4,underwriter_13,"['coverage_14', 'coverage_5']",agent_11
+policy_754,PN-1854-754,Auto,2024-03-25,2024-12-26,1620.07,Cancelled,holder_546,insurer_8,underwriter_7,['coverage_12'],agent_5
+policy_755,PN-3178-755,Home,2023-08-26,2024-04-11,838.29,Lapsed,holder_432,insurer_1,underwriter_8,"['coverage_8', 'coverage_13', 'coverage_7']",agent_8
+policy_756,PN-8790-756,Home,2023-02-04,2025-02-05,342.1,Lapsed,holder_61,insurer_0,underwriter_7,['coverage_8'],agent_10
+policy_757,PN-7310-757,Umbrella,2022-10-01,2022-12-17,1636.09,Active,holder_586,insurer_4,underwriter_12,"['coverage_1', 'coverage_14']",agent_12
+policy_758,PN-5703-758,Auto,2024-08-16,2027-03-13,1012.5,Lapsed,holder_86,insurer_8,underwriter_5,"['coverage_14', 'coverage_13', 'coverage_8', 'coverage_10']",agent_1
+policy_759,PN-5248-759,Umbrella,2023-09-23,2024-10-15,1686.98,Cancelled,holder_419,insurer_1,underwriter_1,['coverage_4'],agent_11
+policy_760,PN-4275-760,Condo,2022-10-26,2023-09-03,1254.25,Cancelled,holder_328,insurer_8,underwriter_14,['coverage_4'],agent_16
+policy_761,PN-9697-761,Landlord,2024-06-25,2025-10-25,1216.66,Active,holder_144,insurer_6,underwriter_7,"['coverage_0', 'coverage_5', 'coverage_4', 'coverage_9']",agent_14
+policy_762,PN-1850-762,Umbrella,2022-07-17,2024-06-19,1682.1,Cancelled,holder_257,insurer_3,underwriter_5,"['coverage_3', 'coverage_7']",agent_17
+policy_763,PN-5912-763,Condo,2022-12-18,2025-03-03,1392.43,Lapsed,holder_455,insurer_6,underwriter_11,['coverage_12'],agent_16
+policy_764,PN-6141-764,Renter,2025-01-01,2027-02-23,1195.72,Active,holder_513,insurer_4,underwriter_14,"['coverage_13', 'coverage_14', 'coverage_7', 'coverage_4']",agent_10
+policy_765,PN-5493-765,Renter,2022-08-18,2024-09-13,1932.34,Expired,holder_304,insurer_5,underwriter_17,"['coverage_1', 'coverage_2']",agent_17
+policy_766,PN-4550-766,Home,2024-03-28,2026-06-13,1300.6,Active,holder_484,insurer_0,underwriter_7,"['coverage_10', 'coverage_13']",agent_13
+policy_767,PN-9632-767,Umbrella,2024-08-18,2025-02-05,943.8,Active,holder_104,insurer_7,underwriter_15,"['coverage_3', 'coverage_9']",agent_9
+policy_768,PN-4351-768,Home,2024-01-08,2024-11-29,545.18,Lapsed,holder_519,insurer_3,underwriter_2,['coverage_11'],agent_5
+policy_769,PN-8821-769,Renter,2023-08-20,2024-02-13,527.61,Lapsed,holder_557,insurer_8,underwriter_3,"['coverage_3', 'coverage_11', 'coverage_5']",agent_6
+policy_770,PN-3709-770,Home,2022-07-11,2025-03-06,530.62,Active,holder_59,insurer_9,underwriter_13,"['coverage_9', 'coverage_12']",agent_9
+policy_771,PN-8200-771,Umbrella,2024-03-02,2026-12-11,1689.09,Expired,holder_294,insurer_8,underwriter_11,"['coverage_14', 'coverage_1']",agent_5
+policy_772,PN-3844-772,Umbrella,2025-01-25,2026-03-25,1930.02,Expired,holder_421,insurer_8,underwriter_6,"['coverage_0', 'coverage_14', 'coverage_5']",agent_8
+policy_773,PN-9847-773,Condo,2022-03-07,2025-01-11,1821.33,Lapsed,holder_277,insurer_5,underwriter_12,"['coverage_5', 'coverage_11']",agent_7
+policy_774,PN-3482-774,Condo,2022-09-08,2025-06-28,1419.57,Lapsed,holder_230,insurer_6,underwriter_12,"['coverage_0', 'coverage_9', 'coverage_10', 'coverage_12']",agent_18
+policy_775,PN-4288-775,Renter,2022-04-26,2024-11-06,294.11,Cancelled,holder_243,insurer_6,underwriter_13,['coverage_3'],agent_11
+policy_776,PN-8844-776,Umbrella,2024-10-02,2027-03-05,1237.33,Lapsed,holder_74,insurer_0,underwriter_15,"['coverage_13', 'coverage_8']",agent_17
+policy_777,PN-8226-777,Auto,2023-02-04,2025-04-16,729.55,Lapsed,holder_552,insurer_1,underwriter_2,['coverage_12'],agent_7
+policy_778,PN-5926-778,Home,2024-11-25,2025-05-07,1677.73,Active,holder_427,insurer_3,underwriter_8,"['coverage_4', 'coverage_3', 'coverage_1', 'coverage_8']",agent_12
+policy_779,PN-2884-779,Home,2024-09-29,2025-05-06,967.26,Cancelled,holder_104,insurer_3,underwriter_6,"['coverage_11', 'coverage_9']",agent_16
+policy_780,PN-7344-780,Umbrella,2022-05-07,2023-04-03,1303.62,Expired,holder_553,insurer_8,underwriter_8,"['coverage_0', 'coverage_8', 'coverage_6', 'coverage_4']",agent_5
+policy_781,PN-8433-781,Landlord,2024-02-08,2026-04-26,1095.66,Active,holder_359,insurer_4,underwriter_5,['coverage_8'],agent_5
+policy_782,PN-4956-782,Umbrella,2024-06-02,2026-11-02,1794.99,Active,holder_168,insurer_3,underwriter_5,"['coverage_0', 'coverage_2']",agent_7
+policy_783,PN-5034-783,Renter,2023-06-13,2025-11-17,251.0,Lapsed,holder_402,insurer_1,underwriter_17,"['coverage_5', 'coverage_9', 'coverage_2']",agent_5
+policy_784,PN-1799-784,Auto,2022-03-08,2024-09-17,281.38,Lapsed,holder_10,insurer_1,underwriter_16,"['coverage_11', 'coverage_1']",agent_4
+policy_785,PN-5285-785,Landlord,2022-10-09,2023-04-27,1715.0,Expired,holder_249,insurer_2,underwriter_8,"['coverage_2', 'coverage_12', 'coverage_9', 'coverage_10']",agent_9
+policy_786,PN-6498-786,Landlord,2022-09-19,2024-10-15,577.36,Active,holder_104,insurer_4,underwriter_8,"['coverage_7', 'coverage_10', 'coverage_5']",agent_13
+policy_787,PN-9978-787,Home,2022-04-21,2022-06-14,397.79,Cancelled,holder_246,insurer_6,underwriter_14,['coverage_1'],agent_12
+policy_788,PN-1811-788,Condo,2023-11-27,2025-07-30,207.69,Lapsed,holder_144,insurer_4,underwriter_11,"['coverage_8', 'coverage_5', 'coverage_0', 'coverage_3']",agent_15
+policy_789,PN-8952-789,Umbrella,2023-06-19,2025-09-12,801.73,Active,holder_158,insurer_8,underwriter_16,"['coverage_12', 'coverage_0']",agent_3
+policy_790,PN-3794-790,Condo,2022-03-23,2022-10-10,1591.91,Cancelled,holder_28,insurer_9,underwriter_11,"['coverage_8', 'coverage_5', 'coverage_13', 'coverage_1']",agent_5
+policy_791,PN-2268-791,Home,2023-09-19,2023-12-07,1608.26,Lapsed,holder_266,insurer_9,underwriter_6,['coverage_6'],agent_5
+policy_792,PN-9130-792,Renter,2023-07-02,2025-06-01,1569.33,Lapsed,holder_280,insurer_9,underwriter_17,"['coverage_1', 'coverage_8']",agent_6
+policy_793,PN-5945-793,Auto,2024-02-29,2025-05-06,615.97,Cancelled,holder_16,insurer_4,underwriter_8,['coverage_3'],agent_6
+policy_794,PN-9427-794,Umbrella,2023-04-27,2024-02-23,1520.69,Lapsed,holder_17,insurer_9,underwriter_11,"['coverage_13', 'coverage_9', 'coverage_7', 'coverage_4']",agent_19
+policy_795,PN-8178-795,Landlord,2022-07-31,2024-01-19,1751.35,Expired,holder_491,insurer_0,underwriter_16,['coverage_5'],agent_4
+policy_796,PN-4949-796,Umbrella,2024-05-12,2027-01-22,1327.05,Lapsed,holder_236,insurer_3,underwriter_3,"['coverage_13', 'coverage_0', 'coverage_3', 'coverage_10']",agent_10
+policy_797,PN-2838-797,Umbrella,2024-09-26,2027-05-10,320.41,Active,holder_288,insurer_4,underwriter_4,['coverage_12'],agent_3
+policy_798,PN-1626-798,Home,2022-10-16,2025-08-03,206.23,Active,holder_400,insurer_9,underwriter_8,"['coverage_9', 'coverage_2', 'coverage_13']",agent_10
+policy_799,PN-2170-799,Home,2023-04-08,2024-09-12,1925.35,Expired,holder_244,insurer_2,underwriter_3,"['coverage_11', 'coverage_4', 'coverage_12', 'coverage_5']",agent_10
+policy_800,PN-4735-800,Auto,2022-07-04,2024-07-11,723.37,Lapsed,holder_33,insurer_6,underwriter_18,"['coverage_1', 'coverage_3', 'coverage_8', 'coverage_2']",agent_2
+policy_801,PN-2924-801,Renter,2023-03-07,2025-12-06,924.6,Expired,holder_14,insurer_7,underwriter_4,"['coverage_6', 'coverage_13']",agent_10
+policy_802,PN-8849-802,Umbrella,2022-06-21,2024-03-14,1654.47,Cancelled,holder_311,insurer_4,underwriter_11,['coverage_4'],agent_7
+policy_803,PN-8059-803,Condo,2024-01-19,2025-03-12,383.03,Cancelled,holder_86,insurer_3,underwriter_19,['coverage_1'],agent_10
+policy_804,PN-5921-804,Auto,2023-09-15,2024-05-20,1207.36,Expired,holder_237,insurer_2,underwriter_10,['coverage_9'],agent_3
+policy_805,PN-8452-805,Home,2023-09-03,2024-06-21,1344.0,Cancelled,holder_490,insurer_2,underwriter_17,"['coverage_1', 'coverage_0', 'coverage_13']",agent_5
+policy_806,PN-4109-806,Condo,2025-01-08,2026-03-03,1976.53,Expired,holder_496,insurer_1,underwriter_4,"['coverage_13', 'coverage_6', 'coverage_5', 'coverage_11']",agent_9
+policy_807,PN-4996-807,Landlord,2022-09-16,2024-01-07,1922.22,Active,holder_179,insurer_4,underwriter_4,"['coverage_8', 'coverage_11', 'coverage_12', 'coverage_1']",agent_12
+policy_808,PN-3507-808,Auto,2024-10-01,2025-07-21,1809.4,Active,holder_381,insurer_1,underwriter_15,['coverage_6'],agent_4
+policy_809,PN-7168-809,Renter,2023-11-20,2025-03-01,780.01,Expired,holder_218,insurer_0,underwriter_0,"['coverage_5', 'coverage_7', 'coverage_1', 'coverage_9']",agent_0
+policy_810,PN-6489-810,Renter,2023-09-16,2026-08-13,1352.09,Cancelled,holder_307,insurer_6,underwriter_18,"['coverage_7', 'coverage_2', 'coverage_1']",agent_7
+policy_811,PN-3096-811,Landlord,2024-06-20,2026-07-11,1301.0,Lapsed,holder_325,insurer_1,underwriter_10,"['coverage_2', 'coverage_12', 'coverage_5', 'coverage_10']",agent_8
+policy_812,PN-6247-812,Umbrella,2022-08-07,2025-06-23,654.94,Active,holder_307,insurer_4,underwriter_13,"['coverage_2', 'coverage_6', 'coverage_3', 'coverage_1']",agent_8
+policy_813,PN-2686-813,Landlord,2025-01-07,2025-07-27,1759.53,Active,holder_167,insurer_5,underwriter_3,['coverage_5'],agent_19
+policy_814,PN-6275-814,Auto,2023-07-14,2025-11-06,1903.37,Active,holder_299,insurer_0,underwriter_11,"['coverage_8', 'coverage_9', 'coverage_4', 'coverage_7']",agent_8
+policy_815,PN-7069-815,Home,2023-02-27,2026-02-14,1230.8,Cancelled,holder_46,insurer_7,underwriter_6,['coverage_7'],agent_14
+policy_816,PN-1656-816,Renter,2024-12-01,2027-04-30,982.28,Active,holder_32,insurer_5,underwriter_10,['coverage_1'],agent_16
+policy_817,PN-6761-817,Condo,2022-05-03,2023-11-19,639.25,Active,holder_325,insurer_7,underwriter_12,"['coverage_4', 'coverage_1']",agent_15
+policy_818,PN-2184-818,Home,2023-07-03,2025-02-09,568.1,Lapsed,holder_154,insurer_3,underwriter_10,"['coverage_13', 'coverage_10', 'coverage_7', 'coverage_14']",agent_9
+policy_819,PN-2389-819,Renter,2024-10-14,2027-04-25,1686.35,Cancelled,holder_316,insurer_0,underwriter_15,['coverage_0'],agent_15
+policy_820,PN-7964-820,Home,2023-10-09,2024-04-22,949.21,Expired,holder_218,insurer_8,underwriter_8,"['coverage_9', 'coverage_10']",agent_3
+policy_821,PN-5531-821,Auto,2025-01-05,2027-08-23,1887.39,Expired,holder_552,insurer_4,underwriter_17,"['coverage_2', 'coverage_9']",agent_6
+policy_822,PN-7580-822,Landlord,2022-09-29,2024-06-28,1570.47,Expired,holder_276,insurer_4,underwriter_0,['coverage_10'],agent_4
+policy_823,PN-6782-823,Condo,2024-10-14,2027-04-18,1349.17,Lapsed,holder_329,insurer_0,underwriter_14,"['coverage_8', 'coverage_11', 'coverage_13']",agent_7
+policy_824,PN-8008-824,Home,2023-08-17,2024-08-15,704.28,Expired,holder_428,insurer_9,underwriter_5,"['coverage_7', 'coverage_11', 'coverage_9']",agent_3
+policy_825,PN-3514-825,Auto,2023-06-27,2024-04-28,326.64,Cancelled,holder_505,insurer_0,underwriter_1,"['coverage_4', 'coverage_6', 'coverage_1', 'coverage_7']",agent_18
+policy_826,PN-2734-826,Home,2024-01-03,2025-05-06,1732.77,Active,holder_452,insurer_5,underwriter_11,"['coverage_6', 'coverage_10', 'coverage_1', 'coverage_12']",agent_16
+policy_827,PN-8245-827,Umbrella,2023-06-18,2025-05-14,209.36,Expired,holder_71,insurer_1,underwriter_17,"['coverage_5', 'coverage_10', 'coverage_8', 'coverage_9']",agent_6
+policy_828,PN-3580-828,Renter,2022-09-07,2025-02-07,900.15,Expired,holder_273,insurer_4,underwriter_5,['coverage_11'],agent_7
+policy_829,PN-7376-829,Renter,2022-05-30,2024-02-13,822.54,Lapsed,holder_251,insurer_5,underwriter_8,['coverage_0'],agent_0
+policy_830,PN-1250-830,Renter,2024-10-05,2025-11-13,538.09,Lapsed,holder_515,insurer_7,underwriter_6,"['coverage_2', 'coverage_1', 'coverage_4', 'coverage_5']",agent_12
+policy_831,PN-2331-831,Auto,2024-05-09,2027-03-26,611.27,Lapsed,holder_383,insurer_3,underwriter_8,"['coverage_8', 'coverage_4', 'coverage_14', 'coverage_2']",agent_12
+policy_832,PN-4171-832,Auto,2022-07-11,2024-11-02,1729.68,Expired,holder_511,insurer_2,underwriter_11,"['coverage_2', 'coverage_1']",agent_1
+policy_833,PN-6935-833,Auto,2023-12-24,2026-06-20,821.93,Expired,holder_466,insurer_5,underwriter_3,"['coverage_0', 'coverage_5']",agent_13
+policy_834,PN-2508-834,Renter,2024-02-17,2024-05-25,643.28,Expired,holder_417,insurer_3,underwriter_15,['coverage_7'],agent_7
+policy_835,PN-7269-835,Umbrella,2023-05-29,2024-06-24,998.76,Expired,holder_282,insurer_4,underwriter_2,"['coverage_13', 'coverage_10', 'coverage_8']",agent_19
+policy_836,PN-4186-836,Landlord,2022-09-07,2024-11-06,600.52,Expired,holder_136,insurer_1,underwriter_17,"['coverage_12', 'coverage_8']",agent_2
+policy_837,PN-1163-837,Condo,2023-05-25,2025-05-30,813.15,Expired,holder_382,insurer_8,underwriter_5,"['coverage_9', 'coverage_6']",agent_18
+policy_838,PN-8883-838,Landlord,2022-07-16,2025-07-12,582.8,Cancelled,holder_447,insurer_6,underwriter_2,['coverage_3'],agent_14
+policy_839,PN-8963-839,Auto,2022-08-18,2024-09-17,1923.07,Active,holder_495,insurer_0,underwriter_12,['coverage_6'],agent_4
+policy_840,PN-4481-840,Condo,2022-10-30,2023-02-07,792.12,Active,holder_383,insurer_9,underwriter_7,['coverage_8'],agent_10
+policy_841,PN-3145-841,Auto,2023-08-11,2024-05-02,456.71,Expired,holder_176,insurer_3,underwriter_16,"['coverage_6', 'coverage_4', 'coverage_10']",agent_10
+policy_842,PN-1933-842,Condo,2023-10-06,2026-05-09,1872.38,Expired,holder_395,insurer_9,underwriter_15,"['coverage_3', 'coverage_13']",agent_10
+policy_843,PN-4998-843,Umbrella,2022-04-18,2024-01-18,922.78,Active,holder_529,insurer_3,underwriter_4,"['coverage_5', 'coverage_8', 'coverage_2']",agent_15
+policy_844,PN-2660-844,Auto,2023-08-11,2024-03-30,629.46,Active,holder_530,insurer_1,underwriter_8,"['coverage_8', 'coverage_0', 'coverage_10']",agent_13
+policy_845,PN-8061-845,Umbrella,2023-08-30,2026-05-30,832.57,Active,holder_250,insurer_1,underwriter_4,"['coverage_5', 'coverage_14']",agent_16
+policy_846,PN-9383-846,Auto,2022-10-22,2023-10-22,234.99,Cancelled,holder_255,insurer_1,underwriter_2,"['coverage_12', 'coverage_0']",agent_7
+policy_847,PN-4039-847,Umbrella,2024-08-04,2026-10-11,763.14,Expired,holder_235,insurer_4,underwriter_8,"['coverage_1', 'coverage_12']",agent_16
+policy_848,PN-4520-848,Umbrella,2022-07-13,2024-09-17,1265.24,Active,holder_511,insurer_8,underwriter_2,['coverage_10'],agent_4
+policy_849,PN-6547-849,Renter,2023-03-23,2023-12-31,978.16,Cancelled,holder_40,insurer_9,underwriter_0,"['coverage_7', 'coverage_14', 'coverage_6']",agent_18
+policy_850,PN-5678-850,Umbrella,2024-09-01,2027-01-25,900.71,Expired,holder_498,insurer_6,underwriter_7,"['coverage_3', 'coverage_1', 'coverage_8', 'coverage_5']",agent_4
+policy_851,PN-3835-851,Renter,2023-11-11,2025-07-28,703.55,Cancelled,holder_182,insurer_9,underwriter_13,"['coverage_5', 'coverage_11']",agent_6
+policy_852,PN-9543-852,Auto,2022-08-16,2025-06-07,673.59,Cancelled,holder_548,insurer_6,underwriter_19,['coverage_7'],agent_4
+policy_853,PN-2732-853,Landlord,2022-12-26,2023-06-20,1680.21,Cancelled,holder_196,insurer_0,underwriter_8,['coverage_5'],agent_10
+policy_854,PN-8803-854,Landlord,2024-06-02,2026-09-28,1017.55,Cancelled,holder_12,insurer_3,underwriter_1,"['coverage_8', 'coverage_13']",agent_14
+policy_855,PN-7827-855,Landlord,2022-06-07,2022-07-27,1998.25,Active,holder_279,insurer_3,underwriter_15,"['coverage_5', 'coverage_12', 'coverage_10', 'coverage_13']",agent_16
+policy_856,PN-9167-856,Home,2024-10-26,2025-11-25,1331.2,Lapsed,holder_565,insurer_2,underwriter_1,"['coverage_1', 'coverage_11', 'coverage_2']",agent_1
+policy_857,PN-8361-857,Umbrella,2024-01-08,2024-11-28,1330.57,Active,holder_568,insurer_0,underwriter_6,"['coverage_9', 'coverage_0', 'coverage_3']",agent_8
+policy_858,PN-2858-858,Home,2023-06-20,2026-01-22,1862.45,Active,holder_215,insurer_2,underwriter_3,"['coverage_8', 'coverage_6', 'coverage_10']",agent_9
+policy_859,PN-1763-859,Condo,2024-12-18,2025-08-05,641.19,Expired,holder_5,insurer_0,underwriter_11,"['coverage_9', 'coverage_14', 'coverage_0']",agent_19
+policy_860,PN-7601-860,Auto,2024-02-22,2026-06-06,868.4,Expired,holder_68,insurer_6,underwriter_4,"['coverage_10', 'coverage_9', 'coverage_4', 'coverage_6']",agent_19
+policy_861,PN-5277-861,Umbrella,2022-11-17,2024-09-18,895.57,Expired,holder_474,insurer_8,underwriter_16,['coverage_7'],agent_0
+policy_862,PN-9354-862,Renter,2024-05-29,2025-02-10,1594.91,Cancelled,holder_111,insurer_0,underwriter_3,"['coverage_12', 'coverage_9', 'coverage_14', 'coverage_7']",agent_0
+policy_863,PN-2004-863,Home,2023-05-15,2024-12-02,869.27,Lapsed,holder_173,insurer_2,underwriter_7,['coverage_6'],agent_16
+policy_864,PN-5545-864,Auto,2024-08-18,2026-07-13,923.27,Lapsed,holder_478,insurer_5,underwriter_3,"['coverage_12', 'coverage_10', 'coverage_13', 'coverage_5']",agent_14
+policy_865,PN-4686-865,Home,2022-11-03,2023-09-26,1083.0,Expired,holder_403,insurer_1,underwriter_14,"['coverage_13', 'coverage_11', 'coverage_0']",agent_3
+policy_866,PN-2405-866,Renter,2022-12-26,2025-12-12,302.73,Cancelled,holder_74,insurer_7,underwriter_9,"['coverage_2', 'coverage_0', 'coverage_12']",agent_10
+policy_867,PN-9364-867,Condo,2023-08-22,2025-11-09,964.23,Active,holder_473,insurer_5,underwriter_17,"['coverage_13', 'coverage_1', 'coverage_11', 'coverage_12']",agent_13
+policy_868,PN-6412-868,Landlord,2024-10-26,2024-12-01,1921.79,Lapsed,holder_194,insurer_6,underwriter_9,"['coverage_2', 'coverage_8', 'coverage_3', 'coverage_14']",agent_16
+policy_869,PN-5383-869,Condo,2022-11-06,2025-08-21,1932.5,Expired,holder_301,insurer_2,underwriter_6,"['coverage_5', 'coverage_2', 'coverage_10', 'coverage_4']",agent_2
+policy_870,PN-7693-870,Auto,2024-12-29,2027-12-23,1887.27,Cancelled,holder_88,insurer_0,underwriter_10,"['coverage_10', 'coverage_13']",agent_16
+policy_871,PN-7833-871,Landlord,2022-06-21,2023-07-11,236.34,Cancelled,holder_353,insurer_7,underwriter_14,['coverage_6'],agent_13
+policy_872,PN-8705-872,Condo,2023-08-10,2026-01-08,1117.89,Cancelled,holder_425,insurer_9,underwriter_17,"['coverage_14', 'coverage_8', 'coverage_4', 'coverage_10']",agent_4
+policy_873,PN-2861-873,Condo,2023-01-26,2024-12-20,427.81,Lapsed,holder_279,insurer_6,underwriter_17,"['coverage_5', 'coverage_11']",agent_5
+policy_874,PN-8873-874,Home,2024-11-11,2026-10-01,1067.81,Cancelled,holder_229,insurer_7,underwriter_1,"['coverage_5', 'coverage_4', 'coverage_8']",agent_2
+policy_875,PN-3906-875,Renter,2022-03-24,2022-08-14,1341.88,Active,holder_338,insurer_4,underwriter_2,['coverage_14'],agent_0
+policy_876,PN-3649-876,Umbrella,2022-05-21,2022-09-16,1096.42,Active,holder_212,insurer_0,underwriter_16,['coverage_3'],agent_13
+policy_877,PN-5717-877,Auto,2022-06-29,2025-04-20,1252.54,Active,holder_337,insurer_8,underwriter_3,['coverage_1'],agent_15
+policy_878,PN-6300-878,Umbrella,2022-09-22,2024-12-24,1911.89,Expired,holder_124,insurer_2,underwriter_16,"['coverage_2', 'coverage_1']",agent_1
+policy_879,PN-9506-879,Auto,2024-06-05,2025-01-28,1308.27,Cancelled,holder_71,insurer_9,underwriter_6,['coverage_3'],agent_10
+policy_880,PN-4966-880,Condo,2023-08-04,2025-11-14,1466.13,Active,holder_337,insurer_2,underwriter_0,['coverage_8'],agent_3
+policy_881,PN-3110-881,Condo,2022-11-08,2025-03-10,801.81,Cancelled,holder_471,insurer_6,underwriter_18,"['coverage_14', 'coverage_3', 'coverage_2']",agent_18
+policy_882,PN-3105-882,Auto,2024-12-31,2027-04-01,1965.43,Active,holder_402,insurer_4,underwriter_8,"['coverage_2', 'coverage_6']",agent_9
+policy_883,PN-1248-883,Umbrella,2024-01-25,2024-11-03,551.02,Expired,holder_314,insurer_9,underwriter_4,['coverage_5'],agent_6
+policy_884,PN-6216-884,Umbrella,2023-09-26,2026-08-13,1550.28,Active,holder_352,insurer_1,underwriter_18,"['coverage_2', 'coverage_12']",agent_4
+policy_885,PN-6908-885,Home,2022-03-03,2024-12-24,772.6,Lapsed,holder_243,insurer_5,underwriter_12,"['coverage_12', 'coverage_1', 'coverage_10']",agent_1
+policy_886,PN-3527-886,Condo,2023-04-07,2025-12-01,689.04,Active,holder_597,insurer_4,underwriter_2,"['coverage_10', 'coverage_4', 'coverage_11']",agent_15
+policy_887,PN-3407-887,Landlord,2023-01-20,2025-02-01,1324.3,Lapsed,holder_599,insurer_3,underwriter_3,['coverage_6'],agent_9
+policy_888,PN-5812-888,Condo,2024-04-29,2025-09-17,1926.5,Cancelled,holder_438,insurer_6,underwriter_16,"['coverage_11', 'coverage_3', 'coverage_10']",agent_3
+policy_889,PN-7421-889,Condo,2024-01-08,2025-11-12,875.49,Lapsed,holder_140,insurer_5,underwriter_15,"['coverage_1', 'coverage_3', 'coverage_9']",agent_19
+policy_890,PN-9532-890,Landlord,2023-06-28,2024-02-17,956.3,Expired,holder_502,insurer_6,underwriter_15,"['coverage_3', 'coverage_6']",agent_9
+policy_891,PN-1953-891,Auto,2022-04-12,2022-08-18,1928.32,Cancelled,holder_366,insurer_7,underwriter_16,['coverage_4'],agent_7
+policy_892,PN-6024-892,Umbrella,2022-05-06,2023-12-16,427.25,Expired,holder_281,insurer_5,underwriter_17,['coverage_12'],agent_8
+policy_893,PN-5087-893,Umbrella,2023-01-20,2025-12-24,1382.82,Cancelled,holder_217,insurer_1,underwriter_16,"['coverage_9', 'coverage_1', 'coverage_5']",agent_17
+policy_894,PN-8362-894,Auto,2023-01-31,2025-06-26,1620.02,Active,holder_270,insurer_3,underwriter_10,"['coverage_8', 'coverage_6', 'coverage_4', 'coverage_1']",agent_15
+policy_895,PN-3905-895,Umbrella,2022-10-25,2022-12-13,1094.69,Active,holder_522,insurer_7,underwriter_11,"['coverage_0', 'coverage_6', 'coverage_10']",agent_9
+policy_896,PN-3695-896,Auto,2022-08-16,2023-10-07,1025.24,Lapsed,holder_258,insurer_9,underwriter_16,"['coverage_7', 'coverage_14', 'coverage_5']",agent_10
+policy_897,PN-5638-897,Condo,2024-06-19,2025-08-14,1261.1,Cancelled,holder_104,insurer_6,underwriter_7,"['coverage_5', 'coverage_6', 'coverage_9', 'coverage_8']",agent_10
+policy_898,PN-9565-898,Home,2023-03-28,2023-08-01,1514.07,Expired,holder_4,insurer_3,underwriter_6,"['coverage_9', 'coverage_1']",agent_6
+policy_899,PN-1020-899,Renter,2022-08-28,2024-07-14,1078.57,Lapsed,holder_535,insurer_3,underwriter_13,['coverage_2'],agent_4
+policy_900,PN-7402-900,Renter,2022-10-18,2025-09-23,906.74,Expired,holder_240,insurer_9,underwriter_6,['coverage_8'],agent_19
+policy_901,PN-3363-901,Home,2022-12-16,2025-04-15,1037.07,Active,holder_517,insurer_3,underwriter_4,"['coverage_10', 'coverage_0', 'coverage_14']",agent_4
+policy_902,PN-6962-902,Condo,2024-01-08,2025-12-08,1101.71,Lapsed,holder_77,insurer_6,underwriter_5,['coverage_2'],agent_12
+policy_903,PN-6401-903,Umbrella,2022-05-27,2022-09-01,682.72,Expired,holder_461,insurer_7,underwriter_17,"['coverage_5', 'coverage_11', 'coverage_6']",agent_11
+policy_904,PN-1483-904,Condo,2022-11-10,2024-08-10,601.42,Expired,holder_306,insurer_0,underwriter_15,"['coverage_11', 'coverage_0', 'coverage_14']",agent_1
+policy_905,PN-7130-905,Home,2024-12-23,2026-10-16,1542.52,Cancelled,holder_504,insurer_9,underwriter_2,"['coverage_6', 'coverage_8', 'coverage_3']",agent_9
+policy_906,PN-1742-906,Auto,2024-05-04,2027-03-25,877.74,Lapsed,holder_209,insurer_8,underwriter_2,"['coverage_7', 'coverage_4']",agent_12
+policy_907,PN-7762-907,Auto,2025-01-14,2027-04-12,454.78,Active,holder_34,insurer_1,underwriter_11,"['coverage_11', 'coverage_14', 'coverage_2', 'coverage_6']",agent_4
+policy_908,PN-3726-908,Renter,2024-09-25,2025-03-04,954.7,Active,holder_147,insurer_0,underwriter_5,"['coverage_3', 'coverage_5', 'coverage_0', 'coverage_12']",agent_17
+policy_909,PN-5978-909,Home,2022-03-20,2024-07-07,984.56,Active,holder_43,insurer_5,underwriter_9,"['coverage_1', 'coverage_10', 'coverage_13', 'coverage_14']",agent_5
+policy_910,PN-8275-910,Auto,2022-09-08,2024-07-22,1609.8,Active,holder_511,insurer_5,underwriter_4,"['coverage_3', 'coverage_6', 'coverage_0', 'coverage_11']",agent_13
+policy_911,PN-2833-911,Renter,2025-02-01,2026-09-24,363.15,Expired,holder_486,insurer_2,underwriter_13,['coverage_3'],agent_3
+policy_912,PN-2725-912,Auto,2023-11-11,2024-10-24,1724.25,Active,holder_525,insurer_9,underwriter_5,['coverage_10'],agent_12
+policy_913,PN-8290-913,Renter,2022-08-01,2025-02-24,1646.98,Lapsed,holder_119,insurer_2,underwriter_3,"['coverage_14', 'coverage_8']",agent_16
+policy_914,PN-8397-914,Renter,2023-06-28,2024-08-03,1159.87,Lapsed,holder_181,insurer_4,underwriter_18,['coverage_10'],agent_14
+policy_915,PN-7956-915,Landlord,2024-11-01,2027-05-01,1477.06,Lapsed,holder_64,insurer_3,underwriter_5,['coverage_2'],agent_13
+policy_916,PN-9755-916,Condo,2022-04-11,2023-03-20,366.74,Lapsed,holder_438,insurer_0,underwriter_10,"['coverage_12', 'coverage_7']",agent_10
+policy_917,PN-2184-917,Home,2024-12-02,2026-07-08,675.91,Lapsed,holder_95,insurer_3,underwriter_1,['coverage_9'],agent_2
+policy_918,PN-3963-918,Condo,2025-01-27,2025-10-12,338.73,Active,holder_480,insurer_0,underwriter_8,"['coverage_6', 'coverage_7', 'coverage_3']",agent_8
+policy_919,PN-6417-919,Condo,2024-07-08,2025-07-20,1801.93,Lapsed,holder_302,insurer_4,underwriter_1,"['coverage_9', 'coverage_8', 'coverage_2']",agent_2
+policy_920,PN-4983-920,Umbrella,2023-11-10,2025-03-26,1888.44,Expired,holder_512,insurer_6,underwriter_4,"['coverage_12', 'coverage_13']",agent_19
+policy_921,PN-6592-921,Landlord,2022-08-10,2023-03-21,643.02,Cancelled,holder_61,insurer_2,underwriter_7,"['coverage_0', 'coverage_10', 'coverage_6']",agent_14
+policy_922,PN-9439-922,Auto,2022-09-28,2023-06-22,1926.94,Active,holder_298,insurer_7,underwriter_4,"['coverage_11', 'coverage_2', 'coverage_8']",agent_2
+policy_923,PN-1270-923,Landlord,2022-07-10,2024-07-13,1393.68,Cancelled,holder_110,insurer_6,underwriter_13,"['coverage_3', 'coverage_4', 'coverage_8']",agent_10
+policy_924,PN-3150-924,Condo,2022-09-10,2023-03-30,695.58,Active,holder_240,insurer_8,underwriter_3,"['coverage_12', 'coverage_8', 'coverage_5', 'coverage_7']",agent_8
+policy_925,PN-1830-925,Renter,2023-10-18,2025-06-24,588.79,Lapsed,holder_353,insurer_0,underwriter_0,"['coverage_13', 'coverage_12', 'coverage_14']",agent_10
+policy_926,PN-6421-926,Umbrella,2023-11-16,2024-06-13,413.13,Expired,holder_483,insurer_0,underwriter_6,"['coverage_12', 'coverage_8']",agent_10
+policy_927,PN-8623-927,Landlord,2022-09-12,2024-12-28,1239.64,Active,holder_580,insurer_3,underwriter_14,"['coverage_4', 'coverage_0', 'coverage_14', 'coverage_8']",agent_9
+policy_928,PN-9309-928,Landlord,2023-05-26,2024-11-15,1178.83,Active,holder_412,insurer_1,underwriter_11,"['coverage_7', 'coverage_9', 'coverage_2', 'coverage_4']",agent_13
+policy_929,PN-8636-929,Auto,2023-08-14,2025-06-09,491.93,Lapsed,holder_555,insurer_6,underwriter_9,"['coverage_1', 'coverage_6', 'coverage_13', 'coverage_10']",agent_0
+policy_930,PN-2865-930,Condo,2023-12-27,2026-07-29,1237.96,Active,holder_559,insurer_8,underwriter_0,"['coverage_7', 'coverage_14']",agent_6
+policy_931,PN-4445-931,Condo,2024-08-01,2026-11-28,1592.89,Active,holder_81,insurer_6,underwriter_4,"['coverage_2', 'coverage_7', 'coverage_11', 'coverage_5']",agent_16
+policy_932,PN-8569-932,Auto,2022-11-25,2025-04-25,1930.99,Cancelled,holder_111,insurer_7,underwriter_9,['coverage_1'],agent_7
+policy_933,PN-7453-933,Renter,2024-08-20,2027-07-14,1609.05,Cancelled,holder_125,insurer_1,underwriter_3,"['coverage_6', 'coverage_10']",agent_12
+policy_934,PN-7745-934,Auto,2023-09-11,2023-11-10,1689.66,Expired,holder_305,insurer_3,underwriter_6,['coverage_3'],agent_7
+policy_935,PN-3097-935,Landlord,2023-10-24,2026-02-28,1451.91,Lapsed,holder_353,insurer_1,underwriter_6,"['coverage_10', 'coverage_8']",agent_11
+policy_936,PN-6322-936,Umbrella,2024-02-27,2025-08-23,1101.24,Lapsed,holder_130,insurer_7,underwriter_14,['coverage_11'],agent_6
+policy_937,PN-1309-937,Umbrella,2024-06-07,2025-11-12,1935.97,Active,holder_102,insurer_6,underwriter_12,['coverage_11'],agent_6
+policy_938,PN-1293-938,Landlord,2023-12-18,2025-10-20,1107.88,Active,holder_421,insurer_5,underwriter_9,"['coverage_1', 'coverage_6', 'coverage_4']",agent_2
+policy_939,PN-6497-939,Renter,2022-11-18,2025-03-10,335.5,Active,holder_199,insurer_6,underwriter_5,"['coverage_6', 'coverage_4']",agent_16
+policy_940,PN-7275-940,Auto,2024-09-03,2025-10-17,239.32,Active,holder_145,insurer_8,underwriter_14,"['coverage_1', 'coverage_7', 'coverage_14', 'coverage_0']",agent_3
+policy_941,PN-9942-941,Home,2025-02-17,2025-07-31,976.23,Lapsed,holder_578,insurer_2,underwriter_8,"['coverage_8', 'coverage_12']",agent_5
+policy_942,PN-7147-942,Auto,2024-07-19,2027-03-30,575.69,Cancelled,holder_233,insurer_5,underwriter_17,['coverage_14'],agent_10
+policy_943,PN-3862-943,Home,2024-12-19,2026-05-18,1508.28,Lapsed,holder_159,insurer_1,underwriter_18,"['coverage_13', 'coverage_14', 'coverage_5', 'coverage_11']",agent_0
+policy_944,PN-6365-944,Auto,2025-01-09,2025-11-17,1147.74,Active,holder_589,insurer_7,underwriter_4,"['coverage_7', 'coverage_5', 'coverage_4', 'coverage_1']",agent_13
+policy_945,PN-3646-945,Home,2024-03-13,2026-12-29,569.05,Expired,holder_447,insurer_7,underwriter_17,"['coverage_14', 'coverage_8', 'coverage_9']",agent_13
+policy_946,PN-5245-946,Renter,2023-12-18,2024-09-05,872.18,Expired,holder_359,insurer_5,underwriter_8,"['coverage_4', 'coverage_12', 'coverage_3']",agent_16
+policy_947,PN-8486-947,Condo,2022-10-02,2024-09-21,539.72,Active,holder_84,insurer_9,underwriter_2,"['coverage_11', 'coverage_6', 'coverage_3', 'coverage_0']",agent_4
+policy_948,PN-8258-948,Landlord,2023-01-09,2023-09-12,1999.89,Cancelled,holder_575,insurer_2,underwriter_6,"['coverage_2', 'coverage_1']",agent_17
+policy_949,PN-4535-949,Umbrella,2022-04-23,2023-05-25,1703.45,Cancelled,holder_388,insurer_9,underwriter_5,"['coverage_7', 'coverage_13', 'coverage_9']",agent_1
+policy_950,PN-1073-950,Renter,2024-09-29,2026-07-10,384.28,Cancelled,holder_54,insurer_4,underwriter_4,['coverage_13'],agent_3
+policy_951,PN-8418-951,Umbrella,2022-11-13,2025-05-19,354.6,Expired,holder_449,insurer_4,underwriter_8,['coverage_13'],agent_16
+policy_952,PN-8139-952,Auto,2024-08-14,2026-04-29,493.99,Cancelled,holder_285,insurer_9,underwriter_0,"['coverage_4', 'coverage_9', 'coverage_14']",agent_19
+policy_953,PN-1145-953,Condo,2023-03-19,2024-06-30,1833.79,Expired,holder_4,insurer_0,underwriter_11,"['coverage_10', 'coverage_6', 'coverage_11', 'coverage_2']",agent_13
+policy_954,PN-5184-954,Condo,2024-09-20,2025-01-11,1700.47,Expired,holder_146,insurer_8,underwriter_14,"['coverage_5', 'coverage_10', 'coverage_3', 'coverage_8']",agent_0
+policy_955,PN-9036-955,Home,2024-04-30,2025-01-07,895.14,Active,holder_204,insurer_4,underwriter_18,"['coverage_12', 'coverage_0', 'coverage_9', 'coverage_7']",agent_4
+policy_956,PN-1961-956,Auto,2022-09-30,2025-03-08,227.82,Cancelled,holder_174,insurer_3,underwriter_9,"['coverage_11', 'coverage_10', 'coverage_14', 'coverage_8']",agent_2
+policy_957,PN-3561-957,Condo,2025-01-22,2026-11-08,1724.34,Cancelled,holder_424,insurer_8,underwriter_19,"['coverage_5', 'coverage_0', 'coverage_3']",agent_1
+policy_958,PN-4791-958,Renter,2023-08-27,2026-04-26,616.33,Lapsed,holder_567,insurer_5,underwriter_7,"['coverage_12', 'coverage_13', 'coverage_7', 'coverage_4']",agent_9
+policy_959,PN-1892-959,Umbrella,2024-01-09,2026-12-12,864.22,Active,holder_235,insurer_6,underwriter_11,"['coverage_13', 'coverage_0', 'coverage_4', 'coverage_3']",agent_19
+policy_960,PN-5110-960,Home,2024-06-30,2025-06-14,1806.98,Lapsed,holder_467,insurer_0,underwriter_10,"['coverage_11', 'coverage_8', 'coverage_4']",agent_9
+policy_961,PN-1800-961,Landlord,2024-07-02,2026-08-31,354.61,Expired,holder_573,insurer_8,underwriter_3,['coverage_2'],agent_14
+policy_962,PN-7050-962,Umbrella,2024-07-14,2026-01-14,217.84,Active,holder_136,insurer_5,underwriter_14,"['coverage_4', 'coverage_3']",agent_18
+policy_963,PN-5208-963,Umbrella,2024-08-30,2027-04-26,1333.96,Lapsed,holder_77,insurer_0,underwriter_11,"['coverage_6', 'coverage_14']",agent_14
+policy_964,PN-9331-964,Home,2022-03-10,2022-05-05,551.32,Lapsed,holder_181,insurer_9,underwriter_1,"['coverage_10', 'coverage_12', 'coverage_0', 'coverage_1']",agent_9
+policy_965,PN-1237-965,Landlord,2022-08-08,2024-01-05,220.29,Cancelled,holder_238,insurer_3,underwriter_7,"['coverage_10', 'coverage_13']",agent_17
+policy_966,PN-2128-966,Umbrella,2023-03-28,2024-09-17,1064.32,Active,holder_209,insurer_7,underwriter_14,['coverage_11'],agent_16
+policy_967,PN-2095-967,Home,2023-07-18,2023-11-27,1074.64,Active,holder_442,insurer_9,underwriter_12,"['coverage_7', 'coverage_9']",agent_15
+policy_968,PN-4671-968,Renter,2023-11-27,2024-12-13,1946.07,Lapsed,holder_484,insurer_0,underwriter_14,['coverage_10'],agent_16
+policy_969,PN-2912-969,Renter,2022-11-15,2024-08-15,1878.31,Active,holder_344,insurer_1,underwriter_12,"['coverage_10', 'coverage_7', 'coverage_11', 'coverage_13']",agent_3
+policy_970,PN-9549-970,Landlord,2024-11-05,2025-09-24,1987.85,Expired,holder_553,insurer_8,underwriter_13,['coverage_6'],agent_3
+policy_971,PN-8268-971,Umbrella,2022-02-25,2022-06-18,383.19,Active,holder_177,insurer_7,underwriter_3,"['coverage_8', 'coverage_6']",agent_8
+policy_972,PN-3497-972,Landlord,2022-12-13,2024-06-05,651.07,Lapsed,holder_66,insurer_1,underwriter_18,"['coverage_1', 'coverage_4', 'coverage_7', 'coverage_10']",agent_7
+policy_973,PN-8628-973,Umbrella,2024-11-04,2026-11-16,316.38,Active,holder_465,insurer_3,underwriter_19,['coverage_4'],agent_16
+policy_974,PN-9470-974,Umbrella,2023-10-17,2024-10-17,227.1,Active,holder_561,insurer_6,underwriter_6,"['coverage_5', 'coverage_10', 'coverage_11']",agent_2
+policy_975,PN-3408-975,Auto,2023-06-03,2026-05-21,1493.72,Lapsed,holder_476,insurer_7,underwriter_8,"['coverage_3', 'coverage_11', 'coverage_7', 'coverage_10']",agent_0
+policy_976,PN-9212-976,Renter,2023-10-14,2025-09-03,630.79,Cancelled,holder_348,insurer_8,underwriter_3,"['coverage_4', 'coverage_11', 'coverage_13']",agent_1
+policy_977,PN-1560-977,Condo,2024-06-24,2025-01-16,1190.08,Lapsed,holder_49,insurer_6,underwriter_19,"['coverage_7', 'coverage_14', 'coverage_8']",agent_9
+policy_978,PN-2476-978,Renter,2025-01-02,2025-04-10,525.96,Cancelled,holder_293,insurer_5,underwriter_0,['coverage_6'],agent_15
+policy_979,PN-8767-979,Condo,2025-02-09,2027-09-30,1345.18,Cancelled,holder_317,insurer_6,underwriter_2,"['coverage_8', 'coverage_7', 'coverage_14']",agent_4
+policy_980,PN-9358-980,Home,2024-12-17,2026-09-05,1385.8,Active,holder_82,insurer_6,underwriter_17,"['coverage_0', 'coverage_14']",agent_9
+policy_981,PN-2581-981,Renter,2025-02-10,2026-01-25,1525.14,Expired,holder_407,insurer_8,underwriter_14,"['coverage_3', 'coverage_5', 'coverage_14']",agent_2
+policy_982,PN-6024-982,Condo,2022-04-27,2025-03-02,1009.71,Active,holder_598,insurer_3,underwriter_18,"['coverage_13', 'coverage_12', 'coverage_0']",agent_13
+policy_983,PN-5829-983,Auto,2022-11-26,2023-04-05,1199.17,Expired,holder_434,insurer_5,underwriter_8,"['coverage_5', 'coverage_8', 'coverage_6']",agent_2
+policy_984,PN-5486-984,Landlord,2023-09-03,2026-04-30,276.7,Lapsed,holder_547,insurer_8,underwriter_3,"['coverage_2', 'coverage_10', 'coverage_8']",agent_3
+policy_985,PN-4944-985,Umbrella,2023-01-20,2024-01-23,1330.68,Lapsed,holder_553,insurer_8,underwriter_1,"['coverage_10', 'coverage_1', 'coverage_3']",agent_10
+policy_986,PN-1226-986,Umbrella,2023-08-10,2025-11-14,1932.95,Expired,holder_587,insurer_1,underwriter_10,"['coverage_10', 'coverage_0']",agent_1
+policy_987,PN-3370-987,Home,2022-03-04,2024-03-13,316.23,Cancelled,holder_278,insurer_0,underwriter_6,"['coverage_9', 'coverage_13']",agent_4
+policy_988,PN-5447-988,Umbrella,2022-10-05,2024-05-17,570.22,Active,holder_376,insurer_5,underwriter_18,['coverage_8'],agent_10
+policy_989,PN-3543-989,Umbrella,2023-02-13,2025-05-24,614.06,Cancelled,holder_520,insurer_2,underwriter_8,"['coverage_4', 'coverage_7']",agent_16
+policy_990,PN-1212-990,Auto,2022-04-17,2023-05-09,1096.07,Active,holder_141,insurer_2,underwriter_3,"['coverage_14', 'coverage_1', 'coverage_0', 'coverage_6']",agent_4
+policy_991,PN-6909-991,Auto,2024-05-07,2026-04-13,996.9,Cancelled,holder_576,insurer_4,underwriter_16,"['coverage_11', 'coverage_10', 'coverage_9']",agent_2
+policy_992,PN-1382-992,Condo,2022-04-06,2024-11-19,1695.71,Active,holder_28,insurer_5,underwriter_7,"['coverage_4', 'coverage_3']",agent_0
+policy_993,PN-1300-993,Renter,2022-06-30,2024-07-03,1241.69,Lapsed,holder_307,insurer_6,underwriter_4,['coverage_12'],agent_15
+policy_994,PN-2335-994,Auto,2024-06-21,2025-04-02,1751.7,Cancelled,holder_590,insurer_5,underwriter_8,"['coverage_9', 'coverage_3', 'coverage_6']",agent_19
+policy_995,PN-4693-995,Auto,2023-07-19,2023-10-26,1051.26,Lapsed,holder_104,insurer_4,underwriter_5,"['coverage_1', 'coverage_13', 'coverage_0', 'coverage_11']",agent_8
+policy_996,PN-7850-996,Renter,2022-06-10,2023-10-20,1306.03,Expired,holder_330,insurer_8,underwriter_12,"['coverage_0', 'coverage_2', 'coverage_3']",agent_0
+policy_997,PN-6331-997,Landlord,2022-07-24,2024-06-25,1342.87,Expired,holder_324,insurer_9,underwriter_10,"['coverage_6', 'coverage_0']",agent_19
+policy_998,PN-2766-998,Auto,2023-12-14,2024-12-28,675.16,Active,holder_138,insurer_4,underwriter_13,"['coverage_10', 'coverage_2']",agent_4
+policy_999,PN-7091-999,Renter,2024-07-04,2027-04-11,1881.36,Cancelled,holder_58,insurer_6,underwriter_16,"['coverage_14', 'coverage_0', 'coverage_11', 'coverage_7']",agent_13
+policy_1000,PN-2824-1000,Auto,2023-07-10,2025-06-21,283.14,Active,holder_332,insurer_7,underwriter_18,"['coverage_6', 'coverage_12', 'coverage_1', 'coverage_0']",agent_8
+policy_1001,PN-8589-1001,Renter,2024-11-28,2026-07-11,434.12,Cancelled,holder_524,insurer_8,underwriter_17,['coverage_2'],agent_17
+policy_1002,PN-2755-1002,Renter,2024-09-15,2025-10-23,1444.36,Expired,holder_346,insurer_6,underwriter_19,"['coverage_1', 'coverage_9', 'coverage_8']",agent_9
+policy_1003,PN-4770-1003,Condo,2024-01-06,2024-05-22,1239.65,Expired,holder_76,insurer_9,underwriter_7,"['coverage_0', 'coverage_10']",agent_12
+policy_1004,PN-5655-1004,Landlord,2024-04-06,2025-02-09,1866.38,Lapsed,holder_327,insurer_0,underwriter_1,"['coverage_14', 'coverage_12']",agent_7
+policy_1005,PN-4506-1005,Umbrella,2023-06-26,2025-10-12,1288.42,Cancelled,holder_2,insurer_0,underwriter_7,"['coverage_13', 'coverage_5', 'coverage_10']",agent_16
+policy_1006,PN-6262-1006,Umbrella,2024-05-01,2026-10-26,1095.95,Expired,holder_428,insurer_3,underwriter_14,['coverage_4'],agent_14
+policy_1007,PN-3662-1007,Auto,2023-10-17,2024-11-14,791.07,Expired,holder_564,insurer_4,underwriter_0,"['coverage_6', 'coverage_7']",agent_5
+policy_1008,PN-6622-1008,Renter,2023-07-10,2024-03-16,1381.78,Cancelled,holder_174,insurer_6,underwriter_8,"['coverage_2', 'coverage_11', 'coverage_7']",agent_1
+policy_1009,PN-7657-1009,Umbrella,2023-05-13,2024-06-29,1041.16,Lapsed,holder_408,insurer_7,underwriter_4,['coverage_6'],agent_13
+policy_1010,PN-4465-1010,Auto,2022-03-28,2022-06-05,845.85,Active,holder_131,insurer_6,underwriter_2,"['coverage_14', 'coverage_11']",agent_7
+policy_1011,PN-1661-1011,Home,2023-10-14,2023-12-18,890.61,Lapsed,holder_2,insurer_1,underwriter_19,"['coverage_11', 'coverage_0', 'coverage_10']",agent_13
+policy_1012,PN-4229-1012,Home,2022-11-07,2024-10-31,462.34,Lapsed,holder_425,insurer_4,underwriter_19,"['coverage_14', 'coverage_4', 'coverage_10', 'coverage_12']",agent_6
+policy_1013,PN-6667-1013,Auto,2024-06-20,2025-01-25,1558.62,Active,holder_411,insurer_2,underwriter_6,['coverage_3'],agent_2
+policy_1014,PN-6311-1014,Home,2024-03-25,2024-09-03,952.53,Expired,holder_564,insurer_4,underwriter_7,"['coverage_8', 'coverage_14', 'coverage_13']",agent_8
+policy_1015,PN-5897-1015,Home,2024-01-24,2026-03-08,1831.38,Lapsed,holder_203,insurer_3,underwriter_0,['coverage_12'],agent_10
+policy_1016,PN-3494-1016,Condo,2022-04-24,2024-01-30,1826.86,Lapsed,holder_581,insurer_7,underwriter_7,['coverage_3'],agent_17
+policy_1017,PN-6769-1017,Auto,2022-04-14,2022-09-08,1534.42,Active,holder_348,insurer_8,underwriter_2,"['coverage_13', 'coverage_10']",agent_8
+policy_1018,PN-4020-1018,Renter,2023-01-20,2025-05-24,911.7,Cancelled,holder_193,insurer_2,underwriter_13,"['coverage_13', 'coverage_10', 'coverage_12']",agent_0
+policy_1019,PN-4203-1019,Landlord,2024-02-29,2027-02-14,901.92,Lapsed,holder_24,insurer_3,underwriter_0,['coverage_7'],agent_11
+policy_1020,PN-6647-1020,Condo,2024-11-22,2025-06-10,1229.04,Cancelled,holder_528,insurer_6,underwriter_11,"['coverage_3', 'coverage_12', 'coverage_13', 'coverage_9']",agent_12
+policy_1021,PN-1078-1021,Condo,2023-04-24,2025-04-04,1950.06,Cancelled,holder_235,insurer_5,underwriter_5,['coverage_2'],agent_15
+policy_1022,PN-4196-1022,Home,2022-10-29,2023-01-02,815.88,Lapsed,holder_240,insurer_4,underwriter_19,"['coverage_14', 'coverage_8', 'coverage_4']",agent_18
+policy_1023,PN-9396-1023,Condo,2024-06-29,2026-08-08,975.54,Cancelled,holder_229,insurer_8,underwriter_1,['coverage_2'],agent_12
+policy_1024,PN-9851-1024,Auto,2024-10-20,2026-04-27,1817.55,Cancelled,holder_94,insurer_8,underwriter_14,['coverage_4'],agent_17
+policy_1025,PN-2871-1025,Landlord,2024-06-16,2026-01-08,1248.04,Expired,holder_413,insurer_1,underwriter_0,"['coverage_9', 'coverage_0', 'coverage_1', 'coverage_8']",agent_15
+policy_1026,PN-6801-1026,Landlord,2023-04-13,2025-02-19,483.29,Expired,holder_332,insurer_3,underwriter_1,"['coverage_5', 'coverage_8', 'coverage_10', 'coverage_14']",agent_3
+policy_1027,PN-2655-1027,Landlord,2023-03-26,2026-02-05,812.41,Expired,holder_445,insurer_5,underwriter_2,"['coverage_7', 'coverage_5', 'coverage_4', 'coverage_14']",agent_13
+policy_1028,PN-5455-1028,Home,2022-07-14,2023-12-14,374.0,Lapsed,holder_161,insurer_2,underwriter_13,"['coverage_1', 'coverage_4', 'coverage_5', 'coverage_9']",agent_4
+policy_1029,PN-1930-1029,Renter,2022-06-15,2024-03-26,834.71,Cancelled,holder_28,insurer_5,underwriter_4,"['coverage_8', 'coverage_3']",agent_3
+policy_1030,PN-2663-1030,Umbrella,2023-08-15,2025-06-04,326.2,Lapsed,holder_116,insurer_0,underwriter_17,['coverage_6'],agent_17
+policy_1031,PN-2658-1031,Renter,2023-12-30,2026-08-03,644.5,Lapsed,holder_63,insurer_4,underwriter_6,"['coverage_5', 'coverage_12', 'coverage_6']",agent_17
+policy_1032,PN-3178-1032,Home,2024-04-12,2026-06-04,1490.78,Expired,holder_468,insurer_4,underwriter_5,"['coverage_9', 'coverage_3']",agent_13
+policy_1033,PN-7606-1033,Renter,2022-05-28,2022-10-23,1736.65,Active,holder_19,insurer_4,underwriter_3,"['coverage_5', 'coverage_12']",agent_5
+policy_1034,PN-5107-1034,Landlord,2024-03-26,2024-09-19,1613.7,Active,holder_205,insurer_9,underwriter_3,"['coverage_13', 'coverage_6', 'coverage_4']",agent_14
+policy_1035,PN-7756-1035,Auto,2023-08-04,2026-07-02,911.5,Expired,holder_26,insurer_4,underwriter_19,['coverage_3'],agent_14
+policy_1036,PN-8996-1036,Umbrella,2022-03-30,2023-04-15,1299.75,Lapsed,holder_277,insurer_1,underwriter_11,"['coverage_7', 'coverage_0', 'coverage_11', 'coverage_14']",agent_1
+policy_1037,PN-1628-1037,Home,2023-03-29,2025-10-28,252.08,Active,holder_262,insurer_1,underwriter_5,"['coverage_14', 'coverage_11', 'coverage_2']",agent_18
+policy_1038,PN-7783-1038,Landlord,2023-06-26,2025-04-03,295.68,Cancelled,holder_596,insurer_3,underwriter_11,['coverage_1'],agent_11
+policy_1039,PN-1020-1039,Auto,2022-12-14,2023-12-25,677.03,Active,holder_71,insurer_1,underwriter_16,"['coverage_5', 'coverage_6', 'coverage_8']",agent_1
+policy_1040,PN-7669-1040,Auto,2023-03-14,2023-04-23,340.94,Active,holder_48,insurer_9,underwriter_9,"['coverage_13', 'coverage_3', 'coverage_6']",agent_10
+policy_1041,PN-7481-1041,Condo,2024-01-12,2024-04-01,995.33,Lapsed,holder_416,insurer_5,underwriter_15,['coverage_14'],agent_19
+policy_1042,PN-9523-1042,Condo,2023-06-16,2023-12-07,1014.59,Active,holder_435,insurer_6,underwriter_12,"['coverage_12', 'coverage_5', 'coverage_7', 'coverage_13']",agent_17
+policy_1043,PN-8279-1043,Auto,2024-11-01,2027-04-14,428.33,Active,holder_365,insurer_3,underwriter_18,"['coverage_9', 'coverage_5', 'coverage_10', 'coverage_7']",agent_1
+policy_1044,PN-3839-1044,Umbrella,2024-11-07,2027-09-12,1767.48,Active,holder_587,insurer_5,underwriter_12,"['coverage_12', 'coverage_3']",agent_11
+policy_1045,PN-1073-1045,Auto,2022-08-29,2022-09-30,1844.42,Active,holder_34,insurer_6,underwriter_3,"['coverage_9', 'coverage_12']",agent_14
+policy_1046,PN-4299-1046,Home,2023-02-01,2025-09-23,969.2,Active,holder_10,insurer_7,underwriter_18,['coverage_2'],agent_12
+policy_1047,PN-3472-1047,Condo,2023-04-13,2024-08-23,582.47,Expired,holder_12,insurer_4,underwriter_19,"['coverage_2', 'coverage_7']",agent_13
+policy_1048,PN-4662-1048,Home,2022-12-13,2024-11-03,1131.15,Expired,holder_334,insurer_1,underwriter_17,"['coverage_10', 'coverage_8', 'coverage_3']",agent_4
+policy_1049,PN-7815-1049,Landlord,2025-01-20,2026-09-09,1285.34,Expired,holder_167,insurer_9,underwriter_15,"['coverage_4', 'coverage_2']",agent_9
+policy_1050,PN-9822-1050,Umbrella,2023-11-26,2025-10-27,483.96,Active,holder_170,insurer_5,underwriter_18,['coverage_9'],agent_3
+policy_1051,PN-4285-1051,Renter,2023-03-17,2024-08-14,1033.56,Lapsed,holder_115,insurer_5,underwriter_16,['coverage_8'],agent_13
+policy_1052,PN-8635-1052,Home,2023-11-06,2025-08-22,681.78,Lapsed,holder_93,insurer_6,underwriter_9,['coverage_8'],agent_11
+policy_1053,PN-6831-1053,Auto,2023-07-18,2026-05-06,700.8,Active,holder_195,insurer_2,underwriter_4,"['coverage_6', 'coverage_10', 'coverage_3']",agent_5
+policy_1054,PN-7188-1054,Condo,2023-09-06,2025-08-31,369.87,Cancelled,holder_514,insurer_2,underwriter_11,"['coverage_5', 'coverage_11', 'coverage_0', 'coverage_9']",agent_7
+policy_1055,PN-4489-1055,Condo,2024-08-14,2025-02-09,863.42,Active,holder_119,insurer_8,underwriter_8,"['coverage_8', 'coverage_9', 'coverage_1', 'coverage_12']",agent_5
+policy_1056,PN-8526-1056,Landlord,2023-03-24,2023-10-22,1958.38,Active,holder_194,insurer_5,underwriter_15,"['coverage_11', 'coverage_13']",agent_10
+policy_1057,PN-6842-1057,Auto,2024-01-30,2026-01-17,1555.86,Active,holder_195,insurer_4,underwriter_11,"['coverage_14', 'coverage_3', 'coverage_13', 'coverage_12']",agent_10
+policy_1058,PN-8269-1058,Auto,2024-02-23,2024-05-09,1367.4,Cancelled,holder_434,insurer_5,underwriter_0,"['coverage_14', 'coverage_12', 'coverage_5', 'coverage_6']",agent_4
+policy_1059,PN-8215-1059,Home,2023-08-15,2024-01-23,551.4,Expired,holder_332,insurer_7,underwriter_14,"['coverage_2', 'coverage_14', 'coverage_6', 'coverage_1']",agent_2
+policy_1060,PN-7537-1060,Landlord,2024-10-24,2026-04-27,1070.9,Lapsed,holder_186,insurer_0,underwriter_16,"['coverage_4', 'coverage_13']",agent_19
+policy_1061,PN-4225-1061,Condo,2022-09-02,2024-06-30,615.67,Lapsed,holder_344,insurer_5,underwriter_9,"['coverage_14', 'coverage_13', 'coverage_8', 'coverage_1']",agent_9
+policy_1062,PN-7959-1062,Renter,2022-09-25,2023-08-21,661.5,Expired,holder_385,insurer_4,underwriter_11,"['coverage_11', 'coverage_4']",agent_9
+policy_1063,PN-6439-1063,Home,2023-12-20,2026-05-26,1623.4,Expired,holder_298,insurer_2,underwriter_0,"['coverage_0', 'coverage_5', 'coverage_2', 'coverage_13']",agent_11
+policy_1064,PN-8751-1064,Renter,2024-01-18,2026-01-24,893.14,Lapsed,holder_557,insurer_6,underwriter_17,"['coverage_10', 'coverage_14', 'coverage_2']",agent_7
+policy_1065,PN-4372-1065,Landlord,2022-09-30,2025-06-22,1709.9,Active,holder_587,insurer_7,underwriter_5,"['coverage_9', 'coverage_7', 'coverage_0', 'coverage_5']",agent_16
+policy_1066,PN-3711-1066,Home,2023-06-03,2024-03-16,775.55,Active,holder_145,insurer_7,underwriter_3,['coverage_13'],agent_8
+policy_1067,PN-5072-1067,Landlord,2023-06-27,2026-03-01,1243.44,Cancelled,holder_248,insurer_3,underwriter_10,['coverage_1'],agent_5
+policy_1068,PN-2560-1068,Auto,2023-10-22,2025-09-23,421.18,Active,holder_284,insurer_7,underwriter_4,"['coverage_0', 'coverage_13', 'coverage_4', 'coverage_7']",agent_14
+policy_1069,PN-7439-1069,Home,2023-08-03,2025-01-10,1450.23,Expired,holder_537,insurer_7,underwriter_12,"['coverage_13', 'coverage_8', 'coverage_7', 'coverage_3']",agent_9
+policy_1070,PN-8107-1070,Home,2023-12-11,2024-01-11,469.92,Expired,holder_16,insurer_6,underwriter_2,['coverage_10'],agent_1
+policy_1071,PN-3978-1071,Home,2022-06-04,2022-11-21,479.58,Expired,holder_82,insurer_7,underwriter_15,"['coverage_3', 'coverage_13', 'coverage_6']",agent_14
+policy_1072,PN-5364-1072,Auto,2023-11-11,2025-04-17,1235.11,Active,holder_267,insurer_7,underwriter_19,"['coverage_12', 'coverage_13', 'coverage_9']",agent_2
+policy_1073,PN-5742-1073,Umbrella,2022-06-12,2024-08-12,1706.19,Lapsed,holder_104,insurer_4,underwriter_7,['coverage_0'],agent_3
+policy_1074,PN-3114-1074,Renter,2023-12-11,2024-04-19,420.22,Lapsed,holder_164,insurer_4,underwriter_17,"['coverage_0', 'coverage_12', 'coverage_9']",agent_14
+policy_1075,PN-8671-1075,Landlord,2022-07-31,2023-12-29,1907.32,Lapsed,holder_359,insurer_6,underwriter_17,"['coverage_5', 'coverage_7']",agent_3
+policy_1076,PN-6299-1076,Condo,2025-01-20,2027-09-10,1434.63,Expired,holder_120,insurer_5,underwriter_2,['coverage_8'],agent_16
+policy_1077,PN-3920-1077,Home,2024-07-24,2026-01-31,779.64,Active,holder_399,insurer_2,underwriter_18,"['coverage_10', 'coverage_3', 'coverage_9', 'coverage_2']",agent_4
+policy_1078,PN-5171-1078,Umbrella,2022-04-19,2024-10-16,838.38,Expired,holder_154,insurer_8,underwriter_12,"['coverage_11', 'coverage_9']",agent_13
+policy_1079,PN-7055-1079,Landlord,2022-09-30,2025-05-28,1080.23,Cancelled,holder_77,insurer_3,underwriter_11,['coverage_7'],agent_18
+policy_1080,PN-4110-1080,Home,2022-02-26,2024-06-11,240.17,Lapsed,holder_528,insurer_5,underwriter_2,"['coverage_10', 'coverage_2', 'coverage_12', 'coverage_11']",agent_18
+policy_1081,PN-8486-1081,Home,2022-10-11,2023-06-10,1843.12,Expired,holder_503,insurer_8,underwriter_15,"['coverage_10', 'coverage_7', 'coverage_8']",agent_2
+policy_1082,PN-3132-1082,Umbrella,2023-01-05,2024-11-13,1516.81,Cancelled,holder_395,insurer_8,underwriter_7,"['coverage_13', 'coverage_14', 'coverage_11', 'coverage_8']",agent_18
+policy_1083,PN-3360-1083,Renter,2023-03-24,2025-04-08,331.88,Expired,holder_430,insurer_1,underwriter_19,"['coverage_8', 'coverage_14', 'coverage_5']",agent_17
+policy_1084,PN-1697-1084,Auto,2024-06-26,2027-03-04,542.26,Active,holder_349,insurer_9,underwriter_14,"['coverage_7', 'coverage_5']",agent_19
+policy_1085,PN-5295-1085,Renter,2024-09-09,2027-05-20,1537.35,Cancelled,holder_191,insurer_9,underwriter_14,"['coverage_9', 'coverage_14', 'coverage_4']",agent_6
+policy_1086,PN-4850-1086,Home,2022-08-29,2023-11-02,1289.31,Expired,holder_213,insurer_1,underwriter_3,"['coverage_14', 'coverage_9']",agent_6
+policy_1087,PN-7915-1087,Auto,2024-07-08,2026-09-05,1801.85,Expired,holder_201,insurer_6,underwriter_3,['coverage_7'],agent_8
+policy_1088,PN-4753-1088,Auto,2024-01-23,2025-07-13,570.79,Lapsed,holder_143,insurer_1,underwriter_0,['coverage_7'],agent_17
+policy_1089,PN-7074-1089,Umbrella,2024-12-02,2026-07-30,882.36,Expired,holder_3,insurer_1,underwriter_8,"['coverage_4', 'coverage_9']",agent_16
+policy_1090,PN-2937-1090,Condo,2024-11-12,2025-01-17,952.34,Expired,holder_176,insurer_8,underwriter_17,"['coverage_11', 'coverage_3']",agent_13
+policy_1091,PN-8962-1091,Renter,2022-07-04,2023-06-06,610.8,Lapsed,holder_45,insurer_8,underwriter_17,"['coverage_12', 'coverage_9', 'coverage_14', 'coverage_1']",agent_19
+policy_1092,PN-3515-1092,Landlord,2022-04-22,2023-01-16,1951.23,Lapsed,holder_376,insurer_7,underwriter_11,"['coverage_9', 'coverage_4', 'coverage_14']",agent_2
+policy_1093,PN-9969-1093,Umbrella,2022-09-19,2023-03-16,281.18,Cancelled,holder_172,insurer_3,underwriter_13,"['coverage_2', 'coverage_3']",agent_10
+policy_1094,PN-7840-1094,Auto,2023-03-14,2025-01-16,1586.82,Cancelled,holder_387,insurer_2,underwriter_19,"['coverage_6', 'coverage_0']",agent_15
+policy_1095,PN-1398-1095,Condo,2023-04-06,2023-10-05,1154.72,Cancelled,holder_297,insurer_4,underwriter_18,"['coverage_13', 'coverage_1', 'coverage_2']",agent_19
+policy_1096,PN-4454-1096,Landlord,2023-04-25,2025-12-27,1996.05,Cancelled,holder_574,insurer_1,underwriter_15,"['coverage_6', 'coverage_11', 'coverage_0']",agent_15
+policy_1097,PN-2265-1097,Landlord,2023-06-01,2025-05-29,275.49,Lapsed,holder_563,insurer_0,underwriter_8,"['coverage_0', 'coverage_14', 'coverage_1']",agent_15
+policy_1098,PN-9043-1098,Renter,2022-05-18,2024-08-24,1999.99,Active,holder_123,insurer_9,underwriter_10,"['coverage_9', 'coverage_4', 'coverage_10', 'coverage_7']",agent_12
+policy_1099,PN-3980-1099,Condo,2024-06-17,2027-05-14,679.82,Active,holder_544,insurer_4,underwriter_1,"['coverage_5', 'coverage_6', 'coverage_12', 'coverage_14']",agent_3
+policy_1100,PN-7930-1100,Condo,2022-03-13,2022-06-29,963.56,Cancelled,holder_312,insurer_7,underwriter_11,['coverage_2'],agent_2
+policy_1101,PN-3475-1101,Umbrella,2022-03-12,2023-07-27,1941.62,Active,holder_408,insurer_8,underwriter_13,"['coverage_14', 'coverage_8']",agent_5
+policy_1102,PN-7314-1102,Home,2022-09-26,2023-04-22,1108.03,Cancelled,holder_21,insurer_3,underwriter_12,"['coverage_3', 'coverage_1', 'coverage_10', 'coverage_9']",agent_2
+policy_1103,PN-4690-1103,Auto,2024-04-17,2025-04-28,916.89,Expired,holder_75,insurer_9,underwriter_14,"['coverage_3', 'coverage_4', 'coverage_14']",agent_13
+policy_1104,PN-4264-1104,Renter,2023-01-21,2025-09-20,1597.8,Cancelled,holder_411,insurer_3,underwriter_15,"['coverage_14', 'coverage_4', 'coverage_2', 'coverage_7']",agent_11
+policy_1105,PN-7077-1105,Condo,2023-06-29,2025-02-23,1046.35,Cancelled,holder_172,insurer_3,underwriter_7,"['coverage_10', 'coverage_12', 'coverage_9']",agent_1
+policy_1106,PN-1596-1106,Landlord,2023-10-20,2025-10-16,263.65,Expired,holder_102,insurer_2,underwriter_0,"['coverage_11', 'coverage_2', 'coverage_10']",agent_4
+policy_1107,PN-6417-1107,Home,2022-10-18,2023-11-11,1872.32,Expired,holder_560,insurer_6,underwriter_7,['coverage_12'],agent_14
+policy_1108,PN-6762-1108,Condo,2024-01-12,2025-02-17,1845.72,Cancelled,holder_187,insurer_7,underwriter_5,['coverage_14'],agent_3
+policy_1109,PN-4260-1109,Auto,2022-02-23,2022-05-12,1175.89,Expired,holder_582,insurer_2,underwriter_10,['coverage_6'],agent_13
+policy_1110,PN-8375-1110,Home,2024-10-13,2026-03-08,1900.94,Expired,holder_205,insurer_6,underwriter_16,"['coverage_13', 'coverage_10', 'coverage_2', 'coverage_3']",agent_3
+policy_1111,PN-1449-1111,Umbrella,2024-02-21,2026-06-18,809.8,Expired,holder_189,insurer_7,underwriter_14,"['coverage_8', 'coverage_14']",agent_14
+policy_1112,PN-4785-1112,Renter,2024-08-25,2026-05-17,348.52,Lapsed,holder_455,insurer_4,underwriter_8,"['coverage_3', 'coverage_7']",agent_17
+policy_1113,PN-8697-1113,Renter,2022-10-18,2024-09-19,495.59,Lapsed,holder_399,insurer_8,underwriter_4,"['coverage_12', 'coverage_4']",agent_9
+policy_1114,PN-9294-1114,Auto,2024-05-08,2026-07-29,1356.29,Active,holder_523,insurer_2,underwriter_17,"['coverage_7', 'coverage_13', 'coverage_11']",agent_14
+policy_1115,PN-3413-1115,Condo,2024-04-19,2025-01-23,1061.48,Lapsed,holder_9,insurer_1,underwriter_6,"['coverage_7', 'coverage_1']",agent_1
+policy_1116,PN-4457-1116,Home,2022-03-30,2023-03-13,353.6,Lapsed,holder_207,insurer_7,underwriter_14,"['coverage_9', 'coverage_13', 'coverage_2', 'coverage_0']",agent_0
+policy_1117,PN-5317-1117,Condo,2025-02-16,2025-04-25,1388.67,Lapsed,holder_99,insurer_2,underwriter_7,"['coverage_5', 'coverage_12', 'coverage_10']",agent_15
+policy_1118,PN-2324-1118,Renter,2024-08-11,2025-02-19,1411.92,Cancelled,holder_23,insurer_1,underwriter_15,"['coverage_8', 'coverage_11', 'coverage_12', 'coverage_13']",agent_19
+policy_1119,PN-2412-1119,Renter,2024-03-07,2026-02-10,445.51,Lapsed,holder_322,insurer_7,underwriter_14,"['coverage_8', 'coverage_6']",agent_2
+policy_1120,PN-6449-1120,Condo,2024-03-26,2025-08-14,884.15,Lapsed,holder_203,insurer_8,underwriter_12,"['coverage_2', 'coverage_8', 'coverage_0']",agent_6
+policy_1121,PN-5245-1121,Condo,2022-11-29,2024-08-15,1217.43,Lapsed,holder_85,insurer_9,underwriter_1,['coverage_11'],agent_2
+policy_1122,PN-6555-1122,Auto,2022-07-05,2025-06-20,1239.01,Lapsed,holder_132,insurer_1,underwriter_18,"['coverage_14', 'coverage_5', 'coverage_1', 'coverage_11']",agent_6
+policy_1123,PN-8842-1123,Renter,2025-02-04,2025-08-17,1304.69,Active,holder_363,insurer_4,underwriter_16,"['coverage_8', 'coverage_11', 'coverage_9', 'coverage_5']",agent_10
+policy_1124,PN-9412-1124,Home,2022-05-20,2025-01-31,1175.63,Expired,holder_546,insurer_9,underwriter_8,['coverage_13'],agent_5
+policy_1125,PN-2515-1125,Home,2022-08-09,2023-01-01,1529.76,Expired,holder_484,insurer_5,underwriter_2,"['coverage_4', 'coverage_6', 'coverage_11']",agent_1
+policy_1126,PN-9095-1126,Condo,2023-10-31,2026-02-15,1305.13,Cancelled,holder_2,insurer_9,underwriter_18,"['coverage_13', 'coverage_2', 'coverage_14']",agent_1
+policy_1127,PN-4151-1127,Auto,2024-01-31,2025-01-18,1488.67,Lapsed,holder_23,insurer_9,underwriter_8,"['coverage_5', 'coverage_10']",agent_12
+policy_1128,PN-7647-1128,Renter,2024-05-29,2027-03-08,1867.47,Expired,holder_241,insurer_6,underwriter_11,"['coverage_6', 'coverage_3']",agent_3
+policy_1129,PN-1136-1129,Auto,2024-07-13,2025-01-10,509.09,Cancelled,holder_88,insurer_5,underwriter_5,"['coverage_14', 'coverage_10', 'coverage_5']",agent_14
+policy_1130,PN-2001-1130,Landlord,2023-10-07,2026-07-08,1440.82,Cancelled,holder_559,insurer_1,underwriter_18,"['coverage_2', 'coverage_5', 'coverage_12']",agent_17
+policy_1131,PN-8838-1131,Auto,2023-03-13,2023-07-16,406.64,Cancelled,holder_17,insurer_0,underwriter_18,"['coverage_11', 'coverage_10', 'coverage_7']",agent_3
+policy_1132,PN-6242-1132,Condo,2022-07-11,2024-10-04,735.57,Lapsed,holder_584,insurer_1,underwriter_7,['coverage_7'],agent_3
+policy_1133,PN-5899-1133,Landlord,2024-11-22,2025-01-29,1478.66,Cancelled,holder_386,insurer_3,underwriter_12,['coverage_11'],agent_18
+policy_1134,PN-5006-1134,Home,2024-08-09,2027-02-17,823.81,Expired,holder_526,insurer_2,underwriter_16,['coverage_4'],agent_8
+policy_1135,PN-1681-1135,Auto,2023-10-20,2025-10-13,1569.79,Expired,holder_172,insurer_8,underwriter_13,"['coverage_9', 'coverage_8', 'coverage_14', 'coverage_11']",agent_1
+policy_1136,PN-6026-1136,Landlord,2024-08-31,2025-03-18,1491.5,Cancelled,holder_453,insurer_9,underwriter_4,"['coverage_6', 'coverage_2', 'coverage_8']",agent_4
+policy_1137,PN-2045-1137,Umbrella,2022-04-04,2024-08-13,1152.25,Cancelled,holder_576,insurer_9,underwriter_12,"['coverage_6', 'coverage_1', 'coverage_2', 'coverage_8']",agent_11
+policy_1138,PN-7529-1138,Landlord,2023-03-13,2024-01-28,1987.39,Lapsed,holder_117,insurer_5,underwriter_12,"['coverage_13', 'coverage_10', 'coverage_5']",agent_12
+policy_1139,PN-5278-1139,Auto,2025-01-14,2026-05-09,1918.78,Cancelled,holder_348,insurer_3,underwriter_9,"['coverage_4', 'coverage_0', 'coverage_6', 'coverage_7']",agent_8
+policy_1140,PN-7947-1140,Home,2023-02-13,2023-08-29,1998.54,Expired,holder_8,insurer_7,underwriter_9,"['coverage_10', 'coverage_9', 'coverage_0', 'coverage_6']",agent_14
+policy_1141,PN-9693-1141,Condo,2023-03-02,2024-02-19,1179.45,Expired,holder_364,insurer_8,underwriter_0,"['coverage_6', 'coverage_8', 'coverage_4']",agent_4
+policy_1142,PN-1061-1142,Home,2023-03-31,2025-05-24,741.99,Cancelled,holder_468,insurer_8,underwriter_0,['coverage_2'],agent_6
+policy_1143,PN-4181-1143,Condo,2023-04-05,2025-10-19,1741.01,Lapsed,holder_232,insurer_5,underwriter_0,"['coverage_1', 'coverage_3']",agent_1
+policy_1144,PN-5469-1144,Renter,2023-07-14,2024-09-05,1096.95,Expired,holder_413,insurer_4,underwriter_16,['coverage_4'],agent_10
+policy_1145,PN-1888-1145,Condo,2023-03-26,2026-03-18,1538.68,Expired,holder_596,insurer_3,underwriter_13,"['coverage_3', 'coverage_2', 'coverage_6', 'coverage_11']",agent_14
+policy_1146,PN-2523-1146,Landlord,2022-11-28,2023-01-29,646.25,Cancelled,holder_40,insurer_8,underwriter_18,"['coverage_0', 'coverage_8', 'coverage_1']",agent_2
+policy_1147,PN-8848-1147,Landlord,2023-06-20,2023-09-15,373.02,Lapsed,holder_487,insurer_5,underwriter_1,['coverage_13'],agent_8
+policy_1148,PN-7031-1148,Renter,2022-03-17,2022-08-15,624.95,Expired,holder_109,insurer_4,underwriter_8,"['coverage_4', 'coverage_2', 'coverage_11']",agent_16
+policy_1149,PN-6461-1149,Condo,2022-05-19,2022-08-22,553.37,Lapsed,holder_45,insurer_4,underwriter_7,"['coverage_14', 'coverage_1', 'coverage_0']",agent_9
+policy_1150,PN-1729-1150,Condo,2023-06-26,2025-11-20,1604.26,Active,holder_478,insurer_0,underwriter_12,"['coverage_2', 'coverage_0', 'coverage_6']",agent_9
+policy_1151,PN-3666-1151,Auto,2023-01-27,2023-09-04,557.25,Lapsed,holder_358,insurer_1,underwriter_16,"['coverage_8', 'coverage_10']",agent_0
+policy_1152,PN-2804-1152,Landlord,2023-08-23,2025-02-20,1773.41,Expired,holder_543,insurer_0,underwriter_15,"['coverage_3', 'coverage_12']",agent_6
+policy_1153,PN-1147-1153,Landlord,2023-08-27,2026-06-16,995.12,Expired,holder_313,insurer_7,underwriter_7,"['coverage_4', 'coverage_14', 'coverage_11']",agent_19
+policy_1154,PN-8972-1154,Auto,2022-11-07,2024-12-20,317.22,Lapsed,holder_336,insurer_9,underwriter_8,"['coverage_4', 'coverage_12']",agent_11
+policy_1155,PN-3347-1155,Home,2022-11-18,2025-04-20,1133.93,Lapsed,holder_526,insurer_6,underwriter_4,['coverage_0'],agent_17
+policy_1156,PN-2758-1156,Umbrella,2022-12-03,2024-05-18,1512.4,Expired,holder_529,insurer_7,underwriter_16,"['coverage_1', 'coverage_3', 'coverage_9']",agent_5
+policy_1157,PN-1673-1157,Umbrella,2022-05-10,2024-06-09,303.07,Lapsed,holder_239,insurer_3,underwriter_13,['coverage_2'],agent_13
+policy_1158,PN-1163-1158,Home,2022-06-27,2024-04-27,1236.94,Lapsed,holder_270,insurer_3,underwriter_7,"['coverage_4', 'coverage_9']",agent_6
+policy_1159,PN-8585-1159,Renter,2024-11-01,2025-08-10,1475.48,Active,holder_479,insurer_9,underwriter_2,['coverage_10'],agent_16
+policy_1160,PN-5549-1160,Umbrella,2022-03-14,2023-04-04,1173.37,Expired,holder_368,insurer_8,underwriter_5,['coverage_5'],agent_2
+policy_1161,PN-7236-1161,Landlord,2024-02-02,2026-08-05,477.66,Active,holder_244,insurer_5,underwriter_8,"['coverage_14', 'coverage_4', 'coverage_6', 'coverage_2']",agent_6
+policy_1162,PN-3970-1162,Landlord,2023-03-30,2025-04-24,878.74,Cancelled,holder_383,insurer_5,underwriter_10,"['coverage_6', 'coverage_3', 'coverage_10']",agent_13
+policy_1163,PN-2749-1163,Condo,2024-01-26,2024-03-06,853.86,Lapsed,holder_558,insurer_2,underwriter_0,"['coverage_10', 'coverage_14', 'coverage_8']",agent_13
+policy_1164,PN-9186-1164,Landlord,2024-04-12,2025-01-13,750.38,Cancelled,holder_508,insurer_1,underwriter_12,['coverage_6'],agent_14
+policy_1165,PN-4669-1165,Home,2022-12-08,2025-07-24,448.95,Active,holder_125,insurer_8,underwriter_7,"['coverage_1', 'coverage_9']",agent_4
+policy_1166,PN-3242-1166,Renter,2023-11-22,2024-12-14,1166.85,Cancelled,holder_110,insurer_7,underwriter_6,"['coverage_14', 'coverage_11', 'coverage_12']",agent_2
+policy_1167,PN-2917-1167,Renter,2024-07-07,2025-09-20,635.83,Cancelled,holder_597,insurer_0,underwriter_17,"['coverage_8', 'coverage_2', 'coverage_9', 'coverage_7']",agent_2
+policy_1168,PN-3937-1168,Umbrella,2022-06-19,2023-05-23,1076.76,Active,holder_73,insurer_3,underwriter_16,"['coverage_0', 'coverage_11']",agent_11
+policy_1169,PN-3246-1169,Umbrella,2024-11-10,2025-12-11,1669.07,Cancelled,holder_216,insurer_2,underwriter_4,"['coverage_1', 'coverage_14']",agent_1
+policy_1170,PN-8481-1170,Landlord,2023-05-23,2025-09-06,856.49,Expired,holder_542,insurer_4,underwriter_11,"['coverage_9', 'coverage_13', 'coverage_1', 'coverage_8']",agent_6
+policy_1171,PN-9122-1171,Condo,2023-11-21,2025-07-05,1112.08,Cancelled,holder_347,insurer_9,underwriter_17,"['coverage_11', 'coverage_12']",agent_9
+policy_1172,PN-9167-1172,Landlord,2023-04-14,2024-12-11,912.4,Expired,holder_363,insurer_7,underwriter_18,"['coverage_10', 'coverage_11']",agent_10
+policy_1173,PN-4646-1173,Landlord,2022-07-01,2024-08-25,934.31,Active,holder_354,insurer_5,underwriter_8,"['coverage_3', 'coverage_10', 'coverage_8', 'coverage_0']",agent_3
+policy_1174,PN-3673-1174,Home,2022-05-02,2024-09-01,539.32,Cancelled,holder_339,insurer_9,underwriter_9,['coverage_13'],agent_12
+policy_1175,PN-1370-1175,Condo,2024-02-04,2024-11-19,1548.47,Lapsed,holder_338,insurer_2,underwriter_3,"['coverage_12', 'coverage_11', 'coverage_1']",agent_15
+policy_1176,PN-6246-1176,Condo,2025-02-16,2026-03-09,573.0,Expired,holder_174,insurer_8,underwriter_12,"['coverage_11', 'coverage_0']",agent_15
+policy_1177,PN-9620-1177,Home,2024-05-25,2025-10-18,373.12,Active,holder_129,insurer_0,underwriter_13,"['coverage_14', 'coverage_9']",agent_5
+policy_1178,PN-1546-1178,Condo,2024-05-18,2025-07-28,1796.82,Cancelled,holder_515,insurer_6,underwriter_8,['coverage_6'],agent_14
+policy_1179,PN-3970-1179,Renter,2023-12-13,2025-08-20,680.37,Active,holder_180,insurer_7,underwriter_11,"['coverage_10', 'coverage_11']",agent_4
+policy_1180,PN-3625-1180,Umbrella,2023-10-15,2025-12-20,615.15,Lapsed,holder_365,insurer_8,underwriter_11,"['coverage_13', 'coverage_0', 'coverage_4', 'coverage_14']",agent_16
+policy_1181,PN-7512-1181,Renter,2024-01-21,2026-11-23,976.2,Active,holder_126,insurer_1,underwriter_12,"['coverage_5', 'coverage_13', 'coverage_1']",agent_16
+policy_1182,PN-1410-1182,Home,2024-03-10,2025-05-12,879.72,Expired,holder_33,insurer_9,underwriter_7,"['coverage_4', 'coverage_10', 'coverage_2']",agent_0
+policy_1183,PN-3931-1183,Condo,2022-03-10,2023-07-14,775.88,Active,holder_44,insurer_6,underwriter_17,['coverage_0'],agent_8
+policy_1184,PN-4840-1184,Auto,2024-12-07,2026-03-25,1040.58,Expired,holder_123,insurer_4,underwriter_15,"['coverage_3', 'coverage_13']",agent_11
+policy_1185,PN-8056-1185,Umbrella,2024-07-05,2025-02-03,219.7,Active,holder_244,insurer_6,underwriter_19,['coverage_0'],agent_17
+policy_1186,PN-5642-1186,Home,2023-08-24,2025-03-14,936.61,Active,holder_1,insurer_5,underwriter_9,"['coverage_1', 'coverage_9']",agent_3
+policy_1187,PN-4367-1187,Auto,2022-05-06,2025-05-02,1286.18,Lapsed,holder_594,insurer_2,underwriter_8,['coverage_12'],agent_13
+policy_1188,PN-2436-1188,Renter,2024-12-09,2027-12-07,774.91,Expired,holder_222,insurer_4,underwriter_11,"['coverage_11', 'coverage_9', 'coverage_14', 'coverage_2']",agent_10
+policy_1189,PN-1973-1189,Condo,2022-11-16,2024-04-15,1013.24,Active,holder_599,insurer_8,underwriter_4,"['coverage_7', 'coverage_3']",agent_17
+policy_1190,PN-7357-1190,Renter,2022-10-17,2023-06-04,561.27,Active,holder_444,insurer_2,underwriter_3,"['coverage_8', 'coverage_1']",agent_13
+policy_1191,PN-4053-1191,Home,2024-09-29,2027-05-31,208.97,Expired,holder_521,insurer_8,underwriter_0,"['coverage_6', 'coverage_7']",agent_18
+policy_1192,PN-3399-1192,Umbrella,2024-06-24,2025-08-18,284.75,Active,holder_181,insurer_7,underwriter_15,"['coverage_6', 'coverage_8']",agent_19
+policy_1193,PN-7068-1193,Landlord,2023-01-03,2025-05-28,1393.15,Expired,holder_570,insurer_7,underwriter_8,"['coverage_13', 'coverage_5', 'coverage_12', 'coverage_1']",agent_5
+policy_1194,PN-2260-1194,Renter,2024-07-18,2025-07-25,1645.47,Active,holder_588,insurer_4,underwriter_3,['coverage_10'],agent_4
+policy_1195,PN-1095-1195,Condo,2022-06-29,2025-05-20,1666.46,Active,holder_101,insurer_5,underwriter_6,"['coverage_7', 'coverage_13', 'coverage_4']",agent_0
+policy_1196,PN-4670-1196,Landlord,2024-01-24,2025-12-26,1633.32,Active,holder_38,insurer_5,underwriter_6,"['coverage_5', 'coverage_3', 'coverage_13', 'coverage_1']",agent_12
+policy_1197,PN-1196-1197,Auto,2023-03-10,2024-06-27,1448.79,Expired,holder_63,insurer_4,underwriter_3,"['coverage_13', 'coverage_12', 'coverage_5', 'coverage_0']",agent_19
+policy_1198,PN-9040-1198,Landlord,2024-10-20,2027-08-23,1641.96,Active,holder_64,insurer_3,underwriter_4,['coverage_9'],agent_15
+policy_1199,PN-2408-1199,Umbrella,2023-12-30,2024-09-14,1214.06,Lapsed,holder_307,insurer_6,underwriter_15,"['coverage_13', 'coverage_9', 'coverage_11', 'coverage_10']",agent_2

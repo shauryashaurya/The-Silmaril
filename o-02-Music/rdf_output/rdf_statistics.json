@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "report_type": "RDF Statistics Report",
+    "generated_at": "2025-07-03T23:39:37.713135",
+    "graph_size": 17031
+  },
+  "basic_statistics": {
+    "total_triples": 17031,
+    "unique_subjects": 1462,
+    "unique_predicates": 29,
+    "unique_objects": 2119
+  },
+  "entity_distribution": {
+    "songs": 600,
+    "artists": 100,
+    "albums": 100,
+    "genres": 15,
+    "awards": 30
+  },
+  "property_usage": {
+    "http://example.org/music#influencedBy": 9900,
+    "http://example.org/music#hasGenre": 904,
+    "http://example.org/music#performedBy": 902,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": 888,
+    "http://example.org/music#duration": 600,
+    "http://example.org/music#title": 600,
+    "http://example.org/music#withArtist": 576,
+    "http://example.org/music#collaborationStrength": 576,
+    "http://example.org/music#hasCollaborationStrength": 576,
+    "http://example.org/music#collaboratesWith": 576,
+    "http://example.org/music#awardWonBy": 137,
+    "http://example.org/music#releaseYear": 100,
+    "http://example.org/music#albumTitle": 100,
+    "http://example.org/music#popularityScore": 100,
+    "http://example.org/music#name": 100,
+    "http://example.org/music#nationality": 100,
+    "http://example.org/music#hasWonAward": 57,
+    "http://www.w3.org/2000/01/rdf-schema#label": 41,
+    "http://www.w3.org/2000/01/rdf-schema#comment": 41,
+    "http://example.org/music#awardingBody": 30,
+    "http://example.org/music#year": 30,
+    "http://example.org/music#awardName": 30,
+    "http://www.w3.org/2000/01/rdf-schema#range": 18,
+    "http://example.org/music#genreName": 15,
+    "http://example.org/music#description": 15,
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": 12,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": 5,
+    "http://purl.org/dc/terms/created": 1,
+    "http://www.w3.org/2002/07/owl#versionInfo": 1
+  },
+  "validation_results": {
+    "is_valid": true,
+    "warnings": [
+      "Found 9 dangling object references"
+    ],
+    "errors": [],
+    "statistics": {
+      "total_triples": 17031,
+      "entity_counts": {
+        "songs": 600,
+        "artists": 100,
+        "albums": 100,
+        "genres": 15,
+        "awards": 30
+      },
+      "property_usage": {
+        "http://example.org/music#withArtist": 576,
+        "http://example.org/music#influencedBy": 9900,
+        "http://example.org/music#collaborationStrength": 576,
+        "http://example.org/music#hasCollaborationStrength": 576,
+        "http://example.org/music#hasGenre": 904,
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": 888,
+        "http://example.org/music#performedBy": 902,
+        "http://example.org/music#awardWonBy": 137,
+        "http://example.org/music#duration": 600,
+        "http://example.org/music#collaboratesWith": 576,
+        "http://example.org/music#title": 600,
+        "http://www.w3.org/2000/01/rdf-schema#label": 41,
+        "http://example.org/music#releaseYear": 100,
+        "http://www.w3.org/2000/01/rdf-schema#comment": 41,
+        "http://example.org/music#awardingBody": 30,
+        "http://example.org/music#genreName": 15,
+        "http://example.org/music#albumTitle": 100,
+        "http://example.org/music#popularityScore": 100,
+        "http://example.org/music#name": 100,
+        "http://example.org/music#year": 30,
+        "http://example.org/music#hasWonAward": 57,
+        "http://example.org/music#description": 15,
+        "http://example.org/music#nationality": 100,
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso": 12,
+        "http://example.org/music#awardName": 30,
+        "http://www.w3.org/2000/01/rdf-schema#range": 18,
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": 5,
+        "http://purl.org/dc/terms/created": 1,
+        "http://www.w3.org/2002/07/owl#versionInfo": 1
+      },
+      "unique_subjects": 1462,
+      "unique_predicates": 29,
+      "unique_objects": 2119
+    },
+    "quality_metrics": {
+      "uri_consistency_score": 1.0,
+      "reference_integrity_score": 0.9579439252336449,
+      "graph_density": 19.22234762979684,
+      "entity_coverage": {
+        "songs_coverage": 1.0,
+        "artists_coverage": 1.0,
+        "albums_coverage": 1.0
+      }
+    }
+  },
+  "namespace_usage": {
+    "http://example.org/music#": 17019,
+    "http://example.org/music/": 28793,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#": 888,
+    "http://www.w3.org/2000/01/rdf-schema#": 117,
+    "http://example.org/": 5,
+    "http://www.w3.org/2002/07/owl#": 44,
+    "http://www.w3.org/2001/XMLSchema#": 18,
+    "http://purl.org/dc/terms/": 1
+  }
+}
