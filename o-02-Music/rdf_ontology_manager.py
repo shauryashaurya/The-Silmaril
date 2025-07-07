@@ -453,6 +453,8 @@ class RDFOntologyManager:
                 self.graph.add((label_uri, self.ns.labelSuccessRating, Literal(
                     label.success_rating, datatype=XSD.int)))
 
+            # TODO: Label doesn't have a 'signed artists' property,
+            # need to compute a inverse property 'signed_artists' before the following starts to work...
             # Object properties - signed artists
             for artist_id in label.signed_artists:
                 if artist_id in self.reasoner.artists:

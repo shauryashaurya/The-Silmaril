@@ -790,6 +790,13 @@ class MusicReasonerEngine:
         logger.info(
             f"PHASE 1 COMPLETE: Established {inverse_count} inverse relationships")
 
+        # TODO - Implement this inverse relationship...
+        # 7. RECORD LABEL → ARTISTS inverse relationship (from artists.csv labelIDs)
+        # sample code below:
+        # for artist in self.artists.values():
+        #     if artist.label_id and artist.label_id in self.record_labels:
+        #         self.record_labels[id].signed_artists.add(artist.id)
+
     def _compute_derived_relationships(self) -> None:
         """
         PHASE 2: COMPUTE ALL DERIVED RELATIONSHIPS SECOND
