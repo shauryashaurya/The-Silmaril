@@ -76,12 +76,19 @@ Standing on the shoulders of giants here...
 * [@BarrySmithOntology on YouTube](https://www.youtube.com/@BarrySmithOntology)
 * [Tim Berners-Lee's `cwm` (Closed World Machine)](https://linkeddata.github.io/swap/doc/cwm.html) and [on GitHub](https://github.com/linkeddata/swap)
 * [RDF and OWL : the powerful duo, Tara Raafat](https://www.youtube.com/watch?v=zteyEk9LADs) - and in general videos from Tara Raafat
-* [@AshleighFaith on YouTube](https://www.youtube.com/@AshleighFaith)
+* [@AshleighFaith on YouTube](https://www.youtube.com/@AshleighFaith), [How to Model Taxonomy, to Thesaurus, to Ontology, to Knowledge Graph](https://www.youtube.com/watch?v=FJ3ZqtnJ_go)
 * [@ontologize on YouTube](https://www.youtube.com/@ontologize)
 * [@palantirdevelopers on YouTube](https://www.youtube.com/@palantirdevelopers)
 * [@OntologyExplained on YouTube](https://www.youtube.com/@OntologyExplained)
 * [Kùzu's Graph Databases: Fundamentals Playlist](https://www.youtube.com/playlist?list=PLnMU6rfAdE1CpxwilWJyWETgy2J-KPkZj)
 * [Protégé](https://protege.stanford.edu/) and [WebProtégé](https://webprotege.stanford.edu/#projects/list)
+	* [Pizzas in 10 minutes](https://protegewiki.stanford.edu/wiki/Protege4Pizzas10Minutes)
+* [RDF @ W3C](https://www.w3.org/TR/rdf11-concepts/)
+* [SKOS](https://www.w3.org/TR/2008/WD-skos-reference-20080829/skos.html) and [Intro to SKOS](https://www.dataversity.net/introduction-to-skos/)
+* [Ontology, Taxonomy, and Graph standards: OWL, RDF, RDFS, SKOS - somewhat useful](https://medium.com/@jaywang.recsys/ontology-taxonomy-and-graph-standards-owl-rdf-rdfs-skos-052db21a6027), [SKOS support in Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/21/rdfrm/simple-knowledge-organizaiton-system-skos.html#GUID-2A83DBD8-F56D-4EA5-A7C1-B6AE0B0D4FA4)
+* [reasonable](https://github.com/gtfierro/reasonable)
+* [OWL Reasoners still useable in 2023](https://arxiv.org/pdf/2309.06888), also on [GitHub](https://github.com/k00ni/owl-reasoner-list/blob/master/reasoner.csv)
+
       
                    
 .                  
