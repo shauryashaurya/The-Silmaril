@@ -1,5 +1,5 @@
 """
-Music Ontology Reasoner - Corrected Relationship Computation Order
+Music Ontology Reasoner 
 A comprehensive N3 ontology reasoning system for music industry data.
 
 CRITICAL DESIGN PRINCIPLE:
@@ -114,7 +114,7 @@ def parse_id_list(value: Any) -> Set[str]:
         logger.warning(f"Failed to parse ID list '{value}': {e}")
         return set()
 
-# ===== ENTITY DATA MODELS =====
+#  ENTITY DATA MODELS
 
 
 @dataclass
@@ -1086,7 +1086,7 @@ class MusicReasonerEngine:
             f"Data validation passed: {len(self.songs)} songs, {len(self.artists)} artists, {songs_with_artists} songs with artists")
         return True
 
-    # ===== N3 REASONING RULES =====
+    #  N3 REASONING RULES
 
     def _rule_01_collaboration_detection(self) -> None:
         """

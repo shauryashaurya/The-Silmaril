@@ -88,6 +88,10 @@ Standing on the shoulders of giants here...
 * [Ontology, Taxonomy, and Graph standards: OWL, RDF, RDFS, SKOS - somewhat useful](https://medium.com/@jaywang.recsys/ontology-taxonomy-and-graph-standards-owl-rdf-rdfs-skos-052db21a6027), [SKOS support in Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/21/rdfrm/simple-knowledge-organizaiton-system-skos.html#GUID-2A83DBD8-F56D-4EA5-A7C1-B6AE0B0D4FA4)
 * [reasonable](https://github.com/gtfierro/reasonable)
 * [OWL Reasoners still useable in 2023](https://arxiv.org/pdf/2309.06888), also on [GitHub](https://github.com/k00ni/owl-reasoner-list/blob/master/reasoner.csv)
+* [Lists of ontologies](https://www.w3.org/wiki/Lists_of_ontologies)
+* [The Music Ontology Specification](http://musicontology.com/specification/#sec-individuals) and on [GitHub](https://github.com/motools/musicontology)
+* [Provenance - PROV-O: The PROV Ontology](https://www.w3.org/TR/prov-o/)
+* [OWL 2 Web Ontology Language Primer (Second Edition)](https://www.w3.org/2012/pdf/REC-owl2-primer-20121211.pdf)
 
       
                    
