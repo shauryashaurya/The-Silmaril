@@ -79,6 +79,9 @@ Standing on the shoulders of giants here...
 * [@AshleighFaith on YouTube](https://www.youtube.com/@AshleighFaith)
 * [@ontologize on YouTube](https://www.youtube.com/@ontologize)
 * [@palantirdevelopers on YouTube](https://www.youtube.com/@palantirdevelopers)
+* [@OntologyExplained on YouTube](https://www.youtube.com/@OntologyExplained)
+* [Kùzu's Graph Databases: Fundamentals Playlist](https://www.youtube.com/playlist?list=PLnMU6rfAdE1CpxwilWJyWETgy2J-KPkZj)
+* [Protégé](https://protege.stanford.edu/) and [WebProtégé](https://webprotege.stanford.edu/#projects/list)
       
                    
 .                  
