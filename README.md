@@ -76,7 +76,9 @@ Standing on the shoulders of giants here...
 * [@BarrySmithOntology on YouTube](https://www.youtube.com/@BarrySmithOntology)
 * [Tim Berners-Lee's `cwm` (Closed World Machine)](https://linkeddata.github.io/swap/doc/cwm.html) and [on GitHub](https://github.com/linkeddata/swap)
 * [RDF and OWL : the powerful duo, Tara Raafat](https://www.youtube.com/watch?v=zteyEk9LADs) - and in general videos from Tara Raafat
-
+* [@AshleighFaith on YouTube](https://www.youtube.com/@AshleighFaith)
+* [@ontologize on YouTube](https://www.youtube.com/@ontologize)
+* [@palantirdevelopers on YouTube](https://www.youtube.com/@palantirdevelopers)
       
                    
 .                  
