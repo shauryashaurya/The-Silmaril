@@ -92,6 +92,7 @@ Standing on the shoulders of giants here...
 * [The Music Ontology Specification](http://musicontology.com/specification/#sec-individuals) and on [GitHub](https://github.com/motools/musicontology)
 * [Provenance - PROV-O: The PROV Ontology](https://www.w3.org/TR/prov-o/)
 * [OWL 2 Web Ontology Language Primer (Second Edition)](https://www.w3.org/2012/pdf/REC-owl2-primer-20121211.pdf)
+* [Solid from Tim Berners-Lee](https://github.com/solid), [spec](https://github.com/solid/specification), [vocab space at GitHub](https://github.com/solid/vocabs), [wiki entry](https://en.wikipedia.org/wiki/Solid_(web_decentralization_project))
 
       
                    
