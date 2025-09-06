@@ -7,7 +7,9 @@
                       
 Practice **#ontology engineering** with Python (and other languages).                       
                         
----                    
+---          
+
+# SCIPY 2025 Update: [Video on YouTube](https://www.youtube.com/watch?v=HlSqH6T-y0Q)          
                       
 ## List of Ontologies                    
                       
