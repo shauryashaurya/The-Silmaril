@@ -1,0 +1,101 @@
+treaty_id,treaty_type,coverage_start_date,coverage_end_date,ceding_company,reinsurer_name,limit_amount,retention_amount,quota_share_percent,commission_percent,profit_commission_flag
+TREATY315651,Surplus,2015-02-15,2018-02-06,"Jones, Martinez and Ford","Villanueva, Tyler and Jacobson",6814984.18,702474.47,35.22,24.7,True
+TREATY529251,Facultative,2022-07-03,2024-02-09,Smith-Morris,Morrow-Walker,8274214.34,994916.84,25.33,21.58,True
+TREATY472487,Surplus,2019-01-03,2021-03-30,Wood Ltd,Anderson-Bryan,5092115.16,423749.62,36.09,24.99,True
+TREATY453337,Quota Share,2019-11-11,2023-09-20,"Peck, Cooper and Allen",Banks-Blackburn,7895174.64,851648.43,68.07,6.22,True
+TREATY159432,Facultative,2023-11-28,2027-05-14,Garcia and Sons,"Henderson, Jackson and Foster",1430781.78,398342.16,37.24,9.99,True
+TREATY219347,Quota Share,2022-08-17,2025-05-28,"Knapp, Riggs and Wood","Gallagher, Beasley and Perez",5956861.6,202251.84,27.2,8.91,True
+TREATY983879,Facultative,2018-02-09,2022-01-08,Gilmore Inc,"Spencer, Gallagher and Smith",6442101.37,214070.06,54.7,24.56,False
+TREATY694212,Facultative,2018-10-07,2023-02-08,Harris Inc,Fleming-Contreras,1196743.05,570810.56,16.34,8.67,False
+TREATY402011,Surplus,2017-08-30,2021-04-21,Hall and Sons,Mata-Jones,4590185.05,332807.38,73.61,11.73,True
+TREATY861474,XoL,2018-12-31,2023-07-16,Phillips-Norton,Hendrix PLC,698782.25,126107.61,48.77,8.05,False
+TREATY426034,Surplus,2017-07-01,2019-01-20,Thomas LLC,"Parsons, Gomez and Brady",3333699.58,376160.13,55.24,13.92,True
+TREATY243913,XoL,2017-09-19,2019-05-22,Morgan Ltd,"Rosales, Owens and Gutierrez",6754821.77,582204.35,53.36,24.56,True
+TREATY104782,Surplus,2022-03-29,2024-04-23,Payne-Kelley,"Adams, Martin and Solis",7306005.16,617417.62,40.54,19.87,True
+TREATY577966,Quota Share,2016-03-15,2019-10-29,Miller PLC,"Mcgee, Wilkerson and Erickson",6495262.51,394322.5,82.57,10.81,True
+TREATY671905,Quota Share,2016-02-17,2020-05-25,Wall-Reed,"Burnett, Chang and Brown",1722437.56,583211.33,13.54,17.46,True
+TREATY407432,Facultative,2018-01-05,2019-08-17,"Finley, Coleman and Smith","Sims, Howard and Bullock",917435.45,667236.52,69.35,8.97,False
+TREATY431245,Surplus,2015-05-07,2018-02-22,Palmer-Douglas,Quinn Ltd,5490495.22,507776.61,17.01,23.3,True
+TREATY891504,Quota Share,2022-07-22,2026-03-27,Martinez-Anderson,"Murphy, White and Reese",4458330.5,516565.83,29.67,5.37,False
+TREATY388333,XoL,2016-09-03,2021-02-09,"Price, Parker and Lopez",Harmon LLC,3363420.37,78716.32,88.12,15.51,True
+TREATY587203,XoL,2019-08-10,2021-09-07,Coleman LLC,"Garcia, Jensen and Brooks",8660368.92,265919.75,89.14,23.95,True
+TREATY068577,Surplus,2023-07-05,2025-05-04,"Adams, Clark and Williams",Lynn-Thompson,9206093.64,443803.76,78.68,14.46,True
+TREATY659110,Facultative,2017-02-12,2018-05-27,Meadows-Sandoval,Combs LLC,4567383.14,587612.99,86.78,18.47,False
+TREATY547073,Facultative,2019-03-23,2022-01-12,Holland LLC,Moore Ltd,8743146.83,991655.6,22.08,5.21,True
+TREATY145245,Surplus,2020-12-12,2022-07-17,"Jones, Parker and Sellers","Henry, Andersen and Hawkins",7082261.26,925003.77,42.19,21.24,True
+TREATY023706,XoL,2015-02-20,2019-01-08,"Johnson, Johnson and Smith",Lang LLC,4439510.81,632440.6,42.69,6.81,False
+TREATY346950,Surplus,2018-11-03,2020-08-04,Williams Group,"Ford, Todd and Cowan",3798138.87,927206.66,38.55,5.1,True
+TREATY023612,Surplus,2017-09-20,2020-09-11,"Miller, Hughes and Robertson",Barron-Reed,732253.28,594044.79,26.65,24.91,False
+TREATY369768,XoL,2018-01-09,2020-01-13,"Rogers, Johnson and Hughes",Ferguson LLC,7514099.86,675804.58,42.75,10.07,False
+TREATY575441,Quota Share,2015-04-03,2017-04-26,Bryan-Powell,Hernandez-Lam,1593004.18,317335.74,73.25,20.12,True
+TREATY062881,Quota Share,2023-10-06,2027-09-23,Russell Ltd,Buck-Ferguson,6177105.46,627035.74,14.04,6.36,True
+TREATY516139,Surplus,2018-03-03,2021-08-10,"Anderson, Huerta and Dunn",Duncan LLC,889456.31,321263.85,87.18,20.0,False
+TREATY477253,Quota Share,2017-10-05,2020-12-10,Braun PLC,Sawyer-Bryant,1186336.74,423571.61,67.11,19.16,True
+TREATY194918,Surplus,2021-04-30,2024-02-28,"Garcia, Coleman and Bradley",Castro LLC,9653763.11,767818.38,56.41,7.25,False
+TREATY741710,Quota Share,2018-09-03,2020-12-04,"Cooper, Miller and Weeks",Jones-Freeman,9850956.35,874549.23,33.68,13.8,True
+TREATY035479,Surplus,2023-03-06,2027-05-22,Barrett-Hamilton,Davis LLC,4599810.87,701861.44,31.11,16.72,True
+TREATY807905,Surplus,2018-10-24,2020-09-25,Jones PLC,"Patel, Marshall and Lloyd",9232463.24,701684.43,29.92,18.16,False
+TREATY479860,Surplus,2015-12-13,2019-03-12,Garcia-Cox,"Rivas, Lewis and Carr",4603406.61,992661.44,52.0,12.83,True
+TREATY153677,Surplus,2017-01-03,2018-10-13,Mejia-Mcbride,Evans-Evans,861056.56,150324.56,30.87,23.01,True
+TREATY353334,Surplus,2017-12-03,2021-03-12,Phillips and Sons,Wyatt and Sons,3777934.49,542334.54,30.12,24.96,True
+TREATY996987,Surplus,2015-02-10,2017-03-03,Ford LLC,"Adams, Dean and Mason",8224448.91,724637.14,24.33,23.47,True
+TREATY271235,Facultative,2016-05-17,2017-05-27,Griffin-Fitzgerald,"Franklin, Perez and Perez",8133380.12,523947.91,56.56,21.81,True
+TREATY746708,Quota Share,2018-04-30,2019-12-04,Jennings LLC,Pearson Group,2838229.0,706584.1,71.44,16.66,False
+TREATY175353,Facultative,2018-04-05,2022-01-19,Soto Ltd,Berger-Gray,3190640.95,339835.06,45.57,11.34,False
+TREATY308287,Surplus,2020-07-27,2024-04-10,Baker Ltd,Burton Inc,2665865.87,269083.92,22.72,16.23,True
+TREATY972807,Quota Share,2023-06-03,2026-04-20,Cantu Group,"Ellis, Hoffman and Leach",3186853.81,990146.89,35.28,9.04,True
+TREATY980059,XoL,2020-04-30,2023-03-07,Garcia Group,Wilson-Waters,9612014.09,304404.74,16.81,10.3,True
+TREATY843750,Surplus,2023-04-28,2027-09-15,Dodson Ltd,"Baker, Johnston and Mahoney",157661.1,443086.06,29.18,8.89,False
+TREATY794344,XoL,2019-06-27,2021-02-02,Collins Ltd,"Miller, Palmer and Stewart",5694939.86,137701.32,34.71,24.32,True
+TREATY602817,Surplus,2015-05-14,2018-09-28,"Sullivan, Wilson and Valdez","Benton, Miller and Massey",9254811.18,237445.69,85.16,20.63,True
+TREATY107127,Quota Share,2020-02-07,2024-12-08,Hall LLC,"Wilson, Bell and Stout",152198.79,579459.67,30.34,21.53,True
+TREATY450863,Quota Share,2015-09-17,2020-02-12,"Williams, Taylor and Fox","Thompson, Villanueva and Oliver",8782032.56,864330.43,82.61,24.14,True
+TREATY736022,XoL,2017-07-15,2019-12-15,"Hughes, Dodson and Nicholson",Ford-Martin,4124752.37,479798.37,21.54,21.67,False
+TREATY755964,XoL,2023-03-01,2028-02-19,Morgan Group,Mullins-Lyons,8697610.49,61700.84,19.13,22.15,True
+TREATY975932,Quota Share,2020-11-15,2025-11-07,"Dougherty, Mcdonald and Williams",Shelton Group,5039002.53,342120.49,66.86,12.76,True
+TREATY754014,XoL,2018-10-22,2023-04-03,Wells Group,Thornton-Smith,5827361.02,783182.66,74.13,24.6,False
+TREATY674725,Surplus,2023-06-22,2026-04-03,Hudson Group,Holt PLC,7233439.43,289386.34,78.27,13.15,True
+TREATY635414,Quota Share,2020-01-04,2023-12-10,White and Sons,Conner-Taylor,6075832.18,278433.34,21.26,13.75,False
+TREATY807806,Quota Share,2016-04-07,2017-10-05,Choi-Barton,Johnson-Perkins,167409.25,246955.05,42.43,7.28,True
+TREATY051238,Surplus,2016-08-04,2020-04-21,"Burton, Jimenez and Harris",Burch Group,9524989.74,771564.09,56.87,20.28,True
+TREATY070217,Quota Share,2019-01-30,2021-12-07,Wong-Valencia,Jackson-Brown,2688047.82,981504.8,85.87,8.62,True
+TREATY223129,XoL,2017-06-14,2018-08-18,Good-Mason,Anderson-Garner,1161955.25,832648.36,70.95,17.93,False
+TREATY742249,Surplus,2019-12-25,2024-02-12,Rodriguez LLC,Jones Group,2017174.98,784293.18,82.51,15.43,False
+TREATY582671,XoL,2018-11-12,2023-04-06,Peterson-Luna,Mitchell-Mckinney,4618761.16,943606.97,87.99,24.62,False
+TREATY450680,XoL,2020-04-06,2023-11-24,"Chase, Wiley and Campos",Carter Group,4117390.37,666016.83,80.54,11.24,True
+TREATY967823,Facultative,2016-03-13,2018-07-13,"Campos, Bass and Hebert",Palmer-Caldwell,2877022.83,778349.3,22.8,18.31,False
+TREATY718587,Facultative,2016-03-04,2019-11-08,Fernandez LLC,Dickson Inc,1118086.89,64759.43,64.86,13.52,False
+TREATY141546,XoL,2019-12-19,2020-12-30,Hardy and Sons,Henderson-Scott,5503628.85,331319.47,51.07,19.62,True
+TREATY643517,Quota Share,2015-07-11,2018-03-18,Graves-Torres,West-Weaver,5727564.87,187222.19,78.35,7.35,True
+TREATY088473,Quota Share,2016-12-20,2019-03-31,Miller-Bridges,"Ortiz, Payne and Lara",8390827.54,514474.6,23.55,17.18,False
+TREATY107523,Surplus,2020-02-10,2021-11-23,Olsen-Garcia,Velazquez Group,7904686.37,267286.63,40.73,20.51,True
+TREATY368943,Facultative,2022-08-30,2025-07-14,"Ramos, Smith and Schultz",Watkins-Rhodes,7574542.65,880701.58,59.62,9.86,False
+TREATY923107,Quota Share,2019-12-04,2021-12-05,Williams Ltd,"Carlson, Smith and Sweeney",6944049.65,365471.42,22.86,8.29,True
+TREATY692414,XoL,2021-02-20,2024-02-19,Jacobs-Griffin,Black and Sons,215321.65,605480.24,75.88,5.12,False
+TREATY126644,Surplus,2016-12-05,2018-02-21,Pearson PLC,Mitchell Ltd,9177079.25,416566.23,26.03,16.39,False
+TREATY654442,Surplus,2016-07-12,2019-03-16,"Brown, Richards and Rodriguez",Shaw-Miles,7329407.17,174649.43,32.84,11.44,False
+TREATY472086,Quota Share,2020-04-14,2022-09-10,Walker-Camacho,"Scott, Serrano and Reyes",1233911.81,179802.47,66.49,8.93,True
+TREATY245481,Facultative,2021-12-31,2023-12-28,Hill PLC,Kelly-Cruz,6393911.8,310621.75,78.72,7.63,True
+TREATY999089,XoL,2015-11-17,2018-04-23,"Murphy, Burke and Lee",Wilson and Sons,2272908.64,495815.75,19.31,23.19,False
+TREATY794917,XoL,2015-09-20,2017-09-17,Benitez-Carpenter,Brock-Johnson,826838.57,457075.05,85.7,13.6,False
+TREATY429835,Surplus,2022-10-07,2025-12-12,"Gonzalez, Hardin and Scott",Diaz-Warren,1560335.87,964938.97,47.56,13.07,False
+TREATY886798,Facultative,2022-08-27,2027-06-15,Jacobs-Carpenter,"Wall, Holder and Reynolds",5133610.97,670867.38,85.68,20.78,True
+TREATY536025,Surplus,2016-11-28,2020-09-10,Webster-Vaughan,"Wood, Mclean and Ho",3661494.32,271860.38,31.72,21.12,False
+TREATY103256,Surplus,2023-09-13,2028-07-08,King-Williams,Peters-Ellis,5968668.03,298055.91,61.94,8.29,False
+TREATY288698,XoL,2017-12-23,2021-10-11,"Mccoy, Jones and Jackson","Martinez, Chavez and Vargas",2712919.86,136100.6,64.82,23.15,False
+TREATY000170,XoL,2015-06-17,2019-11-26,Campbell Ltd,"Keller, Osborn and Paul",7811110.83,288153.96,72.77,21.51,False
+TREATY435509,XoL,2021-11-19,2025-03-30,"Nelson, Atkinson and Delgado",Richardson-Perez,1643809.83,228672.31,56.64,16.38,True
+TREATY819574,Quota Share,2017-05-21,2018-07-13,Doyle Inc,Flores Inc,5535474.5,940933.54,20.04,24.57,True
+TREATY439723,Facultative,2018-03-14,2020-11-11,"Hayes, Greene and Lawrence",Cooke-King,1393872.22,415116.76,48.85,21.95,False
+TREATY267809,Quota Share,2020-02-15,2023-07-18,"Carson, Lucas and Cole",Mclean-Eaton,3854522.93,380029.94,46.69,23.23,True
+TREATY334538,Facultative,2015-08-10,2018-06-08,Hall-Rangel,Fischer PLC,1013376.41,619239.72,55.5,14.67,True
+TREATY611185,XoL,2015-12-18,2020-10-12,"Harper, Patterson and James","Powell, Santiago and Patel",2112246.88,735972.89,19.08,8.78,False
+TREATY702287,Facultative,2020-03-01,2021-09-03,"Foster, Gonzalez and Nichols",Jones-Rosales,4886393.67,399940.23,22.08,20.93,False
+TREATY460447,XoL,2020-07-20,2022-12-13,"Pratt, Davidson and Alvarez","Branch, Mcdonald and Benjamin",2536434.01,916023.19,19.59,5.17,False
+TREATY879873,Facultative,2023-04-16,2028-01-01,Thomas PLC,"Cardenas, Nelson and Peterson",2615039.48,172626.62,42.65,19.04,False
+TREATY894440,Quota Share,2018-01-19,2022-03-27,Hunt PLC,"Beasley, Rivera and Erickson",2943605.16,563886.95,28.15,15.72,True
+TREATY673414,Surplus,2015-11-25,2019-08-14,Nichols-Leonard,"Hanson, Adams and Wilson",8423755.53,134772.17,56.11,24.21,False
+TREATY841936,XoL,2022-12-11,2025-03-26,Ward-Johnson,"Cruz, Wallace and Hill",1869430.33,209942.93,34.45,16.5,True
+TREATY642042,XoL,2020-11-01,2022-09-05,Vargas Group,"Brooks, Juarez and Mcclure",4221835.06,390820.51,23.77,18.92,True
+TREATY446929,Facultative,2017-01-18,2019-01-08,"Jones, Brown and Baxter",Brooks and Sons,9101624.3,940976.6,44.24,11.11,True
+TREATY383380,Facultative,2019-03-31,2020-07-05,"Ray, Collier and Jones","Gordon, Larsen and Hall",9013142.9,829876.57,55.4,9.32,True

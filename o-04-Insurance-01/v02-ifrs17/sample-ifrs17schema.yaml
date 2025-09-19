@@ -1,0 +1,91 @@
+insurance_policy_master:
+  - policy_id: string
+  - policy_group_id: string
+  - start_date: date
+  - end_date: date
+  - line_of_business: string
+  - coverage_term_months: integer
+  - underwriting_year: integer
+  - currency: string
+  - ifrs_model_type: string # GMM or PAA
+  - status: string
+
+premium_transactions:
+  - transaction_id: string
+  - policy_id: string
+  - transaction_date: date
+  - premium_amount: decimal
+  - ceded_premium_amount: decimal
+  - net_premium_amount: decimal
+  - commission_paid: decimal
+
+claims_transactions:
+  - claim_id: string
+  - policy_id: string
+  - claim_incurred_date: date
+  - claim_paid_date: date
+  - gross_claim_amount: decimal
+  - recoverable_amount: decimal
+  - net_claim_amount: decimal
+  - claim_status: string
+
+reinsurance_treaty_master:
+  - treaty_id: string
+  - treaty_type: string # Quota Share / Surplus / XoL / Facultative
+  - coverage_start_date: date
+  - coverage_end_date: date
+  - ceding_company: string
+  - reinsurer_name: string
+  - limit_amount: decimal
+  - retention_amount: decimal
+  - quota_share_percent: float
+  - commission_percent: float
+  - profit_commission_flag: boolean
+
+risk_adjustment_input:
+  - lob: string
+  - confidence_level: float
+  - std_dev: decimal
+  - risk_adjustment_method: string # VaR or CoC
+  - cost_of_capital_rate: float
+
+discount_curve:
+  - curve_id: string
+  - maturity_months: integer
+  - discount_rate: float
+  - as_of_date: date
+
+ifrs17_metrics_output:
+  - policy_group_id: string
+  - period: date
+  - csm_opening: decimal
+  - csm_accretion: decimal
+  - csm_release: decimal
+  - csm_closing: decimal
+  - risk_adjustment: decimal
+  - loss_component: decimal
+  - coverage_units: integer
+  - service_expense: decimal
+  - insurance_revenue: decimal
+  - reinsurance_asset_change: decimal
+
+forecast_scenarios:
+  - scenario_id: string
+  - description: string
+  - premium_growth_rate: float
+  - claim_frequency_shift: float
+  - catastrophe_factor: float
+  - discount_curve_override: string
+  - lapse_rate: float
+  - run_date: date
+
+journal_entries:
+  - entry_id: string
+  - posting_date: date
+  - policy_group_id: string
+  - account_code: string
+  - description: string
+  - amount: decimal
+  - dr_cr_flag: string
+  - source_metric: string # e.g., CSM, RA, Claim
+  - export_status: string # Ready, Posted, Rejected
