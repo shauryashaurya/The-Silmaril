@@ -130,15 +130,29 @@ def generate_risk_adjustment_input(n):
     pd.DataFrame(rows).to_csv('./data/risk_adjustment_input.csv', index=False)
 
 
+# def generate_discount_curve(n):
+#     rows = []
+#     for _ in range(n):
+#         for m in range(6, 121, 6):
+#             rows.append({
+#                 "curve_id": f"CURVE_{_}",
+#                 "maturity_months": m,
+#                 "discount_rate": gen_float(0.01, 0.07),
+#                 "as_of_date": rand_date()
+#             })
+#     pd.DataFrame(rows).to_csv('./data/discount_curve.csv', index=False)
+
 def generate_discount_curve(n):
     rows = []
-    for _ in range(n):
+    for curve_index in range(n):
+        curve_id = f"CURVE_{curve_index}"
+        as_of = rand_date()
         for m in range(6, 121, 6):
             rows.append({
-                "curve_id": f"CURVE_{_}",
+                "curve_id": curve_id,
                 "maturity_months": m,
                 "discount_rate": gen_float(0.01, 0.07),
-                "as_of_date": rand_date()
+                "as_of_date": as_of
             })
     pd.DataFrame(rows).to_csv('./data/discount_curve.csv', index=False)
 
