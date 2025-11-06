@@ -1158,9 +1158,9 @@ def main():
         num_instruments=50,
         num_firms=10,
         num_venues=3,
-        num_days=5,
-        orders_per_day=10000,
-        trades_per_day=5000,
+        num_days=7,
+        orders_per_day=5000,
+        trades_per_day=10000,
         batch_size=5000,
         write_frequency=10000,
         output_format='parquet',
@@ -1214,8 +1214,8 @@ def main():
 
     # Select configuration
     # config = medium_config
-    # config = small_config
-    config = mid_small_config
+    config = small_config
+    # config = mid_small_config
 
     print("Starting optimized market data generation...")
     print(
