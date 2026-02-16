@@ -282,7 +282,7 @@ class VectorizedManipulationDetector:
             sell_participation,
             on=['instrument_id', 'trade_date', 'account_id'],
             how='outer'
-        ).fillna(0)
+        ).fillna({'buy_volume': 0, 'sell_volume': 0})
 
         all_participation['total_volume'] = all_participation['buy_volume'] + \
             all_participation['sell_volume']
@@ -648,7 +648,7 @@ class VectorizedManipulationDetector:
             sell_positions,
             on=['instrument_id', 'pump_date', 'account_id'],
             how='outer'
-        ).fillna(0)
+        ).fillna({'buy_volume': 0, 'sell_volume': 0})
 
         positions['net_position'] = positions['sell_volume'] - \
             positions['buy_volume']

@@ -885,9 +885,9 @@ def main():
     small_config = GeneratorConfig(
         num_accounts=150,
         num_instruments=75,
-        num_firms=10,
-        num_venues=3,
-        num_days=7,
+        num_firms=15,
+        num_venues=7,
+        num_days=15,
         orders_per_day=7500,
         trades_per_day=5000,
         output_dir='./data/small_test'

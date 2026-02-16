@@ -1,108 +1,3 @@
-data\mid_small_test\accounts.parquet:
-  account_id: string
-  beneficial_owner_id: string
-  parent_account_id: string
-  firm_id: string
-  account_type: string
-  opening_date: string
-  credit_limit: double
-  ip_addresses: string
-  device_fingerprints: string
-  related_accounts: string
-data\mid_small_test\cancellations.parquet:
-  cancellation_id: string
-  timestamp: string
-  order_id: string
-  account_id: string
-  instrument_id: string
-  remaining_quantity: double
-  reason: string
-data\mid_small_test\corporate_events.parquet:
-  event_id: string
-  instrument_id: string
-  event_type: string
-  announcement_date: string
-  effective_date: string
-  materiality: string
-  description: string
-data\mid_small_test\firms.parquet:
-  firm_id: string
-  firm_name: string
-  lei_code: string
-  address: string
-  country: string
-  firm_type: string
-data\mid_small_test\instruments.parquet:
-  instrument_id: string
-  symbol: string
-  isin: string
-  security_type: string
-  sector: string
-  market_cap: double
-  average_daily_volume: double
-  tick_size: double
-  lot_size: int64
-  price: double
-  volatility: double
-  issuer: string
-data\mid_small_test\market_data.parquet:
-  timestamp: string
-  instrument_id: string
-  best_bid: double
-  best_offer: double
-  bid_size: double
-  offer_size: double
-  last_price: double
-  volume: double
-data\mid_small_test\orders.parquet:
-  order_id: string
-  timestamp: string
-  account_id: string
-  trader_id: string
-  firm_id: string
-  instrument_id: string
-  order_type: string
-  side: string
-  quantity: double
-  displayed_quantity: double
-  price: double
-  stop_price: double
-  time_in_force: string
-  order_state: string
-  venue_id: string
-  algo_indicator: bool
-  algo_id: string
-  parent_order_id: string
-  session_id: string
-data\mid_small_test\persons.parquet:
-  person_id: string
-  first_name: string
-  last_name: string
-  email: string
-  phone: string
-  address: string
-  ssn: string
-  date_of_birth: string
-data\mid_small_test\trades.parquet:
-  trade_id: string
-  timestamp: string
-  instrument_id: string
-  buy_order_id: string
-  sell_order_id: string
-  buy_account_id: string
-  sell_account_id: string
-  buy_firm_id: string
-  sell_firm_id: string
-  buy_trader_id: string
-  sell_trader_id: string
-  quantity: double
-  price: double
-  trade_value: double
-  aggressor_side: string
-  trade_type: string
-  venue_id: string
-  buy_capacity: string
-  sell_capacity: string
 data\small_test\accounts.parquet:
   account_id: string
   beneficial_owner_id: string
@@ -345,6 +240,22 @@ data\small_test\surveillance_output\intermediate\front_running\rule_3_4_candidat
   next_price: float
   profit_pct: float
   __index_level_0__: int64
+data\small_test\surveillance_output\intermediate\insider_trading\rule_5_3_candidates.parquet:
+  account_id: dictionary<values=string, indices=int16, ordered=0>
+  avg_buy_price: float
+  total_quantity: float
+  return_pct: float
+  profit_value: float
+  event_id: string
+  instrument_id: string
+  post_price: float
+data\small_test\surveillance_output\intermediate\insider_trading\rule_5_4_candidates.parquet:
+  event_id: string
+  instrument_id: string
+  num_accounts: int64
+  total_volume: float
+  num_trades: int64
+  announcement_date: timestamp[ns]
 data\small_test\surveillance_output\intermediate\layering_spoofing\rule_2_1_candidates.parquet:
   account_id: dictionary<values=string, indices=int8, ordered=0>
   instrument_id: dictionary<values=string, indices=int8, ordered=0>
@@ -375,15 +286,30 @@ data\small_test\surveillance_output\intermediate\layering_spoofing\rule_2_4_cand
   net_position: float
   price_change_pct: float
   trade_id_count: int64
+data\small_test\surveillance_output\intermediate\market_manipulation\rule_4_1_candidates.parquet:
+  instrument_id: dictionary<values=string, indices=int8, ordered=0>
+  trade_date: date32[day]
+  quantity_sum_daily: float
+  trade_value_sum_daily: float
+  price_first: float
+  price_last: float
+  trade_id_count_daily: int64
+  quantity_sum_close: float
+  trade_value_sum_close: float
+  trade_id_count_close: double
+  volume_concentration: float
+  price_change_pct: float
+  account_id: dictionary<values=string, indices=int16, ordered=0>
+  total_volume: float
 data\small_test\surveillance_output\intermediate\market_manipulation\rule_4_2_candidates.parquet:
   instrument_id: dictionary<values=string, indices=int8, ordered=0>
   time_bucket: int64
-  account_id: dictionary<values=string, indices=int8, ordered=0>
+  account_id: dictionary<values=string, indices=int16, ordered=0>
   trade_count: int64
   volume_concentration: float
   trade_id_count: int64
 data\small_test\surveillance_output\intermediate\suspicious_transactions\rule_9_2_candidates.parquet:
-  owner_id: string
+  owner_id: dictionary<values=string, indices=int16, ordered=0>
   instrument_id: dictionary<values=string, indices=int8, ordered=0>
   trade_date: date32[day]
   num_counterparties: int64
@@ -391,7 +317,7 @@ data\small_test\surveillance_output\intermediate\suspicious_transactions\rule_9_
   total_value: float
   __index_level_0__: int64
 data\small_test\surveillance_output\intermediate\suspicious_transactions\rule_9_4_candidates.parquet:
-  account_id: dictionary<values=string, indices=int8, ordered=0>
+  account_id: dictionary<values=string, indices=int16, ordered=0>
   instrument_id: dictionary<values=string, indices=int8, ordered=0>
   time_bucket: timestamp[ns]
   num_rapid: int64
@@ -471,7 +397,7 @@ data\small_test\surveillance_output\results\collusion_coordination\alerts.parque
 data\small_test\surveillance_output\results\collusion_coordination\summary.parquet:
   total_alerts: int64
   by_severity: 'struct<high: int64, low: int64, medium: int64>'
-  by_rule: 'struct<6.1: int64, 6.4: int64>'
+  by_rule: 'struct<6.1: int64, 6.3: int64, 6.4: int64>'
   avg_confidence: double
   unique_accounts: int64
 data\small_test\surveillance_output\results\cross_market_manipulation\alerts.parquet:
@@ -487,7 +413,7 @@ data\small_test\surveillance_output\results\cross_market_manipulation\alerts.par
   confidence_score: double
 data\small_test\surveillance_output\results\cross_market_manipulation\summary.parquet:
   total_alerts: int64
-  by_severity: 'struct<high: int64, low: int64, medium: int64>'
+  by_severity: 'struct<high: int64, low: int64>'
   by_rule: 'struct<7.1: int64, 7.3: int64, 7.4: int64>'
   avg_confidence: double
   unique_accounts: int64
@@ -505,7 +431,7 @@ data\small_test\surveillance_output\results\derivatives_manipulation\alerts.parq
 data\small_test\surveillance_output\results\derivatives_manipulation\summary.parquet:
   total_alerts: int64
   by_severity: 'struct<low: int64>'
-  by_rule: 'struct<10.3: int64>'
+  by_rule: 'struct<10.1: int64, 10.3: int64>'
   avg_confidence: double
   unique_accounts: int64
 data\small_test\surveillance_output\results\front_running\alerts.parquet:
@@ -523,6 +449,23 @@ data\small_test\surveillance_output\results\front_running\summary.parquet:
   total_alerts: int64
   by_severity: 'struct<high: int64>'
   by_rule: 'struct<3.4: int64>'
+  avg_confidence: double
+  unique_accounts: int64
+data\small_test\surveillance_output\results\insider_trading\alerts.parquet:
+  alert_id: string
+  category: string
+  rule_id: string
+  severity: string
+  timestamp: string
+  account_ids: string
+  instrument_ids: string
+  description: string
+  evidence: string
+  confidence_score: double
+data\small_test\surveillance_output\results\insider_trading\summary.parquet:
+  total_alerts: int64
+  by_severity: 'struct<high: int64, low: int64, medium: int64>'
+  by_rule: 'struct<5.3: int64, 5.4: int64>'
   avg_confidence: double
   unique_accounts: int64
 data\small_test\surveillance_output\results\layering_spoofing\alerts.parquet:
@@ -557,7 +500,7 @@ data\small_test\surveillance_output\results\market_manipulation\alerts.parquet:
 data\small_test\surveillance_output\results\market_manipulation\summary.parquet:
   total_alerts: int64
   by_severity: 'struct<low: int64>'
-  by_rule: 'struct<4.2: int64>'
+  by_rule: 'struct<4.1: int64, 4.2: int64>'
   avg_confidence: double
   unique_accounts: int64
 data\small_test\surveillance_output\results\suspicious_transactions\alerts.parquet:
@@ -573,8 +516,8 @@ data\small_test\surveillance_output\results\suspicious_transactions\alerts.parqu
   confidence_score: double
 data\small_test\surveillance_output\results\suspicious_transactions\summary.parquet:
   total_alerts: int64
-  by_severity: 'struct<low: int64, medium: int64>'
-  by_rule: 'struct<9.2: int64, 9.4: int64>'
+  by_severity: 'struct<low: int64>'
+  by_rule: 'struct<9.2: int64>'
   avg_confidence: double
   unique_accounts: int64
 data\small_test\surveillance_output\results\wash_trading\alerts.parquet:
