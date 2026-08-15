@@ -1466,7 +1466,7 @@ The traces use the same ontology terms as the paper, such as asserted fact, clas
 The tests assert the expected results and print the traces when run:    
     
 ```python    
-python examples/test_reasoner_loop_v03.py    
+python test_reasoner_loop.py    
 ```    
     
 These examples are not general-purpose reasoners.    

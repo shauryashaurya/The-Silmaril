@@ -45,8 +45,8 @@ The language model remains the flexible generative component. The ontology and r
         
 The paper finally discusses columnar, distributed, and GPU execution as possible ways to scale selected reasoning workloads. It does not present a completed production reasoner or new performance results.      
     
----    
-    
+---   
+     
 # Introduction    
     
 Large language models are increasingly used as the control layer for agentic systems.    
@@ -83,9 +83,6 @@ For some tasks, a separate formal checking layer is useful and can add a measure
 9. A passed check can go to a separate action policy.    
 10. The model can remain stochastic, while selected acceptance checks can be deterministic and replayable when their formal inputs, rules, solver version, and configuration are fixed.    
     
-## A note on the length of the paper  
-Because of the SciPy paper length limit of 6000 words, this paper presents only the reasoning methods needed to establish the main argument. A longer version in the Silmaril repository includes the additional walkthroughs for description-logic reasoning, stratified negation, resolution, Satisfiability Modulo Theories (SMT), and the chase, together with the companion Python implementations and executable examples [@shauryasilmarilRepository2026]. 
-
 
 ## Examples used in the paper    
     
@@ -340,7 +337,18 @@ This lets us use the language model for its strongest features: **interpretation
     
 The author's solution moves selected questions about entailment, consistency, constraints, and justification into components designed to solve for the answers *formally*.    
     
+---    
+
+# A note on the length of the paper  
+Because of the SciPy recommends paper [length limit of 6000 words](https://github.com/scipy-conference/scipy_proceedings#general-information-and-guidelines-for-authors), this paper presents only the reasoning methods needed to establish the core argument.    
     
+A longer version (8000+ words) in the Silmaril repository includes the additional walkthroughs for description-logic reasoning, stratified negation, resolution, Satisfiability Modulo Theories (SMT), and the chase, together with the companion Python implementations and executable examples [@shauryasilmarilRepository2026]. 
+
+For the 8K words version, refer to: [The Silmaril strikes again full version v01.md](https://github.com/shauryashaurya/The-Silmaril/blob/main/scipy-2026/The%20Silmaril%20strikes%20again%20full%20version%20v01.md)
+    
+---
+      
+	   
 # Ontologies and reasoners in plain terms    
     
 An **ontology** describes the **what** - that is:    
@@ -906,7 +914,7 @@ Each reasoner prints a trace using terms from the paper, including asserted fact
 The tests can be run with:
 
 ```python
-python examples/test_reasoner_loop_v03.py
+python test_reasoner_loop.py
 ```
 
 These are teaching examples, not general-purpose reasoners or benchmarks.
